@@ -113,3 +113,52 @@ img[src$="logos/qosmic.webp"] { border-radius: 6px; }
 .fx-chip img[src$="logos/qosmic.webp"] { height: 44px; max-height: none; }
 .fx-card-media .fx-chip img[src$="logos/qosmic.webp"] { height: 36px; }
 @media (max-width: 900px) { .fx-card-media { aspect-ratio: 3 / 2; } }
+
+/* ============================================================
+   Brand type scale (round 7). Brand guidelines p.13: body 14pt (~18.7px), subtitle 24pt, header 48pt.
+   His pages set many small inline sizes (12-14px); this layer lifts every one of them onto the brand scale.
+   ============================================================ */
+[style*="font-size:10px"] { font-size: 13px !important; }
+[style*="font-size:10.5px"] { font-size: 13px !important; }
+[style*="font-size:11px"] { font-size: 13px !important; }
+[style*="font-size:11.5px"] { font-size: 13.5px !important; }
+[style*="font-size:12px"] { font-size: 13.5px !important; }
+[style*="font-size:12.5px"] { font-size: 14.5px !important; }
+[style*="font-size:13px"] { font-size: 15px !important; }
+[style*="font-size:13.5px"] { font-size: 15.5px !important; }
+[style*="font-size:14px"] { font-size: 16px !important; }
+[style*="font-size:14.5px"] { font-size: 16.5px !important; }
+[style*="font-size:15px"] { font-size: 17px !important; }
+[style*="font-size:16px"] { font-size: 18px !important; }
+[style*="font-size:16.5px"] { font-size: 18.5px !important; }
+[style*="font-size:17px"] { font-size: 18.5px !important; }
+[style*="font-size:18px"] { font-size: 20px !important; }
+[style*="font-size:19px"] { font-size: 20.5px !important; }
+body { font-size: 18px; }
+.eyebrow, .eyebrow-rule { font-size: 13.5px !important; }
+.nav-link, .site-nav .nav-link, .nav-menu > button { font-size: 15.5px !important; }
+.nav-dropdown a span:first-child { font-size: 16px !important; }
+.nav-dropdown a span:last-child { font-size: 14px !important; }
+.btn { font-size: 16px; }
+.field { font-size: 17px; }
+.also-chip { font-size: 15.5px; }
+.stat-l { font-size: 16px; }
+.fx-kicker { font-size: 14px; }
+.fx-n, .fx-progress { font-size: 14px; }
+.job-pill { font-size: 13px; }
+.job-co span, .job-ago { font-size: 15px; }
+.job-desc, .job-meta { font-size: 17px; }
+.job-tags span { font-size: 14px; }
+.legal-toc a { font-size: 15.5px; }
+.trl-step span:last-child, .icon-card p, .model-card p, .work-card p { font-size: 17px !important; }
+.slide-metric span { font-size: 16.5px; }
+footer a { font-size: 16px !important; }
+.job-group-head p { font-size: 17px; }
+.trl-range { font-size: 14px; }
+.trl-enter, .trl-stay { font-size: 13.5px; }
+.hero-tabs button { font-size: 14px !important; }
+.icon-n { font-size: 15px; }
+.model-k { font-size: 13.5px; }
+.collage-tile [data-cap] span, .collage-tile .tile-label { font-size: 13px; }
+.role-apply dt { font-size: 14px; }
+@media (max-width: 760px) { [data-carousel] .hero-tabs button { font-size: 12.5px !important; } }

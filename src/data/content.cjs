@@ -156,14 +156,22 @@ news.forEach((n) => { n.outlet = OUTLET_FIX[n.outlet] || n.outlet; n.date = (n.d
 // Re-checked against the live roles feed on 2026-10-24 (research/careers-api.json): the AxD internship has closed,
 // and the r_demo_* roles on that site are placeholders, so neither is listed. "about" is the startup's own one-liner.
 const ORG_SHORT = { 'Foucault Private Limited': 'Foucault' };
+const JOB_TYPE = { full_time: 'Full-time', contract: 'Contract', part_time: 'Part-time', internship: 'Internship' };
+const EXPERIENCE = { student_0_1: 'Students and 0–1 years', '0_2': '0–2 years', '2_4': '2–4 years', '3_6': '3–6 years', '5_8': '5–8 years', '8_plus': '8+ years' };
 const LIVE = (() => { try { return JSON.parse(JSON.parse(fs.readFileSync(path.join(__dirname, '..', '..', 'research', 'careers-api.json'), 'utf8'))[0].body).items.filter((r) => !/demo/.test(r.id)); } catch { return null; } })();
 const jobs = col.jobs.filter((j) => !LIVE || LIVE.some((r) => j.url.endsWith(r.id))).map((j) => {
   const live = LIVE && LIVE.find((r) => j.url.endsWith(r.id));
   const atArtpark = j.organization === 'ARTPARK';
+  const company = ORG_SHORT[j.organization] || j.organization;
   return {
-    title: j.title, url: j.url, company: ORG_SHORT[j.organization] || j.organization, atArtpark,
+    title: j.title, url: j.url, company, atArtpark,
+    slug: slugify(`${j.title} ${company}`).slice(0, 80).replace(/-+$/, ''),
     about: !atArtpark && live && live.tirOverview ? live.tirOverview.replace(/^[^—]+—\s*/, '').replace(/^./, (c) => c.toUpperCase()) : '',
-    desc: j.description, location: j.location, type: j.type, mode: j.workMode, cat: j.category,
+    desc: j.description, location: j.location, mode: j.workMode, cat: j.category,
+    type: (live && JOB_TYPE[live.jobType]) || j.type,
+    experience: live ? EXPERIENCE[live.experience] || '' : '',
+    team: j.team, family: j.jobFamily,
+    jd: live && live.jd ? live.jd : null,
     tags: [j.subFamily, j.team].filter(Boolean), postedAt: j.postedAt,
   };
 });

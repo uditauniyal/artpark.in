@@ -206,7 +206,7 @@ ${C.jobs.filter((j) => j.atArtpark === at).map((j) => `          <article class=
             <p class="job-desc">${esc(j.desc)}</p>
             <div class="job-meta">${esc([j.location, j.type, j.mode].join(' · '))}</div>
             <div class="job-tags">${j.tags.map((t) => `<span>${esc(t)}</span>`).join('')}</div>
-            <a class="job-go" href="${j.url}" target="_blank" rel="noopener">View role and apply <span class="arrow">→</span></a>
+            <a class="job-go" href="${R.careers}/${j.slug}">View role <span class="arrow">→</span></a>
           </article>`).join('\n')}
         </div>
       </section>`).join('\n')}
@@ -330,4 +330,61 @@ ${t.fields.map(field).join('\n')}
   }),
 };
 
-module.exports = [events, ...eventPages, news, tenders, careers, partnerships];
+// ---------- Role pages (round 7): each role on our own site, in the brand's type scale. ----------
+// Text is the role's own description from the artparkcareers.in roles feed (research/careers-api.json).
+// Applying needs an ARTPARK profile, so the Apply button hands over to artparkcareers.in for that step only.
+const bullets = (items) => `<ul class="role-list">${items.map((t) => `<li>${esc(t)}</li>`).join('')}</ul>`;
+const roleFacts = (j) => [
+  ['Company', j.company], ['Location', j.location], ['Work mode', j.mode], ['Type', j.type],
+  ['Experience', j.experience], ['Team', j.team], ['Posted', ago(j.postedAt)],
+].filter(([, v]) => v);
+const rolePages = C.jobs.filter((j) => j.jd).map((j) => ({
+  route: `${R.careers}/${j.slug}`,
+  html: () => {
+    const key = j.atArtpark ? 'artpark' : 'startup';
+    const more = [...C.jobs.filter((o) => o !== j && o.company === j.company), ...C.jobs.filter((o) => o !== j && o.company !== j.company)].slice(0, 3);
+    return page({
+      title: `${j.title} at ${j.company} — ARTPARK Careers`, active: 'careers',
+      description: j.jd.summary || j.desc,
+      body: `
+  <section class="role-top">
+    <div style="max-width:1180px;margin:0 auto;padding:0 24px">
+      <a class="role-back" href="${R.careers}">← All open roles</a>
+      <div class="role-tags"><span class="job-pill is-${key}">${j.atArtpark ? 'ARTPARK team' : 'TIR startup'}</span><span class="role-co">${esc(j.company)}</span>${j.team ? `<span class="role-team">${esc(j.team)}</span>` : ''}</div>
+      <h1 class="role-title">${esc(j.title)}</h1>
+      ${j.jd.summary ? `<p class="role-lede">${esc(j.jd.summary)}</p>` : ''}
+      <div class="role-meta">${[j.location, j.mode, j.type, j.experience].filter(Boolean).map((m) => `<span>${esc(m)}</span>`).join('')}</div>
+    </div>
+  </section>
+  <div class="role-wrap">
+    <article class="role-body">
+      ${j.jd.about ? `<section><h2>About the role</h2><p>${esc(j.jd.about)}</p></section>` : ''}
+      ${j.jd.doing && j.jd.doing.length ? `<section><h2>What you’ll do</h2>${bullets(j.jd.doing)}</section>` : ''}
+      ${j.jd.looking && j.jd.looking.length ? `<section><h2>What we’re looking for</h2>${bullets(j.jd.looking)}</section>` : ''}
+      ${j.jd.nice && j.jd.nice.length ? `<section><h2>Nice to have</h2>${bullets(j.jd.nice)}</section>` : ''}
+      ${j.about ? `<section class="role-about-co"><span class="eyebrow">About ${esc(j.company)}</span><p>${esc(j.about)}</p><p class="role-tir">${esc(j.company)} is part of ARTPARK’s Technology Innovators in Residence (TIR) program. You join ${esc(j.company)}; ARTPARK lists the role and runs the application.</p></section>` : ''}
+    </article>
+    <aside class="role-aside">
+      <div class="role-apply">
+        <span class="eyebrow">Apply</span>
+        <h2>Interested in this role.</h2>
+        <p>Applications go through ARTPARK Careers. Sign in with your ARTPARK profile and it is shared with the hiring team.</p>
+        <a class="btn btn-primary" href="${j.url}" target="_blank" rel="noopener">Apply on ARTPARK Careers <span class="arrow">↗</span></a>
+        <dl>${roleFacts(j).map(([k, v]) => `<div><dt>${k}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>
+      </div>
+    </aside>
+  </div>
+  <div class="role-bar"><div><b>${esc(j.title)}</b><span>${esc(j.company)}</span></div><a class="btn btn-primary" href="${j.url}" target="_blank" rel="noopener">Apply <span class="arrow">↗</span></a></div>
+  <section class="role-more">
+    <div style="max-width:1180px;margin:0 auto;padding:0 24px">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:12px"><h2>More open roles.</h2><a href="${R.careers}" class="fx-link">See all ${C.jobs.length} roles <span class="arrow">→</span></a></div>
+      <div class="job-grid">
+${more.map((o) => `        <a class="job-card role-mini" href="${R.careers}/${o.slug}"><div class="job-top"><span class="job-pill is-${o.atArtpark ? 'artpark' : 'startup'}">${o.atArtpark ? 'ARTPARK team' : 'TIR startup'}</span><span class="job-ago">${ago(o.postedAt)}</span></div><div class="job-co"><b>${esc(o.company)}</b></div><h3>${esc(o.title)}</h3><div class="job-meta">${esc([o.location, o.mode, o.type].join(' · '))}</div><span class="job-go">View role <span class="arrow">→</span></span></a>`).join('\n')}
+      </div>
+    </div>
+  </section>`,
+    });
+  },
+}));
+
+module.exports = [events, ...eventPages, news, tenders, careers, ...rolePages, partnerships];
