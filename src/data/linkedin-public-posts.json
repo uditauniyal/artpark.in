@@ -1,0 +1,1360 @@
+{
+  "selectors": {
+    "articles": 12,
+    "urnNodes": 12
+  },
+  "posts": [
+    {
+      "class": "relative px-2 pb-0 bg-color-background-container\n        container-lined\n        pt-1.5 main-feed-activity-card\n          \n           papabear:max-w-[550px]",
+      "urn": "urn:li:activity:7519293051253510144",
+      "text": "\n\n      \n        \n\n      \n        \n          \n            \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n          \n            \n      \n      \n          \n      \n        \n            \n              ARTPARK\n            \n        \n\n            \n                28,754 followers\n            \n\n              \n                  \n                    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n      16h\n  \n                      \n                      \n                        Edited\n                      \n                  \n              \n                \n\n    \n  \n        \n        \n          \n              \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n      \n        \n\n    \n\n    \n          \n            \n              \n            \n          \n\n        \n          \n              \n\n                \n                  \n\n    \n    \n\n    \n\n    \n\n    \n        \n                      \n                      \n                      Report this post\n                    \n    \n\n  \n                \n          \n        \n\n    \n  \n\n      \n  \n        \n      \n\n      \n            \n            \n  \n    Our Technology Innovators in Residence are building across predictive maintenance AI, biosensor diagnostics, wireless network controllers, marine propulsion, and innovation program management — and they are looking for people to build with them.\n\nMultiple roles open right now across engineering, research, and operations. All based in Bengaluru. All working directly with founders on real problems.\n→ AI/ML Research Intern — AxD\n→ Research Associate, Biosensors and Optical Instrumentation — Natheon\n→ Network Engineer — Adwiser\n→ CFD Engineer, Hydrodynamics — HEED\n\nExplore all roles and apply at artparkcareers.in\n\nMihir Deshmukh | Maithili Deshmukh | Katyayanee Sharma | Shivam Vinayak | Ratheesh M. Yogananda | Sumangal Paul.E \n\n#Hiring #ARTPARK #IISc #TIR #DeepTech #Bengaluru #NowHiring #StartupJobs #Engineering #AI\n  \n\n\n\n        \n\n        \n            \n      \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n\n  \n  \n                  \n\n      \n          \n    \n        \n\n      \n          \n      \n\n    \n\n    \n\n    \n\n  \n    \n        \n\n      \n            \n      \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n\n      \n            \n      \n        \n                    \n\n              \n                    31\n              \n            \n      \n  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n            \n      \n        \n                1 Comment\n            \n      \n  \n      \n  \n  \n        \n\n      \n                \n    \n    \n    \n\n    \n      \n  \n    \n    \n    \n      Like\n    \n  \n\n        \n  \n    \n    \n    \n      Comment\n    \n  \n\n        \n  \n    \n    \n    \n      Share\n    \n  \n\n        \n                  \n    \n  \n                      \n\n      \n        \n\n      \n              \n      \n    \n        \n    ",
+      "links": [
+        {
+          "url": "https://in.linkedin.com/company/artpark-in?trk=organization_guest_main-feed-card_feed-actor-image",
+          "text": ""
+        },
+        {
+          "url": "https://in.linkedin.com/company/artpark-in?trk=organization_guest_main-feed-card_feed-actor-name",
+          "text": "ARTPARK"
+        },
+        {
+          "url": "/uas/login?fromSignIn=true&session_redirect=https%3A%2F%2Fin.linkedin.com%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=POST&_f=guest-reporting",
+          "text": "Report this post"
+        },
+        {
+          "url": "http://artparkcareers.in?trk=organization_guest_main-feed-card-text",
+          "text": "artparkcareers.in"
+        },
+        {
+          "url": "https://in.linkedin.com/in/mihir-deshmukh-axd?trk=organization_guest_main-feed-card-text",
+          "text": "Mihir Deshmukh"
+        },
+        {
+          "url": "https://in.linkedin.com/in/maithili-deshmukh?trk=organization_guest_main-feed-card-text",
+          "text": "Maithili Deshmukh"
+        },
+        {
+          "url": "https://in.linkedin.com/in/dr-katyayanee?trk=organization_guest_main-feed-card-text",
+          "text": "Katyayanee Sharma"
+        },
+        {
+          "url": "https://in.linkedin.com/in/shivamvinayak?trk=organization_guest_main-feed-card-text",
+          "text": "Shivam Vinayak"
+        },
+        {
+          "url": "https://in.linkedin.com/in/ratheesh-my?trk=organization_guest_main-feed-card-text",
+          "text": "Ratheesh M. Yogananda"
+        },
+        {
+          "url": "https://in.linkedin.com/in/sumangal-paul-e-a5774778?trk=organization_guest_main-feed-card-text",
+          "text": "Sumangal Paul.E"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fhiring&trk=organization_guest_main-feed-card-text",
+          "text": "#Hiring"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fartpark&trk=organization_guest_main-feed-card-text",
+          "text": "#ARTPARK"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fiisc&trk=organization_guest_main-feed-card-text",
+          "text": "#IISc"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Ftir&trk=organization_guest_main-feed-card-text",
+          "text": "#TIR"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fdeeptech&trk=organization_guest_main-feed-card-text",
+          "text": "#DeepTech"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fbengaluru&trk=organization_guest_main-feed-card-text",
+          "text": "#Bengaluru"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fnowhiring&trk=organization_guest_main-feed-card-text",
+          "text": "#NowHiring"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fstartupjobs&trk=organization_guest_main-feed-card-text",
+          "text": "#StartupJobs"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fengineering&trk=organization_guest_main-feed-card-text",
+          "text": "#Engineering"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fai&trk=organization_guest_main-feed-card-text",
+          "text": "#AI"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_social-actions-reactions",
+          "text": "31"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_social-actions-comments",
+          "text": "1 Comment"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_like-cta",
+          "text": "Like"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_comment-cta",
+          "text": "Comment"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_share-cta",
+          "text": "Share"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D560BAQGIRKRmXnjbmQ/company-logo_100_100/B56ZyYbPmuHQAU-/0/1772083805079/artpark_in_logo?e=2147483647&v=beta&t=YoBkaBzNWCBVUEy3jXq63NxzNwNCbH7Z1x6aSDwaYPE",
+          "alt": "View organization page for ARTPARK"
+        },
+        {
+          "url": "https://static.licdn.com/aero-v1/sc/h/bn39hirwzjqj18ej1fkz55671",
+          "alt": ""
+        }
+      ]
+    },
+    {
+      "class": "relative px-2 pb-0 bg-color-background-container\n        container-lined\n        pt-1.5 main-feed-activity-card\n          \n           papabear:max-w-[550px]",
+      "urn": "urn:li:activity:7519287141550489600",
+      "text": "\n\n      \n        \n\n      \n        \n          \n            \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n          \n            \n      \n      \n          \n      \n        \n            \n              ARTPARK\n            \n        \n\n            \n                28,754 followers\n            \n\n              \n                  \n                    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n      17h\n  \n                  \n              \n                \n\n    \n  \n        \n        \n          \n              \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n      \n        \n\n    \n\n    \n          \n            \n              \n            \n          \n\n        \n          \n              \n\n                \n                  \n\n    \n    \n\n    \n\n    \n\n    \n        \n                      \n                      \n                      Report this post\n                    \n    \n\n  \n                \n          \n        \n\n    \n  \n\n      \n  \n        \n      \n\n      \n            \n            \n  \n    How do you know an AI agent is ready before a frontline health worker starts relying on its answers?\n\nOur ML team at ARTPARK IISc built Calibrate for exactly this. It's an open-source evaluation tool made for nonprofits, and it's how we test our own agents.\n\nToday, Jigar Doshi (ML Director) and Aman Dalmia (Principal ML Engineer) will demo it live. We're co-hosting the session with the^deltathe^delta as part of Pragati AI for Impact.\nWith Calibrate, a nonprofit team can:\n• Run evaluations without writing code, so program and domain experts judge agent quality themselves\n• Build AI judges and check them against expert labels before letting them grade responses automatically\n• Test across whichever model or provider they already use\n\nFriday 23 October, 2:30 to 3:30 PM IST, on Zoom. The link is in the^delta's post below.\nBuilding or piloting an AI agent? Join us, and bring your toughest testing question for Jigar and Aman.\n\n#ARTPARK #AIEvaluation #AIforGood #OpenSource #DigitalHealth\n  \n\n\n\n        \n\n        \n            \n      \n    \n      \n        \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n          \n            \n      \n      \n          \n      \n        \n            \n              the^delta\n            \n        \n\n            \n                4,586 followers\n            \n\n              \n                  \n                    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n      18h\n  \n                      \n                      \n                        Edited\n                      \n                  \n              \n                \n\n    \n  \n\n        \n            \n  \n    More nonprofits are building AI agents for health, education and agriculture. But how do you know an agent works reliably before a health worker, farmer or student starts depending on it?\n\nAs part of Pragati AI for Impact, the^delta and ARTPARK, Indian Institute of Science (IISc) are hosting Calibrate: Testing and Improving AI Agents in Non-Profits, a practical masterclass on evaluating and improving agent performance.\n\nLed by Jigar Doshi, ML Director, and Aman Dalmia, Principal ML Engineer, at ARTPARK, the session will show how their team tests its own agents and how yours can do the same.\n\nThe session will cover:\n\n• Testing before and after deployment, including common mistakes to avoid.\n• Creating evaluations and strengthening them with harder test cases and real-world failures.\n• Integrating testing into development and monitoring quality once agents are in use.\n• Using Calibrate with AI tools such as Claude to turn evaluation results into specific fixes.\n\nYou’ll also see a live demo of Calibrate, ARTPARK’s open-source evaluation tool, to help you get started.\n\n Today, Friday, 23 October 2026\n 2:30–3:30 PM IST\n Join on Zoom: https://bit.ly/4kaBc86\n\nBuilding or piloting AI for social impact? Bring your questions for Jigar and Aman, and tag a colleague who would find this useful.\n  \n\n\n\n        \n      \n    \n    \n    \n\n      \n              \n                  \n              \n      \n  \n  \n      \n  \n  \n                  \n\n      \n          \n    \n        \n\n      \n          \n      \n\n    \n\n    \n\n    \n\n  \n    \n        \n\n      \n            \n      \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n\n      \n            \n      \n        \n                    \n\n              \n                    13\n              \n            \n      \n  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n      \n  \n  \n        \n\n      \n                \n    \n    \n    \n\n    \n      \n  \n    \n    \n    \n      Like\n    \n  \n\n        \n  \n    \n    \n    \n      Comment\n    \n  \n\n        \n  \n    \n    \n    \n      Share\n    \n  \n\n        \n                  \n    \n  \n                      \n\n      \n        \n\n      \n              \n      \n    \n        \n    ",
+      "links": [
+        {
+          "url": "https://in.linkedin.com/company/artpark-in?trk=organization_guest_main-feed-card_feed-actor-image",
+          "text": ""
+        },
+        {
+          "url": "https://in.linkedin.com/company/artpark-in?trk=organization_guest_main-feed-card_feed-actor-name",
+          "text": "ARTPARK"
+        },
+        {
+          "url": "/uas/login?fromSignIn=true&session_redirect=https%3A%2F%2Fin.linkedin.com%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=POST&_f=guest-reporting",
+          "text": "Report this post"
+        },
+        {
+          "url": "https://in.linkedin.com/in/jigarkdoshi?trk=organization_guest_main-feed-card-text",
+          "text": "Jigar Doshi"
+        },
+        {
+          "url": "https://in.linkedin.com/in/aman-dalmia?trk=organization_guest_main-feed-card-text",
+          "text": "Aman Dalmia"
+        },
+        {
+          "url": "https://in.linkedin.com/company/the-delta-org?trk=organization_guest_main-feed-card-text",
+          "text": "the^delta"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fartpark&trk=organization_guest_main-feed-card-text",
+          "text": "#ARTPARK"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Faievaluation&trk=organization_guest_main-feed-card-text",
+          "text": "#AIEvaluation"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Faiforgood&trk=organization_guest_main-feed-card-text",
+          "text": "#AIforGood"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fopensource&trk=organization_guest_main-feed-card-text",
+          "text": "#OpenSource"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fdigitalhealth&trk=organization_guest_main-feed-card-text",
+          "text": "#DigitalHealth"
+        },
+        {
+          "url": "https://in.linkedin.com/company/the-delta-org?trk=organization_guest_main-feed-card_reshare_feed-actor-image",
+          "text": ""
+        },
+        {
+          "url": "https://in.linkedin.com/company/the-delta-org?trk=organization_guest_main-feed-card_reshare_feed-actor-name",
+          "text": "the^delta"
+        },
+        {
+          "url": "https://in.linkedin.com/company/artpark-in?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "ARTPARK"
+        },
+        {
+          "url": "https://in.linkedin.com/school/indian-institute-of-science/?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "Indian Institute of Science (IISc)"
+        },
+        {
+          "url": "https://in.linkedin.com/in/jigarkdoshi?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "Jigar Doshi"
+        },
+        {
+          "url": "https://in.linkedin.com/in/aman-dalmia?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "Aman Dalmia"
+        },
+        {
+          "url": "https://bit.ly/4kaBc86?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "https://bit.ly/4kaBc86"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_social-actions-reactions",
+          "text": "13"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_like-cta",
+          "text": "Like"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_comment-cta",
+          "text": "Comment"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_share-cta",
+          "text": "Share"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D560BAQGIRKRmXnjbmQ/company-logo_100_100/B56ZyYbPmuHQAU-/0/1772083805079/artpark_in_logo?e=2147483647&v=beta&t=YoBkaBzNWCBVUEy3jXq63NxzNwNCbH7Z1x6aSDwaYPE",
+          "alt": "View organization page for ARTPARK"
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4E0BAQFdAEM2QQq8uA/company-logo_100_100/B4EZbT7i5KHMAY-/0/1747312324689/the_delta_org_logo?e=2147483647&v=beta&t=qIGFgDZh6-P0VuFaqfIr2Yj789_zohesnKCT0o-X5UE",
+          "alt": "View organization page for the^delta"
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D5622AQG60cNYU4ZOrQ/feedshare-image-high-res/B56aFnVLz6GoAU-/0/1792734969379?e=2147483647&v=beta&t=rmb5_uENHapN7jZErRPhPhuNEoacbFvZv_A-MzyqtU0",
+          "alt": "No alternative text description for this image"
+        },
+        {
+          "url": "https://static.licdn.com/aero-v1/sc/h/bn39hirwzjqj18ej1fkz55671",
+          "alt": ""
+        }
+      ]
+    },
+    {
+      "class": "relative pt-1.5 px-2 pb-1 mb-1 babybear:pt-0.5 babybear:pb-0 babybear:mb-0\n          container-lined\n          bg-color-background-container\n          feed-reshare-content",
+      "urn": "urn:li:activity:7519275460715962368",
+      "text": "\n        \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n          \n            \n      \n      \n          \n      \n        \n            \n              the^delta\n            \n        \n\n            \n                4,586 followers\n            \n\n              \n                  \n                    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n      18h\n  \n                      \n                      \n                        Edited\n                      \n                  \n              \n                \n\n    \n  \n\n        \n            \n  \n    More nonprofits are building AI agents for health, education and agriculture. But how do you know an agent works reliably before a health worker, farmer or student starts depending on it?\n\nAs part of Pragati AI for Impact, the^delta and ARTPARK, Indian Institute of Science (IISc) are hosting Calibrate: Testing and Improving AI Agents in Non-Profits, a practical masterclass on evaluating and improving agent performance.\n\nLed by Jigar Doshi, ML Director, and Aman Dalmia, Principal ML Engineer, at ARTPARK, the session will show how their team tests its own agents and how yours can do the same.\n\nThe session will cover:\n\n• Testing before and after deployment, including common mistakes to avoid.\n• Creating evaluations and strengthening them with harder test cases and real-world failures.\n• Integrating testing into development and monitoring quality once agents are in use.\n• Using Calibrate with AI tools such as Claude to turn evaluation results into specific fixes.\n\nYou’ll also see a live demo of Calibrate, ARTPARK’s open-source evaluation tool, to help you get started.\n\n Today, Friday, 23 October 2026\n 2:30–3:30 PM IST\n Join on Zoom: https://bit.ly/4kaBc86\n\nBuilding or piloting AI for social impact? Bring your questions for Jigar and Aman, and tag a colleague who would find this useful.\n  \n\n\n\n        \n      \n    \n    \n    \n\n      \n              \n                  \n              \n      \n  \n  \n      ",
+      "links": [
+        {
+          "url": "https://in.linkedin.com/company/the-delta-org?trk=organization_guest_main-feed-card_reshare_feed-actor-image",
+          "text": ""
+        },
+        {
+          "url": "https://in.linkedin.com/company/the-delta-org?trk=organization_guest_main-feed-card_reshare_feed-actor-name",
+          "text": "the^delta"
+        },
+        {
+          "url": "https://in.linkedin.com/company/artpark-in?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "ARTPARK"
+        },
+        {
+          "url": "https://in.linkedin.com/school/indian-institute-of-science/?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "Indian Institute of Science (IISc)"
+        },
+        {
+          "url": "https://in.linkedin.com/in/jigarkdoshi?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "Jigar Doshi"
+        },
+        {
+          "url": "https://in.linkedin.com/in/aman-dalmia?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "Aman Dalmia"
+        },
+        {
+          "url": "https://bit.ly/4kaBc86?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "https://bit.ly/4kaBc86"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4E0BAQFdAEM2QQq8uA/company-logo_100_100/B4EZbT7i5KHMAY-/0/1747312324689/the_delta_org_logo?e=2147483647&v=beta&t=qIGFgDZh6-P0VuFaqfIr2Yj789_zohesnKCT0o-X5UE",
+          "alt": "View organization page for the^delta"
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D5622AQG60cNYU4ZOrQ/feedshare-image-high-res/B56aFnVLz6GoAU-/0/1792734969379?e=2147483647&v=beta&t=rmb5_uENHapN7jZErRPhPhuNEoacbFvZv_A-MzyqtU0",
+          "alt": "No alternative text description for this image"
+        }
+      ]
+    },
+    {
+      "class": "relative px-2 pb-0 bg-color-background-container\n        container-lined\n        pt-1.5 main-feed-activity-card\n          \n           papabear:max-w-[550px]",
+      "urn": "urn:li:activity:7519259398595194881",
+      "text": "\n\n      \n              \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n\n    \n          ARTPARK reposted this\n    \n  \n                    \n\n      \n        \n          \n            \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n          \n            \n      \n      \n          \n      \n        \n            \n              MWire Labs\n            \n        \n\n            \n                279 followers\n            \n\n              \n                  \n                    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n      1d\n  \n                  \n              \n                \n\n    \n  \n        \n        \n          \n              \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n      \n        \n\n    \n\n    \n          \n            \n              \n            \n          \n\n        \n          \n              \n\n                \n                  \n\n    \n    \n\n    \n\n    \n\n    \n        \n                      \n                      \n                      Report this post\n                    \n    \n\n  \n                \n          \n        \n\n    \n  \n\n      \n  \n        \n      \n\n      \n            \n            \n  \n    At Google’s Lab to Impact in Delhi, MWire Labs demonstrated our Garo speech-to-text model live.\n\nWe released it in February this year as the first publicly available Garo speech-to-text model. It was fine-tuned, evaluated and open-sourced by our team in Shillong. It cut character error rate by 97.5% relative to the zero-shot baseline, using conversational speech data from Project Vaani at ARTPARK.\n\nIt is part of a broader effort to give voice to the ignored languages of Northeast India.\n\nThe model is now being deployed across projects in Meghalaya. We hope to share the impact stories soon.\n\nThe event was also a great chance to meet the Project Vaani team and discuss further collaboration on low-resource languages.\n\nBadal Nyalang Chelang Pala Suryansh Shukla Sujith P\n  \n\n\n\n        \n\n        \n            \n      \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n\n  \n  \n                  \n\n      \n          \n    \n        \n\n      \n          \n      \n\n    \n\n    \n\n    \n\n  \n    \n        \n\n      \n            \n      \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n\n      \n            \n      \n        \n                    \n                    \n                    \n\n              \n                    23\n              \n            \n      \n  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n      \n  \n  \n        \n\n      \n                \n    \n    \n    \n\n    \n      \n  \n    \n    \n    \n      Like\n    \n  \n\n        \n  \n    \n    \n    \n      Comment\n    \n  \n\n        \n  \n    \n    \n    \n      Share\n    \n  \n\n        \n                  \n    \n  \n                      \n\n      \n        \n\n      \n              \n      \n    \n        \n    ",
+      "links": [
+        {
+          "url": "https://in.linkedin.com/company/artpark-in?trk=organization_guest_main-feed-card_feed-reaction-header",
+          "text": "ARTPARK"
+        },
+        {
+          "url": "https://in.linkedin.com/company/mwirelabs?trk=organization_guest_main-feed-card_feed-actor-image",
+          "text": ""
+        },
+        {
+          "url": "https://in.linkedin.com/company/mwirelabs?trk=organization_guest_main-feed-card_feed-actor-name",
+          "text": "MWire Labs"
+        },
+        {
+          "url": "/uas/login?fromSignIn=true&session_redirect=https%3A%2F%2Fin.linkedin.com%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=POST&_f=guest-reporting",
+          "text": "Report this post"
+        },
+        {
+          "url": "https://in.linkedin.com/company/mwirelabs?trk=organization_guest_main-feed-card-text",
+          "text": "MWire Labs"
+        },
+        {
+          "url": "https://in.linkedin.com/company/artpark-in?trk=organization_guest_main-feed-card-text",
+          "text": "ARTPARK"
+        },
+        {
+          "url": "https://in.linkedin.com/in/badal-nyalang?trk=organization_guest_main-feed-card-text",
+          "text": "Badal Nyalang"
+        },
+        {
+          "url": "https://in.linkedin.com/in/chelang-pala-5b5039106?trk=organization_guest_main-feed-card-text",
+          "text": "Chelang Pala"
+        },
+        {
+          "url": "https://in.linkedin.com/in/suryansh-shukla-382935269?trk=organization_guest_main-feed-card-text",
+          "text": "Suryansh Shukla"
+        },
+        {
+          "url": "https://in.linkedin.com/in/sujith-p-204a5a25?trk=organization_guest_main-feed-card-text",
+          "text": "Sujith P"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_social-actions-reactions",
+          "text": "23"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_like-cta",
+          "text": "Like"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_comment-cta",
+          "text": "Comment"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_share-cta",
+          "text": "Share"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D560BAQGRY9hvuOzkFg/company-logo_100_100/B56ZprfMWWIsAQ-/0/1762739931102/mwirelabs_logo?e=2147483647&v=beta&t=T46-5ZTEKU7LE4SgnGc6vrFk4kF-vA8FPDfXPo2ibx8",
+          "alt": "View organization page for MWire Labs"
+        },
+        {
+          "url": "https://static.licdn.com/aero-v1/sc/h/bn39hirwzjqj18ej1fkz55671",
+          "alt": ""
+        },
+        {
+          "url": "https://static.licdn.com/aero-v1/sc/h/2tzoeodxy0zug4455msr0oq0v",
+          "alt": ""
+        },
+        {
+          "url": "https://static.licdn.com/aero-v1/sc/h/asiqslyf4ooq7ggllg4fyo4o2",
+          "alt": ""
+        }
+      ]
+    },
+    {
+      "class": "relative px-2 pb-0 bg-color-background-container\n        container-lined\n        pt-1.5 main-feed-activity-card\n          \n           papabear:max-w-[550px]",
+      "urn": "urn:li:activity:7518609070220632064",
+      "text": "\n\n      \n        \n\n      \n        \n          \n            \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n          \n            \n      \n      \n          \n      \n        \n            \n              ARTPARK\n            \n        \n\n            \n                28,754 followers\n            \n\n              \n                  \n                    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n      2d\n  \n                  \n              \n                \n\n    \n  \n        \n        \n          \n              \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n      \n        \n\n    \n\n    \n          \n            \n              \n            \n          \n\n        \n          \n              \n\n                \n                  \n\n    \n    \n\n    \n\n    \n\n    \n        \n                      \n                      \n                      Report this post\n                    \n    \n\n  \n                \n          \n        \n\n    \n  \n\n      \n  \n        \n      \n\n      \n            \n            \n  \n    Aman Dalmia from ARTPARK, IISc spoke at IndiaFOSS 2026, one of the largest gatherings of India’s open-source community, about Calibrate. Calibrate is an open-source tool for evaluating AI systems, used by nonprofits in India and Africa across education, agriculture and health to make sure their AI products work reliably.\nUsing a voice agent that fills public health forms as a case study, the talk walks through how to evaluate AI systems so they can be trusted:\n\nWriting unit tests for the different scenarios an agent needs to handle\nThe challenge of evaluating free text, and how LLMs can be used to evaluate other LLMs\nComparing models on quality, cost and speed to find a deployable configuration\nPreventing regressions and catching mistakes before they reach end users\nContinuously monitoring an agent’s quality in production and adding errors back to grow the evaluation dataset\n\nWatch the full talk: https://lnkd.in/gsrcZMAm\n\nFOSS United #IndiaFOSS #OpenSource #AIEvaluation\n          \n            \n                  \n    \n\n    \n      …more\n    \n  \n              \n          \n  \n\n\n\n        \n\n        \n            \n      \n    \n    \n    \n      \n        \n          \n    \n\n      \n  \n\n        \n            \n              \n  \n    Evaluating and monitoring AI agents in non-profits with Calibrate | IndiaFOSS\n  \n\n            \n\n            \n              https://www.youtube.com/\n            \n        \n    \n      \n  \n  \n\n  \n  \n                  \n\n      \n          \n    \n        \n\n      \n          \n      \n\n    \n\n    \n\n    \n\n  \n    \n        \n\n      \n            \n      \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n\n      \n            \n      \n        \n                    \n                    \n\n              \n                    11\n              \n            \n      \n  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n      \n  \n  \n        \n\n      \n                \n    \n    \n    \n\n    \n      \n  \n    \n    \n    \n      Like\n    \n  \n\n        \n  \n    \n    \n    \n      Comment\n    \n  \n\n        \n  \n    \n    \n    \n      Share\n    \n  \n\n        \n                  \n    \n  \n                      \n\n      \n        \n\n      \n              \n      \n    \n        \n    ",
+      "links": [
+        {
+          "url": "https://in.linkedin.com/company/artpark-in?trk=organization_guest_main-feed-card_feed-actor-image",
+          "text": ""
+        },
+        {
+          "url": "https://in.linkedin.com/company/artpark-in?trk=organization_guest_main-feed-card_feed-actor-name",
+          "text": "ARTPARK"
+        },
+        {
+          "url": "/uas/login?fromSignIn=true&session_redirect=https%3A%2F%2Fin.linkedin.com%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=POST&_f=guest-reporting",
+          "text": "Report this post"
+        },
+        {
+          "url": "https://in.linkedin.com/in/aman-dalmia?trk=organization_guest_main-feed-card-text",
+          "text": "Aman Dalmia"
+        },
+        {
+          "url": "https://lnkd.in/gsrcZMAm?trk=organization_guest_main-feed-card-text",
+          "text": "https://lnkd.in/gsrcZMAm"
+        },
+        {
+          "url": "https://in.linkedin.com/company/fossunited?trk=organization_guest_main-feed-card-text",
+          "text": "FOSS United"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Findiafoss&trk=organization_guest_main-feed-card-text",
+          "text": "#IndiaFOSS"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fopensource&trk=organization_guest_main-feed-card-text",
+          "text": "#OpenSource"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Faievaluation&trk=organization_guest_main-feed-card-text",
+          "text": "#AIEvaluation"
+        },
+        {
+          "url": "https://www.linkedin.com/redir/redirect?url=https%3A%2F%2Fwww%2Eyoutube%2Ecom%2Fwatch%3Fv%3DdBmuwQRixjk&urlhash=9Hvv&trk=organization_guest_main-feed-card_ingested-content-summary-external-video-content",
+          "text": "Evaluating and monitoring AI agents in non-profits with Calibrate | IndiaFOSS"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_social-actions-reactions",
+          "text": "11"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_like-cta",
+          "text": "Like"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_comment-cta",
+          "text": "Comment"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_share-cta",
+          "text": "Share"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D560BAQGIRKRmXnjbmQ/company-logo_100_100/B56ZyYbPmuHQAU-/0/1772083805079/artpark_in_logo?e=2147483647&v=beta&t=YoBkaBzNWCBVUEy3jXq63NxzNwNCbH7Z1x6aSDwaYPE",
+          "alt": "View organization page for ARTPARK"
+        },
+        {
+          "url": "https://static.licdn.com/aero-v1/sc/h/bn39hirwzjqj18ej1fkz55671",
+          "alt": ""
+        },
+        {
+          "url": "https://static.licdn.com/aero-v1/sc/h/asiqslyf4ooq7ggllg4fyo4o2",
+          "alt": ""
+        }
+      ]
+    },
+    {
+      "class": "relative px-2 pb-0 bg-color-background-container\n        container-lined\n        pt-1.5 main-feed-activity-card\n          \n           papabear:max-w-[550px]",
+      "urn": "urn:li:activity:7518507676536856576",
+      "text": "\n\n      \n        \n\n      \n        \n          \n            \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n          \n            \n      \n      \n          \n      \n        \n            \n              ARTPARK\n            \n        \n\n            \n                28,754 followers\n            \n\n              \n                  \n                    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n      2d\n  \n                  \n              \n                \n\n    \n  \n        \n        \n          \n              \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n      \n        \n\n    \n\n    \n          \n            \n              \n            \n          \n\n        \n          \n              \n\n                \n                  \n\n    \n    \n\n    \n\n    \n\n    \n        \n                      \n                      \n                      Report this post\n                    \n    \n\n  \n                \n          \n        \n\n    \n  \n\n      \n  \n        \n      \n\n      \n            \n            \n  \n    Our portfolio startups are actively building across Al, robotics, defence, agritech, aerospace, and industrial automation - and several are raising rounds right now.\n\nThe ARTPARK VC and Corporate Open Day is where investors and corporate partners come to meet the founders in person, walk the facility, and take conversations forward. Real access, real teams, real technology.\n\n📅 October 22, 2026 \n⏱️ 10:30 AM to 1:00 PM\n📍 ARTGarage, Jalahalli, Bengaluru\nSpots are limited and subject to approval. \n\nRegister now: https://lnkd.in/gDA9pC4U \n\n#ARTPARKOpenDay #ARTPARK #ARTGarage #DeepTech #VentureCapital #Investors #IISc #StartupIndia\n\nBharadwaj Amrutur | Raghu Dharmaraju | Nirav D. | M.N. Saquib Khan | Manjunath M K | Akshay K.\n  \n\n\n\n        \n\n        \n            \n      \n    \n    \n    \n\n      \n              \n                  \n              \n      \n  \n  \n                  \n\n      \n          \n    \n        \n\n      \n          \n      \n\n    \n\n    \n\n    \n\n  \n    \n        \n\n      \n            \n      \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n\n      \n            \n      \n        \n                    \n                    \n\n              \n                    41\n              \n            \n      \n  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n      \n  \n  \n        \n\n      \n                \n    \n    \n    \n\n    \n      \n  \n    \n    \n    \n      Like\n    \n  \n\n        \n  \n    \n    \n    \n      Comment\n    \n  \n\n        \n  \n    \n    \n    \n      Share\n    \n  \n\n        \n                  \n    \n  \n                      \n\n      \n        \n\n      \n              \n      \n    \n        \n    ",
+      "links": [
+        {
+          "url": "https://in.linkedin.com/company/artpark-in?trk=organization_guest_main-feed-card_feed-actor-image",
+          "text": ""
+        },
+        {
+          "url": "https://in.linkedin.com/company/artpark-in?trk=organization_guest_main-feed-card_feed-actor-name",
+          "text": "ARTPARK"
+        },
+        {
+          "url": "/uas/login?fromSignIn=true&session_redirect=https%3A%2F%2Fin.linkedin.com%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=POST&_f=guest-reporting",
+          "text": "Report this post"
+        },
+        {
+          "url": "https://lnkd.in/gDA9pC4U?trk=organization_guest_main-feed-card-text",
+          "text": "https://lnkd.in/gDA9pC4U"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fartparkopenday&trk=organization_guest_main-feed-card-text",
+          "text": "#ARTPARKOpenDay"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fartpark&trk=organization_guest_main-feed-card-text",
+          "text": "#ARTPARK"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fartgarage&trk=organization_guest_main-feed-card-text",
+          "text": "#ARTGarage"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fdeeptech&trk=organization_guest_main-feed-card-text",
+          "text": "#DeepTech"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fventurecapital&trk=organization_guest_main-feed-card-text",
+          "text": "#VentureCapital"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Finvestors&trk=organization_guest_main-feed-card-text",
+          "text": "#Investors"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fiisc&trk=organization_guest_main-feed-card-text",
+          "text": "#IISc"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fstartupindia&trk=organization_guest_main-feed-card-text",
+          "text": "#StartupIndia"
+        },
+        {
+          "url": "https://in.linkedin.com/in/amrutur?trk=organization_guest_main-feed-card-text",
+          "text": "Bharadwaj Amrutur"
+        },
+        {
+          "url": "https://in.linkedin.com/in/raghuramd?trk=organization_guest_main-feed-card-text",
+          "text": "Raghu Dharmaraju"
+        },
+        {
+          "url": "https://in.linkedin.com/in/niravdedhia?trk=organization_guest_main-feed-card-text",
+          "text": "Nirav D."
+        },
+        {
+          "url": "https://in.linkedin.com/in/mnsaquibkhan?trk=organization_guest_main-feed-card-text",
+          "text": "M.N. Saquib Khan"
+        },
+        {
+          "url": "https://in.linkedin.com/in/manjunath-mk-51660411?trk=organization_guest_main-feed-card-text",
+          "text": "Manjunath M K"
+        },
+        {
+          "url": "https://in.linkedin.com/in/akshayatri?trk=organization_guest_main-feed-card-text",
+          "text": "Akshay K."
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_social-actions-reactions",
+          "text": "41"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_like-cta",
+          "text": "Like"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_comment-cta",
+          "text": "Comment"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_share-cta",
+          "text": "Share"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D560BAQGIRKRmXnjbmQ/company-logo_100_100/B56ZyYbPmuHQAU-/0/1772083805079/artpark_in_logo?e=2147483647&v=beta&t=YoBkaBzNWCBVUEy3jXq63NxzNwNCbH7Z1x6aSDwaYPE",
+          "alt": "View organization page for ARTPARK"
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D5622AQF3eRhVKwkp_A/feedshare-shrink_800/B56aFca49DIQAc-/0/1792551915623?e=2147483647&v=beta&t=lO-xE4TeYyPO2B5Q0yPkF65A7407uolbQfwqszEofdY",
+          "alt": "No alternative text description for this image"
+        },
+        {
+          "url": "https://static.licdn.com/aero-v1/sc/h/bn39hirwzjqj18ej1fkz55671",
+          "alt": ""
+        },
+        {
+          "url": "https://static.licdn.com/aero-v1/sc/h/2tzoeodxy0zug4455msr0oq0v",
+          "alt": ""
+        }
+      ]
+    },
+    {
+      "class": "relative px-2 pb-0 bg-color-background-container\n        container-lined\n        pt-1.5 main-feed-activity-card\n          \n           papabear:max-w-[550px]",
+      "urn": "urn:li:activity:7517876854230310912",
+      "text": "\n\n      \n              \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n\n    \n          ARTPARK reposted this\n    \n  \n                    \n\n      \n        \n          \n            \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n          \n            \n      \n      \n          \n      \n        \n            \n              Jigar Doshi\n            \n        \n\n\n              \n                  \n                    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n      1w\n  \n                      \n                      \n                        Edited\n                      \n                  \n              \n                \n\n    \n  \n        \n        \n          \n              \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n      \n        \n\n    \n\n    \n          \n            \n              \n            \n          \n\n        \n          \n              \n\n                \n                  \n\n    \n    \n\n    \n\n    \n\n    \n        \n                      \n                      \n                      Report this post\n                    \n    \n\n  \n                \n          \n        \n\n    \n  \n\n      \n  \n        \n      \n\n      \n            \n            \n  \n    We finally sat down to write up some of our work, and I'm pleasantly surprised by my statistical luck: of the five papers we submitted, four were accepted at NeurIPS 2026 workshops. What surprised me even more is how much reviewers appreciated careful, rigorous experimental work done before and after deployment, in the messy real world.\n\nAt SAHAI, our group at ARTPARK (IISc), we're building AI systems for frontline health workers. Together these papers cover three things: support on the job, removing digital drudgery, and structured learning.\n\n🩺 \"Scaling and Evaluation Across India: A High-Risk Pregnancy Chatbot for Community Health Workers.\" Sthitapragyan Parida, Saumitra Sharma, Sanskriti M., Jigar Doshi NeurIPS 2026 Workshop on GenAI4Health.\n\nThis is our most mature and scaled system. Through our partners ARMMAN, it reaches 1 to 1.5 million pregnant mothers every year. The paper looks back on two years of systematically evaluating it in the field.\n\n🛑 \"Semantically Identical, Clinically Opposite: A Negative Result on Semantic Caching in a Deployed Maternal-Health Assistant.\" Saumitra Sharma, Sthitapragyan Parida, Jigar Doshi. NeurIPS 2026 Workshop on GlobalSouthAI.\n\nSo many incoming questions looked alike that we thought, why not just match them to known answers, fast and cheap? We spent six months on it and then walked away, because we just couldn't make it safe enough. I love that the research community is open to this: this negative result got our highest-rated reviews.\n\n🗣️ \"Model Selection for Hindi Form-Filling Voice Agents Under Noisy Speech, Cost and Latency Constraints.\" Aman Dalmia, Sanskriti M., Jigar Doshi. NeurIPS 2026 Workshop on GlobalSouthAI.\n\nIndia's 2.5 million frontline health workers each spend 60 to 90 minutes a day filling in apps and forms. Adds up to about a billion hours a year, taken from a workforce that's already overworked. FormBharo is our attempt to give that time back by letting them fill forms once by voice. It's now in pilot with ARMMAN for antenatal care (ANC) visits. Full paper: https://lnkd.in/g9XHEJ-B Project Page: https://lnkd.in/g9WiDr6p\n\n🎭 \"Too Agreeable to Teach: Multi-Resolution Evaluation of Simulated Learners in AI-Facilitated Training.\" Chandan S Patil, Anugraha Raman, Jigar Doshi. NeurIPS 2026 Workshop on UserSim.\n\nWith CMHLP (Pune) and Atmiyata, we're piloting an AI mental-health trainer where an AI facilitator teaches alongside simulated peer learners. What we found is that simulated peers are too nice (not exactly sycophantic). The class seems to learn faster than a human one, but the AI is really just pushing the task forward while the learners don't actually progress. The lesson for us: if you want to evaluate learning, you have to track where the evidence comes from and whether each step forward is real.\n\nAll of this wouldn't have been possible without our incredible partners, funders and artpark team. Tagging them all below in chat and links to paper coming soon\n\n#NeurIPS2026\n  \n\n\n\n        \n\n        \n            \n      \n    \n    \n    \n\n      \n              \n                  \n              \n              \n                  \n              \n              \n                  \n              \n              \n                  \n              \n              \n                  \n              \n      \n  \n  \n                  \n\n      \n          \n    \n        \n\n      \n          \n      \n\n    \n\n    \n\n    \n\n  \n    \n        \n\n      \n            \n      \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n\n      \n            \n      \n        \n                    \n                    \n                    \n\n              \n                    101\n              \n            \n      \n  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n            \n      \n        \n                10 Comments\n            \n      \n  \n      \n  \n  \n        \n\n      \n                \n    \n    \n    \n\n    \n      \n  \n    \n    \n    \n      Like\n    \n  \n\n        \n  \n    \n    \n    \n      Comment\n    \n  \n\n        \n  \n    \n    \n    \n      Share\n    \n  \n\n        \n                  \n    \n  \n                      \n\n      \n        \n\n      \n              \n      \n    \n        \n    ",
+      "links": [
+        {
+          "url": "https://in.linkedin.com/company/artpark-in?trk=organization_guest_main-feed-card_feed-reaction-header",
+          "text": "ARTPARK"
+        },
+        {
+          "url": "https://in.linkedin.com/in/jigarkdoshi?trk=organization_guest_main-feed-card_feed-actor-image",
+          "text": ""
+        },
+        {
+          "url": "https://in.linkedin.com/in/jigarkdoshi?trk=organization_guest_main-feed-card_feed-actor-name",
+          "text": "Jigar Doshi"
+        },
+        {
+          "url": "/uas/login?fromSignIn=true&session_redirect=https%3A%2F%2Fin.linkedin.com%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=POST&_f=guest-reporting",
+          "text": "Report this post"
+        },
+        {
+          "url": "https://in.linkedin.com/company/artpark-in?trk=organization_guest_main-feed-card-text",
+          "text": "ARTPARK"
+        },
+        {
+          "url": "https://in.linkedin.com/in/saumitra-sharma?trk=organization_guest_main-feed-card-text",
+          "text": "Saumitra Sharma"
+        },
+        {
+          "url": "https://uk.linkedin.com/in/sanskriti-midha?trk=organization_guest_main-feed-card-text",
+          "text": "Sanskriti M."
+        },
+        {
+          "url": "https://in.linkedin.com/in/jigarkdoshi?trk=organization_guest_main-feed-card-text",
+          "text": "Jigar Doshi"
+        },
+        {
+          "url": "https://in.linkedin.com/company/armmanindia?trk=organization_guest_main-feed-card-text",
+          "text": "ARMMAN"
+        },
+        {
+          "url": "https://in.linkedin.com/in/saumitra-sharma?trk=organization_guest_main-feed-card-text",
+          "text": "Saumitra Sharma"
+        },
+        {
+          "url": "https://in.linkedin.com/in/jigarkdoshi?trk=organization_guest_main-feed-card-text",
+          "text": "Jigar Doshi"
+        },
+        {
+          "url": "https://in.linkedin.com/in/aman-dalmia?trk=organization_guest_main-feed-card-text",
+          "text": "Aman Dalmia"
+        },
+        {
+          "url": "https://uk.linkedin.com/in/sanskriti-midha?trk=organization_guest_main-feed-card-text",
+          "text": "Sanskriti M."
+        },
+        {
+          "url": "https://in.linkedin.com/in/jigarkdoshi?trk=organization_guest_main-feed-card-text",
+          "text": "Jigar Doshi"
+        },
+        {
+          "url": "https://lnkd.in/g9XHEJ-B?trk=organization_guest_main-feed-card-text",
+          "text": "https://lnkd.in/g9XHEJ-B"
+        },
+        {
+          "url": "https://lnkd.in/g9WiDr6p?trk=organization_guest_main-feed-card-text",
+          "text": "https://lnkd.in/g9WiDr6p"
+        },
+        {
+          "url": "https://in.linkedin.com/in/chandan-s-patil?trk=organization_guest_main-feed-card-text",
+          "text": "Chandan S Patil"
+        },
+        {
+          "url": "https://in.linkedin.com/in/anugraha-raman-9b48b71ba?trk=organization_guest_main-feed-card-text",
+          "text": "Anugraha Raman"
+        },
+        {
+          "url": "https://in.linkedin.com/in/jigarkdoshi?trk=organization_guest_main-feed-card-text",
+          "text": "Jigar Doshi"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fneurips2026&trk=organization_guest_main-feed-card-text",
+          "text": "#NeurIPS2026"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_social-actions-reactions",
+          "text": "101"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_social-actions-comments",
+          "text": "10 Comments"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_like-cta",
+          "text": "Like"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_comment-cta",
+          "text": "Comment"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_share-cta",
+          "text": "Share"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/C5603AQFD6qfFmcNKmQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1590734888252?e=2147483647&v=beta&t=84JvarfI68eQEaiQUrOQtRZ2VmqSGfa86k1B9YX8DDI",
+          "alt": "View profile for Jigar Doshi"
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D5622AQEfoDTchB3o4w/feedshare-image-high-res/B56aFFSLwmKsAY-/0/1792163757334?e=2147483647&v=beta&t=AsMA4qWB7B3Kr4KmgQAuXOm5oVLJ4ZgKbkfS8Dd_IFU",
+          "alt": "No alternative text description for this image"
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D5622AQGh-kKGOY--Xg/feedshare-shrink_1280/B56aFFSL51JEAU-/0/1792163758002?e=2147483647&v=beta&t=7xo3lloeEYq02dwsiRLkfR6bvmj11J0K9oOf5R5f4ZU",
+          "alt": "No alternative text description for this image"
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D5622AQHTxgZ86kj3dg/feedshare-image-high-res/B56aFFSLuCG0AU-/0/1792163757258?e=2147483647&v=beta&t=JwH63JjAIFe3TT-LscxIPRBSkweKnkCgPu4fZCpkxAQ",
+          "alt": "No alternative text description for this image"
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D5622AQH9U-nKuqeWRQ/feedshare-image-high-res/B56aFFSL7_JcAc-/0/1792163758155?e=2147483647&v=beta&t=eE1AZDge7wo3lx92m7o6fmSXa8fnrR0zVYN6R-Xjt5M",
+          "alt": "No alternative text description for this image"
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D5622AQFPZGerj0qo1g/feedshare-shrink_1280/B56aFFSL29JQAM-/0/1792163757753?e=2147483647&v=beta&t=FNuSs33ntGfSKlgXPgD_FihKsg-AaAfopMdGa0chAAI",
+          "alt": "No alternative text description for this image"
+        },
+        {
+          "url": "https://static.licdn.com/aero-v1/sc/h/bn39hirwzjqj18ej1fkz55671",
+          "alt": ""
+        },
+        {
+          "url": "https://static.licdn.com/aero-v1/sc/h/2tzoeodxy0zug4455msr0oq0v",
+          "alt": ""
+        },
+        {
+          "url": "https://static.licdn.com/aero-v1/sc/h/asiqslyf4ooq7ggllg4fyo4o2",
+          "alt": ""
+        }
+      ]
+    },
+    {
+      "class": "relative px-2 pb-0 bg-color-background-container\n        container-lined\n        pt-1.5 main-feed-activity-card\n          \n           papabear:max-w-[550px]",
+      "urn": "urn:li:activity:7516742471373160449",
+      "text": "\n\n      \n        \n\n      \n        \n          \n            \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n          \n            \n      \n      \n          \n      \n        \n            \n              ARTPARK\n            \n        \n\n            \n                28,754 followers\n            \n\n              \n                  \n                    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n      1w\n  \n                  \n              \n                \n\n    \n  \n        \n        \n          \n              \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n      \n        \n\n    \n\n    \n          \n            \n              \n            \n          \n\n        \n          \n              \n\n                \n                  \n\n    \n    \n\n    \n\n    \n\n    \n        \n                      \n                      \n                      Report this post\n                    \n    \n\n  \n                \n          \n        \n\n    \n  \n\n      \n  \n        \n      \n\n      \n            \n            \n  \n    We’re delighted to see Raising The Village use Calibrate for their work in rural Uganda.\n\nRTV’s field agents visit families to coach them on farming practices, and the team is building an AI tool to support those visits. Before launch, Raising The Village and The Agency Fund used Calibrate to test it and uncovered nearly 150 errors, all caught before the tool reached the families it was designed to serve.\n\nIt’s exciting to see Calibrate helping organisations identify AI errors before deployment, making AI solutions more reliable and better suited to the communities they serve.\n\nCalibrate is an open-source platform built by the machine learning team at ARTPARK, IISc, led by Jigar Doshi and Aman Dalmia. It enables domain experts to evaluate AI systems without writing code.\n\nDon’t let your users be the ones who find the errors. Run your AI tool through Calibrate first: https://lnkd.in/gBQqxr24\n\n#ResponsibleAI #AIEvaluation #OpenSource #AIForGood #ARTPARK\n\nIndian Institute of Science (IISc)\nBharadwaj Amrutur | Raghu Dharmaraju | Nihar Desai | Dr. Rehan Shahed\n  \n\n\n\n        \n\n        \n            \n      \n      \n    \n    \n    \n\n    \n      \n      \n        \n\n        \n        \n          \n              \n    \n      Calibrate\n    \n\n              \n    \n      calibrate.artpark.ai\n    \n\n          \n        \n      \n      \n  \n    \n  \n  \n      \n  \n                  \n\n      \n          \n    \n        \n\n      \n          \n      \n\n    \n\n    \n\n    \n\n  \n    \n        \n\n      \n            \n      \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n\n      \n            \n      \n        \n                    \n                    \n                    \n\n              \n                    20\n              \n            \n      \n  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n      \n  \n  \n        \n\n      \n                \n    \n    \n    \n\n    \n      \n  \n    \n    \n    \n      Like\n    \n  \n\n        \n  \n    \n    \n    \n      Comment\n    \n  \n\n        \n  \n    \n    \n    \n      Share\n    \n  \n\n        \n                  \n    \n  \n                      \n\n      \n        \n\n      \n              \n      \n    \n        \n    ",
+      "links": [
+        {
+          "url": "https://in.linkedin.com/company/artpark-in?trk=organization_guest_main-feed-card_feed-actor-image",
+          "text": ""
+        },
+        {
+          "url": "https://in.linkedin.com/company/artpark-in?trk=organization_guest_main-feed-card_feed-actor-name",
+          "text": "ARTPARK"
+        },
+        {
+          "url": "/uas/login?fromSignIn=true&session_redirect=https%3A%2F%2Fin.linkedin.com%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=POST&_f=guest-reporting",
+          "text": "Report this post"
+        },
+        {
+          "url": "https://ca.linkedin.com/company/raising-the-village?trk=organization_guest_main-feed-card-text",
+          "text": "Raising The Village"
+        },
+        {
+          "url": "https://www.linkedin.com/company/the-agency-fund?trk=organization_guest_main-feed-card-text",
+          "text": "The Agency Fund"
+        },
+        {
+          "url": "https://in.linkedin.com/in/jigarkdoshi?trk=organization_guest_main-feed-card-text",
+          "text": "Jigar Doshi"
+        },
+        {
+          "url": "https://in.linkedin.com/in/aman-dalmia?trk=organization_guest_main-feed-card-text",
+          "text": "Aman Dalmia"
+        },
+        {
+          "url": "https://lnkd.in/gBQqxr24?trk=organization_guest_main-feed-card-text",
+          "text": "https://lnkd.in/gBQqxr24"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fresponsibleai&trk=organization_guest_main-feed-card-text",
+          "text": "#ResponsibleAI"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Faievaluation&trk=organization_guest_main-feed-card-text",
+          "text": "#AIEvaluation"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fopensource&trk=organization_guest_main-feed-card-text",
+          "text": "#OpenSource"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Faiforgood&trk=organization_guest_main-feed-card-text",
+          "text": "#AIForGood"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fartpark&trk=organization_guest_main-feed-card-text",
+          "text": "#ARTPARK"
+        },
+        {
+          "url": "https://in.linkedin.com/school/indian-institute-of-science/?trk=organization_guest_main-feed-card-text",
+          "text": "Indian Institute of Science (IISc)"
+        },
+        {
+          "url": "https://in.linkedin.com/in/amrutur?trk=organization_guest_main-feed-card-text",
+          "text": "Bharadwaj Amrutur"
+        },
+        {
+          "url": "https://in.linkedin.com/in/raghuramd?trk=organization_guest_main-feed-card-text",
+          "text": "Raghu Dharmaraju"
+        },
+        {
+          "url": "https://in.linkedin.com/in/nihardesai1591?trk=organization_guest_main-feed-card-text",
+          "text": "Nihar Desai"
+        },
+        {
+          "url": "https://in.linkedin.com/in/dr-rehan-shahed-9109183b?trk=organization_guest_main-feed-card-text",
+          "text": "Dr. Rehan Shahed"
+        },
+        {
+          "url": "https://www.linkedin.com/redir/redirect?url=https%3A%2F%2Fcalibrate%2Eartpark%2Eai&urlhash=RgZ9&trk=organization_guest_main-feed-card_feed-article-content",
+          "text": "Calibrate\n    \n\n              \n    \n      calibrate.artpark.ai"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_social-actions-reactions",
+          "text": "20"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_like-cta",
+          "text": "Like"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_comment-cta",
+          "text": "Comment"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_share-cta",
+          "text": "Share"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D560BAQGIRKRmXnjbmQ/company-logo_100_100/B56ZyYbPmuHQAU-/0/1772083805079/artpark_in_logo?e=2147483647&v=beta&t=YoBkaBzNWCBVUEy3jXq63NxzNwNCbH7Z1x6aSDwaYPE",
+          "alt": "View organization page for ARTPARK"
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/sync/v2/D5627AQFfiE8aMU7ibA/articleshare-shrink_800/B56aATGYdpHMAY-/0/1787026835954?e=2147483647&v=beta&t=yETDA2VU3faG_iWa5HCxINQkmBERDqCUM7DxxcfkGew",
+          "alt": "Calibrate"
+        },
+        {
+          "url": "https://static.licdn.com/aero-v1/sc/h/bn39hirwzjqj18ej1fkz55671",
+          "alt": ""
+        },
+        {
+          "url": "https://static.licdn.com/aero-v1/sc/h/cyfai5zw4nrqhyyhl0p7so58v",
+          "alt": ""
+        },
+        {
+          "url": "https://static.licdn.com/aero-v1/sc/h/2tzoeodxy0zug4455msr0oq0v",
+          "alt": ""
+        }
+      ]
+    },
+    {
+      "class": "relative px-2 pb-0 bg-color-background-container\n        container-lined\n        pt-1.5 main-feed-activity-card\n          \n           papabear:max-w-[550px]",
+      "urn": "urn:li:activity:7516449595271606272",
+      "text": "\n\n      \n              \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n\n    \n          ARTPARK reposted this\n    \n  \n                    \n\n      \n        \n          \n            \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n          \n            \n      \n      \n          \n      \n        \n            \n              SPIRE Lab@IISc\n            \n        \n\n            \n                3,346 followers\n            \n\n              \n                  \n                    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n      1w\n  \n                  \n              \n                \n\n    \n  \n        \n        \n          \n              \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n      \n        \n\n    \n\n    \n          \n            \n              \n            \n          \n\n        \n          \n              \n\n                \n                  \n\n    \n    \n\n    \n\n    \n\n    \n        \n                      \n                      \n                      Report this post\n                    \n    \n\n  \n                \n          \n        \n\n    \n  \n\n      \n  \n        \n      \n\n      \n            \n            \n  \n    What happens to a voice assistant when a pressure cooker whistles mid-sentence?\n\nFor most speech models, it falls apart. That’s the problem the IndoML team set for 250+ teams at the IndoML 2026 Datathon. \n\n𝗦𝗶𝗻𝗰𝗲 𝟮𝟬𝟮𝟬, 𝗜𝗻𝗱𝗼𝗠𝗟 𝗵𝗮𝘀 𝗯𝗿𝗼𝘂𝗴𝗵𝘁 𝘄𝗼𝗿𝗹𝗱-𝗰𝗹𝗮𝘀𝘀 𝗠𝗟 𝗿𝗲𝘀𝗲𝗮𝗿𝗰𝗵 𝘁𝗼 𝗜𝗻𝗱𝗶𝗮, 𝗺𝗲𝗻𝘁𝗼𝗿𝗲𝗱 𝗶𝘁𝘀 𝗻𝗲𝘅𝘁 𝗴𝗲𝗻𝗲𝗿𝗮𝘁𝗶𝗼𝗻 𝗼𝗳 𝗿𝗲𝘀𝗲𝗮𝗿𝗰𝗵𝗲𝗿𝘀, 𝗮𝗻𝗱 𝗰𝗼𝗻𝗻𝗲𝗰𝘁𝗲𝗱 𝗮𝗰𝗮𝗱𝗲𝗺𝗶𝗮 𝘄𝗶𝘁𝗵 𝗶𝗻𝗱𝘂𝘀𝘁𝗿𝘆. Now in its 7th edition, IndoML brings together leading institutions and research labs from India and abroad.\n\n𝗧𝗵𝗲 𝗰𝗵𝗮𝗹𝗹𝗲𝗻𝗴𝗲:\n Track 1: Detect noise events in real Indian speech, with precise start and end times.\n Track 2: Use those timestamps to remove the noise while keeping the speech intact.\n\n𝗧𝗵𝗲 𝗿𝗲𝘀𝗽𝗼𝗻𝘀𝗲:\n 250+ teams from 35+ institutions registered, from students to industry engineers.\n\n𝗪𝗵𝗮𝘁’𝘀 𝗻𝗲𝘅𝘁:\nPhase 2 closes on 17 October, and the top teams will present at IndoML 2026 in Kolkata this December.\n\n𝗧𝗵𝗲 𝗱𝗮𝘁𝗮 𝗯𝗲𝗵𝗶𝗻𝗱 𝗶𝘁:\nThe challenge runs on the Vaani Noise Event Dataset, our open-source collection of real Indian speech recorded with real background noise, with every noise event manually timestamped to the millisecond.\nThank you to the IndoML 2026 organisers, the Datathon chairs, and every team taking on the challenge.\n\n𝗕𝘂𝗶𝗹𝗱𝗶𝗻𝗴 𝗻𝗼𝗶𝘀𝗲-𝗿𝗼𝗯𝘂𝘀𝘁 𝘀𝗽𝗲𝗲𝗰𝗵 𝗔𝗜? 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝘁𝗵𝗲 𝗩𝗮𝗮𝗻𝗶 𝗡𝗼𝗶𝘀𝗲 𝗘𝘃𝗲𝗻𝘁 𝗗𝗮𝘁𝗮𝘀𝗲𝘁 𝗮𝗻𝗱 𝘀𝘁𝗮𝗿𝘁 𝗲𝘅𝗽𝗲𝗿𝗶𝗺𝗲𝗻𝘁𝗶𝗻𝗴. Follow the Datathon as Phase 2 heads to the finish. Links in the comments.\n\nIndian Institute of Science (IISc) | ARTPARK | IndoML |\n\nPrasanta Ghosh | Sunayana Sitaram | Pavan Kumar J | Nihar Desai | Sujith P | Agneedh Basu | Suryansh Shukla | Janajit Bagchi | Ankit Chamoli | Debopriyo Banerjee, Ph.D. | Subhajit Datta | \n\n#IndoML2026 #SpeechAI #IndicLanguages #OpenData #ResponsibleAI\n  \n\n\n\n        \n\n        \n            \n      \n    \n    \n    \n\n      \n              \n                  \n              \n              \n                  \n              \n              \n                  \n              \n              \n                  \n              \n      \n  \n  \n                  \n\n      \n          \n    \n        \n\n      \n          \n      \n\n    \n\n    \n\n    \n\n  \n    \n        \n\n      \n            \n      \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n\n      \n            \n      \n        \n                    \n                    \n\n              \n                    29\n              \n            \n      \n  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n            \n      \n        \n                1 Comment\n            \n      \n  \n      \n  \n  \n        \n\n      \n                \n    \n    \n    \n\n    \n      \n  \n    \n    \n    \n      Like\n    \n  \n\n        \n  \n    \n    \n    \n      Comment\n    \n  \n\n        \n  \n    \n    \n    \n      Share\n    \n  \n\n        \n                  \n    \n  \n                      \n\n      \n        \n\n      \n              \n      \n    \n        \n    ",
+      "links": [
+        {
+          "url": "https://in.linkedin.com/company/artpark-in?trk=organization_guest_main-feed-card_feed-reaction-header",
+          "text": "ARTPARK"
+        },
+        {
+          "url": "https://in.linkedin.com/company/spire-lab?trk=organization_guest_main-feed-card_feed-actor-image",
+          "text": ""
+        },
+        {
+          "url": "https://in.linkedin.com/company/spire-lab?trk=organization_guest_main-feed-card_feed-actor-name",
+          "text": "SPIRE Lab@IISc"
+        },
+        {
+          "url": "/uas/login?fromSignIn=true&session_redirect=https%3A%2F%2Fin.linkedin.com%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=POST&_f=guest-reporting",
+          "text": "Report this post"
+        },
+        {
+          "url": "https://in.linkedin.com/school/indian-institute-of-science/?trk=organization_guest_main-feed-card-text",
+          "text": "Indian Institute of Science (IISc)"
+        },
+        {
+          "url": "https://in.linkedin.com/company/artpark-in?trk=organization_guest_main-feed-card-text",
+          "text": "ARTPARK"
+        },
+        {
+          "url": "https://www.linkedin.com/company/indoml?trk=organization_guest_main-feed-card-text",
+          "text": "IndoML"
+        },
+        {
+          "url": "https://in.linkedin.com/in/prasanta-ghosh-a635692?trk=organization_guest_main-feed-card-text",
+          "text": "Prasanta Ghosh"
+        },
+        {
+          "url": "https://in.linkedin.com/in/sunayana?trk=organization_guest_main-feed-card-text",
+          "text": "Sunayana Sitaram"
+        },
+        {
+          "url": "https://in.linkedin.com/in/pavan-kumar-j-nagartha?trk=organization_guest_main-feed-card-text",
+          "text": "Pavan Kumar J"
+        },
+        {
+          "url": "https://in.linkedin.com/in/nihardesai1591?trk=organization_guest_main-feed-card-text",
+          "text": "Nihar Desai"
+        },
+        {
+          "url": "https://in.linkedin.com/in/sujith-p-204a5a25?trk=organization_guest_main-feed-card-text",
+          "text": "Sujith P"
+        },
+        {
+          "url": "https://in.linkedin.com/in/agneedh-basu-8180021ba?trk=organization_guest_main-feed-card-text",
+          "text": "Agneedh Basu"
+        },
+        {
+          "url": "https://in.linkedin.com/in/suryansh-shukla-382935269?trk=organization_guest_main-feed-card-text",
+          "text": "Suryansh Shukla"
+        },
+        {
+          "url": "https://in.linkedin.com/in/janajit-bagchi-20a085174?trk=organization_guest_main-feed-card-text",
+          "text": "Janajit Bagchi"
+        },
+        {
+          "url": "https://in.linkedin.com/in/chamoliankit?trk=organization_guest_main-feed-card-text",
+          "text": "Ankit Chamoli"
+        },
+        {
+          "url": "https://ae.linkedin.com/in/debzban?trk=organization_guest_main-feed-card-text",
+          "text": "Debopriyo Banerjee, Ph.D."
+        },
+        {
+          "url": "https://in.linkedin.com/in/subhajit-datta-2042a44?trk=organization_guest_main-feed-card-text",
+          "text": "Subhajit Datta"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Findoml2026&trk=organization_guest_main-feed-card-text",
+          "text": "#IndoML2026"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fspeechai&trk=organization_guest_main-feed-card-text",
+          "text": "#SpeechAI"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Findiclanguages&trk=organization_guest_main-feed-card-text",
+          "text": "#IndicLanguages"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fopendata&trk=organization_guest_main-feed-card-text",
+          "text": "#OpenData"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fresponsibleai&trk=organization_guest_main-feed-card-text",
+          "text": "#ResponsibleAI"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_social-actions-reactions",
+          "text": "29"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_social-actions-comments",
+          "text": "1 Comment"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_like-cta",
+          "text": "Like"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_comment-cta",
+          "text": "Comment"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_share-cta",
+          "text": "Share"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/C510BAQFGURDwDQRcXQ/company-logo_100_100/company-logo_100_100/0/1630583371291?e=2147483647&v=beta&t=r7zD-lEjrVBN88H9zM39M_au-YcPmjlLPGSo5tasbkc",
+          "alt": "View organization page for SPIRE Lab@IISc"
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGo9VLQWtDwtQ/feedshare-image-high-res/B4DaE8u4k_HoAU-/0/1792020286025?e=2147483647&v=beta&t=GqyMat6QKipiw5dgIOhA62sbSIHq_OaiC4H1-ZkhwaY",
+          "alt": "No alternative text description for this image"
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHPxwOKEaxrbQ/feedshare-shrink_1280/B4DaE8u5B3HcAQ-/0/1792020287881?e=2147483647&v=beta&t=rmVAQ_d8Jx2KNKrqx5nJM9bjvnakHdw3ayouEnxQylg",
+          "alt": "No alternative text description for this image"
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQG2XuhjCxuBTQ/feedshare-shrink_800/B4DaE8u46SHcAc-/0/1792020287626?e=2147483647&v=beta&t=B1QV4MA3jUXBaK0Xtj8MWX4F1I87xqx4_YmVz96O4U4",
+          "alt": "No alternative text description for this image"
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHGz4k0fnNkJQ/feedshare-image-high-res/B4DaE8u4AoKoAU-/0/1792020283691?e=2147483647&v=beta&t=dNTOMYNgli01lCNWZnRViRM17RVN-k5z9Qv2F39ppsg",
+          "alt": "No alternative text description for this image"
+        },
+        {
+          "url": "https://static.licdn.com/aero-v1/sc/h/bn39hirwzjqj18ej1fkz55671",
+          "alt": ""
+        },
+        {
+          "url": "https://static.licdn.com/aero-v1/sc/h/2tzoeodxy0zug4455msr0oq0v",
+          "alt": ""
+        }
+      ]
+    },
+    {
+      "class": "relative px-2 pb-0 bg-color-background-container\n        container-lined\n        pt-1.5 main-feed-activity-card\n          \n           papabear:max-w-[550px]",
+      "urn": "urn:li:activity:7516377463212544000",
+      "text": "\n\n      \n        \n\n      \n        \n          \n            \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n          \n            \n      \n      \n          \n      \n        \n            \n              ARTPARK\n            \n        \n\n            \n                28,754 followers\n            \n\n              \n                  \n                    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n      1w\n  \n                  \n              \n                \n\n    \n  \n        \n        \n          \n              \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n      \n        \n\n    \n\n    \n          \n            \n              \n            \n          \n\n        \n          \n              \n\n                \n                  \n\n    \n    \n\n    \n\n    \n\n    \n        \n                      \n                      \n                      Report this post\n                    \n    \n\n  \n                \n          \n        \n\n    \n  \n\n      \n  \n        \n      \n\n      \n            \n            \n  \n    A proud moment for all of us at ARTPARK. \nQOSMIC has built India’s own Fast Steering Mirror and taken it through thermal vacuum and vibration qualification on the first attempt, nine months after starting from scratch. Only a few companies in the world make space-grade FSMs, so India has had to import them. With QOSMIC manufacturing one here, our optical and quantum communication missions now depend a little less on foreign suppliers for a critical component. \n\nThis is exactly why ARTPARK exists: to back deep-tech teams building the hardware India shouldn’t have to buy from abroad. \nCongratulations, Shreyaans Jain  and team.\n  \n\n\n\n        \n\n        \n            \n      \n    \n      \n        \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n          \n            \n      \n      \n          \n      \n        \n            \n              QOSMIC\n            \n        \n\n            \n                4,993 followers\n            \n\n              \n                  \n                    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n      1w\n  \n                      \n                      \n                        Edited\n                      \n                  \n              \n                \n\n    \n  \n\n        \n            \n  \n    Nine months ago, this did not exist.\n\nToday, India can build its own Fast Steering Mirror. \n\nQOSMIC’s Fast Steering mirror has cleared thermal vacuum and vibration qualification, both passed on the first attempt.\n\nThe FSM is the fine-pointing core of every optical link, satellite to ground, satellite to satellite or ground to ground. It steers light with precision, holding a laser locked on target while everything around it moves, making hundreds of tiny corrections every second. \n\nTo put that precision in perspective: lay a grid over Rashtrapati Bhavan and the estate around it.\nFrom orbit, our FSM is designed to have the ability to point at every 100 m from 500 km above your head to any single point on that grid.\n\nWith only two or three suppliers worldwide with this class of hardware, it was essential to QOSMIC to indigenise this critical piece of the puzzle.\n \nFrom nothing to space-qualified, TRL 7, in under a year.\n\nBuilt to survive launch. Now it waits for one 👀.\n\n\n#ICSO #ICSO2026 #NewSpaceIndia #OpticalCommunications #LaserCommunication \nShreyaans Jain Aloke Kumar Rohit Ramakrishnan Arundhati Sharma Jathin S SUBRAT GOPAL Sarthak Dash Shashank Kumar Aradhya Accel in India Accel Atoms Accel South Park Commons ARTPARK\n  \n\n\n\n        \n      \n    \n    \n    \n\n      \n              \n                  \n              \n              \n                  \n              \n      \n  \n  \n      \n  \n  \n                  \n\n      \n          \n    \n        \n\n      \n          \n      \n\n    \n\n    \n\n    \n\n  \n    \n        \n\n      \n            \n      \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n\n      \n            \n      \n        \n                    \n                    \n                    \n\n              \n                    30\n              \n            \n      \n  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n            \n      \n        \n                1 Comment\n            \n      \n  \n      \n  \n  \n        \n\n      \n                \n    \n    \n    \n\n    \n      \n  \n    \n    \n    \n      Like\n    \n  \n\n        \n  \n    \n    \n    \n      Comment\n    \n  \n\n        \n  \n    \n    \n    \n      Share\n    \n  \n\n        \n                  \n    \n  \n                      \n\n      \n        \n\n      \n              \n      \n    \n        \n    ",
+      "links": [
+        {
+          "url": "https://in.linkedin.com/company/artpark-in?trk=organization_guest_main-feed-card_feed-actor-image",
+          "text": ""
+        },
+        {
+          "url": "https://in.linkedin.com/company/artpark-in?trk=organization_guest_main-feed-card_feed-actor-name",
+          "text": "ARTPARK"
+        },
+        {
+          "url": "/uas/login?fromSignIn=true&session_redirect=https%3A%2F%2Fin.linkedin.com%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=POST&_f=guest-reporting",
+          "text": "Report this post"
+        },
+        {
+          "url": "https://in.linkedin.com/company/qosmicspace?trk=organization_guest_main-feed-card-text",
+          "text": "QOSMIC"
+        },
+        {
+          "url": "https://in.linkedin.com/in/shreyaansjain?trk=organization_guest_main-feed-card-text",
+          "text": "Shreyaans Jain"
+        },
+        {
+          "url": "https://in.linkedin.com/company/qosmicspace?trk=organization_guest_main-feed-card_reshare_feed-actor-image",
+          "text": ""
+        },
+        {
+          "url": "https://in.linkedin.com/company/qosmicspace?trk=organization_guest_main-feed-card_reshare_feed-actor-name",
+          "text": "QOSMIC"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Ficso&trk=organization_guest_main-feed-card_reshare-text",
+          "text": "#ICSO"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Ficso2026&trk=organization_guest_main-feed-card_reshare-text",
+          "text": "#ICSO2026"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fnewspaceindia&trk=organization_guest_main-feed-card_reshare-text",
+          "text": "#NewSpaceIndia"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fopticalcommunications&trk=organization_guest_main-feed-card_reshare-text",
+          "text": "#OpticalCommunications"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Flasercommunication&trk=organization_guest_main-feed-card_reshare-text",
+          "text": "#LaserCommunication"
+        },
+        {
+          "url": "https://in.linkedin.com/in/shreyaansjain?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "Shreyaans Jain"
+        },
+        {
+          "url": "https://in.linkedin.com/in/aloke-kumar-a8a74012?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "Aloke Kumar"
+        },
+        {
+          "url": "https://in.linkedin.com/in/rohitramakrishnan?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "Rohit Ramakrishnan"
+        },
+        {
+          "url": "https://in.linkedin.com/in/arundhati-sharma7?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "Arundhati Sharma"
+        },
+        {
+          "url": "https://in.linkedin.com/in/js2606?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "Jathin S"
+        },
+        {
+          "url": "https://in.linkedin.com/in/subrat-gopal-87167828b?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "SUBRAT GOPAL"
+        },
+        {
+          "url": "https://in.linkedin.com/in/sarthak-dsh?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "Sarthak Dash"
+        },
+        {
+          "url": "https://in.linkedin.com/in/shashankkaradhya?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "Shashank Kumar Aradhya"
+        },
+        {
+          "url": "https://in.linkedin.com/company/accelinindia?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "Accel in India"
+        },
+        {
+          "url": "https://in.linkedin.com/showcase/accelatoms/?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "Accel Atoms"
+        },
+        {
+          "url": "https://www.linkedin.com/company/accel-vc?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "Accel"
+        },
+        {
+          "url": "https://www.linkedin.com/company/southparkcommons?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "South Park Commons"
+        },
+        {
+          "url": "https://in.linkedin.com/company/artpark-in?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "ARTPARK"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_social-actions-reactions",
+          "text": "30"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_social-actions-comments",
+          "text": "1 Comment"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_like-cta",
+          "text": "Like"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_comment-cta",
+          "text": "Comment"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_share-cta",
+          "text": "Share"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D560BAQGIRKRmXnjbmQ/company-logo_100_100/B56ZyYbPmuHQAU-/0/1772083805079/artpark_in_logo?e=2147483647&v=beta&t=YoBkaBzNWCBVUEy3jXq63NxzNwNCbH7Z1x6aSDwaYPE",
+          "alt": "View organization page for ARTPARK"
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D0BAQG8EOX0KvOHiA/company-logo_100_100/B4DZfUxt4rH4AQ-/0/1751621493705/qosmicspace_logo?e=2147483647&v=beta&t=ol6iuBEL-mtoTGzkY9w4RNNbDbxgdIT7b6SDa32oIqE",
+          "alt": "View organization page for QOSMIC"
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D5622AQHlMgtmI6LSrw/feedshare-shrink_1280/B56aEulzaiK8AM-/0/1791783024603?e=2147483647&v=beta&t=4iygNeXA2FAl2i9cjIOGvpkmQMjVfYMP3rmAVp61bQo",
+          "alt": "No alternative text description for this image"
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D5622AQHJAa-oIcZxNA/feedshare-image-high-res/B56aEulzZfH8AU-/0/1791783024471?e=2147483647&v=beta&t=sgM0ZjUVDG7QqCfoK5PbrGgy87YvVvE2nVDdOQCCRS4",
+          "alt": "No alternative text description for this image"
+        },
+        {
+          "url": "https://static.licdn.com/aero-v1/sc/h/bn39hirwzjqj18ej1fkz55671",
+          "alt": ""
+        },
+        {
+          "url": "https://static.licdn.com/aero-v1/sc/h/2tzoeodxy0zug4455msr0oq0v",
+          "alt": ""
+        },
+        {
+          "url": "https://static.licdn.com/aero-v1/sc/h/asiqslyf4ooq7ggllg4fyo4o2",
+          "alt": ""
+        }
+      ]
+    },
+    {
+      "class": "relative pt-1.5 px-2 pb-1 mb-1 babybear:pt-0.5 babybear:pb-0 babybear:mb-0\n          container-lined\n          bg-color-background-container\n          feed-reshare-content",
+      "urn": "urn:li:activity:7515282717740032000",
+      "text": "\n        \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n          \n            \n      \n      \n          \n      \n        \n            \n              QOSMIC\n            \n        \n\n            \n                4,993 followers\n            \n\n              \n                  \n                    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n      1w\n  \n                      \n                      \n                        Edited\n                      \n                  \n              \n                \n\n    \n  \n\n        \n            \n  \n    Nine months ago, this did not exist.\n\nToday, India can build its own Fast Steering Mirror. \n\nQOSMIC’s Fast Steering mirror has cleared thermal vacuum and vibration qualification, both passed on the first attempt.\n\nThe FSM is the fine-pointing core of every optical link, satellite to ground, satellite to satellite or ground to ground. It steers light with precision, holding a laser locked on target while everything around it moves, making hundreds of tiny corrections every second. \n\nTo put that precision in perspective: lay a grid over Rashtrapati Bhavan and the estate around it.\nFrom orbit, our FSM is designed to have the ability to point at every 100 m from 500 km above your head to any single point on that grid.\n\nWith only two or three suppliers worldwide with this class of hardware, it was essential to QOSMIC to indigenise this critical piece of the puzzle.\n \nFrom nothing to space-qualified, TRL 7, in under a year.\n\nBuilt to survive launch. Now it waits for one 👀.\n\n\n#ICSO #ICSO2026 #NewSpaceIndia #OpticalCommunications #LaserCommunication \nShreyaans Jain Aloke Kumar Rohit Ramakrishnan Arundhati Sharma Jathin S SUBRAT GOPAL Sarthak Dash Shashank Kumar Aradhya Accel in India Accel Atoms Accel South Park Commons ARTPARK\n  \n\n\n\n        \n      \n    \n    \n    \n\n      \n              \n                  \n              \n              \n                  \n              \n      \n  \n  \n      ",
+      "links": [
+        {
+          "url": "https://in.linkedin.com/company/qosmicspace?trk=organization_guest_main-feed-card_reshare_feed-actor-image",
+          "text": ""
+        },
+        {
+          "url": "https://in.linkedin.com/company/qosmicspace?trk=organization_guest_main-feed-card_reshare_feed-actor-name",
+          "text": "QOSMIC"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Ficso&trk=organization_guest_main-feed-card_reshare-text",
+          "text": "#ICSO"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Ficso2026&trk=organization_guest_main-feed-card_reshare-text",
+          "text": "#ICSO2026"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fnewspaceindia&trk=organization_guest_main-feed-card_reshare-text",
+          "text": "#NewSpaceIndia"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fopticalcommunications&trk=organization_guest_main-feed-card_reshare-text",
+          "text": "#OpticalCommunications"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Flasercommunication&trk=organization_guest_main-feed-card_reshare-text",
+          "text": "#LaserCommunication"
+        },
+        {
+          "url": "https://in.linkedin.com/in/shreyaansjain?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "Shreyaans Jain"
+        },
+        {
+          "url": "https://in.linkedin.com/in/aloke-kumar-a8a74012?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "Aloke Kumar"
+        },
+        {
+          "url": "https://in.linkedin.com/in/rohitramakrishnan?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "Rohit Ramakrishnan"
+        },
+        {
+          "url": "https://in.linkedin.com/in/arundhati-sharma7?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "Arundhati Sharma"
+        },
+        {
+          "url": "https://in.linkedin.com/in/js2606?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "Jathin S"
+        },
+        {
+          "url": "https://in.linkedin.com/in/subrat-gopal-87167828b?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "SUBRAT GOPAL"
+        },
+        {
+          "url": "https://in.linkedin.com/in/sarthak-dsh?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "Sarthak Dash"
+        },
+        {
+          "url": "https://in.linkedin.com/in/shashankkaradhya?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "Shashank Kumar Aradhya"
+        },
+        {
+          "url": "https://in.linkedin.com/company/accelinindia?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "Accel in India"
+        },
+        {
+          "url": "https://in.linkedin.com/showcase/accelatoms/?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "Accel Atoms"
+        },
+        {
+          "url": "https://www.linkedin.com/company/accel-vc?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "Accel"
+        },
+        {
+          "url": "https://www.linkedin.com/company/southparkcommons?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "South Park Commons"
+        },
+        {
+          "url": "https://in.linkedin.com/company/artpark-in?trk=organization_guest_main-feed-card_reshare-text",
+          "text": "ARTPARK"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D0BAQG8EOX0KvOHiA/company-logo_100_100/B4DZfUxt4rH4AQ-/0/1751621493705/qosmicspace_logo?e=2147483647&v=beta&t=ol6iuBEL-mtoTGzkY9w4RNNbDbxgdIT7b6SDa32oIqE",
+          "alt": "View organization page for QOSMIC"
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D5622AQHlMgtmI6LSrw/feedshare-shrink_1280/B56aEulzaiK8AM-/0/1791783024603?e=2147483647&v=beta&t=4iygNeXA2FAl2i9cjIOGvpkmQMjVfYMP3rmAVp61bQo",
+          "alt": "No alternative text description for this image"
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D5622AQHJAa-oIcZxNA/feedshare-image-high-res/B56aEulzZfH8AU-/0/1791783024471?e=2147483647&v=beta&t=sgM0ZjUVDG7QqCfoK5PbrGgy87YvVvE2nVDdOQCCRS4",
+          "alt": "No alternative text description for this image"
+        }
+      ]
+    },
+    {
+      "class": "relative px-2 pb-0 bg-color-background-container\n        container-lined\n        pt-1.5 main-feed-activity-card\n          \n           papabear:max-w-[550px]",
+      "urn": "urn:li:activity:7516090774808072192",
+      "text": "\n\n      \n        \n\n      \n        \n          \n            \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n          \n            \n      \n      \n          \n      \n        \n            \n              ARTPARK\n            \n        \n\n            \n                28,754 followers\n            \n\n              \n                  \n                    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n      1w\n  \n                      \n                      \n                        Edited\n                      \n                  \n              \n                \n\n    \n  \n        \n        \n          \n              \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n      \n        \n\n    \n\n    \n          \n            \n              \n            \n          \n\n        \n          \n              \n\n                \n                  \n\n    \n    \n\n    \n\n    \n\n    \n        \n                      \n                      \n                      Report this post\n                    \n    \n\n  \n                \n          \n        \n\n    \n  \n\n      \n  \n        \n      \n\n      \n            \n            \n  \n    A significant milestone for ARTPARK IISc and India's deeptech ecosystem.\n\nARTPARK is proud to be selected as one of five Focused Research Organisations (FROs) and among the 19 shortlisted members of the inaugural cohort under India's ₹1 lakh crore Research, Development and Innovation (RDI) Fund.\n\nThis marks an important step towards addressing one of India's biggest deeptech challenges: bridging the gap between scientific discovery and commercial deployment.\n\nFor ARTPARK, this strengthens our mission to support researchers and founders earlier in their journey, providing the capital, infrastructure, and ecosystem needed to turn breakthrough research into impactful technologies and globally competitive ventures.\n\nOur ambition is to help build India's capacity to develop and scale the critical technologies of tomorrow.\n\nTo every researcher and founder working on something hard: the ecosystem is growing around you.\n\nCome build for India. Come build with ARTPARK\n\nIndian Institute of Science (IISc) | Department of Science & Technology, Government of India | IT BT Department, Karnataka | Government of Karnataka\n\nBharadwaj Amrutur | Raghu Dharmaraju | Nirav D. | M.N. Saquib Khan | Manjunath M K | Akshay K.\n\n#ARTPARK #RDIF #IISc #DeepTech #Innovation #StartupIndia  #AatmanirbharBharat  #IndiaBuild\n  \n\n\n\n        \n\n        \n            \n      \n    \n    \n    \n\n      \n              \n                  \n              \n      \n  \n  \n                  \n\n      \n          \n    \n        \n\n      \n          \n      \n\n    \n\n    \n\n    \n\n  \n    \n        \n\n      \n            \n      \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n\n      \n            \n      \n        \n                    \n                    \n                    \n\n              \n                    221\n              \n            \n      \n  \n                  \n                  \n                  \n                  \n                  \n                  \n                  \n            \n      \n        \n                12 Comments\n            \n      \n  \n      \n  \n  \n        \n\n      \n                \n    \n    \n    \n\n    \n      \n  \n    \n    \n    \n      Like\n    \n  \n\n        \n  \n    \n    \n    \n      Comment\n    \n  \n\n        \n  \n    \n    \n    \n      Share\n    \n  \n\n        \n                  \n    \n  \n                      \n\n      \n        \n\n      \n              \n      \n    \n        \n    ",
+      "links": [
+        {
+          "url": "https://in.linkedin.com/company/artpark-in?trk=organization_guest_main-feed-card_feed-actor-image",
+          "text": ""
+        },
+        {
+          "url": "https://in.linkedin.com/company/artpark-in?trk=organization_guest_main-feed-card_feed-actor-name",
+          "text": "ARTPARK"
+        },
+        {
+          "url": "/uas/login?fromSignIn=true&session_redirect=https%3A%2F%2Fin.linkedin.com%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=POST&_f=guest-reporting",
+          "text": "Report this post"
+        },
+        {
+          "url": "https://in.linkedin.com/school/indian-institute-of-science/?trk=organization_guest_main-feed-card-text",
+          "text": "Indian Institute of Science (IISc)"
+        },
+        {
+          "url": "https://in.linkedin.com/company/departmentofscienceandtechnology?trk=organization_guest_main-feed-card-text",
+          "text": "Department of Science & Technology, Government of India"
+        },
+        {
+          "url": "https://in.linkedin.com/company/itbtgok?trk=organization_guest_main-feed-card-text",
+          "text": "IT BT Department, Karnataka"
+        },
+        {
+          "url": "https://in.linkedin.com/company/government-of-karnataka-agriculture-&-horticulture-department?trk=organization_guest_main-feed-card-text",
+          "text": "Government of Karnataka"
+        },
+        {
+          "url": "https://in.linkedin.com/in/amrutur?trk=organization_guest_main-feed-card-text",
+          "text": "Bharadwaj Amrutur"
+        },
+        {
+          "url": "https://in.linkedin.com/in/raghuramd?trk=organization_guest_main-feed-card-text",
+          "text": "Raghu Dharmaraju"
+        },
+        {
+          "url": "https://in.linkedin.com/in/niravdedhia?trk=organization_guest_main-feed-card-text",
+          "text": "Nirav D."
+        },
+        {
+          "url": "https://in.linkedin.com/in/mnsaquibkhan?trk=organization_guest_main-feed-card-text",
+          "text": "M.N. Saquib Khan"
+        },
+        {
+          "url": "https://in.linkedin.com/in/manjunath-mk-51660411?trk=organization_guest_main-feed-card-text",
+          "text": "Manjunath M K"
+        },
+        {
+          "url": "https://in.linkedin.com/in/akshayatri?trk=organization_guest_main-feed-card-text",
+          "text": "Akshay K."
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fartpark&trk=organization_guest_main-feed-card-text",
+          "text": "#ARTPARK"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Frdif&trk=organization_guest_main-feed-card-text",
+          "text": "#RDIF"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fiisc&trk=organization_guest_main-feed-card-text",
+          "text": "#IISc"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fdeeptech&trk=organization_guest_main-feed-card-text",
+          "text": "#DeepTech"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Finnovation&trk=organization_guest_main-feed-card-text",
+          "text": "#Innovation"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Fstartupindia&trk=organization_guest_main-feed-card-text",
+          "text": "#StartupIndia"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Faatmanirbharbharat&trk=organization_guest_main-feed-card-text",
+          "text": "#AatmanirbharBharat"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fhashtag%2Findiabuild&trk=organization_guest_main-feed-card-text",
+          "text": "#IndiaBuild"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_social-actions-reactions",
+          "text": "221"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_social-actions-comments",
+          "text": "12 Comments"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_like-cta",
+          "text": "Like"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_comment-cta",
+          "text": "Comment"
+        },
+        {
+          "url": "https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Fartpark-in&trk=organization_guest_main-feed-card_share-cta",
+          "text": "Share"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D560BAQGIRKRmXnjbmQ/company-logo_100_100/B56ZyYbPmuHQAU-/0/1772083805079/artpark_in_logo?e=2147483647&v=beta&t=YoBkaBzNWCBVUEy3jXq63NxzNwNCbH7Z1x6aSDwaYPE",
+          "alt": "View organization page for ARTPARK"
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D5622AQGimD2oa35VSw/feedshare-shrink_800/B56aE6Eu3hG0Ac-/0/1791975681743?e=2147483647&v=beta&t=GqPP287zmnaqUZp23NRb9fuFBIdh-Xlz7966ILgYqyI",
+          "alt": "No alternative text description for this image"
+        },
+        {
+          "url": "https://static.licdn.com/aero-v1/sc/h/bn39hirwzjqj18ej1fkz55671",
+          "alt": ""
+        },
+        {
+          "url": "https://static.licdn.com/aero-v1/sc/h/2tzoeodxy0zug4455msr0oq0v",
+          "alt": ""
+        },
+        {
+          "url": "https://static.licdn.com/aero-v1/sc/h/asiqslyf4ooq7ggllg4fyo4o2",
+          "alt": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+[
+  {
+    "slug": "advanced-robotics",
+    "short": "Robotics & autonomy",
+    "label": "Machines that work in the real world.",
+    "intro": "A robot has to do more than work once in a controlled lab. Our advanced robotics programme brings together embodied intelligence, dependable navigation and coordinated machines to tackle that next step.",
+    "image": "/assets/editorial/camras-hardware.webp",
+    "caption": "Engineers working with a quadruped prototype in the ARTPARK workspace.",
+    "tracks": [
+      [
+        "Humanoid systems",
+        "Robotic platforms being developed for applications including factory automation and healthcare assistance."
+      ],
+      [
+        "Resilient multi-robot systems",
+        "Coordination across aerial, ground and underwater platforms, with an emphasis on robust operation."
+      ],
+      [
+        "Secure navigation",
+        "Combining GNSS, LiDAR and inertial sensing to help autonomous systems understand where they are."
+      ],
+      [
+        "Physical AI",
+        "Connecting learning, robotics data and foundation models to the physical behaviour of machines."
+      ]
+    ],
+    "projects": [
+      [
+        "Inside CAMRAS",
+        "Meet the work on collaborative, resilient robotic systems and the people building it.",
+        "https://www.artpark.in/advanced-robotics/camras"
+      ],
+      [
+        "Build at ARTgarage",
+        "Explore the shared engineering environment for hardware, fabrication and testing.",
+        "/facilities/artgarage"
+      ]
+    ]
+  },
+  {
+    "slug": "health-climate",
+    "short": "Health & climate",
+    "label": "Better decisions, closer to the front line.",
+    "intro": "Health systems need useful information before risks become crises. ARTPARK's health work connects data, modelling and AI with public-health partners, including environmental surveillance, heat risk and tools for frontline care.",
+    "image": "/assets/editorial/oral-screening.webp",
+    "caption": "Phone-based oral screening and information capture, from ARTPARK's health initiatives.",
+    "tracks": [
+      [
+        "Environmental surveillance",
+        "Using environmental data to help public-health teams understand and monitor emerging risks."
+      ],
+      [
+        "Climate and health",
+        "Heat-health forecasting and disease-risk modelling, connecting climate signals to health-system planning."
+      ],
+      [
+        "AI for frontline work",
+        "Exploring copilots and evaluation tools with the people who will use them in real care settings."
+      ],
+      [
+        "Research data infrastructure",
+        "Medical imaging datasets and research infrastructure through MIDAS."
+      ]
+    ],
+    "projects": [
+      [
+        "Environmental surveillance",
+        "Explore the programme's approach to monitoring environmental signals for public health.",
+        "https://www.artpark.in/health-initiatives/environmental-survelliance"
+      ],
+      [
+        "Dengue dashboard",
+        "Data and modelling work focused on dengue risk.",
+        "https://www.artpark.in/health-initiatives/dengue-dashboard"
+      ],
+      [
+        "High-risk pregnancy copilot",
+        "AI assistance developed around maternal-health workflows.",
+        "https://www.artpark.in/language-data-ai/hrp-copilot"
+      ],
+      [
+        "Health research & data",
+        "Explore project resources and datasets from the ARTPARK health team.",
+        "https://health.artpark.ai/"
+      ]
+    ]
+  },
+  {
+    "slug": "language",
+    "short": "Language AI",
+    "label": "AI should understand the people it serves.",
+    "intro": "India's languages cannot be represented by a single clean recording in a studio. Our language initiatives build speech resources and technology around real speakers, regional variation and the way people actually talk.",
+    "image": "/assets/v4/culture-4.jpg",
+    "caption": "Speech-data software work at an ARTPARK workstation. Original photograph from the ARTPARK Culture collection.",
+    "tracks": [
+      [
+        "Vaani · speech data",
+        "The IISc–ARTPARK initiative, funded by Google, collects diverse speech to support Indian-language AI."
+      ],
+      [
+        "RESPIN · recognition",
+        "Research on recognising speech in Indian languages, including variation across speakers and regions."
+      ],
+      [
+        "SYSPIN · synthesis",
+        "Work on synthesising speech in Indian languages for more accessible digital interaction."
+      ]
+    ],
+    "projects": [
+      [
+        "Explore Project Vaani",
+        "Browse the project dashboard, approach and published resources.",
+        "https://vaani.iisc.ac.in/"
+      ],
+      [
+        "Use the open dataset",
+        "Access Vaani's published speech resources on Hugging Face.",
+        "https://huggingface.co/datasets/ARTPARK-IISc/Vaani"
+      ],
+      [
+        "Language programme",
+        "Discover the speech recognition and synthesis initiatives.",
+        "https://www.artpark.in/language"
+      ]
+    ]
+  },
+  {
+    "slug": "wired-wireless",
+    "short": "Connected systems",
+    "label": "Build it. Connect it. Test it for real.",
+    "intro": "A connected system is only as useful as its performance outside a slide deck. The Centre of Excellence for Wired & Wireless Technologies provides a setting to develop and test communications, edge intelligence and connected applications.",
+    "image": "/assets/v5/testbed-10.jpg",
+    "caption": "A 5G drone prototype featured in ARTPARK’s Wired & Wireless Technologies test lab.",
+    "tracks": [
+      [
+        "5G test infrastructure",
+        "A real network environment at ARTgarage for developing and demonstrating connected applications."
+      ],
+      [
+        "Robotics and edge AI",
+        "Connected UAVs and ground vehicles, edge processing and networked autonomous systems."
+      ],
+      [
+        "Industry use cases",
+        "Application work spanning precision agriculture, immersive experiences and connected response systems."
+      ],
+      [
+        "Skills and collaboration",
+        "Training and demonstrations that bring academia, startups and industry into the same environment."
+      ]
+    ],
+    "projects": [
+      [
+        "Explore the 5G test lab",
+        "See the infrastructure and connected-systems development environment.",
+        "https://www.artpark.in/5g-test-lab-wwt-1"
+      ],
+      [
+        "Centre of Excellence",
+        "Explore the programme's facilities, focus areas and collaboration opportunities.",
+        "https://www.artpark.in/programs/coe-wwt1"
+      ]
+    ]
+  },
+  {
+    "slug": "industry-5",
+    "short": "Industry 5.0",
+    "label": "Technology shaped around people and production.",
+    "intro": "Industrial transformation starts with a specific operational problem. This programme brings industry and research together around fragmented data, supply-chain agility, environmental pressures and the practical use of AI and automation.",
+    "image": "/assets/recovered/robotics-lab.webp",
+    "caption": "Hardware engineering and testing in the ARTPARK robotics lab.",
+    "tracks": [
+      [
+        "Connected operations",
+        "Digital twins and asset tracking that connect information to what is happening on the ground."
+      ],
+      [
+        "AI in the workflow",
+        "Exploring generative AI and analytics around real operational decisions."
+      ],
+      [
+        "Human-centred automation",
+        "Collaborative robotics and automation designed around the people using them."
+      ],
+      [
+        "Resource-aware production",
+        "Co-innovation around productivity, energy use and sustainable operations."
+      ]
+    ],
+    "projects": [
+      [
+        "Industry 5.0 programme",
+        "Explore the programme's approach to people-centric industrial innovation.",
+        "https://www.artpark.in/industry-50"
+      ],
+      [
+        "Bring an industry problem",
+        "Discuss a use case, research question or engineering collaboration with ARTPARK.",
+        "/contact"
+      ]
+    ]
+  },
+  {
+    "slug": "artlabs",
+    "short": "ARTLabs",
+    "label": "The space between an idea and a venture.",
+    "intro": "Not every promising technology begins as a company. ARTLabs supports researchers, engineers and entrepreneurs as they turn early ideas into prototypes, investigate real needs and explore a path towards a venture.",
+    "image": "/assets/recovered/artlabs-prototyping.webp",
+    "caption": "Hands-on electronics prototyping at ARTLabs.",
+    "tracks": [
+      [
+        "Ideas into prototypes",
+        "A practical environment for innovators to make and test tangible technology."
+      ],
+      [
+        "Early validation",
+        "Testing assumptions about the problem, the user and the value a technology can create."
+      ],
+      [
+        "Innovators-in-Residence",
+        "Innovation projects with a route towards product and venture exploration."
+      ]
+    ],
+    "projects": [
+      [
+        "Meet the ARTLabs projects",
+        "The programme lists projects including Taksa, Idle Robotics, Zetesis and Cold Chain Systems.",
+        "https://www.artpark.in/artlabs"
+      ],
+      [
+        "Find your incubation pathway",
+        "Explore Technology Innovators in Residence and the Venture Incubation Programme.",
+        "https://apply.artpark.info/"
+      ]
+    ]
+  },
+  {
+    "slug": "academy",
+    "short": "Academy",
+    "label": "Learn by working on what comes next.",
+    "intro": "Deep tech needs people who can move between theory, tools and the messy reality of making things work. The Academy connects learners and practitioners through technical training, workshops and research-linked learning.",
+    "image": "/assets/editorial/camras-testing.webp",
+    "caption": "An engineering discussion in the lab: learning through shared technical work.",
+    "tracks": [
+      [
+        "Hands-on technical learning",
+        "Workshops and training in robotics, AI and wired and wireless technologies."
+      ],
+      [
+        "Research exposure",
+        "Fellowships and internships connecting undergraduate and postgraduate learners to technical work."
+      ],
+      [
+        "Entrepreneurship conversations",
+        "Spark Sessions connect aspiring entrepreneurs with people building technology and ventures."
+      ]
+    ],
+    "projects": [
+      [
+        "Explore Academy activities",
+        "Find the programme's skilling initiatives and learning formats.",
+        "https://www.artpark.in/skilling"
+      ],
+      [
+        "Find a role in the ecosystem",
+        "See current engineering, research and operations opportunities.",
+        "/careers"
+      ]
+    ]
+  }
+]

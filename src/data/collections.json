@@ -1,0 +1,713 @@
+{
+  "extractedAt": "2026-10-23T18:15:08.485Z",
+  "news": [
+    {
+      "title": "Transforming Urban Dengue Response using Data-Driven and Predictive Intelligence Surveillance Systems",
+      "url": "https://www.indiahealthfund.org/transforming-urban-dengue-response-using-data-driven-and-predictive-intelligence-surveillance-systems/",
+      "date": "14th November 2025",
+      "publication": "India health fund",
+      "sourceUrl": "https://www.artpark.in/media"
+    },
+    {
+      "title": "IISc’s AI model to offer heat-stress predictions",
+      "url": "https://www.deccanherald.com/india/karnataka/bengaluru/iiscs-ai-model-to-offer-heat-stress-predictions-3459329",
+      "date": "24 March 2025",
+      "publication": "Deccan Herald",
+      "sourceUrl": "https://www.artpark.in/media"
+    },
+    {
+      "title": "The Future of Health - Meet the Innovators Changing Maternal and Child Health",
+      "url": "https://partners.time.com/partners/bill-melinda-gates-foundation/the-future-of-health-meet-the-innovators-changing-maternal-and-child-health/?prx_t=0nAJAMdtrA9k0PA&utm_campaign=213534&ntv_ui=a003a757-dc2a-4a87-8ca4-3a95f2adcb3f&ntv_ht=p_CJZwA",
+      "sourceUrl": "https://www.artpark.in/media"
+    },
+    {
+      "title": "MIDAS: Creating AI for healthcare with an Indian bias",
+      "url": "https://www.forbesindia.com/article/technology/midas-creating-ai-for-healthcare-with-an-indian-bias/94293/1",
+      "date": "1 October 2024",
+      "publication": "Forbes India",
+      "sourceUrl": "https://www.artpark.in/media"
+    },
+    {
+      "title": "Under Bhashini, ARTPARK-IISc to open source 16,000 hours of speech data",
+      "url": "https://economictimes.indiatimes.com/tech/technology/under-bhashini-iisc-to-open-source-16000-hours-of-speech-data/articleshow/111639325.cms?from=mdr",
+      "date": "11 July 2024",
+      "publication": "The Economic Times",
+      "sourceUrl": "https://www.artpark.in/media"
+    },
+    {
+      "title": "ARTPARK: From legged robots to advanced cargo drones, a look at India's first robotics park",
+      "url": "https://economictimes.indiatimes.com/tech/technology/artpar-from-legged-robots-to-advanced-cargo-drones-a-look-at-indias-first-robotics-park/articleshow/109844978.cms?from=mdr",
+      "date": "05 May 2024",
+      "publication": "The Economic Times",
+      "sourceUrl": "https://www.artpark.in/media",
+      "associationNote": "The source page has a misplaced publication hyperlink; title/date recovered from the matching article row and existing article destination."
+    },
+    {
+      "title": "Project Vaani identified as a key initiative in shaping India's LLM space",
+      "url": "https://www.moneycontrol.com/news/technology/indias-ai-uprising-can-a-challenger-emerge-in-the-llm-marathon-11931681.html",
+      "date": "21 December 2023",
+      "publication": "Money Control",
+      "sourceUrl": "https://www.artpark.in/media"
+    },
+    {
+      "title": "Health minister launches dashboard, app to track surge in dengue",
+      "url": "https://www.hindustantimes.com/india-news/health-minister-launches-dashboard-app-to-track-surge-in-dengue-101694203053737.html",
+      "date": "09 September 2023",
+      "publication": "Hindustan Times",
+      "sourceUrl": "https://www.artpark.in/media"
+    },
+    {
+      "title": "New system will use AI to predict dengue cases across Karnataka",
+      "url": "https://www.newindianexpress.com/cities/bengaluru/2023/Sep/09/new-system-will-use-ai-to-predict-dengue-cases-acrosskarnataka-2613087.html",
+      "date": "09 September 2023",
+      "publication": "The New Indian Express",
+      "sourceUrl": "https://www.artpark.in/media"
+    },
+    {
+      "title": "Project Vaani scales decibels as it maps language landscape of India",
+      "url": "https://www.thehindubusinessline.com/news/variety/project-vaani-scales-decibels-as-it-maps-language-landscape-of-india/article66304920.ece",
+      "date": "25 December 2022",
+      "publication": "The HINDU Business Line",
+      "sourceUrl": "https://www.artpark.in/media"
+    },
+    {
+      "title": "Artpark-IISc, Google to bring innovation to India’s diverse languages",
+      "url": "https://www.livemint.com/technology/tech-news/artparkiisc-google-to-bring-innovation-to-india-s-diverse-languages-11671445526332.html",
+      "date": "19 December 2022",
+      "publication": "MINT",
+      "sourceUrl": "https://www.artpark.in/media"
+    },
+    {
+      "title": "Artpark-IISc gets approval for robotics accelerator",
+      "url": "http://timesofindia.indiatimes.com/articleshow/96186255.cms?utm_campaign=cppst&utm_medium=text&utm_source=contentofinterest",
+      "date": "13 December 2022",
+      "publication": "Times of India",
+      "sourceUrl": "https://www.artpark.in/media"
+    },
+    {
+      "title": "ICMR and IISc to work together for the creation of a gold standard medical data platform",
+      "url": "https://iisc.ac.in/events/icmr-and-iisc-to-work-together-for-the-creation-of-a-gold-standard-medical-data-platform/",
+      "date": "21 September 2022",
+      "publication": "Indian Institute of Science",
+      "sourceUrl": "https://www.artpark.in/media"
+    },
+    {
+      "title": "The core idea of XraySetu is to give doctors another screening option for Covid 19",
+      "url": "https://health.economictimes.indiatimes.com/news/diagnostics/the-core-idea-of-xraysetu-is-to-give-doctors-another-screening-option-for-covid-19-umakant-soniceo-artpark/83103278",
+      "date": "01 June 2022",
+      "publication": "ET Healthworld",
+      "sourceUrl": "https://www.artpark.in/media"
+    }
+  ],
+  "events": [
+    {
+      "title": "Calibrate: testing and improving AI agents for nonprofits",
+      "date": "23 October 2026 ? Past session",
+      "description": "A Pragati AI for Impact masterclass with ARTPARK?s Jigar Doshi and Aman Dalmia, co-hosted with the^delta.",
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7519287141550489600/",
+      "sourceUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7519287141550489600/",
+      "image": "/assets/editorial/calibrate-evaluation.jpg"
+    },
+    {
+      "title": "Rethinking Efficient AI System",
+      "url": "https://www.artpark.in/events/rethinking-efficient-ai-system",
+      "date": "Tuesday, January 20, 2026",
+      "sourceUrl": "https://www.artpark.in/events"
+    },
+    {
+      "title": "AI By Her - Pre Event - India AI Impact Summit 2025",
+      "url": "https://www.artpark.in/events/ai-by-her-pre-event-india-ai-impact-summit-2025",
+      "date": "Monday, November 17, 2025",
+      "sourceUrl": "https://www.artpark.in/events"
+    },
+    {
+      "title": "CodeBot Hackathon 2025",
+      "url": "https://www.artpark.in/events/codebot-hackathon-2025",
+      "date": "Thursday, July 17, 2025",
+      "sourceUrl": "https://www.artpark.in/events"
+    },
+    {
+      "title": "Tutorial on 5G essentials",
+      "url": "https://www.artpark.in/events/tutorial-on-5g-essentials",
+      "date": "Monday, February 24, 2025",
+      "sourceUrl": "https://www.artpark.in/events"
+    },
+    {
+      "title": "5G Test Lab Open House",
+      "url": "https://www.artpark.in/events/5g-test-lab-open-house",
+      "date": "Wednesday, December 11, 2024",
+      "sourceUrl": "https://www.artpark.in/events"
+    },
+    {
+      "title": "ROSCon IN 24",
+      "url": "https://www.artpark.in/events/roscon-in-24",
+      "date": "Wed, Dec 4, 2024 Fri, Dec 6, 2024",
+      "sourceUrl": "https://www.artpark.in/events"
+    },
+    {
+      "title": "India Mobile Congress 2024",
+      "url": "https://www.artpark.in/events/india-mobile-congress-2024",
+      "date": "Tue, Oct 15, 2024 Fri, Oct 18, 2024",
+      "sourceUrl": "https://www.artpark.in/events"
+    },
+    {
+      "title": "ELCIA Tech Summit",
+      "url": "https://www.artpark.in/events/https/elciatechsummitin/elcia-tech-summit",
+      "date": "Friday, July 26, 2024",
+      "sourceUrl": "https://www.artpark.in/events"
+    },
+    {
+      "title": "ROSCon",
+      "url": "https://www.artpark.in/events/roscon",
+      "date": "Thu, Dec 14, 2023 Fri, Dec 15, 2023",
+      "sourceUrl": "https://www.artpark.in/events"
+    },
+    {
+      "title": "Global Partnership on AI",
+      "url": "https://www.artpark.in/events/global-partnership-on-ai",
+      "date": "Tue, Dec 12, 2023 Thu, Dec 14, 2023",
+      "sourceUrl": "https://www.artpark.in/events"
+    },
+    {
+      "title": "AI & Societal Good – MINT AI Summit",
+      "url": "https://www.artpark.in/events/mint-ai-summit",
+      "date": "Friday, December 8, 2023",
+      "sourceUrl": "https://www.artpark.in/events"
+    },
+    {
+      "title": "NaCDEC VI – Design Challenge",
+      "url": "https://www.artpark.in/events/nacdec-vi-design-challenge",
+      "date": "Saturday, August 12, 2023",
+      "sourceUrl": "https://www.artpark.in/events"
+    },
+    {
+      "title": "Robotics Challenge - Grand Finale",
+      "url": "https://www.artpark.in/events/robotics-challenge-finale",
+      "date": "Saturday, May 14, 2022",
+      "sourceUrl": "https://www.artpark.in/events"
+    },
+    {
+      "title": "ARTPARK Innovation Summit",
+      "url": "https://www.artpark.in/events/artpark-innovation-summit",
+      "date": "Monday, March 14, 2022",
+      "sourceUrl": "https://www.artpark.in/events"
+    },
+    {
+      "title": "Seminar on Advanced Air Mobility",
+      "url": "https://www.artpark.in/events/advanced-air-mobility",
+      "date": "Saturday, February 26, 2022",
+      "sourceUrl": "https://www.artpark.in/events"
+    }
+  ],
+  "jobs": [
+    {
+      "title": "AI Engineer — Edge Models & Reasoning Systems (USV)",
+      "url": "https://www.artparkcareers.in/roles/r_213c849b-1ed4-4848-b834-b9b5e3cc1902",
+      "sourceUrl": "https://www.artparkcareers.in/roles/r_213c849b-1ed4-4848-b834-b9b5e3cc1902",
+      "listingSourceUrl": "https://www.artparkcareers.in/roles",
+      "description": "Develop efficient AI models and reasoning systems for unmanned surface vehicles, combining edge inference with sensor and telemetry data.",
+      "organization": "HEED",
+      "hiringContext": "Hiring via ARTPARK",
+      "team": "Marine Autonomy",
+      "category": "Engineering",
+      "jobFamily": "Software, AI & Computational Engineering",
+      "subFamily": "Machine Learning & Embedded Intelligence Engineering",
+      "location": "Bangalore",
+      "type": "Full-time",
+      "workMode": "On-site",
+      "postedAt": "2026-10-23T09:12:44.295Z",
+      "checkedAt": "2026-10-24",
+      "programme": "TIR"
+    },
+    {
+      "title": "Embedded Engineer",
+      "url": "https://www.artparkcareers.in/roles/r_d8c21164-3345-486b-b521-2caf72e89e1e",
+      "sourceUrl": "https://www.artparkcareers.in/roles/r_d8c21164-3345-486b-b521-2caf72e89e1e",
+      "listingSourceUrl": "https://www.artparkcareers.in/roles",
+      "description": "Design circuit boards and embedded firmware for electric marine propulsion, then validate the hardware and software in field tests.",
+      "organization": "HEED",
+      "hiringContext": "Hiring via ARTPARK",
+      "team": "Electronics & Firmware",
+      "category": "Engineering",
+      "jobFamily": "Systems, Hardware & Advanced Engineering",
+      "subFamily": "Electronics Design & Engineering",
+      "location": "To be confirmed",
+      "type": "Full-time",
+      "workMode": "On-site",
+      "postedAt": "2026-10-23T08:11:30.522Z",
+      "checkedAt": "2026-10-24",
+      "programme": "TIR"
+    },
+    {
+      "title": "Innovation Associate Project Manager",
+      "url": "https://www.artparkcareers.in/roles/r_5b38606b-54fa-4df2-8f9a-5f7355cef006",
+      "sourceUrl": "https://www.artparkcareers.in/roles/r_5b38606b-54fa-4df2-8f9a-5f7355cef006",
+      "listingSourceUrl": "https://www.artparkcareers.in/roles",
+      "description": "Coordinate innovation projects through milestone tracking, programme data, governance and communication with researchers, startups and mentors.",
+      "organization": "ARTPARK",
+      "hiringContext": "ARTPARK",
+      "team": "Innovation Programs",
+      "category": "Operations & Business",
+      "jobFamily": "Program, Portfolio & R&D Operations",
+      "subFamily": "Innovation Program Management",
+      "location": "Bangalore",
+      "type": "Full-time",
+      "workMode": "Hybrid",
+      "postedAt": "2026-10-23T07:51:28.063Z",
+      "checkedAt": "2026-10-24"
+    },
+    {
+      "title": "Innovation Project Manager",
+      "url": "https://www.artparkcareers.in/roles/r_fe4df1b7-b7b4-448b-a280-c434c015c3e3",
+      "sourceUrl": "https://www.artparkcareers.in/roles/r_fe4df1b7-b7b4-448b-a280-c434c015c3e3",
+      "listingSourceUrl": "https://www.artparkcareers.in/roles",
+      "description": "Manage project setup, delivery tracking and stakeholder coordination across ARTPARK innovation and technology development programmes.",
+      "organization": "ARTPARK",
+      "hiringContext": "ARTPARK",
+      "team": "Innovation Programs",
+      "category": "Operations & Business",
+      "jobFamily": "Program, Portfolio & R&D Operations",
+      "subFamily": "Innovation Program Management",
+      "location": "Bangalore",
+      "type": "Full-time",
+      "workMode": "On-site",
+      "postedAt": "2026-10-23T07:46:31.617Z",
+      "checkedAt": "2026-10-24"
+    },
+    {
+      "title": "RF Systems Engineering Intern / Graduate Engineer",
+      "url": "https://www.artparkcareers.in/roles/r_b9927eac-efc8-47bf-b73c-360e828c0c2f",
+      "sourceUrl": "https://www.artparkcareers.in/roles/r_b9927eac-efc8-47bf-b73c-360e828c0c2f",
+      "listingSourceUrl": "https://www.artparkcareers.in/roles",
+      "description": "Work on antenna simulation, RF integration and testing for resilient satellite positioning and navigation systems.",
+      "organization": "Foucault Private Limited",
+      "hiringContext": "Hiring via ARTPARK",
+      "team": "RF Engineering & Antenna Systems",
+      "category": "Engineering",
+      "jobFamily": "Systems, Hardware & Advanced Engineering",
+      "subFamily": "Electronics Design & Engineering",
+      "location": "Bangalore",
+      "type": "Contract",
+      "workMode": "On-site",
+      "postedAt": "2026-10-23T03:56:00.406Z",
+      "checkedAt": "2026-10-24",
+      "programme": "TIR"
+    },
+    {
+      "title": "Mechanical Packaging Design Engineer",
+      "url": "https://www.artparkcareers.in/roles/r_6d10e59b-a7a9-4dbb-bc17-a3ed19bc3a98",
+      "sourceUrl": "https://www.artparkcareers.in/roles/r_6d10e59b-a7a9-4dbb-bc17-a3ed19bc3a98",
+      "listingSourceUrl": "https://www.artparkcareers.in/roles",
+      "description": "Develop enclosures, thermal management and mechanical packaging for high-voltage power electronics.",
+      "organization": "Hardstone Electric",
+      "hiringContext": "Hiring via ARTPARK",
+      "team": "Hardware and Power Electronics Engineering",
+      "category": "Engineering",
+      "jobFamily": "Systems, Hardware & Advanced Engineering",
+      "subFamily": "Mechanical Engineering",
+      "location": "Bangalore",
+      "type": "Contract",
+      "workMode": "On-site",
+      "postedAt": "2026-10-21T06:36:05.923Z",
+      "checkedAt": "2026-10-24",
+      "programme": "TIR"
+    },
+    {
+      "title": "PCB Design Engineer",
+      "url": "https://www.artparkcareers.in/roles/r_9168ee99-8836-4c5e-a05c-1530193f3939",
+      "sourceUrl": "https://www.artparkcareers.in/roles/r_9168ee99-8836-4c5e-a05c-1530193f3939",
+      "listingSourceUrl": "https://www.artparkcareers.in/roles",
+      "description": "Create multi-layer PCB layouts, maintain component libraries and prepare manufacturable design packages.",
+      "organization": "Hardstone Electric",
+      "hiringContext": "Hiring via ARTPARK",
+      "team": "Hardware and Power Electronics Engineering",
+      "category": "Engineering",
+      "jobFamily": "Systems, Hardware & Advanced Engineering",
+      "subFamily": "Electronics Design & Engineering",
+      "location": "Bangalore",
+      "type": "Contract",
+      "workMode": "On-site",
+      "postedAt": "2026-10-21T06:10:03.919Z",
+      "checkedAt": "2026-10-24",
+      "programme": "TIR"
+    },
+    {
+      "title": "CFD Engineer (Hydrodynamics)",
+      "url": "https://www.artparkcareers.in/roles/r_2765c587-c4be-4351-8446-b4168eeb2012",
+      "sourceUrl": "https://www.artparkcareers.in/roles/r_2765c587-c4be-4351-8446-b4168eeb2012",
+      "listingSourceUrl": "https://www.artparkcareers.in/roles",
+      "description": "Model marine propulsion flows, improve waterjet and impeller designs, and compare simulations with test data.",
+      "organization": "HEED",
+      "hiringContext": "Hiring via ARTPARK",
+      "team": "Propulsion / Hydrodynamics",
+      "category": "Engineering",
+      "jobFamily": "Systems, Hardware & Advanced Engineering",
+      "subFamily": "Aerospace & Propulsion Engineering",
+      "location": "Bangalore",
+      "type": "Full-time",
+      "workMode": "On-site",
+      "postedAt": "2026-10-18T07:41:17.692Z",
+      "checkedAt": "2026-10-24",
+      "programme": "TIR"
+    },
+    {
+      "title": "Engineer I",
+      "url": "https://www.artparkcareers.in/roles/r_7b2bba9c-1af7-40c9-b467-968765281f9e",
+      "sourceUrl": "https://www.artparkcareers.in/roles/r_7b2bba9c-1af7-40c9-b467-968765281f9e",
+      "listingSourceUrl": "https://www.artparkcareers.in/roles",
+      "description": "Develop wireless-network controller services, telemetry pipelines and backend systems that support reliable network operations.",
+      "organization": "Adwiser",
+      "hiringContext": "Hiring via ARTPARK",
+      "team": "Wireless Backend",
+      "category": "Engineering",
+      "jobFamily": "Systems, Hardware & Advanced Engineering",
+      "subFamily": "Wireless Communications & Cyber-Physical Systems Engineering",
+      "location": "Bangalore",
+      "type": "Full-time",
+      "workMode": "On-site",
+      "postedAt": "2026-10-17T11:29:58.908Z",
+      "checkedAt": "2026-10-24",
+      "programme": "TIR"
+    },
+    {
+      "title": "Research Associate – Biosensors & Optical Instrumentation",
+      "url": "https://www.artparkcareers.in/roles/r_2892171e-054c-4440-9121-8cd704ac67ff",
+      "sourceUrl": "https://www.artparkcareers.in/roles/r_2892171e-054c-4440-9121-8cd704ac67ff",
+      "listingSourceUrl": "https://www.artparkcareers.in/roles",
+      "description": "Develop biosensor experiments and optical instrumentation for a TIR-led diagnostic device, progressing a laboratory prototype toward clinical validation.",
+      "organization": "Natheon",
+      "hiringContext": "Hiring via ARTPARK",
+      "team": "TIR Project at ARTPARK",
+      "category": "Engineering",
+      "jobFamily": "Systems, Hardware & Advanced Engineering",
+      "subFamily": "Electronics Design & Engineering",
+      "location": "ARTPARK @ IISc Bangalore",
+      "type": "Contract",
+      "workMode": "On-site",
+      "postedAt": "2026-10-17T08:00:11.715Z",
+      "checkedAt": "2026-10-24",
+      "programme": "TIR"
+    },
+    {
+      "title": "Project Coordinator & Administration",
+      "url": "https://www.artparkcareers.in/roles/r_d582a62f-a64c-41c1-b20f-2e8f5e2194c5",
+      "sourceUrl": "https://www.artparkcareers.in/roles/r_d582a62f-a64c-41c1-b20f-2e8f5e2194c5",
+      "listingSourceUrl": "https://www.artparkcareers.in/roles",
+      "description": "Coordinate office administration, travel, vendors, agreements and project documentation across ARTPARK teams.",
+      "organization": "ARTPARK",
+      "hiringContext": "ARTPARK",
+      "team": "Operations & Administration",
+      "category": "Operations & Business",
+      "jobFamily": "People, Finance & Innovation Enablement",
+      "subFamily": "Office Administration & Support",
+      "location": "Bangalore",
+      "type": "Full-time",
+      "workMode": "On-site",
+      "postedAt": "2026-10-16T11:15:52.631Z",
+      "checkedAt": "2026-10-24"
+    },
+    {
+      "title": "AI/ML Research Intern",
+      "url": "https://www.artparkcareers.in/roles/r_bc8b3a6a-6f99-483c-9578-b310ca26faf3",
+      "sourceUrl": "https://www.artparkcareers.in/roles/r_bc8b3a6a-6f99-483c-9578-b310ca26faf3",
+      "listingSourceUrl": "https://www.artparkcareers.in/roles",
+      "description": "Research physics-informed machine learning and language-model pipelines for predictive maintenance using live industrial machine data.",
+      "organization": "AxD",
+      "hiringContext": "Hiring via ARTPARK",
+      "team": "AxD — Predictive Maintenance AI",
+      "category": "Engineering",
+      "jobFamily": "Software, AI & Computational Engineering",
+      "subFamily": "Machine Learning & Embedded Intelligence Engineering",
+      "location": "Bangalore",
+      "type": "Internship",
+      "workMode": "Hybrid",
+      "postedAt": "2026-10-15T13:52:12.011Z",
+      "checkedAt": "2026-10-24",
+      "programme": "TIR"
+    }
+  ],
+  "partners": [
+    {
+      "name": "Rockefeller Foundation",
+      "sourceUrl": "https://www.artpark.in/partnerships",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/e15696f7-bee9-4536-a889-fab777aaab6d/rockfeller+foundation.png",
+      "logo": "/assets/recovered/partners/rockefeller-foundation.webp"
+    },
+    {
+      "name": "NTPC",
+      "sourceUrl": "https://www.artpark.in/partnerships",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/b961b66f-4f56-486c-a970-15ea88029266/2560px-NTPC_Logo.svg.jpg",
+      "logo": "/assets/recovered/partners/ntpc.webp"
+    },
+    {
+      "name": "NVIDIA",
+      "sourceUrl": "https://www.artpark.in/partnerships",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/c082dcfa-d905-4830-9d27-abebc4a6c8b5/nvidia.png",
+      "logo": "/assets/recovered/partners/nvidia.webp"
+    },
+    {
+      "name": "Dr. H. N. Science Centre",
+      "sourceUrl": "https://www.artpark.in/partnerships",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/b837bbad-59ab-48c2-92a0-d5b103212eab/DR+HN+Science+centre.jpg",
+      "logo": "/assets/recovered/partners/dr-h-n-science-centre.webp"
+    },
+    {
+      "name": "Airtel",
+      "sourceUrl": "https://www.artpark.in/partnerships",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/ae9daac6-b8b3-41b8-b39e-009de17d9108/Logo_Airtel+1.png",
+      "logo": "/assets/recovered/partners/airtel.webp"
+    },
+    {
+      "name": "AIIMS Raipur",
+      "sourceUrl": "https://www.artpark.in/partnerships",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/772587af-abbc-400c-9d58-dec580c953b2/aiims+raipur.png",
+      "logo": "/assets/recovered/partners/aiims-raipur.webp"
+    },
+    {
+      "name": "Aalto University",
+      "sourceUrl": "https://www.artpark.in/partnerships",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/e30946d7-c1b6-4154-aa76-687df41f0a1a/aalto+uni.png",
+      "logo": "/assets/recovered/partners/aalto-university.webp"
+    },
+    {
+      "name": "MIT",
+      "sourceUrl": "https://www.artpark.in/partnerships",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/195f1fd5-a103-4f8a-a321-e4bc6fc97678/mit.png",
+      "logo": "/assets/recovered/partners/mit.webp"
+    },
+    {
+      "name": "IIT Jodhpur",
+      "sourceUrl": "https://www.artpark.in/partnerships",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/050aac5d-8d94-4340-a815-210035801e6b/iit+jodhpur.png",
+      "logo": "/assets/recovered/partners/iit-jodhpur.webp"
+    },
+    {
+      "name": "BML Munjal University",
+      "sourceUrl": "https://www.artpark.in/partnerships",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/9848ef2a-1686-4ca3-afdd-69a0f6853708/bml+munjal+uni+logo.png",
+      "logo": "/assets/recovered/partners/bml-munjal-university.webp"
+    },
+    {
+      "name": "Volvo",
+      "sourceUrl": "https://www.artpark.in/partnerships",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/149ca5da-883c-48d8-abaf-8f463bf170fa/Logo+Volvo+1.png",
+      "logo": "/assets/recovered/partners/volvo.webp"
+    },
+    {
+      "name": "EkStep",
+      "sourceUrl": "https://www.artpark.in/partnerships",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/0edaf14d-08a8-4432-8526-a501aa7ea2f1/ekstep+logo.png",
+      "logo": "/assets/recovered/partners/ekstep.webp"
+    },
+    {
+      "name": "WhatsApp",
+      "sourceUrl": "https://www.artpark.in/partnerships",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/94070073-7796-4a0a-a89d-5095a333b9ce/whatsapp.png",
+      "logo": "/assets/recovered/partners/whatsapp.webp"
+    },
+    {
+      "name": "C-DAC",
+      "sourceUrl": "https://www.artpark.in/partnerships",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/4fbbf9e5-ad0d-48fa-9928-037d1fcf5ec1/cdac.png",
+      "logo": "/assets/recovered/partners/c-dac.webp"
+    },
+    {
+      "name": "Uttarakhand Technical University",
+      "sourceUrl": "https://www.artpark.in/partnerships",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/ff1eeb02-a20f-448f-87bd-bb665f0bf8f7/UTU_Uttarakhand.png",
+      "logo": "/assets/recovered/partners/uttarakhand-technical-university.webp"
+    },
+    {
+      "name": "Atal Innovation Mission",
+      "sourceUrl": "https://www.artpark.in/partnerships",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/46242858-c8aa-42b6-b8cf-651d9807a986/NITI+AIM+Logo_blk.png",
+      "logo": "/assets/recovered/partners/atal-innovation-mission.webp"
+    },
+    {
+      "name": "Department of Science & Technology",
+      "sourceUrl": "https://www.artpark.in/partnerships",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1dab524c-0cb1-4187-bf16-7ca1e0a80236/dst+2.png",
+      "logo": "/assets/recovered/partners/department-of-science-technology.webp"
+    },
+    {
+      "name": "Ministry of Heavy Industries",
+      "sourceUrl": "https://www.artpark.in/partnerships",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/37405b51-df63-4639-bcad-ef53bdbd55ee/mhi+logo.png",
+      "logo": "/assets/recovered/partners/ministry-of-heavy-industries.webp"
+    },
+    {
+      "name": "Government of Karnataka",
+      "sourceUrl": "https://www.artpark.in/partnerships",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/2195f200-9bcc-4892-b443-fda5d24295a9/govt_of_karnataka+2.png",
+      "logo": "/assets/recovered/partners/government-of-karnataka.webp"
+    },
+    {
+      "name": "Startup Karnataka",
+      "sourceUrl": "https://www.artpark.in/partnerships",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/33ef3f06-d70b-49c2-a916-5d61e73e8acd/startup+karnataka.png",
+      "logo": "/assets/recovered/partners/startup-karnataka.webp"
+    },
+    {
+      "name": "Indian Institute of Science",
+      "sourceUrl": "https://www.artpark.in/partnerships",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/d384842a-f8b6-4649-b195-69efc19fa010/iisc+logo.png",
+      "logo": "/assets/recovered/partners/indian-institute-of-science.webp"
+    },
+    {
+      "name": "Bill & Melinda Gates Foundation",
+      "sourceUrl": "https://www.artpark.in/partnerships",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/dc1f429f-1009-4fc7-beb5-65db3bb076aa/Bill+and+Melinda+gates+foundation.png",
+      "logo": "/assets/recovered/partners/bill-melinda-gates-foundation.webp"
+    },
+    {
+      "name": "KTECH",
+      "sourceUrl": "https://www.artpark.in/partnerships",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/eb450325-df16-4f75-98d4-0231bcee6bdd/ktech+logo.png",
+      "logo": "/assets/recovered/partners/ktech.webp"
+    },
+    {
+      "name": "Indian Council of Medical Research",
+      "sourceUrl": "https://www.artpark.in/partnerships",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/f7b65829-3b23-4e0b-b62a-250697e76e1f/icmr.png",
+      "logo": "/assets/recovered/partners/indian-council-of-medical-research.webp"
+    },
+    {
+      "name": "Google",
+      "sourceUrl": "https://www.artpark.in/partnerships",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/4a54d154-56cc-4530-b487-4d4948f92789/google.png",
+      "logo": "/assets/recovered/partners/google.webp"
+    },
+    {
+      "name": "Karnataka Digital Economy Mission",
+      "sourceUrl": "https://www.artpark.in/partnerships",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/9407560f-03ab-4b48-bfe2-ca62f8058c40/KDEM+logo+1.png",
+      "logo": "/assets/recovered/partners/karnataka-digital-economy-mission.webp"
+    },
+    {
+      "name": "Bosch",
+      "sourceUrl": "https://www.artpark.in/partnerships",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1a0ee303-c726-4238-831a-1de92201ccf9/Logo+Bosch+1.png",
+      "logo": "/assets/recovered/partners/bosch.webp"
+    },
+    {
+      "name": "Office of the Principal Scientific Adviser",
+      "sourceUrl": "https://www.artpark.in/partnerships",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/22faf4f4-b223-48d3-98ac-2819baefbc5e/PSA+logo.png",
+      "logo": "/assets/recovered/partners/office-of-the-principal-scientific-adviser.webp"
+    },
+    {
+      "name": "Niramai",
+      "sourceUrl": "https://www.artpark.in/partnerships",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/b581afa9-226e-48e6-87e2-7dcb9121f923/Logo+Niramai+1.png",
+      "logo": "/assets/recovered/partners/niramai.webp"
+    },
+    {
+      "name": "Flipkart",
+      "sourceUrl": "https://www.artpark.in/partnerships",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/a0c7591a-a943-4aa5-8c35-c2e51e5f8de7/Logo+Flipkart+1.png",
+      "logo": "/assets/recovered/partners/flipkart.webp"
+    },
+    {
+      "name": "Amazon Web Services",
+      "sourceUrl": "https://www.artpark.in/partnerships",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/2f9c989c-a3d2-4de6-b31b-e7a1f3286d4f/aws.png",
+      "logo": "/assets/recovered/partners/amazon-web-services.webp"
+    },
+    {
+      "name": "IIT Kanpur",
+      "sourceUrl": "https://www.artpark.in/partnerships",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/509b9e22-8edb-4210-bbf4-eded2480bb96/iit+kanpur.png",
+      "logo": "/assets/recovered/partners/iit-kanpur.webp"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Scientific and Industrial Research Organization (SIRO) by DSIR",
+      "url": "https://www.artpark.in/certifications",
+      "documentUrl": null,
+      "description": "The Department of Scientific and Industrial Research (DSIR) is a part of the Ministry of Science and Technology. DSIR is the nodal department for granting recognition to in-house R&D units. This enables ARTPARK to avail certain custom duty exemptions/ benefits on imports. This is a recognition by the nodal Government body of the fact that ARTPARK is at the forefront/boundary of transforming knowledge into reality. It is also a recognition of the hard work and commitment of the staff/ faculty of the organization for their unyielding efforts in pushing the boundaries in the field of innovation & research. The entire team at ARTPARK has been consistently building momentum to deliver cutting-edge research solutions in the realm of Cyber-Physical Systems and Artificial Intelligence.",
+      "sourceUrl": "https://www.artpark.in/certifications"
+    },
+    {
+      "title": "Eligible for CSR activities",
+      "url": "https://www.artpark.in/certifications",
+      "documentUrl": null,
+      "description": "ARTPARK has been registered for undertaking Corporate Social Responsibility (CSR) activities vide registration number CSR00017521. Thus, corporates who are required to mandatorily contribute to CSR activities as per section 135 of the Companies Act, 2013, read with the Companies (Corporate Social Responsibility Policy ) Rules, 2014, may contribute to ARTPARK to meet their CSR obligation.",
+      "sourceUrl": "https://www.artpark.in/certifications"
+    },
+    {
+      "title": "Eligible for Section 80G Tax Deduction",
+      "url": "https://www.artpark.in/certifications",
+      "documentUrl": null,
+      "description": "ARTPARK has been approved by the Income Tax Authority under section 80G of the tax law. Thus, the contributions to ARTPARK are eligible for 50% tax deduction under Section 80G(2)(a)(iv) of the tax law, subject to an overall limit of 10% of the gross total income of the taxpayer.",
+      "sourceUrl": "https://www.artpark.in/certifications"
+    },
+    {
+      "title": "Registered as a Charitable Institution",
+      "url": "https://www.artpark.in/certifications",
+      "documentUrl": null,
+      "description": "ARTPARK is registered as a company engaged in ‘charitable activities’ under the tax law. Thus, any grants received by ARTPARK would be exempt from income-tax, subject to meeting certain requirements specified under the tax law.",
+      "sourceUrl": "https://www.artpark.in/certifications"
+    }
+  ],
+  "tenders": [
+    {
+      "title": "The supply of GPU Edge Cloud System",
+      "url": "https://www.artpark.in/s/Tender-document-GPU-Edge-Clouddocx.pdf",
+      "sourceUrl": "https://www.artpark.in/tenders"
+    },
+    {
+      "title": "Corrigendum of the tender",
+      "url": "https://www.artpark.in/s/Corrigendum-Tender-document-GPU-Edge-Cloud-dtd-28-2-24.pdf",
+      "sourceUrl": "https://www.artpark.in/tenders"
+    },
+    {
+      "title": "Minutes of the Commercial bid opening meeting",
+      "url": "https://www.artpark.in/s/Price-Bid-Meeting-Minutes-of-Tender-Supply-of-GPU-Server-1.pdf",
+      "sourceUrl": "https://www.artpark.in/tenders"
+    },
+    {
+      "title": "The supply of GPU Based Rack Server",
+      "url": "https://drive.google.com/file/d/1K-T7Yozc6WMLqQ27smPBRKRdACfX_DFE/view?usp=sharing",
+      "sourceUrl": "https://www.artpark.in/tenders"
+    },
+    {
+      "title": "Output of the opening of the Price Bids",
+      "url": "https://www.artpark.in/s/Website-Publication-Output-of-the-opening-of-the-Proce-Bid-Tender-GPU-Rack-Server.pdf",
+      "sourceUrl": "https://www.artpark.in/tenders"
+    },
+    {
+      "title": "Output of the opening of the Technical Bid of the tender",
+      "url": "https://www.artpark.in/s/Website-Publication-Output-of-the-opening-of-the-Technical-Bid-Tender-GPU-Rack-Server.pdf",
+      "sourceUrl": "https://www.artpark.in/tenders"
+    },
+    {
+      "title": "Corrigendum to the tender",
+      "url": "https://www.artpark.in/s/Tender-Supply-of-GPU-Based-Rack-Server-ARTPARK.pdf",
+      "sourceUrl": "https://www.artpark.in/tenders"
+    },
+    {
+      "title": "Corrigendum -2 to the tender",
+      "url": "https://docs.google.com/document/d/1XVV62ZlZEEILqOduKbJag6r_e03xE9wQ/edit?usp=sharing&ouid=110081720780474297908&rtpof=true&sd=true",
+      "sourceUrl": "https://www.artpark.in/tenders"
+    },
+    {
+      "title": "Corrigendum - 3 to the tender",
+      "url": "https://docs.google.com/document/d/1Lu7pmIMPFC2h0lZXsGbzL--mWw6Tzle7/edit?usp=sharing&ouid=110081720780474297908&rtpof=true&sd=true",
+      "sourceUrl": "https://www.artpark.in/tenders"
+    },
+    {
+      "title": "The supply of robot arm, cobot pump and accessories",
+      "url": "https://drive.google.com/file/d/1YTMBx4T3ae-WC-9Kf3PBqExmAPJtDFoT/view?usp=sharing",
+      "sourceUrl": "https://www.artpark.in/tenders"
+    },
+    {
+      "title": "Platform for clinical & environmental genomic surveillance",
+      "url": "https://www.artpark.in/rfp/genomic-surveillance-platform",
+      "sourceUrl": "https://www.artpark.in/tenders"
+    }
+  ],
+  "notes": [
+    "The public certifications page contains descriptions but no document links. Certification urls are source-page links, not PDF downloads."
+  ]
+}

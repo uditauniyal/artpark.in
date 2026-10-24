@@ -1,0 +1,722 @@
+{
+  "extractedAt": "2026-10-23T18:03:11.760Z",
+  "portfolio": [
+    {
+      "id": "acceleration-robotics",
+      "name": "Acceleration Robotics",
+      "description": "Hardware brains that speed up a robot’s operation",
+      "url": "https://accelerationrobotics.com/",
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Linked company website and displayed logo",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/b3bcf825-781d-45a4-aca7-c929e5d4de9f/acceleration.png",
+      "logo": "/assets/recovered/logo-acceleration-robotics.webp",
+      "bytes": 4788
+    },
+    {
+      "id": "algobotix",
+      "name": "AlgoBotix",
+      "description": "Software solutions for automated UAV operations",
+      "url": "https://algobotix.com/",
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Linked company website and displayed logo",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/261a9202-f0c4-4005-a2fb-1e55a0b6d96b/ALgo+Botix.png",
+      "logo": "/assets/recovered/logo-algobotix.webp",
+      "bytes": 20764
+    },
+    {
+      "id": "algofet",
+      "name": "AlgoFET",
+      "description": "Powering Autonomous Mobility",
+      "url": "https://algofet.com/",
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Linked company website and displayed logo",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/82756db4-c1a5-45c4-9a30-72b0aad0851b/AlgoFET.jpg",
+      "logo": "/assets/recovered/logo-algofet.webp",
+      "bytes": 8504
+    },
+    {
+      "id": "astrome",
+      "name": "Astrome",
+      "description": "Millimeter-wave wireless communication technology",
+      "url": "https://astrome.co/",
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Linked company website and displayed logo",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/a461cece-7b7a-499c-b005-194425b4a98e/Astrome.jpg",
+      "logo": "/assets/recovered/logo-astrome.webp",
+      "bytes": 5880
+    },
+    {
+      "id": "a-thon",
+      "name": "A-THON",
+      "description": "All-Terrain Assisted Autonomous Vehicles a-thonallterrain.",
+      "url": "https://a-thonallterrain.com/",
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Linked company website and displayed logo",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/fc077b7c-3f16-4d45-b81f-c224f7ddec06/Untitled+design+%282%29.png",
+      "logo": "/assets/recovered/logo-a-thon.webp",
+      "bytes": 10680
+    },
+    {
+      "id": "automind-dynamics",
+      "name": "Automind Dynamics",
+      "description": "Autonomy software for ground vehicles and mission-critical mobility systems.",
+      "url": "https://automindynamics.com/",
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Linked company website and displayed logo",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1789543857826-HPRPAS46YEJWNDFNKWYS/WhatsApp%2BImage%2B2026-09-16%2Bat%2B12.43.04.jpg",
+      "logo": "/assets/recovered/logo-automind-dynamics.webp",
+      "bytes": 40684
+    },
+    {
+      "id": "charukesi-health",
+      "name": "Charukesi Health",
+      "description": "Modular, Configurable Rehabilitation Robots",
+      "url": "https://www.charukesihealth.com/",
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Linked company website and displayed logo",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1744278334508-HCWO7YQGPZWMDS08RMVE/httpsdocs.google.jpg",
+      "logo": "/assets/recovered/logo-charukesi-health.webp",
+      "bytes": 7114
+    },
+    {
+      "id": "comrado-aerospace",
+      "name": "Comrado Aerospace",
+      "description": "Autonomous Flying",
+      "url": "https://comradoaerospace.com/",
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Linked company website and displayed logo",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/ffd24cd4-919d-4b3b-a790-e72daeee33d8/comrado.png",
+      "logo": "/assets/recovered/logo-comrado-aerospace.webp",
+      "bytes": 6250
+    },
+    {
+      "id": "contrivation-labs",
+      "name": "Contrivation Labs",
+      "description": "Post-Harvest Automation Solutions For Agritech",
+      "url": null,
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Displayed logo and image filename",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/62bce652-0be9-4e1b-a3d4-e6672b471c08/Contrivation+Labs.jpg",
+      "logo": "/assets/recovered/logo-contrivation-labs.webp",
+      "bytes": 10820
+    },
+    {
+      "id": "dexsent-robotics",
+      "name": "Dexsent Robotics",
+      "description": "Building robots that Sense, Decide, and Act with Purpose",
+      "url": "https://dexsentrobotics.com/",
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Linked company website and displayed logo",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/12fd0577-d4da-4250-9e43-a48665037d5d/Untitled+design+%286%29.png",
+      "logo": "/assets/recovered/logo-dexsent-robotics.webp",
+      "bytes": 103598
+    },
+    {
+      "id": "edgeverse",
+      "name": "Edgeverse",
+      "description": "AI-powered safety tailored for Indian roads.",
+      "url": "https://edgeverse.ai/",
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Linked company website and displayed logo",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/fa4c3926-35b8-4f86-9d86-51eb0c9725ab/Edgeverse+India_logo.png",
+      "logo": "/assets/recovered/logo-edgeverse.webp",
+      "bytes": 27286
+    },
+    {
+      "id": "floaid",
+      "name": "FloAID",
+      "description": "Artificial heart pumps that integrate AI, ML",
+      "url": "https://floaid.com/",
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Linked company website and displayed logo",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1747219505528-4X26XJ96TCWY1B39ZQGC/FLoaid.jpg",
+      "logo": "/assets/recovered/logo-floaid.webp",
+      "bytes": 5828
+    },
+    {
+      "id": "flo-mobility",
+      "name": "Flo Mobility",
+      "description": "AMR (Autonomous Mobile Robots) For Construction",
+      "url": "https://flomobility.com/",
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Linked company website and displayed logo",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/f7a2f65b-8103-4872-a724-b452e44133ab/Flo+Mobility.jpg",
+      "logo": "/assets/recovered/logo-flo-mobility.webp",
+      "bytes": 7768
+    },
+    {
+      "id": "guerin-technologies",
+      "name": "Guerin Technologies",
+      "description": "Compact, lightweight composite antennas for defense, aerospace.",
+      "url": "https://www.guerintech.in/",
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Linked company website and displayed logo",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1747217253204-79RMUENLM5E2I2VIT8DZ/GUerin%2B%25281%2529.jpg",
+      "logo": "/assets/recovered/logo-guerin-technologies.webp",
+      "bytes": 7730
+    },
+    {
+      "id": "hyflex-mobility",
+      "name": "Hyflex Mobility",
+      "description": "Conventional and hybrid engines for drones, UAVs, automotive, and genset applications.",
+      "url": "https://hyflexmobility.com/",
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Linked company website and displayed logo",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1747218090549-2OYHPGS5T7UNZWWPSZVI/Hyfelx.jpg",
+      "logo": "/assets/recovered/logo-hyflex-mobility.webp",
+      "bytes": 12844
+    },
+    {
+      "id": "kinesthetiq",
+      "name": "KinesthetiQ",
+      "description": "Integrates AI with physics-based modeling to transform manufacturing and scientific discovery.",
+      "url": "https://www.kinesthetiq.com/",
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Linked company website and displayed logo",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1747221092147-2K278JP9ARNXJJ1XR3EQ/KinesthetiQ.jpg",
+      "logo": "/assets/recovered/logo-kinesthetiq.webp",
+      "bytes": 6038
+    },
+    {
+      "id": "niral-networks",
+      "name": "Niral Networks",
+      "description": "Cloud-Native 5G Networking Platform",
+      "url": "https://niralnetworks.com/",
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Linked company website and displayed logo",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/fdaa01d0-3503-4a88-ab34-fb2fe042e5c6/niral.png",
+      "logo": "/assets/recovered/logo-niral-networks.webp",
+      "bytes": 37224
+    },
+    {
+      "id": "nextoar",
+      "name": "Nextoar",
+      "description": "Agentic AI for Continuous Operational Excellence Industrial AI for Adaptive Enterprises",
+      "url": "https://nextoar.com/",
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Linked company website and displayed logo",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1764748702489-ILMANX1A6CL31IWDSOS7/Untitled%25252Bdesign%25252B%252525281%25252529.png",
+      "logo": "/assets/recovered/logo-nextoar.webp",
+      "bytes": 43268
+    },
+    {
+      "id": "nxtqube",
+      "name": "NxtQube",
+      "description": "Indigenous Drone Infrastructure",
+      "url": "https://nxtqube.com/",
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Linked company website and displayed logo",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/7597c51d-5319-4d9e-92dd-db8efbe027f6/NxtCube%C2%A0.jpg",
+      "logo": "/assets/recovered/logo-nxtqube.webp",
+      "bytes": 9568
+    },
+    {
+      "id": "open-science-stack",
+      "name": "Open Science Stack",
+      "description": "Open platform for AI-enabled cloud science labs",
+      "url": "https://opensciencestack.org/",
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Linked company website and displayed logo",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1764751099659-PGQDUCB0NIUIRSSAEUK6/Untitled%25252Bdesign%25252B%252525282%25252529.png",
+      "logo": "/assets/recovered/logo-open-science-stack.webp",
+      "bytes": 125516
+    },
+    {
+      "id": "qosmic",
+      "name": "Qosmic",
+      "description": "Building Space Based Optical Communications Infrastructure Connectivity solutions for remote environments",
+      "url": "https://qosmic.space/",
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Linked company website and displayed logo",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/92fa428a-7245-4d4d-a33c-47ec368889e8/Untitled+design+%284%29.png",
+      "logo": "/assets/recovered/logo-qosmic.webp",
+      "bytes": 146498
+    },
+    {
+      "id": "q-axis-motors",
+      "name": "Q-Axis Motors",
+      "description": "Q-Axis Motors Developing integrated electro-optical payloads for Defence & Aerospace India’s strategic eye in the sky",
+      "url": "http://www.qaxismotors.com/",
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Linked company website and displayed logo",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/865b26b9-16dd-4cf3-94b9-d33709dd1878/Untitled+design+%285%29.png",
+      "logo": "/assets/recovered/logo-q-axis-motors.webp",
+      "bytes": 120112
+    },
+    {
+      "id": "rootsgoods",
+      "name": "RootsGoods",
+      "description": "Bio-Informatics & AI-Based Saas Platform",
+      "url": "https://rootsgoods.com/",
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Linked company website and displayed logo",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1c40492e-e003-42bb-b681-4b8965006e48/rootsgoods.jpg",
+      "logo": "/assets/recovered/logo-rootsgoods.webp",
+      "bytes": 8564
+    },
+    {
+      "id": "sakar-robotics",
+      "name": "Sakar Robotics",
+      "description": "Robots For End-To-End Wall-Finishing In Construction",
+      "url": "https://sakarrobotics.com/",
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Linked company website and displayed logo",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1744269250240-0NTCVB50EHG9XS66OM4Z/Sakar%2BRobotics%2BLogo.jpg",
+      "logo": "/assets/recovered/logo-sakar-robotics.webp",
+      "bytes": 5750
+    },
+    {
+      "id": "scivision-ai",
+      "name": "SciVision AI",
+      "description": "Predictive AI for structural health and safety.",
+      "url": "https://www.scivisionai.co.in/",
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Linked company website and displayed logo",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/d70d0110-a274-4c58-8cfc-264b8080e6b3/SciVision+updated+logo+.png",
+      "logo": "/assets/recovered/logo-scivision-ai.webp",
+      "bytes": 49184
+    },
+    {
+      "id": "spacyphy",
+      "name": "Spacyphy",
+      "description": "3D volumetric construction solutions",
+      "url": "https://www.spacyphy.com/",
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Linked company website and displayed logo",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1764751387302-QHPQWIJ8E4UIMTSTG15M/Untitled%2Bdesign%2B%25283%2529.png",
+      "logo": "/assets/recovered/logo-spacyphy.webp",
+      "bytes": 42318
+    },
+    {
+      "id": "strideaide",
+      "name": "StrideAide",
+      "description": "AI-enabled wearable devices to support foot health in diabetic patients.",
+      "url": "https://www.strideaide.com/",
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Linked company website and displayed logo",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1747218594241-0FC0EENRW2BU9VG9WYTW/StrideAide.jpg",
+      "logo": "/assets/recovered/logo-strideaide.webp",
+      "bytes": 7060
+    },
+    {
+      "id": "strider-robotics",
+      "name": "Strider Robotics",
+      "description": "Agile Quadruped Robots",
+      "url": "https://strider-robotics.in/",
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Linked company website and displayed logo",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/ee0a8c63-19ec-47e8-9f79-69e1404c8710/Strider+Robotics.jpg",
+      "logo": "/assets/recovered/logo-strider-robotics.webp",
+      "bytes": 8272
+    },
+    {
+      "id": "twara-robotics",
+      "name": "Twara Robotics",
+      "description": "Indigenous Robotics Components",
+      "url": "https://twararobotics.in/",
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Linked company website and displayed logo",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/05c40d54-ba63-402f-9bff-fddc29a341f7/Twara+Robotics.jpg",
+      "logo": "/assets/recovered/logo-twara-robotics.webp",
+      "bytes": 10696
+    },
+    {
+      "id": "udot",
+      "name": "Udot",
+      "description": "Revolutionizing STEM accessibility for the visually impaired.",
+      "url": "https://www.udot.tech/",
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Linked company website and displayed logo",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/94a637c4-183b-41b4-9c05-f320ead44ebe/Udot+updated+logo+.png",
+      "logo": "/assets/recovered/logo-udot.webp",
+      "bytes": 21648
+    },
+    {
+      "id": "uncharted-ai",
+      "name": "Uncharted AI",
+      "description": "Autonomous robotics for mining and metals.",
+      "url": "https://www.uncharted-ai.com/",
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Linked company website and displayed logo",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/4090ac72-024e-4076-b1ef-1d9ea21d0ba1/full-uai+%283%29.png",
+      "logo": "/assets/recovered/logo-uncharted-ai.webp",
+      "bytes": 96700
+    },
+    {
+      "id": "velastra",
+      "name": "Velastra",
+      "description": "Integrates terrestrial networks (LoRaWAN, NB-IoT, Bluetooth) with satellite communication.",
+      "url": "https://velastra.co/",
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Linked company website and displayed logo",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1747221746598-RN8BXI8WGVSEJFJY7N0X/Velastra%2B%25281%2529.jpg",
+      "logo": "/assets/recovered/logo-velastra.webp",
+      "bytes": 19562
+    },
+    {
+      "id": "versor-robotics",
+      "name": "Versor Robotics",
+      "description": "Agrirobotics Solutions For Small To Large Farms",
+      "url": null,
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Displayed logo and image filename",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/b025a94b-2855-477e-affb-01ce8d05afa0/VERSOR-name.png",
+      "logo": "/assets/recovered/logo-versor-robotics.webp",
+      "bytes": 15008
+    },
+    {
+      "id": "vishvasys-aerospace",
+      "name": "VishvaSys Aerospace",
+      "description": "Guidance, Navigation, and Control (GNC) systems for aerospace vehicles",
+      "url": "https://vapl.tech/",
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Linked company website and displayed logo",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1776320064635-9AAUJ0KQEZB4JJA930Y3/Nosh%252B%2525282%252529.jpg",
+      "logo": "/assets/recovered/logo-vishvasys-aerospace.webp",
+      "bytes": 15544
+    },
+    {
+      "id": "yaanendriya",
+      "name": "Yaanendriya",
+      "description": "Indian Sensor Manufacturer",
+      "url": "https://yaanendriya.com/",
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Linked company website and displayed logo",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1744270519864-R9P6MY9DVG4UTSAY79GL/Untitled%252Bdesign%252B%2525282%252529.jpg",
+      "logo": "/assets/recovered/logo-yaanendriya.webp",
+      "bytes": 18118
+    },
+    {
+      "id": "zenteiq",
+      "name": "Zenteiq",
+      "description": "AI-Powered Learning & Evaluation Solutions",
+      "url": "https://zenteiq.ai/",
+      "sourceUrl": "https://www.artpark.in/startups-overview",
+      "nameSource": "Linked company website and displayed logo",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/deeb0740-3230-493a-a47c-e0cc121ca8b9/zenteiq.png",
+      "logo": "/assets/recovered/logo-zenteiq.webp",
+      "bytes": 16836
+    }
+  ],
+  "team": [
+    {
+      "id": "prof-bharadwaj-amrutur",
+      "name": "Prof Bharadwaj Amrutur",
+      "role": "Executive Director and Chief Technologist",
+      "sourceUrl": "https://www.artpark.in/team",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/b0fc499d-a8ec-4454-9625-1a5c1bddbe17/Prof.Bharadwaj+Amrutur+.jpg",
+      "portrait": "/assets/recovered/portrait-prof-bharadwaj-amrutur-1.webp",
+      "bytes": 45662
+    },
+    {
+      "id": "raghu-dharmaraju",
+      "name": "Raghu Dharmaraju",
+      "role": "Chief Executive Officer",
+      "sourceUrl": "https://www.artpark.in/team",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/4c885bc1-6aa6-4f7d-a2b6-c4f44adc921d/RAGHU+SIR.jpg",
+      "portrait": "/assets/recovered/portrait-raghu-dharmaraju-2.webp",
+      "bytes": 40312
+    },
+    {
+      "id": "sheela-prabhakar",
+      "name": "Sheela Prabhakar",
+      "role": "Program Head - Wired & Wireless Technologies",
+      "sourceUrl": "https://www.artpark.in/team",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/5487f33c-33a6-4af5-a4ec-464cea6e0f1f/Sheela+mam.png",
+      "portrait": "/assets/recovered/portrait-sheela-prabhakar-3.webp",
+      "bytes": 175846
+    }
+  ],
+  "boards": {
+    "governing": [
+      {
+        "id": "prof-govindan-rangarajan",
+        "name": "Prof. Govindan Rangarajan",
+        "role": "Chairman Hub Governing Board(Director, IISc) Nonlinear dynamics and chaos and time series analysis (University of Maryland, USA)",
+        "sourceUrl": "https://www.artpark.in/boards-advisors",
+        "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/61127168-6522-4e38-8385-397c0b6c4300/Dr.+Govindan+Rangarajan.jpg",
+        "portrait": "/assets/recovered/portrait-prof-govindan-rangarajan-0.webp",
+        "bytes": 139786
+      },
+      {
+        "id": "dr-n-manjula-ias-officer",
+        "name": "Dr. N. Manjula, IAS officer",
+        "role": "Secretary of the Department of Electronics, Information Technology, Biotechnology, and Science & Technology (e-ITBTP) for the Government of Karnataka (GoK)",
+        "sourceUrl": "https://www.artpark.in/boards-advisors",
+        "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/fb0b01eb-b178-4901-8483-248dd1b5a364/WhatsApp+Image+2025-10-22+at+11.22.53_68d123d6.jpg",
+        "portrait": "/assets/recovered/portrait-dr-n-manjula-ias-officer-1.webp",
+        "bytes": 71284
+      },
+      {
+        "id": "prof-b-gurumoorthy",
+        "name": "Prof. B. Gurumoorthy",
+        "role": "(Chief Executive, Society for Innovation & Development, IISc) Product Informatics, Computational Metrology, CAD, Computer Aided Prototyping",
+        "sourceUrl": "https://www.artpark.in/boards-advisors",
+        "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/238ba87a-57aa-4d74-a4b1-4bd3140c577e/Prof.+B.+Gurumoorthy.jpg",
+        "portrait": "/assets/recovered/portrait-prof-b-gurumoorthy-2.webp",
+        "bytes": 134458
+      },
+      {
+        "id": "prof-a-paulraj",
+        "name": "Prof. A Paulraj",
+        "role": "(Emeritus Professor, Stanford University) MIMO Wireless Theory, Artificial Intelligence, Wireless Networks, Societal Impact of Information Technology",
+        "sourceUrl": "https://www.artpark.in/boards-advisors",
+        "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/7bdfef13-99a3-4559-85c3-58745d452fe2/Prof.+A+Paulraj.jpg",
+        "portrait": "/assets/recovered/portrait-prof-a-paulraj-3.webp",
+        "bytes": 62016
+      },
+      {
+        "id": "dr-navakanta-bhat",
+        "name": "Dr. Navakanta Bhat",
+        "role": "(Dean , Division of Interdisciplinary Research, IISc) Nanoscale transistor devices, novel materials for creating new robust, inexpensive and low-power sensor devices and systems (Stanford, IITB)",
+        "sourceUrl": "https://www.artpark.in/boards-advisors",
+        "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/7d917c6e-823b-4861-858a-9797319eb664/Dr.+Navakanta+Bhat.jpg",
+        "portrait": "/assets/recovered/portrait-dr-navakanta-bhat-4.webp",
+        "bytes": 68836
+      },
+      {
+        "id": "prof-daniela-rus",
+        "name": "Prof. Daniela Rus",
+        "role": "(Professor & Director, CSAIL, MIT) Artificial Intelligence, Machine Learning, Robotics, Security & Cryptography, Systems & Networking",
+        "sourceUrl": "https://www.artpark.in/boards-advisors",
+        "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/fa0a70bd-18cd-4adf-8f32-21f9685004ae/Prof.+Daniela+Rus.jpg",
+        "portrait": "/assets/recovered/portrait-prof-daniela-rus-5.webp",
+        "bytes": 77362
+      },
+      {
+        "id": "mr-prashanth-prakash",
+        "name": "Mr. Prashanth Prakash",
+        "role": "Partner, Accel",
+        "sourceUrl": "https://www.artpark.in/boards-advisors",
+        "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/119ff3e5-ec0b-4e06-9727-5d6b89a8c618/prashanth+parkash.jpg",
+        "portrait": "/assets/recovered/portrait-mr-prashanth-prakash-6.webp",
+        "bytes": 100768
+      },
+      {
+        "id": "dr-ekta-kapoor",
+        "name": "Dr. Ekta Kapoor",
+        "role": "Mission Director, NM-ICPS, DST, GoI",
+        "sourceUrl": "https://www.artpark.in/boards-advisors",
+        "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/2a9e79b9-6bf5-46e6-81c7-fcb985f568bb/dr+ekta+kapoor.jpg",
+        "portrait": "/assets/recovered/portrait-dr-ekta-kapoor-7.webp",
+        "bytes": 92518
+      },
+      {
+        "id": "vipin-sondhi",
+        "name": "Vipin Sondhi",
+        "role": "Former MD and CEO, Ashok Leyland",
+        "sourceUrl": "https://www.artpark.in/boards-advisors",
+        "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/f9d6803e-e741-4c27-8eda-59717a1f8bfa/vipin+sondhi.jpg",
+        "portrait": "/assets/recovered/portrait-vipin-sondhi-8.webp",
+        "bytes": 50418
+      },
+      {
+        "id": "guruprasad-mudlapur",
+        "name": "Guruprasad Mudlapur",
+        "role": "Joint MD & CTO Bosch Ltd.",
+        "sourceUrl": "https://www.artpark.in/boards-advisors",
+        "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/cb9c28ac-29f8-4f16-a2a6-3a9b8fc8c35c/Guruprasad+Mudlapur.jpg",
+        "portrait": "/assets/recovered/portrait-guruprasad-mudlapur-9.webp",
+        "bytes": 28316
+      }
+    ],
+    "research": [
+      {
+        "id": "prof-yadati-narahari",
+        "name": "Prof Yadati Narahari",
+        "role": "Professor of Computer Science, Indian Institute of Science, Bangalore",
+        "sourceUrl": "https://www.artpark.in/boards-advisors",
+        "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/0d1cbef3-4ce0-40b7-875b-1f7bdfb8f8aa/Prof+Yadati+Narahari.jpg",
+        "portrait": "/assets/recovered/portrait-prof-yadati-narahari-10.webp",
+        "bytes": 116336
+      },
+      {
+        "id": "kumar-n-sivarajan",
+        "name": "Kumar N Sivarajan",
+        "role": "CTO at Tejas Networks",
+        "sourceUrl": "https://www.artpark.in/boards-advisors",
+        "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/0fe2a990-e1ac-453e-bc31-93dcb0e7481c/Kumar+N+Sivarajan.jpg",
+        "portrait": "/assets/recovered/portrait-kumar-n-sivarajan-11.webp",
+        "bytes": 64358
+      },
+      {
+        "id": "venkat-padmanabhan",
+        "name": "Venkat Padmanabhan",
+        "role": "Deputy Managing Director at Microsoft Research India",
+        "sourceUrl": "https://www.artpark.in/boards-advisors",
+        "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/fd33a60f-7f61-4b60-af6a-812c04c889bc/Venkat+Padmanabhan.jpg",
+        "portrait": "/assets/recovered/portrait-venkat-padmanabhan-12.webp",
+        "bytes": 43906
+      }
+    ],
+    "directors": [
+      {
+        "id": "prof-bharadwaj-amrutur",
+        "name": "Prof. Bharadwaj Amrutur",
+        "role": "",
+        "sourceUrl": "https://www.artpark.in/boards-advisors",
+        "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/cb3d77e7-6350-41c7-aac5-26787515ed8e/Prof+bharadwaj+amrutur.jpg",
+        "portrait": "/assets/recovered/portrait-prof-bharadwaj-amrutur-13.webp",
+        "bytes": 42510
+      },
+      {
+        "id": "prashanath-prakash",
+        "name": "Prashanath Prakash",
+        "role": "",
+        "sourceUrl": "https://www.artpark.in/boards-advisors",
+        "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/05e89772-bf6f-4620-a41e-123389eb7a21/prashanth+parkash.jpg",
+        "portrait": "/assets/recovered/portrait-prashanath-prakash-14.webp",
+        "bytes": 100784
+      },
+      {
+        "id": "dr-navakanta-bhat",
+        "name": "Dr. Navakanta Bhat",
+        "role": "",
+        "sourceUrl": "https://www.artpark.in/boards-advisors",
+        "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/f5e7368b-ac57-43bc-86cd-ef7302dfcd10/Dr.+Navakanta+Bhat.jpg",
+        "portrait": "/assets/recovered/portrait-dr-navakanta-bhat-15.webp",
+        "bytes": 69674
+      },
+      {
+        "id": "prof-govindan-rangarajan",
+        "name": "Prof. Govindan Rangarajan",
+        "role": "",
+        "sourceUrl": "https://www.artpark.in/boards-advisors",
+        "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/0015a30f-8535-40e9-b33f-a6f2a33e0182/Dr.+Govindan+Rangarajan.jpg",
+        "portrait": "/assets/recovered/portrait-prof-govindan-rangarajan-16.webp",
+        "bytes": 139382
+      },
+      {
+        "id": "prof-anil-parameswaran-sarala-kumar",
+        "name": "Prof. Anil Parameswaran Sarala Kumar",
+        "role": "",
+        "sourceUrl": "https://www.artpark.in/boards-advisors",
+        "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/9e4178c5-946c-4b99-89c7-851555459385/anil+parameswaransarala+kumar.jpg",
+        "portrait": "/assets/recovered/portrait-prof-anil-parameswaran-sarala-kumar-17.webp",
+        "bytes": 52674
+      }
+    ],
+    "advisors": [
+      {
+        "id": "dr-vijay-chandru",
+        "name": "Dr Vijay Chandru",
+        "role": "Co founder and Director, Strand Life Sciences | Commissioner, Lancet Citizen's Commission on reimagining India's health System",
+        "sourceUrl": "https://www.artpark.in/boards-advisors",
+        "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/46728cd5-2309-4ef6-881a-d9480463c0a4/Dr.-Chandru-portrait-c.jpg",
+        "portrait": "/assets/recovered/portrait-dr-vijay-chandru-18.webp",
+        "bytes": 26300
+      },
+      {
+        "id": "dr-p-anandan",
+        "name": "Dr. P. Anandan",
+        "role": "Experienced AI Scientist and Leader",
+        "sourceUrl": "https://www.artpark.in/boards-advisors",
+        "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/98f427bd-1d5c-4465-b845-f11551eb367f/P+anandan+image.png",
+        "portrait": "/assets/recovered/portrait-dr-p-anandan-19.webp",
+        "bytes": 313426
+      },
+      {
+        "id": "utkarsh-ut",
+        "name": "Utkarsh (UT)",
+        "role": "Xmplify.tech | Technology Leader | Tech Advisor | Ex-Chief Architect, Flipkart",
+        "sourceUrl": "https://www.artpark.in/boards-advisors",
+        "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/41ce8113-3b3d-4beb-8f04-4f49d48f6a98/Utkarsh.png",
+        "portrait": "/assets/recovered/portrait-utkarsh-ut-20.webp",
+        "bytes": 149988
+      },
+      {
+        "id": "vijay-vujjini",
+        "name": "Vijay Vujjini",
+        "role": "CTO Centre for Digital Public Infrastructure",
+        "sourceUrl": "https://www.artpark.in/boards-advisors",
+        "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/ccd15e63-7a4d-42e8-aaa4-0ab583fe7000/vijay.vujjini.jpg",
+        "portrait": "/assets/recovered/portrait-vijay-vujjini-21.webp",
+        "bytes": 143222
+      },
+      {
+        "id": "dr-anurag-srivastava",
+        "name": "Dr Anurag Srivastava",
+        "role": "Executive Advisor - Startups | CAMRAS(MHI) Program head",
+        "sourceUrl": "https://www.artpark.in/boards-advisors",
+        "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/eca3b3e4-8225-4f6d-8605-d75d95acd452/unnamed+%284%29.jpg",
+        "portrait": "/assets/recovered/portrait-dr-anurag-srivastava-22.webp",
+        "bytes": 19334
+      }
+    ]
+  },
+  "photos": [
+    {
+      "id": "robotics-lab",
+      "title": "Robotics lab",
+      "sourceUrl": "https://www.artpark.in/advanced-robotics",
+      "alt": "Robotics lab",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/44b05d71-5db2-4c53-bc32-f7253f98bb3c/VJM-110.jpg",
+      "src": "/assets/recovered/robotics-lab.webp",
+      "bytes": 372916
+    },
+    {
+      "id": "artgarage-workshop",
+      "title": "ARTgarage workshop",
+      "sourceUrl": "https://www.artpark.in/artgarage",
+      "alt": "ARTgarage workshop",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1b8ca1c0-3296-4fa1-a5b2-415da719f3fc/VJM-108.jpg",
+      "src": "/assets/recovered/artgarage-workshop.webp",
+      "bytes": 138850
+    },
+    {
+      "id": "research-team",
+      "title": "ARTPARK team at work",
+      "sourceUrl": "https://www.artpark.in/team",
+      "alt": "ARTPARK team at work",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/eb38690f-7bf7-4d3b-8fdf-d757ac41a982/VJM-6.jpg",
+      "src": "/assets/recovered/research-team.webp",
+      "bytes": 147776
+    },
+    {
+      "id": "culture-workspace",
+      "title": "ARTPARK workspace",
+      "sourceUrl": "https://www.artpark.in/careers",
+      "alt": "ARTPARK workspace",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/034a06ca-6ddb-4a6a-8d0a-a4e4d48f4b5e/VJM-3.jpg",
+      "src": "/assets/recovered/culture-workspace.webp",
+      "bytes": 176924
+    },
+    {
+      "id": "research-collaboration",
+      "title": "Research collaboration at ARTPARK",
+      "sourceUrl": "https://www.artpark.in/careers",
+      "alt": "Research collaboration at ARTPARK",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/36428cfc-a4b2-4a72-a88a-ff3077c54cc0/VJM-9.jpg",
+      "src": "/assets/recovered/research-collaboration.webp",
+      "bytes": 338268
+    },
+    {
+      "id": "artgarage-campus",
+      "title": "ARTgarage campus",
+      "sourceUrl": "https://www.artpark.in/partnerships",
+      "alt": "ARTgarage campus",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/c69987ea-f156-46fd-a26c-05c20bdb7536/artgarage-droneshot.jpg",
+      "src": "/assets/recovered/artgarage-campus.webp",
+      "bytes": 156718
+    },
+    {
+      "id": "artlabs-prototyping",
+      "title": "Prototyping at ARTLabs",
+      "sourceUrl": "https://www.artpark.in/artlabs",
+      "alt": "Prototyping at ARTLabs",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/5d4c0397-18c9-455a-bac8-64b1efd2b4ce/VJM-98.jpg",
+      "src": "/assets/recovered/artlabs-prototyping.webp",
+      "bytes": 349082
+    },
+    {
+      "id": "artgarage-equipment",
+      "title": "Equipment at ARTgarage",
+      "sourceUrl": "https://www.artpark.in/artgarage",
+      "alt": "Equipment at ARTgarage",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/f529b07b-0766-4189-8f82-1193cedae2f9/ARTGARAGE+3.jpg",
+      "src": "/assets/recovered/artgarage-equipment.webp",
+      "bytes": 739310
+    }
+  ],
+  "downloadErrors": []
+}

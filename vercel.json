@@ -1,0 +1,131 @@
+{
+  "version": 2,
+  "framework": null,
+  "buildCommand": "node tools/build.cjs",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/programmes",
+      "destination": "/programmes.html"
+    },
+    {
+      "source": "/portfolio",
+      "destination": "/portfolio.html"
+    },
+    {
+      "source": "/about/team",
+      "destination": "/about--team.html"
+    },
+    {
+      "source": "/about/approach",
+      "destination": "/about--approach.html"
+    },
+    {
+      "source": "/facilities",
+      "destination": "/facilities.html"
+    },
+    {
+      "source": "/facilities/artgarage",
+      "destination": "/facilities--artgarage.html"
+    },
+    {
+      "source": "/facilities/brainz",
+      "destination": "/facilities--brainz.html"
+    },
+    {
+      "source": "/partnerships",
+      "destination": "/partnerships.html"
+    },
+    {
+      "source": "/careers",
+      "destination": "/careers.html"
+    },
+    {
+      "source": "/news",
+      "destination": "/news.html"
+    },
+    {
+      "source": "/events",
+      "destination": "/events.html"
+    },
+    {
+      "source": "/tenders",
+      "destination": "/tenders.html"
+    },
+    {
+      "source": "/about/certifications",
+      "destination": "/about--certifications.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html"
+    },
+    {
+      "source": "/privacy-policy",
+      "destination": "/privacy-policy.html"
+    },
+    {
+      "source": "/terms-of-use",
+      "destination": "/terms-of-use.html"
+    },
+    {
+      "source": "/programmes/advanced-robotics",
+      "destination": "/programmes--advanced-robotics.html"
+    },
+    {
+      "source": "/programmes/health-climate",
+      "destination": "/programmes--health-climate.html"
+    },
+    {
+      "source": "/programmes/language",
+      "destination": "/programmes--language.html"
+    },
+    {
+      "source": "/programmes/wired-wireless",
+      "destination": "/programmes--wired-wireless.html"
+    },
+    {
+      "source": "/programmes/industry-5",
+      "destination": "/programmes--industry-5.html"
+    },
+    {
+      "source": "/programmes/artlabs",
+      "destination": "/programmes--artlabs.html"
+    },
+    {
+      "source": "/programmes/academy",
+      "destination": "/programmes--academy.html"
+    },
+    {
+      "source": "/work/algofet",
+      "destination": "/work--algofet.html"
+    },
+    {
+      "source": "/work/vaani",
+      "destination": "/work--vaani.html"
+    },
+    {
+      "source": "/work/connected-systems",
+      "destination": "/work--connected-systems.html"
+    },
+    {
+      "source": "/work/calibrate",
+      "destination": "/work--calibrate.html"
+    },
+    {
+      "source": "/stories/algofet",
+      "destination": "/stories--algofet.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    }
+  ]
+}

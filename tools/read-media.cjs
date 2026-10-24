@@ -1,0 +1,1 @@
+const d=require('../src/data/v7-company-media-discovery.json');for(const r of d){console.log(r.id,r.status||r.error);for(const tag of r.tags||[]){let u=tag.match(/(?:src|content)="([^"]+)"/)?.[1],a=tag.match(/alt="([^"]*)"/)?.[1];console.log(JSON.stringify({u:u?.slice(0,220),a}))}}

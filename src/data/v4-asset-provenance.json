@@ -1,0 +1,60 @@
+{
+  "retrievedAt": "2026-10-24",
+  "access": "Read-only inspection of the authorised Squarespace Asset Library. No live edits.",
+  "assets": [
+    {
+      "path": "/assets/v4/culture-0.jpg",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/656da8a33674465c6ee4de76/d471d703-8bf6-467d-ba80-e4a73337feaa/VJM-6.jpg?content-type=image%2Fjpeg",
+      "collectionUrl": "https://moose-hexahedron-afa3.squarespace.com/config/asset-library/folders/d02d44f7-5da6-4764-ba5a-b59197699550",
+      "description": "Colleagues collaborating at laptops"
+    },
+    {
+      "path": "/assets/v4/culture-2.jpg",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/656da8a33674465c6ee4de76/d76d75f2-3c65-4a42-a096-6a5b6ab0d880/VJM-12.jpg?content-type=image%2Fjpeg",
+      "collectionUrl": "https://moose-hexahedron-afa3.squarespace.com/config/asset-library/folders/d02d44f7-5da6-4764-ba5a-b59197699550",
+      "description": "ARTPARK team discussing institutional work"
+    },
+    {
+      "path": "/assets/v4/culture-4.jpg",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/656da8a33674465c6ee4de76/b85cac40-81e1-4dfc-b249-2498f4f1967b/VJM-8.jpg?content-type=image%2Fjpeg",
+      "collectionUrl": "https://moose-hexahedron-afa3.squarespace.com/config/asset-library/folders/d02d44f7-5da6-4764-ba5a-b59197699550",
+      "description": "Software development workstation; visible Vaani project paths"
+    },
+    {
+      "path": "/assets/v4/culture-5.jpg",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/656da8a33674465c6ee4de76/034a06ca-6ddb-4a6a-8d0a-a4e4d48f4b5e/VJM-3.jpg?content-type=image%2Fjpeg",
+      "collectionUrl": "https://moose-hexahedron-afa3.squarespace.com/config/asset-library/folders/d02d44f7-5da6-4764-ba5a-b59197699550",
+      "description": "People working in the ARTPARK office"
+    },
+    {
+      "path": "/assets/v4/culture-6.jpg",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/656da8a33674465c6ee4de76/36428cfc-a4b2-4a72-a88a-ff3077c54cc0/VJM-9.jpg?content-type=image%2Fjpeg",
+      "collectionUrl": "https://moose-hexahedron-afa3.squarespace.com/config/asset-library/folders/d02d44f7-5da6-4764-ba5a-b59197699550",
+      "description": "Two colleagues working together"
+    },
+    {
+      "path": "/assets/v4/garage-0.jpg",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/656da8a33674465c6ee4de76/d0999a97-2853-405a-9afa-3e19bd51e57d/VJM-108.jpg?content-type=image%2Fjpeg",
+      "collectionUrl": "https://moose-hexahedron-afa3.squarespace.com/config/asset-library/folders/8fd73700-6922-42c1-8fea-e6aeba96e207",
+      "description": "Engineer at mechanical testing equipment"
+    },
+    {
+      "path": "/assets/v4/garage-1.jpg",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/656da8a33674465c6ee4de76/44b05d71-5db2-4c53-bc32-f7253f98bb3c/VJM-110.jpg?content-type=image%2Fjpeg",
+      "collectionUrl": "https://moose-hexahedron-afa3.squarespace.com/config/asset-library/folders/8fd73700-6922-42c1-8fea-e6aeba96e207",
+      "description": "Team working with test equipment"
+    },
+    {
+      "path": "/assets/v4/garage-2.jpg",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/656da8a33674465c6ee4de76/3573c17e-e159-4af0-b467-b7c6bcfc20b9/VJM-22.jpg?content-type=image%2Fjpeg",
+      "collectionUrl": "https://moose-hexahedron-afa3.squarespace.com/config/asset-library/folders/8fd73700-6922-42c1-8fea-e6aeba96e207",
+      "description": "Machine workshop and workstations"
+    },
+    {
+      "path": "/assets/v4/garage-3.jpg",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/656da8a33674465c6ee4de76/7a08d433-bed1-42e5-ac32-f33ca4974284/ARTGARAGE+6.jpg?content-type=image%2Fjpeg",
+      "collectionUrl": "https://moose-hexahedron-afa3.squarespace.com/config/asset-library/folders/8fd73700-6922-42c1-8fea-e6aeba96e207",
+      "description": "Prototype aircraft on display"
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "assets": [
+    {
+      "id": "camras-hardware",
+      "title": "Building quadruped robotics together",
+      "src": "/assets/editorial/camras-hardware.webp",
+      "sourceUrl": "https://www.artpark.in/advanced-robotics/camras",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1750318970421-DX06NJY5LBU8E6MLKGLJ/VJM-53.jpg",
+      "subject": "Three engineers with a quadruped robot prototype in the ARTgarage workspace.",
+      "kind": "documentary-photograph",
+      "width": 2500,
+      "height": 1667
+    },
+    {
+      "id": "camras-robotics",
+      "title": "Drone flight inside the lab",
+      "src": "/assets/editorial/camras-robotics.webp",
+      "sourceUrl": "https://www.artpark.in/advanced-robotics/camras",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1750318799900-NVI2TBVNSP889XQOIMZX/VJM-81.jpg",
+      "subject": "A quadcopter flying inside an electronics and robotics laboratory.",
+      "kind": "documentary-photograph",
+      "width": 2500,
+      "height": 1667
+    },
+    {
+      "id": "camras-testing",
+      "title": "An engineering review",
+      "src": "/assets/editorial/camras-testing.webp",
+      "sourceUrl": "https://www.artpark.in/advanced-robotics/camras",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1750321889008-8KECEYBBPJBAIQUGCL6Z/VJM-115.jpg",
+      "subject": "An engineering team discussing a design at a whiteboard inside the lab.",
+      "kind": "documentary-photograph",
+      "width": 2500,
+      "height": 1667
+    },
+    {
+      "id": "camras-engineering",
+      "title": "Engineers at their workstations",
+      "src": "/assets/editorial/camras-engineering.webp",
+      "sourceUrl": "https://www.artpark.in/advanced-robotics/camras",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1750321720916-OK9OH530ZWHD5LSGWR11/VJM-99.jpg",
+      "subject": "The engineering workspace with people at computers and technical whiteboards.",
+      "kind": "documentary-photograph",
+      "width": 2500,
+      "height": 1667
+    },
+    {
+      "id": "artgarage-interior",
+      "title": "Inside ARTgarage",
+      "src": "/assets/editorial/artgarage-interior.webp",
+      "sourceUrl": "https://www.artpark.in/advanced-robotics/camras",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1750322398307-60O7U2PFHS12KJHISQX1/_DSC1649.jpg",
+      "subject": "An untinted wide photograph of the industrial hall, work areas and lounge inside ARTgarage.",
+      "kind": "documentary-photograph",
+      "width": 2127,
+      "height": 1325
+    },
+    {
+      "id": "5g-lab",
+      "title": "Working in the communications lab",
+      "src": "/assets/editorial/5g-lab.webp",
+      "sourceUrl": "https://www.artpark.in/5g-test-lab-wwt-1",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/44b4d621-2c04-4e2e-b684-9343f1e229a5/5G+Lab+.jpg",
+      "subject": "Communications lab staff at test and development workstations.",
+      "kind": "documentary-photograph",
+      "width": 2048,
+      "height": 1152
+    },
+    {
+      "id": "oral-screening",
+      "title": "Phone-based oral cancer screening",
+      "src": "/assets/editorial/oral-screening.webp",
+      "sourceUrl": "https://www.artpark.in/oral-cancer-screening",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/b7f5f5bf-7785-42f0-9409-57e76f7735fb/Close-up-screening.jpg",
+      "subject": "A paired photograph showing phone-based oral screening and a health worker recording information.",
+      "kind": "documentary-photo-pair",
+      "width": 1280,
+      "height": 649
+    },
+    {
+      "id": "robotics-lab",
+      "title": "Robotics lab collaboration",
+      "src": "/assets/recovered/robotics-lab.webp",
+      "sourceUrl": "https://www.artpark.in/advanced-robotics",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/44b05d71-5db2-4c53-bc32-f7253f98bb3c/VJM-110.jpg",
+      "subject": "Three engineers working with a hardware test system in the robotics lab.",
+      "kind": "documentary-photograph",
+      "width": 2500,
+      "height": 1667
+    },
+    {
+      "id": "artlabs-prototyping",
+      "title": "Electronics prototyping at ARTLabs",
+      "src": "/assets/recovered/artlabs-prototyping.webp",
+      "sourceUrl": "https://www.artpark.in/artlabs",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/5d4c0397-18c9-455a-bac8-64b1efd2b4ce/VJM-98.jpg",
+      "subject": "An engineer soldering electronics at a bench.",
+      "kind": "documentary-photograph",
+      "width": 2500,
+      "height": 1667
+    },
+    {
+      "id": "research-collaboration",
+      "title": "Working through a problem together",
+      "src": "/assets/recovered/research-collaboration.webp",
+      "sourceUrl": "https://www.artpark.in/careers",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/36428cfc-a4b2-4a72-a88a-ff3077c54cc0/VJM-9.jpg",
+      "subject": "Two team members discussing work at their laptops in the ARTPARK workspace.",
+      "kind": "documentary-photograph",
+      "width": 2500,
+      "height": 1667
+    },
+    {
+      "id": "culture-workspace",
+      "title": "Daily work at ARTPARK",
+      "src": "/assets/recovered/culture-workspace.webp",
+      "sourceUrl": "https://www.artpark.in/careers",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/034a06ca-6ddb-4a6a-8d0a-a4e4d48f4b5e/VJM-3.jpg",
+      "subject": "Team members at desks in the workspace, with ARTPARK branding in the background.",
+      "kind": "documentary-photograph",
+      "width": 2500,
+      "height": 1406
+    },
+    {
+      "id": "artgarage-exterior",
+      "title": "The ARTgarage entrance",
+      "src": "/assets/recovered/artgarage-equipment.webp",
+      "sourceUrl": "https://www.artpark.in/artgarage",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/f529b07b-0766-4189-8f82-1193cedae2f9/ARTGARAGE+3.jpg",
+      "subject": "The exterior and entrance of the ARTgarage building.",
+      "kind": "documentary-photograph",
+      "width": 2500,
+      "height": 1407
+    },
+    {
+      "id": "artpark-iisc-lockup",
+      "title": "Official IISc and ARTPARK combined lockup",
+      "src": "/assets/editorial/artpark-iisc-lockup.webp",
+      "sourceUrl": "https://www.artpark.in/",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/33b4bb4f-d505-4536-b2cb-fdeb9c47c44c/ARTPARK+with+IISc.png",
+      "subject": "The approved combined IISc seal, ARTPARK symbol, wordmark and AI & Robotics Technology Park @ IISc tagline.",
+      "kind": "official-brand-lockup",
+      "width": 2133,
+      "height": 431
+    },
+    {
+      "id": "calibrate-event-poster",
+      "title": "Calibrate masterclass, 23 October 2026",
+      "src": "/assets/editorial/calibrate-evaluation.jpg",
+      "sourceUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7519287141550489600/",
+      "sourceImageUrl": "https://media.licdn.com/dms/image/v2/D5622AQG60cNYU4ZOrQ/feedshare-shrink_800/B56aFnVLz6GoAc-/0/1792734969379?e=1794441600&v=beta&t=QOhBlhSk7ZtMOxfWalEIluj2oYPBltRSpDe5ocqJkmQ",
+      "subject": "Original session poster with Jigar Doshi and Aman Dalmia. Display as a past event, not an open registration.",
+      "kind": "original-event-poster",
+      "width": 800,
+      "height": 1000,
+      "checkedAt": "2026-10-24"
+    }
+  ],
+  "notes": [
+    "Twelve selected documentary photos/photo pairs and one official combined brand lockup. Every selected image was visually inspected. Existing recovered files are referenced in place; only new files were downloaded into public/assets/editorial/.",
+    "The strongest opening image is camras-hardware: real engineers beside a quadruped prototype, rather than the similarly composed painted illustration on the programme site.",
+    "Brand PDF page 5 (printed page 4), IISc Co-branding, explicitly approves the combined lockup. Display the complete file at its native aspect ratio on a light background; do not separately resize the seal/wordmark, add a vertical divider, crop the tagline, or recolour parts.",
+    "Correction to older recovered labels: recovered artgarage-campus.webp actually shows a drone flying in the lab, not an aerial campus photograph. It duplicates camras-robotics and is not included here. recovered artgarage-equipment.webp shows the building exterior; it is correctly labelled artgarage-exterior in this manifest.",
+    "No individual identities, founder status or specific project outcomes were inferred from photographs. Programme-page provenance is recorded; illustrative, stock and AI-generated images were not included as documentary.",
+    "The oral-screening asset is an existing two-panel photo on the public programme page, with no text banner. Preserve an accurate screening caption rather than using it as generic decoration."
+  ]
+}

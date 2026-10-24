@@ -1,0 +1,6 @@
+const fs=require('node:fs'),path=require('node:path');
+let file=path.join(__dirname,'../public/v5.css'),s=fs.readFileSync(file,'utf8');
+s=s.replaceAll('.v5-section-head>p{','.v5-section-head>p:not(.eyebrow){').replaceAll('.audience-heading>p{','.audience-heading>p:not(.eyebrow){');
+s+='\n.backer-logos strong{font-size:12px;font-weight:600;line-height:1.5;text-align:center;max-width:230px}.backer-logos>a{gap:12px}.backer-logos span{font-size:9px}.location-card address{min-height:100px}.location-note{min-height:22px;margin-top:14px}\n@media(max-width:540px){.backer-logos strong{font-size:9px;line-height:1.5}.backer-logos span{font-size:7px}.location-card address{min-height:0}}\n';
+fs.writeFileSync(file,s);
+file=path.join(__dirname,'site.cjs');s=fs.readFileSync(file,'utf8').replace('turn<br>AI','turn <br>AI').replace('${img(\'/assets/recovered/partners/\'+file+\'.webp\',name)}<span>${role}</span>','${img(\'/assets/recovered/partners/\'+file+\'.webp\',name)}<strong>${name}</strong><span>${role}</span>').replace('Campus photograph. Office address above.','IISc campus, Bengaluru.').replace('Original photograph of the workshop.','Workshop at ARTgarage, Jalahalli.');fs.writeFileSync(file,s);

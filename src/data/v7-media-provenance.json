@@ -1,0 +1,40 @@
+{
+  "checkedAt": "2026-10-24T00:36:13.428Z",
+  "records": [
+    {
+      "file": "/assets/v7/yaanendriya-product.png",
+      "source": "https://yaanendriya.com/",
+      "url": "https://yaanendriya.com/api/uploads/bf15563c-afe5-416b-a264-7e546a74bffb-Syncore_Nano_Render_1.png",
+      "description": "Yaanendriya Syncore Nano product render",
+      "bytes": 2276356
+    },
+    {
+      "file": "/assets/v7/strider-product.png",
+      "source": "https://strider-robotics.in/",
+      "url": "https://static.wixstatic.com/media/0d1c82_e6475689a8a142d5bb52a5adbb952ca3~mv2.png",
+      "description": "Product image published by Strider Robotics",
+      "bytes": 423953
+    },
+    {
+      "file": "/assets/v7/astrome-work.webp",
+      "source": "https://astrome.co/",
+      "url": "https://astrome.co/wp-content/uploads/2026/03/Rectangle-20.webp",
+      "description": "Image from Astrome’s official homepage",
+      "bytes": 12732
+    },
+    {
+      "file": "/assets/v7/twara-gripper.png",
+      "source": "https://twararobotics.in/",
+      "url": "https://assets.zyrosite.com/dWxwzkZJNxFg3leK/tgrip2_s-mxBMk03e9GFaaq4b.png",
+      "description": "Twara TGRIP-2 soft gripper product image",
+      "bytes": 2606716
+    },
+    {
+      "file": "/assets/v7/twara-gripper-demo.gif",
+      "source": "https://twararobotics.in/",
+      "url": "https://assets.zyrosite.com/dWxwzkZJNxFg3leK/adobe-express---gripper_website-Aq2GKK00pPCOOaP9.gif",
+      "description": "Twara’s actual soft-gripper demonstration animation",
+      "bytes": 6382550
+    }
+  ]
+}
