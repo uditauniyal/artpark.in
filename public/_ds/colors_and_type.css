@@ -1,0 +1,273 @@
+/* ============================================================
+   ARTPARK Programs · Colors + Type tokens
+   Source of truth: apply.artpark.info (production :root)
+   ============================================================ */
+
+:root {
+  /* ---------- Brand color ---------- */
+  --artblue:        #3213b7;  /* primary brand purple — buttons, links, emphasis */
+  --artblue-deep:   #1f0a8a;  /* darker purple — hover, depth */
+  --artlight:       #aafcf0;  /* mint cyan — text-highlight bg, stat numerals */
+  --artblack:       #242424;  /* near-black */
+  --artwhite:       #efefef;  /* off-white surface */
+
+  /* ---------- Semantic accents ---------- */
+  --accent-coral:   #FF5A5F;  /* cons / negative */
+  --accent-amber:   #FFB703;  /* warnings */
+  --accent-green:   #2F6F62;  /* pros / positive */
+  --accent-violet:  #6B5CFF;  /* SIP secondary purple */
+
+  /* ---------- Ink (text) ---------- */
+  --ink:            #242424;  /* primary text */
+  --ink-soft:       #4a4a52;  /* secondary text */
+  --ink-dim:        #8a8a92;  /* muted / eyebrow */
+
+  /* ---------- Lines ---------- */
+  --line:           #e3e3e8;  /* subtle dividers */
+  --line-strong:    #c8c8d0;  /* stronger borders */
+
+  /* ---------- Surfaces ---------- */
+  --paper:          #ffffff;  /* page background */
+  --paper-soft:     #f6f6f8;  /* section background */
+
+  /* ---------- Type families ---------- */
+  --font-display: "Trebuchet MS", "Lucida Grande", Tahoma, sans-serif;
+  --font-body:    "Open Sans", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-mono:    "Open Sans", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+
+  /* ---------- Type scale (used across marketing + applicant) ---------- */
+  --t-eyebrow:    11px;   /* uppercase tracking, --ink-dim */
+  --t-body-sm:    14px;
+  --t-body:       16px;   /* body default */
+  --t-body-lg:    18px;
+  --t-h4:         22px;
+  --t-h3:         28px;
+  --t-h2:         44px;
+  --t-h1:         72px;   /* hero — Trebuchet, bold */
+  --t-display:    96px;
+
+  --lh-tight:     1.08;
+  --lh-snug:      1.25;
+  --lh-body:      1.55;
+
+  /* ---------- Radii ---------- */
+  --r-sharp:      2px;    /* canonical — buttons, cards, inputs */
+  --r-pill:       999px;  /* status dots only */
+
+  /* ---------- Spacing scale ---------- */
+  --s-1:  4px;
+  --s-2:  8px;
+  --s-3:  12px;
+  --s-4:  16px;
+  --s-5:  24px;
+  --s-6:  32px;
+  --s-7:  48px;
+  --s-8:  64px;
+  --s-9:  96px;
+  --s-10: 128px;
+
+  /* ---------- Layout ---------- */
+  --container-w:  1180px;
+  --gutter:       24px;
+}
+
+/* ============================================================
+   Element defaults
+   ============================================================ */
+
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--t-body);
+  line-height: var(--lh-body);
+  color: var(--ink);
+  background: var(--paper);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  color: var(--ink);
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+h1 { font-size: var(--t-h1); line-height: var(--lh-tight); }
+h2 { font-size: var(--t-h2); line-height: var(--lh-tight); }
+h3 { font-size: var(--t-h3); line-height: var(--lh-snug); }
+h4 { font-size: var(--t-h4); line-height: var(--lh-snug); }
+
+p { margin: 0; }
+
+a {
+  color: var(--artblue);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1.5px;
+}
+a:hover { color: var(--artblue-deep); }
+
+/* ============================================================
+   Brand atoms
+   ============================================================ */
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: var(--t-eyebrow);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+  font-weight: 600;
+}
+
+.eyebrow-rule {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+.eyebrow-rule::before {
+  content: "";
+  width: 56px; height: 2px;
+  background: var(--artblue);
+  display: inline-block;
+}
+
+/* Mint-cyan text highlight, applied to specific words/phrases */
+.hl {
+  background: var(--artlight);
+  color: var(--artblue);
+  padding: 0 0.18em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+/* Purple link-style emphasis in headlines */
+.em {
+  color: var(--artblue);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 3px;
+}
+
+/* Status dot */
+.dot {
+  width: 8px; height: 8px;
+  border-radius: var(--r-pill);
+  display: inline-block;
+  background: var(--accent-violet);
+  vertical-align: middle;
+}
+.dot.green  { background: var(--accent-green); }
+.dot.amber  { background: var(--accent-amber); }
+.dot.coral  { background: var(--accent-coral); }
+
+/* ============================================================
+   Buttons
+   ============================================================ */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  border-radius: var(--r-sharp);
+  border: 1px solid transparent;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 150ms ease,
+              box-shadow 150ms ease,
+              background 150ms ease,
+              border-color 150ms ease,
+              color 150ms ease;
+}
+.btn .arrow { display: inline-block; }
+
+.btn-primary {
+  background: var(--artblue);
+  color: #fff;
+}
+.btn-primary:hover {
+  background: var(--artblue-deep);
+  color: #fff;
+}
+
+.btn-dark {
+  background: var(--artblack);
+  color: #fff;
+}
+.btn-dark:hover { background: #000; }
+
+.btn-ghost {
+  background: transparent;
+  color: var(--ink);
+  border-color: var(--line-strong);
+}
+.btn-ghost:hover { border-color: var(--ink); }
+
+/* ============================================================
+   Cards / surfaces
+   ============================================================ */
+
+.card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--r-sharp);
+  padding: var(--s-6);
+}
+.card-soft   { background: var(--paper-soft); border-color: transparent; }
+.card-purple { background: var(--artblue);      color: #fff; border-color: transparent; }
+.card-violet { background: var(--accent-violet);color: #fff; border-color: transparent; }
+.card-black  { background: var(--artblack);     color: #fff; border-color: transparent; }
+
+/* Section accent rules (pros/cons) */
+.rule-top      { border-top: 3px solid var(--ink); }
+.rule-top.pros { border-top-color: var(--accent-green); }
+.rule-top.cons { border-top-color: var(--accent-coral); }
+
+/* ============================================================
+   Inputs
+   ============================================================ */
+
+.field {
+  width: 100%;
+  padding: 12px 14px;
+  font: inherit;
+  background: var(--paper);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--r-sharp);
+  color: var(--ink);
+}
+.field:focus {
+  outline: none;
+  border-color: var(--artblue);
+  box-shadow: 0 0 0 3px rgba(50, 19, 183, 0.15);
+}
+
+/* ============================================================
+   Beta banner / dark strip
+   ============================================================ */
+
+.beta-bar {
+  background: var(--artblack);
+  color: #fff;
+  font-size: 13px;
+  padding: 10px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.beta-bar .pill {
+  background: var(--artlight);
+  color: var(--artblue);
+  font-weight: 700;
+  font-family: var(--font-display);
+  letter-spacing: 0.06em;
+  padding: 2px 8px;
+}

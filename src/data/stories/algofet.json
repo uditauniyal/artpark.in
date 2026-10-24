@@ -1,0 +1,62 @@
+{
+  "slug": "algofet",
+  "company": "AlgoFET",
+  "tag": "STORY 01",
+  "kicker": "Complete the system",
+  "title": "The drone was only the beginning.",
+  "standfirst": "Ankit Mishra came to ARTPARK as an engineer working on battery management. He left as the founder of AlgoFET, a company built around everything a drone needs to fly again on its own: docks, precision landing, self-charging batteries and a backup for every critical step.",
+  "meta": ["ARTPARK Stories", "About 7 min read", "AlgoFET, Bengaluru"],
+  "website": "https://algofet.com/",
+  "hero": { "image": "/assets/stories/algofet-dock.webp", "alt": "AlgoFET's AlgoPAD charging dock with a drone resting on it at dusk", "pos": "50% 58%", "caption": "An AlgoPAD charging dock with a drone, at dusk. Photograph from ARTPARK." },
+  "lead": [
+    "“I always wanted to build a startup,” says Ankit Mishra. “Even during college, I had ideas, but I never had a de-risked environment.”",
+    "He found one at ARTPARK. In his interview, he was told that if an idea aligned with ARTPARK’s vision of AI, robotics and societal impact, there was a path to launching his own startup. “I was sold on this line,” he says. Today the company he founded, AlgoFET, builds the ground infrastructure that lets drones work without people on the ground."
+  ],
+  "sections": [
+    {
+      "h2": "The bottleneck nobody flies over.",
+      "toc": "The bottleneck",
+      "blocks": [
+        { "quote": { "text": "You can automate the flying of drones from Point A to Point B, but if at Point B the battery dies, then someone has to be there to recharge it. That is the bottleneck we solve.", "who": "Ankit Mishra, Founder & CEO, AlgoFET", "source": "https://www.artpark.in/stories/blog-post-title-four-kpyhe", "sourceLabel": "ARTPARK interview" } },
+        "AlgoFET removes the need for manual battery swapping. Drones navigate to charging docks on their own, land with precision and recharge, from AC power or a built-in DC backup. Once charged, they are ready for the next assignment.",
+        "The company’s systems are optimised for micro, nano and small drones: safer, cheaper, quicker to deploy and easier to scale. Their limited battery life has always been the constraint. Paired with autonomous charging, it becomes a strength: instead of a few large machines that need complex logistics, fleets of small drones with minimal ground personnel."
+      ]
+    },
+    {
+      "h2": "A backup for every critical step.",
+      "toc": "Designing for failure",
+      "blocks": [
+        "Redundancy is AlgoFET’s engineering philosophy. “We build multiple options for critical steps to make sure that if one fails, the other solution exists,” Ankit explains. “This is what ensures reliability in the real world.” The layered architecture includes backup pathways for GPS failures and for landing.",
+        { "figure": { "image": "/assets/stories/algofet-bench.webp", "alt": "Two engineers testing a battery-management board beside a cell balancing test station", "caption": "Battery-management boards on the bench at ARTgarage, beside the cell balancing test station. Photograph from ARTPARK." } },
+        { "panel": { "title": "The system around the drone", "items": [["Docking", "Charging pads that drones find and land on by themselves."], ["Charging", "AC power, with a built-in DC backup source."], ["Battery management", "The engineering Ankit started with at ARTPARK."], ["Landing", "Precision landing, with backup protocols."], ["Navigation", "Backup pathways for when GPS fails."], ["Mission readiness", "24/7 operation, launched by command or by an external trigger."]] } }
+      ]
+    },
+    {
+      "h2": "From the garage to the field.",
+      "toc": "Into deployment",
+      "blocks": [
+        "Much of that work happened at ARTgarage, ARTPARK’s open-plan facility in what used to be a Hindustan Machine Tools factory. The eye is drawn to machines, tools and prototypes; the space was inspired by the Silicon Valley garages that started iconic companies.",
+        { "figure": { "image": "/assets/stories/algofet-cnc.webp", "alt": "Two engineers at a CNC machining centre", "caption": "At a CNC machining centre in the workshop. Photograph from ARTPARK." } },
+        "In defence and perimeter surveillance, AlgoFET’s systems are already deployed. Drones take off automatically, triggered by external systems or by remote command, and stream live video to command centres, where AI modules help with decisions. The details remain confidential. The company sees the same model working in road safety and first response, where a drone could reach an accident within seconds, at any hour.",
+        "Support came in layers. Early work, before AlgoFET was a company, was made possible by the Department of Science & Technology and the Government of Karnataka. ARTPARK then helped unlock support from the Ministry of Heavy Industries, through the CAMRAS programme led by Dr. Anurag Srivastava, which funded six pre-venture teams to become startups. AlgoFET was one of them."
+      ]
+    },
+    {
+      "h2": "Engineer to founder.",
+      "toc": "Engineer to founder",
+      "blocks": [
+        { "quote": { "text": "Ankit started as an engineer at ARTPARK, developing innovations in battery management technologies, and now he’s a founder. That’s the journey we want to make possible for everyone.", "who": "Prof. Bharadwaj Amrutur, Executive Director, ARTPARK", "source": "https://www.artpark.in/stories/blog-post-title-four-kpyhe", "sourceLabel": "ARTPARK interview" } },
+        "ARTPARK’s CEO, Raghu Dharmaraju, describes the path every team takes: “Often, teams’ starting point is a promising research proof-of-concept. Their destination is the proverbial product-market fit – evidence-backed clarity on what product to make and which customers to serve at scale – on the other side of the valley-of-death. ARTPARK strives to adequately equip them and keep shining a light as they make that dangerous journey.”",
+        "AlgoFET has since raised ₹15 crore in a Pre-Series A round from Piper Serica, to scale its drone ground infrastructure: docking, charging, battery management and 24/7 mission readiness.",
+        { "figure": { "image": "/assets/stories/algofet-team.webp", "alt": "The AlgoFET team in their workspace", "ratio": "16/9", "caption": "The AlgoFET team. Photograph from ARTPARK." } },
+        "The ambition is bigger than charging. “We want to democratize access to drone technology,” Ankit says. “Today, operating drones requires trained pilots, manual charging, and field deployment – these are all the barriers. If we can automate the entire chain, anyone can use drones to gather data. That’s how we unlock real impact.”"
+      ]
+    }
+  ],
+  "sources": [
+    ["ARTPARK, “Where innovation takes flight” (AlgoFET interview)", "https://www.artpark.in/stories/blog-post-title-four-kpyhe"],
+    ["ARTPARK homepage: “AlgoFET raises ₹15 Crore” (Pre-Series A, Piper Serica)", "https://www.artpark.in/"],
+    ["ARTPARK, CAMRAS programme page", "https://www.artpark.in/advanced-robotics/camras"],
+    ["AlgoFET", "https://algofet.com/"]
+  ]
+}

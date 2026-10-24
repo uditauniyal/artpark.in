@@ -1,0 +1,8 @@
+node_modules/
+dist/
+qa/
+notes/
+research/*
+!research/artpark-in/
+.vercel/
+!research/artpark-media.json

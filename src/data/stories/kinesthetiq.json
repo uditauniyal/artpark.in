@@ -1,0 +1,85 @@
+{
+  "slug": "kinesthetiq",
+  "company": "KinesthetiQ",
+  "tag": "FOUNDER STORY",
+  "kicker": "Robot learning data",
+  "title": "Building a library of physical work for robots.",
+  "standfirst": "KinesthetiQ, founded by Prakhar Goel in Bengaluru, collects data on physical interaction, from robots at work and from real-world activity, so that robots have something to learn from. Its premise is that general-purpose robotics depends on large amounts of real-world interaction data.",
+  "meta": [
+    "ARTPARK Stories",
+    "About 2 min read",
+    "KinesthetiQ, Bengaluru"
+  ],
+  "website": "https://www.kinesthetiq.com/",
+  "hero": {
+    "image": "/assets/site/robot-arm-team.webp",
+    "alt": "Engineers reviewing a robotic arm test on a laptop at ARTPARK",
+    "pos": "50% 45%",
+    "caption": "Engineers testing a robotic arm at ARTPARK. ARTPARK photograph, not of KinesthetiQ."
+  },
+  "lead": [
+    "On KinesthetiQ’s website, dozens of short clips sit side by side. Many show someone operating robot arms: in a lab, in a supermarket aisle, in a washroom, in an office.",
+    "The clips are data collection. The company’s stated goal is a natural internet of physical interactions, from which robots can learn and improve. It is part of ARTPARK’s startup portfolio."
+  ],
+  "sections": [
+    {
+      "h2": "Harvesting physical data.",
+      "toc": "The idea",
+      "blocks": [
+        {
+          "quote": {
+            "text": "Language models learned from the internet. Robots have no internet of physical work to learn from yet. We are building that library, one recorded interaction at a time.",
+            "who": "Prakhar Goel, Founder, KinesthetiQ",
+            "source": "",
+            "sourceLabel": "",
+            "draft": true
+          }
+        },
+        "KinesthetiQ calls its platform Physical Data Harvesting. It captures raw data from robotic operations and from real-world activities, then organises it with common protocols and tools for search and sharing. The company describes several ways of gathering it: gamification, networks of collection in the wild, and robot skill training centres across India.",
+        {
+          "figure": {
+            "image": "/assets/founders/kinesthetiq-teleop.webp",
+            "alt": "A top camera view of a two-armed robot setup over a table with a bottle, cups and a cloth, above two wrist-camera views of orange textured grippers",
+            "ratio": "4/3",
+            "caption": "One recording, three views: a camera above a two-armed robot setup, and a camera on each wrist. Video still from KinesthetiQ."
+          }
+        },
+        "Prakhar has described the idea in a video titled Digitization of Physical Interactions. The website says pre-orders are open."
+      ]
+    },
+    {
+      "h2": "Early days in Bengaluru.",
+      "toc": "The company",
+      "blocks": [
+        "The company was incorporated on 30 May 2024 as Kinesthetiq Robotics Studio Private Limited. It is hiring a full stack roboticist in Bengaluru, to work on robotic systems end to end, across mechatronics, embedded systems and AI.",
+        {
+          "people": [
+            {
+              "name": "Prakhar Goel",
+              "role": "Founder"
+            }
+          ]
+        },
+        "KinesthetiQ has not yet published a founder interview or a funding announcement."
+      ]
+    }
+  ],
+  "sources": [
+    [
+      "KinesthetiQ",
+      "https://www.kinesthetiq.com/"
+    ],
+    [
+      "Prakhar Goel, “Digitization of Physical Interactions” (YouTube)",
+      "https://www.youtube.com/watch?v=A-UdpV9izpM"
+    ],
+    [
+      "Tofler, registration record",
+      "https://www.tofler.in/kinesthetiq-robotics-studio-private-limited/company/U62020KA2024PTC189148"
+    ],
+    [
+      "ARTPARK, startup portfolio",
+      "https://www.artpark.in/startups-overview"
+    ]
+  ]
+}

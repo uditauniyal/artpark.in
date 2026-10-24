@@ -1,0 +1,60 @@
+{
+  "slug": "contrivation-labs",
+  "company": "Contrivation Labs",
+  "tag": "FOUNDER STORY",
+  "kicker": "Post-harvest automation",
+  "title": "Taking the stem off a chilli.",
+  "standfirst": "Ramesh Rao, Shruti Rao and Vijay Iyer co-founded Contrivation Labs in Bengaluru in 2019 to automate harvest and post-harvest work. Their machine takes on a small, slow job that still depends on human hands: pulling the stem from each dried chilli.",
+  "meta": ["ARTPARK Stories", "About 3 min read", "Contrivation Labs, Bengaluru"],
+  "website": "",
+  "hero": {
+    "image": "/assets/site/fabrication.webp",
+    "alt": "Engineers working on a fabricated panel in a workshop",
+    "pos": "50% 50%",
+    "ratio": "16/9",
+    "caption": "Fabrication work in an ARTPARK workshop. ARTPARK photograph, not of Contrivation Labs."
+  },
+  "lead": [
+    "After red chillies are harvested and dried, the stem and calyx have to come off each pod. It is still largely done by hand. Labour is short and costly, which limits how much a processor can handle, and the workers are exposed to chilli fumes, seeds and pods.",
+    "The step matters. Destemmed chilli fetches a higher price and stores longer, because it is less prone to fungal attack. Contrivation Labs was set up to do it by machine."
+  ],
+  "sections": [
+    {
+      "h2": "Pull, don’t cut.",
+      "toc": "The machine",
+      "blocks": [
+        "The company’s system, registered as Calyxtract, separates the calyx and stem from each chilli pod without damaging it. Instead of shearing the stem off, it uses image processing and control algorithms to orient each chilli and copy the pulling motion a person would use.",
+        { "panel": { "title": "Design targets, as stated in 2021", "items": [
+          ["Throughput", "36 chillies a second, up to 129,600 an hour, or about 100 kg an hour."],
+          ["Chilli length", "Up to 150 mm."]
+        ] } },
+        "Those figures come from Ramesh Rao’s entry in the 2021 Create the Future design contest. They are design targets, not measured results.",
+        { "quote": { "text": "Our Ideas germinate to find solutions for the Indian Farmer and Agriculture Eco-system but are equally suited for Global Markets. The vision is to build solutions that “eliminate” issues/bottlenecks in an eco-system rather than “shifting” them in the eco-system", "who": "Ramesh Rao, Co-founder, Contrivation Labs", "source": "https://contest.techbriefs.com/2021/entries/manufacturing-robotics-automation/11283", "sourceLabel": "Create the Future Design Contest 2021" } }
+      ]
+    },
+    {
+      "h2": "Through the incubators.",
+      "toc": "The journey",
+      "blocks": [
+        "The company was incorporated in February 2019 to build automation for harvest and post-harvest produce. It has since moved through several agricultural and technology incubators and grant programmes. Contrivation Labs is part of ARTPARK’s startup portfolio.",
+        { "dates": [
+          ["February 2019", "Incorporated in Bengaluru."],
+          ["December 2019", "Advisors on board; proof of concept completed for the chilli pod separation product."],
+          ["June 2020", "Selected for the UPJA 2020 incubation programme at Pusa Krishi Incubator, ICAR-IARI, New Delhi."],
+          ["March 2021", "Received a BIRAC BIG grant, incubated at a-IDEA, ICAR-NAARM, Hyderabad."],
+          ["March 2022", "Selected for the IDEA2PoC grant under Elevate 2021, Karnataka Startup Policy."]
+        ] },
+        { "people": [
+          { "name": "Ramesh Rao", "role": "Co-founder and Director" },
+          { "name": "Shruti Rao", "role": "Co-founder" },
+          { "name": "Vijay Iyer", "role": "Co-founder" }
+        ] }
+      ]
+    }
+  ],
+  "sources": [
+    ["YourStory, Contrivation Labs company profile", "https://yourstory.com/companies/contrivation-labs-pvt-ltd"],
+    ["Create the Future Design Contest 2021, chilli destemming entry by Ramesh Rao", "https://contest.techbriefs.com/2021/entries/manufacturing-robotics-automation/11283"],
+    ["ARTPARK, startup portfolio", "https://www.artpark.in/startups-overview"]
+  ]
+}

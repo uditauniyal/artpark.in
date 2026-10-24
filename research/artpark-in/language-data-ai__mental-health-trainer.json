@@ -1,0 +1,64 @@
+{
+  "url": "https://www.artpark.in/language-data-ai/mental-health-trainer",
+  "status": 200,
+  "title": "AI TRAINER FOR COMMUNITY MENTAL HEALTH — ARTPARK @IISc - Leading AI & Robotics startup incubation",
+  "description": " CMHLP’s program to train volunteers in community mental health care has been proven to be effective. Yet training ASHAs at scale is infeasible in an in-person program. ARTPARK and CMHLP partner to develop  multi-agent trainer for ASHAs to make the training process scalable.  ",
+  "headings": [
+    "H1: AI TRAINER FOR COMMUNITY MENTAL HEALTH",
+    "H4: A multi-agent AI training system for scaling mental health capacity through frontline health workers",
+    "H4: Background",
+    "H3: Solution",
+    "H3: Problem",
+    "H3: How it works",
+    "H4: Key Features",
+    "H3: Implementation",
+    "H3: Team",
+    "H3: Partners",
+    "H2: High-Risk Pregnancy Copilot for Frontline Workers",
+    "H2: Kilkari AI Chatbot: Conversational Q&A for Mothers"
+  ],
+  "text": "AI TRAINER FOR COMMUNITY MENTAL HEALTH\nA multi-agent AI training system for scaling mental health capacity through frontline health workers\n\nCurrent Status: Under development (prototyping)\n\nJump to:\n\nProblem\n\nSolution & Key Features\n\nResults & Impact\n\nTeam & Partners\n\nBackground\n\nMental health conditions are a significant contributor to India’s disease burden, with nearly 197 million people affected — approximately 1 in 7 Indians. Mental illness contributes substantially to disability and years lived with illness, while access to trained mental health professionals remains limited across large parts of the country.\n\nAs mental health services expand within primary healthcare systems, community health workers such as ASHAs are increasingly expected to identify distress, provide basic psychosocial support, and enable referrals. Community-led programs such as Atmiyata demonstrate that structured training can build these capabilities effectively.\n\nSolution\n\nA multi-agent AI-based trainer that enables scalable, interactive training while retaining the learning structure of the Atmiyata pedagogy.\n\nWhy it works:\n\nAgentic AI reproduces trainer, peer, and patient interactions\n\nInteractive roleplay enables behavioural skill practice\n\nStructured sessions mirror real training flow\n\nContinuous reinforcement across sessions\n\nText and speech interaction in local languages\n\nHuman-led care remains central; AI supports training\n\nProblem\n\n Though proven to be effective, scaling Atmiyata training presents structural challenges:\n\nTraining relies heavily on in-person delivery and supervision\n\nHigh-touch training models are resource and time intensive\n\nTraining quality varies across locations\n\nLimited opportunities for practice and reinforcement after training\n\nDifficult to train large numbers of frontline workers consistently\n\nAs a result, effective training models exist, but are difficult to scale across districts or states within public health systems, in its current format.\n\nHow it works\n\nThe AI trainer takes the ASHAs through structured learning sessions and allows to practice skills through simulated conversations and roleplays, receive feedback and reinforcement as they undertake their learning journey.\n\nThe system is designed as a multi-agent architecture to best mimic the physical learning experience:\n\nTrainer Agent guides discussions, introduces concepts, and synthesizes learning.\n\nPeer Agent simulates group interaction and peer-led learning.\n\nPatient Agent generates realistic scenarios for practice conversations.\n\nLearning Agent tracks progress and adapts training pathways.\n\nThe objective is not to digitize content, but to digitize the learning behaviour embedded in effective training.\n\nKey Features\n\nBuilt on Atmiyata pedagogy: Digitizes an evidence-based community mental health training model developed by CMHLP.\n\nAgentic learning environment: Multiple AI agents simulate real-world training interactions.\n\nRoleplay-based learning: Practice conversations in safe, simulated scenarios.\n\nVoice and text interaction: Accessible across literacy levels.\n\nMixed-language capability: Supports English, Gujarati, and blended inputs.\n\nStructured reinforcement: Links learning across sessions for retention.\n\nSafe-by-design: AI trains frontline workers; care delivery remains human-led.\n\nImplementation\n\nThe project is being developed through staged deployment to ensure usability, safety, and fidelity to the training process.\n\nPhase 1: Digital-first adaptation of Atmiyata training as a web-based experience. (In progress)\n\nPhase 2: Multilingual adaptation and expert validation.\n\nPhase 3: Pilot deployment with frontline workers and iterative refinement.\n\nPhase 4: Expansion across training channels and public health programs.\n\nDevelopment and evaluation are being conducted jointly by ARTPARK and CMHLP, with continuous feedback from mental health experts and implementation teams.\n\nWhen completed, the AI trainer will first be implemented in the state of Gujarat under the supervision of the Atmiyata program.\n\nTeam\n\nCMHLP: Sonali Kumar, Swetha Ranganathan, Soumitra Pathare\n\nArtpark: Jigar Doshi, Chandan Patil, Anugraha Raman, Nihar Desai\n\nPartners\n\nCenter For Mental Health Law & Policy (CMHLP)\n\nPrevious\nHigh-Risk Pregnancy Copilot for Frontline Workers\nNext\nKilkari AI Chatbot: Conversational Q&A for Mothers",
+  "links": [
+    [
+      "GenAI",
+      "https://www.artpark.in/language-data-ai/category/GenAI"
+    ],
+    [
+      "ARTPARK",
+      "https://www.artpark.in/language-data-ai?author=664c605f0943754edc40be2e"
+    ],
+    [
+      "Problem",
+      "https://www.artpark.in/language-data-ai/llm-assistant/#understanding-problem"
+    ],
+    [
+      "Solution & Key Features",
+      "https://www.artpark.in/language-data-ai/llm-assistant/#solution-design"
+    ],
+    [
+      "Results & Impact",
+      "https://artpark.in/language-data-ai/llm-assistant/#implementation"
+    ],
+    [
+      "Team & Partners",
+      "https://artpark.in/language-data-ai/llm-assistant/#team-partners"
+    ],
+    [
+      "ARTPARK",
+      "https://www.artpark.in/language-data-ai?author=664c605f0943754edc40be2e"
+    ],
+    [
+      "https://artpark.in/",
+      "https://artpark.in/"
+    ],
+    [
+      "Previous High-Risk Pregnancy Copilot for Frontline Workers",
+      "https://www.artpark.in/language-data-ai/hrp-copilot"
+    ],
+    [
+      "Next Kilkari AI Chatbot: Conversational Q&A for Mothers",
+      "https://www.artpark.in/language-data-ai/kilkari-assistant-for-mothers-5dc4k"
+    ]
+  ],
+  "images": []
+}

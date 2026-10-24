@@ -1,0 +1,101 @@
+{
+  "url": "https://www.artpark.in/language/vaani",
+  "status": 200,
+  "title": "Vaani — ARTPARK @IISc - Leading AI & Robotics startup incubation",
+  "description": "",
+  "headings": [
+    "H3: Project Vaani",
+    "H1: India's Largest Open-Source Speech Dataset",
+    "H1: Features",
+    "H4: Coverage: 165 districts, 28 states, 3 union territories",
+    "H2: Language Programs",
+    "H3: Vaani",
+    "H3: RESPIN",
+    "H3: SYSPIN",
+    "H1: Our Partners",
+    "H1: Supported By"
+  ],
+  "text": "Project Vaani\nIndia's Largest Open-Source Speech Dataset\nAccess Data Set\n\nBuilt from the ground up, across India's villages, towns, and cities. Project Vaani captures real voices — from tribal belts to urban metros, across 165 districts, surfacing dozens of languages that existing datasets have never touched.\n\nOpen-sourced via Bhashini and Hugging Face, it gives developers, researchers, and public innovators a foundation for building AI in education, health, governance, and beyond — tools that can genuinely reach India's population.\n\nFeatures\nCoverage: 165 districts, 28 states, 3 union territories\n\nLong-term Goal: 150,000+ hours from all districts of India\n\nAccess The Data\n\nData Volume: 31,255 hours, 22M+ audio segments, over 288k images\n\nAccess: Open-source via Vaani and Hugging Face\n\nContact Us\nLanguage Programs\nVaani\nLearn More\n\nIndia's Largest Open-Source Speech Dataset\n\nRESPIN\nLearn More\n\nRecognising Speech in Indian Languages\n\nSYSPIN\nLearn More\n\nSynthesising Speech in Indian Languages\n\nOur Partners\nSupported By",
+  "links": [
+    [
+      "Access Data Set",
+      "https://vaani.iisc.ac.in/#Data"
+    ],
+    [
+      "Access The Data",
+      "https://huggingface.co/datasets/ARTPARK-IISc/Vaani"
+    ],
+    [
+      "Contact Us",
+      "mailto:vaanicontact@gmail.com?"
+    ],
+    [
+      "Learn More",
+      "https://www.artpark.in/language/vaani"
+    ],
+    [
+      "Learn More",
+      "https://www.artpark.in/language/respin"
+    ],
+    [
+      "Learn More",
+      "https://www.artpark.in/language/syspin"
+    ]
+  ],
+  "images": [
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/8b85b521-fc8c-42f9-8607-5759cc9fd3ff/2846644.jpg?format=1500w",
+      "alt": "",
+      "w": 1440,
+      "h": 960
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/83d5b5a0-84da-4a03-8a5b-5898a42feccd/Vaani-+updated+logo.png?format=1500w",
+      "alt": "",
+      "w": 1418,
+      "h": 797
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/55b50ad7-4075-4aa3-b59e-d76be8acb876/GcsLogo.webp?format=300w",
+      "alt": "",
+      "w": 136,
+      "h": 68
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/0d833f4a-10a0-47d2-a090-38807ca7df35/Megdaplogo.webp?format=300w",
+      "alt": "",
+      "w": 135,
+      "h": 29
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/5d665a13-e68a-4b4a-90c3-8bda9c5dc097/Karya-Logo.webp?format=300w",
+      "alt": "",
+      "w": 184,
+      "h": 69
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/bb6e0e34-cbb3-4a6c-98f0-9a3182dc7935/ShaipLogo.webp?format=300w",
+      "alt": "",
+      "w": 86,
+      "h": 27
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/f711290d-6598-44c0-ad84-9feaa791d26e/Logo-IISc.png?format=750w",
+      "alt": "",
+      "w": 517,
+      "h": 90
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/11edaf73-ecd0-4df3-9c84-3856f7baa8e3/Bhashini+logo.png?format=300w",
+      "alt": "",
+      "w": 90,
+      "h": 43
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/87d3f309-3fae-409c-9b0b-484349bbf5d8/GtsLogo.webp?format=300w",
+      "alt": "",
+      "w": 93,
+      "h": 93
+    }
+  ]
+}

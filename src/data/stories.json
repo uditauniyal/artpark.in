@@ -1,0 +1,219 @@
+{
+  "_note": "Homepage carousel + collage content. Paths and layout are the manager's; content is real ARTPARK material. Sources per story. Self-written framing sentences are logged in notes/draft-copy-log.md.",
+  "stories": [
+    {
+      "slug": "algofet",
+      "n": "01",
+      "path": "Complete the system",
+      "tab": "01 · AlgoFET",
+      "h2": "The drone was only <span class=\"hl\">the beginning</span>.",
+      "lead": "“You can automate the flying of drones from Point A to Point B,” says Ankit Mishra, “but if at Point B the battery dies, then someone has to be there to recharge it.” His company, AlgoFET, solved what sat around the drone: <b>charging docks, precision landing, self-charging batteries and a backup for every critical step</b>.",
+      "sub": "Ankit joined ARTPARK as an engineer working on battery management. Today he is a founder. The story usually told is about flight. The more useful one is about the system that lets a drone fly again, at any hour, with no one on the ground.",
+      "meta": "About 7 min · AlgoFET, Bengaluru",
+      "image": "/assets/paint/slide-algofet.webp",
+      "imagePos": "50% 62%",
+      "imageAlt": "AlgoFET's AlgoPAD charging dock with a drone resting on it at dusk",
+      "caption": "AlgoFET’s AlgoPAD charging dock, Bengaluru",
+      "sources": [
+        "https://www.artpark.in/stories/blog-post-title-four-kpyhe"
+      ],
+      "also": [
+        "yaanendriya",
+        "nxtqube",
+        "twara-robotics",
+        "strider-robotics"
+      ],
+      "metric": [
+        "₹15 Cr",
+        "Pre-Series A from Piper Serica, to scale drone ground infrastructure"
+      ]
+    },
+    {
+      "slug": "qosmic",
+      "n": "02",
+      "path": "Build the enterprise",
+      "tab": "02 · QOSMIC",
+      "h2": "From a laser link to a <span class=\"hl\">company built in India</span>.",
+      "lead": "QOSMIC’s founders set out to build a quantum satellite. Customers told them what they actually needed: a faster way to bring satellite data down to Earth. Turning that into a company meant <b>an optical ground station, a space-grade steering mirror, qualification tests and a seed round</b>, each a different kind of work around the same science.",
+      "sub": "“A decade ago, a company like this would have had to be built in the US or Europe,” says co-founder and CEO Shreyaans Jain. What it takes for research capability to become an enterprise.",
+      "meta": "About 6 min · QOSMIC, 2025–2026",
+      "image": "/assets/paint/slide-qosmic.webp",
+      "imagePos": "50% 25%",
+      "imageAlt": "Prof. Aloke Kumar, co-founder of QOSMIC, speaking at a seminar",
+      "caption": "Prof. Aloke Kumar, QOSMIC co-founder",
+      "sources": [
+        "https://startuptalky.com/news/qosmic-raises-3-33-million-seed-funding/",
+        "https://qosmic.space/",
+        "ARTPARK and QOSMIC LinkedIn posts on the Fast Steering Mirror qualification"
+      ],
+      "also": [
+        "flo-mobility",
+        "astrome",
+        "sakar-robotics",
+        "edgeverse"
+      ],
+      "metric": [
+        "$3.33M",
+        "seed round led by Accel and Prosus, with South Park Commons and ARTPARK"
+      ]
+    },
+    {
+      "slug": "vaani",
+      "n": "03",
+      "path": "Enable the ecosystem",
+      "tab": "03 · Vaani",
+      "h2": "Vaani became much more than <span class=\"hl\">a speech dataset</span>.",
+      "lead": "Most speech technology was not built for the way India actually talks. Project Vaani, by IISc and ARTPARK and funded by Google, is recording it district by district and opening it to everyone: <b>more than 31,000 hours of speech from over 1.5 lakh people, in 105 languages</b>.",
+      "sub": "How public research becomes a platform that others build on, from the first publicly available Garo speech-to-text model in Shillong to Hindi call-centre analytics.",
+      "meta": "About 6 min · Project Vaani, IISc and ARTPARK",
+      "image": "/assets/paint/slide-vaani.webp",
+      "imagePos": "40% 50%",
+      "imageAlt": "A team member working in a terminal on Vaani data at ARTPARK",
+      "caption": "Working on Vaani speech data at ARTPARK",
+      "sources": [
+        "https://vaani.iisc.ac.in/",
+        "https://vaani.iisc.ac.in/case-studies",
+        "https://vaani.iisc.ac.in/case-studies/mwirelabs"
+      ],
+      "also": [
+        "niral-networks",
+        "open-science-stack",
+        "algobotix",
+        "acceleration-robotics"
+      ],
+      "metric": [
+        "31,000+",
+        "hours of Indian speech, from 165 districts, open to everyone"
+      ]
+    }
+  ],
+  "tiles": [
+    {
+      "img": "/assets/paint/tile-strider.webp",
+      "pos": "38% 50%",
+      "story": "strider-robotics",
+      "tag": "ENGINEERING",
+      "label": "STRIDER ROBOTICS",
+      "cap": "Four research robots at IISc came before the company. Now its quadrupeds go to work."
+    },
+    {
+      "img": "/assets/paint/tile-astrome.webp",
+      "pos": "50% 55%",
+      "story": "astrome",
+      "tag": "INFRASTRUCTURE",
+      "label": "ASTROME",
+      "cap": "Wireless with the capacity of fibre, for villages the fibre never reached."
+    },
+    {
+      "img": "/assets/paint/tile-yaanendriya.webp",
+      "pos": "38% 40%",
+      "story": "yaanendriya",
+      "tag": "PARTNERSHIP",
+      "label": "YAANENDRIYA",
+      "cap": "Four founders from an IISc lab, and a ₹15 crore round from Piper Serica."
+    },
+    {
+      "img": "/assets/paint/tile-flo.webp",
+      "pos": "62% 50%",
+      "story": "flo-mobility",
+      "tag": "ECONOMICS",
+      "label": "FLO MOBILITY",
+      "cap": "Building sites rent the robot instead of buying it. Robots by subscription."
+    },
+    {
+      "img": "/assets/paint/tile-algofet.webp",
+      "pos": "50% 60%",
+      "story": "algofet",
+      "tag": "THE BREAKTHROUGH",
+      "label": "STORY 01 · ALGOFET",
+      "cap": "A drone that lands, recharges and flies again, with no one on the ground.",
+      "core": true
+    },
+    {
+      "img": "/assets/paint/tile-qosmic.webp",
+      "pos": "45% 50%",
+      "story": "qosmic",
+      "tag": "VALIDATION",
+      "label": "STORY 02 · QOSMIC",
+      "cap": "Space-qualified on the first attempt, nine months after starting from scratch."
+    },
+    {
+      "img": "/assets/paint/tile-algobotix.webp",
+      "pos": "50% 40%",
+      "story": "algobotix",
+      "tag": "INTEGRATION",
+      "label": "ALGOBOTIX",
+      "cap": "Corridors in the sky, so many drones can share the air without conflict."
+    },
+    {
+      "img": "/assets/paint/tile-sakar.webp",
+      "pos": "55% 50%",
+      "story": "sakar-robotics",
+      "tag": "MANUFACTURING",
+      "label": "SAKAR ROBOTICS",
+      "cap": "Every railway bedsheet checked by machine, fifteen a minute."
+    },
+    {
+      "img": "/assets/paint/tile-udot.webp",
+      "pos": "50% 45%",
+      "story": "udot",
+      "tag": "ADOPTION",
+      "label": "UDOT",
+      "cap": "A maths diagram a blind student can read by touch."
+    }
+  ],
+  "rail": [
+    {
+      "slug": "algofet",
+      "who": "Ankit Mishra",
+      "match": "Ankit Mishra",
+      "text": "I always wanted to build a startup. Even during college, I had ideas, but I never had a de-risked environment.",
+      "role": "Founder & CEO, AlgoFET",
+      "img": "/assets/stories/algofet-dock.webp",
+      "source": "https://www.artpark.in/stories/blog-post-title-four-kpyhe",
+      "pos": "50% 62%"
+    },
+    {
+      "slug": "qosmic",
+      "match": "Nobody really wants",
+      "img": "/assets/people/shreyaans-jain.webp",
+      "pos": "50% 30%"
+    },
+    {
+      "slug": "flo-mobility",
+      "match": "The construction industry",
+      "img": "/assets/founders/flo-mobility-haulers.webp",
+      "pos": "50% 45%"
+    },
+    {
+      "slug": "astrome",
+      "match": "wireless equivalent",
+      "img": "/assets/founders/astrome-team.webp",
+      "pos": "50% 55%"
+    },
+    {
+      "slug": "vishvasys-aerospace",
+      "match": "We were not born to fly",
+      "img": "/assets/founders/vishvasys-aerospace-radhakant-padhi.webp",
+      "pos": "50% 25%"
+    },
+    {
+      "slug": "a-thon",
+      "match": "We do not follow a category",
+      "img": "/assets/founders/a-thon-ashva-field.webp",
+      "pos": "50% 50%"
+    },
+    {
+      "slug": "niral-networks",
+      "match": "frees up the operator",
+      "img": "/assets/founders/niral-networks-abhijit-chaudhary.webp",
+      "pos": "50% 25%"
+    },
+    {
+      "slug": "nxtqube",
+      "match": "agnostic platform",
+      "img": "/assets/site/drone-room.webp",
+      "pos": "50% 50%"
+    }
+  ]
+}

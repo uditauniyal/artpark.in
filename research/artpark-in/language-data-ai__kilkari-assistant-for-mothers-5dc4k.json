@@ -1,0 +1,94 @@
+{
+  "url": "https://www.artpark.in/language-data-ai/kilkari-assistant-for-mothers-5dc4k",
+  "status": 200,
+  "title": "Kilkari AI Chatbot: Conversational Q&A for Mothers — ARTPARK @IISc - Leading AI & Robotics startup incubation",
+  "description": " Our Q&amp;A bot will provide on-demand, real-time, accurate, actionable and personalised information on pregnancy and infant care in an effort to improve health-seeking behaviour that could lead to reduced maternal and child mortality and morbidity. ",
+  "headings": [
+    "H1: Kilkari AI Chatbot: Conversational Q&A for Mothers",
+    "H3: An AI assistant providing instant, trusted answers about pregnancy and infant care",
+    "H3: Recognition",
+    "H4: Jump to:",
+    "H2: Solution",
+    "H2: Problem",
+    "H3: How It Works",
+    "H4: About the Pilot",
+    "H4: Path to Scale",
+    "H3: Results & Impact",
+    "H4: Quality & Accuracy",
+    "H4: Pilot Deployment & Engagement",
+    "H4: Key insight",
+    "H4: Learning from Users",
+    "H3: Team",
+    "H3: Partners",
+    "H2: AI TRAINER FOR COMMUNITY MENTAL HEALTH",
+    "H2: BelonggAI"
+  ],
+  "text": "Kilkari AI Chatbot: Conversational Q&A for Mothers\nAn AI assistant providing instant, trusted answers about pregnancy and infant care\n\nCurrent pilot: 1,505 mothers in Mumbai's mMitra program\n\nDesigned for: Kilkari - India's largest maternal messaging program reaching 3M+ women across 27 states\n\nRecognition\n\nWinner of Grand Challenges India by BIRAC\n\nFeatured as ‘The Future of Health - Meet the Innovators Changing Maternal and Child Health’ by TIME.com\n\nJump to:\n\nUnderstanding the Problem\n\nDesigning the Solution + Key Features\n\nImplementation\n\nTeam & Partners\n\nSolution\n\nA multilingual, voice-enabled AI chatbot delivered through WhatsApp that provides instant, expert-verified answers to mothers' questions about pregnancy and infant care.\n\nWhy it works:\n\nInstant answers to health questions, 24/7\n\nWorks in local languages (Marathi, Hindi) via text and voice\n\nFree WhatsApp access - no new apps needed\n\nExpert-verified from Kilkari knowledge base\n\nHuman backup for complex cases\n\nProblem\n\nOne woman dies in childbirth every 20 minutes in India. Two children under age five die every minute. Many of these deaths are preventable with timely access to accurate health information.\n\nWomen in India face critical barriers:\n\nLimited access to trustworthy pregnancy and infant care information\n\nCultural norms restricting health-seeking behavior\n\nNo immediate support for urgent health questions\n\nWidespread myths and misconceptions about maternal health\n\nHow It Works\n\nMothers send questions via WhatsApp (text or voice) → Chatbot provides instant answers from validated Kilkari content → Questions outside scope or low-confidence responses escalate to human health coaches → Continuous improvement through user feedback.\n\nKey Features:\n\nBuilt on Kilkari content: Uses ARMMAN's expert-verified maternal health knowledge approved by Ministry of Health & Family Welfare and aligned with WHO guidelines\n\nStage-specific guidance: Tailored responses based on pregnancy trimester or infant age\n\nCulturally sensitive: Addresses local health practices, myths, and misconceptions common in Indian communities\n\nVoice-enabled: Accessible to mothers with varying literacy levels through speech-to-text\n\nSafe & reliable: Human escalation for uncertain responses; continuous expert review\n\nAbout the Pilot\n\nWe're testing the chatbot with mMitra subscribers in Mumbai before scaling to Kilkari. mMitra is ARMMAN's WhatsApp-based program for pregnant women in urban communities, serving as a controlled testbed for innovations. Kilkari is the world's largest mobile-based maternal messaging program, implemented by ARMMAN with the Ministry of Health & Family Welfare, delivering preventive care via IVR and WhatsApp to 3M+ women across 27 states in 12 languages.\n\nPath to Scale\n\nPhase 1 (Current): Pilot with 1,505 mMitra users in Mumbai - validate technology and user experience.\n\nPhase 2 (Next): Expand to full mMitra program (~10,000 WhatsApp users)\n\nPhase 3 (Goal): Deploy to Kilkari WhatsApp users as part of Kilkari 2.0, reaching millions of mothers\n\nResults & Impact\nQuality & Accuracy\n\n99% empathetic responses across all queries\n\n98% medically accurate responses verified by experts\n\n91% correct grammar and tone appropriateness\n\n91% empathetic answer tone rated by evaluators\n\nPilot Deployment & Engagement\n\n1,505 mothers onboarded to the chatbot\n\n168 mothers activated (11% activation rate)\n\n60% repeat users - strong evidence of value\n\n20,000+ queries generated\n\n22% audio format queries (voice accessibility working)\n\nKey insight\n\n40% of messages fell outside current knowledge scope - showing mothers' needs extend beyond existing content, informing future expansion of the Kilkari knowledge base\n\nLearning from Users\n\nTop query categories mothers are asking:\n\nPregnancy symptoms and concerns\n\nDelivery preparation and what to expect\n\nInfant care and feeding questions\n\nUnderstanding high-risk conditions\n\nTeam\n\nArmman: Amrita Mahale, Nithesh S, Vaishali Suyal, Dr. Aparna Hegde\n\nArtpark: Jigar Doshi, Sid P, Sanskriti Midha, Saumitra Sharma, Nihar Desai, Raghu Dharmaraju\n\nPartners\n\nARMMAN, The Agency Fund, BIRAC\n\nPrevious\nAI TRAINER FOR COMMUNITY MENTAL HEALTH\nNext\nBelonggAI",
+  "links": [
+    [
+      "GenAI",
+      "https://www.artpark.in/language-data-ai/category/GenAI"
+    ],
+    [
+      "ARTPARK",
+      "https://www.artpark.in/language-data-ai?author=664c605f0943754edc40be2e"
+    ],
+    [
+      "Winner of Grand Challenges India by BIRAC",
+      "https://www.birac.nic.in/desc_new.php?id=103"
+    ],
+    [
+      "‘The Future of Health - Meet the Innovators Changing Maternal and Child Health’ by TIME.com",
+      "https://www.linkedin.com/posts/collab-impact_the-future-of-health-meet-the-innovators-activity-7292595266023546880-y4A_?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAOGCXcBMeuwmYDIHbg0oTxYirpwwh5dKq0"
+    ],
+    [
+      "Understanding the Problem",
+      "https://www.artpark.in/language-data-ai/llm-assistant/#understanding-problem"
+    ],
+    [
+      "Designing the Solution + Key Features",
+      "https://www.artpark.in/language-data-ai/llm-assistant/#solution-design"
+    ],
+    [
+      "Implementation",
+      "https://artpark.in/language-data-ai/llm-assistant/#implementation"
+    ],
+    [
+      "Team & Partners",
+      "https://artpark.in/language-data-ai/llm-assistant/#team-partners"
+    ],
+    [
+      "Raghu Dharmaraju",
+      "https://www.linkedin.com/in/raghuramd/"
+    ],
+    [
+      "ARMMAN",
+      "https://armman.org/"
+    ],
+    [
+      "The Agency Fund",
+      "https://www.agency.fund/"
+    ],
+    [
+      "BIRAC",
+      "https://www.birac.nic.in/"
+    ],
+    [
+      "ARTPARK",
+      "https://www.artpark.in/language-data-ai?author=664c605f0943754edc40be2e"
+    ],
+    [
+      "https://artpark.in/",
+      "https://artpark.in/"
+    ],
+    [
+      "Previous AI TRAINER FOR COMMUNITY MENTAL HEALTH",
+      "https://www.artpark.in/language-data-ai/mental-health-trainer"
+    ],
+    [
+      "Next BelonggAI",
+      "https://www.artpark.in/language-data-ai/belongg-ai"
+    ]
+  ],
+  "images": []
+}

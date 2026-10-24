@@ -1,0 +1,63 @@
+{
+  "url": "https://www.artpark.in/artlabs",
+  "status": 200,
+  "title": "ARTLabs — ARTPARK @IISc - Leading AI & Robotics startup incubation",
+  "description": "",
+  "headings": [
+    "H1: ARTLabs",
+    "H3: Big Ideas, Real Impact",
+    "H4: Taksa",
+    "H4: Idle Robotics",
+    "H4: Zetesis",
+    "H4: Cold Chain Systems"
+  ],
+  "text": "ARTLabs\nBig Ideas, Real Impact\n\nARTLabs represents the early stage of ARTPARK’s innovation pipeline - a space where bold ideas are transformed into tangible innovations, technologies, and ventures. It brings together deep-tech researchers, engineers, and entrepreneurs to build, validate, and scale cutting-edge solutions across AI, robotics, health, climate, and advanced systems.\n\nInnovation Projects\n\nInnovation projects are led by Innovators-in-Residence and focus on solving real-world problems with the potential to evolve into venture-backed startups. These projects emphasize product-market fit, early validation, and commercialization.\n\nTaksa\nIdle Robotics\nZetesis\nCold Chain Systems\n\nPast Innovation Projects (Now Startups)",
+  "links": [
+    [
+      "The Open Source Factory OS",
+      "https://github.com/artpark-hub/taksa"
+    ],
+    [
+      "Zetesis",
+      "https://www.artpark.in/zetesis"
+    ]
+  ],
+  "images": [
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/5d4c0397-18c9-455a-bac8-64b1efd2b4ce/VJM-98.jpg?format=1500w",
+      "alt": "",
+      "w": 1440,
+      "h": 960
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/05c40d54-ba63-402f-9bff-fddc29a341f7/Twara+Robotics.jpg?format=1500w",
+      "alt": "",
+      "w": 768,
+      "h": 384
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/ffd24cd4-919d-4b3b-a790-e72daeee33d8/comrado.png?format=1500w",
+      "alt": "",
+      "w": 460,
+      "h": 259
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1470764b-a521-41b2-a0ea-fee543f0a9b2/algofet.png?format=1500w",
+      "alt": "",
+      "w": 460,
+      "h": 259
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/cbfa9a71-fe1b-4f05-8ba1-13e7dc209f5f/VaydynLogo.png?format=1500w",
+      "alt": "",
+      "w": 618,
+      "h": 144
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/ee0a8c63-19ec-47e8-9f79-69e1404c8710/Strider+Robotics.jpg?format=1500w",
+      "alt": "",
+      "w": 768,
+      "h": 384
+    }
+  ]
+}

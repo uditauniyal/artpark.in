@@ -1,0 +1,26 @@
+{
+  "url": "https://www.artpark.in/publications/legal-framework-opensourcing-languagedata-india",
+  "status": 200,
+  "title": "White Paper: Legal Framework for Open-Sourcing Language Data in India — ARTPARK @IISc - Leading AI & Robotics startup incubation",
+  "description": "This document is intended to serve as a foundational resource for Organisations seeking to understand and appreciate the legal issues pertaining to the creation and hosting of Speech Datasets in India.",
+  "headings": [
+    "H2: Legal Framework for Open-Sourcing Language Data in India",
+    "H4: A white paper to inform stakeholders and ecosystem\nSeptember 2024",
+    "H4: Introduction"
+  ],
+  "text": "Legal Framework for Open-Sourcing Language Data in India\nA white paper to inform stakeholders and ecosystem\nSeptember 2024\nIntroduction\n\nGiven the growing demand for artificial intelligence (AI) models localized to the Indian experience there is an urgent need for reliable datasets. This includes speech data in regional languages, to facilitate the widespread implementation of speech language technologies among India’s marginalized communities. These speech datasets, comprising of audio files, underlying text/transcripts, and annotations/metadata (Speech Datasets), have diverse applications, from Automated Speech Recognition to Text-to-speech systems. Many organisations in India are currently engaged in, or are planning to engage in, collecting and hosting Speech Datasets (Organisations) with the aim of creating a substantial open-source repository adaptable to various contexts. In connection with this, there are certain legal and ethical considerations that Organisations need to bear in mind across the lifecycle of a Speech Dataset.\n\nThis document is intended to serve as a foundational resource for Organisations seeking to understand and appreciate the legal issues pertaining to the creation and hosting of Speech Datasets in India. It is not legal advice and Organisations should seek legal counsel to advise them on specific situations and challenges.\n\nAUTHORS\n\nTrilegal\nRahul Matthan\nShreya Ramann\nPranay Jalan\n\nIISc/ARTPARK\nNihar Desai\nProf. Prasanta Ghosh\nRaghu Dharmaraju\n\nView",
+  "links": [
+    [
+      "View",
+      "https://www.artpark.in/s/Draft1_Legal-Framework-Open-Sourcing-Data-in-India.pdf"
+    ]
+  ],
+  "images": [
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/627c5f3f-d00e-4d9b-9fbf-9d23fd8d39e3/trilegal+logo.png?format=1500w",
+      "alt": "",
+      "w": 264,
+      "h": 175
+    }
+  ]
+}

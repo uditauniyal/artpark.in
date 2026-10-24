@@ -1,0 +1,62 @@
+{
+  "url": "https://www.artpark.in/stories/blog-post-title-four-kpyhe",
+  "status": 200,
+  "title": "Where innovation takes flight — ARTPARK @IISc - Leading AI & Robotics startup incubation",
+  "description": " “During my interview, I was told that if I have an idea which is aligned with ARTPARK's vision of AI, robotics and societal impact, then there is a path for launching my own startup,” Ankit continues. ",
+  "headings": [
+    "H1: Where innovation takes flight",
+    "H3: “I always wanted to build a startup. Even during college, I had ideas, but I never had a de-risked environment“, says Ankit Mishra, CEO and Founder of AlgoFET, reflecting on his ambition to innovate for impact.",
+    "H3: Self-charging innovation",
+    "H3: Autonomous drone operation",
+    "H3: The ARTPARK way: Engineer to Founder",
+    "H3: Forward and upward",
+    "H2: Nature Signals. We Built the Infrastructure to Listen."
+  ],
+  "text": "Where innovation takes flight\n“I always wanted to build a startup. Even during college, I had ideas, but I never had a de-risked environment“, says Ankit Mishra, CEO and Founder of AlgoFET, reflecting on his ambition to innovate for impact.\n\nLooking to build on his experience in the startup world, he applied to ARTPARK, – a not-for-profit organization created by the Indian Institute of Science (IISc). Launched under the pioneering National Mission for Interdisciplinary Cyber-Physical Systems (NMICPS) of the Government of India’s Department of Science & Technology (DST), with additional support from the Government of Karnataka, ARTPARK is less a traditional incubator and more a venture builder. Here, innovative minds learn not just what to build and how to build, but how to sell, scale, and support what they build.\n\n“During my interview, I was told that if I have an idea which is aligned with ARTPARK's vision of AI, robotics and societal impact, then there is a path for launching my own startup,” Ankit continues.\n\n“I was sold on this line.” Today, AlgoFET, the startup Ankit founded, pioneers a self-charging battery system that powers drones to be truly autonomous. With applications from security and surveillance systems to agriculture and road safety, AlgoFET promises to make drone technology sustainable and more suited to deploy in versatile applications.\n\nThe progress and success of AlgoFET are the result of the structures and systems put in place by ARTPARK. Initial support for AlgoFET, even before it became a startup, was made possible by DST and GoK.  Then, ARTPARK helped unlock further support from the Ministry of Heavy Industries, as part of a program facilitated by Dr. Anurag Srivastava, the COO of ARTPARK, to enable development, manufacturing, and commercialization of deep-tech innovations.\n\nAnother system which contributes to the success by encouraging collaboration is the ARTgarage – a large, open-plan facility filled with deep-tech innovators tinkering away at different workspaces. Sprawled across what used to be Hindustan Machine Tools (HMT) factory, ARTPARK now carries forward its legacy by turning it into a hub for robotics and AI innovation. Upon entering the facility, the eye is immediately drawn to the various machines, tools, and prototypes that hint at the future of AI and robotics in India. Inspired by the garages of Silicon Valley that sparked the rise of iconic IT startups, the space feels like the birthplace of India's next generation of robotics companies, just like AlgoFET.\n\nSelf-charging innovation\n\nOne of AlgoFET’s most impactful contributions could be in the space of 24/7 road safety and first responder systems. The infrastructure of an urban smart city offers the possibility of having autonomous drones deployed within seconds of an incident. Whether it’s recording the scene of an accident, surveying traffic congestion, or delivering emergency medical supplies, drones could respond without human intervention, at any time of day or night.\n\nAt the heart of this innovation lies AlgoFET’s autonomous charging technology, a critical component of drone deployment. “You can automate the flying of drones from Point A to Point B,” Ankit says, “but if at Point B the battery dies, then someone has to be there to recharge it. That is the bottleneck we solve.” AlgoFET’s solution removes the need for manual battery swapping altogether. Drones autonomously navigate to charging docks, land with precision, and recharge, either via AC power or a built-in DC backup source. Once charged, they are ready for their next assignment.\n\nThis redundancy-focused design is fundamental to AlgoFET’s engineering philosophy. “We build multiple options for critical steps to make sure that if one fails, the other solution exists”, Ankit explains. “This is what ensures reliability in the real world”. The system’s layered architecture includes backup pathways for GPS failures and landing protocols, making the platform autonomous and mission-ready.\n\nAutonomous drone operation\n\nAlgoFET’s systems are optimized for smaller drones like micro, nano, and small category drones, which are safer, cheaper, quicker to deploy, and easier to scale. While their limited battery life has traditionally been a constraint, AlgoFET flips that limitation into a strength. Smaller drones paired with autonomous charging become a flexible, low-cost solution for high-frequency use cases like urban surveillance, agricultural, and industrial monitoring. Instead of a few large machines requiring complex logistics, the model now shifts to fleet-scale deployments with minimal ground personnel.\n\nThis approach has opened up not just new applications, but entirely new categories of use cases.\n\nIn defense and perimeter surveillance, AlgoFET’s systems are already in deployment. While specific details remain confidential, the drones are used in high-security zones where 24/7 surveillance is essential. Drones take off automatically, either when triggered by external systems or via remote command, and stream real-time video to command centers. AI modules analyze this data in real time, aiding rapid decision-making in mission-critical scenarios. Human presence is no longer a necessity on the ground, making the entire system leaner, faster, safer, and more secure.\n\nThe ARTPARK way: Engineer to Founder\n\nThis is the kind of high-impact technology that ARTPARK was created to support. Most robotics and AI technologies find it difficult to make it past the prototype stage in India. This is not because the ideas are not good, but because the journey from idea to implementation is long, expensive, convoluted, and full of risk. While a core technology is often the starting point, the process of figuring which product to develop and what market to serve is highly iterative. AlgoFET’s success is proof of concept not just for the technology, but for the ARTPARK model itself.\n\nAs ARTPARK’s CEO, Raghu Dharmaraju, puts it, “Often, teams’ starting point is a promising research proof-of-concept. Their destination is the proverbial product-market fit – evidence-backed clarity on what product to make and which customers to serve at scale – on the other side of the valley-of-death. ARTPARK strives to adequately equip them and keep shining a light as they make that dangerous journey.”\n\nTranslation of research to impactful innovations needs time, funding, and an ecosystem that allows ambitious ideas to engage deeply with potential customers, fail, iterate, and eventually succeed. When that ecosystem exists, startups like AlgoFET build sustainable robotics and AI products and services, which is the bottomline mission of ARTPARK.\n\nARTPARK manages to do what most incubators cannot. While the initial draw might be funding and access to infrastructure, what keeps innovators rooted is the layered support system drawing collaborators and experts from academia, industry, and government. This network helps startups navigate the complexities of prototyping, compliance, vendor management, and customer discovery. The most salient constituent in this ecosystem, unsurprisingly, is IISc itself. Under the leadership of its director, Prof. Govindan Rangarajan, the institute has been actively enabling its faculty to collaborate with startups, if not become startup founders themselves. Long known as India’s top research institution, its faculty are increasingly keen to create real-world impact.\n\n“Ankit started as an engineer at ARTPARK, developing innovations in battery management technologies, and now he’s a founder. ” says Prof. Amrutur Bharadwaj, Executive Director of ARTPARK and a Professor at IISc, who also mentored Ankit through the launch and progress of AlgoFET.  “That’s the journey we want to make possible for everyone.”\n\nForward and upward\n\nFor AlgoFET, self-charging battery systems are just the start. Their ambition is to make every aspect of drone technology fully autonomous. From charging to data collection, navigation to deployment, the goal is to eliminate operational friction and unlock new possibilities across industries. “We want to democratize access to drone technology,” says Ankit. “Today, operating drones requires trained pilots, manual charging, and field deployment – these are all the barriers. If we can automate the entire chain, anyone can use drones to gather data. That’s how we unlock real impact.”\n\nARTPARK has earned its reputation with backing from the national and state governments and through tens of industry partners collaborating with its innovation teams and startups.  It was recently selected as a top-performing hub among many innovation hubs across India by an independent expert committee set up by DST.\n\nBut for Prof. Amrutur, accolades are incidental. The real mission lies in building a system where innovation and innovators can thrive – not just once, but again and again. “Our job isn’t just to support innovation,” he says. “It’s to support the innovator. Because without people willing to take the leap, there is no innovation.”\n\nAs long as innovators like Ankit keep walking through its doors with outrageous ideas and the courage to pursue them, ARTPARK will remain a launchpad for the future.\n\nTeam\n\nPrevious\nNature Signals. We Built the Infrastructure to Listen.",
+  "links": [
+    [
+      "Marketing .",
+      "https://www.artpark.in/stories?author=6566dcce109e221f90975f01"
+    ],
+    [
+      "Marketing .",
+      "https://www.artpark.in/stories?author=6566dcce109e221f90975f01"
+    ],
+    [
+      "Previous Nature Signals. We Built the Infrastructure to Listen.",
+      "https://www.artpark.in/stories/environmnetday2026"
+    ]
+  ],
+  "images": [
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1760689917259-J7BN1LTCY540E9DQAAFV/_DSC1949.JPG?format=500w",
+      "alt": "_DSC1949.JPG",
+      "w": 500,
+      "h": 333
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1760689918251-MX9N5UFY2DNEK17FE1SF/_DSC1931.JPG?format=500w",
+      "alt": "_DSC1931.JPG",
+      "w": 500,
+      "h": 333
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1760689936327-A4B7BO5AO61A6M8R5D8T/_DSC1918.JPG?format=500w",
+      "alt": "_DSC1918.JPG",
+      "w": 500,
+      "h": 333
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1764758172439-4BXLC75845VWHFDBP0T5/AlgoPAD_with%2BDrone.jpg?format=300w",
+      "alt": "AlgoPAD_with+Drone.jpg",
+      "w": 300,
+      "h": 318
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/537b670c-771d-4abd-bde8-e01a8d4a07e6/_DSC1939.png?format=1500w",
+      "alt": "",
+      "w": 1014,
+      "h": 566
+    }
+  ]
+}

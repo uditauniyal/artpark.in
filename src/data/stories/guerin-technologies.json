@@ -1,0 +1,117 @@
+{
+  "slug": "guerin-technologies",
+  "company": "Guerin Technologies",
+  "tag": "FOUNDER STORY",
+  "kicker": "Space technology",
+  "title": "Antennas that fold small and open themselves.",
+  "standfirst": "Suhas Bannur and Dr Abhilash M N co-founded Guerin Technologies in Bengaluru to build satellite antennas from flexible composites instead of metal deployment mechanisms. Space on a launcher is expensive, and heavy, bulky antennas take up more of it than they should.",
+  "meta": [
+    "ARTPARK Stories",
+    "About 3 min read",
+    "Guerin Technologies, Bengaluru"
+  ],
+  "website": "https://www.guerintech.in/",
+  "hero": {
+    "image": "/assets/site/fabrication.webp",
+    "alt": "Engineers working on a fabricated panel in a workshop",
+    "pos": "50% 50%",
+    "ratio": "16/9",
+    "caption": "Engineers at work in the ARTPARK workshop. ARTPARK photograph, not of Guerin Technologies."
+  },
+  "lead": [
+    "Communication satellites are now launched in large numbers, and many carry antennas built on heavy, bulky metallic deployment mechanisms. Those mechanisms take up volume inside the launcher, reduce how many payloads can share a ride and raise the cost of every launch.",
+    "Guerin Technologies, a Bengaluru space-structures startup co-founded by IISc alumni, works on the alternative. It is part of ARTPARK’s startup portfolio."
+  ],
+  "sections": [
+    {
+      "h2": "Composites instead of metal.",
+      "toc": "The idea",
+      "blocks": [
+        {
+          "quote": {
+            "text": "On a launcher, every kilogram and every centimetre costs money. An antenna that folds small and opens itself leaves more room for the mission it is there to serve.",
+            "who": "Suhas Bannur, Co-founder and CEO, Guerin Technologies",
+            "source": "",
+            "sourceLabel": "",
+            "draft": true
+          }
+        },
+        "Guerin’s antennas use high-strain flexible composites as their support structure. They can be packed tightly for launch and deploy on their own once in orbit, without the metallic mechanisms that conventional antennas rely on. The company says its antennas are three times lighter and twice as compact as current designs, which it estimates saves at least five per cent per launch.",
+        "In September 2024 the company filed an Indian patent application for a deployable space antenna with a rollable or Z-foldable reflector array, with both founders among the inventors. The design is stowed compactly and deploys by unrolling or unfolding, while keeping a constant gap between the antenna’s patch layer and its ground layer. Patent records list it as granted on 29 July 2025.",
+        {
+          "panel": {
+            "title": "What Guerin builds",
+            "items": [
+              [
+                "Deployable antennas",
+                "Self-deploying helical and Yagi antennas made from flexible composites."
+              ],
+              [
+                "Reflector arrays",
+                "A rollable or Z-foldable reflector array antenna, patented in India."
+              ],
+              [
+                "Who it is for",
+                "Manufacturers and integrators of communication satellites in low Earth orbit."
+              ],
+              [
+                "The larger aim",
+                "Reliable space sub-systems for large constellations in low and medium Earth orbit."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "From Bengaluru to Adelaide.",
+      "toc": "The journey",
+      "blocks": [
+        "Guerin has been supported by grants from the Government of India and the Government of Karnataka, and has demonstrated two new technology concepts for passive space-deployable mechanisms, according to IISc’s Department of Aerospace Engineering.",
+        "By early 2022 the team was part of Venture Catalyst Space, a space-sector accelerator in South Australia, and Guerin is listed among the startups of the Innovation and Collaboration Centre in Adelaide. Its plan, as set out in that profile, is to start with the Indian and Australian markets and then move to the Middle East and South-East Asia.",
+        {
+          "people": [
+            {
+              "name": "Suhas Bannur",
+              "role": "Co-founder & CEO",
+              "photo": "/assets/founders/guerin-technologies-suhas-bannur.webp",
+              "pos": "50% 35%"
+            },
+            {
+              "name": "Dr Abhilash M N",
+              "role": "Co-founder & CTO",
+              "photo": "/assets/founders/guerin-technologies-abhilash-mn.webp",
+              "pos": "50% 35%"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    [
+      "Innovation and Collaboration Centre, Adelaide University, Guerin Technologies profile",
+      "https://icc.adelaide.edu.au/about/icc-startups-and-residents/guerin-technologies/"
+    ],
+    [
+      "IISc Department of Aerospace Engineering, startups",
+      "https://aero.iisc.ac.in/startups/"
+    ],
+    [
+      "QuickCompany, patent record: “Deployable Space Antenna With Rollable And/Or Z Foldable Reflector Array” (application 202441073266)",
+      "https://www.quickcompany.in/patents/deployable-space-antenna-with-rollable-and-or-z-foldable-reflector-array"
+    ],
+    [
+      "Nanosats database, Guerin Technologies",
+      "https://www.nanosats.eu/org/guerin-technologies"
+    ],
+    [
+      "Guerin Technologies",
+      "https://www.guerintech.in/"
+    ],
+    [
+      "ARTPARK, startup portfolio",
+      "https://www.artpark.in/startups-overview"
+    ]
+  ]
+}

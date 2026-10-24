@@ -1,0 +1,82 @@
+{
+  "slug": "strider-robotics",
+  "company": "Strider Robotics",
+  "tag": "FOUNDER STORY",
+  "kicker": "Legged robotics",
+  "title": "From Stoch 1 to a robot that tows a car.",
+  "standfirst": "Aditya Varma Sagi and Prof. Shishir Kolathaya spent years building four-legged research robots at IISc before they turned the work into a company. Strider Robotics now builds quadrupeds for industrial inspection, and had to make many of its own parts to get there.",
+  "meta": ["ARTPARK Stories", "About 6 min read", "Strider Robotics, Bengaluru"],
+  "website": "https://strider-robotics.in/",
+  "hero": { "image": "/assets/founders/strider-robotics-quadruped.webp", "alt": "A black four-legged Strider Robotics robot walking on a tree-lined path", "pos": "50% 60%", "ratio": "16/9", "caption": "A quadruped robot built by Strider Robotics. Photograph from Strider Robotics." },
+  "lead": [
+    "“By 2022, we realised there were virtually no Indian companies developing this kind of quadrupedal robotics technology. That was when Professor Shishir and I decided to take the research beyond the lab,” says Aditya Varma Sagi, co-founder and CEO of Strider Robotics.",
+    "The research had started four years earlier, in Prof. Kolathaya’s lab at IISc, as a project called Stoch with initial funding of around ₹5 lakh. Today Strider builds autonomous quadruped robots for inspecting industrial plants and handling material, from ARTgarage, ARTPARK’s facility in Jalahalli."
+  ],
+  "sections": [
+    {
+      "h2": "Four robots before a company.",
+      "toc": "From the lab",
+      "blocks": [
+        "Prof. Shishir Kolathaya started the Stoch project in 2018, the year he joined IISc as an INSPIRE Faculty Fellow. He had trained in robotics and control at Georgia Tech and Caltech, and he co-led the project with Prof. Bharadwaj Amrutur, Prof. Shalabh Bhatnagar and Prof. Ashitava Ghosal. Stoch 1 was built that year, with 3D-printed parts.",
+        "Aditya Varma Sagi joined in March 2019, fresh from a master’s in robotics at IIT Madras, to work on the design and control of quadrupedal robots. Each robot could do more than the last. Stoch 2 came in 2019, Stoch 3 in 2021 with brushless DC motors, and Stoch 4 in 2022, carrying about 5 to 7 kg.",
+        "By then the two had noticed the gap Aditya describes. Most high-performance legged robots were built overseas, and Indian industry and government depended on imports for them."
+      ]
+    },
+    {
+      "h2": "Building the parts nobody sold.",
+      "toc": "The hard part",
+      "blocks": [
+        "Leaving the lab meant giving up the idea that parts could simply be bought. “In 2023, there were very few options for off-the-shelf components. We could not just piece together available parts, so we began building components ourselves. We now build our own actuators by sourcing local motors and engineering the gears, drives, and casings,” Aditya says.",
+        "The company puts the indigenous content of its M3 robot at over 80 percent by component cost. The robot carries thermal cameras, LiDAR and gas detectors. Its software for navigation, mission planning, asset monitoring and analytics is designed to be hardware-agnostic, so it can also run on other makers’ quadrupeds.",
+        { "panel": { "title": "What Strider builds", "items": [
+          ["M-series quadrupeds", "Autonomous four-legged robots for inspection, material handling and asset monitoring. The M3 is the current model."],
+          ["Actuators", "Made in-house from locally sourced motors, with the gears, drives and casings engineered by the team."],
+          ["Sensors", "Thermal cameras, LiDAR and gas detectors carried on the robot."],
+          ["Software", "Navigation, mission planning, asset monitoring and analytics, built to run on third-party quadrupeds too."]
+        ] } },
+        { "figure": { "image": "/assets/founders/strider-robotics-team.webp", "alt": "About twenty people standing behind three quadruped robots in front of Strider Robotics banners", "ratio": "1280/591", "caption": "Team Strider Robotics, with three of its quadrupeds and a banner showing the evolution of the platform. Photograph from Strider Robotics." } }
+      ]
+    },
+    {
+      "h2": "Where the robot goes to work.",
+      "toc": "Into industry",
+      "blocks": [
+        "The work Strider has in mind is routine inspection in power plants, oil and gas sites, mines and coal handling units, where people are exposed to heat, noise, dust and other hazards. In defence, the founders see a use in moving supplies over mountainous and off-road ground.",
+        { "quote": { "text": "We will be deploying our autonomous quadruped robots for industrial inspection. The platform can be deployed across industries such as automotive manufacturing, construction, power, and oil and gas to improve efficiency by detecting faults early and minimizing hazards for operators", "who": "Prof. Shishir Kolathaya, Co-founder, Strider Robotics", "source": "https://startuppedia.in/tech-innovation/bengalurus-strider-robotics-develops-4-legged-robots-that-can-automates-industrial-inspections-detects-faults-12234764", "sourceLabel": "StartupPedia" } },
+        "In July 2026, trade coverage reported the M3 carrying a 40 kg payload, with field pilots under way at an oil and gas company and an automotive manufacturer, neither of them named. In September, at a demonstration in Bengaluru, an M3 pulled a Honda Amaze with its engine off and no one at the wheel. The company called it a Technology Readiness Level 6 milestone.",
+        "In August 2026 the team numbered 15, and the company planned to deploy its first batch of quadrupeds to clients in December 2026."
+      ]
+    },
+    {
+      "h2": "Research, then a pre-venture, then a company.",
+      "toc": "With ARTPARK",
+      "blocks": [
+        "ARTPARK came in at the point where research becomes a business. Strider’s proposal was approved as an ARTPARK pre-venture in 2022, with government funding through ARTPARK from the Ministry of Heavy Industries, the Department of Science and Technology and the Government of Karnataka. The team built V1 in 2023 and V2 in 2024. That year, Strider Robotics was incorporated and incubated at ARTPARK, under the Startup @ ARTPARK programme.",
+        "ARTPARK lists Strider among the six pre-venture teams funded under CAMRAS, the industry accelerator the Ministry of Heavy Industries set up at ARTPARK, that went on to become startups. Legged walking robots were one of the programme’s first projects.",
+        { "dates": [
+          ["2018", "Stoch project starts at IISc, with around ₹5 lakh. Stoch 1 is built."],
+          ["2019", "Aditya Varma Sagi joins the project. Stoch 2."],
+          ["2021", "Stoch 3, with brushless DC motor actuation."],
+          ["2022", "Stoch 4. ARTPARK pre-venture approved."],
+          ["2023", "V1 robot. The team starts building its own components."],
+          ["2024", "V2 robot. Strider Robotics incorporated and incubated at ARTPARK."],
+          ["Jul 2026", "40 kg payload reported for the M3; pilots with an oil and gas company and an automotive manufacturer."],
+          ["Sep 2026", "An M3 pulls a Honda Amaze in a Bengaluru demonstration."]
+        ] },
+        { "people": [
+          { "name": "Aditya Varma Sagi", "role": "Co-founder and CEO" },
+          { "name": "Prof. Shishir Kolathaya", "role": "Co-founder · IISc" }
+        ] }
+      ]
+    }
+  ],
+  "sources": [
+    ["StartupPedia, Bengaluru’s Strider Robotics develops four-legged robots for industrial inspection (6 August 2026)", "https://startuppedia.in/tech-innovation/bengalurus-strider-robotics-develops-4-legged-robots-that-can-automates-industrial-inspections-detects-faults-12234764"],
+    ["StartupPedia, Strider Robotics shows its M3 quadruped’s ability to pull a Honda Amaze (September 2026)", "https://startuppedia.in/trending/startup-news/strider-robotics-shows-its-m3-quadrupeds-ability-to-pull-a-honda-amaze-12577525"],
+    ["Robotics and Automation News, Strider Robotics demonstrates 40 kg payload quadruped (18 July 2026)", "https://roboticsandautomationnews.com/2026/07/18/strider-robotics-demonstrates-40-kg-payload-quadruped-robot-as-commercial-pilots-begin/103453/"],
+    ["Strider Robotics, About", "https://strider-robotics.in/about"],
+    ["IISc EECS, Prof. Shishir Kolathaya", "https://eecs.iisc.ac.in/?p=9282"],
+    ["ARTPARK, CAMRAS programme page", "https://www.artpark.in/advanced-robotics/camras"],
+    ["Strider Robotics", "https://strider-robotics.in/"]
+  ]
+}

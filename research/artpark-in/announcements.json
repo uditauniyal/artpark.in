@@ -1,0 +1,58 @@
+{
+  "url": "https://www.artpark.in/announcements",
+  "status": 200,
+  "title": "Announcements — ARTPARK @IISc - Leading AI & Robotics startup incubation",
+  "description": "",
+  "headings": [
+    "H2: Latest from ARTPARK",
+    "H4: Legal Framework for Open-Sourcing Language Data in India",
+    "H4: White Paper: The LLM Landscape for LMICs",
+    "H4: Dr. Vijay Chandru Recognized as an AAAS Fellow for Outstanding Contributions to Science & Social Good",
+    "H4: Let’s Talk @ ARTPARK, Episode 1 with Dr. Vishal Rao"
+  ],
+  "text": "Latest from ARTPARK\nLegal Framework for Open-Sourcing Language Data in India\nWhite Paper: The LLM Landscape for LMICs\nDr. Vijay Chandru Recognized as an AAAS Fellow for Outstanding Contributions to Science & Social Good\nLet’s Talk @ ARTPARK, Episode 1 with Dr. Vishal Rao",
+  "links": [
+    [
+      "Legal Framework for Open-Sourcing Language Data in India",
+      "https://www.artpark.in/publications/legal-framework-opensourcing-languagedata-india"
+    ],
+    [
+      "White Paper: The LLM Landscape for LMICs",
+      "https://www.artpark.in/publications/llm-landscape-for-lmics"
+    ],
+    [
+      "Dr. Vijay Chandru Recognized as an AAAS Fellow for Outstanding Contributions to Science & Social Good",
+      "https://www.artpark.in/dr-vijay-chandru-appointed-as-an-aaas-fellow-1"
+    ],
+    [
+      "Let’s Talk @ ARTPARK, Episode 1 with Dr. Vishal Rao",
+      "https://www.youtube.com/watch?v=fZntmGY10Uk"
+    ]
+  ],
+  "images": [
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1749018571032-EGIQOZ24IX2I5CFRM7BX/unsplash-image-6sl88x150Xs.jpg?format=1500w",
+      "alt": "",
+      "w": 1440,
+      "h": 960
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/5a459e35-dbb1-4950-bd89-77adc277738b/image-asset.jpg?format=1500w",
+      "alt": "",
+      "w": 1440,
+      "h": 810
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/351dbac0-4c26-4c8c-aaaa-ecfcdb150981/Dr.+Chandru+-+1+%282%29+-+Vijay+Chandru.jpg?format=1500w",
+      "alt": "",
+      "w": 1440,
+      "h": 810
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1bfbbbf4-cd13-4581-bf6b-e8e793f1d427/lets+talk+session+1+thumbnail.jpg?format=1500w",
+      "alt": "",
+      "w": 1440,
+      "h": 810
+    }
+  ]
+}

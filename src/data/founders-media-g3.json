@@ -1,0 +1,16 @@
+{
+  "images": [
+    { "out": "founders/open-science-stack-lab.webp", "src": "research/img/founders/open-science-stack-lab.webp", "maxW": 1600, "subject": "Lab room with a plate reader, a liquid-handling enclosure and a robotic arm (Open Science Stack drug-discovery reference lab page)", "source": "https://opensciencestack.org/drug-discovery-lab/" },
+    { "out": "founders/open-science-stack-ajay-sethi.webp", "src": "research/img/founders/open-science-stack-ajay-sethi.webp", "maxW": 700, "subject": "Portrait of Dr. Ajay Sethi", "source": "https://opensciencestack.org/about-us/" },
+    { "out": "founders/q-axis-motors-preetham-shivanna.webp", "src": "research/img/founders/q-axis-motors-preetham-shivanna.png", "maxW": 700, "subject": "Portrait of Preetham K Shivanna", "source": "https://www.qaxismotors.com/" },
+    { "out": "founders/q-axis-motors-rabi-kisku.webp", "src": "research/img/founders/q-axis-motors-rabi-kisku.png", "maxW": 700, "subject": "Portrait of Rabi Kisku", "source": "https://www.qaxismotors.com/" },
+    { "out": "founders/q-axis-motors-ramana-reddy.webp", "src": "research/img/founders/q-axis-motors-ramana-reddy.png", "maxW": 700, "subject": "Portrait of Ramana Reddy", "source": "https://www.qaxismotors.com/" },
+    { "out": "founders/rootsgoods-pusa-krishi.webp", "src": "research/img/founders/rootsgoods-conf.jpg", "maxW": 1600, "subject": "RootsGoods stall P44 at the Agricultural Conference at Pusa Krishi, 17 October 2022", "source": "https://rootsgoods.com/about/" },
+    { "out": "founders/rootsgoods-shakil-regmi.webp", "src": "research/img/founders/rootsgoods-shakil.jpg", "maxW": 700, "subject": "Portrait of Dr. Shakil Regmi", "source": "https://rootsgoods.com/about/" },
+    { "out": "founders/sakar-robotics-lisa.webp", "src": "research/img/founders/sakar-robotics-lisa.jpg", "maxW": 1600, "subject": "LISA linen inspection machine attached to a calendering line", "source": "https://www.sakarrobotics.com/" },
+    { "out": "founders/sakar-robotics-team.webp", "src": "research/img/founders/sakar-robotics-team.jpg", "maxW": 1600, "subject": "Sakar Robotics team gathered around a service robot", "source": "https://www.sakarrobotics.com/company/about" },
+    { "out": "founders/sakar-robotics-karan-patil.webp", "src": "research/img/founders/sakar-robotics-karan-patil.jpg", "maxW": 700, "subject": "Portrait of Karan Patil", "source": "https://www.sakarrobotics.com/company/about" },
+    { "out": "founders/scivision-ai-gopalakrishnan.webp", "src": "research/img/founders/scivision-ai-gopalakrishnan.png", "maxW": 700, "subject": "Portrait of Prof. S. Gopalakrishnan", "source": "https://www.scivisionai.co.in/" },
+    { "out": "founders/scivision-ai-somanath.webp", "src": "research/img/founders/scivision-ai-somanath.png", "maxW": 700, "subject": "Portrait of Dr. Nagendra Somanath", "source": "https://www.scivisionai.co.in/" }
+  ]
+}

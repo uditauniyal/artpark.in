@@ -1,0 +1,104 @@
+{
+  "slug": "spacyphy",
+  "company": "SpaCyPhy",
+  "tag": "FOUNDER STORY",
+  "kicker": "Construction technology",
+  "title": "A building made like a product.",
+  "standfirst": "SpaCyPhy Tech is an incubatee of the Foundation for Science Innovation and Development at IISc. It wants buildings, rooms and furniture to be made the way products are made: modular, reconfigurable and built for reuse, and to become a new kind of real-estate asset.",
+  "meta": [
+    "ARTPARK Stories",
+    "About 3 min read",
+    "SpaCyPhy, Bengaluru"
+  ],
+  "website": "https://www.spacyphy.com/",
+  "hero": {
+    "image": "/assets/site/fabrication.webp",
+    "alt": "Fabrication work in the ARTPARK workshop",
+    "pos": "50% 50%",
+    "ratio": "16/9",
+    "caption": "Fabrication in the ARTPARK workshop. ARTPARK photograph, not of SpaCyPhy."
+  },
+  "lead": [
+    "Most buildings are static. They are built on site, and once finished, their rooms and furniture rarely change. SpaCyPhy starts from the opposite idea: that a building can behave more like a manufactured product, in build quality, performance, circularity, reusability and the experience of the people who use it.",
+    "If that works, a room stops being a fixed address and becomes an asset that can be reconfigured, moved and traded. That is the new real-estate asset class the company says it is building."
+  ],
+  "sections": [
+    {
+      "h2": "Plug and play.",
+      "toc": "The product",
+      "blocks": [
+        {
+          "quote": {
+            "text": "Buildings are still made one at a time, as if each were the first. We want rooms and structures that are designed, made and reused the way products are.",
+            "who": "Dr. Vishal Singh, Director, Product Development, SpaCyPhy",
+            "source": "",
+            "sourceLabel": "",
+            "draft": true
+          }
+        },
+        "SpaCyPhy combines 3D volumetric, modular construction with plug-and-play cyber-physical infrastructure, bringing construction technology and property technology together. Its stated principles are design for manufacturing and assembly, mass timber, and modularity across a building’s life.",
+        {
+          "panel": {
+            "title": "What SpaCyPhy offers",
+            "items": [
+              [
+                "Kinetic Furniture",
+                "Desks that turn into dining tables, and work pods that become conference rooms."
+              ],
+              [
+                "SpaCyPhy Retrofit",
+                "Kinetic furniture for existing interiors."
+              ],
+              [
+                "SpaCyPhy Plug N Play",
+                "Complete reconfigurable units, offered as transactable, investment-ready assets."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "From the IISc campus.",
+      "toc": "The team",
+      "blocks": [
+        "The Foundation for Science Innovation and Development (FSID) at IISc lists SpaCyPhy as an incubatee. The company’s website names four directors, who lead product development, operations, business development and supply chain.",
+        {
+          "people": [
+            {
+              "name": "Dr. Vishal Singh",
+              "role": "Director, Product Development"
+            },
+            {
+              "name": "Col (Retd) Dr. K Joshil Raj",
+              "role": "Director, Operations Management"
+            },
+            {
+              "name": "VarunKumar Sagarkar",
+              "role": "Director, Business Development"
+            },
+            {
+              "name": "Shreenidhi Hungund",
+              "role": "Director, Supply Chain Management"
+            }
+          ]
+        },
+        "SpaCyPhy is part of ARTPARK’s startup portfolio."
+      ]
+    }
+  ],
+  "sources": [
+    [
+      "SpaCyPhy (offerings, principles, directors)",
+      "https://www.spacyphy.com/"
+    ],
+    [
+      "FSID, IISc, SpaCyPhy Tech Private Limited incubatee page",
+      "https://www.fsid-iisc.in/incubatees/spacyphy-tech-private-limited-2/"
+    ],
+    [
+      "ARTPARK, startup portfolio",
+      "https://www.artpark.in/startups-overview"
+    ]
+  ]
+}

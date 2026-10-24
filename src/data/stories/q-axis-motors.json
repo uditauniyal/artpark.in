@@ -1,0 +1,144 @@
+{
+  "slug": "q-axis-motors",
+  "company": "Q-Axis Motors",
+  "tag": "FOUNDER STORY",
+  "kicker": "Defence and aerospace optics",
+  "title": "Holding a line of sight from a moving platform.",
+  "standfirst": "Q-Axis Motors was founded in 2021 by three engineers, each with more than 19 years in control systems, optics or data science. From Mysuru, they build the gimbals and pointing systems that keep a camera or a laser on target while the platform carrying it moves.",
+  "meta": [
+    "ARTPARK Stories",
+    "About 4 min read",
+    "Q-Axis Motors, Mysuru"
+  ],
+  "website": "http://www.qaxismotors.com/",
+  "hero": {
+    "image": "/assets/site/test-rigs.webp",
+    "alt": "Robotics test rigs in an ARTPARK lab",
+    "pos": "50% 50%",
+    "ratio": "16/9",
+    "caption": "Robotics test rigs in an ARTPARK lab. ARTPARK photograph, not of Q-Axis Motors."
+  },
+  "lead": [
+    "A camera on a drone, a sensor on an aircraft, a laser terminal on a satellite: each is useful only while it stays pointed where it should. The platforms carrying them vibrate, turn and drift. Q-Axis Motors builds the hardware that holds the line of sight steady through all of it.",
+    "The company describes its work as building India’s own capability in precision stabilisation, targeting, situational awareness and laser communication. ARTPARK’s portfolio calls it “India’s strategic eye in the sky”."
+  ],
+  "sections": [
+    {
+      "h2": "Three engineers, nineteen years each.",
+      "toc": "The founders",
+      "blocks": [
+        {
+          "quote": {
+            "text": "Keeping a camera on a target is easy on a tripod. On a moving platform it is a control problem, an optics problem and a data problem at once. That is the work the three of us had spent our careers on.",
+            "who": "Preetham K Shivanna, Founder and CEO, Q-Axis Motors",
+            "source": "",
+            "sourceLabel": "",
+            "draft": true
+          }
+        },
+        "Preetham K Shivanna, founder and CEO, studied at IIT Madras and has spent more than 19 years in systems architecture, robotics and control systems. He holds a patent in position feedback systems, the sensing that tells a gimbal exactly where it is pointing.",
+        "Rabi Kisku, co-founder and COO, is also from IIT Madras, with more than 19 years in optical systems, mechanical design and structural analysis. Ramana Reddy, co-founder and Chief AI Officer, studied at BITS Pilani and has more than 19 years in data science and neural networks. The company was registered in Karnataka in 2021.",
+        {
+          "people": [
+            {
+              "name": "Preetham K Shivanna",
+              "role": "Founder & CEO",
+              "photo": "/assets/founders/q-axis-motors-preetham-shivanna.webp",
+              "pos": "50% 40%"
+            },
+            {
+              "name": "Rabi Kisku",
+              "role": "Co-founder & COO",
+              "photo": "/assets/founders/q-axis-motors-rabi-kisku.webp",
+              "pos": "50% 35%"
+            },
+            {
+              "name": "Ramana Reddy",
+              "role": "Co-founder & Chief AI Officer",
+              "photo": "/assets/founders/q-axis-motors-ramana-reddy.webp",
+              "pos": "50% 35%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Steady to a fraction of a degree.",
+      "toc": "The products",
+      "blocks": [
+        "Q-Axis Motors says its systems stabilise to better than 100 microradians, with very low latency. They are designed for drones, aircraft, satellites, ground stations, autonomous systems and robotics.",
+        {
+          "panel": {
+            "title": "What Q-Axis Motors builds",
+            "items": [
+              [
+                "QX series",
+                "Gyro-stabilised gimbals and electro-optical and infrared (EO/IR) payloads."
+              ],
+              [
+                "Pointing, acquisition and tracking",
+                "Systems that find a target and stay locked on it."
+              ],
+              [
+                "Optical and laser links",
+                "Line-of-sight and beyond-line-of-sight communication links."
+              ],
+              [
+                "Integrated payloads",
+                "Electro-optical and communication payloads combined in one unit."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "Early backing.",
+      "toc": "Milestones",
+      "blocks": [
+        "The company lists a ₹2 crore pre-seed from IISc-ARTPARK, under the Department of Science & Technology, Government of India, and a ₹75 lakh pre-seed from Point One Capital.",
+        {
+          "panel": {
+            "title": "What the company reports",
+            "items": [
+              [
+                "Pre-seed",
+                "₹2 crore from IISc-ARTPARK (DST, Government of India)."
+              ],
+              [
+                "Pre-seed",
+                "₹75 lakh from Point One Capital."
+              ],
+              [
+                "iDEX ADITI 4.0",
+                "Shortlisted under the Ministry of Defence programme."
+              ],
+              [
+                "2025",
+                "Runner-up at IIT Madras Sangam PitchFest, among more than 200 deep-tech startups."
+              ],
+              [
+                "2025",
+                "Winner of Elevate 2025, Government of Karnataka."
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    [
+      "Q-Axis Motors (team, products, funding and awards)",
+      "https://www.qaxismotors.com/"
+    ],
+    [
+      "CB Insights, Q-Axis Motors profile (founded 2021, Mysuru)",
+      "https://www.cbinsights.com/company/q-axis-motors"
+    ],
+    [
+      "ARTPARK, startup portfolio",
+      "https://www.artpark.in/startups-overview"
+    ]
+  ]
+}

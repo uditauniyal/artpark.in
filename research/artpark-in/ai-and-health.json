@@ -1,0 +1,72 @@
+{
+  "url": "https://www.artpark.in/ai-and-health",
+  "status": 200,
+  "title": "AI Ready Healthcare — ARTPARK @IISc - Leading AI & Robotics startup incubation",
+  "description": "",
+  "headings": [
+    "H2: AI-Ready Healthcare Data - MIDAS for India",
+    "H3: MIDAS - Medical Information & Imaging DataSets for India",
+    "H4: Building the foundational dataset layer that India's health AI needs to actually work.",
+    "H4: Our multimodal datasets cover",
+    "H4: Stats that count",
+    "H4: Highlights",
+    "H2: Our Partners",
+    "H3: MIDAS for Oral Cancer Screening",
+    "H2: What drives our work?",
+    "H3: MIDAS for Tuberculosis Screening",
+    "H1: Working on AI for research and screening?"
+  ],
+  "text": "AI-Ready Healthcare Data - MIDAS for India\n\nIndia's disease burden is vast. Most of it is detectable early. ARTPARK builds the data infrastructure and AI tools that make early detection possible, at the last mile, with the equipment that's actually there.\n\nFoundation - MIDAS\n\nMIDAS - Medical Information & Imaging DataSets for India\nBuilding the foundational dataset layer that India's health AI needs to actually work.\n\nAI models trained on international datasets don't perform accurately on Indian patients. MIDAS  addresses this at the foundation by collecting, curating, and disseminating standardized medical imaging datasets from institutions across India ensuring not just domestic representation but demographic representation.\n\nOur multimodal datasets cover\n\nOral Cancer\n\nBreast Cancer\n\nDiabetic Retinopathy\n\nMeningioma\n\nGlaucoma\n\nStats that count\n\n1 TB+ Clinical Data Available Now\n\n5 Disease Areas Covered\n\n10+ Partner Institutions Nationwide\n\nHighlights\n\nShowcased at AI Action Summit Paris, 2025 and India AI Impact Summit 2026\n\nModel: Hubs-and-spokes - multi-institution collection & standardisation\n\nAccess: Open to researchers and innovators via secure platform\n\nOur Partners\n\nSolving real problems with AI in healthcare\n\nIndia's disease burden is growing. Its healthcare infrastructure needs tools that scale. Early detection saves lives. Yet for millions of Indians, it remains out of reach.\n\nWe build AI for Society, supporting initiatives that close this gap, and serve India’s population and its underserved communities where it matters most. In line with this, we are equipping frontline health workers and improving early detection.\n\nMIDAS for Oral Cancer Screening\n\nIndia carries nearly one-third of the global oral cancer burden. 70% of cases are diagnosed at Stage III or IV, when survival rates fall below 37%. The gap is not treatment, it is early detection, especially at the last mile where specialists do not reach.\n\nLearn More\nWhat drives our work?\nMIDAS for Tuberculosis Screening\n\nTB presentation varies by population, co-morbidity profile (including diabetes, which is endemic in India), and the prevalence of non-TB pulmonary disease. Models trained on Western data underperform on Indian X-ray data from district hospitals.\n\nLearn More\nWorking on AI for research and screening?\n\n ARTPARK co-innovates with health systems, research institutions, and technology partners on screening tools built for India. Let's build together.\n\nTalk To MIDAS Team",
+  "links": [
+    [
+      "Learn More",
+      "https://www.artpark.in/oral-cancer-screening"
+    ],
+    [
+      "Learn More",
+      "https://www.artpark.in/tb-screening"
+    ],
+    [
+      "Talk To MIDAS Team",
+      "https://www.artpark.in/ai-and-health"
+    ]
+  ],
+  "images": [
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/636be964-2e74-4c2f-b537-328628095693/hospital-staff-examine-cardiovascular-x-ray-results-discuss-treatment-option.jpg?format=1500w",
+      "alt": "",
+      "w": 1440,
+      "h": 960
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/f7b65829-3b23-4e0b-b62a-250697e76e1f/icmr.png?format=300w",
+      "alt": "",
+      "w": 216,
+      "h": 95
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1ab4dc19-76c7-48db-8cad-62f354455de3/new-AIIMS-logo-blue.jpg?format=300w",
+      "alt": "",
+      "w": 216,
+      "h": 81
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/2f3d8851-a582-40bb-94bd-7c307e387ace/nimhans-logo.png?format=500w",
+      "alt": "",
+      "w": 330,
+      "h": 57
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/e093f63a-682f-493e-bd14-4b1709535ea8/SGPGI+logo.jpg?format=100w",
+      "alt": "",
+      "w": 95,
+      "h": 108
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/f41fc58c-3a4f-4195-8d30-b27315115280/PIMER-C+logo.png?format=300w",
+      "alt": "",
+      "w": 112,
+      "h": 109
+    }
+  ]
+}

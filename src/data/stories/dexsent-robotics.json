@@ -1,0 +1,133 @@
+{
+  "slug": "dexsent-robotics",
+  "company": "Dexsent Robotics",
+  "tag": "FOUNDER STORY",
+  "kicker": "Industrial robotics",
+  "title": "Giving industrial robots eyes and hands.",
+  "standfirst": "Dexsent Robotics was incorporated in May 2025, with Praveen Suresh, Barat S and Prof. Harish Palanthandalam-Madapusi of IIT Gandhinagar as its directors. The company wants to move industrial automation beyond rigid routines, with vision, grippers and software that let robots respond to what is in front of them.",
+  "meta": [
+    "ARTPARK Stories",
+    "About 3 min read",
+    "Dexsent Robotics, Chennai"
+  ],
+  "website": "https://dexsentrobotics.com/",
+  "hero": {
+    "image": "/assets/site/test-rigs.webp",
+    "alt": "Engineers at hardware test rigs in a robotics lab",
+    "pos": "50% 50%",
+    "ratio": "16/9",
+    "caption": "Hardware test rigs in the robotics lab at ARTPARK. ARTPARK photograph, not of Dexsent Robotics."
+  },
+  "lead": [
+    "ARTPARK’s portfolio describes Dexsent in one line: “Building robots that Sense, Decide, and Act with Purpose.” The company’s own description is more specific. It wants to move factories beyond rigid automation, towards robots that work alongside people and take on the repetitive and complex tasks, so that people can focus on higher-value work.",
+    "The company is young. It was incorporated on 20 May 2025, operates from Chennai and describes itself as incubated at ARTPARK, IISc Bengaluru."
+  ],
+  "sections": [
+    {
+      "h2": "Beyond rigid automation.",
+      "toc": "The idea",
+      "blocks": [
+        {
+          "quote": {
+            "text": "Industrial robots are very good at doing the same thing again and again. We want them to see what is in front of them, and decide what to do about it.",
+            "who": "Praveen Suresh, Director, Dexsent Robotics",
+            "source": "",
+            "sourceLabel": "",
+            "draft": true
+          }
+        },
+        "Dexsent’s work brings together vision intelligence, dexterous action and advanced control. The aim is safety, precision and productivity in dynamic environments, where a robot has to respond to what it sees rather than follow a fixed routine.",
+        "In 2026 the company said it was developing IMP, an Intelligent Manipulation Platform. It is designed to be robot-agnostic: a layer of physical AI that sits on top of existing industrial robots and makes them more capable, rather than replacing them.",
+        {
+          "panel": {
+            "title": "What Dexsent works on",
+            "items": [
+              [
+                "Intelligent Manipulation Platform",
+                "A robot-agnostic physical AI platform for industrial robots, in development."
+              ],
+              [
+                "Vision for manipulation",
+                "Seeing objects well enough to pick, place and handle them."
+              ],
+              [
+                "Dexterous hands and adaptive grippers",
+                "End effectors that can adapt to what they are holding."
+              ],
+              [
+                "Humanoids",
+                "Listed by the company among its areas of work."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "A new company, close to the factory floor.",
+      "toc": "So far",
+      "blocks": [
+        "Dexsent has three registered directors. Prof. Harish Palanthandalam-Madapusi is a Professor of Mechanical Engineering at IIT Gandhinagar, where his research covers control systems and robotics. He studied at the University of Mumbai and the University of Michigan, where he completed his PhD in 2007.",
+        {
+          "people": [
+            {
+              "name": "Praveen Suresh",
+              "role": "Director"
+            },
+            {
+              "name": "Barat S",
+              "role": "Director"
+            },
+            {
+              "name": "Prof. Harish Palanthandalam-Madapusi",
+              "role": "Director · Professor of Mechanical Engineering, IIT Gandhinagar"
+            }
+          ]
+        },
+        {
+          "dates": [
+            [
+              "May 2025",
+              "Dexsent Robotics Private Limited is incorporated."
+            ],
+            [
+              "2026",
+              "Tracxn lists a seed investment from ARTPARK. The amount has not been made public."
+            ],
+            [
+              "2026",
+              "Recognised by FANUC India at its Accessory Partner Meet 2026. The company says it is proud to be part of the FANUC India ecosystem."
+            ]
+          ]
+        },
+        "The company is now hiring engineers in vision, physical AI and robotics in Chennai. It has not yet published a founder interview or a detailed account of how it started."
+      ]
+    }
+  ],
+  "sources": [
+    [
+      "Dexsent Robotics",
+      "https://dexsentrobotics.com/"
+    ],
+    [
+      "Dexsent Robotics on LinkedIn (company description, FANUC India post, hiring)",
+      "https://www.linkedin.com/company/dexsent-robotics"
+    ],
+    [
+      "IndiaFilings, company registration record",
+      "https://www.indiafilings.com/search/dexsent-robotics-private-limited-cin-U74909GJ2025PTC163172"
+    ],
+    [
+      "Tracxn, ARTPARK investments",
+      "https://tracxn.com/d/accelerator-incubator/artpark/__i5ifNKF4hAJjdV_mnP57yYzT1hbvaOelpK2eghNZKHo"
+    ],
+    [
+      "IIT Gandhinagar, faculty profile of Prof. Harish Palanthandalam-Madapusi (page no longer online)",
+      ""
+    ],
+    [
+      "ARTPARK, startup portfolio",
+      "https://www.artpark.in/startups-overview"
+    ]
+  ]
+}

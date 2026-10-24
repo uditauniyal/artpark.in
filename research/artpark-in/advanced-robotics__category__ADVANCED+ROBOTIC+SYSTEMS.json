@@ -1,0 +1,68 @@
+{
+  "url": "https://www.artpark.in/advanced-robotics/category/ADVANCED+ROBOTIC+SYSTEMS",
+  "status": 200,
+  "title": "ADVANCED ROBOTIC SYSTEMS — Advanced Robotic Systems — ARTPARK @IISc - Leading AI & Robotics startup incubation",
+  "description": "",
+  "headings": [
+    "H1: Advanced Robotic Systems",
+    "H3: Ongoing Initiatives",
+    "H1: CAMRAS"
+  ],
+  "text": "Advanced Robotic Systems\n\nDriving next-gen robotics in India through four focused innovation initiatives.\n\nEach area targets a critical gap in robotics capabilities, with a vision to develop indigenous, intelligent, and resilient systems that can transform industries and society.\n\nHUMANOIDS\nAgile, dexterous humanoid robots for factory automation and healthcare assistance. These platforms integrate advanced perception, manipulation, locomotion, and foundation AI models to ensure human-safe interaction. Designed specifically for Indian needs, the humanoids are being built in collaboration with industry partners to transition quickly from prototypes to real-world deployment.\n\nRESILIENT MULTI-ROBOT SYSTEMS (MRS)\nCreating collaborative networks of aerial, ground, and underwater robots for defense and civilian use. With distributed AI, multimodal sensing, and autonomous coordination, these systems can operate across complex environments for applications like surveillance and disaster management, positioning India at the forefront of multi-robot innovation.\n\nSECURE NAVIGATION STACK (S-NAV)\nModular, encrypted navigation solutions for autonomous systems, supporting seamless integration of GNSS, LiDAR, and IMU sensors. Designed to meet ISO standards, S-Nav enables safe, secure, and interoperable operations for diverse platforms. Innovations from ARTPARK startups like Yaanendriya are key contributors to this ecosystem.\n\nPHYSICAL AI FOR NEXT-GENERATION ROBOTS\nAccelerate robotic learning by creating large-scale data ecosystems through Robot Data Farms and Simulation Centers. Through robot foundation models and human-guided training systems, ARTPARK seeks to build adaptable robots capable of transferring skills across tasks, setting the stage for India's leadership in AI-driven robotics.\n\nOngoing Initiatives\nCAMRAS\nRead More",
+  "links": [
+    [
+      "ADVANCED ROBOTIC SYSTEMS",
+      "https://www.artpark.in/advanced-robotics/category/ADVANCED%20ROBOTIC%20SYSTEMS"
+    ],
+    [
+      "ADVANCED ROBOTIC SYSTEMS",
+      "https://www.artpark.in/advanced-robotics/category/ADVANCED%20ROBOTIC%20SYSTEMS"
+    ],
+    [
+      "CAMRAS",
+      "https://www.artpark.in/advanced-robotics/camras"
+    ],
+    [
+      "Read More",
+      "https://www.artpark.in/advanced-robotics/camras"
+    ]
+  ],
+  "images": [
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/44b05d71-5db2-4c53-bc32-f7253f98bb3c/VJM-110.jpg?format=1500w",
+      "alt": "",
+      "w": 1440,
+      "h": 960
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/2d94b312-033c-4149-8d3b-e980289d53db/noun-humanoid-6975614.png?format=1500w",
+      "alt": "",
+      "w": 1152,
+      "h": 1152
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/746ba929-849e-4685-be02-8d38cb63b8ce/noun-online-control-3602568.png?format=1500w",
+      "alt": "",
+      "w": 1152,
+      "h": 1152
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/16723598-519d-4c80-83a0-cc554b9b2070/noun-navigation-7697947.png?format=1500w",
+      "alt": "",
+      "w": 1152,
+      "h": 1152
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/a941b2c5-5d04-4f51-890d-edd968930c26/noun-automation-5940942.jpg?format=1500w",
+      "alt": "",
+      "w": 1152,
+      "h": 864
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1750241136548-PN4B5659EB28ZC1AQXK0/VJM-66.jpg/?format=2500w",
+      "alt": "",
+      "w": 1244,
+      "h": 829
+    }
+  ]
+}

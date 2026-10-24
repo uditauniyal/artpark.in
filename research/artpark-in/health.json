@@ -1,0 +1,214 @@
+{
+  "url": "https://www.artpark.in/health",
+  "status": 200,
+  "title": "Health & Climate — ARTPARK @IISc - Leading AI & Robotics startup incubation",
+  "description": "",
+  "headings": [
+    "H1: Health & climate Initiative",
+    "H2: Systems Resilience to Health & Climate Risks",
+    "H4: Resources/Toolkits",
+    "H2: GenAI for Health",
+    "H2: Screening & Diagnostics",
+    "H2: Datasets for an inclusive India",
+    "H3: VAANI",
+    "H3: SYSPIN",
+    "H3: RESPIN"
+  ],
+  "text": "Health & climate Initiative\n\nReimaging health systems with data and AI\n\nWe build data ecosystems and AI-based solutions with research, government, nonprofit, startup and corporate partners, through co-innovation programs.\n\nHow can AI help reimaging health systems to prevent the next pandemic or climate-induced health risks?\n\nWhat key innovations might dramatically improve the healthcare experience for common people, especially in primary care and care continuity?\n\nWhat data ecosystems do we need to drive such innovations?\n\nWhat are pragmatic starting points for such a long-term vision?\n\nThese questions shape our focus areas and initiatives. To be clear, more than AI, we care about developing AI-based solutions that work, scale, and deliver impact as part of our health systems. Since health systems and AI influence each other’s design, we co-innovate iteratively with system constituents.\n\nWe also collaborate extensively with researchers and innovators to tackle critical challenges.\n\nSystems Resilience to Health & Climate Risks\n\nGenAI for Health\n\nScreening & Diagnostics\n\nSystems Resilience to Health & Climate Risks\nEnvironmental Surveillance Technology Platform\n\nOne Health surveillance platform for early detection of animal disease outbreaks.\n\nRead more →\nHeatwaves + Health Risk Prediction\n\nAI-Powered Localized Risk Forecasting Systems for Climate Change and Human Health\n\nRead more →\nLivestock Disease Vaccination Strategy\n\nDisease prevention and control measures to safeguard India’s livestock sector\n\nRead more →\nDengue Outbreak Prediction\n\nAnalytics platform and sub-district level risk prediction for Dengue\n\nRead more →\nReimaging Health\n\nReimagined Health Journeys are experiences we dream of providing our citizens, health workers and professionals.\n\nRead more →\nResources/Toolkits\nData Catalogue\nTechnical Artefacts\nGenAI for Health\nHigh-Risk Pregnancy Copilot for Frontline Workers\n\nAn expert approved, LLM-based assistant that gives instant clinical guidance to ANMs. It is currently deployed and in production with more than 6000 users.\n\nRead more →\nAI TRAINER FOR COMMUNITY MENTAL HEALTH\n\nCMHLP’s program to train volunteers in community mental health care has been proven to be effective. Yet training ASHAs at scale is infeasible in an in-person program. ARTPARK and CMHLP partner to develop  multi-agent trainer for ASHAs to make the training process scalable.\n\nRead more →\nKilkari AI Chatbot: Conversational Q&A for Mothers\n\nOur Q&A bot will provide on-demand, real-time, accurate, actionable and personalised information on pregnancy and infant care in an effort to improve health-seeking behaviour that could lead to reduced maternal and child mortality and morbidity.\n\nRead more →\nBelonggAI\n\nBillions of people in LMICs with marginalized identities  (gender, caste, disability, sexual orientation, ethnicity, religion) face suboptimal outcomes due to bias and poorly designed programs/policies that ignore their unique needs. These intersectional considerations are often overlooked in SDG activities, leaving gaps in addressing their needs.\n\nBelonggAI and ARTPARK are developing an LLM-based tool to help development practitioners, funders, and researchers uncover and address these exclusions and make their work more inclusive of marginalized groups.\n\nRead more →\nScreening & Diagnostics\nMIDAS\n\nGold standard medical imaging datasets to advance healthcare research in India.\n\nRead more →\nDatasets for an inclusive India\nVAANI\nSYSPIN\nRESPIN",
+  "links": [
+    [
+      "Environmental Surveillance Technology Platform",
+      "https://www.artpark.in/health-initiatives/environmental-survelliance"
+    ],
+    [
+      "Read more →",
+      "https://www.artpark.in/health-initiatives/environmental-survelliance"
+    ],
+    [
+      "Heatwaves + Health Risk Prediction",
+      "https://www.artpark.in/health-initiatives/climate-health"
+    ],
+    [
+      "Read more →",
+      "https://www.artpark.in/health-initiatives/climate-health"
+    ],
+    [
+      "Livestock Disease Vaccination Strategy",
+      "https://www.artpark.in/health-initiatives/livestock-modelling"
+    ],
+    [
+      "Read more →",
+      "https://www.artpark.in/health-initiatives/livestock-modelling"
+    ],
+    [
+      "Dengue Outbreak Prediction",
+      "https://www.artpark.in/health-initiatives/dengue-dashboard"
+    ],
+    [
+      "Read more →",
+      "https://www.artpark.in/health-initiatives/dengue-dashboard"
+    ],
+    [
+      "Reimaging Health",
+      "https://artpark.in/reimaging-health"
+    ],
+    [
+      "Read more →",
+      "https://www.artpark.in/health-initiatives/reimaging-health-vignettes"
+    ],
+    [
+      "Resources/Toolkits",
+      "https://health.artpark.ai/"
+    ],
+    [
+      "Data Catalogue",
+      "https://health.artpark.ai/data/"
+    ],
+    [
+      "Technical Artefacts",
+      "https://www.artpark.in/health"
+    ],
+    [
+      "High-Risk Pregnancy Copilot for Frontline Workers",
+      "https://www.artpark.in/language-data-ai/hrp-copilot"
+    ],
+    [
+      "Read more →",
+      "https://www.artpark.in/language-data-ai/hrp-copilot"
+    ],
+    [
+      "AI TRAINER FOR COMMUNITY MENTAL HEALTH",
+      "https://www.artpark.in/language-data-ai/mental-health-trainer"
+    ],
+    [
+      "Read more →",
+      "https://www.artpark.in/language-data-ai/mental-health-trainer"
+    ],
+    [
+      "Kilkari AI Chatbot: Conversational Q&A for Mothers",
+      "https://www.artpark.in/language-data-ai/kilkari-assistant-for-mothers-5dc4k"
+    ],
+    [
+      "Read more →",
+      "https://www.artpark.in/language-data-ai/kilkari-assistant-for-mothers-5dc4k"
+    ],
+    [
+      "BelonggAI",
+      "https://belongg.net/belongg-inclusive-tech/"
+    ],
+    [
+      "Read more →",
+      "https://www.artpark.in/language-data-ai/belongg-ai"
+    ],
+    [
+      "MIDAS",
+      "https://www.artpark.in/health-initiatives/midas"
+    ],
+    [
+      "Read more →",
+      "https://www.artpark.in/health-initiatives/midas"
+    ],
+    [
+      "Learn More",
+      "https://www.artpark.in/language/vaani"
+    ],
+    [
+      "Learn More",
+      "https://www.artpark.in/language/syspin"
+    ],
+    [
+      "Access Dataset",
+      "https://www.artpark.in/syspin"
+    ],
+    [
+      "Learn More",
+      "https://www.artpark.in/language/respin"
+    ]
+  ],
+  "images": [
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1747330662413-GI9MVOI16PG8X2CHHRN8/image-asset.jpeg?format=1500w",
+      "alt": "",
+      "w": 1440,
+      "h": 1152
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/906bfa46-a5b8-41e7-b78a-8751f548f51b/ChatGPT+Image+Apr+23%2C+2025%2C+03_37_27+PM.png?format=300w",
+      "alt": "",
+      "w": 216,
+      "h": 216
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/afe87f2f-09d8-461a-9c65-52cdc17a3bba/ChatGPT+Image+Apr+21%2C+2025%2C+10_29_25+AM+copy.png?format=300w",
+      "alt": "",
+      "w": 216,
+      "h": 216
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/c75cef10-a788-465d-b325-392ee20e8a29/ChatGPT+Image+Apr+21%2C+2025%2C+10_29_29+AM.png?format=300w",
+      "alt": "",
+      "w": 216,
+      "h": 216
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1792733262110-VCXR6MBJHRXH5H4RCJ94/Dharini+banner.jpg?format=300w",
+      "alt": "Environmental Surveillance Technology Platform",
+      "w": 300,
+      "h": 230
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1729073163419-ATWLKTJFQ1G82MC1B8JT/usgs-O68cqTi5k-I-unsplash.jpg?format=300w",
+      "alt": "Heatwaves + Health Risk Prediction",
+      "w": 300,
+      "h": 300
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1724657754209-IP1RIVV0RA1HAKG042NZ/unsplash-image-HOOKgN_zIY8.jpg?format=300w",
+      "alt": "Livestock Disease Vaccination Strategy",
+      "w": 300,
+      "h": 220
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1725265504523-19MEO4UOHA69OX54CXPG/unsplash-image-5jMoC6TInq4.jpg?format=300w",
+      "alt": "Dengue Outbreak Prediction",
+      "w": 300,
+      "h": 305
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1725264926197-IBW1FSUIL7N4MK7T2ORJ/RH%2B-%2BBanner.jpg?format=300w",
+      "alt": "Reimaging Health",
+      "w": 300,
+      "h": 169
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1770810345336-0FES7D20E8W6IGWE6ZK5/High-risk+pregnancy+training+1.jpg?format=300w",
+      "alt": "High-Risk Pregnancy Copilot for Frontline Workers",
+      "w": 300,
+      "h": 450
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1770810703644-ZJ2ZVYCKNY8QCDGRBN86/atmiyata.png?format=300w",
+      "alt": "AI TRAINER FOR COMMUNITY MENTAL HEALTH",
+      "w": 300,
+      "h": 169
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1738046996728-STJ1KWDZT8E4FAHFH16C/1024px-Teaching_the_importance_of_breastfeeding_in_India_%288806268443%29.jpg?format=300w",
+      "alt": "Kilkari AI Chatbot: Conversational Q&amp;A for Mothers",
+      "w": 300,
+      "h": 200
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1721110570480-HCH2HH3HMZGEUCDB86QO/image-asset.jpeg?format=300w",
+      "alt": "BelonggAI",
+      "w": 300,
+      "h": 200
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1724658107660-XUD9M5HILFT5XADPO898/unsplash-image-fsxMTe6hMUM.jpg?format=300w",
+      "alt": "MIDAS",
+      "w": 300,
+      "h": 200
+    }
+  ]
+}

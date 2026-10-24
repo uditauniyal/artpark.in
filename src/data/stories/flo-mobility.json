@@ -1,0 +1,208 @@
+{
+  "slug": "flo-mobility",
+  "company": "Flo Mobility",
+  "tag": "FOUNDER STORY",
+  "kicker": "Construction robotics",
+  "title": "The wheelbarrow that drives itself.",
+  "standfirst": "Manesh Jain and Pratik Patel spent years building autonomy for lawnmowers, warehouse robots and crop sprayers before they found the job that needed it most: moving materials around construction sites. Flo Mobility’s haulers now work on building sites across India, offered on subscription.",
+  "meta": [
+    "ARTPARK Stories",
+    "About 6 min read",
+    "Flo Mobility, Bengaluru"
+  ],
+  "website": "https://flomobility.com/",
+  "hero": {
+    "image": "/assets/founders/flo-mobility-haulers.webp",
+    "alt": "Two men in black Flo polo shirts standing among a row of yellow Flo Mobility haulers in a workshop",
+    "pos": "50% 22%",
+    "ratio": "16/9",
+    "caption": "Two members of the Flo Mobility team with a row of Flo haulers in the workshop. Photograph from Flo Mobility."
+  },
+  "lead": [
+    "“When we first walked onto a construction site with our robot, the reaction from site teams was immediate - They saw materials moving autonomously to the right floor, to the right zone, without anyone pushing a wheelbarrow. That moment still drives us.” Pratik Patel, Flo Mobility’s co-founder and COO, said this in May 2026, as the company announced a new round of funding.",
+    "Construction employs more than 270 million people worldwide, but deploys only 15 to 20 robots for every 10,000 workers. Automotive manufacturing deploys more than 600. On most sites, much of the labour still goes into moving materials by hand and by wheelbarrow."
+  ],
+  "sections": [
+    {
+      "h2": "Robots that flow.",
+      "toc": "The beginning",
+      "blocks": [
+        "Manesh Jain had built companies before. An MDI Gurgaon gold medallist who once worked at IBM, he founded an edtech startup that was acquired by Reliance. According to Inc42, the idea for Flo took shape in 2018, while he was working at Reliance Jio after the acquisition. Pratik Patel, who had worked at Byju’s and Accenture, had seen an earlier electric vehicle venture of his own grounded before it took off.",
+        "When they first thought of Flo, Manesh told Inc42, Tesla’s Autopilot and iRobot’s Roomba had started gaining ground.",
+        {
+          "quote": {
+            "text": "When we started the company in 2021, our focus was on building autonomous navigation systems for robots. Since our work centred around robot movement, ‘mobility’ naturally became part of the name. We wanted to convey the idea of robots that don’t just move but flow",
+            "who": "Manesh Jain, Founder & CEO, Flo Mobility",
+            "source": "https://www.constructionworld.in/latest-construction-technology/we---re-building-robots-that-flow--not-just-move/75548",
+            "sourceLabel": "Construction World"
+          }
+        },
+        "They wanted to call it Flow. The domain flowmobility.com was taken, so they dropped the w.",
+        "Finding people was its own problem. Manesh told Inc42 that the founders went to many robotics events to find like-minded people from the industry. The company also took on a lot of interns, and hired several of them full-time."
+      ]
+    },
+    {
+      "h2": "The long way to the right problem.",
+      "toc": "The search",
+      "blocks": [
+        "The first plan was to add autonomy to equipment that already existed. Covid-19 disrupted the early years, and neither founder came from autonomous mobility. In 2021 the company was building compute-light autonomy for e-scooters, agricultural weeders, golf carts, surveillance robots and delivery robots. It also built prototypes of autonomous lawnmowers, warehouse robots and crop sprayers.",
+        "By early 2023, retrofitting autonomy onto other people’s machines had proved too difficult, and the team began building its own autonomous mobile robots from scratch. In October 2023, after prototyping for several sectors, Flo chose construction, and within it material movement: the most repetitive and labour-intensive task on site.",
+        {
+          "quote": {
+            "text": "The construction industry has been operating the same way for decades, with enormous amounts of labour dedicated to simply moving materials from one place to another. That’s not a people problem; it’s a systems problem. Flo mobility was built to solve it. Our robots do not replace the skilled labour that builds India’s cities; they free that labour to do the work that matters.",
+            "who": "Manesh Jain, Co-founder & CEO, Flo Mobility",
+            "source": "https://www.tribuneindia.com/news/business/flo-mobility-raises-usd-2-5-million-pre-series-a-from-mela-ventures-and-arali-ventures/",
+            "sourceLabel": "The Tribune"
+          }
+        }
+      ]
+    },
+    {
+      "h2": "On site, by subscription.",
+      "toc": "The hauler",
+      "blocks": [
+        "The Flo Hauler is a battery-powered autonomous robot that carries materials across a site and between floors. A smaller version works as an electric wheelbarrow: it carries half a tonne, tips its own load, fits into construction hoists, climbs 12-degree slopes and runs six to eight hours on swappable batteries.",
+        {
+          "quote": {
+            "text": "The Flo-Hauler was developed to solve problems faced every day at construction sites. We wanted a Made in India solution that reduces dependency on manual labour while improving efficiency and safety.",
+            "who": "Pratik Patel, Co-founder & COO, Flo Mobility",
+            "source": "https://www.etvbharat.com/en/business/bengaluru-start-ups-made-in-india-autonomous-wheelbarrow-aims-to-transform-construction-workflows-enn25111904856",
+            "sourceLabel": "ETV Bharat"
+          }
+        },
+        {
+          "panel": {
+            "title": "What Flo Mobility builds",
+            "items": [
+              [
+                "Flo Hauler",
+                "A battery-powered autonomous mobile robot for construction sites, carrying up to 1.5 tonnes, for horizontal and multi-floor movement."
+              ],
+              [
+                "Electric wheelbarrow",
+                "A half-tonne autonomous hauler with automatic dumping, sized for hoists, with swappable batteries."
+              ],
+              [
+                "Robots as a service",
+                "Customers subscribe instead of buying: rental, deployment, operation and maintenance in one fee."
+              ],
+              [
+                "Fleet control",
+                "A platform to run several robots across a site."
+              ]
+            ]
+          }
+        },
+        "The first customer, according to Inc42, was the Bengaluru builder Total Environment, in early 2024. By the end of that year a hauler was moving materials on the Bhogapuram Airport project.",
+        {
+          "figure": {
+            "image": "/assets/founders/flo-mobility-team.webp",
+            "alt": "A large group of people standing around a yellow Flo Mobility robot in a workshop",
+            "ratio": "4/3",
+            "caption": "The Flo Mobility team around a hauler in the workshop. Photograph from Flo Mobility."
+          }
+        }
+      ]
+    },
+    {
+      "h2": "Sixty robots, ten states.",
+      "toc": "Growth",
+      "blocks": [
+        "By May 2026, the company said it had more than 60 robots deployed across 10 states, working with L&T, Godrej Properties, Embassy Group and Sobha. That month it raised USD 2.5 million in a pre-Series A round co-led by Mela Ventures and Arali Ventures. ARTPARK took part in the round, and is also listed among Flo’s earlier investors.",
+        {
+          "dates": [
+            [
+              "December 2021",
+              "Raises about USD 400,000 from Venture Garage, Blume Founders Fund, DevX Venture Fund and angel investors."
+            ],
+            [
+              "2023",
+              "Flo Mobility at the G20 Summit, according to the company."
+            ],
+            [
+              "August 2024",
+              "Begins operations in Kerala."
+            ],
+            [
+              "November 2024",
+              "Unveils the autonomous hauler at Bengaluru Tech Summit 2024."
+            ],
+            [
+              "December 2024",
+              "Hauler deployed for material movement at the Bhogapuram Airport project."
+            ],
+            [
+              "January 2025",
+              "Seed round led by JITO Incubation and Innovation Foundation."
+            ],
+            [
+              "April 2025",
+              "ARTPARK showcases Flo Mobility at Startup Mahakumbh 2025."
+            ],
+            [
+              "May 2026",
+              "Raises USD 2.5 million, co-led by Mela Ventures and Arali Ventures, with ARTPARK participating."
+            ],
+            [
+              "July 2026",
+              "Named in the BuiltWorlds 2026 Robotics Top 50."
+            ]
+          ]
+        },
+        {
+          "people": [
+            {
+              "name": "Manesh Jain",
+              "role": "Founder & CEO"
+            },
+            {
+              "name": "Pratik Patel",
+              "role": "Co-founder & COO",
+              "photo": "/assets/founders/flo-mobility-pratik-patel.webp",
+              "pos": "50% 35%"
+            }
+          ]
+        },
+        "Inc42 has reported deployments in Dubai and Abu Dhabi as well. The company has named tiling, wall finishing and screeding as the next jobs for its robots."
+      ]
+    }
+  ],
+  "sources": [
+    [
+      "The Tribune (ANI/VMPL), “Flo Mobility raises USD 2.5 million pre-Series A” (11 May 2026)",
+      "https://www.tribuneindia.com/news/business/flo-mobility-raises-usd-2-5-million-pre-series-a-from-mela-ventures-and-arali-ventures/"
+    ],
+    [
+      "Inc42, “How Flo Mobility’s AI stack and robots are disrupting the construction sector” (February 2026, updated May 2026)",
+      "https://inc42.com/?p=550251"
+    ],
+    [
+      "YourStory, “Flo Mobility builds robots that haul construction materials” (July 2026)",
+      "https://yourstory.com/2026/07/flo-mobility-construction-robots"
+    ],
+    [
+      "Construction World, “We’re building robots that flow, not just move” (June 2025)",
+      "https://www.constructionworld.in/latest-construction-technology/we---re-building-robots-that-flow--not-just-move/75548"
+    ],
+    [
+      "ETV Bharat, Made-in-India autonomous wheelbarrow (19 November 2025)",
+      "https://www.etvbharat.com/en/business/bengaluru-start-ups-made-in-india-autonomous-wheelbarrow-aims-to-transform-construction-workflows-enn25111904856"
+    ],
+    [
+      "eMobility+, “Flo Mobility raises funds worth $400,000” (22 December 2021)",
+      "https://emobilityplus.com/2021/12/22/flo-mobility-raises-funds-worth-400000/amp/"
+    ],
+    [
+      "Venture Intelligence, seed round led by JIIF (January 2025)",
+      "https://news.ventureintelligence.com/private-equity/autonomous-material-movement-enabler-flo-mobility-raises-seed-funding-led-by-jiif"
+    ],
+    [
+      "Flo Mobility, About and media coverage",
+      "https://flomobility.com/about"
+    ],
+    [
+      "ARTPARK, startup portfolio",
+      "https://www.artpark.in/startups-overview"
+    ]
+  ]
+}

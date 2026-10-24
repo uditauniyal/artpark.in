@@ -1,0 +1,63 @@
+{
+  "slug": "vaani",
+  "company": "Project Vaani",
+  "tag": "STORY 03",
+  "kicker": "Enable the ecosystem",
+  "title": "Vaani became much more than a speech dataset.",
+  "standfirst": "Most speech technology was not built for the way India actually talks. Project Vaani, by IISc and ARTPARK and funded by Google, is recording it district by district and giving it away. What happens when public research becomes a platform that others build on.",
+  "meta": ["ARTPARK Stories", "About 6 min read", "Project Vaani, IISc and ARTPARK"],
+  "website": "https://vaani.iisc.ac.in/",
+  "hero": { "image": "/assets/site/vaani-terminal.webp", "alt": "Working in a terminal on Vaani data at ARTPARK", "pos": "50% 55%", "caption": "Working on Vaani data at ARTPARK. Photograph from ARTPARK." },
+  "lead": [
+    "India has 22 scheduled languages, hundreds of dialects and over a billion speakers. Most AI understands none of them well. Not because the problem is unsolvable, but because the data never existed: real people, in real places, speaking the way they actually speak.",
+    "Project Vaani set out to collect it. Speakers across India are shown images and asked to describe them, producing natural, spontaneous speech with background noise, mixed languages and every accent in between. Then the data is opened to everyone."
+  ],
+  "sections": [
+    {
+      "h2": "Recording India, district by district.",
+      "toc": "The data",
+      "blocks": [
+        { "panel": { "title": "Vaani, as of October 2026", "items": [["31,278 hours", "of speech recorded"], ["1,56,208 speakers", "54% of the audio from women"], ["105 languages", "including dozens no dataset had touched"], ["165 districts", "across 31 states and union territories"], ["2,122 hours", "transcribed in local scripts"], ["150,000+ hours", "the goal: every one of India’s 773 districts"]] } },
+        "The team is led from the SPIRE Lab at IISc by Prof. Prasanta Kumar Ghosh, with ARTPARK’s CEO Raghu Dharmaraju, programme lead Nihar Desai and tech lead Sujith Pulikodan. The data is open on Hugging Face under a CC-BY-4.0 licence, and through Bhashini, India’s National Language Translation Mission.",
+        "Alongside Vaani, ARTPARK’s RESPIN and SYSPIN programmes build open speech-recognition and text-to-speech resources in nine Indian languages, for agriculture, finance, health, education and governance. In 2026, SraVaani 1.0, a speech-recognition model for 65 Indian languages and dialects, was released on Vaani data."
+      ]
+    },
+    {
+      "h2": "The first speech-to-text for Garo.",
+      "toc": "Garo, in Shillong",
+      "blocks": [
+        "Garo is a Tibeto-Burman language spoken by about 1.2 million people across Northeast India and Bangladesh. It was not in Whisper’s training data. Out of the box, the model’s word error rate on Garo was 382.7%: worse than useless.",
+        "MWire Labs, a team in Shillong, fine-tuned Whisper-small on the Garo subset of Vaani. Word error rate fell to 9.74%, a 97.5% relative improvement, and more than 60% of test samples were transcribed perfectly. It was the first publicly available speech-to-text model for Garo.",
+        { "quote": { "text": "The Vaani dataset has been instrumental in bridging the data gap for Northeast Indian languages. Covering around 30 tribal languages, it enabled MWire Labs to build the first publicly available ASR system for Garo with a 9.74% Word Error Rate and ~3% Character Error Rate, performance that even impressed native Garo speakers during evaluation and sets a new benchmark for the language.", "who": "Badal Nyalang, Director, MWire Labs", "source": "https://www.artpark.in/language", "sourceLabel": "artpark.in" } },
+        "The model is now being deployed across projects in Meghalaya, and MWire Labs demonstrated it live at Google’s Lab to Impact event in Delhi."
+      ]
+    },
+    {
+      "h2": "From call centres to clinics.",
+      "toc": "Built on Vaani",
+      "blocks": [
+        "Call analytics in India breaks on real Hindi: regional accents, fillers like “accha”, code-switching and noisy lines. SandLogic Technologies filtered 366 hours of clean Hindi speech from 51 districts in Vaani and fine-tuned its production speech model. On a multi-accent Hindi benchmark, word error rate dropped about 21%; for a healthcare client, errors fell by about 55%.",
+        { "quote": { "text": "At SandLogic, we believe India’s AI future must be sovereign, inclusive, and representative of our people. The Vaani dataset captures the richness of Indian speech and has helped us benchmark and enhance our models for stronger performance in both research and enterprise use cases.", "who": "Dr. Kruthika K R, Founding Researcher, SandLogic Technologies", "source": "https://vaani.iisc.ac.in/case-studies", "sourceLabel": "Vaani case studies" } },
+        { "quote": { "text": "The Vaani Datasets have been invaluable in improving our Speech Models. The quality is excellent, with a great balance of gender variation, detailed metadata, and highly accurate transcripts with precise noise tagging.", "who": "Pranjal Nayak, Head of R&D, Reverie Language Technology", "source": "https://vaani.iisc.ac.in/case-studies", "sourceLabel": "Vaani case studies" } },
+        "Shunya Labs, Convozen.ai and others build on the same data. None of them had to record a single hour themselves."
+      ]
+    },
+    {
+      "h2": "Why it is a public good.",
+      "toc": "A public good",
+      "blocks": [
+        "Not every result should become a startup. ARTPARK chooses the model that fits the mission: a company when there is a clear commercial path, a non-profit when markets underserve the people who need it, and a digital public good when an open resource can unlock value across a whole sector.",
+        "Vaani is the third kind. Its widest value is not in any one product, but in every voice interface, health assistant and government service that can now understand how India speaks."
+      ]
+    }
+  ],
+  "sources": [
+    ["Project Vaani (live dataset totals, team, licence)", "https://vaani.iisc.ac.in/"],
+    ["Vaani case study: MWire Labs, Garo ASR (March 2026)", "https://vaani.iisc.ac.in/case-studies/mwirelabs"],
+    ["Vaani case study: SandLogic, Hindi call analytics (2024)", "https://vaani.iisc.ac.in/case-studies/sandlogic"],
+    ["ARTPARK, Language Data & AI (collaborator quotes)", "https://www.artpark.in/language"],
+    ["ARTPARK, About: three models (startup, non-profit, digital public good)", "https://www.artpark.in/about-us"],
+    ["MWire Labs post, reposted by ARTPARK on LinkedIn (Lab to Impact demonstration)", ""],
+    ["SraVaani 1.0 on Hugging Face", "https://huggingface.co/ARTPARK-IISc/SraVaani-1.0"]
+  ]
+}

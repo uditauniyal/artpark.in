@@ -1,9 +1,11 @@
 {
-  "name": "artpark-v7",
-  "private": true,
+  "name": "artpark-website-claude",
   "version": "0.1.0",
+  "private": true,
+  "description": "artpark.in rebuilt from the manager's Claude Design, with real ARTPARK content. No dependencies.",
   "scripts": {
     "build": "node tools/build.cjs",
-    "start": "node tools/serve.cjs"
+    "start": "node tools/serve.cjs dist 3010",
+    "reference": "node tools/serve.cjs ../.reference/claude-design 4400"
   }
 }

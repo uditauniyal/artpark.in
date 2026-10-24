@@ -1,0 +1,17 @@
+{
+  "images": [
+    { "out": "founders/edgeverse-award.webp", "src": "research/img/founders/edgeverse-nasscom-award.jpg", "maxW": 1600, "subject": "The Edgeverse team on stage receiving the Nasscom Mobility Innovation Challenge 2025 award (site alt text).", "source": "https://edgeverse.ai/" },
+    { "out": "founders/edgeverse-arindam-ghosh.webp", "src": "research/img/founders/edgeverse-arindam-ghosh.jpg", "maxW": 700, "subject": "Portrait of Arindam Ghosh, Co-founder & CEO.", "source": "https://edgeverse.ai/about" },
+    { "out": "founders/edgeverse-subrata-debnath.webp", "src": "research/img/founders/edgeverse-subrata-debnath.png", "maxW": 700, "subject": "Portrait of Subrata Debnath, Co-founder & CTO.", "source": "https://edgeverse.ai/about" },
+    { "out": "founders/edgeverse-navaneeth-a.webp", "src": "research/img/founders/edgeverse-navaneeth-a.png", "maxW": 700, "subject": "Portrait of Navaneeth A, Co-founder & VP.", "source": "https://edgeverse.ai/about" },
+    { "out": "founders/flo-mobility-haulers.webp", "src": "research/img/founders/flo-mobility-two-men-haulers.jpg", "maxW": 1600, "subject": "Two Flo Mobility team members (not named by the source) among yellow Flo haulers in the workshop.", "source": "https://flomobility.com/about" },
+    { "out": "founders/flo-mobility-team.webp", "src": "research/img/founders/flo-mobility-team-workshop.jpg", "maxW": 1600, "subject": "The Flo Mobility team around a yellow Flo robot in the workshop.", "source": "https://flomobility.com/about" },
+    { "out": "founders/flo-mobility-pratik-patel.webp", "src": "research/img/founders/flo-mobility-pratik-patel.jpg", "maxW": 700, "crop": [140, 150, 500, 500], "subject": "Pratik Patel, Co-founder & COO, speaking at a podium (site alt text), cropped to head and shoulders.", "source": "https://flomobility.com/about" },
+    { "out": "founders/guerin-technologies-suhas-bannur.webp", "src": "research/img/founders/guerin-suhas-bannur.png", "maxW": 700, "subject": "Portrait of Suhas Bannur, CEO & Co-founder.", "source": "https://icc.adelaide.edu.au/about/icc-startups-and-residents/guerin-technologies/" },
+    { "out": "founders/guerin-technologies-abhilash-mn.webp", "src": "research/img/founders/guerin-abhilash-mn.png", "maxW": 700, "subject": "Portrait of Dr Abhilash M N, CTO & Co-founder.", "source": "https://icc.adelaide.edu.au/about/icc-startups-and-residents/guerin-technologies/" },
+    { "out": "founders/kinesthetiq-mosaic.webp", "src": "research/img/founders/kinesthetiq-data-collection-mosaic.jpg", "maxW": 1600, "crop": [16, 10, 1888, 1060], "subject": "Mosaic of video stills of people operating robot arms for data collection, with the outer black border removed.", "source": "https://www.kinesthetiq.com/" },
+    { "out": "founders/kinesthetiq-teleop.webp", "src": "research/img/founders/kinesthetiq-bimanual-teleop-frame.jpg", "maxW": 1600, "subject": "Video still: top camera view of a bimanual robot setup over a table, with two wrist-camera views.", "source": "https://www.kinesthetiq.com/" },
+    { "out": "founders/niral-networks-abhijit-chaudhary.webp", "src": "research/img/founders/niral-networks-abhijit-chaudhary.jpg", "maxW": 700, "subject": "Portrait of Abhijit Chaudhary, Founder & CEO.", "source": "https://niralnetworks.com/leadership/" },
+    { "out": "founders/niral-networks-inder-gopal.webp", "src": "research/img/founders/niral-networks-inder-gopal.jpg", "maxW": 700, "subject": "Portrait of Dr. Inder Gopal, Founder & Chairman.", "source": "https://niralnetworks.com/leadership/" }
+  ]
+}

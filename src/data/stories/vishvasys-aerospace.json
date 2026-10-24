@@ -1,0 +1,62 @@
+{
+  "slug": "vishvasys-aerospace",
+  "company": "VishvaSys Aerospace",
+  "tag": "FOUNDER STORY",
+  "kicker": "Guidance, navigation and control",
+  "title": "After the Moon, a moving platform.",
+  "standfirst": "Prof. Radhakant Padhi of IISc helped develop the guidance for Chandrayaan-3’s Vikram lander. VishvaSys Aerospace, the company he founded, packages guidance, navigation and control into flight-ready modules for drones, rockets and spacecraft.",
+  "meta": ["ARTPARK Stories", "About 4 min read", "VishvaSys Aerospace, Bengaluru"],
+  "website": "https://vapl.tech/",
+  "hero": { "image": "/assets/site/drone-lab.webp", "alt": "A drone flying inside the electronics and robotics lab at ARTPARK", "pos": "50% 50%", "ratio": "16/9", "caption": "A drone flying in the lab at ARTPARK. ARTPARK photograph, not of VishvaSys Aerospace." },
+  "lead": [
+    "“I have always enjoyed working with controls because they are basically the brains that operate and decide everything for a system,” says Prof. Radhakant Padhi.",
+    "He has spent his career on those brains. VishvaSys Aerospace, incorporated in Bengaluru in 2025 and working from ARTgarage, ARTPARK’s facility in Jalahalli, aims to make sure guidance, navigation and control is never the bottleneck for Indian aerospace."
+  ],
+  "sections": [
+    {
+      "h2": "From Rolla to the Moon.",
+      "toc": "The founder",
+      "blocks": [
+        "Padhi took a master’s in aerospace engineering at IISc and worked as a national defence scientist in India. “In 1997, I asked if it was possible for me to become a doctoral student in Rolla,” he recalled in 2024. He completed his PhD in aerospace engineering at Missouri S&T in 2001, stayed on as a postdoctoral researcher until the end of 2003, and joined the IISc faculty around 2004. He has been a professor since 2015.",
+        { "quote": { "text": "About two decades later, I was asked by ISRO to explore and develop the best guidance methods for having a safe and soft landing on the moon, which our country accomplished last year. This shows how a lot can change over time if you work hard and are determined to reach your goals.", "who": "Prof. Radhakant Padhi, Founder and Director, VishvaSys Aerospace", "source": "https://news.mst.edu/2024/03/missouri-st-alumnus-part-of-indias-lunar-landing/", "sourceLabel": "Missouri S&T News" } },
+        "Chandrayaan-3’s Vikram lander touched down near the lunar south pole in August 2023."
+      ]
+    },
+    {
+      "h2": "Guidance as a product.",
+      "toc": "What it builds",
+      "blocks": [
+        "Aerospace and defence platforms need guidance, navigation and control that keeps working without GPS, in harsh weather and on moving platforms. VishvaSys Aerospace develops the algorithms and packages them as embedded modules ready to fly.",
+        { "panel": { "title": "What VishvaSys builds", "items": [
+          ["Algorithms", "Convex optimisation and real-time trajectory generation, and physics-informed neural networks."],
+          ["Precision landing", "Soft landing on stationary and moving platforms, fuel-optimal launch vehicle recovery and 6-DoF powered descent."],
+          ["Flight modules", "RTK GNSS, IMU and low-latency mesh communications, from compact 110 g units to dual-node architectures, PX4-compatible over UART and CAN."],
+          ["Domains", "Drones and UAVs, spacecraft and rockets, and missiles."]
+        ] } },
+        { "quote": { "text": "We were not born to fly, but we know birds do fly, and hence, things can fly. With that knowledge in hand, the next step is to determine how we can make things fly even better.", "who": "Prof. Radhakant Padhi", "source": "https://news.mst.edu/2024/03/missouri-st-alumnus-part-of-indias-lunar-landing/", "sourceLabel": "Missouri S&T News" } }
+      ]
+    },
+    {
+      "h2": "A first year at ARTgarage.",
+      "toc": "At ARTPARK",
+      "blocks": [
+        "The company reports three milestones from its first year. The first was a precise autonomous landing of a UAV on a platform that was both moving and oscillating, using a dual-node predictive guidance architecture.",
+        { "dates": [
+          ["Jul 2025", "Autonomous UAV landing on a moving, oscillating platform (company news)."],
+          ["Sep 2025", "GNC research proposal selected for R&D support at the TSAT-2025 conference; the company says it placed in the top 2 percent of proposals."],
+          ["Dec 2025", "Workspace inaugurated at ARTgarage, ARTPARK."]
+        ] },
+        "VishvaSys Aerospace is part of ARTPARK’s startup portfolio, where it is listed for guidance, navigation and control systems for aerospace vehicles.",
+        { "people": [
+          { "name": "Prof. Radhakant Padhi", "role": "Founder and Director · IISc", "photo": "/assets/founders/vishvasys-aerospace-radhakant-padhi.webp", "pos": "50% 25%" },
+          { "name": "Dr. P S V S Sai Kumar", "role": "CEO" }
+        ] }
+      ]
+    }
+  ],
+  "sources": [
+    ["Missouri S&T News, Missouri S&T alumnus part of India’s lunar landing (22 March 2024)", "https://news.mst.edu/2024/03/missouri-st-alumnus-part-of-indias-lunar-landing/"],
+    ["ARTPARK, startup portfolio", "https://www.artpark.in/startups-overview"],
+    ["VishvaSys Aerospace (products, team and news)", "https://vapl.tech/"]
+  ]
+}

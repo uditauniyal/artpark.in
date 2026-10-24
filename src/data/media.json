@@ -1,0 +1,35 @@
+{
+  "_note": "Every image used on the site, with where it came from. Run `node tools/images.cjs` to (re)generate public/assets/<out> from <src>. crop = [x, y, w, h] in source pixels. Photos are real and unedited apart from crop/resize. No AI-generated images.",
+  "images": [
+    { "out": "stories/algofet-dock.webp", "src": "research/img/algofet-AlgoPAD_with+Drone.jpg", "maxW": 1600,
+      "subject": "AlgoFET's AlgoPAD charging dock with a drone on it, at dusk.", "source": "https://www.artpark.in/stories/blog-post-title-four-kpyhe", "sourceImage": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1764758172439-4BXLC75845VWHFDBP0T5/AlgoPAD_with%2BDrone.jpg" },
+    { "out": "stories/algofet-bench.webp", "src": "research/img/algofet-_DSC1949.JPG", "maxW": 1600,
+      "subject": "Two engineers testing a battery-management board beside a 'Cell Balancing Test' station.", "source": "https://www.artpark.in/stories/blog-post-title-four-kpyhe", "sourceImage": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1760689917259-J7BN1LTCY540E9DQAAFV/_DSC1949.JPG" },
+    { "out": "stories/algofet-cnc.webp", "src": "research/img/algofet-_DSC1931.JPG", "maxW": 1600,
+      "subject": "Two engineers at a CNC machining centre in the workshop.", "source": "https://www.artpark.in/stories/blog-post-title-four-kpyhe", "sourceImage": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1760689918251-MX9N5UFY2DNEK17FE1SF/_DSC1931.JPG" },
+    { "out": "stories/algofet-review.webp", "src": "research/img/algofet-_DSC1918.JPG", "maxW": 1600,
+      "subject": "An engineer reviewing a CAD model of an enclosure with a colleague.", "source": "https://www.artpark.in/stories/blog-post-title-four-kpyhe", "sourceImage": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1760689936327-A4B7BO5AO61A6M8R5D8T/_DSC1918.JPG" },
+    { "out": "stories/algofet-team.webp", "src": "research/img/algofet-_DSC1939.png", "maxW": 2000,
+      "subject": "The AlgoFET team in their workspace.", "source": "https://www.artpark.in/stories/blog-post-title-four-kpyhe", "sourceImage": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/537b670c-771d-4abd-bde8-e01a8d4a07e6/_DSC1939.png" },
+
+    { "out": "stories/qosmic-fsm-vibration.webp", "src": "../versions/v7/public/assets/v6/qosmic-mirror-hardware.jpg", "crop": [0, 0, 1080, 640], "maxW": 1080,
+      "subject": "QOSMIC's Fast Steering Mirror mounted on a vibration test table.", "source": "QOSMIC LinkedIn post shared by ARTPARK (FSM qualification)", "sourceImage": "Saved by the V6 build: versions/v6 src/data/v6-asset-provenance.json" },
+    { "out": "stories/qosmic-thermal-vacuum.webp", "src": "../versions/v7/public/assets/v6/qosmic-mirror-hardware.jpg", "crop": [0, 646, 538, 440], "maxW": 538,
+      "subject": "The thermal-vacuum chamber used for QOSMIC's qualification test.", "source": "QOSMIC LinkedIn post shared by ARTPARK (FSM qualification)", "sourceImage": "Saved by the V6 build" },
+    { "out": "stories/qosmic-pointing.webp", "src": "../versions/v7/public/assets/v6/qosmic-mirror.jpg", "crop": [22, 22, 1036, 1050], "maxW": 1036,
+      "subject": "QOSMIC graphic: the designed pointing grid of its Fast Steering Mirror, illustrated over Rashtrapati Bhavan (imagery: Google).", "source": "QOSMIC LinkedIn post", "sourceImage": "Saved by the V6 build" },
+    { "out": "people/shreyaans-jain.webp", "src": "research/img/qosmic-shreyaans-jain.jpg", "maxW": 825,
+      "subject": "Shreyaans Jain, Co-founder and CEO, QOSMIC.", "source": "https://qosmic.space/ (Team)", "sourceImage": "https://qosmic.space/assets/WhatsApp_Image_2025-07-10_at_13.06.56_6d43985a_1773744672856-Bz4arzTz.jpg" },
+    { "out": "people/rohit-ramakrishnan.webp", "src": "research/img/qosmic-rohit-ramakrishnan.jpg", "maxW": 574,
+      "subject": "Dr. Rohit Ramakrishnan, Co-founder, QOSMIC.", "source": "https://qosmic.space/ (Team)", "sourceImage": "https://qosmic.space/assets/WhatsApp_Image_2026-03-09_at_12.02.50_PM_1773744769557-DyvphtHZ.jpeg" },
+    { "out": "people/aloke-kumar.webp", "src": "research/img/qosmic-aloke-kumar.jpg", "maxW": 1100,
+      "subject": "Prof. Aloke Kumar, Co-founder, QOSMIC.", "source": "https://qosmic.space/ (Team)", "sourceImage": "https://qosmic.space/assets/Aloke_sir_1773744803287-Da_lpp11.jpg" },
+
+    { "out": "stories/vaani-workstation.webp", "src": "../versions/v7/public/assets/v4/culture-4.jpg", "maxW": 1920,
+      "subject": "A team member working in a terminal on the Vaani data and website servers (vaani_data paths visible).", "source": "ARTPARK Squarespace asset library, Culture folder (VJM-8.jpg)", "sourceImage": "https://images.squarespace-cdn.com/content/656da8a33674465c6ee4de76/b85cac40-81e1-4dfc-b249-2498f4f1967b/VJM-8.jpg" },
+    { "out": "stories/vaani-stats.webp", "src": "../versions/v7/public/assets/v3/vaani-dashboard.jpg", "crop": [30, 340, 460, 460], "maxW": 460,
+      "subject": "Crop of the Project Vaani site's live totals: total duration, speakers, languages, districts.", "source": "https://vaani.iisc.ac.in/", "sourceImage": "Screenshot saved by the V3 build" },
+    { "out": "stories/vaani-dashboard.webp", "src": "../versions/v7/public/assets/v3/vaani-dashboard.jpg", "maxW": 1200,
+      "subject": "Screenshot of the Project Vaani site showing live dataset totals.", "source": "https://vaani.iisc.ac.in/", "sourceImage": "Screenshot saved by the V3 build" }
+  ]
+}

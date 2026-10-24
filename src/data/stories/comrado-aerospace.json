@@ -1,0 +1,57 @@
+{
+  "slug": "comrado-aerospace",
+  "company": "Comrado Aerospace",
+  "tag": "FOUNDER STORY",
+  "kicker": "Drones for defence and agriculture",
+  "title": "A garage the size of three football turfs.",
+  "standfirst": "Ansar H Lone co-founded Comrado Aerospace, which designs drones for defence and commercial work at ARTgarage in Bengaluru. Drones are getting cheaper fast, and India wants more of them designed at home rather than imported.",
+  "meta": ["ARTPARK Stories", "About 3 min read", "Comrado Aerospace, Bengaluru"],
+  "website": "https://comradoaerospace.com/",
+  "hero": {
+    "image": "/assets/site/artgarage-hall.webp",
+    "alt": "The main hall at ARTgarage, a former factory with a high steel roof, shelves, seating and work desks",
+    "pos": "50% 60%",
+    "ratio": "16/9",
+    "caption": "The main hall at ARTgarage, where Comrado Aerospace is based. ARTPARK photograph, not of Comrado Aerospace."
+  },
+  "lead": [
+    "“The drone technology is maturing at such a speed that the cost is going down drastically. The moment drone tech becomes accessible to all, our skies are bound to be filled with them,” says Ansar H Lone, co-founder and CEO of Comrado Aerospace.",
+    "His company is preparing for that sky. Ansar is also ARTPARK’s Program Director for UAV platforms, and Comrado works out of ARTgarage, ARTPARK’s facility in Jalahalli, Bengaluru."
+  ],
+  "sections": [
+    {
+      "h2": "Built from scratch, designed in-house.",
+      "toc": "The work",
+      "blocks": [
+        "In July 2025, ThePrint described where Comrado works: a garage at ARTgarage the size of three football turfs, strewn with grease, propeller parts and motors. There, a 36-person team builds drones from scratch, mostly for military use, along with drones for agricultural spraying. Almost everything is designed in-house, and manufacturing is outsourced to partners in India.",
+        "When AlgoBotix, its neighbour at ARTgarage, tested its drone traffic management system that summer, one of the drones in the air was built by Comrado. In December 2025, Comrado’s Titan-series surveillance drone drew attention on a busy street in HSR Layout, Bengaluru, as the team carried it through.",
+        { "figure": { "image": "/assets/founders/comrado-aerospace-vtol-render.webp", "alt": "Computer render of a Comrado-branded twin-boom VTOL fixed-wing drone flying above a city and clouds", "ratio": "3/2", "caption": "A render of a Comrado VTOL fixed-wing drone, from the company’s website. This is a computer illustration, not a photograph." } },
+        { "panel": { "title": "What Comrado builds", "items": [
+          ["Titan series", "Surveillance drones, the company’s flagship in surveillance."],
+          ["VTOL drones", "Aircraft that take off and land vertically."],
+          ["Defence platforms", "Drones for surveillance, reconnaissance and tactical missions."],
+          ["Commercial UAVs", "Drones for precision agriculture, including spraying tall trees, and for infrastructure inspection and cargo."]
+        ] } }
+      ]
+    },
+    {
+      "h2": "From pre-venture to startup.",
+      "toc": "ARTPARK",
+      "blocks": [
+        "Comrado says it was nurtured through the support of ARTPARK, with early funding from the Department of Science and Technology and the Government of Karnataka.",
+        "It began as one of the pre-venture teams in CAMRAS, the industry accelerator the Ministry of Heavy Industries set up at ARTPARK. Six teams led CAMRAS projects as pre-ventures, funded by the programme, and became startups: Twara Robotics, Comrado Aerospace, Strider Robotics, AlgoFET, VayDyn and Yaanendriya. They were incubated under the Startup @ ARTPARK programme and seed funded by DST.",
+        { "people": [
+          { "name": "Ansar H Lone", "role": "Co-founder and CEO" }
+        ] }
+      ]
+    }
+  ],
+  "sources": [
+    ["ThePrint, Bengaluru start-ups preparing for a sky full of drones (28 July 2025)", "https://theprint.in/feature/bengaluru-startups-sky-full-drones-indigenous-chips-os-traffic-management/2704407/"],
+    ["IDRW, Comrado Aerospace’s Titan-series surveillance drone in HSR Layout (13 December 2025)", "https://idrw.org/comrado-aerospaces-titan-series-surveillance-drone-turns-heads-on-busy-hsr-layout-street-in-bengaluru/"],
+    ["Comrado Aerospace, about", "https://comradoaerospace.com/about.php"],
+    ["ARTPARK, CAMRAS programme page", "https://www.artpark.in/advanced-robotics/camras"],
+    ["ARTPARK careers, Comrado Aerospace", "https://www.artpark.in/careers-1/category/COMRADO+AEROSPACE"],
+    ["Comrado Aerospace", "https://comradoaerospace.com/"]
+  ]
+}

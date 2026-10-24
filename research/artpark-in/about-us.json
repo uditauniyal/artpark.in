@@ -1,0 +1,69 @@
+{
+  "url": "https://www.artpark.in/about-us",
+  "status": 200,
+  "title": "About Us — ARTPARK @IISc - Leading AI & Robotics startup incubation",
+  "description": "ARTPARK is driving advances in robotics, autonomous systems and AI through translational R&D in areas of Intelligent Healthcare, Automation for Logistics and Skilling for the AI age. Our work spans open tools, standards, IP, technologies, databanks and path-breaking companies. ",
+  "headings": [
+    "H1: Built for society, economy, and sovereignty.",
+    "H1: By principle. By design.",
+    "H1: The Technology Readiness Arc",
+    "H1: How We Build",
+    "H3: Four forms of support. Deployed together.",
+    "H1: 01",
+    "H2: Mentorship & Expertise",
+    "H1: 02",
+    "H2: Networks & Collaborations",
+    "H1: 03",
+    "H2: Capital & Investment",
+    "H1: 04",
+    "H2: Technical Infrastructure",
+    "H1: Structural Philosophy",
+    "H3: We choose the model that fits the mission.",
+    "H1: Interested in Working with Us?"
+  ],
+  "text": "Built for society, economy, and sovereignty.\nBy principle. By design.\n\nARTPARK's approach is defined by a single, demanding question:\nWhat does it actually take to turn a breakthrough technology from an idea to a meaningful solution, at scale?\n\nThe Technology Readiness Arc\n\nWe enter at TRL 0–3. We stay until TRL 6 and beyond.\n\nTechnology Readiness Level is a measure of maturity, from raw concept to full deployment. ARTPARK was built to operate across the entire arc, with differentiated support for each phase.\n\nHow We Build\nFour forms of support. Deployed together.\n01\nMentorship & Expertise\n\nMentorship ecosystem with domain experts, serial founders, policy advisors, government agencies and industry practitioners who engage at depth.\n\n02\nNetworks & Collaborations\n\nIndustry, government ministries, and international institutions networks enable ventures to access customers, procurement channels, and deployment environments.\n\n03\nCapital & Investment\n\nDirect investment and grant funding at pre-commercial stages when the risk is highest and most institutional capital will not move. This helps you cross the valley of death.\n\n04\nTechnical Infrastructure\n\nAccess to IISc's world-class research facilities like robotics labs, fabrication shops, AI compute infrastructure, and specialized 5G testing environments at ARTGarage.\n\nStructural Philosophy\nWe choose the model that fits the mission.\n\nARTPARK does not assume that every innovation should be a for-profit company. We assess the intended scale, the nature of the beneficiary, and the economic structure of the relevant market, and we build accordingly.\n\nModel A - For-Profit Startup\n\nWhen the technology has a clear commercial pathway, defensible IP, and a customer willing to pay for performance, we build a company.\n\nModel B - Social Non-Profit\n\nWhen the beneficiary is a population underserved by market forces, and the intervention is too important to leave to commercial incentives, we build a non-profit initiative.\n\nModel C - Digital Public Good\n\nWhen an open-access tool or platform can unlock value across an entire sector, we build it as a DPG, designed for adoption, adaptation, and national integration.\n\nInterested in Working with Us?\n\nWhether you are a potential partner, a researcher, or an institution interested in being part of ARTPARK, we want to hear from you.\n\nWRITE TO THE CEO",
+  "links": [
+    [
+      "WRITE TO THE CEO",
+      "mailto:ceo@artpark.in?subject=Hello!"
+    ]
+  ],
+  "images": [
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/d76d75f2-3c65-4a42-a096-6a5b6ab0d880/VJM-12.jpg?format=1500w",
+      "alt": "",
+      "w": 1440,
+      "h": 810
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/b25655c2-3c90-4faa-9d75-54d2524f49d5/Screenshot+2026-05-13+152712.png?format=1500w",
+      "alt": "",
+      "w": 1440,
+      "h": 281
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/d471d703-8bf6-467d-ba80-e4a73337feaa/VJM-6.jpg?format=500w",
+      "alt": "",
+      "w": 443,
+      "h": 249
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/51fb8c86-93c1-4d1b-91c4-5bca40da72bd/handshake+%281%29.png?format=100w",
+      "alt": "",
+      "w": 69,
+      "h": 69
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/ee1ea964-0631-4556-9fe2-80772bc5e23b/hand-heart+%281%29.png?format=100w",
+      "alt": "",
+      "w": 69,
+      "h": 69
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/2fea8e68-2e67-49fa-bf13-6846260bd68b/book-open-check+%281%29.png?format=100w",
+      "alt": "",
+      "w": 69,
+      "h": 69
+    }
+  ]
+}

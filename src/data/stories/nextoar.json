@@ -1,0 +1,62 @@
+{
+  "slug": "nextoar",
+  "company": "Nextoar",
+  "tag": "FOUNDER STORY",
+  "kicker": "Industrial AI",
+  "title": "AI coaches for the people who keep factories running.",
+  "standfirst": "Venkitesh Ramadas, a supply chain specialist turned founder, started Nextoar in Bengaluru in 2024 to give technicians, engineers and planners AI assistants for their daily work. In manufacturing, the people closest to the machines are rarely part of the innovation loop.",
+  "meta": ["ARTPARK Stories", "About 3 min read", "Nextoar, Bengaluru"],
+  "website": "https://nextoar.com/",
+  "hero": {
+    "image": "/assets/site/workstations.webp",
+    "alt": "Engineering workstations seen from above",
+    "pos": "50% 50%",
+    "ratio": "16/9",
+    "caption": "Engineering workstations at ARTPARK. ARTPARK photograph, not of Nextoar."
+  },
+  "lead": [
+    "In June 2025, less than a year after it was incorporated, Nextoar was named one of 35 semi-finalists worldwide in SEMI’s Startups for Sustainable Semiconductors programme, run around SEMICON West 2025. It was one of two Bengaluru startups on the list, and the company says it was one of only two from Asia in the manufacturing category.",
+    "Its founder, Venkitesh Ramadas, describes himself as a supply chain specialist whose work runs from sand to silicon chips. Nextoar is part of ARTPARK’s startup portfolio."
+  ],
+  "sections": [
+    {
+      "h2": "The people on the floor.",
+      "toc": "The idea",
+      "blocks": [
+        "Frontline technicians and maintenance, test and service engineers keep manufacturing and supply chains running, but they are rarely part of how those operations improve. Nextoar wants to change that, and to help companies become learning organisations.",
+        { "quote": { "text": "At Nextoar, we’re building a neurosymbolic multi-agent Industrial AI platform that transforms hitech industries, semiconductor and electronics operations, augmenting technicians, engineers, and planners with intelligent assistants (AI Coach) for supply chain and manufacturing operational excellence.", "who": "Venkitesh Ramadas, Founder & CEO, Nextoar", "source": "https://news.ycombinator.com/item?id=44765056", "sourceLabel": "Hacker News" } },
+        "In chip fabs, The Machine Maker reported, that means an AI-powered training platform for technicians, engineers, maintenance staff and testing teams, which uses adaptive learning and real-time insights to help them spot problems and reduce errors.",
+        { "panel": { "title": "What Nextoar builds", "items": [
+          ["AI Coach", "Intelligent assistants for technicians, engineers and planners."],
+          ["Process sensing and adoption", "Continuous monitoring of processes, and support for taking up improved ones."],
+          ["Innovation and experimentation", "Orchestrating experiments to improve operations."],
+          ["Open models", "Models named manufacturing-llm and router, published on Hugging Face."]
+        ] } }
+      ]
+    },
+    {
+      "h2": "A young company.",
+      "toc": "So far",
+      "blocks": [
+        { "dates": [
+          ["September 2024", "Nextoar Technology Solutions Private Limited is incorporated."],
+          ["June 2025", "Named among 35 global semi-finalists in SEMI’s Startups for Sustainable Semiconductors programme."]
+        ] },
+        { "people": [
+          { "name": "Venkitesh Ramadas", "role": "Founder & CEO" }
+        ] },
+        "Nextoar has not yet published a founder interview or a detailed account of its customers."
+      ]
+    }
+  ],
+  "sources": [
+    ["Nextoar", "https://nextoar.com/"],
+    ["Hacker News, “Ask HN: Who is hiring? (August 2025)”, comment by Venkitesh Ramadas", "https://news.ycombinator.com/item?id=44765056"],
+    ["The Machine Maker, “Two Indian startups reach the semifinals of SEMI global sustainable semiconductor program” (27 June 2025)", "https://themachinemaker.com/news/two-indian-startups-reach-the-semifinals-of-semi-global-sustainable-semiconductor-program/"],
+    ["AI & Big Data Expo, Nextoar partner profile", "https://www.ai-expo.net/europe/partner/nextoar/"],
+    ["Nextoar on Hugging Face", "https://huggingface.co/nextoar"],
+    ["Venkitesh Ramadas on Substack", "https://substack.com/@venkitesh"],
+    ["Tofler, registration record", "https://www.tofler.in/nextoar-technology-solutions-private-limited/company/U62013KA2024PTC193439"],
+    ["ARTPARK, startup portfolio", "https://www.artpark.in/startups-overview"]
+  ]
+}

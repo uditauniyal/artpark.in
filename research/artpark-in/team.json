@@ -1,0 +1,53 @@
+{
+  "url": "https://www.artpark.in/team",
+  "status": 200,
+  "title": "Executive Team — ARTPARK @IISc - Leading AI & Robotics startup incubation",
+  "description": "",
+  "headings": [
+    "H1: Meet the Team",
+    "H2: Prof Bharadwaj Amrutur",
+    "H2: Raghu Dharmaraju",
+    "H2: Sheela Prabhakar"
+  ],
+  "text": "Meet the Team\nProf Bharadwaj Amrutur\n\nExecutive Director and Chief Technologist\nLinkedIn\n\nRaghu Dharmaraju\n\nChief Executive Officer\nLinkedIn\n\nSheela Prabhakar\n\nProgram Head - Wired & Wireless Technologies\nLinkedIn",
+  "links": [
+    [
+      "LinkedIn",
+      "https://www.linkedin.com/in/amrutur/"
+    ],
+    [
+      "LinkedIn",
+      "https://www.linkedin.com/in/raghuramd/"
+    ],
+    [
+      "LinkedIn",
+      "https://www.linkedin.com/in/sheela-prabhakar-18562116b/"
+    ]
+  ],
+  "images": [
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/eb38690f-7bf7-4d3b-8fdf-d757ac41a982/VJM-6.jpg?format=1500w",
+      "alt": "",
+      "w": 1440,
+      "h": 810
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/b0fc499d-a8ec-4454-9625-1a5c1bddbe17/Prof.Bharadwaj+Amrutur+.jpg?format=500w",
+      "alt": "",
+      "w": 440,
+      "h": 462
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/4c885bc1-6aa6-4f7d-a2b6-c4f44adc921d/RAGHU+SIR.jpg?format=500w",
+      "alt": "",
+      "w": 440,
+      "h": 491
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/5487f33c-33a6-4af5-a4ec-464cea6e0f1f/Sheela+mam.png?format=500w",
+      "alt": "",
+      "w": 440,
+      "h": 440
+    }
+  ]
+}

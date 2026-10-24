@@ -1,0 +1,52 @@
+{
+  "url": "https://www.artpark.in/industry-50",
+  "status": 200,
+  "title": "Integrated Industry 5.0 Platform — ARTPARK @IISc - Leading AI & Robotics startup incubation",
+  "description": "",
+  "headings": [
+    "H1: Integrated Industry 5.0 Platform",
+    "H2: Partners (In Discussion)",
+    "H2: Ongoing Initiatives",
+    "H4: Center of Excellence: Wired & Wireless Technology (CoE-WWT)"
+  ],
+  "text": "Integrated Industry 5.0 Platform\n\nPurpose-driven, People-centric Technology for Indian Industries\n\nIndia’s industrial landscape faces unique challenges ranging from fragmented data systems, environmental stress, to limited supply chain agility. Customizable experiences, automation of mundane tasks, responsive supply chains, and deep sustainability integration can help to transition from predictive to preemptive systems, with real-time adaptability and minimal environmental footprint.\n\nThe Industry 5.0 framework introduces digital twins, GenAI integration, asset tracking, energy-efficient operations, and human-machine collaboration (cobots) to modernize the industrial ecosystem.\n\nEnvisaged Impact\n\nAutomation of compliance and factory floor operations\n\nAutomated end-to-end traceability of assets\n\nReduced carbon footprint, improved sustainability reporting\n\nReal-time decision making\n\nPartners (In Discussion)\nOngoing Initiatives\nCenter of Excellence: Wired & Wireless Technology (CoE-WWT)",
+  "links": [],
+  "images": [
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1750323997020-HJ0DIOHETABHQLLCE87P/unsplash-image-8gr6bObQLOI.jpg?format=1500w",
+      "alt": "",
+      "w": 1440,
+      "h": 960
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/b407f22c-289e-40c6-bb0a-d0f7f93fdcb9/bosch.png?format=300w",
+      "alt": "",
+      "w": 216,
+      "h": 78
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/abbdf0a0-6894-4036-a4c1-dc61cad8e060/aequs.png?format=300w",
+      "alt": "",
+      "w": 216,
+      "h": 92
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/bd9a2ce7-b3a5-41a6-93a2-dae1b7c353e9/7th-gen-ventures.jpg?format=300w",
+      "alt": "",
+      "w": 130,
+      "h": 72
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/a407fd9a-48a2-4f61-be1a-d2dd8e567b49/kle+tech.png?format=300w",
+      "alt": "",
+      "w": 81,
+      "h": 81
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1290169f-09c3-40b2-86b3-5bfa0b890f9b/tower-820001_1280.jpg?format=500w",
+      "alt": "",
+      "w": 330,
+      "h": 219
+    }
+  ]
+}

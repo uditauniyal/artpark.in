@@ -1,0 +1,90 @@
+{
+  "slug": "niral-networks",
+  "company": "Niral Networks",
+  "tag": "FOUNDER STORY",
+  "kicker": "Private 5G networks",
+  "title": "Telecom without the lock-in.",
+  "standfirst": "Abhijit Chaudhary kept seeing the same problem at telecom operators in four regions: once they bought from a large equipment maker, they were locked in. In 2019 he started Niral Networks with Dr. Inder Gopal and Subrata Debnath to build an open network operating system, and has since taken it into private 5G for mines, plants, ports and railways.",
+  "meta": ["ARTPARK Stories", "About 5 min read", "Niral Networks, Bengaluru"],
+  "website": "https://niralnetworks.com/",
+  "hero": {
+    "image": "/assets/site/5g-lab.webp",
+    "alt": "People at workstations in a 5G lab",
+    "pos": "50% 50%",
+    "ratio": "16/9",
+    "caption": "The 5G lab at ARTPARK. ARTPARK photograph, not of Niral Networks."
+  },
+  "lead": [
+    "“This moment belongs to every engineer who coded through the night, every visionary who believed in impossible ideas, and every team member who has been part of our incredible journey.” Abhijit Chaudhary, founder and CEO of Niral Networks, said this in May 2025, when the company received the Pandit Deen Dayal Upadhyaya Telecom Excellence Award 2024 from Union Communications Minister Jyotiraditya M. Scindia.",
+    "Niral had started six years earlier, bootstrapped, with one idea: that the software running a network should be open, so that operators are not tied to a single vendor."
+  ],
+  "sections": [
+    {
+      "h2": "The problem with buying from one vendor.",
+      "toc": "The problem",
+      "blocks": [
+        "Abhijit and Subrata Debnath had studied engineering together at NERIST in Arunachal Pradesh, and had already co-founded an engineering services company that consulted for telecom operators. The work took them to operators in the Middle East, South-East Asia, India and the US. Again and again, Abhijit saw that lock-in to large incumbent equipment makers slowed upgrades, raised costs and held back new ideas.",
+        "At the end of 2018 he met Dr. Inder Gopal, a former networking executive at IBM and Ericsson. In July 2019 the three founded Niral, around an open network operating system they called NiralOS.",
+        { "quote": { "text": "When NiralOS based products are deployed, it frees up the operator from any type of vendor lock-in, creating opportunities such as competitive pricing, more flexibility, faster innovation, and cost-effective scaling, which all ultimately have the potential to significantly lower both Capex and Opex.", "who": "Abhijit Chaudhary, Co-founder, Niral Networks", "source": "https://yourstory.com/2020/10/tech30-niral-networks-vendor-lock-issue", "sourceLabel": "YourStory" } }
+      ]
+    },
+    {
+      "h2": "Two long careers in networking.",
+      "toc": "The founders",
+      "blocks": [
+        "Abhijit has spent about two decades in telecom and data networking. Before Niral he co-founded Etrance Networks, which worked on network virtualisation, deep packet inspection, 4G packet core and routing. He was part of Apigee’s initial engineering team, before the company was acquired by Google, helped set up Sandvine’s India development centre, and worked at Cisco, Huawei and Motorola. He holds a master’s in computer science from IISc and sits on the governing council of the Bharat 6G Alliance.",
+        "Inder Gopal was VP Software at Ericsson and VP Networking at IBM, and held senior roles at AT&T and Prodigy. He founded and sold two companies, ReefEdge and Iptivia, was the founding chairman of OpenDaylight, and is an IEEE Fellow with 20 patents. As a Visiting Professor at IISc, he has worked for the Smart City Mission on a nationwide urban data platform.",
+        { "people": [
+          { "name": "Abhijit Chaudhary", "role": "Founder & CEO", "photo": "/assets/founders/niral-networks-abhijit-chaudhary.webp", "pos": "50% 30%" },
+          { "name": "Dr. Inder Gopal", "role": "Founder & Chairman", "photo": "/assets/founders/niral-networks-inder-gopal.webp", "pos": "50% 30%" },
+          { "name": "Subrata Debnath", "role": "Co-founder, 2019" }
+        ] }
+      ]
+    },
+    {
+      "h2": "From open source to private 5G.",
+      "toc": "The product",
+      "blocks": [
+        { "quote": { "text": "We work with the open source community, open hardware community, and open innovation group within organisation, and we have developed an Open Source Network Operating System called NiralOS.", "who": "Abhijit Chaudhary, Co-founder, Niral Networks", "source": "https://yourstory.com/2020/10/tech30-niral-networks-vendor-lock-issue", "sourceLabel": "YourStory" } },
+        "Today NiralOS is the base for private 5G and edge networks at industrial sites where Wi-Fi and public networks struggle: mines, energy plants, ports, factories, airports and railways. GMR Energy piloted a 4 km private 5G network at an energy plant using Niral’s system. In 2026 Niral partnered with Consort Digital to deploy 5G-based mission-critical services on the Mathura-Chata railway corridor.",
+        { "panel": { "title": "What Niral builds", "items": [
+          ["NiralOS", "An open, cloud-native network operating system, the base of every product."],
+          ["NiralOS 5G Core", "The 5G core for private networks."],
+          ["NiralOS EDGE", "Edge AI, launched at India Mobile Congress 2024."],
+          ["NiralOS Controller and IoT", "Further products on the same platform."],
+          ["Where it runs", "Mines, energy plants, ports, manufacturing sites, airports and railways."]
+        ] } },
+        "The Department of Telecommunications has supported the company through a Digital Communication Innovation Square grant, with ₹40 lakh released so far. The company reports more than 60 deployments for over 15 customers in at least three countries."
+      ]
+    },
+    {
+      "h2": "In the ARTPARK ecosystem.",
+      "toc": "With ARTPARK",
+      "blocks": [
+        "Niral’s work with ARTPARK goes back to at least February 2023, when, ARTPARK showcased it at its Startup@ARTPARK deep-tech showcase for the G20 Finance Ministers and Central Bank Governors at IISc. At India Mobile Congress 2024, Niral was among the ARTPARK startups showing their work alongside ARTPARK’s Centre of Excellence for Wired and Wireless Technologies.",
+        { "quote": { "text": "We are very happy to have Niral Networks as one of the key contributors and innovators within the ARTPARK ecosystem.", "who": "Prof. Bharadwaj Amrutur, Executive Director, ARTPARK", "source": "https://niralnetworks.com/", "sourceLabel": "Niral Networks website" } },
+        "Prof. Amrutur notes that Niral works alongside other ARTPARK startups, using NiralOS, its 5G core and its IMS system to show what private 5G can do in mining, agriculture and surveillance.",
+        { "dates": [
+          ["July 2019", "Niral Networks is founded in Bengaluru by Abhijit Chaudhary, Inder Gopal and Subrata Debnath."],
+          ["October 2020", "Named in YourStory Tech30, still bootstrapped, and opens a US sales office."],
+          ["February 2023", "Showcased to the G20 Finance Ministers’ delegation at Startup@ARTPARK, IISc."],
+          ["February 2024", "Partnership with ITI Limited to drive 5G adoption."],
+          ["October 2024", "Launches NiralOS Edge at India Mobile Congress 2024."],
+          ["May 2025", "Receives the Pandit Deen Dayal Upadhyaya Telecom Excellence Award 2024."],
+          ["March 2026", "Partnerships with Consort Digital, for the Mathura-Chata railway corridor, and with Pegatron on 5G."]
+        ] }
+      ]
+    }
+  ],
+  "sources": [
+    ["YourStory, “Tech30: Niral Networks” (30 October 2020)", "https://yourstory.com/2020/10/tech30-niral-networks-vendor-lock-issue"],
+    ["Niral Networks, leadership", "https://niralnetworks.com/leadership/"],
+    ["Niral Networks, Telecom Excellence Award press release (May 2025)", "https://niralnetworks.com/niral-networks-receives-prestigious-pandit-deen-dayal-upadhyaya-telecom-excellence-award-2024-from-government-of-india"],
+    ["Niral Networks, press releases", "https://niralnetworks.com/press-releases/"],
+    ["Niral Networks (products, testimonials)", "https://niralnetworks.com/"],
+    ["ARTPARK, G20 Finance Ministers’ Meet post-event report (25 February 2023)", "https://niralnetworks.com/wp-content/uploads/2023/03/G20-Finance-Ministers-Meet-25th-Feb-2023-_-Post-event-report-ARTPARK-I-HUB-IISc.pdf"],
+    ["ARTPARK, India Mobile Congress 2024", "https://www.artpark.in/events/india-mobile-congress-2024"],
+    ["Department of Telecommunications, DCIS: Niral Networks", "https://dcis.dot.gov.in/page/niral"],
+    ["ARTPARK, startup portfolio", "https://www.artpark.in/startups-overview"]
+  ]
+}

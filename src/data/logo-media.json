@@ -1,0 +1,509 @@
+{
+ "_note": "Portfolio logos from artpark.in with empty margins trimmed using measured bounds (versions/v7/src/data/v6-logo-framing.json). Logos themselves are not altered.",
+ "images": [
+  {
+   "out": "logos/acceleration-robotics.webp",
+   "src": "public/assets/recovered/logo-acceleration-robotics.webp",
+   "crop": [
+    10,
+    78,
+    459,
+    123
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/algobotix.webp",
+   "src": "public/assets/recovered/logo-algobotix.webp",
+   "crop": [
+    39,
+    185,
+    423,
+    129
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/algofet.webp",
+   "src": "public/assets/recovered/logo-algofet.webp",
+   "crop": [
+    131,
+    75,
+    531,
+    225
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/astrome.webp",
+   "src": "public/assets/recovered/logo-astrome.webp",
+   "crop": [
+    123,
+    57,
+    529,
+    287
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/a-thon.webp",
+   "src": "public/assets/recovered/logo-a-thon.webp",
+   "crop": [
+    142,
+    40,
+    509,
+    505
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/automind-dynamics.webp",
+   "src": "public/assets/recovered/logo-automind-dynamics.webp",
+   "crop": [
+    131,
+    145,
+    1403,
+    1285
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/charukesi-health.webp",
+   "src": "public/assets/recovered/logo-charukesi-health.webp",
+   "crop": [
+    98,
+    124,
+    687,
+    203
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/comrado-aerospace.webp",
+   "src": "public/assets/recovered/logo-comrado-aerospace.webp",
+   "crop": [
+    21,
+    77,
+    437,
+    131
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/contrivation-labs.webp",
+   "src": "public/assets/recovered/logo-contrivation-labs.webp",
+   "crop": [
+    66,
+    62,
+    669,
+    277
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/dexsent-robotics.webp",
+   "src": "public/assets/recovered/logo-dexsent-robotics.webp",
+   "crop": [
+    232,
+    402,
+    617,
+    545
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/edgeverse.webp",
+   "src": "public/assets/recovered/logo-edgeverse.webp",
+   "crop": [
+    0,
+    5,
+    400,
+    137
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/floaid.webp",
+   "src": "public/assets/recovered/logo-floaid.webp",
+   "crop": [
+    131,
+    147,
+    805,
+    213
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/flo-mobility.webp",
+   "src": "public/assets/recovered/logo-flo-mobility.webp",
+   "crop": [
+    215,
+    83,
+    369,
+    233
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/guerin-technologies.webp",
+   "src": "public/assets/recovered/logo-guerin-technologies.webp",
+   "crop": [
+    148,
+    172,
+    783,
+    301
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/hyflex-mobility.webp",
+   "src": "public/assets/recovered/logo-hyflex-mobility.webp",
+   "crop": [
+    64,
+    206,
+    849,
+    311
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/kinesthetiq.webp",
+   "src": "public/assets/recovered/logo-kinesthetiq.webp",
+   "crop": [
+    26,
+    338,
+    997,
+    157
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/niral-networks.webp",
+   "src": "public/assets/recovered/logo-niral-networks.webp",
+   "crop": [
+    14,
+    48,
+    451,
+    171
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/nextoar.webp",
+   "src": "public/assets/recovered/logo-nextoar.webp",
+   "crop": [
+    104,
+    134,
+    741,
+    223
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/nxtqube.webp",
+   "src": "public/assets/recovered/logo-nxtqube.webp",
+   "crop": [
+    254,
+    28,
+    287,
+    345
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/open-science-stack.webp",
+   "src": "public/assets/recovered/logo-open-science-stack.webp",
+   "crop": [
+    72,
+    198,
+    777,
+    335
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/qosmic.webp",
+   "src": "public/assets/recovered/logo-qosmic.webp",
+   "crop": [
+    105,
+    319,
+    869,
+    681
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/q-axis-motors.webp",
+   "src": "public/assets/recovered/logo-q-axis-motors.webp",
+   "crop": [
+    211,
+    377,
+    659,
+    597
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/rootsgoods.webp",
+   "src": "public/assets/recovered/logo-rootsgoods.webp",
+   "crop": [
+    96,
+    44,
+    609,
+    313
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/sakar-robotics.webp",
+   "src": "public/assets/recovered/logo-sakar-robotics.webp",
+   "crop": [
+    0,
+    76,
+    499,
+    129
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/scivision-ai.webp",
+   "src": "public/assets/recovered/logo-scivision-ai.webp",
+   "crop": [
+    150,
+    122,
+    221,
+    255
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/spacyphy.webp",
+   "src": "public/assets/recovered/logo-spacyphy.webp",
+   "crop": [
+    89,
+    295,
+    861,
+    203
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/strideaide.webp",
+   "src": "public/assets/recovered/logo-strideaide.webp",
+   "crop": [
+    67,
+    181,
+    593,
+    163
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/strider-robotics.webp",
+   "src": "public/assets/recovered/logo-strider-robotics.webp",
+   "crop": [
+    60,
+    80,
+    673,
+    241
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/twara-robotics.webp",
+   "src": "public/assets/recovered/logo-twara-robotics.webp",
+   "crop": [
+    142,
+    84,
+    513,
+    233
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/udot.webp",
+   "src": "public/assets/recovered/logo-udot.webp",
+   "crop": [
+    143,
+    141,
+    213,
+    213
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/uncharted-ai.webp",
+   "src": "public/assets/recovered/logo-uncharted-ai.webp",
+   "crop": [
+    128,
+    1010,
+    2189,
+    529
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/velastra.webp",
+   "src": "public/assets/recovered/logo-velastra.webp",
+   "crop": [
+    15,
+    279,
+    919,
+    415
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/versor-robotics.webp",
+   "src": "public/assets/recovered/logo-versor-robotics.webp",
+   "crop": [
+    241,
+    571,
+    1073,
+    487
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/vishvasys-aerospace.webp",
+   "src": "public/assets/recovered/logo-vishvasys-aerospace.webp",
+   "crop": [
+    0,
+    288,
+    978,
+    259
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/yaanendriya.webp",
+   "src": "public/assets/recovered/logo-yaanendriya.webp",
+   "crop": [
+    308,
+    30,
+    465,
+    525
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  },
+  {
+   "out": "logos/zenteiq.webp",
+   "src": "public/assets/recovered/logo-zenteiq.webp",
+   "crop": [
+    16,
+    62,
+    449,
+    147
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.artpark.in/startups-overview"
+  }
+ ]
+}

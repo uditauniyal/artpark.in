@@ -1,0 +1,140 @@
+{
+  "slug": "strideaide",
+  "company": "StrideAide",
+  "tag": "FOUNDER STORY",
+  "kicker": "Diabetic foot care",
+  "title": "An insole with no batteries.",
+  "standfirst": "StrideAide grew out of a collaboration between IISc engineers and doctors at the Karnataka Institute of Endocrinology and Research, looking for ways to protect people with diabetes from foot wounds. Its founders, two surgeons and a product engineer, now build pressure-relieving insoles and a screening clinic meant to catch problems before they lead to amputation.",
+  "meta": [
+    "ARTPARK Stories",
+    "About 5 min read",
+    "StrideAide, Bengaluru"
+  ],
+  "website": "https://www.strideaide.com/",
+  "hero": {
+    "image": "/assets/site/whiteboard.webp",
+    "alt": "A team working at a whiteboard at ARTPARK",
+    "pos": "50% 50%",
+    "ratio": "16/9",
+    "caption": "A team at a whiteboard at ARTPARK. ARTPARK photograph, not of StrideAide."
+  },
+  "lead": [
+    "Diabetes damages the feet slowly. Nerves lose feeling, circulation weakens and pressure builds in the wrong places. The result can be ulcers, infections and amputations.",
+    "The usual protection is a static custom insole, or an expensive device full of sensors and actuators. Early screening, which could catch the damage in time, is not widely available. StrideAide set out to change both."
+  ],
+  "sections": [
+    {
+      "h2": "Where the engineers met the doctors.",
+      "toc": "The beginning",
+      "blocks": [
+        {
+          "quote": {
+            "text": "Most diabetic foot amputations begin with a wound that could have been prevented. We wanted to catch the pressure, and the problem, before the wound.",
+            "who": "Dr. Pavan Belehalli, Founder, StrideAide",
+            "source": "",
+            "sourceLabel": "",
+            "draft": true
+          }
+        },
+        "StrideAide began as a collaboration between IISc scientists, led by mechanical engineering professor G.K. Ananthasuresh, and doctors at the Karnataka Institute of Endocrinology and Research (KIER), led by Dr. Pavan Belehalli of KIER’s Department of Podiatry. They were looking for ways to protect people with diabetic foot wounds and neuropathy. Prof. Ananthasuresh is now an advisor to the company.",
+        "Their first idea was an insole that relieves pressure through its mechanical design alone, using compliant mechanisms, with no sensors and no actuators. After strong field results, the team patented it and decided to add AI for everyday foot care. Dr. Sanjay Sharma, a podiatric surgeon and wound-care specialist, and Manoj Kumar R, a product development engineer, joined as co-founders.",
+        {
+          "people": [
+            {
+              "name": "Dr. Pavan Belehalli",
+              "role": "Founder · Orthopaedic & Diabetic Foot Surgeon"
+            },
+            {
+              "name": "Dr. Sanjay Sharma",
+              "role": "Founder · Podiatric Surgeon & Wound Care Specialist"
+            },
+            {
+              "name": "Manoj Kumar R",
+              "role": "Founder · New Product Development Engineer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "A podiatry clinic in one unit.",
+      "toc": "The clinic",
+      "blocks": [
+        "To make screening cheap and widely available, the team built the Digital Podiatry Clinic, or D-PoC. It brings together devices that measure plantar pressure, nerve function and blood flow in the foot. StrideAide’s software then uses AI to sort patients by risk and produce automated reports.",
+        "In December 2025, StrideAide opened a D-PoC at the IISc Health Centre. Each unit can screen 30 to 40 patients a day, BioSpectrum reported, and could screen more than 10,000 people with diabetes a year at a district hospital.",
+        {
+          "panel": {
+            "title": "What StrideAide builds",
+            "items": [
+              [
+                "Self-offloading insoles",
+                "Therapeutic footwear that shifts pressure mechanically, with no sensors or actuators, developed with IISc and KIER."
+              ],
+              [
+                "D-PoC",
+                "A screening unit for neuropathy, vasculopathy and arthropathy, with AI risk stratification and automated reports."
+              ],
+              [
+                "Foot 2.0",
+                "In development: a digital twin of the foot, using physics-informed AI."
+              ],
+              [
+                "StrideGPT",
+                "In development: an AI assistant that answers questions from clinicians and patients."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "Towards no amputations.",
+      "toc": "Milestones",
+      "blocks": [
+        {
+          "dates": [
+            [
+              "2023",
+              "Named second-best startup in the early medical devices category at IKMC 2023, Hyderabad."
+            ],
+            [
+              "2023",
+              "Compliant-footwear research presented at ASME IDETC-CIE 2023."
+            ],
+            [
+              "January 2024",
+              "Indian patent for the self-offloading insoles; seed funding from the Office of the Principal Scientific Adviser through the BeST Cluster."
+            ],
+            [
+              "December 2025",
+              "Digital Podiatry Clinic opened at the IISc Health Centre."
+            ]
+          ]
+        },
+        "StrideAide has also received a BIRAC BIG grant, and BeST Cluster support to commission the D-PoC. It is part of ARTPARK’s startup portfolio. The team’s stated aim is an India free of diabetic foot amputations."
+      ]
+    }
+  ],
+  "sources": [
+    [
+      "StrideAide, About us (founders, advisors, backers)",
+      "https://www.strideaide.com/aboutus.html"
+    ],
+    [
+      "BeST Cluster, “StrideAide startup story” (14 January 2024)",
+      "https://www.linkedin.com/pulse/strideaide-startup-story-bestkc-nexjc/"
+    ],
+    [
+      "BioSpectrum, “StrideAide inaugurates Digital Podiatry Clinic at IISc” (17 December 2025)",
+      "https://www.biospectrumindia.com/news/16/27081/strideaide-inaugurates-digital-podiatry-clinic-at-iisc.html"
+    ],
+    [
+      "ASME IDETC-CIE 2023 paper on compliant footwear",
+      "https://asmedigitalcollection.asme.org/IDETC-CIE/proceedings/IDETC-CIE2023/87363/V008T08A037/1170800"
+    ],
+    [
+      "ARTPARK, startup portfolio",
+      "https://www.artpark.in/startups-overview"
+    ]
+  ]
+}

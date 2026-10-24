@@ -1,30 +1,37 @@
-# ARTPARK V7
+# artpark.in, rebuilt from the manager's Claude Design
 
-Preview: http://127.0.0.1:3006/
+A static site: the manager's page designs (`../.reference/claude-design/*.dc.html`) ported to plain HTML,
+filled with verified ARTPARK content. No framework, no npm dependencies.
 
-V6 is frozen at port 3005. Its complete source, assets, docs and built output are recorded in `../v6-baseline.json` and checked for preservation. Older previews are also retained. Nothing was deployed or changed in Squarespace.
-
-Build and serve from the repository root:
+## Run it
 
 ```
-npm.cmd --prefix versions/v7 run build
-npm.cmd --prefix versions/v7 start
+node tools/build.cjs           # writes dist/
+node tools/serve.cjs dist 3010 # http://127.0.0.1:3010/
 ```
 
-The output is `versions/v7/dist`, with 29 routes. The server reads rebuilt files without restarting. For a future deployment managed by the user, Vercel Root Directory is `versions/v7`, using the included `vercel.json`.
+Compare with the manager's original: `node tools/serve.cjs ../.reference/claude-design 4400`, then
+`node tools/compare.cjs http://127.0.0.1:4400/Contact.dc.html http://127.0.0.1:3010/contact qa/contact`.
 
-The opening sentence now says: “ARTPARK brings research, engineering labs and venture building together.” Institutional identification remains elsewhere.
+## Where things are
 
-The company story replaces V6’s eight illustrated cards with five product-led scenes, actual company media and direct website links. Scroll, selectors, previous/next buttons and keyboard navigation all change the featured team. The scene measures the actual available viewport so its content fits short desktop windows. Mobile and reduced-motion layouts use manual selectors without pinning. Twara’s original demonstration animation supplies actual robot movement; reduced motion shows a still product image. Source images are unedited and recorded in `src/data/v7-media-provenance.json`.
+- `src/lib.cjs`: header, footer, page shell and shared components (all from his markup).
+- `src/pages/*.cjs`: one module per page group (home, contact, about, outreach, portfolio, stories, legal).
+- `src/data/`: content. `content.cjs` (people, portfolio, partners, events, news, careers, tenders),
+  `programs.cjs` (programmes and facilities), `stories.json` (home carousel and collage),
+  `stories/<slug>.json` (one founder or project story each), `*media*.json` (every image with its source).
+- `public/`: CSS, JS, design-system tokens (`_ds/`), images (`assets/`).
+- `research/artpark-in/`: captured artpark.in page text (the legal pages are built from it). Other research stays local.
+- `tools/`: build, serve, image processing, screenshots, checks.
+- `notes/`: working notes, kept locally only (not in the GitHub repo).
 
-A new startup-support section restores the three previously verified funding milestones: QOSMIC’s $3.33M seed round, Yaanendriya’s ₹15 crore institutional round and AlgoFET’s ₹15 crore Pre-Series A. Original announcements and supporting sources remain in `src/data/home-stories.json`. These are company financing rounds, not a claim of grants paid by ARTPARK. The section links to programmes, ARTgarage and incubation without claiming universal programme eligibility.
+## Checks
 
-Shared motion includes a reading-progress line, heading and section arrivals, photo drift, filter and people-panel transitions, pointer feedback on resource cards, partner names and form focus states. Long programme, facility, approach and partnership pages receive sticky navigation generated from their actual headings. Contact role choices update the enquiry guidance. All previous FAQ, search, portfolio dialogs, galleries and contact handoff behavior remain.
+- `node tools/check-links.cjs`: internal links, images, forbidden emails, placeholder text.
+- `node tools/check-home.cjs`: homepage interactions and mobile menu (server must be running).
 
-Validation evidence is in `docs/preview`:
+## Deploying (the user deploys; nothing here deploys)
 
-- `checks.json`: all 29 routes, shared interactions, responsive layouts and V6 preservation.
-- `v7-checks.json`: the new company scenes and real animation frames, short desktop layouts, restored financing, section navigation, mobile, contact context and reduced motion.
-- `polish-checks.json`: final mobile logos, title spacing and chapter labels.
-
-Run `node versions/v7/tools/check.cjs`, `node versions/v7/tools/check-v7.cjs` or `node versions/v7/tools/check-polish.cjs` as appropriate. Preview helpers use the existing Chrome/Playwright installation in the adjacent design-system project.
+On Vercel, import the GitHub repo uditauniyal/artpark.in with Root Directory left at the repo root and Framework Preset "Other". `vercel.json` builds with
+`node tools/build.cjs`, serves `dist/` with clean URLs, and redirects old artpark.in paths.
+It also sends `X-Robots-Tag: noindex` so previews are not indexed: remove that header before the real launch.

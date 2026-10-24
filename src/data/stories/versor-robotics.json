@@ -1,0 +1,105 @@
+{
+  "slug": "versor-robotics",
+  "company": "Versor Robotics",
+  "tag": "FOUNDER STORY",
+  "kicker": "Agricultural robotics",
+  "title": "A robot for the inside of a crop row.",
+  "standfirst": "Versor Robotics builds robots that work inside crop rows, where tractors cannot fit once the crop is up. Its pilots on farms around Anekal showed the team that the hardest problems were not the ones they had expected.",
+  "meta": [
+    "ARTPARK Stories",
+    "About 3 min read",
+    "Versor Robotics, Bengaluru"
+  ],
+  "website": "https://www.versorbots.com/",
+  "hero": {
+    "image": "/assets/founders/versor-robotics-trellis-row.webp",
+    "alt": "A four-wheeled Versor Robotics robot carrying a blue crate in a row of climbing plants on trellis poles",
+    "pos": "50% 55%",
+    "ratio": "16/9",
+    "caption": "The Versor robot with a crate, in a row of climbing plants inside a polyhouse. Photograph from Versor Robotics."
+  },
+  "lead": [
+    "Once a crop is up, a tractor cannot get into the rows. A drone can only work from above. A person can reach anything, but cannot keep up with the work.",
+    "Versor Robotics builds for the space in between. The team works from ARTgarage, ARTPARK’s facility in Jalahalli, and the company is part of ARTPARK’s startup portfolio."
+  ],
+  "sections": [
+    {
+      "h2": "What the farms taught them.",
+      "toc": "The pilots",
+      "blocks": [
+        {
+          "quote": {
+            "text": "We expected the robotics to be the hard part. On the farms around Anekal we learned that fitting into the farmer’s day was harder, and mattered more.",
+            "who": "The Versor Robotics team",
+            "source": "",
+            "sourceLabel": "",
+            "draft": true
+          }
+        },
+        "Field work is heavy and repetitive, and labour is hard to find and costly. In a pilot with FPO Anekal, a farmer producer organisation, the team visited seven farms growing five crops: rose, chrysanthemum, kamini, cucumber and banana, in open fields and polyhouses. The farmers confirmed the pain points: labour availability, labour cost and dependence on migrant workers.",
+        "The pilot also changed the team’s idea of what was hard. Drip irrigation lines, uneven row spacing and turning at the end of a row proved harder problems than the width of the row itself.",
+        {
+          "figure": {
+            "image": "/assets/founders/versor-robotics-cucumber-row.webp",
+            "alt": "A person picking cucumbers into a blue crate carried by the robot in a narrow row of climbing plants",
+            "ratio": "4/5",
+            "caption": "Picking cucumbers into a crate on the robot, in a grown crop row. Photograph from Versor Robotics."
+          }
+        },
+        "In a grown crop row, the robot carried a crate between the plants while a person picked. In a second pilot, at the Army Base 515 workshop, it carried crates of metal parts."
+      ]
+    },
+    {
+      "h2": "Working with the farmer.",
+      "toc": "The machines",
+      "blocks": [
+        "The company’s stated aim is a robot that works alongside the farmer rather than replacing them, built in India for Indian crop rows.",
+        {
+          "panel": {
+            "title": "What Versor builds",
+            "items": [
+              [
+                "UNIT-07",
+                "A four-wheeled autonomous robot that works inside grown crop rows, with attachments for logistics, spraying, harvesting and crop monitoring."
+              ],
+              [
+                "VR-01 FIELD-MATE",
+                "A collaborative mobile robot that follows the operator, is guided by a light touch, and carries loads."
+              ],
+              [
+                "VR-02 The Pesticide Printer",
+                "A spraying robot that sprays plants from the side and opens only the nozzles facing a leaf."
+              ],
+              [
+                "Controls",
+                "Voice commands and waypoint routes. The website is available in English and seven Indian languages."
+              ]
+            ]
+          }
+        },
+        {
+          "figure": {
+            "image": "/assets/founders/versor-robotics-robot-in-field.webp",
+            "alt": "The Versor robot platform between leafy plants, with a person standing beside it holding a tablet",
+            "ratio": "16/9",
+            "caption": "The Versor robot between leafy plants in a field. Photograph from Versor Robotics."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    [
+      "Versor Robotics, Pilots",
+      "https://www.versorbots.com/pilots"
+    ],
+    [
+      "ARTPARK, startup portfolio",
+      "https://www.artpark.in/startups-overview"
+    ],
+    [
+      "Versor Robotics",
+      "https://www.versorbots.com/"
+    ]
+  ]
+}

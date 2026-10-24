@@ -1,0 +1,132 @@
+{
+  "slug": "rootsgoods",
+  "company": "RootsGoods",
+  "tag": "FOUNDER STORY",
+  "kicker": "Agriculture",
+  "title": "A fair grade for a farmer’s maize.",
+  "standfirst": "Sachin Hegdekudgi and Dr. Shakil Regmi run RootsGoods, a Bengaluru company that grades crops objectively from a phone. Crop quality decides both a harvest’s nutritional value and the price a farmer is paid, yet it is still judged subjectively, and farmers lose money after the harvest because of it.",
+  "meta": [
+    "ARTPARK Stories",
+    "About 4 min read",
+    "RootsGoods, Bengaluru"
+  ],
+  "website": "https://rootsgoods.com/",
+  "hero": {
+    "image": "/assets/founders/rootsgoods-pusa-krishi.webp",
+    "alt": "Visitors at the RootsGoods exhibition stall, with RootsGoods and Pusa Krishi panels",
+    "pos": "50% 22%",
+    "ratio": "16/9",
+    "caption": "The RootsGoods stall at the Agricultural Conference at Pusa Krishi, 17 October 2022. Photograph from RootsGoods."
+  },
+  "lead": [
+    "The quality of a farmer’s crop decides two things: how nutritious it is, and what it sells for. Yet quality is usually judged subjectively. When it is, farmers are undervalued, and money is lost after the harvest is already in.",
+    "RootsGoods was set up to measure quality instead. Its founders say they came to agriculture from engineering, science and sustainability, because they wanted to improve nutrition for pro-poor farmers."
+  ],
+  "sections": [
+    {
+      "h2": "Starting with maize.",
+      "toc": "The crop",
+      "blocks": [
+        {
+          "quote": {
+            "text": "The price a farmer gets depends on how the crop is graded, and the grading is still done by eye. We want the grade to be something a farmer can see, check and defend.",
+            "who": "Sachin Hegdekudgi, Founder and CEO, RootsGoods",
+            "source": "",
+            "sourceLabel": "",
+            "draft": true
+          }
+        },
+        "Climate change shaped the choice of crops. The founders chose climate-resilient, high-nutrition, indigenous crops, and climate-vulnerable regions. They began with maize, where quality decides both nutrition and price. Moringa and seasonal fruits are secondary crops.",
+        "A farmer sends photographs and data through a mobile app. The system analyses what can be seen and what cannot, such as the moisture inside the grain, then issues a quality certificate and a price estimate. It matches farmers with buyers and logistics, and records the chain with blockchain traceability.",
+        {
+          "panel": {
+            "title": "What RootsGoods builds",
+            "items": [
+              [
+                "Quality assessment",
+                "Objective post-harvest grading from photographs and data, with a certificate and a price estimate."
+              ],
+              [
+                "Market linkage",
+                "Matching farmers, buyers and logistics, with blockchain traceability."
+              ],
+              [
+                "Warehouse management",
+                "Software for running storage."
+              ],
+              [
+                "Generative AI",
+                "A product built for agriculture."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "Claims it can defend.",
+      "toc": "The work",
+      "blocks": [
+        "RootsGoods writes openly about what it gets wrong. After talking to cattle-feed nutritionists, it dropped its own pitch that less aflatoxin in feed means more milk, and replaced it with a narrower claim it could stand behind.",
+        "The company says it is piloting the system in Canada and Nigeria, to test it in new climatic zones. It reports more than 45,000 registered farmers, more than 40,000 active farm acres and a 15% rise in farmer income. These are the company’s own figures.",
+        {
+          "dates": [
+            [
+              "2022",
+              "Incubated at the UAS Bangalore Agri Innovation Center."
+            ],
+            [
+              "2022",
+              "Selected by Stanford Seed, Stanford’s Institute for Innovation in Developing Economies, according to a RootsGoods update."
+            ],
+            [
+              "17 October 2022",
+              "Exhibited at the Agricultural Conference at Pusa Krishi."
+            ]
+          ]
+        },
+        {
+          "people": [
+            {
+              "name": "Sachin Hegdekudgi",
+              "role": "Founder & CEO"
+            },
+            {
+              "name": "Dr. Shakil Regmi",
+              "role": "Founder & Chief Information Officer",
+              "photo": "/assets/founders/rootsgoods-shakil-regmi.webp",
+              "pos": "50% 35%"
+            }
+          ]
+        },
+        "Sachin holds a master’s degree in resource economics. Shakil holds a PhD in geography science and leads data management and quality control. RootsGoods is part of ARTPARK’s startup portfolio."
+      ]
+    }
+  ],
+  "sources": [
+    [
+      "RootsGoods",
+      "https://rootsgoods.com/"
+    ],
+    [
+      "RootsGoods, About",
+      "https://rootsgoods.com/about/"
+    ],
+    [
+      "RootsGoods blog, on cattle feed and aflatoxin",
+      "https://rootsgoods.com/cattlefeedaflatoxin/"
+    ],
+    [
+      "UAS Bangalore Agri Innovation Center, RootsGoods incubatee page",
+      "https://uasbagriinnovationcenter.in/teams/roots-goods/"
+    ],
+    [
+      "RootsGoods update on Stanford Seed, reshared by Sachin Hegdekudgi on LinkedIn",
+      "https://in.linkedin.com/posts/sachin-hegdekudgi_stanford-rootsgoods-activity-6970401770606927872-SUHE"
+    ],
+    [
+      "ARTPARK, startup portfolio",
+      "https://www.artpark.in/startups-overview"
+    ]
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "slug": "nxtqube",
+  "company": "NxtQube",
+  "tag": "FOUNDER STORY",
+  "kicker": "Drone infrastructure",
+  "title": "A drone with no one standing beside it.",
+  "standfirst": "NxtQube was started in Nashik in 2022 by Nikhil Rajput and Nilesh Palkar. It builds docking stations that let drones from any manufacturer launch, land and charge on their own, because a drone that still needs a pilot on the ground is not really unmanned.",
+  "meta": ["ARTPARK Stories", "About 5 min read", "NxtQube, Nashik"],
+  "website": "https://nxtqube.com/",
+  "hero": { "image": "/assets/site/drone-lab.webp", "alt": "A drone in flight inside the ARTPARK drone lab", "pos": "50% 50%", "ratio": "16/9", "caption": "A drone flying in the ARTPARK drone lab. ARTPARK photograph, not of NxtQube." },
+  "lead": [
+    "“Everyone is making drones, and we see large-scale adoption,” says Nikhil Rajput, NxtQube’s co-founder and CEO. “But they always need a pilot on the ground to operate the mission. If drones are ‘unmanned,’ why do they always need someone standing there?”",
+    "That question became a company. NxtQube was founded in Nashik in 2022, and its founders paid for the start themselves. Its answer is a dock that houses a drone, charges it, launches it and brings it back, with software to plan the mission and stream what the drone sees."
+  ],
+  "sections": [
+    {
+      "h2": "The problem hidden in the word unmanned.",
+      "toc": "The problem",
+      "blocks": [
+        "Most drone missions still need a person on site to plan the flight, launch the drone, swap its batteries and pull the data off it. That keeps many deployments stuck at the proof-of-concept stage. A NITI Frontier Tech case study names two things slowing drone adoption: the high cost of materials, and dependence on trained human pilots.",
+        "The two founders met in college, where they built Formula-style racing cars together, YourStory reports. Nikhil oversees sales, finance and technology strategy. Nilesh, the CTO, leads product and systems architecture.",
+        { "people": [
+          { "name": "Nikhil Rajput", "role": "Co-founder & CEO" },
+          { "name": "Nilesh Palkar", "role": "Co-founder & CTO" }
+        ] }
+      ]
+    },
+    {
+      "h2": "Any drone, from day one.",
+      "toc": "The dock",
+      "blocks": [
+        { "quote": { "text": "We wanted an agnostic platform from day one, where drones from multiple manufacturers could operate. That modularity is what makes scaling possible.", "who": "Nikhil Rajput, Co-founder & CEO, NxtQube", "source": "https://blogs.sw.siemens.com/solidedge/nxtqube-builds-truly-autonomous-drone-operations-with-siemens-designcenter-solid-edge/", "sourceLabel": "Siemens Software blog" } },
+        "The early prototypes were bulky, heavy and expensive to ship. Simulation helped the team cut the dock’s weight by more than 60%, and production went from 150 to 300 drone ports a year, according to a Siemens customer story. NITI Frontier Tech reports that more than 96% of the system’s materials are made in-house, with only chips imported.",
+        { "panel": { "title": "What NxtQube builds", "items": [
+          ["NxtQube Dock", "A drone-agnostic docking station that houses, charges, launches and lands drones from several manufacturers."],
+          ["Argos", "Command and control for drone missions."],
+          ["Zypher", "Drone inventory tracking."],
+          ["Airfeed", "Live streaming of aerial data."],
+          ["Virtual Pilot", "A mission platform for planning and running flights."],
+          ["Battery swapping", "A module that was in development in 2024."]
+        ] } }
+      ]
+    },
+    {
+      "h2": "Seventeen systems in the field.",
+      "toc": "Into the field",
+      "blocks": [
+        "In July 2026, NITI Frontier Tech counted 17 NxtQube drone systems deployed, mainly in Maharashtra and Gujarat. Rajkot Police use them for traffic monitoring and patrolling. Other users include the Indian Army and Air Force for reconnaissance, solar farms and open-pit mines.",
+        { "dates": [
+          ["2022", "Founded in Nashik, self-funded by the founders."],
+          ["2023", "₹20 lakh grant from Social Alpha and the National Aerospace Laboratories (NAL)."],
+          ["2024", "Investment from the Aeronautical Society of India."],
+          ["August 2024", "Seed round led by Venture Catalysts, with Pontaq VC (STPI), Ananta Bizcon LLP, Rushikesh Bhandari and other angel investors. The amount was not disclosed."],
+          ["October 2025", "A Siemens customer story reports the dock’s weight cut by more than 60% and production doubled to 300 drone ports a year."],
+          ["July 2026", "17 systems deployed, mainly in Maharashtra and Gujarat."]
+        ] },
+        "NxtQube is part of ARTPARK’s startup portfolio."
+      ]
+    }
+  ],
+  "sources": [
+    ["Siemens Software blog, “NxtQube builds truly autonomous drone operations with Siemens Designcenter Solid Edge” (1 October 2025)", "https://blogs.sw.siemens.com/solidedge/nxtqube-builds-truly-autonomous-drone-operations-with-siemens-designcenter-solid-edge/"],
+    ["NITI Frontier Tech, “These pilotless drones are improving operations, safety and efficiency for partners in Maharashtra and Gujarat” (July 2026)", "https://frontiertech.niti.gov.in/story/these-pilotless-drones-are-improving-operations-safety-and-efficiency-for-partners-in-maharashtra-and-gujarat/"],
+    ["Digital Terminal, “NxtQube secures seed funding to expand drone operations” (24 August 2024)", "https://digitalterminal.in/amp/story/startup/nxtqube-secures-seed-funding-to-expand-drone-operations"],
+    ["YourStory, “How NxtQube is building India’s drone docking future” (May 2025)", "https://yourstory.com/2025/05/nxtqube-autonomous-drone-docking-startup"],
+    ["ARTPARK, startup portfolio", "https://www.artpark.in/startups-overview"],
+    ["NxtQube", "https://nxtqube.com/"]
+  ]
+}

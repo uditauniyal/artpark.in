@@ -1,0 +1,58 @@
+{
+  "url": "https://www.artpark.in/oral-cancer-screening",
+  "status": 200,
+  "title": "Oral Cancer Screening — ARTPARK @IISc - Leading AI & Robotics startup incubation",
+  "description": "",
+  "headings": [
+    "H2: A Smartphone That Screens. A Worker Who Acts.",
+    "H4: Stats that count",
+    "H4: Highlights",
+    "H2: Our Partners",
+    "H1: Working on AI for research and screening?"
+  ],
+  "text": "A Smartphone That Screens. A Worker Who Acts.\n\nBringing AI-powered oral cancer screening where specialists cannot reach.\n\nThe Aarogya Aarohan app turns any low-cost smartphone into an AI screening tool for frontline health workers.\n\nThe model follows an elegant workflow. A frontline health worker photographs a lesion on the patient's oral mucosa. The AI, trained on curated datasets for oral cancer screening from patients across India, classifies risk in real time. High-risk cases are routed immediately to remote specialist review. The worker acts on the recommendation with no specialist travel or specimen transport required.\n\nStats that count\n\n40k+ Patients Screened\n\n75 Active Health Workers\n\n8 Trial Sites\n\nHighlights\n\nTarget Users: Frontline health workers in rural and peri-urban settings\n\nWorks completely offline\n\nMultilingual\n\nTele-specialist integration\n\nFree digital public good\n\nOur Partners\nWorking on AI for research and screening?\n\n ARTPARK co-innovates with health systems, research institutions, and technology partners on screening tools built for India. Let's build together.\n\nTalk To MIDAS Team",
+  "links": [
+    [
+      "Talk To MIDAS Team",
+      "https://www.artpark.in/oral-cancer-screening"
+    ]
+  ],
+  "images": [
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/b7f5f5bf-7785-42f0-9409-57e76f7735fb/Close-up-screening.jpg?format=1500w",
+      "alt": "",
+      "w": 1228,
+      "h": 623
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/7edd60eb-210f-4cf9-ae70-c9e873f23cd7/TANUH.png?format=300w",
+      "alt": "",
+      "w": 61,
+      "h": 61
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/d384842a-f8b6-4649-b195-69efc19fa010/iisc+logo.png?format=300w",
+      "alt": "",
+      "w": 114,
+      "h": 107
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/24e3ac44-20d7-461c-be0d-cd4afdce1832/new-AIIMS-logo-blue.jpg?format=300w",
+      "alt": "",
+      "w": 289,
+      "h": 108
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/56907fa4-053d-4669-9eb6-8bcc1252a990/biocon.jpg?format=500w",
+      "alt": "",
+      "w": 330,
+      "h": 62
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/4dc4e969-0c6f-4a73-ae60-e1579adfd223/msmf_logo1.jpg?format=300w",
+      "alt": "",
+      "w": 109,
+      "h": 61
+    }
+  ]
+}

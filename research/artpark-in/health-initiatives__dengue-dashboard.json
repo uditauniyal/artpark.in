@@ -1,0 +1,83 @@
+{
+  "url": "https://www.artpark.in/health-initiatives/dengue-dashboard",
+  "status": 200,
+  "title": "Dengue Outbreak Prediction — ARTPARK @IISc - Leading AI & Robotics startup incubation",
+  "description": " Analytics platform and sub-district level risk prediction for Dengue ",
+  "headings": [
+    "H1: Dengue Outbreak Prediction",
+    "H2: Why It Began",
+    "H2: What We Built",
+    "H2: How It Works",
+    "H2: What Does The Risk Prediction Look Like?",
+    "H2: Impact & Scale",
+    "H2: Data Collated & Technical Artefacts Created",
+    "H2: Recognition & Path Forward",
+    "H2: MIDAS",
+    "H2: Reimaging Health"
+  ],
+  "text": "Dengue Outbreak Prediction\nWhy It Began\n\nOutbreaks of dengue in India have become more frequent and less predictable, with traditional surveillance systems often detecting danger only once cases have already surged. ARTPARK recognised the urgent need for a tool that could give public health systems early warning—enough lead time to prevent or reduce outbreaks rather than simply respond.\n\nWhat We Built\n\nThe result is PRISM-H (Platform for Research Integrated Surveillance & Management of Health), an early-warning analytics platform that delivers 4-week forecasts for dengue outbreaks at sub-district granularity.\n\nThe platform weaves together disease trends, climatic & environmental inputs, and weather data to generate actionable risk maps. These are embedded in public health workflows so that health officers can see emerging hotspots, plan interventions, and allocate resources ahead of time.\n\nHow It Works\n\nData pipelines collect multi-source inputs: epidemiological case data, meteorological data, environmental/climatic indicators.\n\nThe modeling layer uses automated pipelines to preprocess inputs, run predictive models, and generate forecasts.\n\nThe output is visualised in dashboards & risk maps; integrated tools help health officers prioritise and act, digitise surveys (breeding spot mapping), and plan preventive measures.\n\nWhat Does The Risk Prediction Look Like?\n\nA sample dashboard for predictions across the state looks like this - which details the risk zones across 4 weeks duration for the state of Karnataka. These risk zones are then translated into surveillance activities and necessary interventions are taken at the district level to contain the dengue outbreak across the high risk districts.\n\nImpact & Scale\n\nOperational in Karnataka covering ~80+ million people.\n\nOver 1.2 million households surveyed, with 50,000+ mosquito breeding spots identified.\n\nSupporting resource allocation and real-time planning for district and sub-district health authorities.\n\nThe model is scaling to other states and other vector-borne diseases.\n\nData Collated & Technical Artefacts Created\n\nPart of our mission is to ensure various datasets and technical artefacts that the team creates or collates are available for the community at large to access and utilise.\n\nThe team has collated various datasets over the course of this project, including anonymised line lists, weather data, census data, and shapefiles - details of which can be found here.\n\nThe various technical artefacts developed by the team for the project are linked below:\n\nEpipipeline - a Data Engineering framework to simplify processing of epidemiological data (GitHub).\n\nAcestor - A multi-model, multi-time-series disease outbreak forecasting Framework (GitHub).\n\nDisease Dashboard Scaffolding - A framework to quickly create interactive dashboards for any disease in any geography (GitHub).\n\nPRISM-H Application - A mobile web-application to enable digitised larval surveys on the ground, and improve data quality (GitHub).\n\nRecognition & Path Forward\n\nThe SKOCH Award was awarded to the PRISM-H project, a collaborative effort by the Government of Karnataka and ARTPARK-IISc for its innovative, AI-powered dengue outbreak forecasting system.\n\nThe nomination reflects peer recognition of PRISM-H as a novel, high-impact intersection of AI, climate, health, and early warning systems.\n\nBuilding on this momentum, PRISM-H is adapting to broader geographies, adding more diseases, improving forecasting accuracy, and strengthening its integration with policy workflows.\n\nPrevious\nMIDAS\nNext\nReimaging Health",
+  "links": [
+    [
+      "SYSTEMS RESILIENCE",
+      "https://www.artpark.in/health-initiatives/category/SYSTEMS%20RESILIENCE"
+    ],
+    [
+      "ARTPARK",
+      "https://www.artpark.in/health-initiatives?author=664c605f0943754edc40be2e"
+    ],
+    [
+      "here",
+      "https://health.artpark.ai/data/"
+    ],
+    [
+      "technical artefacts",
+      "https://health.artpark.ai/toolkits/"
+    ],
+    [
+      "GitHub",
+      "https://github.com/dsih-artpark/epipipeline"
+    ],
+    [
+      "GitHub",
+      "https://github.com/dsih-artpark/acestor"
+    ],
+    [
+      "GitHub",
+      "https://github.com/dsih-artpark/disease-dashboard-v2"
+    ],
+    [
+      "GitHub",
+      "https://github.com/dsih-artpark/prismh-app"
+    ],
+    [
+      "ARTPARK",
+      "https://www.artpark.in/health-initiatives?author=664c605f0943754edc40be2e"
+    ],
+    [
+      "https://artpark.in/",
+      "https://artpark.in/"
+    ],
+    [
+      "Previous MIDAS",
+      "https://www.artpark.in/health-initiatives/midas"
+    ],
+    [
+      "Next Reimaging Health",
+      "https://www.artpark.in/health-initiatives/reimaging-health-vignettes"
+    ]
+  ],
+  "images": [
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/0c4c2a4d-7d39-40f5-8500-bcf6396640fd/Dengue.jpg?format=1500w",
+      "alt": "",
+      "w": 777,
+      "h": 518
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/d494d335-7de6-4211-9a14-aa17f59982d8/image.png?format=1500w",
+      "alt": "",
+      "w": 1354,
+      "h": 857
+    }
+  ]
+}

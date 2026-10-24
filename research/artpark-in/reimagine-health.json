@@ -1,0 +1,42 @@
+{
+  "url": "https://www.artpark.in/reimagine-health",
+  "status": 200,
+  "title": "Reimagine Health — ARTPARK @IISc - Leading AI & Robotics startup incubation",
+  "description": "",
+  "headings": [
+    "H2: Reimagine Health",
+    "H3: Citizen Centred Journeys",
+    "H3: Frontline health workers"
+  ],
+  "text": "Reimagine Health\n\nReimagined Health Journeys are experiences we dream of providing our citizens, health workers and professionals. These comic strips describing what success looks and feels like, are tools for collective brainstorming and goal-setting. They represent a visceral, shared vision for how to reimagine our health system to achieve universal health care.\n\nCitizen Centred Journeys\nFrontline health workers",
+  "links": [
+    [
+      "Citizen Centred Journeys",
+      "https://www.artpark.in/reimagine-health/citizen-centred-journeys"
+    ],
+    [
+      "Frontline health workers",
+      "https://www.artpark.in/reimagine-health/frontline-health-workers"
+    ]
+  ],
+  "images": [
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/9349e519-0839-43a6-a0bd-da457dcac0fb/RH+-+Banner.png?format=1500w",
+      "alt": "",
+      "w": 1349,
+      "h": 371
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/e85aca4b-5c04-44ee-b856-1cd92afcc626/1.png?format=750w",
+      "alt": "Citizen Centred Journeys",
+      "w": 720,
+      "h": 718
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/7b82706a-d137-4b2b-a26a-ae17e1c4dcf3/2.png?format=750w",
+      "alt": "Frontline health workers",
+      "w": 720,
+      "h": 720
+    }
+  ]
+}

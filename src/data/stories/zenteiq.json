@@ -1,0 +1,67 @@
+{
+  "slug": "zenteiq",
+  "company": "ZenteiQ",
+  "tag": "FOUNDER STORY",
+  "kicker": "Scientific AI",
+  "title": "A model that has to solve the equation.",
+  "standfirst": "Prof. Sashikumaar Ganesan of IISc started ZenteiQ in 2022 as an experiment in AI for higher education. It became a company building scientific foundation models: AI meant to compute physics, not only to describe it.",
+  "meta": ["ARTPARK Stories", "About 4 min read", "ZenteiQ, Bengaluru"],
+  "website": "https://zenteiq.ai/",
+  "hero": { "image": "/assets/site/workstations.webp", "alt": "Engineering workstations at ARTPARK seen from above", "pos": "50% 50%", "ratio": "16/9", "caption": "Engineering workstations at ARTPARK. ARTPARK photograph, not of ZenteiQ." },
+  "lead": [
+    "A language model trained on engineering text can discuss the Navier-Stokes equations. It cannot solve them. Engineers need answers that hold up against a solver, a measurement or a conservation law.",
+    "That gap is where ZenteiQ works. In September 2025, the IndiaAI Mission selected the Bengaluru company to build India’s Scientific Foundation Model."
+  ],
+  "sections": [
+    {
+      "h2": "From the classroom to the solver.",
+      "toc": "The pivot",
+      "blocks": [
+        "ZenteiQ began in 2022 as an experiment in applying AI to higher education. It later pivoted to AI for science and engineering R&D.",
+        "Its founder is a professor in the Department of Computational and Data Sciences at IISc, where he leads the AI for Research and Engineering eXcellence (AiREX) Lab. His work spans scientific machine learning, numerical analysis, high-performance computing and hardware-aware numerical methods, and he is a co-author of _Finite Elements: Theory and Algorithms_.",
+        "The education years left a trace at ARTPARK. Its Academy lists ARTPARK x Zenteiq AI-Tech Innovations among its industry collaborations, for AI-MPOWER, a programme for educators.",
+        { "people": [
+          { "name": "Prof. Sashikumaar Ganesan", "role": "Founder · IISc" }
+        ] }
+      ]
+    },
+    {
+      "h2": "Models that compute physics.",
+      "toc": "What it builds",
+      "blocks": [
+        "High-fidelity engineering simulations demand heavy computation when engineers have to explore many design variations. ZenteiQ’s answer is Dhīr, a family of physics-native scientific foundation models trained from scratch, in small, medium and large sizes for edge devices, self-hosted systems and the cloud, which companies can fine-tune on their own data.",
+        { "panel": { "title": "What ZenteiQ builds", "items": [
+          ["Dhīr", "Physics-native scientific foundation models, pre-trained from scratch."],
+          ["BrahmX", "A validated data layer."],
+          ["NokkX", "Inference."],
+          ["ScireX", "A scientific machine learning framework."],
+          ["KogneX", "For industrial R&D."]
+        ] } },
+        "By 2026, the company says, it had trained two Dhīr base models, including a mixture-of-experts model, with a public release to come."
+      ]
+    },
+    {
+      "h2": "A model for the country.",
+      "toc": "IndiaAI",
+      "blocks": [
+        "On 18 September 2025, at a pre-event of the IndiaAI Summit in Delhi, Union Minister Ashwini Vaishnaw announced ZenteiQ’s selection under the IndiaAI Mission of the Ministry of Electronics and Information Technology. The first year carried ₹75 crore, mostly for compute. The plan reported at the time was an 8-billion-parameter model, trained within 12 months.",
+        "“We are proud to share that ZenteiQ.ai has been selected to build India’s Scientific Foundation Model (SFM), a vital step towards strengthening the country’s sovereign AI capabilities,” Ganesan wrote on LinkedIn.",
+        { "dates": [
+          ["2022", "Founded as an experiment in AI for higher education."],
+          ["Sep 2025", "Selected under the IndiaAI Mission to build India’s Scientific Foundation Model."],
+          ["May 2026", "Named in MIT Sloan Management Review India’s AI Startups 20."],
+          ["Jun 2026", "Ganesan named in MIT Sloan Management Review India’s AI-50."]
+        ] },
+        "ZenteiQ was incubated at FSID, IISc. It is part of ARTPARK’s startup portfolio, and its website describes a collaboration with ARTPARK to scale data pipelines and engineering platforms."
+      ]
+    }
+  ],
+  "sources": [
+    ["StartupPedia, ZenteiQ.ai gets ₹75 Cr boost under IndiaAI Mission (23 September 2025)", "https://startuppedia.in/trending/trending/zeinteiqai-gets-75-cr-boost-under-indiaai-mission-to-develop-8-billion-parameter-scientific-model-10494368"],
+    ["MIT Sloan Management Review India, ZenteiQ.ai (AI Startups 20)", "https://mitsloanindia.com/article/zenteiq-ai/"],
+    ["MIT Sloan Management Review India, Sashikumaar Ganesan (AI-50)", "https://mitsloanindia.com/article/sashikumaar-ganesan/"],
+    ["IISc CDS, Prof. Sashikumaar Ganesan", "http://cds.iisc.ac.in/faculty/sashi/"],
+    ["ARTPARK, Academy (industry collaborations)", "https://www.artpark.in/skilling"],
+    ["ZenteiQ", "https://zenteiq.ai/"]
+  ]
+}

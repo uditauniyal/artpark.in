@@ -1,0 +1,68 @@
+{
+  "url": "https://www.artpark.in/health-initiatives/environmental-survelliance",
+  "status": 200,
+  "title": "Environmental Surveillance Technology Platform — ARTPARK @IISc - Leading AI & Robotics startup incubation",
+  "description": " One Health surveillance platform for early detection of animal disease outbreaks. ",
+  "headings": [
+    "H1: Environmental Surveillance Technology Platform",
+    "H1: Environmental Surveillance Technology Platform",
+    "H1: Smarter Surveillance. Healthier Lives.",
+    "H3: Primary + secondary data",
+    "H3: Decision support systems",
+    "H3: Genomic intelligence",
+    "H2: Transform surveillance data into evidence-based early signals and insights for disease detection and response.",
+    "H3: Fragmented records",
+    "H3: Decisions without foresight",
+    "H3: Missing context",
+    "H2: Evidence + context = better decisions",
+    "H3: Observe",
+    "H3: Contextualise",
+    "H3: Interpret",
+    "H3: Act",
+    "H2: See where risks are emerging, and what is driving them",
+    "H3: Layer the landscape",
+    "H3: Measure exposure",
+    "H3: Compare sites",
+    "H2: Go beyond detection to understand the pathogen genome",
+    "H3: Explore genomic variants",
+    "H3: Interpret mutations that matter",
+    "H3: Connect genomic change with epidemiological context",
+    "H2: For One Health pathogen surveillance initiatives",
+    "H3: Disease-agnostic by design",
+    "H3: Clinical & environmental surveillance",
+    "H3: Focused on One Health pathogens",
+    "H2: Developed by ARTPARK–IISc, in collaboration with NCBS–TIFR",
+    "H2: Heatwaves + Health Risk Prediction"
+  ],
+  "text": "Environmental Surveillance Technology Platform\nSmarter Surveillance. Healthier Lives.\n\nDharini is a reusable, open-source One Health surveillance platform that integrates clinical, environmental, and genomic surveillance of pathogens, with a primary focus on animal health. It incorporates genomic sequence analysis and decision-support modules to enable pathogen characterisation, epidemiological assessment, early detection, and evidence-based outbreak management.\n\nPRIORITY THREATS\n\nAvian influenza\nLumpy Skin Disease\nFoot-and-mouth disease\nPrimary + secondary data\n\nField and lab evidence, combined with environmental, ecological and weather data.\n\nDecision support systems\n\nGeoLens shows where wild birds, farms and herds meet, and where risk is rising.\n\nGenomic intelligence\n\nSNP visualisation and genomic prediction reveal which variant is circulating, and where.\n\nWHY IT MATTERS\n\nTransform surveillance data into evidence-based early signals and insights for disease detection and response.\n\nIndia is home to one of the world's largest livestock populations, with 535.78 million animals according to the 20th Livestock Census (2019). Diseases that move between animals, birds, people and the environment demand surveillance that is active, timely and traceable.\n\nYet evidence is often spread across paper registers, lab spreadsheets and disconnected maps. Dharini brings it together, in the spirit of a One Health approach.\n\nFragmented records\n\nField notes, sample registers and lab results live in different places, making it hard to follow a single sample end to end.\n\nDecisions without foresight\n\nField findings alone can't show which nearby farms, wetlands or herds are likely to be at risk next.\n\nMissing context\n\nA positive result means more when you can see where it occurred, what surrounds it and how the pathogen varies.\n\nHOW DHARINI WORKS\n\nEvidence + context = better decisions\n\nField data shows what is happening. Context shows why. Dharini connects both.\n\nPRIMARY DATA\n\nObserve\nSites\nSamples\nGenomes\n\nSECONDARY DATA\n\nContextualise\nWild birds\nPoultry farms\nWetlands\nWeather\n\nEVIDENCE GENERATION\n\nInterpret\nRisk maps\nHotspots\nVariants\n\nDECISIONS\n\nAct\nWhere to sample\nWhom to alert\nWhere to vaccinate\n\n01 · GEOLENS: GEOSPATIAL INTELLIGENCE\n\nSee where risks are emerging, and what is driving them\n\nGeoLens layers disease, ecological and farm data on one map, showing where risk is emerging and what is driving it.\n\nMAP LAYERS\n\nLayer the landscape\n\nAll risk factors on one map.\n\nSites\nBird density\nWetlands\nPoultry farms\nCattle markets\n\nPROXIMITY ANALYSIS\n\nMeasure exposure\n\nWhat lies within a set radius of any site.\n\nBuffer radius\nNearest wetland\nFarms in range\n\nSITE COMPARISON\n\nCompare sites\n\nTwo sites, side by side.\n\nBirds\nHabitat\nFarms\nWeather\n\n02 · GENOMIC SURVEILLANCE & PREDICTION\n\nGo beyond detection to understand the pathogen genome\n\nA positive test confirms that a pathogen is present. Genomic analysis reveals how it differs from a reference, which mutations it carries, and how those variants are distributed across samples, locations and time. Dharini brings these genomic insights together in an accessible, interactive view.\n\nMUTATION VISUALISATION\n\nExplore genomic variants\n\nAnalyse FASTA and FASTQ data through an end-to-end workflow for variant identification, annotation and visualisation, with no command-line expertise required.\n\nGENOMIC INTELLIGENCE\n\nInterpret mutations that matter\n\nMove beyond variant lists by examining affected genes, predicted functional effects, mutation impact and protein-level changes to prioritise variants for further investigation.\n\nLINKED TO PLACE AND TIME\n\nConnect genomic change with epidemiological context\n\nLink variants with sample, location and collection-date metadata to compare patterns across populations and explore how mutations are distributed geographically and over time.\n\nVariant view\nExplore genetic variants across the genome, with\ncontext on their location and how they change over time.\nLocation\nTime\nGenome\nGenes\nVariant analysis\n\nBUILT FOR ONE HEALTH SURVEILLANCE\n\nFor One Health pathogen surveillance initiatives\n\nDharini supports surveillance initiatives that track priority pathogens across animals, people and the environment.\n\nDisease-agnostic by design\n\nConfigurable for any priority pathogen, so new diseases, sites and programmes can be added without rebuilding.\n\nClinical & environmental surveillance\n\nAnimal samples and environmental samples from water, soil and air, brought together in one evidence base.\n\nFocused on One Health pathogens\n\nBuilt for threats that move between animals, people and the environment, such as avian influenza.\n\nOne platform.\nMultiple layers of evidence.\nA clearer view of disease signals.\n\nACKNOWLEDGEMENTS\n\nDeveloped by ARTPARK–IISc, in collaboration with NCBS–TIFR\n\nThe Dharini platform is developed by ARTPARK-IISc (I-Hub for Robotics and Autonomous Systems Innovation Foundation), Bengaluru, under the ‘Environmental Surveillance as a Key Public Health Strategy in India’ project consortium, led by the National Centre for Biological Sciences (NCBS), Tata Institute of Fundamental Research (TIFR). This was enabled through funding provided by the Gates Foundation.\n\nWe acknowledge the consortium members, BAIF Development Research Foundation (BAIF), Centre for Cellular and Molecular Biology (CCMB), Gujarat Biotechnology Research Council (GBRC), National Chemical Laboratory, Pune (CSIR-NCL), National Institute of High Security Animal Diseases (ICAR-NIHSAD), National Institute on Foot & Mouth Disease (ICAR-NIFMD), National Institute of Veterinary Epidemiology and Disease Informatics (ICAR-NIVEDI), National Institute of Animal Biotechnology (NIAB), Pune Knowledge Cluster Foundation (PKCF), and Tata Institute for Genetics and Society (TIGS), for domain expertise, operational insights, and feedback towards the platform’s requirements and functional scoping.\n\nWant to explore Dharini further?\n\nVisit the Dharini website",
+  "links": [
+    [
+      "SYSTEMS RESILIENCE",
+      "https://www.artpark.in/health-initiatives/category/SYSTEMS%20RESILIENCE"
+    ],
+    [
+      "Marketing .",
+      "https://www.artpark.in/health-initiatives?author=6566dcce109e221f90975f01"
+    ],
+    [
+      "Visit the Dharini website",
+      "https://in.dharini.artpark.ai/"
+    ],
+    [
+      "Marketing .",
+      "https://www.artpark.in/health-initiatives?author=6566dcce109e221f90975f01"
+    ],
+    [
+      "Next Next Heatwaves + Health Risk Prediction",
+      "https://www.artpark.in/health-initiatives/climate-health"
+    ]
+  ],
+  "images": [
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/fa0b2227-864c-46d5-a3cb-05735deaa944/Dharini+banner.jpg?format=1500w",
+      "alt": "Dharini platform overview: data collection for pathogen surveillance, genomic insights and decision support, and spatial and risk intelligence",
+      "w": 1304,
+      "h": 998
+    }
+  ]
+}

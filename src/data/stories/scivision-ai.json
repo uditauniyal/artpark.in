@@ -1,0 +1,101 @@
+{
+  "slug": "scivision-ai",
+  "company": "SciVision AI",
+  "tag": "FOUNDER STORY",
+  "kicker": "Structural health monitoring",
+  "title": "Finding the crack before it forms.",
+  "standfirst": "SciVision AI pairs an IISc aerospace professor who has spent more than 35 years on structural health monitoring and corrosion with an engineer whose career ran through NASA, GE, Pratt & Whitney and the US Office of Naval Research. They want the people who run pipelines, power plants and aircraft to see corrosion and cracking coming, instead of finding them after the damage is done.",
+  "meta": [
+    "ARTPARK Stories",
+    "About 3 min read",
+    "SciVision AI, Bengaluru"
+  ],
+  "website": "https://www.scivisionai.co.in/",
+  "hero": {
+    "image": "/assets/site/workstations.webp",
+    "alt": "Engineering workstations at ARTPARK",
+    "pos": "50% 50%",
+    "ratio": "16/9",
+    "caption": "Engineering workstations at ARTPARK. ARTPARK photograph, not of SciVision AI."
+  },
+  "lead": [
+    "Pipelines, power plants and aircraft structures are often managed from inspection data that is out of date or scattered across systems. Corrosion and cracking tend to be found after the damage is done.",
+    "SciVision AI was incorporated in 2025 as SciVision Center of Excellence Pvt. Ltd., with its registered address at the Department of Aerospace Engineering at IISc. Its premise is that a maintenance prediction should rest on physics, such as how a corrosion pit turns into a crack, and not on statistics alone."
+  ],
+  "sections": [
+    {
+      "h2": "Physics first.",
+      "toc": "The approach",
+      "blocks": [
+        {
+          "quote": {
+            "text": "Corrosion and cracking give warning signs long before they cause a failure. The physics tells you where to look. The AI lets you look everywhere, all the time.",
+            "who": "Prof. S. Gopalakrishnan, Co-founder and COO, SciVision AI",
+            "source": "",
+            "sourceLabel": "",
+            "draft": true
+          }
+        },
+        "SAMIT, the company’s core platform, gathers real-time sensor data and inspection history, and runs coupled physics-based models of corrosion kinetics, fracture mechanics and the transition from pit to crack. From these it calculates how much useful life an asset has left, and classifies its fitness for service under the API 579-1 standard.",
+        {
+          "panel": {
+            "title": "What SciVision AI builds",
+            "items": [
+              [
+                "SAMIT",
+                "Sensor data and inspection history, run through physics-based models to estimate remaining useful life."
+              ],
+              [
+                "CHAKRAVIDYA",
+                "A query interface on SAMIT that answers how severe a risk is, what to fix first and what can wait, with AR and VR views of an asset’s condition."
+              ],
+              [
+                "Sectors",
+                "Oil and gas, renewables, nuclear, hydrogen storage, aerospace and marine."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "Two careers in materials and machines.",
+      "toc": "The founders",
+      "blocks": [
+        "Prof. S. Gopalakrishnan is an Honorary Professor and former Chairman of Aerospace Engineering at IISc. His work on structural health monitoring, corrosion science and wave propagation in structures and materials spans more than 35 years and 250 journal papers.",
+        "Dr. Nagendra Somanath holds a PhD from Virginia Tech and has spent more than 30 years across aerospace, AI and predictive maintenance, in engineering and research leadership roles at NASA, General Electric, Pratt & Whitney and the US Office of Naval Research.",
+        {
+          "people": [
+            {
+              "name": "Prof. S. Gopalakrishnan",
+              "role": "Co-founder & COO",
+              "photo": "/assets/founders/scivision-ai-gopalakrishnan.webp",
+              "pos": "50% 35%"
+            },
+            {
+              "name": "Dr. Nagendra Somanath",
+              "role": "Co-founder & CSO",
+              "photo": "/assets/founders/scivision-ai-somanath.webp",
+              "pos": "50% 45%"
+            }
+          ]
+        },
+        "SciVision AI is part of ARTPARK’s startup portfolio."
+      ]
+    }
+  ],
+  "sources": [
+    [
+      "SciVision AI (team, products, registered address)",
+      "https://www.scivisionai.co.in/"
+    ],
+    [
+      "RegisterKaro, SciVision Center of Excellence Private Limited",
+      "https://www.registerkaro.in/company/scivision-center-of-excellence-private-limited-U62099KA2025PTC211065"
+    ],
+    [
+      "ARTPARK, startup portfolio",
+      "https://www.artpark.in/startups-overview"
+    ]
+  ]
+}

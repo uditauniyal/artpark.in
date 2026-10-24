@@ -1,0 +1,165 @@
+{
+  "slug": "edgeverse",
+  "company": "Edgeverse",
+  "tag": "FOUNDER STORY",
+  "kicker": "Road safety",
+  "title": "Driver assistance, built for the scooter.",
+  "standfirst": "Arindam Ghosh, Subrata Debnath and Navaneeth A founded Edgeverse in Bengaluru in 2023 to make India’s two-wheelers safer with real-time sensing and alerts. They built their own processor board and camera, trained a perception model on Indian roads, and are now moving from demonstrations towards production.",
+  "meta": [
+    "ARTPARK Stories",
+    "About 4 min read",
+    "Edgeverse, Bengaluru"
+  ],
+  "website": "https://edgeverse.ai/",
+  "hero": {
+    "image": "/assets/founders/edgeverse-award.webp",
+    "alt": "Six people on stage holding a Nasscom Mobility Innovation Challenge 2025 winner’s cheque made out to Edgeverse India Pvt Ltd",
+    "pos": "50% 22%",
+    "ratio": "16/9",
+    "caption": "The Edgeverse team receiving the Nasscom Mobility Innovation Challenge 2025 award. Photograph from Edgeverse."
+  },
+  "lead": [
+    "“Our vision is to make life-saving edge intelligence accessible and build technology in India that can compete globally,” says Arindam Ghosh, Edgeverse’s co-founder and CEO.",
+    "The company started with one objective: making two-wheelers safer through real-time sensing and intelligent alerts. The scale of that task is large. India has an estimated 375 to 400 million two-wheelers on the road, and domestic sales reached a record 21.7 million in FY2025-26, according to SIAM figures cited by the company."
+  ],
+  "sections": [
+    {
+      "h2": "Three careers, one problem.",
+      "toc": "The founders",
+      "blocks": [
+        "The founders came to the problem from different directions. Arindam spent more than 23 years in semiconductor sales and customer acquisition, including leading accounts at Synopsys across India and Asia. Subrata Debnath spent more than 23 years in system design, board support packages and firmware for telecom and defence, at HP and Emulex. Navaneeth A spent more than 12 years building AI stacks for facial recognition and digital twins at Fujitsu.",
+        {
+          "people": [
+            {
+              "name": "Arindam Ghosh",
+              "role": "Co-founder & CEO",
+              "photo": "/assets/founders/edgeverse-arindam-ghosh.webp",
+              "pos": "50% 30%"
+            },
+            {
+              "name": "Subrata Debnath",
+              "role": "Co-founder & CTO",
+              "photo": "/assets/founders/edgeverse-subrata-debnath.webp",
+              "pos": "50% 30%"
+            },
+            {
+              "name": "Navaneeth A",
+              "role": "Co-founder & VP",
+              "photo": "/assets/founders/edgeverse-navaneeth-a.webp",
+              "pos": "50% 30%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Their own board, their own camera.",
+      "toc": "The product",
+      "blocks": [
+        "The team built its own hardware. Imedge is Edgeverse’s processor board and camera module. On top of it runs Perceiva, a perception stack for camera and radar that predicts collisions, detects vehicles in a rider’s blind spot and gives lane advisories. The company says its alerts arrive in under one second.",
+        "Perceiva is hardware-agnostic, so it is not tied to Edgeverse’s own board. The company also offers Perceiva DMS, a camera-based driver monitoring system for commercial vehicles.",
+        {
+          "panel": {
+            "title": "What Edgeverse builds",
+            "items": [
+              [
+                "Perceiva ARAS",
+                "An Advanced Rider Assistance System for two-wheelers: predictive collision alerts, blind spot detection and lane advisory."
+              ],
+              [
+                "Perceiva DMS",
+                "A camera-based driver monitoring system for commercial vehicles."
+              ],
+              [
+                "Imedge",
+                "Edgeverse’s own processor board and camera module."
+              ],
+              [
+                "Radar perception",
+                "A perception stack for radar, alongside the camera."
+              ]
+            ]
+          }
+        },
+        "The company’s advisers include Prof. Venkatesh Babu, Chair of the Department of Computational and Data Sciences at IISc."
+      ]
+    },
+    {
+      "h2": "Tested on Bengaluru’s roads.",
+      "toc": "Milestones",
+      "blocks": [
+        "Edgeverse’s first India Perception Model was trained in 2024, the year its Imedge prototype was completed. In 2025 the team took the system onto Bengaluru’s roads for its first on-road testing, including front- and rear-collision detection, and began conversations with vehicle makers.",
+        {
+          "dates": [
+            [
+              "2023",
+              "Edgeverse is founded in Bengaluru."
+            ],
+            [
+              "2024",
+              "Imedge hardware prototype completed. First India Perception Model trained."
+            ],
+            [
+              "2025",
+              "Wins the Nasscom Mobility Innovation Challenge 2025."
+            ],
+            [
+              "2025",
+              "First on-road testing and validation across Bengaluru road conditions."
+            ],
+            [
+              "Before August 2026",
+              "Seed funding of ₹1.85 crore from ARTPARK."
+            ],
+            [
+              "August 2026",
+              "Raises ₹3 crore from GVFL."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "From demonstration to production.",
+      "toc": "What comes next",
+      "blocks": [
+        "ARTPARK backed Edgeverse with seed funding of ₹1.85 crore. In August 2026, the Ahmedabad venture capital firm GVFL invested ₹3 crore. By then the team had demonstrated its technology to Ather, was engaging with Cavli and Qualcomm, and was in advanced talks with large global Tier-I suppliers.",
+        {
+          "quote": {
+            "text": "With GVFL’s support, we are looking to accelerate product development and move towards wider commercial deployment",
+            "who": "Arindam Ghosh, Co-founder & CEO, Edgeverse",
+            "source": "https://www.indianweb2.com/2026/08/gvfl-invests-30m-in-edgeverse-to.html",
+            "sourceLabel": "IndianWeb2"
+          }
+        },
+        "The plan for the next six to twelve months is concrete: an Indian road dataset covering 100,000 km, a 2MP camera and a 77 GHz radar module, and commercial agreements for both its rider and driver systems."
+      ]
+    }
+  ],
+  "sources": [
+    [
+      "Edgeverse, About (founders, timeline)",
+      "https://edgeverse.ai/about"
+    ],
+    [
+      "Edgeverse (products, investors, Nasscom award)",
+      "https://edgeverse.ai/"
+    ],
+    [
+      "IndianWeb2, “GVFL invests ₹30M in Edgeverse” (28 August 2026)",
+      "https://www.indianweb2.com/2026/08/gvfl-invests-30m-in-edgeverse-to.html"
+    ],
+    [
+      "StartupTalky, “Edgeverse raises ₹3 crore from GVFL” (27 August 2026)",
+      "https://startuptalky.com/news/edgeverse-raises-3-crore-from-gvfl-to-bring-rider-assistance-to-indias-two-wheelers/"
+    ],
+    [
+      "Venture Intelligence, Edgeverse raises ₹3 crore from GVFL",
+      "https://news.ventureintelligence.com/private-equity/road-intelligence-focused-ai-startup-edgeverse-raises-rs.3-cr-from-gvfl"
+    ],
+    [
+      "ARTPARK, startup portfolio",
+      "https://www.artpark.in/startups-overview"
+    ]
+  ]
+}

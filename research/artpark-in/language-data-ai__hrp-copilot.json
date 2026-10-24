@@ -1,0 +1,100 @@
+{
+  "url": "https://www.artpark.in/language-data-ai/hrp-copilot",
+  "status": 200,
+  "title": "High-Risk Pregnancy Copilot for Frontline Workers — ARTPARK @IISc - Leading AI & Robotics startup incubation",
+  "description": " An expert approved, LLM-based assistant that gives instant clinical guidance to ANMs. It is currently deployed and in production with more than 6000 users.  ",
+  "headings": [
+    "H1: High-Risk Pregnancy Copilot for Frontline Workers",
+    "H4: An AI assistant helping health workers detect and manage high-risk pregnancies across India",
+    "H3: Recognition",
+    "H3: Solution",
+    "H3: Problem",
+    "H3: How it works",
+    "H4: Key Features",
+    "H3: Results & Impact",
+    "H4: Health Outcomes",
+    "H4: Adoption & Engagement",
+    "H4: Performance & utility",
+    "H4: Efficiency Gains",
+    "H3: Team",
+    "H3: Partners",
+    "H2: AI TRAINER FOR COMMUNITY MENTAL HEALTH"
+  ],
+  "text": "High-Risk Pregnancy Copilot for Frontline Workers\nAn AI assistant helping health workers detect and manage high-risk pregnancies across India\n\nCurrent Status: Deployed with 3000+ ANMs across Uttar Pradesh, Telangana and Maharashtra. 12000+ ANMs by march 2026.\n\nReaching: 400,000 pregnant women annually\n\nRecognition\n\nWinner of the Global Grand Challenges for Equitable AI 2023 by the Gates Foundation.  (1500 applicants, 50 winners)\n\nNotably, this project was featured amongst the 5 coolest innovations from across the globe by Mr. Bill Gates himself.\n\nWinner of Google.org accelerator 2025 (3000 applicants, 20 winners)\n\nJump to:\n\nProblem\n\nSolution & Key Features\n\nResults & Impact\n\nTeam & Partners\n\nSolution\n\nA multilingual, voice-enabled AI assistant delivered through WhatsApp that provides instant, expert-verified clinical guidance.\n\nWhy it works:\n\nInstant answers to clinical questions, anytime\n\nWorks in local languages (Hindi, Telugu, Marathi) via text or voice\n\nNo new apps – uses WhatsApp ANMs already have\n\nExpert-verified protocols for 35 high-risk conditions\n\nHuman backup for complex cases\n\nProblem\n\nOne woman dies in childbirth every 20 minutes in India. Over 26,000 women die annually from preventable pregnancy complications. India’s 150,000 ANMs struggle with:\n\nLimited access to medical knowledge during remote home visits\n\nResponses to questions on take 24-48 hours\n\nTraining that fades within 30-60 days\n\nOverburdened with multiple digital systems\n\nInadequate support for complex cases\n\nView fullsize\n\nQueries to MTOs on whatsapp take 24-48 hours\n\nView fullsize\n\nInstant responses with escalations to MTOs\n\nHow it works\n\nANMs send questions via WhatsApp (text or voice) → Copilot provides instant guidance based on validated protocols → Complex cases escalate to medical experts → Continuous learning through follow-up questions.\n\nKey Features\n\nClinically grounded: Built on ARMMAN's expert-verified protocols approved by health ministries and aligned with WHO/ICMR standards\n\nCulturally sensitive: Provides locally relevant advice (e.g., vegetarian nutrition for anemic patients, accessible tests vs. expensive CT scans)\n\nSafe & reliable: Human-in-the-loop escalation for uncertain cases; only ~20% of queries need expert review\n\nFast: 8-10 second response time\n\nScalable: Cost per query ~ Rs. 1.25  achieved with a mixture of product thinking and pipeline optimization\n\nResults & Impact\nHealth Outcomes\n\nANMs report improved risk detection, better protocol adherence, more appropriate referrals, and higher quality documentation.\n\nAdoption & Engagement\n\n70% active usage in UP generating 20,000+ queries\n\n80% adoption in Telangana\n\n3x higher engagement vs. app-only learning\n\n98% positive feedback from ANMs\n\nPerformance & utility\n\n97% accuracy rated by medical experts\n\n95%+ accuracy on evaluation sets\n\nOnly ~20% escalation rate (down from 60%)\n\nEfficiency Gains\n\n60% reduction in training officer workload\n\n70% faster: 8-10 seconds (from 25-30s)\n\n76% cost reduction: ₹1.20 per query (from ₹5)\n\nView fullsize\nTeam\n\nARMMAN: Amrita Mahale, Nithesh S, Vaishali Suyal, Dr. Aparna Hegde\n\nArtpark: Jigar Doshi, Sid P, Sanskriti Midha, Saumitra Sharma, Nihar Desai, Raghu Dharmaraju  | Past team: Apoorv Agnihotri, Mrinal Anand\n\nPartners\n\nARMMAN, Gates Foundation, Google.org\n\nNext\nAI TRAINER FOR COMMUNITY MENTAL HEALTH",
+  "links": [
+    [
+      "GenAI",
+      "https://www.artpark.in/language-data-ai/category/GenAI"
+    ],
+    [
+      "ARTPARK",
+      "https://www.artpark.in/language-data-ai?author=664c605f0943754edc40be2e"
+    ],
+    [
+      "Global Grand Challenges for Equitable AI 2023",
+      "https://gcgh.grandchallenges.org/grant/large-language-model-llm-copilot-front-line-workers"
+    ],
+    [
+      "5 coolest innovations",
+      "https://www.gatesnotes.com/Grand-Challenges-innovations-in-Senegal?WT.mc_id=20231010090000_Senegal-Grand-Challenges_BG-EM_&WT.tsrc=BGEM"
+    ],
+    [
+      "Google.org accelerator 2025",
+      "https://blog.google/company-news/outreach-and-initiatives/google-org/generative-ai-accelerator-cohort-2025/"
+    ],
+    [
+      "Problem",
+      "https://www.artpark.in/language-data-ai/llm-assistant/#understanding-problem"
+    ],
+    [
+      "Solution & Key Features",
+      "https://www.artpark.in/language-data-ai/llm-assistant/#solution-design"
+    ],
+    [
+      "Results & Impact",
+      "https://artpark.in/language-data-ai/llm-assistant/#implementation"
+    ],
+    [
+      "Team & Partners",
+      "https://artpark.in/language-data-ai/llm-assistant/#team-partners"
+    ],
+    [
+      "ARTPARK",
+      "https://www.artpark.in/language-data-ai?author=664c605f0943754edc40be2e"
+    ],
+    [
+      "https://artpark.in/",
+      "https://artpark.in/"
+    ],
+    [
+      "Next AI TRAINER FOR COMMUNITY MENTAL HEALTH",
+      "https://www.artpark.in/language-data-ai/mental-health-trainer"
+    ]
+  ],
+  "images": [
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/5a85cfde-b6bd-4753-9f04-80017e21edf9/Screenshot+2026-02-07+200229.png?format=500w",
+      "alt": "",
+      "w": 490,
+      "h": 97
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/685caf71-d51a-4e9d-91a3-a5d400f9ecbc/Screenshot+2026-02-07+200603.png?format=500w",
+      "alt": "",
+      "w": 490,
+      "h": 94
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1e3edcf0-99f2-4ce6-87ee-3e229550e17c/Screenshot+2026-02-07+190231.png?format=750w",
+      "alt": "project journey for scalable whatsapp chatbot",
+      "w": 440,
+      "h": 246
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/6b6aee6f-8938-4456-9e07-546916bd1d58/LLM-multimodal-lingual.png?format=1500w",
+      "alt": "",
+      "w": 1014,
+      "h": 442
+    }
+  ]
+}

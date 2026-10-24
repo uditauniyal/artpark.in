@@ -1,0 +1,67 @@
+{
+  "slug": "qosmic",
+  "company": "QOSMIC",
+  "tag": "STORY 02",
+  "kicker": "Build the enterprise",
+  "title": "From a laser link to a company built in India.",
+  "standfirst": "QOSMIC set out to build a quantum satellite. Customers told the founders what they actually needed: a faster way to bring ordinary satellite data down to Earth. The pivot, the hardware and the seed round, from ARTgarage in Bengaluru.",
+  "meta": ["ARTPARK Stories", "About 6 min read", "QOSMIC, 2025–2026"],
+  "website": "https://qosmic.space/",
+  "hero": { "image": "/assets/stories/qosmic-fsm-vibration.webp", "alt": "QOSMIC's Fast Steering Mirror mounted on a vibration test table", "pos": "45% 50%", "ratio": "21/9", "caption": "QOSMIC’s Fast Steering Mirror on a vibration test table, during space qualification. Photograph from QOSMIC." },
+  "lead": [
+    "“A decade ago, a company like this would have had to be built in the US or Europe,” says Shreyaans Jain, QOSMIC’s co-founder and CEO. “Today, India has the capital, the manufacturing depth, and the scientific institutions to build world-class space infrastructure.”",
+    "QOSMIC was founded in Bengaluru in 2025 by Shreyaans Jain, Dr. Rohit Ramakrishnan and Prof. Aloke Kumar of IISc. It is incubated at ARTPARK and works out of ARTgarage in Jalahalli."
+  ],
+  "sections": [
+    {
+      "h2": "The quantum satellite that became a ground station.",
+      "toc": "The pivot",
+      "blocks": [
+        "Shreyaans had worked on quantum computing hardware as an undergraduate, then built satellites at IISc under Prof. Aloke Kumar, including projects linked to India’s Gaganyaan programme. His first idea was a quantum satellite for ultra-secure links. That brought in Rohit Ramakrishnan, who had helped build one of the world’s earliest quantum satellites in Singapore.",
+        "Then they talked to the market. Operators were not asking for quantum security yet. What they badly needed was the same optical hardware, to move ordinary data.",
+        { "quote": { "text": "Nobody really wants quantum communication, but everybody wants the infrastructure that enables quantum communication.", "who": "Shreyaans Jain, Co-founder & CEO, QOSMIC", "source": "https://inc42.com/startups/why-qosmic-pivoted-from-building-satellites-to-ground-infrastructure-for-satellite-data/", "sourceLabel": "Inc42" } },
+        "So the founders pivoted, from building satellites to building the optical ground stations that receive their data. “We want to be very business-oriented as a space company,” Shreyaans says."
+      ]
+    },
+    {
+      "h2": "Satellites see more than they can send.",
+      "toc": "The problem",
+      "blocks": [
+        "A modern satellite can collect 1 to 2 TB of data a day, yet operators often retrieve only a fraction of it on each pass. Radio links top out at 1 to 2 Gbps, the spectrum is crowded, and ground infrastructure has changed little in decades.",
+        "Lasers change the arithmetic. From 500 km up, a radio beam spreads across kilometres of the Earth’s surface; an optical beam lands on a spot the size of a rooftop. That precision makes optical links faster and harder to intercept, and it makes the hardware unforgiving: something has to hold a laser on target while everything around it moves.",
+        { "panel": { "title": "What QOSMIC builds", "items": [["ARGUS", "An optical ground station: 0.5 to 1.0 m aperture, 1550 nm, 1 to 100 Gbps, sub-arcsecond tracking, deployable in under six months."], ["ZAPHOD", "A satellite optical terminal for CubeSats and SmallSats, 1 to 10 Gbps, under 3 kg, co-developed with TakeMe2Space."], ["Fast Steering Mirror", "The fine-pointing core of every optical link, built in-house."], ["The business", "Own and operate a ground-station network, and charge per gigabyte delivered."]] } }
+      ]
+    },
+    {
+      "h2": "Nine months, from nothing to space-qualified.",
+      "toc": "The mirror",
+      "blocks": [
+        "Only a few companies in the world make space-grade Fast Steering Mirrors, so India has had to import them. QOSMIC built its own. In 2026, nine months after starting from scratch, it passed thermal-vacuum and vibration qualification, both on the first attempt.",
+        { "figure": { "image": "/assets/stories/qosmic-thermal-vacuum.webp", "alt": "A thermal-vacuum test chamber", "ratio": "538/440", "caption": "The thermal-vacuum chamber used for qualification. Photograph from QOSMIC." } },
+        { "quote": { "text": "This is exactly why ARTPARK exists: to back deep-tech teams building the hardware India shouldn’t have to buy from abroad.", "who": "ARTPARK, on QOSMIC’s qualification", "source": "", "sourceLabel": "" } },
+        "The mirror’s design also won the Best Paper award at IEEE SPACE 2026, and the founders hold a granted US patent for a multi-aperture telescope system that combines optical signals received from satellites."
+      ]
+    },
+    {
+      "h2": "The seed round.",
+      "toc": "The round",
+      "blocks": [
+        "In June 2026, QOSMIC raised a $3.33 million seed round led by Accel and Prosus, with South Park Commons, ARTPARK and angel investor Manish Jain. It was one of six startups in the first Atoms X cohort by Accel and Prosus. The team had already validated its complete optical chain (pointing, acquisition, tracking and high-speed data) over a 10 km link on the ground.",
+        { "quote": { "text": "We believe optical communications will become as fundamental to space infrastructure as fibre optics became to the internet. This funding enables us to accelerate that transition and build the connectivity layer that the next generation of space applications will rely on.", "who": "Shreyaans Jain, Co-founder & CEO, QOSMIC", "source": "https://inc42.com/buzz/qosmic-bags-3-3-mn-to-build-laser-based-satellite-communication-systems/", "sourceLabel": "Inc42" } },
+        { "people": [
+          { "name": "Shreyaans Jain", "role": "Co-founder & CEO", "photo": "/assets/people/shreyaans-jain.webp", "pos": "50% 30%" },
+          { "name": "Dr. Rohit Ramakrishnan", "role": "Co-founder & CTO", "photo": "/assets/people/rohit-ramakrishnan.webp", "pos": "50% 30%" },
+          { "name": "Prof. Aloke Kumar", "role": "Co-founder · IISc", "photo": "/assets/people/aloke-kumar.webp", "pos": "50% 30%" }
+        ] },
+        "Next is space. QOSMIC’s first terminal is expected to fly in 2027 in TakeMe2Space’s MOI constellation. The mirror, as the company put it, was built to survive launch. Now it waits for one."
+      ]
+    }
+  ],
+  "sources": [
+    ["Inc42, “Why QOSMIC pivoted from building satellites to ground infrastructure for satellite data” (28 July 2026)", "https://inc42.com/startups/why-qosmic-pivoted-from-building-satellites-to-ground-infrastructure-for-satellite-data/"],
+    ["Inc42, “QOSMIC bags $3.3 Mn to build laser-based satellite communication systems” (24 June 2026)", "https://inc42.com/buzz/qosmic-bags-3-3-mn-to-build-laser-based-satellite-communication-systems/"],
+    ["StartupTalky, “QOSMIC raises $3.33 million” (24 June 2026)", "https://startuptalky.com/news/qosmic-raises-3-33-million-seed-funding/"],
+    ["QOSMIC website and Hub (products, patent, IEEE SPACE award)", "https://qosmic.space/"],
+    ["ARTPARK and QOSMIC LinkedIn posts on the Fast Steering Mirror qualification (October 2026)", ""]
+  ]
+}

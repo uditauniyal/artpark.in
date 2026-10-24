@@ -1,0 +1,79 @@
+{
+  "url": "https://www.artpark.in/health-initiatives/livestock-modelling",
+  "status": 200,
+  "title": "Livestock Disease Vaccination Strategy — ARTPARK @IISc - Leading AI & Robotics startup incubation",
+  "description": " Disease prevention and control measures to safeguard India’s livestock sector ",
+  "headings": [
+    "H1: Livestock Disease Vaccination Strategy",
+    "H3: Disease prevention and control measures to safeguard India’s livestock sector",
+    "H3: Understanding the Problem",
+    "H3: Designing the Solution",
+    "H3: Key Features",
+    "H3: Technical Aspects",
+    "H3: Implementation & Deployment",
+    "H3: Partners",
+    "H2: Heatwaves + Health Risk Prediction",
+    "H2: MIDAS"
+  ],
+  "text": "Livestock Disease Vaccination Strategy\nDisease prevention and control measures to safeguard India’s livestock sector\n\nThe economic impact of diseases like Foot-and-Mouth disease (FMD) and Lumpy Skin Disease Virus (LSDV) extends beyond immediate production losses, encompassing trade, livestock-related industries, and long-term stability. Prevention and disease control measures are crucial to mitigate risks and protect the health of livestock as well as the sector. With a data-driven approach, ARTPARK is supporting the Empowered Committee for Animal Health (ECAH) to adopt evidence-based policy making.\n\nThe primary objective is to inform strategies to control livestock diseases – starting with FMD, across various national programs.\n\nJump to:\n\nUnderstanding the Problem\n\nDesigning the Solution + Key Features\n\nTechnical Aspects\n\nImplementation\n\nTeam & Partners\n\nUnderstanding the Problem\n\nThe Indian livestock sector is a net exporter and accounts for 4.9% of the country’s total GDP. It contributes about 26% to the income of the poorest farmers (<0.01 ha landholding) and is an important component of subsistence farming. While the sector has grown significantly over the past decades, productivity continues to be a challenge. The prevalence of livestock diseases result in higher animal mortality, morbidity, infertility, reduction in quality of the hide and skin, and reduction in draught power. ICAR has estimated the economic loss due to FMD alone at rupees 20,000 crores per year. Farmers encounter economic losses throughout the entire lifecycle of the animal, making it a high-risk sector. As a result, these diseases have limited the entry of Indian products into international markets.\n\nDesigning the Solution\n\nSmallholder farmers in the livestock trade stand to gain significantly from reduced foot-and-mouth disease (FMD) outbreaks. Regular vaccinations are crucial for controlling FMD, and we're working to generate insights to optimise vaccination strategies to strengthen national control efforts.\n\nVeterinary officials and animal husbandry departments implement these strategies, which may include targeted coverage in high-risk areas, prioritising regions based on outbreak history, and seasonal adjustments to vaccination frequency. Risk-based vaccination schedules and coordinated cross-border campaigns are also considered. Ring vaccination, where animals surrounding an outbreak are rapidly vaccinated to create a buffer zone, is another key tactic in containment efforts.\n\nTo inform these strategies, we're leveraging existing epidemiological, demographic and environmental data from multiple sources. This comprehensive dataset enables insights into disease patterns, vaccination efficacy and effectiveness, and outbreak risks. Our goal is to create coherent, accessible data systems that support research, innovation, and data-driven policy decisions in FMD control. The project's findings will be used to inform government-level policy decisions, ultimately strengthening the National Animal Disease Control Programs.\n\nKey Features\n\n1. Effective utilisation of modelling across different susceptible species:\n\nCattle and buffalo: Modelling transmission of FMD at different spatial levels to test the impact of various vaccination strategies.\n\nPigs, goats and sheep: Modelling mixed-species interaction.\n\n2. Applications for disease elimination strategies in India\n\nZoning: Using models to define and validate FMD-free zones for targeted disease elimination.\n\nResource allocation: Prioritising vaccine distribution based on outbreak risk.\n\nSurveillance: Sampling strategies for early detection in high-risk areas.\n\nExports: Strengthening disease control measures to improve the sector's biosecurity, thereby promoting exports of animal products in the International market.\n\n3. Mechanistic models being used for simulation and scenario analysis for FMD\n\nCompartmental models with pulsed vaccination: Simulating disease transmission and population-level protection against FMD, accounting for periodic vaccination campaigns\n\nMetapopulation models: Analysing disease spread across interconnected subpopulations, such as different villages or farming communities, to understand spatial dynamics of FMD transmission\n\nTechnical Aspects\n\nData Standardisation: Converting diverse data sources into a consistent format. This includes using standard column names, region IDs, region names, and metadata to ensure that all data adheres to a common structure.\n\nData Harmonisation: This process may involve adjusting for discrepancies in data collection methods, as well as changes in methodologies and criteria. For example, harmonisation might address variations in antibody titre thresholds used to classify animals as protected, ensuring that results from different surveys or time periods can be meaningfully compared.\n\nDisease modelling and scenario analysis: Employs mathematical simulations to predict the spread of FMD and assess the impact of various interventions. By incorporating data such as livestock population density, movement patterns, and historical disease prevalence, these models provide insights into potential outbreak scenarios.\n\nToolkit development: We are developing user-friendly toolkits that include web-based analytical tools, standardised data collection protocols, and clear guidelines for interpreting results. These tools ensure that stakeholders, regardless of their location or technical expertise, can access and utilise the resources needed for disease control. This promotes collaboration and consistency in the application of disease management strategies.\n\nImplementation & Deployment\n\nComprehensive data explorations have been conducted to identify key data requirements and address existing gaps. A tool has been developed to prioritise districts for FMD vaccination, ensuring that resources are allocated where they are most needed. Additionally, we have established an initial data pipeline for high-priority datasets.\n\nPartners\nPrevious\nHeatwaves + Health Risk Prediction\nNext\nMIDAS",
+  "links": [
+    [
+      "SYSTEMS RESILIENCE",
+      "https://www.artpark.in/health-initiatives/category/SYSTEMS%20RESILIENCE"
+    ],
+    [
+      "ARTPARK",
+      "https://www.artpark.in/health-initiatives?author=664c605f0943754edc40be2e"
+    ],
+    [
+      "Understanding the Problem",
+      "https://www.artpark.in/health-initiatives/livestock-modelling/#problem"
+    ],
+    [
+      "Designing the Solution + Key Features",
+      "https://www.artpark.in/health-initiatives/livestock-modelling/#solution-design"
+    ],
+    [
+      "Technical Aspects",
+      "https://www.artpark.in/health-initiatives/livestock-modelling/#technical-aspects"
+    ],
+    [
+      "Implementation",
+      "https://www.artpark.in/health-initiatives/livestock-modelling/#implementation"
+    ],
+    [
+      "Team & Partners",
+      "https://www.artpark.in/health-initiatives/livestock-modelling/#team-partners"
+    ],
+    [
+      "ARTPARK",
+      "https://www.artpark.in/health-initiatives?author=664c605f0943754edc40be2e"
+    ],
+    [
+      "https://artpark.in/",
+      "https://artpark.in/"
+    ],
+    [
+      "Previous Heatwaves + Health Risk Prediction",
+      "https://www.artpark.in/health-initiatives/climate-health"
+    ],
+    [
+      "Next MIDAS",
+      "https://www.artpark.in/health-initiatives/midas"
+    ]
+  ],
+  "images": [
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/d384842a-f8b6-4649-b195-69efc19fa010/iisc+logo.png?format=300w",
+      "alt": "iisc logo.png",
+      "w": 297,
+      "h": 278
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1724657399870-P9F55XDCEEFIDM80G2OX/ICTS-Logo.jpg?format=500w",
+      "alt": "ICTS-Logo.jpg",
+      "w": 459,
+      "h": 200
+    }
+  ]
+}

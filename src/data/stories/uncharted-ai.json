@@ -1,0 +1,112 @@
+{
+  "slug": "uncharted-ai",
+  "company": "Uncharted AI",
+  "tag": "FOUNDER STORY",
+  "kicker": "Autonomous mineral exploration",
+  "title": "Sending robots where geologists cannot go.",
+  "standfirst": "Pradyumna Vyshnav and Dr. Vivek Varadharajan built robots for places with no GPS, no light and no map. Uncharted AI points that experience at the search for critical minerals, which is still slow, costly and dangerous.",
+  "meta": [
+    "ARTPARK Stories",
+    "About 4 min read",
+    "Uncharted AI, Bengaluru"
+  ],
+  "website": "https://www.uncharted-ai.com/",
+  "hero": {
+    "image": "/assets/founders/uncharted-ai-autosurveyor.webp",
+    "alt": "A white tracked robot labelled AutoSurveyor and Uncharted AI",
+    "pos": "50% 50%",
+    "ratio": "3/2",
+    "caption": "The AutoSurveyor tracked robot. Photograph from Uncharted AI."
+  },
+  "lead": [
+    "Finding critical minerals still depends on drilling. The company says conventional exploration costs USD 12.5 billion a year, succeeds about 0.5 percent of the time, needs more than 100 drills per site and puts people at risk on steep, loose and underground terrain.",
+    "Uncharted AI wants robots to do that survey work. Its AutoSurveyor robot was validated at ARTPARK in Bengaluru, and its website gives an address at ARTPARK @ IISc."
+  ],
+  "sections": [
+    {
+      "h2": "A decade of places without maps.",
+      "toc": "The founders",
+      "blocks": [
+        "Pradyumna Vyshnav, the CEO, has a master’s in space robotics. According to the company, he built autonomous systems for NASA missions, worked with Field AI and Social Alpha, and led robotics teams through years of research on autonomy underground.",
+        "Dr. Vivek Varadharajan, the CTO, did his PhD in field robotics at Polytechnique Montréal and was a research scientist at NASA’s Jet Propulsion Laboratory. He works on multi-robot systems, autonomous navigation and field AI. The company describes Montréal, and the Canadian Space Agency’s test ground there, as where the founders cut their teeth.",
+        {
+          "people": [
+            {
+              "name": "Pradyumna Vyshnav",
+              "role": "CEO and Co-founder",
+              "pos": "50% 40%"
+            },
+            {
+              "name": "Dr. Vivek Varadharajan",
+              "role": "CTO and Co-founder",
+              "pos": "50% 40%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Three layers, one pass.",
+      "toc": "The platform",
+      "blocks": [
+        "Uncharted AI’s platform has three parts that work together to produce an interactive 3D model of what lies below the surface.",
+        {
+          "panel": {
+            "title": "The exploration stack",
+            "items": [
+              [
+                "TRACE",
+                "Legged robots for terrain that wheeled platforms cannot reach."
+              ],
+              [
+                "SENSE",
+                "LiDAR, hyperspectral, magnetometry and custom geophysical sensors, fused in one pass."
+              ],
+              [
+                "FIND",
+                "An always-on AI geologist model."
+              ]
+            ]
+          }
+        },
+        "At ARTPARK in Bengaluru, the AutoSurveyor tracked robot validated the sensor fusion: LiDAR, hyperspectral imaging and ground-penetrating radar, captured in a single autonomous pass.",
+        "The company claims surveys five times faster than manual exploration, at 95 percent lower cost. These are its own figures."
+      ]
+    },
+    {
+      "h2": "From Bengaluru to Perth.",
+      "toc": "In the field",
+      "blocks": [
+        "In October 2025, at the International Astronautical Congress in Sydney, Uncharted AI signed a memorandum of understanding with Curtin University in Western Australia. It covers joint research, pilot projects in Western Australia and India, and workforce initiatives between the two.",
+        "“Partnering with Curtin allows us to bring our autonomous technologies into a world-leading hub of planetary science,” Pradyumna said in Curtin’s announcement.",
+        {
+          "quote": {
+            "text": "Together we can advance astrobiology and lunar exploration, while also transforming how we discover critical minerals and explore extreme environments, whether in WA, on the Moon or beyond.",
+            "who": "Pradyumna Vyshnav, Co-founder and CEO, Uncharted AI",
+            "source": "https://astrobiology.com/2025/10/06/curtin-university-powers-a-global-push-to-find-life-on-mars-and-advance-autonomy/",
+            "sourceLabel": "Curtin University release"
+          }
+        },
+        "The company lists field trials in Perth, at the European Space Agency’s lunar analogue site in Köln, at the Nordic Test Range in Riihimäki, Finland, and in Montréal. It is part of ARTPARK’s startup portfolio."
+      ]
+    }
+  ],
+  "sources": [
+    [
+      "Curtin University release via Astrobiology.com, Curtin powers a global push to find life on Mars and advance autonomy (6 October 2025)",
+      "https://astrobiology.com/2025/10/06/curtin-university-powers-a-global-push-to-find-life-on-mars-and-advance-autonomy/"
+    ],
+    [
+      "IAF, IAC-25 paper summary by Pradyumna Vyshnav",
+      "https://iafastro.directory/iac/paper/id/102345/summary/"
+    ],
+    [
+      "ARTPARK, startup portfolio",
+      "https://www.artpark.in/startups-overview"
+    ],
+    [
+      "Uncharted AI",
+      "https://www.uncharted-ai.com/"
+    ]
+  ]
+}

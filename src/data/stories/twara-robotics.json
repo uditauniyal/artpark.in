@@ -1,0 +1,126 @@
+{
+  "slug": "twara-robotics",
+  "company": "Twara Robotics",
+  "tag": "FOUNDER STORY",
+  "kicker": "Robotic actuators and arms",
+  "title": "Before the arm, the joint.",
+  "standfirst": "Dr. Kaushik Sampath, Dr. Ashish Joglekar and Alok Singh Rawat met at ARTPARK, where the long-term goal was humanoid robots. They decided the first thing India needed was the part that moves every robot joint, and built Twara Robotics around it.",
+  "meta": [
+    "ARTPARK Stories",
+    "About 4 min read",
+    "Twara Robotics, Bengaluru"
+  ],
+  "website": "https://twararobotics.in/",
+  "hero": {
+    "image": "/assets/founders/twara-robotics-founders.webp",
+    "alt": "Three men standing together outdoors among trees",
+    "pos": "50% 22%",
+    "ratio": "16/9",
+    "caption": "The founders of Twara Robotics. Photograph published by The Machine Maker."
+  },
+  "lead": [
+    "“Make in India should not be just a branding exercise; the product must stand on its own merit,” says Dr. Kaushik Sampath, co-founder and CEO of Twara Robotics. “Customers should choose Twara’s robots not just because they are made in India, but because they deliver superior performance and reliability at a competitive price.”",
+    "Twara builds robotic arms, actuators and grippers in Bengaluru. Its website describes it as an ARTPARK IHUB-IISc startup."
+  ],
+  "sections": [
+    {
+      "h2": "Start with the joint.",
+      "toc": "The first step",
+      "blocks": [
+        "The three co-founders came to ARTPARK from different careers. ARTPARK had a long-term ambition to build humanoid robots, and the team realised that the first step was a reliable robotic arm. A reliable arm, in turn, meant mastering actuators first.",
+        "The company says actuators account for nearly 70 percent of a robot’s cost and complexity. India had little domestic expertise in high-precision actuators and control systems, and Indian manufacturing had been slow to adopt robotics. Going through Department of Commerce data, the team found that the country was importing robotics technology worth thousands of crores a year.",
+        "In 2022, while at ARTPARK, they drew up a roadmap built around actuator development."
+      ]
+    },
+    {
+      "h2": "A proposal that became a company.",
+      "toc": "With ARTPARK",
+      "blocks": [
+        "They took the case for indigenous actuators to the Ministry of Heavy Industries, with ARTPARK’s leadership mentoring them. The proposal was accepted under CAMRAS, the industry accelerator the ministry set up at ARTPARK under the second phase of its scheme for the Indian capital goods sector. That support created Twara Robotics.",
+        "The company was incubated at ARTPARK, with support also from the Department of Science and Technology and the Government of Karnataka. ARTPARK lists Twara among the six CAMRAS pre-venture teams that became startups. Robotic actuators and soft robotics were among the programme’s first projects.",
+        {
+          "people": [
+            {
+              "name": "Dr. Kaushik Sampath",
+              "role": "Co-founder and CEO"
+            },
+            {
+              "name": "Dr. Ashish Joglekar",
+              "role": "Co-founder"
+            },
+            {
+              "name": "Alok Singh Rawat",
+              "role": "Co-founder"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Arms for the factory floor.",
+      "toc": "What they build",
+      "blocks": [
+        "The company has in mind the Tier 1 and Tier 2 MSME suppliers that struggle to automate because of cost and a shortage of skilled labour. The applications it shows include machine tending and TIG and MIG welding. At Automation Expo 2026, it exhibited a retrofit that connects its TR12 arm to standard manual welding machines.",
+        {
+          "panel": {
+            "title": "What Twara builds",
+            "items": [
+              [
+                "TR5",
+                "A robotic arm with a 5 kg payload and 750 mm reach."
+              ],
+              [
+                "TR12",
+                "A robotic arm with a 12 kg payload and 1000 mm reach."
+              ],
+              [
+                "SM20",
+                "An integrated actuator: 24 V, 30 Nm rated torque."
+              ],
+              [
+                "TGRIP-2",
+                "A silicone soft gripper for fragile parts, rated by the company for a 1.5 kg payload and tested to more than seven million cycles."
+              ],
+              [
+                "AMR kit",
+                "A kit for building autonomous mobile robots."
+              ]
+            ]
+          }
+        },
+        {
+          "figure": {
+            "image": "/assets/founders/twara-robotics-tgrip2.webp",
+            "alt": "Render of a soft gripper with a black mount and translucent silicone fingers",
+            "ratio": "4/3",
+            "fit": "contain",
+            "caption": "The TGRIP-2 soft gripper. Image from Twara Robotics."
+          }
+        },
+        "The hardest problems, the founders say, have been precision manufacturing and persuading established manufacturers to trust a robot made at home. In March 2025 the team had more than 11 people."
+      ]
+    }
+  ],
+  "sources": [
+    [
+      "The Machine Maker, Twara Robotics: advancing Indian manufacturing (21 March 2025)",
+      "https://themachinemaker.com/madeinindia/twara-robotics-revolutionizing-indian-manufacturing/"
+    ],
+    [
+      "Automation Expo, Twara Robotics exhibitor page (page no longer online)",
+      ""
+    ],
+    [
+      "Inc42, Twara Robotics company profile",
+      "https://inc42.com/company/twara-robotics/"
+    ],
+    [
+      "ARTPARK, CAMRAS programme page",
+      "https://www.artpark.in/advanced-robotics/camras"
+    ],
+    [
+      "Twara Robotics",
+      "https://twararobotics.in/"
+    ]
+  ]
+}

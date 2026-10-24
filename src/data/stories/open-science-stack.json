@@ -1,0 +1,158 @@
+{
+  "slug": "open-science-stack",
+  "company": "Open Science Stack",
+  "tag": "FOUNDER STORY",
+  "kicker": "Cloud science labs",
+  "title": "An experiment that does not depend on who runs it.",
+  "standfirst": "Open Science Stack is a volunteer-driven, non-profit effort to build digital public infrastructure for AI-powered science labs, with a founding team drawn from startups and academia. It starts from a problem every researcher knows: experiments are tied to one lab, one instrument and one person, and are hard to repeat anywhere else.",
+  "meta": [
+    "ARTPARK Stories",
+    "About 4 min read",
+    "Open Science Stack, Bengaluru"
+  ],
+  "website": "https://opensciencestack.org/",
+  "hero": {
+    "image": "/assets/founders/open-science-stack-lab.webp",
+    "alt": "A lab room with a plate reader on a bench, a liquid-handling enclosure and a robotic arm on a table",
+    "pos": "50% 55%",
+    "ratio": "16/9",
+    "caption": "A plate reader, a liquid-handling enclosure and a robotic arm, from Open Science Stack’s page on its drug-discovery reference lab. Photograph from Open Science Stack."
+  },
+  "lead": [
+    "Good research is often limited by access: to labs with the right instruments, and to trained people who can operate them. At the same time, shared labs full of expensive instruments sit under-used, slowed by back-and-forth between operators and researchers over missing parameters.",
+    "Open Science Stack wants to change how a lab is used. It is not a typical startup. It describes itself as a volunteer-driven, non-profit initiative, supported by the Red Black Trust and ARTPARK, building digital public infrastructure for AI-powered science labs."
+  ],
+  "sections": [
+    {
+      "h2": "Writing an experiment down so a machine can run it.",
+      "toc": "The idea",
+      "blocks": [
+        {
+          "quote": {
+            "text": "An experiment should not depend on which lab you are in or who happens to run it. If it is written down so that a machine can run it, anyone can repeat it.",
+            "who": "Dr. Ajay Sethi, Open Science Stack",
+            "source": "",
+            "sourceLabel": "",
+            "draft": true
+          }
+        },
+        "The aim is to separate an experiment from the place where it happens. Today, an experiment is bound to a specific lab, a specific instrument and a specific person, which is a large part of why so much research is hard to reproduce. Open Science Stack’s answer is the Universal Lab architecture, built in three layers, with a robotics stack underneath.",
+        {
+          "panel": {
+            "title": "The Universal Lab",
+            "items": [
+              [
+                "ULA",
+                "A device-independent way to specify an experiment."
+              ],
+              [
+                "ULE",
+                "A lab engine that runs workflows repeatably and auditably."
+              ],
+              [
+                "ULI",
+                "Interfaces to the instruments themselves."
+              ],
+              [
+                "RAS",
+                "The Robotic Application Stack: ROS2 middleware with Model, Viewer, Planner and Controller modules, released as open source."
+              ]
+            ]
+          }
+        },
+        "The team built a ROS-based prototype of its robotics capabilities in 2023. In December 2024 it open-sourced the Robotic Application Stack; the organisation says it was released at ROSCon 2024."
+      ]
+    },
+    {
+      "h2": "A reference lab at ARTGarage.",
+      "toc": "The lab",
+      "blocks": [
+        "In 2026, Open Science Stack built a reference lab for drug discovery at ARTGarage, ARTPARK’s facility in Bengaluru. It covers target-to-hit and hit-to-lead assays, with liquid handlers, multimode spectrometers, incubators and centrifuges. Protocols written in plain English are converted into Open Science Stack experiment specifications that the lab can carry out.",
+        {
+          "dates": [
+            [
+              "2023",
+              "A ROS-based prototype of the robotics capabilities."
+            ],
+            [
+              "December 2024",
+              "The Robotic Application Stack released as open source."
+            ],
+            [
+              "2025",
+              "First versions of the cloud science lab designed and built."
+            ],
+            [
+              "2026",
+              "A reference lab for drug discovery set up at ARTGarage."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Volunteers from startups and academia.",
+      "toc": "The people",
+      "blocks": [
+        "The founding team are volunteers. Dr. Ajay Sethi, formerly of Accel, Ezetap and Oracle, leads business and partnerships. Prof. Bharadwaj Amrutur of IISc and ARTPARK advises on robotics and AI. The others came from Paytm, Ola, MakeMyTrip, Eightfold.ai, UCImpower and DeepKlarity, and lead product, technology, engineering and generative AI.",
+        {
+          "people": [
+            {
+              "name": "Dr. Ajay Sethi",
+              "role": "Business and partnerships",
+              "photo": "/assets/founders/open-science-stack-ajay-sethi.webp",
+              "pos": "50% 25%"
+            },
+            {
+              "name": "Prof. Bharadwaj Amrutur",
+              "role": "Robotics and AI advisor"
+            },
+            {
+              "name": "Ankur Agarwal",
+              "role": "Product and operations"
+            },
+            {
+              "name": "Sandesh Goel",
+              "role": "Technology"
+            },
+            {
+              "name": "Kaushal Sarda",
+              "role": "Engineering"
+            },
+            {
+              "name": "Kartik Godawat",
+              "role": "Generative AI and ML"
+            }
+          ]
+        },
+        "Open Science Stack is part of ARTPARK’s startup portfolio, listed as an open platform for AI-enabled cloud science labs."
+      ]
+    }
+  ],
+  "sources": [
+    [
+      "Open Science Stack, About us (founding team, supporters, journey)",
+      "https://opensciencestack.org/about-us/"
+    ],
+    [
+      "Open Science Stack, Cloud science labs",
+      "https://opensciencestack.org/cloud-science-labs/"
+    ],
+    [
+      "Open Science Stack, Drug discovery reference lab",
+      "https://opensciencestack.org/drug-discovery-lab/"
+    ],
+    [
+      "Open Science Stack, Robotics (Robotic Application Stack)",
+      "https://opensciencestack.org/robotics-2/"
+    ],
+    [
+      "Robotic Application Stack on GitHub",
+      "https://github.com/ras-ros2"
+    ],
+    [
+      "ARTPARK, startup portfolio",
+      "https://www.artpark.in/startups-overview"
+    ]
+  ]
+}

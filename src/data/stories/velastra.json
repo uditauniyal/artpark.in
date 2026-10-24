@@ -1,0 +1,104 @@
+{
+  "slug": "velastra",
+  "company": "Velastra",
+  "tag": "FOUNDER STORY",
+  "kicker": "Industrial connectivity",
+  "title": "Data from places with no signal.",
+  "standfirst": "Velastra, led by founder and CEO Anshul Makkar, connects industrial equipment in places with no reliable network, such as deep mines and offshore wells. Its approach is to combine satellite links and ground networks in one system.",
+  "meta": [
+    "ARTPARK Stories",
+    "About 2 min read",
+    "Velastra, Bengaluru and London"
+  ],
+  "website": "https://velastra.co/",
+  "hero": {
+    "image": "/assets/site/5g-lab.webp",
+    "alt": "The 5G lab at ARTPARK, with people at workstations",
+    "pos": "50% 50%",
+    "ratio": "16/9",
+    "caption": "The 5G lab at ARTPARK. ARTPARK photograph, not of Velastra."
+  },
+  "lead": [
+    "Deep underground mines, remote offshore wells and other harsh industrial sites often have no reliable connectivity. Data from critical machines there does not reach the operations room in time to prevent a failure.",
+    "Velastra builds that link. It is part of ARTPARK’s startup portfolio, where it is described as integrating terrestrial networks, such as LoRaWAN, NB-IoT and Bluetooth, with satellite communication."
+  ],
+  "sections": [
+    {
+      "h2": "Satellite and ground, in one stack.",
+      "toc": "What it builds",
+      "blocks": [
+        {
+          "quote": {
+            "text": "Some of the most important machines in industry sit where no network reaches. The data is there; it just has no way out. We built that way out, by satellite and on the ground together.",
+            "who": "Anshul Makkar, Founder and CEO, Velastra",
+            "source": "",
+            "sourceLabel": "",
+            "draft": true
+          }
+        },
+        "The design is hybrid. Satellite links in low Earth orbit and geostationary orbit are combined with private 5G and LTE, LoRaWAN and Bluetooth, from the device in the field to the cloud.",
+        {
+          "panel": {
+            "title": "What Velastra builds",
+            "items": [
+              [
+                "VEdge",
+                "A rugged gateway, rated IP67, with LoRa, Bluetooth and satellite links and solar and battery power."
+              ],
+              [
+                "VPlatform",
+                "The software suite: VCloud, VOps, VData and VView."
+              ],
+              [
+                "VMod",
+                "An OEM module for robotics and drones."
+              ],
+              [
+                "VMesh",
+                "A wireless mesh network."
+              ],
+              [
+                "Engineering services",
+                "Reverse engineering, re-engineering and refurbishment of industrial equipment, such as IGBT drives."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "A company between two countries.",
+      "toc": "The company",
+      "blocks": [
+        "Velastra lists offices in London, Bengaluru and New Delhi, and describes itself as operating from the UK and India, with plans to expand into Australia and New Zealand.",
+        "In April 2026, TEXMiN, the mining technology hub at IIT (ISM) Dhanbad, named Velastra among the startups it would support with incubation and seed funding, announced at IInvenTiv 2026. The amount was not disclosed.",
+        {
+          "people": [
+            {
+              "name": "Anshul Makkar",
+              "role": "Founder and CEO"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    [
+      "Construction World, TEXMiN signs MoUs, announces startup funding at IInvenTiv 2026 (April 2026)",
+      "https://www.constructionworld.in/energy-infrastructure/coal-and-mining/texmin-signs-mous--announces-startup-funding-at-iinventiv-2026/90099"
+    ],
+    [
+      "Velastra, Leadership",
+      "https://velastra.co/leadership"
+    ],
+    [
+      "ARTPARK, startup portfolio",
+      "https://www.artpark.in/startups-overview"
+    ],
+    [
+      "Velastra",
+      "https://velastra.co/"
+    ]
+  ]
+}

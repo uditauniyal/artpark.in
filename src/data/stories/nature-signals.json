@@ -1,0 +1,59 @@
+{
+  "slug": "nature-signals",
+  "company": "ARTPARK Health Data & AI",
+  "tag": "PROJECT STORY",
+  "kicker": "Climate and public health",
+  "title": "Nature signals. We built the infrastructure to listen.",
+  "standfirst": "Every major public health challenge leaves traces in the environment before it shows up in a hospital: in weather, vector habitats, water and the movement of pathogens. ARTPARK is building the systems that read those signals early enough to act.",
+  "meta": ["ARTPARK Stories", "About 6 min read", "World Environment Day, 5 June 2026"],
+  "website": "",
+  "hero": { "image": "/assets/site/hrp-training.webp", "alt": "A health worker using a phone during a training session", "pos": "50% 40%", "caption": "Frontline health workers are where early signals turn into action. Photograph from ARTPARK." },
+  "lead": [
+    "We miss many of these signals not because they are invisible, but because our health systems were not designed to see them. ARTPARK is building systems that do.",
+    "World Environment Day 2026 asked us to be inspired by nature, for climate and for our future. For people working where climate meets public health, that is a design principle. Healthy ecosystems are not separate from public health systems: they influence where vectors thrive, how heat accumulates in cities, how diseases spread and how communities experience climate risk."
+  ],
+  "sections": [
+    {
+      "h2": "What the environment carries before symptoms appear.",
+      "toc": "Dharini",
+      "blocks": [
+        "Many emerging infectious diseases move through interconnected human, animal and environmental systems long before they appear in clinical surveillance. Pathogens circulate through ecosystems, water, soil and air.",
+        "Dharini, ARTPARK’s environmental surveillance platform, works within the One Health framework, which treats human, animal and environmental health as connected. By adding surveillance of water, soil and air samples, it aims to help identify potential health threats earlier.",
+        { "figure": { "image": "/assets/site/dharini.webp", "alt": "Overview graphic of the Dharini platform", "fit": "contain", "ratio": "4/3", "caption": "Dharini brings together field data, genomic insights and spatial risk intelligence. Graphic from ARTPARK." } },
+        "The stakes reach food security and rural livelihoods. India’s livestock sector contributes 4.9% of national GDP and is the economic base for millions of small and marginal farmers. Foot-and-mouth disease, lumpy skin disease and avian influenza are livelihood risks, trade risks and potential spillover risks."
+      ]
+    },
+    {
+      "h2": "Dengue is shaped by environmental signals.",
+      "toc": "PRISM-H",
+      "blocks": [
+        "Rainfall creates breeding habitats, temperature affects mosquito survival, and local conditions shape risk across communities. These signals exist long before they show up in disease data.",
+        "PRISM-H, the Platform for Research Integrated Surveillance and Management of Health, brings them together. It combines epidemiological trends with weather and environmental data to forecast dengue risk at sub-district level.",
+        { "panel": { "title": "PRISM-H in Karnataka", "items": [["70 million+", "people served by the initiative in Karnataka."], ["1.2 million+", "houses surveyed for mosquito larvae in the pilot."], ["50,000+", "breeding spots identified."], ["Recognition", "UN World Cities Report 2024; SKOCH Award for E-Governance, 2025."]] } },
+        "The rainfall data was there. The temperature patterns were there. The science of vector ecology was already understood. What was missing was the infrastructure to bring these signals together at the resolution and scale that public health decisions need."
+      ]
+    },
+    {
+      "h2": "Heat is more than a weather event.",
+      "toc": "Heat risk",
+      "blocks": [
+        "Across India, heat events are becoming more frequent and more intense. They affect physical and mental wellbeing, strain the livelihoods of outdoor workers and farming communities, and worsen outcomes for people with existing conditions.",
+        "ARTPARK’s heat-risk platform delivers localised predictions at sub-district resolution, up to seven days ahead. It goes beyond temperature, integrating biometeorological heat-stress indicators and physiological thresholds to forecast impact on health. It is being built and deployed with the Government of Karnataka, including KSNDMC, KSDMA and the Department of Health, and won Grand Challenges India; it was a winner-finalist of the IndiaAI Innovation Challenge 2025."
+      ]
+    },
+    {
+      "h2": "Three platforms. One underlying logic.",
+      "toc": "One logic",
+      "blocks": [
+        "Dharini, PRISM-H and the heat platform address distinct threats. The logic connecting them is the same. Dengue is climate-sensitive. Heat stress worsens health outcomes. Livestock diseases affect food security and create spillover pathways. These risks share geography, affect the same vulnerable people and compound each other in ways siloed systems cannot see.",
+        "ARTPARK treats this as one connected system, and builds across data, models and delivery with research institutions, government and the private sector. If you are working on related problems, we would like to hear from you."
+      ]
+    }
+  ],
+  "sources": [
+    ["ARTPARK, “Nature Signals. We Built the Infrastructure to Listen.” (World Environment Day 2026)", "https://www.artpark.in/stories/environmnetday2026"],
+    ["ARTPARK, Environmental Surveillance Technology Platform (Dharini)", "https://www.artpark.in/health-initiatives/environmental-survelliance"],
+    ["ARTPARK, PRISM-H", "https://www.artpark.in/prism-h"],
+    ["ARTPARK, Heatwaves & health risk prediction", "https://www.artpark.in/heat-stress-forecasting"]
+  ]
+}

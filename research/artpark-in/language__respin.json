@@ -1,0 +1,67 @@
+{
+  "url": "https://www.artpark.in/language/respin",
+  "status": 200,
+  "title": "RESPIN — ARTPARK @IISc - Leading AI & Robotics startup incubation",
+  "description": "",
+  "headings": [
+    "H2: RESPIN",
+    "H1: Speech Recognition in agriculture and finance for the poor in India",
+    "H2: Language Programs",
+    "H3: Vaani",
+    "H3: RESPIN",
+    "H3: SYSPIN",
+    "H1: Our Partners",
+    "H1: Funders"
+  ],
+  "text": "RESPIN\nSpeech Recognition in agriculture and finance for the poor in India\n\nSpeech recognition datasets across 9 Indian languages, focused on agriculture and finance - two sectors where voice-based tools can reach populations currently excluded from digital services.\n\nLanguages\n9 Indian languages\n\nFocus Domains\nAgriculture and finance for the poor\n\nContact Us\n\nAccess\nDigital public good - open to al\n\nLanguage Programs\nVaani\nLearn More\n\nIndia's Largest Open-Source Speech Dataset\n\nRESPIN\nLearn More\n\nRecognising Speech in Indian Languages\n\nSYSPIN\nLearn More\n\nSynthesising Speech in Indian Languages\n\nOur Partners\nFunders",
+  "links": [
+    [
+      "Contact Us",
+      "mailto:contact.respin@iisc.ac.in?"
+    ],
+    [
+      "Learn More",
+      "https://www.artpark.in/language/vaani"
+    ],
+    [
+      "Learn More",
+      "https://www.artpark.in/language/respin"
+    ],
+    [
+      "Learn More",
+      "https://www.artpark.in/language/syspin"
+    ]
+  ],
+  "images": [
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/8e0a476e-61c2-49da-9aad-7359c9c51a0b/person-having-hearing-issues.jpg?format=1500w",
+      "alt": "",
+      "w": 1440,
+      "h": 1080
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/51b24aba-4050-414e-9584-f7dc8b6eb276/Respin+Logo.png?format=1500w",
+      "alt": "",
+      "w": 83,
+      "h": 51
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/484d4811-1491-44e4-bf97-1d0b3989bfc8/Navana.png?format=500w",
+      "alt": "",
+      "w": 313,
+      "h": 108
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/f711290d-6598-44c0-ad84-9feaa791d26e/Logo-IISc.png?format=750w",
+      "alt": "",
+      "w": 517,
+      "h": 90
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/9c652c7d-6b72-48e5-b9d5-959ff1a69e53/GF-+logo.png?format=500w",
+      "alt": "",
+      "w": 165,
+      "h": 42
+    }
+  ]
+}

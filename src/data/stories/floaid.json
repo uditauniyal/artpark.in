@@ -1,0 +1,139 @@
+{
+  "slug": "floaid",
+  "company": "FloAID",
+  "tag": "FOUNDER STORY",
+  "kicker": "Medical devices",
+  "title": "An Indian-made pump for a failing heart.",
+  "standfirst": "FloAID Medtech is building a catheter heart pump and a heart-lung machine at IIT Madras Research Park, led by CEO Shiv Gupta, a biomedical engineer, with heart and lung transplant surgeon Dr. K Balakrishnan. The aim is affordable life support for high-risk cardiac patients, and every step so far has been a prototype, a licence or a trial.",
+  "meta": [
+    "ARTPARK Stories",
+    "About 4 min read",
+    "FloAID, Chennai"
+  ],
+  "website": "https://floaid.com/",
+  "hero": {
+    "image": "/assets/site/soldering.webp",
+    "alt": "An engineer soldering electronics at a bench",
+    "pos": "50% 50%",
+    "ratio": "16/9",
+    "caption": "An electronics bench at ARTPARK. ARTPARK photograph, not of FloAID."
+  },
+  "lead": [
+    "The pump is 21 French across and spins at up to 33,000 revolutions per minute. Its motor stays outside the body and turns a flexible shaft that drives a microaxial pump inside the patient, moving up to six litres of blood a minute.",
+    "FloAID Medtech builds it at IIT Madras Research Park in Chennai. The company was registered in 2024 and is part of ARTPARK’s startup portfolio, which describes it in a line: artificial heart pumps that integrate AI and ML."
+  ],
+  "sections": [
+    {
+      "h2": "A surgeon’s need, an engineer’s design.",
+      "toc": "The team",
+      "blocks": [
+        {
+          "quote": {
+            "text": "Patients whose hearts are failing need life support that Indian hospitals can afford. We are building it here, and proving every step before it reaches a patient.",
+            "who": "Shiv Gupta, Founder and CEO, FloAID",
+            "source": "",
+            "sourceLabel": "",
+            "draft": true
+          }
+        },
+        "Shiv Gupta is a biomedical scientist who trained at IIT Madras and NTU Singapore, with experience in biomedical design, fabrication, system integration and programme management. He leads product development as CEO.",
+        "The clinical need was validated with Dr. K Balakrishnan, Director of Heart and Lung Transplant at MGM Hospital. The company says he performed the first LVAD and HVAD pump transplants in India. His role in the team covers the expert user’s view and the animal and clinical trials. Purrshottam Bhaggeria, Joint Managing Director of Filatex India, supports business management and industrial collaborations. FloAID’s website presents the three as its founding trio.",
+        {
+          "people": [
+            {
+              "name": "Shiv Gupta",
+              "role": "Founder & CEO"
+            },
+            {
+              "name": "Dr. K Balakrishnan",
+              "role": "Founding team · Director of Heart and Lung Transplant, MGM Hospital"
+            },
+            {
+              "name": "Purrshottam Bhaggeria",
+              "role": "Founding team · Business and industrial collaborations"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Two pumps on one console.",
+      "toc": "The product",
+      "blocks": [
+        "FloAID is building for cardiologists and surgeons in three hard situations: high-risk angioplasty, cardiogenic shock and open-heart surgery. Its catheter pump has separate channels for the left and right sides of the heart on a single controller, which the company calls India’s first dual cath pump.",
+        {
+          "panel": {
+            "title": "What FloAID builds",
+            "items": [
+              [
+                "Floaid Cath Pump",
+                "A percutaneous ventricular assist device: an intravascular microaxial pump with an external motor and flexible shaft drive, up to 6 litres a minute. Pre-clinical, and not for clinical use."
+              ],
+              [
+                "Dual-channel controller",
+                "One console that can run left- and right-heart support."
+              ],
+              [
+                "FLOEX 3.0",
+                "A heart-lung machine for cardiopulmonary bypass, up to 11 litres a minute, with master and slave pump control. The company plans to commercialise it in 2026."
+              ],
+              [
+                "Intellectual property",
+                "The company reports more than 12 patents filed and one granted."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "From the bench to animal trials.",
+      "toc": "Milestones",
+      "blocks": [
+        "A heart pump has to pass through test benches, animal studies and regulators before it reaches a patient. FloAID’s roadmap shows where it stands on that path. These are the company’s own milestones; no independent coverage has been published yet.",
+        {
+          "dates": [
+            [
+              "2024",
+              "Concept and system design. Clinical need validated with Dr. K Balakrishnan. Patents filed. Two prototypes built, with in-vitro haemolysis and flow testing confirming 6 litres a minute."
+            ],
+            [
+              "2024-25",
+              "CDSCO test licence secured under the Medical Devices Rules, 2017."
+            ],
+            [
+              "2025",
+              "Acute animal trial completed at MGM Hospital."
+            ],
+            [
+              "2025-26",
+              "Chronic animal study under GLP in progress."
+            ],
+            [
+              "Planned",
+              "First-in-human clinical trial targeted for 2026 at MGM Hospital, Chennai, and CDSCO market approval targeted for 2027."
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    [
+      "FloAID, team",
+      "https://floaid.com/pages/floaid_team.html"
+    ],
+    [
+      "FloAID, products and roadmap",
+      "https://floaid.com/pages/floaid_products.html"
+    ],
+    [
+      "FloAID, contact (IIT Madras Research Park)",
+      "https://floaid.com/pages/floaid_contact.html"
+    ],
+    [
+      "ARTPARK, startup portfolio",
+      "https://www.artpark.in/startups-overview"
+    ]
+  ]
+}

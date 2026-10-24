@@ -1,0 +1,39 @@
+{
+  "url": "https://www.artpark.in/tb-screening",
+  "status": 200,
+  "title": "TB Screening — ARTPARK @IISc - Leading AI & Robotics startup incubation",
+  "description": "",
+  "headings": [
+    "H2: AI-Powered Tuberculosis Detection at Scale",
+    "H4: Features",
+    "H2: Our Partners",
+    "H1: Working on AI for research and screening?"
+  ],
+  "text": "AI-Powered Tuberculosis Detection at Scale\n\nClosing the diagnosis gap in India's TB elimination mission.\n\nARTPARK's TB screening initiative builds AI tools to support the detection pipeline from chest X-ray triage to clinical confirmation.\n\nUsing deep learning models trained on Indian radiological data, the system helps flag high-risk cases for priority clinical review. The database on which the AI model is trained includes images from primary and secondary care facilities with varying image quality.\n\nFeatures\n\nFocus area: High-burden districts\n\nTarget users: Community-based screening programs at primary care level\n\nAI modality: Chest X-ray analysis with Indian training data\n\nTraining data: Built on MIDAS - India-specific imaging datasets\n\nIntegration: Compatible with NIKSHAY National TB management system\n\nOur Partners\n\nNational and state TB programs\n\nWorking on AI for research and screening?\n\n ARTPARK co-innovates with health systems, research institutions, and technology partners on screening tools built for India. Let's build together.\n\nTalk To MIDAS Team",
+  "links": [
+    [
+      "Talk To MIDAS Team",
+      "https://www.artpark.in/tb-screening"
+    ]
+  ],
+  "images": [
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/ed1c4645-6b66-41dd-a2ca-a8f1a86ea1aa/42307.jpg?format=1500w",
+      "alt": "",
+      "w": 1440,
+      "h": 1378
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/f7b65829-3b23-4e0b-b62a-250697e76e1f/icmr.png?format=300w",
+      "alt": "",
+      "w": 216,
+      "h": 95
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/d384842a-f8b6-4649-b195-69efc19fa010/iisc+logo.png?format=300w",
+      "alt": "",
+      "w": 114,
+      "h": 107
+    }
+  ]
+}

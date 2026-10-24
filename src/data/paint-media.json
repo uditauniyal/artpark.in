@@ -1,0 +1,143 @@
+{
+ "_note": "Painterly treatment of real photographs (tools/paint.cjs: repeated Kuwahara, gentle banding, warm/violet split tone, soft ink line, paper grain). Originals and sources are in the other *media.json files.",
+ "images": [
+  {
+   "out": "paint/tile-algofet.webp",
+   "src": "research/img/algofet-AlgoPAD_with+Drone.jpg",
+   "maxW": 1300,
+   "passes": [
+    4,
+    3
+   ],
+   "ink": 0.4,
+   "levels": 9
+  },
+  {
+   "out": "paint/tile-strider.webp",
+   "src": "research/img/founders/strider-robotics-team.webp",
+   "maxW": 1300,
+   "passes": [
+    4,
+    3
+   ],
+   "ink": 0.4,
+   "levels": 9
+  },
+  {
+   "out": "paint/tile-astrome.webp",
+   "src": "research/img/founders/astrome-team.webp",
+   "maxW": 1300,
+   "passes": [
+    4,
+    3
+   ],
+   "ink": 0.4,
+   "levels": 9
+  },
+  {
+   "out": "paint/tile-yaanendriya.webp",
+   "src": "research/img/founders/yaanendriya-founders.jpg",
+   "maxW": 1300,
+   "passes": [
+    4,
+    3
+   ],
+   "ink": 0.4,
+   "levels": 9
+  },
+  {
+   "out": "paint/tile-flo.webp",
+   "src": "research/img/founders/flo-mobility-two-men-haulers.jpg",
+   "maxW": 1300,
+   "passes": [
+    4,
+    3
+   ],
+   "ink": 0.4,
+   "levels": 9
+  },
+  {
+   "out": "paint/tile-qosmic.webp",
+   "src": "../versions/v7/public/assets/v6/qosmic-mirror-hardware.jpg",
+   "maxW": 1300,
+   "passes": [
+    4,
+    3
+   ],
+   "ink": 0.4,
+   "levels": 9,
+   "crop": [
+    0,
+    0,
+    1080,
+    640
+   ]
+  },
+  {
+   "out": "paint/tile-algobotix.webp",
+   "src": "research/img/founders/algobotix-team1.jpg",
+   "maxW": 1300,
+   "passes": [
+    4,
+    3
+   ],
+   "ink": 0.4,
+   "levels": 9
+  },
+  {
+   "out": "paint/tile-sakar.webp",
+   "src": "research/img/founders/sakar-robotics-lisa.jpg",
+   "maxW": 1300,
+   "passes": [
+    4,
+    3
+   ],
+   "ink": 0.4,
+   "levels": 9
+  },
+  {
+   "out": "paint/tile-udot.webp",
+   "src": "research/img/founders/udot-students-cover.jpg",
+   "maxW": 1300,
+   "passes": [
+    4,
+    3
+   ],
+   "ink": 0.4,
+   "levels": 9
+  },
+  {
+   "out": "paint/slide-algofet.webp",
+   "src": "research/img/algofet-AlgoPAD_with+Drone.jpg",
+   "maxW": 1400,
+   "passes": [
+    4,
+    3
+   ],
+   "ink": 0.4,
+   "levels": 9
+  },
+  {
+   "out": "paint/slide-qosmic.webp",
+   "src": "research/img/qosmic-aloke-kumar.jpg",
+   "maxW": 1400,
+   "passes": [
+    4,
+    3
+   ],
+   "ink": 0.4,
+   "levels": 9
+  },
+  {
+   "out": "paint/slide-vaani.webp",
+   "src": "research/img/site/VJM-8.jpg",
+   "maxW": 1400,
+   "passes": [
+    4,
+    3
+   ],
+   "ink": 0.4,
+   "levels": 9
+  }
+ ]
+}

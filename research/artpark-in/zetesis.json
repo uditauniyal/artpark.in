@@ -1,0 +1,22 @@
+{
+  "url": "https://www.artpark.in/zetesis",
+  "status": 200,
+  "title": "Zetesis — ARTPARK @IISc - Leading AI & Robotics startup incubation",
+  "description": "",
+  "headings": [
+    "H2: ARTPARK @ IISc | Program",
+    "H3: Zetesis Lab: Decision Engineering for Physical Systems"
+  ],
+  "text": "Play\n00:00\n01:54\nMute\nSettings\nEnter fullscreen\n00:00\nARTPARK @ IISc | Program\nZetesis Lab: Decision Engineering for Physical Systems\n\nWe build verifiable, data-efficient AI that helps teams make high-stakes decisions when reality refuses to cooperate—factories, supply chains, and scientific instrumentation.\n\nResearch Collaborations\nIndustry Partnerships\n\nDeployed and validated in real systems: Industrial deployments and collaborations include Panasonic, Ather Energy, and research engage ments with DRDO and IIT Delhi (where permitted to disclose).\n\nDecision Engineering: AI that stays right when the world changes\n\nMost operational failures are not prediction failures—they are assumption failures. New configura tions, new suppliers, new constraints, new regulations: the world shifts, and brittle models collapse. Zetesis engineers decision systems that remain defensible under uncertainty and change.\n\nDecision Engineering (definition, business-safe)\n\nDecision Engineering means:\n\n• Mechanism-aware: we model cause-effect and structure, not just patterns.\n\n• Ignorance-aware: we separate what is known, what is plausible, and what is still unresolved.\n\n• Invariance-first: we optimize for decisions that remain valid as reality shifts and new informa tion arrives.\n\n• Verifiable-by-design: constraints and compliance logic are explicit; audits are built in where possible.\n\nWhat We Deliver\n\nInsight\n\nMake the decision structure legible—drivers, constraints, failure modes, and the assump tions your team is implicitly betting on.\n\nForecast\n\nProject outcomes under uncertainty—not a single number, but the decision-relevant range and the conditions that move it.\n\nSimulation\n\nRun interventions and stress-tests—“what if we change X?” “what breaks first?” “what keeps us compliant?”",
+  "links": [
+    [
+      "Research Collaborations",
+      "mailto:dhruv@zetesislabs.com ?"
+    ],
+    [
+      "Industry Partnerships",
+      "mailto:dhruv.gupta@artpark.in ?"
+    ]
+  ],
+  "images": []
+}

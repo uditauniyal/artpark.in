@@ -1,0 +1,48 @@
+{
+  "url": "https://www.artpark.in/industry5",
+  "status": 200,
+  "title": "Industry 5.0 — ARTPARK @IISc - Leading AI & Robotics startup incubation",
+  "description": "",
+  "headings": [
+    "H1: Industry 5.0",
+    "H3: Purpose-Driven Technology for Indian Industries",
+    "H2: AI for Economy",
+    "H2: The Layers of Our System",
+    "H3: The Architectural Stack",
+    "H3: Why this structure?",
+    "H3: The Connectivity Layer",
+    "H3: The Physical Workforce",
+    "H3: The Holistic Data Loop",
+    "H1: Programs for Industry 5.0",
+    "H3: CAMRAS Accelerator Program",
+    "H2: What Industry 5.0 Unlocks for Indian Manufacturing"
+  ],
+  "text": "Industry 5.0\nPurpose-Driven Technology for Indian Industries\n\nAI and automation for India's 1.6 million MSMEs — digital twins, agentic workflows, advanced robotics, and human-machine collaboration designed for how Indian manufacturing actually works.\n\nAI for Economy\n\nIndian MSMEs produce 45% of industrial output and 40% of exports, yet growth is constrained. Operational friction because of fragmented data, reactive decision-making, and manual oversight are costing the sector time, yield and global competitiveness.\n\nARTPARK's Industry 5.0 platform embeds AI directly into industrial workflows, building the operational intelligence layer needed by Indian manufacturers, making technology viable at the scale India actually needs. The goal is to build a sovereign industrial AI capability & automation that compounds with every deployment, and strengthens our global industrial presence.\n\nThe Layers of Our System\nThe Architectural Stack\n\nIndustry 5.0 is not just about robots; it's a vertical integration of physical action, hyper-fast connectivity, and cognitive intelligence. This map illustrates the three critical layers required to build a resilient, adaptive system.\n\nWhy this structure?\n\nIn Industry 4.0, these layers were often siloed. Industry 5.0 unifies them using Foundational Models as the interpreter between the layers.\n\nThe Cloud makes strategic decisions.\n\n5G/TSN ensures commands reach the floor instantly.\n\nCobots execute tasks safely alongside humans.\n\n5G Private Networks\n\nThe \"Wireless Wire\". Essential for mobile robots and drones that need high bandwidth and low latency without cables.\n\nThe Connectivity Layer\n\nReal-time AI requires real-time data. We compare the three dominant connectivity standards. 5G is essential for mobility (drones), while TSN (Wired) is non-negotiable for safety-critical microsecond synchronization.\n\nWi-Fi 7\n\nCost-effective for high-density sensor networks and non-critical data transfer (e.g., inventory tracking).\n\nThe Physical Workforce\n\nThe bottom layer is shifting from massive caged robots to agile, collaborative units. The chart displays the projected composition of the shop floor in a mature Industry 5.0 facility.\n\n40% Cobots\n\nWorking safely next to humans without cages.\n\n15%Drones\n\nInventory checks and maintenance inspection.\n\nThe Holistic Data Loop\n\n25% Mobile Manipulators\n\nArms on wheels (AMRs with hands).\n\nEthernet TSN\n\nDeterministic wired connection. The backbone for synchronized manufacturing where milliseconds matter.\n\nPrograms for Industry 5.0\nCAMRAS Accelerator Program\n\nCentre for Advanced Manufacturing for Robotics and Autonomous Systems\n\nA Rs. 78.4 Cr MHI-funded accelerator that has taken six teams from prototype-stage research through to funded, market-facing startups. Each is now contributing to India's deep-tech robotics ecosystem.\n\nWhat Industry 5.0 Unlocks for Indian Manufacturing\n\nThe combination of these five technology pillars addresses the structural constraints that have prevented Indian MSMEs from scaling effectively: high capital requirements, skill gaps, supply chain opacity, and dependence on imported systems.\n\nEnd-to-end technological sovereignty in Indian manufacturing\n\nScalable, low-capital technology adoption for MSMEs\n\nIntelligent and automated industrial operations\n\nAutomated end-to-end traceability of assets and materials\n\nHuman-centric and sustainable industrial transformation\n\nTechnology stacks that build toward humanoid-enabled operations",
+  "links": [],
+  "images": [
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/c0a276b2-2778-4395-85dc-99fce39be896/ai-robot-interacting-with-futuristic-data-interface.jpg?format=1500w",
+      "alt": "",
+      "w": 1440,
+      "h": 785
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/fd4fe292-b22a-46db-b0ad-79ded3c73c74/factory-with-large-machine-middle.jpg?format=1500w",
+      "alt": "",
+      "w": 1440,
+      "h": 822
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/85f809a1-54dc-451b-a185-8768d12e429f/ChatGPT+Image+Jun+10%2C+2026%2C+02_45_10+PM.png?format=500w",
+      "alt": "",
+      "w": 447,
+      "h": 670
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/8568cb36-9aab-475c-aa29-71d9af6b573c/ChatGPT+Image+Jun+10%2C+2026%2C+03_11_30+PM.png?format=1000w",
+      "alt": "",
+      "w": 825,
+      "h": 550
+    }
+  ]
+}

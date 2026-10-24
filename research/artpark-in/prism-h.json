@@ -1,0 +1,110 @@
+{
+  "url": "https://www.artpark.in/prism-h",
+  "status": 200,
+  "title": "PRISM-H — ARTPARK @IISc - Leading AI & Robotics startup incubation",
+  "description": "",
+  "headings": [
+    "H1: PRISM-H",
+    "H3: Platform for Research Integrated Surveillance and Management of Health",
+    "H3: Forecasting Outbreaks Before They Happen",
+    "H2: Numbers at Glance",
+    "H1: 70 M+",
+    "H4: Lives Touched",
+    "H1: 1.2M+",
+    "H4: Houses Surveyed",
+    "H1: 50k+",
+    "H4: Breeding Spots Identified",
+    "H1: 4 Weeks",
+    "H4: Forecast Lead Time",
+    "H1: How It Works",
+    "H2: Our Partners",
+    "H2: Our Programs",
+    "H4: The Bigger Picture",
+    "H2: Health and Climate Are Not Separate Problems.",
+    "H4: Climate shapes disease",
+    "H4: Heat stress compounds disease",
+    "H4: Animals signal human risk",
+    "H1: Want to Co-Innovate on Health or Climate AI?"
+  ],
+  "text": "PRISM-H\nPlatform for Research Integrated Surveillance and Management of Health\n\nOverview\n\nForecasting Outbreaks Before They Happen\n\nBy the time a dengue outbreak appears in case counts, the window to contain it has often passed. PRISM-H was built to change that. It integrates epidemiological trends, weather patterns, and environmental conditions to generate sub-district level outbreak forecasts up to four weeks ahead, giving health authorities the lead time to act before the first case spike, not after.\n\nFour Weeks of Lead Time: Four weeks is enough time to mobilise vector control teams, run community awareness campaigns, pre-position healthcare supplies, and prioritise high-risk localities. That is the difference between a response and a plan.\n\nOperational, Not a Pilot: PRISM-H is a live, deployed system in Karnataka, used by health authorities and policymakers to prioritise interventions and allocate resources in real time.\n\nBuilt to Adapt: The platform is pathogen-agnostic and geography-agnostic. It was designed to extend across diseases and states as implementation partnerships develop.\n\nOur Scale\n\nNumbers at Glance\n70 M+\nLives Touched\n1.2M+\nHouses Surveyed\n50k+\nBreeding Spots Identified\n4 Weeks\nForecast Lead Time\nHow It Works\n\n7-Day Forecast Window: Localised heat-stress predictions delivered up to seven days ahead, giving administrators and health officials meaningful lead time before conditions peak.\n\nSub-District Resolution: Granular enough to drive targeted action at the community level, moving beyond broad regional averages to risk intelligence that is specific and actionable.\n\nImpact-Based Methodology: Integrates biometeorological heat stress indicators, epidemiological evidence, and physiological thresholds to translate temperature into health risk for specific populations.\n\nBuilt With Implementation Partners Developed and deployed in collaboration with KSNDMC, KSDMA, the Department of Health (NPCCHH), CAOS IISc, IMD, and the Disaster Management Authority.\n\nOur Partners\nOur Programs\n\nHeatwaves + health risk prediction\n\nEnvironmental surveillance\n\nLivestock disease vaccination strategy\n\nDengue outbreak prediction\n\nThe Bigger Picture\nHealth and Climate Are Not Separate Problems.\n\nDengue is a climate-sensitive disease. Heat stress exacerbates chronic conditions. Livestock diseases affect food security and rural livelihoods. These health and climate risks collectively add to the economic burden on individuals and the public health sector in India.\n\nARTPARK's work in this space is designed to treat them as a single, interconnected system, and build strategies and solutions accordingly.\n\nClimate shapes disease\nHeat stress compounds disease\nAnimals signal human risk\nWant to Co-Innovate on Health or Climate AI?\n\nARTPARK works with governments, research institutions, and partners building surveillance and predictive systems for India's climate and public health challenges.\n\nTalk To The Team",
+  "links": [
+    [
+      "Talk To The Team",
+      "https://www.artpark.in/prism-h"
+    ]
+  ],
+  "images": [
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/4e9fd1a0-0e22-45fb-b487-b3a37d5301db/dengue+outbreak.webp?format=1500w",
+      "alt": "",
+      "w": 730,
+      "h": 584
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/f7c8788b-1e1b-492a-8b1c-137c7bd23c38/high-angle-pie-chart-with-desert-waterfall+%281%29.jpg?format=500w",
+      "alt": "",
+      "w": 387,
+      "h": 257
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/f7b65829-3b23-4e0b-b62a-250697e76e1f/icmr.png?format=300w",
+      "alt": "",
+      "w": 216,
+      "h": 95
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/6fc19c58-996c-40e5-9a4d-42ede9973873/MSSRF+llogo.png?format=300w",
+      "alt": "",
+      "w": 109,
+      "h": 109
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/86476f2f-e974-4473-9e86-f25b50ccee57/caoslogo.png?format=300w",
+      "alt": "",
+      "w": 126,
+      "h": 109
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/124dc7b8-7c36-489d-aa88-83a47bf102d4/ICHP+IISc.jpg?format=300w",
+      "alt": "",
+      "w": 104,
+      "h": 108
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/b1f48447-be5e-482a-b5ee-9adab36738cb/KSNDMC+Logo.jpeg?format=300w",
+      "alt": "",
+      "w": 81,
+      "h": 81
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/d32321ff-6440-4556-b557-458726607c98/NPCCHH+logo.jpg?format=300w",
+      "alt": "",
+      "w": 216,
+      "h": 108
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/caa900bf-8352-4fb3-a3bd-e331c770202d/heatwave+%2B+helath+risk+.webp?format=500w",
+      "alt": "",
+      "w": 414,
+      "h": 310
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/9e6c166c-f446-4fda-ab97-e7420ae86b78/Environmental+Surveillance.webp?format=500w",
+      "alt": "",
+      "w": 387,
+      "h": 310
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/56ce8d41-1652-498a-9f87-ab0e86cf1e5f/livestock+vaccination.webp?format=500w",
+      "alt": "",
+      "w": 387,
+      "h": 309
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/4e9fd1a0-0e22-45fb-b487-b3a37d5301db/dengue+outbreak.webp?format=500w",
+      "alt": "",
+      "w": 387,
+      "h": 309
+    }
+  ]
+}

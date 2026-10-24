@@ -1,0 +1,135 @@
+{
+  "url": "https://www.artpark.in/health-initiatives/climate-health",
+  "status": 200,
+  "title": "Heatwaves + Health Risk Prediction — ARTPARK @IISc - Leading AI & Robotics startup incubation",
+  "description": " AI-Powered Localized Risk Forecasting Systems for Climate Change and Human Health ",
+  "headings": [
+    "H1: Heatwaves + Health Risk Prediction",
+    "H3: AI-Powered Localized Risk Forecasting Systems for Climate Change and Human Health",
+    "H3: Recognition",
+    "H3: Understanding the Problem",
+    "H3: Designing the Solution",
+    "H3: Key Features",
+    "H3: Implementation & Deployment",
+    "H3: Team",
+    "H3: Partners",
+    "H2: Environmental Surveillance Technology Platform",
+    "H2: Livestock Disease Vaccination Strategy"
+  ],
+  "text": "Heatwaves + Health Risk Prediction\nAI-Powered Localized Risk Forecasting Systems for Climate Change and Human Health\n\nClimate change-related extreme weather events are increasing globally. In India, these occurrences severely impact public health, where locally relevant forecasts that factor in the effect of weather and climate conditions on health are not available.\n\nStarting with extreme heat, ARTPARK is developing a deep-learning-based hyperlocal (locally relevant) risk forecasting system to assist decision-makers and heat-sensitive populations by integrating health data and evidence-based insights on heat-related impacts. The forecasting is aimed at enhancing the capacity to anticipate and prevent heat-related health threats, providing forecasts at sub-district levels with up to 10 days of lead time.\n\nJump to:\n\nRecognition\n\nUnderstanding the Problem\n\nDesigning the Solution + Key Features\n\nImplementation\n\nTeam & Partners\n\nRecognition\n\nSupport from regional and national meteorology bodies including India Meteorological Department (IMD), Indian Institute of Tropical Meteorology (IITM) Pune, Karnataka State Natural Disaster Monitoring Centre (KSNDMC) and Department of Health and Family Welfare, Government of Karnataka.\n\nCommitment for grant support through Grand Challenges India under the Department of Biotechnology - Biotechnology Industry Research Assistance Council (DBT-BIRAC) as well as support from ARTPARK funders for initiatives aimed at addressing climate-related health challenges.\n\nPartnerships with leading health and community-focussed institutions to establish sentinel sites across geographies, enabling us to generate comprehensive evidence that will enhance our initiatives.\n\nUnderstanding the Problem\n\nIndia is expected to experience high exposure to climate change-induced extreme heat events in the near future, which may contribute to heightened risks of heat-related health impacts and economic burdens. While existing forecasting systems provide valuable insights, they are limited to a 1-week horizon and operate at near-district levels.\n\nIn addition, the current definition of a heat wave is limited to temperature thresholds, and other meteorological parameters such as humidity, wind speed, unusual temperatures, and night temperature must also be considered to better understand heat-related discomfort. Other factors, such as acclimatization, social and demographic factors, and, importantly, health, are also overlooked.\n\nThe lack of integration of these diverse elements, which provide additional information and lead time, results in a gap in actionable risk guidance for decision-makers and heat-sensitive populations.\n\nDesigning the Solution\n\nWe are developing a deep-learning based heat-health warning system that will advance forecasting capabilities up to sub-district levels and extend the forecast period up to 10 days. In addition to incorporating other meteorological parameters, this risk forecasting will introduce health and socio-demographic parameters into the heat index that inform health systems, disaster management bodies and communities at large.\n\nThis pioneering initiative aims not only to integrate risk forecasting into existing communication channels but also to utilise innovative conversational AI tools in vernacular languages.\n\nEventually, we intend to enable building epidemiological models to predict heat-related health risks in diverse communities and occupations.\n\nAs part of our translational research efforts, this solution is designed to benefit the weather service agencies such as India Meteorological Department (IMD), Indian Institute of Tropical Meteorology (IITM), Karnataka State Natural Disaster Monitoring Centre (KSNDMC), as well as research communities engaged in weather and climate-related initiatives, and public health initiatives, including epidemiological modelling.\n\nKey Features\n\nAI-driven localised, context-specific threshold-based forecasts and extended lead-times\n\nRe-assess and adapt the heat index for the Indian context\n\nGenerate evidence through robust secondary and primary data collection through partners to inform models\n\nIntegration of health and social vulnerability data to AI-powered heat forecasts\n\nActionable, guidance-driven risk communication for decision-makers and communities\n\nImplementation & Deployment\n\nWe plan to commence the work in the state of Karnataka by leveraging historical and weather station data from India Meteorological Department (IMD) and Karnataka State Natural Disaster Monitoring Centre (KSNDMC). Our objective is to build deep learning-based models to predict heat events at the sub-district level up to 10 days in advance. We will progressively introduce various meteorological parameters, as well as health and social factors, into these models.\n\nWith augmented scope, we intend to expand our geography to produce heat event forecasts in Karnataka and Tamil Nadu. We also plan to leverage rigorous health facility and community-based evidence from sentinel sites established in these states through our partners to inform our models and enhance risk communication.\n\nTeam\n\nARTPARK\n\nDr Vybhav G R\n\nHarish Nalawade\n\nRohit Satish\n\nDr Bhaskar Rajakumar\n\nRaghu Dharmaraju\n\nProf Vijay Chandru\n\nAishwarya Ramamurthy\n\nIndian Institute of Science\n\nProf Ravi Nanjundaiah\n\nProf Prabhdeep Kaur\n\nIndia Meteorology Department\n\nDr Rajib Chattopadhyay\n\nLekshmi S\n\nPartners\n\nCentre for Atmospheric and Oceanic Sciences, Indian Institute of Science\n\nIsaac Centre for Public Health, Indian Institute of Science\n\nIndia Meteorology Department, Pune\n\nDepartment of Health & Family Welfare, Government of Karnataka\n\nKarnataka State Natural Disaster Monitoring Centre, Government of Karnataka\n\nMS Swaminathan Research Foundation\n\nPrevious\nEnvironmental Surveillance Technology Platform\nNext\nLivestock Disease Vaccination Strategy",
+  "links": [
+    [
+      "SYSTEMS RESILIENCE",
+      "https://www.artpark.in/health-initiatives/category/SYSTEMS%20RESILIENCE"
+    ],
+    [
+      "ARTPARK",
+      "https://www.artpark.in/health-initiatives?author=664c605f0943754edc40be2e"
+    ],
+    [
+      "Recognition",
+      "https://www.artpark.in/health-initiatives/climate-health/#recognition"
+    ],
+    [
+      "Understanding the Problem",
+      "https://www.artpark.in/health-initiatives/climate-health/#problem"
+    ],
+    [
+      "Designing the Solution + Key Features",
+      "https://www.artpark.in/health-initiatives/climate-health/#solution-design"
+    ],
+    [
+      "Implementation",
+      "https://www.artpark.in/health-iniatives/climate-health/#implementation"
+    ],
+    [
+      "Team & Partners",
+      "https://www.artpark.in/health-initiatives/climate-health/#team-partners"
+    ],
+    [
+      "Dr Vybhav G R",
+      "https://www.linkedin.com/in/vybhav-g-r-95a263253/"
+    ],
+    [
+      "Harish Nalawade",
+      "https://www.linkedin.com/in/harishnalawade/"
+    ],
+    [
+      "Rohit Satish",
+      "https://www.linkedin.com/in/rohitsatish/"
+    ],
+    [
+      "Dr Bhaskar Rajakumar",
+      "https://www.linkedin.com/in/drbhaskar/"
+    ],
+    [
+      "Raghu Dharmaraju",
+      "https://www.linkedin.com/in/raghuramd/"
+    ],
+    [
+      "Prof Vijay Chandru",
+      "https://www.linkedin.com/in/vijaychandru/"
+    ],
+    [
+      "Aishwarya Ramamurthy",
+      "https://www.linkedin.com/in/aishwarya-ramamurthy/"
+    ],
+    [
+      "Prof Ravi Nanjundaiah",
+      "https://www.linkedin.com/in/ravi-nanjundiah-a5690014/"
+    ],
+    [
+      "Prof Prabhdeep Kaur",
+      "https://www.linkedin.com/in/prabhdeep-kaur-39463673/"
+    ],
+    [
+      "Dr Rajib Chattopadhyay",
+      "https://www.linkedin.com/in/rajib-chattopadhyay-5276641b4/"
+    ],
+    [
+      "Lekshmi S",
+      "https://www.linkedin.com/in/lekshmi-s-15826b267/"
+    ],
+    [
+      "Centre for Atmospheric and Oceanic Sciences",
+      "https://caos.iisc.ac.in/"
+    ],
+    [
+      "Isaac Centre for Public Health",
+      "https://www.ajitisaacfoundation.com/isaac-centre-for-public-health-nurturing-public-health-excellence/"
+    ],
+    [
+      "India Meteorology Department, Pune",
+      "https://www.imdpune.gov.in/"
+    ],
+    [
+      "Department of Health & Family Welfare, Government of Karnataka",
+      "https://healthsecretariat.karnataka.gov.in/english"
+    ],
+    [
+      "Karnataka State Natural Disaster Monitoring Centre",
+      "https://ksdma.karnataka.gov.in/english"
+    ],
+    [
+      "MS Swaminathan Research Foundation",
+      "https://www.mssrf.org/"
+    ],
+    [
+      "ARTPARK",
+      "https://www.artpark.in/health-initiatives?author=664c605f0943754edc40be2e"
+    ],
+    [
+      "https://artpark.in/",
+      "https://artpark.in/"
+    ],
+    [
+      "Previous Environmental Surveillance Technology Platform",
+      "https://www.artpark.in/health-initiatives/environmental-survelliance"
+    ],
+    [
+      "Next Livestock Disease Vaccination Strategy",
+      "https://www.artpark.in/health-initiatives/livestock-modelling"
+    ]
+  ],
+  "images": []
+}

@@ -1,0 +1,202 @@
+{
+  "url": "https://www.artpark.in/programs/coe-wwt1",
+  "status": 200,
+  "title": "Wired & Wireless Technology — ARTPARK @IISc - Leading AI & Robotics startup incubation",
+  "description": "The Center of Excellence - Wired & Wireless Technologies (CoE-WWT) is established through seed funding by Govt. of Karnataka to foster cutting-edge, market-ready solutions with the potential for societal scale impact.",
+  "headings": [
+    "H1: Center of Excellence: \nWired & Wireless Technologies",
+    "H1: Core Activities",
+    "H3: 5G Test Lab",
+    "H3: Research and Innovation Clusters",
+    "H3: Skilling & Events",
+    "H1: Research & Innovation Clusters",
+    "H3: 5G Enabled Multi-Drones and UGVs",
+    "H3: Advanced 5G and AI Use Cases",
+    "H3: 5G Enabled Medical Emergency Care Ecosystem",
+    "H3: InterSafe 5G for Enhanced Road Safety",
+    "H1: University Projects",
+    "H4: Innovation Programs 2024-25",
+    "H4: Research Programs 2024-25",
+    "H1: Skilling",
+    "H2: Workshops, Hackathons, Industry Events",
+    "H1: Archive",
+    "H1: Partners",
+    "H2: Open Roles\nCoE: Wired & Wireless Technologies",
+    "H2: Connect with us"
+  ],
+  "text": "Center of Excellence:\nWired & Wireless Technologies\n\nAccelerating market-ready solutions in next-gen communications & AI\n\nThe Center of Excellence - Wired & Wireless Technologies (CoE-WWT) is established through seed funding by Govt. of Karnataka to foster cutting-edge, market-ready solutions with the potential for societal scale impact.\n\nNetwork technologies such as 5G play a critical role in the development of deep-tech and AI-based innovations, which require advanced communication technologies capable of faster, seamless exchanges of data. Recognising the need to nurture new use cases for such technologies, the Government of India announced a mandate to promote widespread commercial deployment of 5G through 100 labs across the country.\n\nARTPARK’s dynamic ecosystem in Karnataka enables us to connect and collaborate with leading academic researchers and students, startups, and industry players. Located at our state-of-the-art ARTgarage facility, the CoE-WWT offers a fruitful environment for innovation in next-gen communications and AI across sectors such as Manufacturing, Logistics, Retail, Agriculture and Health.\n\nDownload Brochure\nCore Activities\n5G Test Lab\nResearch and Innovation Clusters\nSkilling & Events\nResearch & Innovation Clusters\n5G Enabled Multi-Drones and UGVs\n\nARTPARK's multi-UAV and UGV platform demonstrates what becomes possible when autonomous aerial and ground vehicles operate within a robust 5G-connected network. The system enables real-time video streaming with simultaneous multi-application processing, delivering high-fidelity footage with seamless cloud integration — all while extending mission time without compromise. Critically, the platform supports Beyond Visual Line-of-Sight (BVLOS) drone operations in complex urban environments, backed by reliable 5G connectivity that ensures real-time responsiveness even at the edges of coverage. Underpinning it all is a reference architecture for Drone Corridor Management and 5G network design — laying the foundation for scalable, safe, and intelligent drone operations in the real world.\n\nAdvanced 5G and AI Use Cases\n\nXR-Assisted Facility Tour\n\nA visitor wearing an XR headset walks through a facility. Cameras capture live video, streamed over 5G to a Mobile Edge Compute Server where AI algorithms detect objects, people, and locations in real time. Results are instantly overlaid on the headset as Augmented Reality — turning a facility walk into an intelligent, context-rich experience.\n\nBuilt on low-latency 5G streaming, YOLO object detection, and Unity + OpenXR.\n\nIoT Sensors Integration for Smart Agriculture\n\nA network of sensors measuring light, temperature, humidity, water quality, and soil nutrients feeds data through an ESP32 board and Raspberry Pi, transmitted over 5G to a Mobile Edge Compute Server. Machine learning algorithms process the data in real time, generating recommendations on crops, fertilizers, and pesticides — visualised instantly on a live dashboard.\n\nBringing precision farming to life through 5G-connected IoT and edge AI.\n\n5G Enabled Medical Emergency Care Ecosystem\n\nIn India, over 4 lakh cardiac arrests occur outside hospitals every year. Fewer than 10% receive timely CPR or defibrillation — and every minute of delay means a 10% drop in survival. LifeCircuit is built to change that.\n\nWhen an SOS alert is triggered — via WhatsApp, a dedicated app, or a direct alert — LifeCircuit's platform activates a network of trained first responders in the vicinity, locates the nearest AED (Automated External Defibrillator), and coordinates ambulance and hospital alerts simultaneously. First responders are guided to the scene in real time, supported by video triage and AR-assisted CPR guidance, while hospitals are put on standby before the patient even arrives.\n\nBuilt on AR/VR training, IoT vitals monitoring, geolocation, AI-driven response coordination, smart wearables, and 5G connectivity — LifeCircuit compresses the gap between a cardiac emergency and effective care to the smallest window possible.\n\nBecause in a cardiac arrest, every second is the difference.\n\nInterSafe 5G for Enhanced Road Safety\n\nRoad accidents often come down to milliseconds and the difference between a warning and a tragedy is how fast information travels. InterSafe is ARTPARK's 5G-powered road safety system that puts real-time hazard detection and alerts directly in the hands of drivers and road users.\n\nRoadside units equipped with video cameras, radar, and IoT sensors continuously monitor traffic conditions. AI algorithms analyse live video streams and sensor data to detect and classify hazards instantly. This intelligence is processed at the edge — with low latency - and transmitted over 5G through a cellular network, delivering hazard warnings to vehicles on major roads and personal alerts via smartphone, in real time.\n\nThe system operates on an Infrastructure-to-Network-to-Person (I2N2P) model — connecting roadside infrastructure to the cellular network to the individual road user, seamlessly and at speed.\n\nBuilt on IoT sensors, AI-driven computer vision, Mobile Edge Computing, and 5G connectivity - InterSafe brings the infrastructure for safer roads closer to reality.\n\nUniversity Projects\nInnovation Programs 2024-25\n\nBuilding Integrated Photonic Transceiver for Indoor Li-Fi Communication\nIISc / Varun Raghunathan\n\nAutomated E-waste Segregation and Treatment with AI and Robotics\nRVCE / H R Aneesh Tejas\n\nResearch Programs 2024-25\n\nData Dissemination and Resource Optimization in Post-Disaster Scenarios using Hybrid 5G-Mobile Adhoc Networks (5G-MANETs)\nIIIT-Dharwad / Animesh Roy\n\nSimulating the Robust Quantum-Secure Internet for a Quantum Connected World\nIIIT-Dharwad / Aswath Babu H\n\nSmart Crop Management System Enabled by 5G Drone Surveillance and Digital Twin Technology for Enhanced Precision Agriculture\nIIIT-Dharwad / Prakash Pawar\n\nCOCO-WiNETs: Control Of and Control Over Wireless NET works for Industrial Cyber-Physical Systems\nIISc / Anurag Kumar\n\nCapacity Maximization and Energy Minimization of RIS-assisted UAV-enabled NOMA Wireless Networks\nMIT / Harini G S\n\nSkilling\nWorkshops, Hackathons, Industry Events\n\nWatch this space for upcoming workshops, hackathons and events.\n\nArchive\n\nTutorial on 5G Essentials | Complete Playlist\n\nIndia’s First 5G Enabled Drone Corridor\n\nInside India's 5G Test Lab at ARTPARK\n\nBuilding India's 5G Future with Drones, Robots & Industrial AI\n\nPartners\n\n(MOU discussions in progress)\n\nOpen Roles\nCoE: Wired & Wireless Technologies\n\nThere are no open roles at the moment\n\nConnect with us\n\nWe invite all 5G enthusiasts, startups, SMEs and industry associations working with 5G technologies to connect with us.\n\nwwtcoe@artpark.in\n\nName\nFirst Name\n(required)\nLast Name\n(required)\nEmail\n(required)\nSign up for news and updates\nPhone\nCountry\nAfghanistan\nÅland Islands\nAlbania\nAlgeria\nAmerican Samoa\nAndorra\nAngola\nAnguilla\nAntigua & Barbuda\nArgentina\nArmenia\nAruba\nAscension Island\nAustralia\nAustria\nAzerbaijan\nBahamas\nBahrain\nBangladesh\nBarbados\nBelarus\nBelgium\nBelize\nBenin\nBermuda\nBhutan\nBolivia\nBosnia & Herzegovina\nBotswana\nBrazil\nBritish Indian Ocean Territory\nBritish Virgin Islands\nBrunei\nBulgaria\nBurkina Faso\nBurundi\nCambodia\nCameroon\nCanada\nCape Verde\nCaribbean Netherlands\nCayman Islands\nCentral African Republic\nChad\nChile\nChina\nChristmas Island\nCocos (Keeling) Islands\nColombia\nComoros\nCongo - Brazzaville\nCongo - Kinshasa\nCook Islands\nCosta Rica\nCôte d’Ivoire\nCroatia\nCuba\nCuraçao\nCyprus\nCzechia\nDenmark\nDjibouti\nDominica\nDominican Republic\nEcuador\nEgypt\nEl Salvador\nEquatorial Guinea\nEritrea\nEstonia\nEswatini\nEthiopia\nFalkland Islands\nFaroe Islands\nFiji\nFinland\nFrance\nFrench Guiana\nFrench Polynesia\nGabon\nGambia\nGeorgia\nGermany\nGhana\nGibraltar\nGreece\nGreenland\nGrenada\nGuadeloupe\nGuam\nGuatemala\nGuernsey\nGuinea\nGuinea-Bissau\nGuyana\nHaiti\nHonduras\nHong Kong SAR China\nHungary\nIceland\nIndia\nIndonesia\nIran\nIraq\nIreland\nIsle of Man\nIsrael\nItaly\nJamaica\nJapan\nJersey\nJordan\nKazakhstan\nKenya\nKiribati\nKosovo\nKuwait\nKyrgyzstan\nLaos\nLatvia\nLebanon\nLesotho\nLiberia\nLibya\nLiechtenstein\nLithuania\nLuxembourg\nMacao SAR China\nMadagascar\nMalawi\nMalaysia\nMaldives\nMali\nMalta\nMarshall Islands\nMartinique\nMauritania\nMauritius\nMayotte\nMexico\nMicronesia\nMoldova\nMonaco\nMongolia\nMontenegro\nMontserrat\nMorocco\nMozambique\nMyanmar (Burma)\nNamibia\nNauru\nNepal\nNetherlands\nNew Caledonia\nNew Zealand\nNicaragua\nNiger\nNigeria\nNiue\nNorfolk Island\nNorth Korea\nNorth Macedonia\nNorthern Mariana Islands\nNorway\nOman\nPakistan\nPalau\nPalestinian Territories\nPanama\nPapua New Guinea\nParaguay\nPeru\nPhilippines\nPoland\nPortugal\nPuerto Rico\nQatar\nRéunion\nRomania\nRussia\nRwanda\nSamoa\nSan Marino\nSão Tomé & Príncipe\nSaudi Arabia\nSenegal\nSerbia\nSeychelles\nSierra Leone\nSingapore\nSint Maarten\nSlovakia\nSlovenia\nSolomon Islands\nSomalia\nSouth Africa\nSouth Korea\nSouth Sudan\nSpain\nSri Lanka\nSt. Barthélemy\nSt. Helena\nSt. Kitts & Nevis\nSt. Lucia\nSt. Martin\nSt. Pierre & Miquelon\nSt. Vincent & Grenadines\nSudan\nSuriname\nSvalbard & Jan Mayen\nSweden\nSwitzerland\nSyria\nTaiwan\nTajikistan\nTanzania\nThailand\nTimor-Leste\nTogo\nTokelau\nTonga\nTrinidad & Tobago\nTristan da Cunha\nTunisia\nTürkiye\nTurkmenistan\nTurks & Caicos Islands\nTuvalu\nU.S. Virgin Islands\nUganda\nUkraine\nUnited Arab Emirates\nUnited Kingdom\nUnited States\nUruguay\nUzbekistan\nVanuatu\nVatican City\nVenezuela\nVietnam\nWallis & Futuna\nWestern Sahara\nYemen\nZambia\nZimbabwe\nNumber\n+91\nOrganisation\n(required)\nI represent\n(required)\nSelect an option\nStartup\nSME\nIndustry\nIndustry Association\nService Provider\nResearch Organisation\nAcademic Institution\nIndividual\nOther\nMessage\n(required)\nSubmit",
+  "links": [
+    [
+      "ARTgarage",
+      "https://www.artpark.in/artgarage"
+    ],
+    [
+      "Download Brochure",
+      "https://drive.google.com/file/d/1zjHNqWUMsd3gJnGnK6VGC5HLJprjserG/view"
+    ],
+    [
+      "5G Test Lab",
+      "https://www.artpark.in/5g-test-lab-wwt-1"
+    ],
+    [
+      "IISc",
+      "https://iisc.ac.in/"
+    ],
+    [
+      "Varun Raghunathan",
+      "https://eecs.iisc.ac.in/people/varun-raghunathan/"
+    ],
+    [
+      "RVCE",
+      "https://www.rvce.edu.in/"
+    ],
+    [
+      "H R Aneesh Tejas",
+      "https://in.linkedin.com/in/h-r-aneesh-tejas-97a605309"
+    ],
+    [
+      "IIIT-Dharwad",
+      "https://iiitdwd.ac.in/"
+    ],
+    [
+      "Animesh Roy",
+      "https://in.linkedin.com/in/animesh-roy-41b460166"
+    ],
+    [
+      "IIIT-Dharwad",
+      "https://iiitdwd.ac.in/"
+    ],
+    [
+      "Aswath Babu H",
+      "https://iiitdwd.irins.org/profile/102760"
+    ],
+    [
+      "IIIT-Dharwad",
+      "https://iiitdwd.ac.in/"
+    ],
+    [
+      "Prakash Pawar",
+      "https://in.linkedin.com/in/dr-prakash-pawar-78224356"
+    ],
+    [
+      "IISc",
+      "https://iisc.ac.in/"
+    ],
+    [
+      "Anurag Kumar",
+      "https://in.linkedin.com/in/anurag-kumar-9a7a7558"
+    ],
+    [
+      "MIT",
+      "https://www.manipal.edu/mu/campuses/mahe-bengaluru/academics/institution-list/mitblr.html"
+    ],
+    [
+      "Harini G S",
+      "https://www.manipal.edu/mu/campuses/mahe-bengaluru/academics/institution-list/dpp/department-faculty/faculty-list/dr.harini.santhanam.html"
+    ]
+  ],
+  "images": [
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/f798f45a-89eb-40c3-a84f-3205643abcf0/5g.jpg?format=1500w",
+      "alt": "",
+      "w": 1440,
+      "h": 706
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/eb450325-df16-4f75-98d4-0231bcee6bdd/ktech+logo.png?format=1500w",
+      "alt": "",
+      "w": 1421,
+      "h": 349
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/33ef3f06-d70b-49c2-a916-5d61e73e8acd/startup+karnataka.png?format=1500w",
+      "alt": "",
+      "w": 520,
+      "h": 115
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/f6872a43-4752-4b42-9dc9-2082044cf835/WhatsApp+Image+2026-05-13+at+14.39.57.jpeg?format=300w",
+      "alt": "",
+      "w": 216,
+      "h": 48
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/98a7dfef-2b75-4879-83d3-2fa6a436243a/drone+corridor?format=300w",
+      "alt": "",
+      "w": 216,
+      "h": 121
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/a1b6025e-9792-480c-b48d-70d5fb526be6/DSC01456.jpg?format=300w",
+      "alt": "",
+      "w": 216,
+      "h": 120
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/999f2ad0-aa07-48db-a47c-0bdf522dfafe/Screenshot+2026-05-12+at+12.09.58%E2%80%AFPM.png?format=750w",
+      "alt": "",
+      "w": 614,
+      "h": 293
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/67d930a1-6005-4414-a749-efcd12d85b30/Screenshot+2026-05-12+at+12.38.08%E2%80%AFPM.png?format=750w",
+      "alt": "",
+      "w": 507,
+      "h": 376
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/eaaaaa30-41f6-4fd6-be4f-c6d1cd19740c/Screenshot+2026-05-12+at+12.42.53%E2%80%AFPM.png?format=750w",
+      "alt": "",
+      "w": 614,
+      "h": 320
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/73983b60-d987-4969-ab3a-b9319e62af01/Airtel-logo.png?format=300w",
+      "alt": "",
+      "w": 216,
+      "h": 121
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/50cd412e-e8c3-4c89-b7b5-d5b65513f567/algo-botix.jpeg?format=300w",
+      "alt": "",
+      "w": 99,
+      "h": 99
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/fdaa01d0-3503-4a88-ab34-fb2fe042e5c6/niral.png?format=300w",
+      "alt": "",
+      "w": 216,
+      "h": 121
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/19646e04-5942-45e3-9c1c-cf192d6d9458/resonous-logo.png?format=300w",
+      "alt": "",
+      "w": 216,
+      "h": 58
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/6e7d3ff9-bc5a-495c-b3c1-6861f78e16f1/edge-q-logo.png?format=300w",
+      "alt": "",
+      "w": 216,
+      "h": 68
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/cbfa9a71-fe1b-4f05-8ba1-13e7dc209f5f/VaydynLogo.png?format=300w",
+      "alt": "",
+      "w": 216,
+      "h": 50
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/40eb4ea8-cb12-43e9-ab99-090d2be6a9ca/COMRADO+Aerospace.jpg?format=300w",
+      "alt": "",
+      "w": 216,
+      "h": 108
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/f70a54e6-a66d-422c-9f68-0ce80fa9f1b0/ios-mcn.jpg?format=300w",
+      "alt": "",
+      "w": 133,
+      "h": 123
+    }
+  ]
+}

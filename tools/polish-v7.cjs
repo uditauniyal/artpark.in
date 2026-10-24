@@ -1,1 +1,0 @@
-const fs=require('node:fs'),path=require('node:path');const file=path.join(__dirname,'v7.cjs');let s=fs.readFileSync(file,'utf8');s=s.replace(/title:'([^']*)'/g,(_,t)=>"title:'"+t.replaceAll('<br>',' <br>')+"'");fs.writeFileSync(file,s);console.log('Retained word spacing when company titles wrap on mobile.');

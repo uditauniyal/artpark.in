@@ -1,0 +1,37 @@
+/* ============================================================
+   Large screens: his layout was drawn for ~1440px. On wider screens scale the whole page
+   proportionally (text, logos, spacing) instead of leaving a small column in the middle.
+   ============================================================ */
+@media (min-width: 1560px) { body { zoom: 1.1; } }
+@media (min-width: 1760px) { body { zoom: 1.2; } }
+@media (min-width: 2200px) { body { zoom: 1.35; } }
+
+/* Logos: bigger and in full colour wherever they identify a company. */
+.site-logo img { width: 232px !important; }
+@media (max-width: 960px) { .site-header-row .site-logo img { width: 196px !important; } }
+@media (max-width: 600px) { .site-header-row .site-logo img { width: 176px !important; } }
+.footer-lockup { height: 52px !important; }
+.also-chip { padding: 6px 14px 6px 8px; font-size: 14px; }
+.also-chip img { height: 30px; width: 46px; }
+.fs-logo { height: 46px !important; max-width: 200px; }
+.fs-pick { height: 76px; filter: none; opacity: .72; }
+.fs-pick img { max-height: 42px; }
+.fs-pick:hover, .fs-pick.is-on { opacity: 1; }
+.rail-logo { height: 36px; }
+.pf-card > div:first-child { height: 96px !important; }
+.pf-card > div:first-child img { max-height: 70px !important; max-width: 86% !important; }
+
+/* Small print that read too small: lift the floor. */
+.stat-l { font-size: 15px; }
+.eyebrow, .eyebrow-rule { font-size: 12px; }
+.trl-step span:last-child, .icon-card p, .model-card p, .work-card p { font-size: 16px !important; }
+.fs-who { font-size: 16px; }
+.fs-who b { font-size: 18px; }
+
+/* Story carousel: each story's headline figure (borrowed from V7's chapter design). */
+.slide-metric { display: flex; align-items: baseline; gap: 14px; margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--line); }
+.slide-metric b { font-family: var(--font-display); font-weight: 700; font-size: clamp(40px, 4.4vw, 60px); line-height: 1; color: var(--artblue); font-variant-numeric: tabular-nums; }
+.slide-metric span { font-size: 15px; line-height: 1.45; color: var(--ink-soft); max-width: 260px; }
+
+/* Carousel counter sits on the photo: give it a light pill so it stays readable. */
+[data-carousel] [data-count] { padding: 6px 12px; border-radius: 999px; background: rgba(255,255,255,.92); color: var(--ink) !important; font-variant-numeric: tabular-nums; }

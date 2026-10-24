@@ -1,0 +1,72 @@
+{
+  "url": "https://www.artpark.in/language/syspin",
+  "status": 200,
+  "title": "SYSPIN — ARTPARK @IISc - Leading AI & Robotics startup incubation",
+  "description": "",
+  "headings": [
+    "H2: SYSPIN",
+    "H1: India’s Comprehensive Open-Source Text-to-Speech (TTS) Corpus",
+    "H2: Language Programs",
+    "H3: Vaani",
+    "H3: RESPIN",
+    "H3: SYSPIN",
+    "H1: Our Partners"
+  ],
+  "text": "SYSPIN\nIndia’s Comprehensive Open-Source Text-to-Speech (TTS) Corpus\n\nText-to-speech synthesizers across 9 Indian languages, enabling voice-based AI applications for communities whose languages have been digitally invisible. The building blocks for inclusive voice interfaces in health, education, and governance.\n\nLanguages\n9 Indian languages\n\nOutput\nText-to-speech synthesis models\n\nContact Us\n\nUse Cases\nVoice interfaces, accessibility tools, public AI systems\n\nLanguage Programs\nVaani\nLearn More\n\nIndia's Largest Open-Source Speech Dataset\n\nRESPIN\nLearn More\n\nRecognising Speech in Indian Languages\n\nSYSPIN\nLearn More\n\nSynthesising Speech in Indian Languages\n\nOur Partners",
+  "links": [
+    [
+      "Contact Us",
+      "mailto:contact.syspin@iisc.ac.in?"
+    ],
+    [
+      "Learn More",
+      "https://www.artpark.in/language/vaani"
+    ],
+    [
+      "Learn More",
+      "https://www.artpark.in/language/respin"
+    ],
+    [
+      "Learn More",
+      "https://www.artpark.in/language/syspin"
+    ]
+  ],
+  "images": [
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/a785c62e-1ce3-45f3-81e5-d02a64c7d50d/7806.jpg?format=1500w",
+      "alt": "",
+      "w": 1440,
+      "h": 900
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/aec96e24-7e3e-4add-b91f-00dd1672ae88/SYSPIN.png?format=1500w",
+      "alt": "",
+      "w": 89,
+      "h": 25
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/f6ada7ca-dbac-425b-8ac6-09753016a7c5/bhashiniai+logo.png?format=300w",
+      "alt": "",
+      "w": 68,
+      "h": 69
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/cdf98ae0-3205-46c7-9d2a-0bcc1f46dff9/Giz-German-India-Cooperation.png?format=300w",
+      "alt": "",
+      "w": 216,
+      "h": 80
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/7089830f-8386-47e6-b9a5-97a91dab296d/Fair+world.jpg?format=500w",
+      "alt": "",
+      "w": 303,
+      "h": 109
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/f711290d-6598-44c0-ad84-9feaa791d26e/Logo-IISc.png?format=750w",
+      "alt": "",
+      "w": 464,
+      "h": 80
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "slug": "sakar-robotics",
+  "company": "Sakar Robotics",
+  "tag": "FOUNDER STORY",
+  "kicker": "Field robotics",
+  "title": "Every bedsheet, checked.",
+  "standfirst": "Sakar Robotics was founded in Pune in 2023 by Karan Patil, Manoj Pochat and Dhruv Patil. Its first machine took on a job done by hand: on Indian Railways, only about 2% of linen was being inspected each day, and stained or torn sheets kept reaching passengers.",
+  "meta": [
+    "ARTPARK Stories",
+    "About 6 min read",
+    "Sakar Robotics, Pune"
+  ],
+  "website": "https://sakarrobotics.com/",
+  "hero": {
+    "image": "/assets/founders/sakar-robotics-lisa.webp",
+    "alt": "The LISA linen inspection machine, a white cabinet with a screen, attached to a blue calendering line",
+    "pos": "50% 55%",
+    "ratio": "16/9",
+    "caption": "LISA, the Linen Inspection & Sorting Assistant, on a linen line. Photograph from Sakar Robotics."
+  },
+  "lead": [
+    "On Indian Railways, bedsheets were checked by hand. Inspectors could cover about 2% of daily output, Sakar Robotics says, and stained or torn sheets reached passengers. In November 2025 alone, the company notes, passengers filed 13,196 bedroll complaints on Rail Madad.",
+    "LISA, the Linen Inspection & Sorting Assistant, is Sakar’s answer. Two high-resolution cameras look at every sheet as it comes off the calendering machine, and sheets with stains, tears or dirt are routed out automatically."
+  ],
+  "sections": [
+    {
+      "h2": "Automated, affordable, agile.",
+      "toc": "Why Sakar",
+      "blocks": [
+        {
+          "quote": {
+            "text": "Only a small share of the linen was being checked by hand each day. A machine can look at every sheet, every time, and it never gets tired of looking.",
+            "who": "Karan Patil, Co-founder, MD and CEO, Sakar Robotics",
+            "source": "",
+            "sourceLabel": "",
+            "draft": true
+          }
+        },
+        "Sakar says it started because the automation its founders saw in the field was either too rigid to trust with real work, or too expensive ever to pay for itself. From the first day it set itself one goal in three words: Automated, Affordable, Agile.",
+        "Karan Patil, co-founder, managing director and CEO, has a background in electronics and production engineering. In college he founded a company that trained students in AI and robotics, and ran a skilling initiative that trained more than 5,000 students across India, The Machine Maker reports. Manoj Pochat, co-founder and chairman, guides long-term direction and partnerships across industry and academia. Dhruv Patil, co-founder, builds the engineering culture behind the company’s Physical AI platform.",
+        {
+          "people": [
+            {
+              "name": "Karan Patil",
+              "role": "Co-founder, MD & CEO",
+              "photo": "/assets/founders/sakar-robotics-karan-patil.webp",
+              "pos": "50% 30%"
+            },
+            {
+              "name": "Manoj Pochat",
+              "role": "Co-founder & Chairman"
+            },
+            {
+              "name": "Dhruv Patil",
+              "role": "Co-founder"
+            }
+          ]
+        },
+        "In 2023, its first year, Sakar raised pre-seed funding from ARTPARK, according to the company’s timeline. Its early work, as ARTPARK’s portfolio records it, was robots for end-to-end wall finishing in construction."
+      ]
+    },
+    {
+      "h2": "Fifteen sheets a minute.",
+      "toc": "LISA",
+      "blocks": [
+        "LISA inspects 15 sheets a minute and detects more than 90% of stains, tears and dirt, the company says. A proof of concept with Indian Railways ran in 2024, and the system reached full-scale deployment in 2025. In April 2025, The Machine Maker reported three linen inspection machines installed across India, with 50 more in the pipeline.",
+        "According to the company, LISA was inaugurated by Union Railway Minister Ashwini Vaishnaw at Ghorpadi Yard in the Pune Division, and now runs in Pune, Jaipur and Jodhpur."
+      ]
+    },
+    {
+      "h2": "From the Kumbh Mela to the palkhi.",
+      "toc": "Crowd control",
+      "blocks": [
+        "Speaking to ETV Bharat in Marathi, Karan Patil said the team had seen the huge crowds at the Kumbh Mela in Prayagraj the year before, and realised how much strain the police must be under. They talked to police officers, understood their difficulties, and decided to develop AI technology for crowd control.",
+        "The result was an AI-enabled mobile crowd-control tower. In July 2026 it was tested during the Sant Dnyaneshwar and Sant Tukaram palkhi processions in Pune, and then sent to Pandharpur for Ashadhi Ekadashi."
+      ]
+    },
+    {
+      "h2": "One platform, many jobs.",
+      "toc": "The fleet",
+      "blocks": [
+        {
+          "figure": {
+            "image": "/assets/founders/sakar-robotics-team.webp",
+            "alt": "A large group of people gathered around a Sakar Robotics service robot in a lobby",
+            "ratio": "16/9",
+            "caption": "The Sakar Robotics team, gathered around one of its service robots. Photograph from Sakar Robotics."
+          }
+        },
+        "In 2025 the company says it closed a $1 million seed round and launched a commercial cleaning robot for the pharmaceutical sector. It now reports more than 15 systems deployed, more than 10,000 autonomous hours and nine facilities live.",
+        {
+          "panel": {
+            "title": "What Sakar Robotics builds",
+            "items": [
+              [
+                "LISA",
+                "Linen inspection and sorting with dual cameras and automatic reject routing."
+              ],
+              [
+                "SakarBot",
+                "A configurable mobile manipulator."
+              ],
+              [
+                "CleanBot series",
+                "Autonomous floor-cleaning robots."
+              ],
+              [
+                "Cobot series",
+                "Collaborative robots."
+              ],
+              [
+                "LTV",
+                "A human-driven mobile surveillance tower with a cabin that rises to 4.7 m."
+              ]
+            ]
+          }
+        },
+        {
+          "dates": [
+            [
+              "2023",
+              "Founded in Pune; pre-seed funding from ARTPARK."
+            ],
+            [
+              "2024",
+              "LISA proof of concept with Indian Railways."
+            ],
+            [
+              "April 2025",
+              "Three linen inspection machines installed, 50 more in the pipeline (The Machine Maker)."
+            ],
+            [
+              "2025",
+              "LISA at full-scale deployment; seed round; cleaning robot for pharma."
+            ],
+            [
+              "July 2026",
+              "Crowd-control tower tested during the palkhi processions in Pune."
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    [
+      "Sakar Robotics, About (founders, timeline)",
+      "https://www.sakarrobotics.com/company/about"
+    ],
+    [
+      "Sakar Robotics, LISA",
+      "https://www.sakarrobotics.com/products/lisa"
+    ],
+    [
+      "Sakar Robotics",
+      "https://www.sakarrobotics.com/"
+    ],
+    [
+      "The Machine Maker, “Sakar Robotics: innovating with AI and robotics for industry” (3 April 2025)",
+      "https://themachinemaker.com/metal-forming-expo/sakar-robotics-innovating-with-ai-and-robotics-for-industry/"
+    ],
+    [
+      "ETV Bharat Marathi, on Sakar Robotics’ AI mobile tower for crowd control (20 July 2026)",
+      "https://www.etvbharat.com/mr/state/pune-startup-sakar-robotics-launches-ai-mobile-tower-for-crowd-control-mhs26072002578"
+    ],
+    [
+      "ARTPARK, startup portfolio",
+      "https://www.artpark.in/startups-overview"
+    ]
+  ]
+}

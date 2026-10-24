@@ -1,0 +1,172 @@
+{
+  "slug": "a-thon",
+  "company": "A-THON",
+  "tag": "FOUNDER STORY",
+  "kicker": "All-terrain mobility",
+  "title": "A question from a forward post.",
+  "standfirst": "A-THON started in Bengaluru in 2022 to design India’s own all-terrain vehicles, the ASHVA series, for soldiers, farms and plantations. The question behind it, Harshit Modi writes, has stayed with him since his first visit to a forward post in the Himalayas: why does India’s army rely on imported vehicles?",
+  "meta": [
+    "ARTPARK Stories",
+    "About 5 min read",
+    "A-THON, Bengaluru"
+  ],
+  "website": "https://a-thonallterrain.com/",
+  "hero": {
+    "image": "/assets/founders/a-thon-ashva-field.webp",
+    "alt": "A camouflage-green open-frame all-terrain vehicle with a spare tyre on its roof, in dry scrubland, with a person in Indian Army combat gear standing beside it",
+    "pos": "50% 55%",
+    "ratio": "16/9",
+    "caption": "An all-terrain vehicle in dry scrubland, from the photographs published with Harshit Modi’s article on A-THON in Raksha Anirveda."
+  },
+  "lead": [
+    "“There is a question that has stayed with me since the day I first visited a forward military post in the Indian Himalayas. Why does one of the world’s largest and most operationally experienced armies depend on imported vehicles for all terrain light tactical and logistics mobility?” writes Harshit Modi.",
+    "Indian soldiers work from the glaciers of Ladakh to the deserts of Rajasthan. Harshit writes that the vehicles many of them rely on for light tactical and logistics work were designed for American ranches and Canadian trails. A-THON was started to change that."
+  ],
+  "sections": [
+    {
+      "h2": "Not assemble. Author.",
+      "toc": "The start",
+      "blocks": [
+        {
+          "quote": {
+            "text": "We started in 2022 in Bengaluru with nothing but a conviction: India has the engineering talent, the manufacturing capability, and the strategic necessity to build its own all terrain mobility platforms from the ground up. Not assemble. Not manufacture under licence. Not rebadge a foreign design. Author.",
+            "who": "Harshit Modi, A-THON, writing in Raksha Anirveda",
+            "source": "https://raksha-anirveda.com/indias-tactical-mobility-independence-the-a-thon-story/",
+            "sourceLabel": "Raksha Anirveda, May 2026"
+          }
+        },
+        "Harshit signs that article as A-THON’s founder. The company’s site lists a founding core team that includes Irfann Sheriff, as Chief Visionary and Architect, and Harshit Modi, as CEO R&D, Business Dynamics and Strategy, alongside directors for technology, finance, manufacturing, electrical architecture, marketing and supply chain. In his article, Harshit credits Irfann with the product roadmap, the institutional partnerships and the way the company integrates technology.",
+        "The result is the ASHVA family. The company unveiled the ASHVA 4x4 at the International Auto Show 2024 at Bangalore Palace Grounds, and bills it as India’s first homegrown ATV. It also describes the ASHVA 6x6 as the world’s only 6x6 all-terrain side-by-side.",
+        {
+          "panel": {
+            "title": "The ASHVA family",
+            "items": [
+              [
+                "ASHVA 4x4",
+                "A 976cc V-twin all-terrain vehicle with switchable two- and four-wheel drive and locking differentials."
+              ],
+              [
+                "ASHVA 4S, UT and 6x6",
+                "Further configurations, including a six-wheeled version with assisted autonomous navigation."
+              ],
+              [
+                "Defence variants",
+                "A 2S with a tethered drone, a 4S troop carrier and a 5S carrying a fixed-wing VTOL drone."
+              ],
+              [
+                "In development",
+                "ATATS, an artillery tug, and RAKSHAK, an armoured patrol vehicle."
+              ],
+              [
+                "AdbhutBot",
+                "An assisted-autonomous platform for plantations and orchards, with aerial harvesting, robotics and a tethered drone."
+              ]
+            ]
+          }
+        },
+        {
+          "people": [
+            {
+              "name": "Irfann Sheriff",
+              "role": "Chief Visionary and Architect"
+            },
+            {
+              "name": "Harshit Modi",
+              "role": "CEO R&D, Business Dynamics and Strategy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Four months at altitude.",
+      "toc": "The trials",
+      "blocks": [
+        "Before any exercise, the team spent four months trialling ASHVA vehicles in Ladakh, at Pangong Tso, Marsimik La and Chusul Heights, and in Uttarakhand and Jammu. Harshit writes of altitudes up to 20,000 ft and temperatures of minus 25 degrees. The vehicles also went through Technical Evaluation Centre approvals at Agra.",
+        {
+          "quote": {
+            "text": "The ASHVA ran through all of it without complaint. The machine was ready long before we were.",
+            "who": "Harshit Modi, A-THON, writing in Raksha Anirveda",
+            "source": "https://raksha-anirveda.com/indias-tactical-mobility-independence-the-a-thon-story/",
+            "sourceLabel": "Raksha Anirveda, May 2026"
+          }
+        },
+        "In February 2026, four ASHVA configurations took part in the Indian Army Western Command’s Exercise Kharga Shakti 2026, at the Mahajan Field Firing Ranges in Rajasthan. Janes also reported that the Army tested A-THON’s Ashva-D series there. Harshit writes that A-THON was the only IDDM vehicle platform in the exercise.",
+        {
+          "figure": {
+            "image": "/assets/founders/a-thon-ashva-display.webp",
+            "alt": "Three Army officers and a man in a blue suit standing in front of two green all-terrain vehicles at a display",
+            "ratio": "1000/666",
+            "caption": "Three Army officers and a man in a suit in front of two all-terrain vehicles at a display, from the photographs published with the Raksha Anirveda article."
+          }
+        }
+      ]
+    },
+    {
+      "h2": "Autonomy, built with ARTPARK.",
+      "toc": "ARTPARK",
+      "blocks": [
+        "A-THON is an industry partner at ARTPARK. The assisted autonomous navigation on the ASHVA 6x6 was developed through that partnership, and the autonomous 6x6 was demonstrated to Union Minister H D Kumaraswamy and officials of the Department of Science and Technology at the ARTPARK facility. The 6x6 also went through assisted autonomous defence trials at Babina Fire Range, where it was demonstrated to the Vice Chief of Army Staff and the Army Design Bureau.",
+        "The company’s own timeline lists tactical collaborations with ARTPARK, ARTPARK CAMRAS-2 and its first revenue, which came from ARTPARK. A-THON is also designing robotic mobility platforms for the Army under the Army Design Bureau compendium, jointly with ARTPARK and IIT Ropar’s DRIF.",
+        {
+          "quote": {
+            "text": "We do not follow a category. We are creating one.",
+            "who": "Harshit Modi, A-THON, writing in Raksha Anirveda",
+            "source": "https://raksha-anirveda.com/indias-tactical-mobility-independence-the-a-thon-story/",
+            "sourceLabel": "Raksha Anirveda, May 2026"
+          }
+        },
+        {
+          "dates": [
+            [
+              "2022",
+              "A-THON started in Bengaluru."
+            ],
+            [
+              "2024",
+              "Unveiled the ASHVA 4x4 at the International Auto Show 2024, Bangalore Palace Grounds."
+            ],
+            [
+              "2025",
+              "Showcased the ASHVA 4x4 and 6x6 at Bharat Mobility Global Expo 2025 and Invest Karnataka 2025."
+            ],
+            [
+              "Before 2026",
+              "Four months of trials in Ladakh, Uttarakhand and Jammu; assisted autonomous trials at Babina Fire Range."
+            ],
+            [
+              "February 2026",
+              "Four ASHVA configurations in Exercise Kharga Shakti 2026, Rajasthan."
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    [
+      "Harshit Modi, “India’s Tactical Mobility Independence: The A-THON Story”, Raksha Anirveda (19 May 2026)",
+      "https://raksha-anirveda.com/indias-tactical-mobility-independence-the-a-thon-story/"
+    ],
+    [
+      "A-THON, our story (page no longer online)",
+      ""
+    ],
+    [
+      "A-THON, founding core team (page no longer online)",
+      ""
+    ],
+    [
+      "Janes, on the Indian Army testing a new tactical vehicle at a military exercise",
+      "https://www.janes.com/osint-insights/defence-news/defence/indian-army-tests-new-tactical-vehicle-at-military-exercise"
+    ],
+    [
+      "ARTPARK, startup portfolio",
+      "https://www.artpark.in/startups-overview"
+    ],
+    [
+      "A-THON",
+      "https://a-thonallterrain.com/"
+    ]
+  ]
+}

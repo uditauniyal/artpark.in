@@ -1,0 +1,124 @@
+{
+  "slug": "charukesi-health",
+  "company": "Charukesi Health",
+  "tag": "FOUNDER STORY",
+  "kicker": "Rehabilitation robotics",
+  "title": "A robot to help people walk again.",
+  "standfirst": "Vaidyanathan Narayanan founded Charukesi Health to build the C@re Robot, a powered exoskeleton for neuro-rehabilitation that hospitals can buy or lease. People who lose the ability to walk need intensive, structured therapy, and the imported machines that provide it cost more than most can pay.",
+  "meta": [
+    "ARTPARK Stories",
+    "About 3 min read",
+    "Charukesi Health, India"
+  ],
+  "website": "https://www.charukesihealth.com/",
+  "hero": {
+    "image": "/assets/site/whiteboard.webp",
+    "alt": "An engineer writing on a whiteboard while four colleagues at a round table listen",
+    "pos": "50% 45%",
+    "ratio": "16/9",
+    "caption": "A team planning at a whiteboard at ARTPARK. ARTPARK photograph, not of Charukesi Health."
+  },
+  "lead": [
+    "Spinal cord injuries, strokes and other neurological conditions can take away a person’s ability to walk. Getting it back depends on high-intensity, structured rehabilitation, which is hard to access. Imported exoskeletons that can support it are priced beyond most budgets.",
+    "Charukesi Health is building a robot for that gap. It is part of ARTPARK’s startup portfolio, where its work is described as modular, configurable rehabilitation robots."
+  ],
+  "sections": [
+    {
+      "h2": "One platform, many patients.",
+      "toc": "The robot",
+      "blocks": [
+        {
+          "quote": {
+            "text": "Rehabilitation works when it is repeated, often and correctly. A robot that can be configured for each patient lets therapists give more people that care.",
+            "who": "Vaidyanathan Narayanan, Founder and CEO, Charukesi Health",
+            "source": "",
+            "sourceLabel": "",
+            "draft": true
+          }
+        },
+        "The company’s C@re Robot is a powered robotic exoskeleton for neuro-rehabilitation, designed as a modular platform that can be reconfigured for different needs. Hospitals and rehabilitation centres can buy it or lease it.",
+        {
+          "figure": {
+            "image": "/assets/founders/charukesi-health-device.webp",
+            "alt": "A white wheeled frame with padded handlebars and red emergency-stop buttons on a tiled floor",
+            "ratio": "581/472",
+            "caption": "A wheeled rehabilitation frame with padded handlebars and emergency-stop buttons, from the company’s website. Photograph from Charukesi Health."
+          }
+        },
+        {
+          "panel": {
+            "title": "What the company reports",
+            "items": [
+              [
+                "Clinical research",
+                "The C@re Robot was researched at NIMHANS, Bengaluru."
+              ],
+              [
+                "Presentations",
+                "Presented at WCNR in Vienna and at IFNR."
+              ],
+              [
+                "Recognition",
+                "Best Innovation awards at GYTI and at the WIPO and CII IPRM awards."
+              ],
+              [
+                "Patent",
+                "A US patent for its 3D suspension system."
+              ],
+              [
+                "Certification",
+                "ISO 13485 and CDSCO certifications in progress."
+              ]
+            ]
+          }
+        },
+        "Charukesi was one of five Indian startups chosen for the Ind-Aus Launchpad Immersion Programme, a two-week residency at La Trobe University in Melbourne."
+      ]
+    },
+    {
+      "h2": "A problem he had worked on before.",
+      "toc": "The founders",
+      "blocks": [
+        "Vaidyanathan Narayanan, known as Vaidy, is the founder and CEO. The company describes him as an expert in market access, global collaborations and regulatory mechanisms. This is not his first rehabilitation robotics company. In 2017 he co-founded Bionic Yantra, which built the REARS robotic exoskeleton for spinal injury and stroke rehabilitation, and he left his job in the transportation vertical at ACS to pursue it.",
+        "In a 2020 YourStory profile of Bionic Yantra, Vaidy explained why. A cousin of his had been paralysed by transverse myelitis in 2007. Seeing what mobility aids could do for him, and how unaffordable imported exoskeletons were, pushed Vaidy to build a cost-effective one with friends.",
+        "One of those friends was Amitav Chaudhuri, his college batchmate and a director of Timetooth Technologies in Noida. Amitav is now Charukesi’s CTO, with expertise in quality management systems and design for manufacturing.",
+        {
+          "people": [
+            {
+              "name": "Vaidyanathan Narayanan",
+              "role": "Founder and CEO",
+              "photo": "/assets/founders/charukesi-health-vaidyanathan-narayanan.webp",
+              "pos": "50% 30%"
+            },
+            {
+              "name": "Amitav Chaudhuri",
+              "role": "CTO"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    [
+      "Charukesi Health, about",
+      "https://charukesihealth.com/about"
+    ],
+    [
+      "Charukesi Health, news and media",
+      "https://charukesihealth.com/news-media"
+    ],
+    [
+      "YourStory, profile of Bionic Yantra (25 March 2020)",
+      "https://yourstory.com/socialstory/2020/03/startup-robotic-device-spinal-injury-mobility"
+    ],
+    [
+      "ARTPARK, startup portfolio",
+      "https://www.artpark.in/startups-overview"
+    ],
+    [
+      "Charukesi Health",
+      "https://www.charukesihealth.com/"
+    ]
+  ]
+}

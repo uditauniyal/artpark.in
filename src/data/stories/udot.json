@@ -1,0 +1,129 @@
+{
+  "slug": "udot",
+  "company": "uDot",
+  "tag": "FOUNDER STORY",
+  "kicker": "Accessible STEM learning",
+  "title": "A diagram you can read with your fingers.",
+  "standfirst": "Kaviraj Prithvi and Lalika Laya K started as IIT Guwahati students building a braille printer. Their company, uDot, now builds a tactile display and learning platform so that blind students can study maths and science on their own.",
+  "meta": [
+    "ARTPARK Stories",
+    "About 4 min read",
+    "uDot, Bengaluru"
+  ],
+  "website": "https://www.udot.tech/",
+  "hero": {
+    "image": "/assets/founders/udot-tactile-display.webp",
+    "alt": "A child’s hands on a black uDot tactile display showing a raised square",
+    "pos": "50% 50%",
+    "ratio": "16/9",
+    "caption": "A student’s hands on a uDot tactile display. Photograph from uDot."
+  },
+  "lead": [
+    "“During our research for the hackathon, we interacted with members of the visually impaired community in Bengaluru to understand their problems and find out what is the one thing that they struggle with often,” Kaviraj Prithvi said in 2023. “During that time, we found the value braille holds in their life and the inefficiency of standard braille devices. They are bulky and expensive which is quite unfair as it makes opportunities and an independent life out of reach for the blind.”",
+    "That hackathon project was TactAll, a portable braille printer he built with Lalika Laya K. Later in 2023, the two founded uDot in Bengaluru. It is part of ARTPARK’s startup portfolio."
+  ],
+  "sections": [
+    {
+      "h2": "Two students and a braille printer.",
+      "toc": "The beginning",
+      "blocks": [
+        "Both were students at IIT Guwahati. Lalika studied engineering physics and had won the National Women Entrepreneurship Challenge 2022 for a passive stabilising shoe. Kaviraj had been recognised nationally for work on a blood pressure monitoring device and on soft robotics.",
+        "In January 2023, TactAll won backing from the Atal Incubation Centre at Goa Institute of Management at the Purple Fest accessibility hackathon in Goa: mentoring, a network and financial support. The prototype was then on its third iteration.",
+        {
+          "figure": {
+            "image": "/assets/founders/udot-founders-2023.webp",
+            "alt": "A young man and a young woman standing in a lab",
+            "ratio": "690/675",
+            "caption": "Kaviraj Prithvi (left) and Lalika Laya K in 2023, when they were building TactAll. Photograph published by EastMojo."
+          }
+        },
+        {
+          "people": [
+            {
+              "name": "Kaviraj Prithvi",
+              "role": "Founder"
+            },
+            {
+              "name": "Lalika Laya K",
+              "role": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "What a blind student misses.",
+      "toc": "The problem",
+      "blocks": [
+        "Blind and low-vision students often fall several grade levels behind in STEM subjects, and many drop out as early as middle school. Much of what they miss is visual: diagrams, tables, graphs, the work on the blackboard. Special educators are scarce, so teachers in inclusive classrooms, many without that training, carry the load.",
+        "The founders kept listening. In August 2024, Kaviraj wrote that the team had been working for about two years, with support from IIIT Bangalore, Digital Impact Square, Sarthak Educational Trust, Attvaran, IIT Delhi, IIT Madras and UCL, and invited students, parents and STEM teachers to interviews about tactile graphics."
+      ]
+    },
+    {
+      "h2": "A screen you read by touch.",
+      "toc": "The platform",
+      "blocks": [
+        "uDot’s answer is a touchscreen tactile display with around 4,000 dots that rise and refresh to show braille, graphics and interfaces. Around it, the company has built lessons, practice and tests benchmarked to the school curriculum.",
+        {
+          "panel": {
+            "title": "The uDot platform",
+            "items": [
+              [
+                "Lessons",
+                "STEM lessons, practice and tests, benchmarked to the curriculum."
+              ],
+              [
+                "Tactile games",
+                "Drawing and tic tac toe, to build tactile literacy."
+              ],
+              [
+                "Multi-line braille",
+                "For books and for spatial data such as graphs."
+              ],
+              [
+                "For families",
+                "Progress tracking."
+              ],
+              [
+                "For schools and NGOs",
+                "Curriculum integration, teacher onboarding and analytics."
+              ]
+            ]
+          }
+        },
+        "In 2026, uDot was a finalist in the Inclusive Education category of the Tech4Good Awards. Its entry describes a fractions pilot with ten blind students in Grades 3 to 7, who started with scores below 20 percent and scored above 80 percent after structured sessions on uDot. These are the company’s own figures.",
+        "uDot lists ARTPARK among its backers on its website, alongside the Government of Karnataka, K-Tech, Startup Karnataka, IIMB NSRCEL and others."
+      ]
+    }
+  ],
+  "sources": [
+    [
+      "EastMojo, IIT Guwahati students invent unique braille printer (19 January 2023)",
+      "https://eastmojo.com/assam/2023/01/19/iit-guwahati-students-invent-unique-braille-printer/"
+    ],
+    [
+      "The News Mill, IIT Guwahati students get Goa incubation centre backing for braille printer (January 2023)",
+      "https://thenewsmill.com/2023/01/iit-guwahati-students-get-goa-incubation-centre-backing-for-unique-braille-printer/"
+    ],
+    [
+      "AccessIndia mailing list, post by Kaviraj Prithvi (August 2024)",
+      "https://www.mail-archive.com/accessindia@accessindia.org.in/msg144168.html"
+    ],
+    [
+      "MIT Solve, uDot (2025 Global Learning Challenge submission)",
+      "https://solve.mit.edu/solutions/96519"
+    ],
+    [
+      "Tech4Good Awards 2026, uDot finalist entry",
+      "https://tech4goodawards.com/finalist/udot-tactile-display-powered-stem-learning/"
+    ],
+    [
+      "Inc42, uDot company profile",
+      "https://inc42.com/company/udot/people/"
+    ],
+    [
+      "uDot",
+      "https://www.udot.tech/"
+    ]
+  ]
+}

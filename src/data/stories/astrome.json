@@ -1,0 +1,90 @@
+{
+  "slug": "astrome",
+  "company": "Astrome",
+  "tag": "FOUNDER STORY",
+  "kicker": "Wireless and satellite communications",
+  "title": "A bigger pipe for the villages.",
+  "standfirst": "Neha Satak and Prasad H L Bhat met at IISc building a student satellite, and in 2015 they founded Astrome in Bengaluru. They set out to connect rural India, where the internet stops for a simple reason: the pipe carrying the data is too small, and fibre is slow and expensive to lay.",
+  "meta": ["ARTPARK Stories", "About 7 min read", "Astrome, Bengaluru"],
+  "website": "https://astrome.co/",
+  "hero": {
+    "image": "/assets/founders/astrome-team.webp",
+    "alt": "A large team in matching grey polo shirts standing in rows in front of a glass office building",
+    "pos": "50% 70%",
+    "ratio": "21/9",
+    "caption": "The Astrome team. Photograph from Astrome."
+  },
+  "lead": [
+    "Neha Satak grew up in a village in Rajasthan. Prasad H L Bhat grew up in coastal Karnataka. When they started Astrome, Neha says, the motivation was to “solve a problem that is big for the people in the place we grew up”.",
+    "Before they launched, the founders ran a survey. More than two-thirds of the people they asked in rural and suburban areas did not have an internet connection. A decade later, the equipment Astrome designed for that problem has connected a village school to online classes, and the company counts the Indian Army, the Navy and BSNL among its clients."
+  ],
+  "sections": [
+    {
+      "h2": "Two students and a satellite.",
+      "toc": "The founders",
+      "blocks": [
+        "Neha and Prasad met at IISc, working on the student satellite project AeroSat. Neha took a master’s in aerospace engineering there and went on to a PhD in aerospace. Prasad studied System Science and Automation, then Computer Science and Automation, at IISc, and in 2012 founded Streamoid Technologies, a startup applying AI to fashion retail.",
+        "Their paths split for a while. Then Prasad went looking for a new problem.",
+        { "quote": { "text": "During my days at my first startup, Streamoid Technologies, I was looking at newer problems to solve. I reconnected with Neha to discuss what we can solve from space,", "who": "Prasad H L Bhat, Co-founder, Chairman and CTO, Astrome", "source": "https://23in23.deccanherald.com/neha-satak-and-prasad-h-l-bhat", "sourceLabel": "Deccan Herald, DH Changemakers" } },
+        "They landed on connectivity, and formally founded Astrome Technologies in Bengaluru on 20 May 2015. Neha, as CEO, handles the business and its adoption by government and defence customers. Prasad, as Chairman and CTO, leads research and development.",
+        { "people": [
+          { "name": "Neha Satak", "role": "Co-founder and CEO", "photo": "/assets/founders/astrome-neha-satak.webp", "pos": "50% 30%" },
+          { "name": "Prasad H L Bhat", "role": "Co-founder, Chairman and CTO", "photo": "/assets/founders/astrome-prasad-bhat.webp", "pos": "50% 30%" }
+        ] }
+      ]
+    },
+    {
+      "h2": "The wireless equivalent of fibre.",
+      "toc": "The problem",
+      "blocks": [
+        "Neha describes the problem in plain terms: “the pipe carrying the data is not big enough. To increase the size of the pipe, one can deploy fibre everywhere, but fibre deployment is extremely expensive and takes a long time”.",
+        "The founders’ first plan was a constellation of satellites in low Earth orbit. The radio technology they developed turned out to be more immediately useful on the ground. It became GigaMesh, a multi-beam radio working in the E-band, at 71 to 76 and 81 to 86 GHz. It carries data from one point to many points, and realigns its beams electronically on its own. A single hub at a gram panchayat can connect several villages.",
+        { "quote": { "text": "This is like the wireless equivalent of fibre optic. You are able to achieve that kind of capacity by installing these devices. It does not require the grunt work of digging the trench,", "who": "Prasad H L Bhat, Co-founder, Chairman and CTO, Astrome", "source": "https://23in23.deccanherald.com/neha-satak-and-prasad-h-l-bhat", "sourceLabel": "Deccan Herald, DH Changemakers" } },
+        "One GigaMesh network connected Sompura gram panchayat to Nidavanda village in rural Bengaluru district, which let the government school there run online classes. The company has also run pilots in a few Karnataka villages.",
+        "Building the hardware was its own challenge. “In the hardware industry, it takes a long cycle to design something and realise it. We need to fabricate it, test it, qualify it and then finally deploy it. While this was our initial challenge, we have been able to bring that cycle time down considerably,” Prasad says."
+      ]
+    },
+    {
+      "h2": "Where ARTPARK comes in.",
+      "toc": "ARTPARK",
+      "blocks": [
+        "In September 2021, Astrome raised $3.4 million. The round was led by IAN Fund, Urania Ventures of Germany and Cognizant founder Lakshmi Narayanan, with Impact Collective of South Korea, ARTPARK and angel investors from the US. Astrome was also the first 5G startup selected by EvoNexus, an accelerator in San Diego sponsored by Qualcomm and Verizon.",
+        { "quote": { "text": "When we are trying to expand the scope of digital benefits, we must remember that there are 85 crore people in villages. Their biggest challenge is that they do not have access to connectivity,", "who": "Umakant Soni, then CEO, ARTPARK", "source": "https://23in23.deccanherald.com/neha-satak-and-prasad-h-l-bhat", "sourceLabel": "Deccan Herald, DH Changemakers" } },
+        "Astrome was among the ARTPARK startups at India Mobile Congress 2024, alongside ARTPARK’s Centre of Excellence for Wired and Wireless Technologies."
+      ]
+    },
+    {
+      "h2": "Ten years on, back to space.",
+      "toc": "Back to space",
+      "blocks": [
+        "In January 2025, Astrome raised $10 million, with follow-on investment from IAN Group, to scale GigaMesh, build new products and enter satellite communications. Later that year it won the India chapter of the Startup World Cup at India Mobile Congress 2025. In February 2026, IN-SPACe selected it as one of three companies to develop an indigenous Satellite Bus as a Service platform. The founders started out wanting to solve problems from space, and the company is now returning there.",
+        { "panel": { "title": "What Astrome builds", "items": [
+          ["GigaMesh", "Multi-beam E-band radio for fibre-like wireless backhaul, for 5G and broadband."],
+          ["GigaSat", "A flat-panel satellite terminal."],
+          ["OrbiThru", "A software-defined modem."],
+          ["Astream and AstraLink", "S, X and K-band satellite transceivers, and links between satellites."],
+          ["Satellite Bus as a Service", "A satellite platform, selected by IN-SPACe for development."]
+        ] } },
+        { "dates": [
+          ["20 May 2015", "Astrome Technologies founded in Bengaluru."],
+          ["September 2021", "Raised $3.4 million, with ARTPARK among the investors."],
+          ["By 2023", "GigaMesh connected Sompura gram panchayat to Nidavanda village."],
+          ["October 2024", "Showcased with ARTPARK at India Mobile Congress 2024."],
+          ["January 2025", "Raised $10 million to scale GigaMesh and enter satellite communications."],
+          ["October 2025", "Won the Startup World Cup India chapter at India Mobile Congress 2025."],
+          ["February 2026", "Selected by IN-SPACe to develop a Satellite Bus as a Service platform."]
+        ] }
+      ]
+    }
+  ],
+  "sources": [
+    ["Deccan Herald, DH Changemakers 23 in ’23: Neha Satak and Prasad H L Bhat (2023)", "https://23in23.deccanherald.com/neha-satak-and-prasad-h-l-bhat"],
+    ["EvoNexus, on Astrome’s $3.4 million round (September 2021)", "https://evonexus.org/evonexus-5g-deeptech-startup-astrome-raises-3-4-m-funding/"],
+    ["Entrepreneur India, on Astrome’s $10 million round (28 January 2025)", "https://india.entrepreneur.com/news-and-trends/astrome-gears-up-for-global-growth-with-usd-10-mn-funding/486211"],
+    ["OfficeChai, Astrome company profile", "https://officechai.com/startups/astrome-the-bengaluru-deeptech-startup-building-cutting-edge-wireless-solutions/"],
+    ["Astrome, team", "https://astrome.co/our-team/"],
+    ["Astrome, awards and recognitions", "https://astrome.co/awards-and-recognitions/"],
+    ["ARTPARK events, India Mobile Congress 2024", "https://www.artpark.in/events/india-mobile-congress-2024"],
+    ["Astrome", "https://astrome.co/"]
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "url": "https://www.artpark.in/health-initiatives/midas",
+  "status": 200,
+  "title": "MIDAS — ARTPARK @IISc - Leading AI & Robotics startup incubation",
+  "description": " Gold standard medical imaging datasets to advance healthcare research in India. ",
+  "headings": [
+    "H1: MIDAS",
+    "H2: Gold standard medical imaging datasets to advance healthcare research in India",
+    "H3: Understanding the Problem",
+    "H3: Designing the Solution",
+    "H3: Key Features",
+    "H3: Implementation & Deployment",
+    "H3: Team",
+    "H3: Partners",
+    "H2: Livestock Disease Vaccination Strategy",
+    "H2: Dengue Outbreak Prediction"
+  ],
+  "text": "MIDAS\nGold standard medical imaging datasets to advance healthcare research in India\n\nMedical Imaging Datasets for India (MIDAS) is an initiative to create high-quality, standardized datasets that more accurately represent the Indian population. The project integrates medical, public health, and data science to bridge gaps in healthcare, particularly in resource-constrained and remote populations. These open-source datasets are a collaborative effort between the Indian Council of Medical Research (ICMR), the Indian Institute of Science (IISc), and ARTPARK, to ensure that AI solutions for health are built on data that is both validated and contextually relevant, and help improve India’s diagnostic capabilities and patient outcomes.\n\nJump to:\n\nUnderstanding the Problem\n\nDesigning the Solution + Key Features\n\nImplementation\n\nTeam & Partners\n\nUnderstanding the Problem\n\nSignificant challenges in the Indian healthcare system result in suboptimal treatment for patients and poor health outcomes at the population level. These can range from inaccurate diagnoses and treatment plans, to difficulties in community-level screening, and limited access to sophisticated medical facilities and highly-trained physicians.\n\nThe prevalence of non-standardized data from fragmented sources hinders the creation of effective AI models that could solve many of these challenges. Furthermore, existing datasets often lack diversity and relevance for the Indian context.\n\nAt the treatment level, hospitals are unable to fully utilize AI and advanced data analytics to improve patient care due to inadequate infrastructure for handling, storing, and processing large volumes of medical imaging data. Interoperability issues between datasets hinders seamless data transfer across different hospital departments.\n\nAdditionally, institutions lack resources and incentives to participate in data collection and standardization efforts. A shortage of trained professionals capable of managing data collection, annotation, curation, quality control, and assurance as per standards further complicates efforts.\n\nDesigning the Solution\n\nTo leverage AI in healthcare, we need high-quality, standardized imaging data integrated with clinical, metadata, and histopathological information. MIDAS is a centralized effort to develop easily-accessible, ‘gold-standard’ datasets across key disease types, with a focus on Indian demographics. Available to authorized users through a cloud-based platform, this will enable doctors, researchers, developers and policy makers to test and train AI models using contextually relevant data.\n\nKey Features\n\nGold standard datasets: Validated by domain experts and collected using rigorous protocols for rigorous AI/ML research and development, enhancing data accuracy and reliability.\n\nEthics & Privacy Compliance: Adheres to stringent ethical guidelines and privacy protocols, incorporating advanced anonymization techniques to safeguard patient data while maintaining research utility.\n\nNational Standards Alignment: Aligns with national and international data standards, including those set by the Ayushman Bharat Digital Mission (ABDM), ensuring compatibility and fostering a unified healthcare data ecosystem.\n\nInteroperable Platform: A modular, interoperable platform architecture, ensures seamless integration and data exchange across diverse healthcare systems.\n\nHubs-and-Spokes Model: Efficient data collection, curation, and dissemination from multiple medical research institutions nationwide.\n\nStreamlined data collection: Automation to streamline data collection, annotation, curation, and access processes. This makes the platform user-friendly and efficient.\n\nImplementation & Deployment\n\nThe project has successfully completed the first round of the MIDAS Technical Expert Committee (TEC) review meeting, focusing on finalizing the TEC report. The first version of the MIDAS website will be demonstrated and the finalized TEC report will be posted on the ICMR website for one month to facilitate public consultation and feedback.\n\nCurrently, the Centre for Dental Education and Research at AIIMS, New Delhi, serves as the national hub for oral cancer. Its spokes include Sharad Pawar Dental College and Hospital in Maharashtra, Sri Ramachandra Institute of Higher Education and Research in Tamil Nadu, and KLE Dental College in Karnataka. Data collection according to MIDAS standards has already begun and will expand to additional spokes in the future. Additionally, the Neurosurgery Department at AIIMS has started procuring infrastructure to set up the MIDAS platform for Meningioma at the Gamma Knife Surgery Department.\n\nTeam\n\nDr Harpreet Singh, ICMR\n\nDr Debnath Pal, IISc\n\nDr Rajesh Sundaresan, IISc\n\nRaghu Dharmaraju, ARTPARK\n\nRohit Satish, ARTPARK\n\nNishant Chavan, ARTPARK\n\nPartners\nPrevious\nLivestock Disease Vaccination Strategy\nNext\nDengue Outbreak Prediction",
+  "links": [
+    [
+      "SCREENING",
+      "https://www.artpark.in/health-initiatives/category/SCREENING"
+    ],
+    [
+      "ARTPARK",
+      "https://www.artpark.in/health-initiatives?author=664c605f0943754edc40be2e"
+    ],
+    [
+      "Understanding the Problem",
+      "https://www.artpark.in/health-initiatives/midas/#problem"
+    ],
+    [
+      "Designing the Solution + Key Features",
+      "https://www.artpark.in/health-initiatives/midas/#solution-design"
+    ],
+    [
+      "Implementation",
+      "https://www.artpark.in/health-initiatives/midas/#implementation"
+    ],
+    [
+      "Team & Partners",
+      "https://www.artpark.in/health-initiatives/midas/#team-partners"
+    ],
+    [
+      "ARTPARK",
+      "https://www.artpark.in/health-initiatives?author=664c605f0943754edc40be2e"
+    ],
+    [
+      "https://artpark.in/",
+      "https://artpark.in/"
+    ],
+    [
+      "Previous Livestock Disease Vaccination Strategy",
+      "https://www.artpark.in/health-initiatives/livestock-modelling"
+    ],
+    [
+      "Next Dengue Outbreak Prediction",
+      "https://www.artpark.in/health-initiatives/dengue-dashboard"
+    ]
+  ],
+  "images": [
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/d384842a-f8b6-4649-b195-69efc19fa010/iisc+logo.png?format=300w",
+      "alt": "iisc logo.png",
+      "w": 297,
+      "h": 278
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/f7b65829-3b23-4e0b-b62a-250697e76e1f/icmr.png?format=500w",
+      "alt": "icmr.png",
+      "w": 500,
+      "h": 222
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1724656632063-TGVCIECRU2LR517S76H0/AIIMS_New_Delhi.png?format=300w",
+      "alt": "AIIMS_New_Delhi.png",
+      "w": 300,
+      "h": 300
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "url": "https://www.artpark.in/publications/llm-landscape-for-lmics",
+  "status": 200,
+  "title": "LLM Landscape for LMICs — ARTPARK @IISc - Leading AI & Robotics startup incubation",
+  "description": "Overview, Evaluation Framework, Evaluation Components, Initial\nRecommendations | 11 November 2023",
+  "headings": [
+    "H2: The LLM Landscape for LMICs"
+  ],
+  "text": "The LLM Landscape for LMICs\n\nOverview, Evaluation Framework, Evaluation Components, Initial Recommendations\n11 November, 2023\n\nEXECUTIVE SUMMARY\n\nA new technology called “Large Language Models” has recently emerged from within the field of Artificial Intelligence that has indicated that machines can demonstrate human-like capabilities especially in areas such as question-answering, information retrieval, summarization and are able to conduct conversations with humans that resemble human-to-human conversations. LLMs have already begun to show their impact on many professions and walks of life. This document explores how LLMs can help enhance the lives of poor and underserved communities in Low-and-Middle-Income countries (LMICs).\n\nWe are interested in understanding if and how LLMs can fill critical gaps in frontline support in primary health, agriculture and other domains that are due to insufficient numbers of trained experts to provide support and care to vast populations. We show how to navigate the LLM landscape by demystifying them and explain how they are trained. We discuss how LLMs are being evaluated in their general use and we perform a survey of LLM models and tools. We identify the key challenges in using LLM-based capabilities in an LMIC context and suggest how these challenges can be overcome. We propose an approach for evaluating LLMs for LMIC applications and derive metrics that are specific to LLM usage scenarios and constraints. We illustrate the use of LLMs in LMICs through three example use-cases which are currently being actively pursued.\n\nSuccess of LLMs in LMICs will depend not just on their capabilities but on how well they are tailored to the local context of usage (localization) and their deployment. We conclude with a set of recommendations for a course of action to safely bring the benefit of the power of LLMs to LMICs.\n\nAUTHORS\n\nJigar Doshi*, Kashyap Jois, Akhil Kumar, Keith Hanna\nIPRD Solutions\n\nP. Anandan\nAI Matters for Development\n\nWith acknowledgements to:\nBob Gupta and Madhav Shanbhag, IPRD Solutions; Sean Blagsvedt, Gooey.AI; Rikin Gandhi, Digital Green; Peter Small, Hyfe.ai; and CK Cheruvettolil; Bill & Melinda Gates Foundation\n\n* Consultant to IPRD Solutions\n\nView",
+  "links": [
+    [
+      "View",
+      "https://www.artpark.in/s/LLM-for-LMICs.pdf"
+    ]
+  ],
+  "images": []
+}

@@ -1,0 +1,80 @@
+{
+  "url": "https://www.artpark.in/language",
+  "status": 200,
+  "title": "Language — ARTPARK @IISc - Leading AI & Robotics startup incubation",
+  "description": "",
+  "headings": [
+    "H1: Building AI That Speaks Every Indian Language",
+    "H3: The World's Most Comprehensive Open Language Dataset",
+    "H4: 31.2k Hours of Speech Data",
+    "H4: 109 Languages Covered",
+    "H4: 165 Districts",
+    "H4: 156k+ Speakers Recorded",
+    "H2: A Billion People. \nLargely unheard by the machines meant to serve them.",
+    "H4: Inclusion, Not Coverage",
+    "H4: Built for the Real World",
+    "H4: Proven Performance Gains",
+    "H4: From Capability to Application",
+    "H2: Language Programs",
+    "H3: Vaani",
+    "H3: RESPIN",
+    "H3: SYSPIN",
+    "H2: Collaborators feedback",
+    "H3: Media Coverage",
+    "H2: Case Studies",
+    "H1: Want to Build with India's Language Data?"
+  ],
+  "text": "Building AI That Speaks Every Indian Language\n\nIndia has 22 scheduled languages, hundreds of dialects, and over a billion speakers. Most AI understands none of them well. ARTPARK, in partnership with IISc, is building the data foundation to change that.\n\nScale of the work\n\nThe World's Most Comprehensive Open Language Dataset\n\nThree interlocking programs - Vaani, RESPIN, and SYSPIN - address speech recognition, Text to Speech, and open data across India's full linguistic spectrum. The goal is a 150,000-hour open-source corpus covering all districts of India.\n\n31.2k Hours of Speech Data\n109 Languages Covered\n165 Districts\n156k+ Speakers Recorded\n\nWhy it matters\n\nA Billion People.\nLargely unheard by the machines meant to serve them.\n\nLanguage is the interface to AI. If systems don’t understand how people speak, they don’t work for them.\nMost models still fall short on India’s reality - accents, dialects, low-resource languages, and code-switched speech. VAANI addresses this at the data layer.\n\n Inclusion, Not Coverage\n\nMoves beyond “supported languages” to represented speech\n\nBrings low-resource languages into mainstream AI systems\n\nBuilt for the Real World\n\nTrained on noisy, mixed, everyday conversations\n\nDesigned for production—not just clean benchmarks\n\nProven Performance Gains\n\n~21% WER reduction (SandLogic)\n\nUp to ~55% improvement in real-world deployments\n\n3.10 WER across 200+ languages (Shunya Labs, Pingala V1)\n\n From Capability to Application\n\nHealthcare, governance, customer experience, and voice-first platforms (e.g., Convozen)\n\nSystems that understand users the way they actually speak\n\nLanguage Programs\nVaani\nLearn More\n\nIndia's Largest Open-Source Speech Dataset\n\nRESPIN\nLearn More\n\nRecognising Speech in Indian Languages\n\nSYSPIN\nLearn More\n\nSynthesising Speech in Indian Languages\n\nCollaborators feedback\n\n“The Vaani Datasets have been invaluable in improving our Speech Models. The quality is excellent, with a great balance of gender variation, detailed metadata, and highly accurate transcripts with precise noise tagging.”\n\nReverie Language Technology LTD\nPranjal Nayak, Head of R&D\n\n“At SandLogic, we believe India’s AI future must be sovereign, inclusive, and representative of our people. The Vaani dataset captures the richness of Indian speech and has helped us benchmark and enhance our models for stronger performance in both research and enterprise use cases.”\n\nSandLogic Technologies\n Dr. Kruthika K R, Founding Researcher\n\n“The Vaani dataset has been instrumental in bridging the data gap for Northeast Indian languages. Covering around 30 tribal languages, it enabled MWire Labs to build the first publicly available ASR system for Garo with a 9.74% Word Error Rate and ~3% Character Error Rate, performance that even impressed native Garo speakers during evaluation and sets a new benchmark for the language.”\n\nMWire Labs\nBadal Nyalang, Director\n\nMedia Coverage\nRead All Articles\nCase Studies\n\nBuilding Speech Technology for Garo: A Low-Resource ASR Breakthrough Using the Vaani Dataset\n\nRead Full Case Study\nRead Full Case Study\n\nLeveraging Vaani Dataset:Fine-Tuning Hindi ASR for Real-World Call Analytics\n\nShunya Labs + Google Vaani: Speech to text for India and the World\n\nRead Full Case Study\n\nDiverse Data, Real Results: Vaani Drives a 31% Gain in Voice Naturalness\n\nRead Full Case Study\nWant to Build with India's Language Data?\n\nWhether you are a researcher, a developer, or an institution building tools for India's population — ARTPARK's language datasets are open and available.\n\nAccess Vaani",
+  "links": [
+    [
+      "Learn More",
+      "https://www.artpark.in/language/vaani"
+    ],
+    [
+      "Learn More",
+      "https://www.artpark.in/language/respin"
+    ],
+    [
+      "Learn More",
+      "https://www.artpark.in/language/syspin"
+    ],
+    [
+      "Read All Articles",
+      "https://vaani.iisc.ac.in/articles"
+    ],
+    [
+      "Read Full Case Study",
+      "https://vaani.iisc.ac.in/case-studies/mwirelabs"
+    ],
+    [
+      "Read Full Case Study",
+      "https://vaani.iisc.ac.in/case-studies/sandlogic"
+    ],
+    [
+      "Read Full Case Study",
+      "https://vaani.iisc.ac.in/case-studies/shunyalabs"
+    ],
+    [
+      "Read Full Case Study",
+      "https://vaani.iisc.ac.in/case-studies/springlab"
+    ],
+    [
+      "Access Vaani",
+      "https://huggingface.co/datasets/ARTPARK-IISc/Vaani"
+    ]
+  ],
+  "images": [
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/b7aa09f3-af85-4705-a060-7946f6fc3c20/translator-dictionary-language-interpreter.jpg?format=1500w",
+      "alt": "",
+      "w": 1440,
+      "h": 1113
+    },
+    {
+      "src": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/56f97eee-e8a9-4ed6-afcc-74535b80cb78/man-reading-newspaper.jpg?format=500w",
+      "alt": "",
+      "w": 405,
+      "h": 269
+    }
+  ]
+}

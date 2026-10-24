@@ -1,0 +1,168 @@
+{
+  "slug": "yaanendriya",
+  "company": "Yaanendriya",
+  "tag": "FOUNDER STORY",
+  "kicker": "Navigation and sensing",
+  "title": "The part inside the drone that knows where it is.",
+  "standfirst": "Four founders who began at an IISc lab chose not to build another drone or robot, but the sensing and navigation that go inside them. Yaanendriya now sells to more than 20 customers, and its harder goal is to own the technology all the way down to the sensor.",
+  "meta": [
+    "ARTPARK Stories",
+    "About 5 min read",
+    "Yaanendriya, Bengaluru"
+  ],
+  "website": "https://yaanendriya.com/",
+  "hero": {
+    "image": "/assets/founders/yaanendriya-founders.webp",
+    "alt": "Four men in white Yaanendriya polo shirts standing with arms crossed against a grey backdrop",
+    "pos": "50% 22%",
+    "ratio": "16/9",
+    "caption": "The four founders of Yaanendriya. Photograph published by Deccan Herald."
+  },
+  "lead": [
+    "“We started with deep R&D and have quickly moved into commercial products, working with over 20 customers across drones, defence, robotics and other precision applications. The journey so far has really been about converting strong engineering into reliable, deployable products,” says Vamshi Bharadwaj M V, Yaanendriya’s founder.",
+    "The company builds flight controllers, GNSS positioning systems and motion sensors in Bengaluru. It was incubated at ARTPARK, and in July 2026 it raised its first institutional venture round."
+  ],
+  "sections": [
+    {
+      "h2": "It began with a sensor.",
+      "toc": "The beginning",
+      "blocks": [
+        "The founding team started at the IISc Biomechanics Lab with one goal: reliable MEMS-based IMU products that are easy to use and ready for the real world. An IMU, or inertial measurement unit, senses how a body moves and turns.",
+        "Their first product line, the YDx series, grew out of early sensor-fusion work. Along the way they built an impact-sensing system for auto-scoring in a cricket simulator. YDx sensors are now used on four continents, in motion capture for gaming, in unmanned vehicles and in surgical robots. The team was guided by Prof. S. N. Omkar of IISc.",
+        {
+          "people": [
+            {
+              "name": "Vamshi Bharadwaj M V",
+              "role": "Founder · leads technology"
+            },
+            {
+              "name": "Vyshak Y",
+              "role": "Co-founder · heads manufacturing"
+            },
+            {
+              "name": "Vijay H P",
+              "role": "Co-founder · oversees design"
+            },
+            {
+              "name": "Aravind Thumbur",
+              "role": "Co-founder · leads business and growth"
+            }
+          ]
+        },
+        "Aravind Thumbur, an IIM Ahmedabad alumnus, brought more than a decade of experience in building businesses."
+      ]
+    },
+    {
+      "h2": "The layer inside the machine.",
+      "toc": "What it builds",
+      "blocks": [
+        "Autonomous systems built in India still depend on imported navigation, sensing and control components. Robots, drones, spacecraft and underwater vehicles have to keep sensing and steering where satellite navigation is missing, unreliable or deliberately disrupted. Yaanendriya decided to build that layer.",
+        {
+          "panel": {
+            "title": "What Yaanendriya builds",
+            "items": [
+              [
+                "Syncore",
+                "Flight and navigation controllers, Syncore Nano and Syncore U1, with redundant IMUs, compatible with PX4 and ArduPilot."
+              ],
+              [
+                "YPS",
+                "GNSS positioning systems."
+              ],
+              [
+                "YDx M",
+                "IMU and AHRS sensing products."
+              ],
+              [
+                "Wireless IO Module",
+                "With thermocouple emulation, for Industry 4.0 settings."
+              ]
+            ]
+          }
+        },
+        {
+          "figure": {
+            "image": "/assets/founders/yaanendriya-syncore-nano.webp",
+            "alt": "Render of a small green circuit board with connectors and a USB-C port",
+            "ratio": "16/9",
+            "fit": "contain",
+            "caption": "The Syncore Nano navigation controller. Image from Yaanendriya."
+          }
+        },
+        "In testing, the company reports orientation accuracy of about 0.1 degree over more than 70 hours of continuous operation."
+      ]
+    },
+    {
+      "h2": "A small team and a deep stack.",
+      "toc": "The ambition",
+      "blocks": [
+        "The team is about 18 people. “In deeptech, a small team with exceptional technical capability can create disproportionate impact,” Vamshi says.",
+        "“We want products designed and engineered here to compete with global benchmarks on performance, reliability and integration. Over time, our objective is to build one of the deepest autonomy technology stacks from India, spanning sensing, navigation and control, and serving drones, defence, robotics, aerospace and other autonomous systems globally. The larger aspiration is not merely to assemble systems in India, but to progressively own the critical underlying technology and IP,” he says.",
+        "The next step goes deeper still: designing India’s own tactical-grade MEMS gyroscopes and accelerometers. “Ultimately, we want to own more of the technology stack, from the sensing element itself all the way to navigation and control,” Vamshi says."
+      ]
+    },
+    {
+      "h2": "Built at ARTPARK.",
+      "toc": "With ARTPARK",
+      "blocks": [
+        "Before any equity funding, Yaanendriya received non-dilutive grants and programme support from the Ministry of Heavy Industries, the Department of Science and Technology and the Government of Karnataka. ARTPARK lists it among the six pre-venture teams funded under CAMRAS, the Ministry of Heavy Industries accelerator at ARTPARK, that became startups. Distributed IMU and autonomy sensors were one of that programme’s first projects.",
+        "ARTPARK also names Yaanendriya as a contributor to its Secure Navigation Stack, its work on modular, encrypted navigation for autonomous systems.",
+        {
+          "dates": [
+            [
+              "Mar 2026",
+              "MoU with the 515 Army Base Workshop, Bengaluru, on AI-enabled flight control systems, ground control stations, electronic speed controllers and GNSS navigation."
+            ],
+            [
+              "Jul 2026",
+              "₹15 crore seed round led by Piper Serica, the company’s first institutional venture round."
+            ],
+            [
+              "2026",
+              "More than 20 customers and over 10 MoUs across defence and aerospace, drones and robotics, industrial automation and research."
+            ]
+          ]
+        },
+        "When the round was announced, ARTPARK’s homepage marked it with one line: “Built at ARTPARK. Built for the world.”"
+      ]
+    }
+  ],
+  "sources": [
+    [
+      "Deccan Herald, From drones to defence: deeptech startup Yaanendriya bets on homegrown autonomy technology (12 October 2026)",
+      "https://www.deccanherald.com/amp/story/business/startups/from-drones-to-defence-deeptech-startup-yaanendriya-bets-on-homegrown-autonomy-technology-4179111"
+    ],
+    [
+      "Entrackr, Piper Serica leads Rs 15 Cr seed round in Yaanendriya (28 July 2026)",
+      "https://entrackr.com/snippets/piper-serica-leads-rs-15-cr-seed-round-in-deep-tech-startup-yaanendriya-12205479"
+    ],
+    [
+      "The Ascendants, Yaanendriya raises ₹15 crore from Piper Serica",
+      "https://ascendants.in/business-stories/yaanendriya-raises-15-crore-piper-serica-navigation-tech/"
+    ],
+    [
+      "Indian Startup Times, Yaanendriya raises ₹15 crore from Piper Serica",
+      "https://www.indianstartuptimes.com/investment/yaanendriya-raises-%E2%82%B915-crore-from-piper-serica-to-strengthen-indias-indigenous-navigation-technology/"
+    ],
+    [
+      "Yaanendriya blog, Prelude: Yaanendriya’s journey",
+      "https://yaanendriya.com/blog/prelude-yaanendriyas-journey"
+    ],
+    [
+      "Yaanendriya blog, 515 Army Base Workshop signs MoUs",
+      "https://yaanendriya.com/blog/bengalurus-515-army-base-workshop-signs-multiple-mous-to-strengthen-indigenous-drone-manufacturing"
+    ],
+    [
+      "ARTPARK, Advanced Robotic Systems (Secure Navigation Stack)",
+      "https://www.artpark.in/advanced-robotics"
+    ],
+    [
+      "ARTPARK, CAMRAS programme page",
+      "https://www.artpark.in/advanced-robotics/camras"
+    ],
+    [
+      "Yaanendriya",
+      "https://yaanendriya.com/"
+    ]
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "slug": "hyflex-mobility",
+  "company": "Hyflex Mobility",
+  "tag": "FOUNDER STORY",
+  "kicker": "Drone propulsion",
+  "title": "From a combustion lab to engines for drones.",
+  "standfirst": "Hyflex Mobility was incorporated in Bengaluru in September 2024 by Prof. R V Ravikrishna, a combustion researcher at IISc, and his former PhD student Prasad Boggavarapu. They are building conventional and hybrid power units for drones and UAVs, and seven months after incorporation the company was one of 101 startups chosen for Karnataka’s ELEVATE 2024 grant.",
+  "meta": [
+    "ARTPARK Stories",
+    "About 2 min read",
+    "Hyflex Mobility, Bengaluru"
+  ],
+  "website": "https://hyflexmobility.com/",
+  "hero": {
+    "image": "/assets/site/drone-lab.webp",
+    "alt": "A drone flying inside an electronics and robotics lab",
+    "pos": "50% 50%",
+    "ratio": "16/9",
+    "caption": "A drone in flight inside a lab at ARTPARK. ARTPARK photograph, not of Hyflex Mobility."
+  },
+  "lead": [
+    "Prof. R V Ravikrishna has spent his career studying how fuel burns. At IISc’s Department of Mechanical Engineering, where he joined the faculty in 1999 after a PhD at Purdue University, his research uses laser diagnostics to study combustion and spray processes in internal combustion engines, gas turbines and burners. He holds the Pratt & Whitney Chair and heads the National Centre for Combustion Research and Development at IISc.",
+    "In 2024 he and his former PhD student, Prasad Boggavarapu, started a company to build engines for drones. Hyflex Mobility is part of ARTPARK’s startup portfolio."
+  ],
+  "sections": [
+    {
+      "h2": "Teacher and student.",
+      "toc": "The founders",
+      "blocks": [
+        {
+          "quote": {
+            "text": "Drones are limited by how long they can stay in the air. Combustion research has a lot to offer there, and we wanted to take it out of the lab and into a product.",
+            "who": "Prof. R V Ravikrishna, Co-founder, Hyflex Mobility",
+            "source": "",
+            "sourceLabel": "",
+            "draft": true
+          }
+        },
+        "IISc describes Hyflex as a startup incorporated by Prof. Ravikrishna and his former PhD student. Both are directors of the company, appointed when it was incorporated on 2 September 2024.",
+        {
+          "people": [
+            {
+              "name": "Prof. R V Ravikrishna",
+              "role": "Co-founder · Professor of Mechanical Engineering, IISc"
+            },
+            {
+              "name": "Prasad Boggavarapu",
+              "role": "Co-founder"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Power units for drones.",
+      "toc": "What it builds",
+      "blocks": [
+        "Hyflex describes its products simply: hybrid power units for drones and UAVs. ARTPARK’s portfolio lists a wider scope, with conventional and hybrid engines for drones, UAVs, automotive and genset applications. The company has not yet published specifications.",
+        {
+          "dates": [
+            [
+              "2 September 2024",
+              "Hyflex Mobility Private Limited is incorporated in Bengaluru."
+            ],
+            [
+              "26 March 2025",
+              "One of 101 startups awarded under Karnataka’s ELEVATE 2024 programme, which shared a cumulative grant of ₹25 crore."
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    [
+      "IISc, “IISc-based startup receives GoK ELEVATE 2024 grant” (March 2025)",
+      "https://www.iisc.ac.in/events/iisc-based-startup-receives-gok-elevate-2024-grant/"
+    ],
+    [
+      "IISc Department of Mechanical Engineering, Prof. R V Ravikrishna",
+      "https://mecheng.iisc.ac.in//people/r-v-ravikrishna/"
+    ],
+    [
+      "The Company Check, registration record",
+      "https://www.thecompanycheck.com/company/hyflex-mobility-private-limited/U29104KA2024PTC192687"
+    ],
+    [
+      "Hyflex Mobility",
+      "https://hyflexmobility.com/"
+    ],
+    [
+      "ARTPARK, startup portfolio",
+      "https://www.artpark.in/startups-overview"
+    ]
+  ]
+}

@@ -1,3 +1,37 @@
-const fs=require('node:fs/promises'),path=require('node:path');
-const {renderAll}=require('./site.cjs');const root=path.resolve(__dirname,'..');
-(async()=>{const out=path.join(root,'dist');if(path.dirname(out)!==root||path.basename(out)!=='dist')throw Error('Unsafe output path');await fs.rm(out,{recursive:true,force:true});await fs.mkdir(out,{recursive:true});await fs.cp(path.join(root,'public'),out,{recursive:true});const pages=renderAll(),routes={};for(const [route,html]of Object.entries(pages)){const filename=route==='/'?'index.html':route.slice(1).replaceAll('/','--')+'.html';await fs.writeFile(path.join(out,filename),html);routes[route]='/'+filename}await fs.writeFile(path.join(out,'routes.json'),JSON.stringify(routes,null,2));const config={version:2,framework:null,buildCommand:'node tools/build.cjs',outputDirectory:'dist',rewrites:Object.entries(routes).filter(([r])=>r!=='/').map(([source,destination])=>({source,destination})),headers:[{source:'/(.*)',headers:[{key:'X-Robots-Tag',value:'noindex, nofollow'}]}]};await fs.writeFile(path.join(root,'vercel.json'),JSON.stringify(config,null,2));console.log('Built V7: '+Object.keys(routes).length+' routes')})().catch(e=>{console.error(e);process.exitCode=1});
+// Build: copies public/ into dist/, renders every page in src/pages to dist/<route>/index.html,
+// then rewrites every artpark.in link to its local page (src/data/urlmap.cjs). Fails on unmapped links.
+// Usage: node tools/build.cjs
+const fs = require('fs');
+const path = require('path');
+
+const ROOT = path.resolve(__dirname, '..');
+const DIST = path.join(ROOT, 'dist');
+const PAGES = path.join(ROOT, 'src', 'pages');
+
+fs.rmSync(DIST, { recursive: true, force: true });
+fs.cpSync(path.join(ROOT, 'public'), DIST, { recursive: true });
+
+const pages = [];
+for (const file of fs.readdirSync(PAGES).filter((f) => f.endsWith('.cjs')).sort()) {
+  const mod = require(path.join(PAGES, file));
+  for (const p of (Array.isArray(mod) ? mod : [mod])) pages.push(p);
+}
+const routes = new Set(pages.map((p) => p.route));
+const mapArtpark = require(path.join(ROOT, 'src', 'data', 'urlmap.cjs'));
+
+const unmapped = new Set();
+for (const p of pages) {
+  let html = p.html();
+  html = html.replace(/(href|src)="https?:\/\/(?:www\.)?artpark\.in(\/[^"#?]*)?([^"]*)"/g, (m, attr, pth = '/', rest) => {
+    const to = mapArtpark(pth || '/', routes);
+    if (!to) { unmapped.add(`${p.route}: ${pth}${rest}`); return m; }
+    const hash = rest && rest.startsWith('#') ? rest : '';
+    return `${attr}="${to}${to.includes('#') ? '' : hash}"`;
+  });
+  const out = p.out ? path.join(DIST, p.out) : p.route === '/' ? path.join(DIST, 'index.html') : path.join(DIST, p.route, 'index.html');
+  fs.mkdirSync(path.dirname(out), { recursive: true });
+  fs.writeFileSync(out, html);
+}
+fs.writeFileSync(path.join(DIST, 'routes.json'), JSON.stringify([...routes].sort(), null, 2));
+if (unmapped.size) { console.error('Unmapped artpark.in links:\n' + [...unmapped].join('\n')); process.exitCode = 1; }
+console.log(`Built ${routes.size} pages.`);
