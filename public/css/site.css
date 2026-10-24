@@ -286,3 +286,79 @@ html.js #collaborate.in [style*="border-bottom:1px solid rgba(255,255,255,0.2)"]
 .footer-lockup { filter: brightness(0) invert(1); opacity: .95; }
 .footer-legal { color: rgba(255,255,255,.6) !important; text-decoration: none; margin-left: 18px; }
 .footer-legal:hover { color: var(--artlight) !important; }
+
+/* ============================================================
+   Round 7 mobile header: one slim bar. The dark utility links move into the menu.
+   ============================================================ */
+.nav-extra { display: none; }
+@media (max-width: 960px) {
+  .util-bar { display: none; }
+  .site-header-row { padding: 10px 20px !important; }
+  .nav-toggle { width: 42px; height: 42px; border-radius: 10px; }
+  .site-nav { max-height: calc(100dvh - 64px) !important; padding: 4px 20px 24px !important; box-shadow: 0 24px 40px -24px rgba(36,36,36,.35); }
+  .nav-extra { display: flex; flex-direction: column; gap: 16px; padding-top: 20px; }
+  .nav-extra .btn { width: 100%; padding: 14px 20px; }
+  .nav-extra-links { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 22px; font-size: 15px; }
+  .nav-extra-links a { color: var(--ink); text-decoration: none; font-family: var(--font-display); font-weight: 700; }
+  .nav-extra-links a.is-pill { margin-left: auto; padding: 7px 16px; border-radius: 999px; background: var(--artlight); color: var(--artblue); }
+}
+@media (max-width: 600px) { .site-header-row .site-logo img { width: 164px !important; } }
+/* Section tabs (About, Outreach): one swipeable row on phones instead of wrapping. */
+@media (max-width: 760px) {
+  .sub-tabs { flex-wrap: nowrap !important; overflow-x: auto; margin-left: -24px !important; margin-right: -24px !important; padding: 0 24px; gap: 26px !important; scrollbar-width: none; margin-top: 28px !important; }
+  .sub-tabs::-webkit-scrollbar { display: none; }
+  .sub-tabs a { flex: none; white-space: nowrap; font-size: 15px; }
+}
+/* Team on phones: two portraits per row instead of one screen per person. */
+@media (max-width: 600px) {
+  .person-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 22px 12px !important; margin-top: 24px !important; }
+  .person-card { gap: 10px !important; }
+  .person-card > div:last-child > div:first-child { font-size: 15px !important; line-height: 1.25; }
+  .person-card > div:last-child > div:nth-child(2) { font-size: 12.5px !important; }
+  .person-card a { font-size: 12.5px !important; }
+}
+/* Portfolio on phones: compact row cards (logo left, text right) instead of one tall card per screen. */
+@media (max-width: 600px) {
+  .pf-grid { grid-template-columns: 1fr !important; gap: 10px !important; }
+  .pf-grid .pf-card { display: grid !important; grid-template-columns: 92px minmax(0, 1fr); gap: 4px 14px !important; padding: 14px !important; align-items: center; border-radius: 10px; }
+  .pf-grid .pf-card > div:first-child { grid-row: 1 / span 2; height: 76px !important; padding: 6px !important; border: 1px solid var(--line) !important; border-radius: 8px; }
+  .pf-grid .pf-card > div:first-child img { max-height: 54px !important; max-width: 92% !important; }
+  .pf-grid .pf-card > div:nth-child(2) > div:first-child { font-size: 16px !important; }
+  .pf-grid .pf-card > div:nth-child(2) > div:last-child { font-size: 13px !important; margin-top: 2px !important; }
+  .pf-grid .pf-card > div:nth-child(3) { min-height: 0 !important; border-top: 0 !important; padding-top: 4px !important; margin-top: 0 !important; font-size: 10.5px !important; }
+}
+/* Story carousel on phones: the story tabs sit on top like story progress bars; nothing floats over the text. */
+@media (max-width: 760px) {
+  [data-carousel] { display: flex; flex-direction: column; }
+  [data-carousel] .hero-controls-wrap { position: static !important; order: 1; background: var(--paper); border-bottom: 1px solid var(--line); }
+  [data-carousel] .hero-slides { order: 2; }
+  [data-carousel] .hero-controls { padding: 14px 20px !important; gap: 12px !important; }
+  [data-carousel] .hero-tabs { display: grid !important; grid-template-columns: repeat(3, minmax(0, 1fr)); width: 100%; }
+  [data-carousel] .hero-tabs button { min-width: 0 !important; font-size: 11px !important; padding: 8px 4px 4px !important; background: transparent !important; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  [data-carousel] .hero-controls > div:last-child { display: none !important; }
+  .hero-slide-body { padding: 22px 20px 32px !important; }
+  .hero-slide-body h2 { font-size: 38px !important; margin-top: 18px !important; }
+  .hero-slide-body p { font-size: 16px !important; }
+  .hero-slide-media { height: 220px !important; }
+  .slide-metric b { font-size: 40px; }
+}
+@media (max-width: 760px) {
+  [data-carousel] .hero-slides { grid-template-columns: minmax(0, 1fr); }
+  [data-carousel] .hero-slide { min-width: 0; }
+  .slide-metric { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .slide-metric b { white-space: nowrap; }
+}
+@media (max-width: 600px) { .pf-grid .pf-card > div:first-child { box-sizing: border-box; width: 92px !important; } }
+.hero-slide-body { box-sizing: border-box; }
+@media (max-width: 600px) {
+  .stat-band .stat-n { font-size: 28px !important; white-space: nowrap; }
+  .stat-band .stat { padding: 20px 16px !important; }
+}
+/* Footer on phones: link columns side by side instead of one long list. */
+@media (max-width: 600px) {
+  footer { padding-top: 44px !important; }
+  .footer-grid { grid-template-columns: 1fr 1fr !important; gap: 28px 16px !important; }
+  .footer-grid > div:first-child { grid-column: 1 / -1; }
+  .footer-grid > div:nth-child(4) { grid-column: 2; grid-row: 2 / span 2; }
+}
+@media (max-width: 960px) { .nav-extra .btn { box-sizing: border-box; } }

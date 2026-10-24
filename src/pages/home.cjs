@@ -112,12 +112,12 @@ const carousel = `
         </div>
       </div>
     </div>
-    <div style="display:grid">
+    <div class="hero-slides" style="display:grid">
 ${stories.map(slide).join('\n')}
     </div>
-    <div style="position:absolute;left:0;right:0;bottom:0;z-index:2;pointer-events:none">
+    <div class="hero-controls-wrap" style="position:absolute;left:0;right:0;bottom:0;z-index:2;pointer-events:none">
       <div class="hero-controls" style="max-width:1180px;margin:0 auto;padding:0 24px 28px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;pointer-events:auto">
-        <div role="tablist" aria-label="Choose a story" style="display:flex;flex-wrap:wrap;gap:6px">
+        <div role="tablist" class="hero-tabs" aria-label="Choose a story" style="display:flex;flex-wrap:wrap;gap:6px">
 ${stories.map((s, i) => `          <button type="button" role="tab" data-go="${i}" aria-selected="${i === 0}" style="display:flex;flex-direction:column;gap:6px;min-width:120px;text-align:left;background:rgba(255,255,255,0.9);border:0;border-top:3px solid ${i === 0 ? 'var(--artblue)' : 'var(--line-strong)'};padding:8px 10px 6px;cursor:pointer;font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:0.08em;color:${i === 0 ? 'var(--artblue)' : 'var(--ink-soft)'};transition:color 150ms ease,border-color 150ms ease;position:relative">${esc(s.tab)}<span class="tab-progress" aria-hidden="true"></span></button>`).join('\n')}
         </div>
         <div style="display:flex;align-items:center;gap:8px">
@@ -143,39 +143,40 @@ const quoteFor = (r) => {
   return { ...r, text, who, role: roleParts.join(', '), source: hit.source };
 };
 const RAIL = rail.map(quoteFor);
+// Scroll-led founder stories (round 7). Desktop: the photo stays pinned on the left and changes as each
+// founder's quote reaches the middle of the screen; the quote being read is full strength, the rest dimmed.
+// Phones: swipeable photo cards with the next one peeking in. Short pull-quotes are exact excerpts (stories.json "pull").
+const FX = RAIL.map((r) => ({ ...r, title: storyFile(r.slug).title, short: r.pull || r.text, name: company[r.slug].name }));
 const founders = `
-  <!-- C. Founders, in their own words: one featured founder at a time, logos to switch -->
-  <section id="founders" data-screen-label="Founder stories" data-rail class="reveal" style="background:var(--paper-soft);padding:clamp(48px,6vw,80px) 0;scroll-margin-top:110px">
+  <!-- C. Founders, in their own words -->
+  <section id="founders" data-screen-label="Founder stories" data-founders style="background:var(--paper-soft);padding:clamp(56px,7vw,104px) 0 clamp(48px,6vw,88px);scroll-margin-top:110px">
     <div style="max-width:1180px;margin:0 auto;padding:0 24px">
-      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px 40px">
-        <div>
-          <div class="eyebrow-rule">Founder stories</div>
-          <h2 style="font-size:clamp(36px,5vw,56px);line-height:1.08;margin-top:16px">In their own <span class="hl">words</span>.</h2>
-          <p style="margin-top:12px;max-width:640px;font-size:17px;line-height:1.7;color:var(--ink-soft);text-wrap:pretty">${C.portfolio.length} companies have been built and backed at ARTPARK. These are some of the people behind them, on what they saw, what was hard and what it took.</p>
-        </div>
-        <div style="display:flex;align-items:center;gap:8px">
-          <span data-rail-count style="font-size:13px;color:var(--ink-soft);margin-right:6px;font-variant-numeric:tabular-nums">01 / ${String(RAIL.length).padStart(2, '0')}</span>
-          <button type="button" class="btn btn-ghost" data-rail-prev aria-label="Previous founder" style="padding:10px 16px;background:var(--paper)">←</button>
-          <button type="button" class="btn btn-ghost" data-rail-next aria-label="Next founder" style="padding:10px 16px;background:var(--paper)">→</button>
-        </div>
+      <div class="fx-head">
+        <div class="eyebrow-rule">Founder stories</div>
+        <h2 style="font-size:clamp(36px,5vw,60px);line-height:1.06;margin-top:16px">In their own <span class="hl">words</span>.</h2>
+        <p style="margin-top:14px;max-width:640px;font-size:18px;line-height:1.7;color:var(--ink-soft);text-wrap:pretty">${C.portfolio.length} companies have been built and backed at ARTPARK. These are some of the people behind them, on what they saw, what was hard and what it took.</p>
       </div>
-
-      <div class="fs-stage" data-rail-stage>
-${RAIL.map((r, i) => `        <article class="fs-slide${i === 0 ? ' is-on' : ''}" data-rail-slide="${i}" aria-hidden="${i === 0 ? 'false' : 'true'}">
-          <a class="fs-media" href="${storyHref(r.slug)}" tabindex="-1"><img src="${r.img}" alt="" loading="${i === 0 ? 'eager' : 'lazy'}" style="object-position:${r.pos || '50% 50%'}"></a>
-          <div class="fs-body">
-            <img class="fs-logo" src="/assets/logos/${r.slug}.webp" alt="${esc(company[r.slug].name)}">
-            <blockquote class="fs-quote">“${esc(r.text)}”</blockquote>
-            <p class="fs-who"><b>${esc(r.who)}</b><span>${esc(r.role)}</span></p>
-            <a class="btn btn-primary fs-cta" href="${storyHref(r.slug)}" tabindex="${i === 0 ? 0 : -1}">Read the ${esc(company[r.slug].name)} story <span class="arrow">→</span></a>
+      <div class="fx-grid">
+        <div class="fx-visual" aria-hidden="true">
+          <div class="fx-frame">
+${FX.map((r, i) => `            <figure class="fx-fig${i === 0 ? ' is-on' : ''}" data-fx-fig="${i}"><img src="${r.img}" alt="" loading="${i < 2 ? 'eager' : 'lazy'}" style="object-position:${r.pos || '50% 50%'}"><span class="fx-chip"><img src="/assets/logos/${r.slug}.webp" alt=""></span></figure>`).join('\n')}
           </div>
-        </article>`).join('\n')}
+          <div class="fx-progress"><span data-fx-count>01 / ${String(FX.length).padStart(2, '0')}</span><i><b data-fx-bar style="width:${(100 / FX.length).toFixed(2)}%"></b></i></div>
+        </div>
+        <ol class="fx-list" data-fx-list>
+${FX.map((r, i) => `          <li class="fx-item${i === 0 ? ' is-on' : ''}" data-fx-item="${i}">
+            <a class="fx-card-media" href="${storyHref(r.slug)}" tabindex="-1" aria-hidden="true"><img src="${r.img}" alt="" loading="lazy" style="object-position:${r.pos || '50% 50%'}"><span class="fx-chip"><img src="/assets/logos/${r.slug}.webp" alt=""></span></a>
+            <div class="fx-body">
+              <div class="fx-meta"><span class="fx-n">${String(i + 1).padStart(2, '0')}</span><img class="fx-logo" src="/assets/logos/${r.slug}.webp" alt="${esc(r.name)}"></div>
+              <p class="fx-kicker">${esc(r.title)}</p>
+              <blockquote class="fx-quote">“${esc(r.short)}”</blockquote>
+              <p class="fx-who"><b>${esc(r.who)}</b><span>${esc(r.role)}</span></p>
+              <a class="fx-link" href="${storyHref(r.slug)}">Read the ${esc(r.name)} story <span class="arrow">→</span></a>
+            </div>
+          </li>`).join('\n')}
+        </ol>
       </div>
-
-      <div class="fs-picker" role="tablist" aria-label="Choose a founder">
-${RAIL.map((r, i) => `        <button type="button" role="tab" class="fs-pick${i === 0 ? ' is-on' : ''}" data-rail-go="${i}" aria-selected="${i === 0}" aria-label="${esc(r.who)}, ${esc(company[r.slug].name)}"><img src="/assets/logos/${r.slug}.webp" alt=""><span class="fs-bar" aria-hidden="true"></span></button>`).join('\n')}
-      </div>
-      <div style="display:flex;justify-content:flex-end;margin-top:18px"><a href="${R.portfolio}" style="font-family:var(--font-display);font-weight:700;font-size:14px;text-decoration:none">All ${C.portfolio.length} founder stories →</a></div>
+      <div class="fx-foot"><span class="fx-swipe">Swipe for more founders →</span><a href="${R.portfolio}">All ${C.portfolio.length} companies and their stories →</a></div>
     </div>
   </section>`;
 

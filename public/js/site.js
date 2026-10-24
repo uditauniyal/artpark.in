@@ -8,7 +8,7 @@
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    }, { threshold: 0, rootMargin: '0px 0px 12% 0px' });
     reveals.forEach(function (r) { io.observe(r); });
   } else { reveals.forEach(function (r) { r.classList.add('in'); }); }
 
@@ -301,7 +301,7 @@
   // ---------- Careers: search, category and work-mode filters (Careers.dc.html) ----------
   var careers = document.querySelector('[data-careers]');
   if (careers) {
-    var state = { cat: 'All categories', mode: 'All', q: '' };
+    var state = { org: 'all', cat: 'All categories', mode: 'All', q: '' };
     var paintBlue = function (btns, attr, val) {
       btns.forEach(function (b) {
         var on = b.getAttribute(attr) === val;
@@ -310,20 +310,24 @@
         b.style.color = on ? '#fff' : b.disabled ? 'var(--ink-dim)' : 'var(--ink)';
       });
     };
-    var cats = careers.querySelectorAll('[data-cat]:not([data-job])');
+    var cats = careers.querySelectorAll('button[data-cat]');
+    var orgs = careers.querySelectorAll('button[data-org]');
     var modes = careers.querySelectorAll('button[data-mode]');
     var jobsEls = careers.querySelectorAll('[data-job]');
     var apply = function () {
       var n = 0, q = state.q.trim().toLowerCase();
       jobsEls.forEach(function (j) {
-        var ok = (state.cat === 'All categories' || j.getAttribute('data-cat') === state.cat) &&
+        var ok = (state.org === 'all' || j.getAttribute('data-org') === state.org) &&
+          (state.cat === 'All categories' || j.getAttribute('data-cat') === state.cat) &&
           (state.mode === 'All' || j.getAttribute('data-mode') === state.mode) &&
           (!q || j.getAttribute('data-text').indexOf(q) !== -1);
         j.hidden = !ok; if (ok) n++;
       });
-      careers.querySelector('[data-count]').textContent = n + (n === 1 ? ' role' : ' roles');
+      careers.querySelectorAll('[data-group]').forEach(function (g) { g.hidden = !g.querySelector('[data-job]:not([hidden])'); });
+      careers.querySelector('[data-count]').textContent = n + (n === 1 ? ' open role' : ' open roles');
       careers.querySelector('[data-empty]').hidden = n !== 0;
     };
+    orgs.forEach(function (b) { b.addEventListener('click', function () { state.org = b.getAttribute('data-org'); paintBlue(orgs, 'data-org', state.org); apply(); }); });
     cats.forEach(function (b) { b.addEventListener('click', function () { state.cat = b.getAttribute('data-cat'); paintBlue(cats, 'data-cat', state.cat); apply(); }); });
     modes.forEach(function (b) { b.addEventListener('click', function () { state.mode = b.getAttribute('data-mode'); paintBlue(modes, 'data-mode', state.mode); apply(); }); });
     careers.querySelector('[data-q]').addEventListener('input', function (e) { state.q = e.target.value; apply(); });
@@ -441,5 +445,44 @@
       form.hidden = true;
       document.getElementById('contact-sent').hidden = false;
     });
+  }
+
+  // ---------- Home founder stories (round 7): the quote in the middle of the screen leads ----------
+  var fx = document.querySelector('[data-founders]');
+  if (fx) {
+    var fxItems = fx.querySelectorAll('[data-fx-item]');
+    var fxFigs = fx.querySelectorAll('[data-fx-fig]');
+    var fxCount = fx.querySelector('[data-fx-count]');
+    var fxBar = fx.querySelector('[data-fx-bar]');
+    var fxList = fx.querySelector('[data-fx-list]');
+    var fxN = fxItems.length, fxCur = 0;
+    var fxShow = function (i) {
+      if (i === fxCur) return;
+      fxCur = i;
+      fxItems.forEach(function (el, k) { el.classList.toggle('is-on', k === i); });
+      fxFigs.forEach(function (el, k) { el.classList.toggle('is-on', k === i); });
+      if (fxCount) fxCount.textContent = String(i + 1).padStart(2, '0') + ' / ' + String(fxN).padStart(2, '0');
+      if (fxBar) fxBar.style.width = ((i + 1) / fxN * 100).toFixed(2) + '%';
+    };
+    var fxWide = window.matchMedia('(min-width: 901px)');
+    if ('IntersectionObserver' in window) {
+      var fxIo = new IntersectionObserver(function (es) {
+        if (!fxWide.matches) return;
+        es.forEach(function (e) { if (e.isIntersecting) fxShow(+e.target.getAttribute('data-fx-item')); });
+      }, { rootMargin: '-45% 0px -45% 0px' });
+      fxItems.forEach(function (el) { fxIo.observe(el); });
+    }
+    // Phones: the swipe row; the card nearest the left edge is the current one.
+    if (fxList) {
+      var fxTick = null;
+      fxList.addEventListener('scroll', function () {
+        if (fxWide.matches || fxTick) return;
+        fxTick = requestAnimationFrame(function () {
+          fxTick = null;
+          var w = fxItems[0].getBoundingClientRect().width + 12;
+          fxShow(Math.max(0, Math.min(fxN - 1, Math.round(fxList.scrollLeft / w))));
+        });
+      }, { passive: true });
+    }
   }
 })();

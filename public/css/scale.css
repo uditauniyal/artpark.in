@@ -35,3 +35,81 @@
 
 /* Carousel counter sits on the photo: give it a light pill so it stays readable. */
 [data-carousel] [data-count] { padding: 6px 12px; border-radius: 999px; background: rgba(255,255,255,.92); color: var(--ink) !important; font-variant-numeric: tabular-nums; }
+
+/* ============================================================
+   Round 7 scroll policy (from studying firstround.com, southparkcommons.com, antler.co):
+   content is never invisible while scrolling. Elements are fully visible from first paint and
+   only drift a few pixels into place, triggered before they enter the screen.
+   ============================================================ */
+html.js .reveal, html.js .reveal h2, html.js #building .stage-arrows + div > div, html.js #believe .belief-row,
+html.js .stat-band .stat, html.js #collaborate .reveal-row, html.js #collaborate [style*="border-bottom:1px solid rgba(255,255,255,0.2)"],
+html.js .reveal .icon-card, html.js .reveal .work-card, html.js .reveal .model-card {
+  opacity: 1 !important; clip-path: none !important;
+}
+html.js .reveal { transform: translateY(18px); transition: transform 650ms cubic-bezier(.25,.46,.45,.94); }
+html.js .reveal h2 { transform: none; }
+html.js .reveal.in { transform: none; }
+html.js .stat-band .stat { animation: none !important; transform: none !important; }
+@media (prefers-reduced-motion: reduce) { html.js .reveal { transform: none !important; } }
+
+/* ============================================================
+   Founder stories (round 7): pinned photo + scroll-led quotes on desktop, swipe cards on phones.
+   ============================================================ */
+.fx-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: clamp(40px, 5vw, 80px); margin-top: clamp(32px, 4vw, 56px); align-items: start; }
+.fx-visual { position: sticky; top: 156px; height: min(calc(100vh - 196px), 640px); display: flex; flex-direction: column; gap: 14px; }
+.fx-frame { position: relative; flex: 1; border-radius: 18px; overflow: hidden; background: var(--paper); box-shadow: 0 30px 60px -40px rgba(31,10,138,.45); }
+.fx-fig { position: absolute; inset: 0; margin: 0; opacity: 0; transform: scale(1.06); transition: opacity 650ms cubic-bezier(.25,.46,.45,.94), transform 1400ms cubic-bezier(.25,.46,.45,.94); }
+.fx-fig.is-on { opacity: 1; transform: none; }
+.fx-fig > img, .fx-card-media > img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.fx-chip { position: absolute; right: 14px; bottom: 14px; display: flex; align-items: center; height: 52px; padding: 0 14px; border-radius: 10px; background: #fff; box-shadow: 0 8px 24px -12px rgba(0,0,0,.35); }
+.fx-chip img { height: 32px; width: auto; max-width: 150px; object-fit: contain; display: block; }
+.fx-progress { display: flex; align-items: center; gap: 14px; font-family: var(--font-display); font-weight: 700; font-size: 13px; letter-spacing: .08em; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+.fx-progress i { position: relative; flex: 1; height: 3px; border-radius: 3px; background: var(--line-strong); overflow: hidden; }
+.fx-progress b { position: absolute; left: 0; top: 0; bottom: 0; background: var(--artblue); border-radius: 3px; transition: width 500ms cubic-bezier(.25,.46,.45,.94); }
+.fx-list { list-style: none; margin: 0; padding: 0; }
+.fx-item { min-height: 58vh; display: flex; align-items: center; padding: 44px 0; border-top: 1px solid var(--line-strong); opacity: .3; transition: opacity 450ms cubic-bezier(.4,0,.2,1); }
+.fx-item:first-child { border-top: 0; min-height: 50vh; padding-top: 8px; align-items: flex-start; }
+.fx-item:last-child { min-height: 52vh; }
+.fx-item.is-on, .fx-item:hover, .fx-item:focus-within { opacity: 1; }
+.fx-card-media { display: none; }
+.fx-body { display: flex; flex-direction: column; gap: 14px; }
+.fx-meta { display: flex; align-items: center; gap: 16px; }
+.fx-n { font-family: var(--font-display); font-weight: 700; font-size: 13px; letter-spacing: .12em; color: var(--artblue); }
+.fx-logo { height: 40px; width: auto; max-width: 180px; object-fit: contain; }
+.fx-kicker { font-family: var(--font-display); font-weight: 700; font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-dim); margin-top: 4px; }
+.fx-quote { margin: 0; font-family: var(--font-display); font-weight: 700; font-size: clamp(28px, 2.8vw, 40px); line-height: 1.18; letter-spacing: -.01em; color: var(--artblue-deep); text-wrap: balance; }
+.fx-who { display: flex; flex-direction: column; gap: 2px; padding-left: 14px; border-left: 3px solid var(--artlight); font-size: 16px; color: var(--ink-soft); }
+.fx-who b { font-family: var(--font-display); font-size: 18px; color: var(--ink); }
+.fx-link { align-self: flex-start; margin-top: 6px; font-family: var(--font-display); font-weight: 700; font-size: 16px; text-decoration: none; color: var(--artblue); border-bottom: 2px solid var(--artlight); padding-bottom: 3px; }
+.fx-link .arrow { display: inline-block; transition: transform 200ms ease; }
+.fx-link:hover .arrow { transform: translateX(4px); }
+.fx-foot { display: flex; justify-content: flex-end; margin-top: 28px; }
+.fx-foot a { font-family: var(--font-display); font-weight: 700; font-size: 15px; text-decoration: none; }
+.fx-swipe { display: none; }
+
+@media (max-width: 900px) {
+  .fx-grid { display: block; margin-top: 28px; }
+  .fx-visual { display: none; }
+  .fx-list { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; margin: 0 -24px; padding: 4px 24px 18px; scrollbar-width: none; overscroll-behavior-x: contain; }
+  .fx-list::-webkit-scrollbar { display: none; }
+  .fx-item, .fx-item:first-child, .fx-item:last-child { flex: 0 0 min(84%, 420px); min-height: 0; display: flex; flex-direction: column; align-items: stretch; padding: 0; border: 1px solid var(--line); border-radius: 16px; background: var(--paper); overflow: hidden; opacity: 1; scroll-snap-align: start; scroll-margin-left: 24px; }
+  .fx-card-media { display: block; position: relative; aspect-ratio: 4 / 3; background: var(--paper-soft); }
+  .fx-card-media .fx-chip { height: 42px; padding: 0 10px; right: 10px; bottom: 10px; }
+  .fx-card-media .fx-chip img { height: 26px; max-width: 120px; }
+  .fx-body { padding: 18px 18px 22px; gap: 10px; flex: 1; }
+  .fx-meta .fx-logo { display: none; }
+  .fx-kicker { font-size: 11.5px; margin-top: 0; }
+  .fx-quote { font-size: 22px; line-height: 1.25; }
+  .fx-who { font-size: 14px; }
+  .fx-who b { font-size: 16px; }
+  .fx-link { margin-top: auto; font-size: 15px; }
+  .fx-foot { justify-content: space-between; align-items: center; gap: 12px; margin-top: 8px; }
+  .fx-swipe { display: inline; font-size: 13px; color: var(--ink-dim); }
+  .fx-foot a { font-size: 14px; text-align: right; }
+}
+/* QOSMIC's mark is drawn on a black tile: show it as a rounded badge, on a dark chip over photos. */
+img[src$="logos/qosmic.webp"] { border-radius: 6px; }
+.fx-chip:has(img[src$="logos/qosmic.webp"]) { background: #000; padding: 0 4px; }
+.fx-chip img[src$="logos/qosmic.webp"] { height: 44px; max-height: none; }
+.fx-card-media .fx-chip img[src$="logos/qosmic.webp"] { height: 36px; }
+@media (max-width: 900px) { .fx-card-media { aspect-ratio: 3 / 2; } }

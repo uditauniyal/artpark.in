@@ -62,7 +62,7 @@ ${items.map(([k, l, d, href]) => `              <a role="menuitem" href="${href}
 
   return `<div class="site-header-host" style="position:sticky;top:0;z-index:50">
 <header data-screen-label="Header" style="background:var(--paper);font-family:var(--font-body)">
-  <div style="background:var(--artblack);color:#fff">
+  <div class="util-bar" style="background:var(--artblack);color:#fff">
     <div style="max-width:1180px;margin:0 auto;padding:7px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:6px 20px;font-size:12.5px">
       <span style="color:rgba(255,255,255,0.7)">AI &amp; Robotics Technology Park · IISc Bengaluru</span>
       <div style="display:flex;flex-wrap:wrap;align-items:center;gap:6px 20px">
@@ -87,6 +87,7 @@ ${menu('about', 'About', ABOUT_ITEMS, active === 'about', 280)}
         <a class="nav-link" href="${R.partnerships}" style="line-height:1.2;color:${ink(active === 'partnerships')}">Partnerships</a>
 ${menu('outreach', 'Outreach', OUTREACH_ITEMS, active === 'outreach', 260)}
         <a class="nav-link" href="${R.contact}" style="line-height:1.2;color:${ink(active === 'contact')}">Contact</a>
+        <div class="nav-extra"><a class="btn btn-primary" href="${R.home}#collaborate" style="border-radius:999px;justify-content:center">Work with us <span class="arrow">→</span></a><div class="nav-extra-links"><a href="${R.careers}">Careers</a><a href="${R.tenders}">Tenders</a><a href="${R.applySignIn}" target="_blank" rel="noopener">Sign in</a><a class="is-pill" href="${R.applySignIn}" target="_blank" rel="noopener">Sign up</a></div></div>
       </nav>
       <a class="btn btn-primary site-cta" href="${R.home}#collaborate" style="border-radius:999px;padding:11px 20px;flex:none;white-space:nowrap">Work with us <span class="arrow">→</span></a>
     </div>
@@ -102,7 +103,7 @@ ${links.map(([l, href]) => `        <a href="${href}" style="color:#fff;text-dec
       </div>`;
   return `<footer data-screen-label="Footer" style="background:var(--artblack);color:#fff;padding:64px 0 32px;font-family:var(--font-body)">
   <div style="max-width:1180px;margin:0 auto;padding:0 24px">
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:32px">
+    <div class="footer-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:32px">
       <div style="display:flex;flex-direction:column;gap:16px">
         <a href="${R.home}" style="align-self:flex-start;display:block"><img src="${LOCKUP}" alt="${LOCKUP_ALT}" width="218" height="44" class="footer-lockup" style="height:44px;width:auto;display:block"></a>
         <p style="font-size:14px;line-height:1.6;color:rgba(255,255,255,0.7);max-width:320px">AI &amp; Robotics Technology Park. A not-for-profit at the Indian Institute of Science, Bengaluru.</p>
@@ -155,7 +156,7 @@ ${scripts.map((s) => `<script src="${s}" defer></script>`).join('\n')}
 // Standard inner-page intro: eyebrow rule, H1, lede, optional sub-tab row.
 function pageIntro({ eyebrow, h1, lede, tabs }) {
   const tabRow = tabs ? `
-      <div style="display:flex;flex-wrap:wrap;gap:4px 28px;margin-top:40px;border-bottom:1px solid var(--line);font-family:var(--font-display);font-weight:700;font-size:14px">
+      <div class="sub-tabs" style="display:flex;flex-wrap:wrap;gap:4px 28px;margin-top:40px;border-bottom:1px solid var(--line);font-family:var(--font-display);font-weight:700;font-size:14px">
 ${tabs.items.map(([k, l, href]) => `        <a href="${href}" style="padding-bottom:12px;margin-bottom:-1px;text-decoration:none;color:${tabs.current === k ? 'var(--artblue)' : 'var(--ink)'};border-bottom:2px solid ${tabs.current === k ? 'var(--artblue)' : 'transparent'}"${tabs.current === k ? ' aria-current="page"' : ''}>${esc(l)}</a>`).join('\n')}
       </div>` : '';
   return `  <section style="padding:clamp(56px,8vw,96px) 0 0">

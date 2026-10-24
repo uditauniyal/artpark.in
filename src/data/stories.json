@@ -183,19 +183,22 @@
       "slug": "flo-mobility",
       "match": "The construction industry",
       "img": "/assets/founders/flo-mobility-haulers.webp",
-      "pos": "50% 45%"
+      "pos": "50% 45%",
+      "pull": "That’s not a people problem; it’s a systems problem."
     },
     {
       "slug": "astrome",
       "match": "wireless equivalent",
       "img": "/assets/founders/astrome-team.webp",
-      "pos": "50% 55%"
+      "pos": "50% 55%",
+      "pull": "This is like the wireless equivalent of fibre optic."
     },
     {
       "slug": "vishvasys-aerospace",
       "match": "We were not born to fly",
       "img": "/assets/founders/vishvasys-aerospace-radhakant-padhi.webp",
-      "pos": "50% 25%"
+      "pos": "50% 25%",
+      "pull": "We were not born to fly, but we know birds do fly, and hence, things can fly."
     },
     {
       "slug": "a-thon",
@@ -207,7 +210,8 @@
       "slug": "niral-networks",
       "match": "frees up the operator",
       "img": "/assets/founders/niral-networks-abhijit-chaudhary.webp",
-      "pos": "50% 25%"
+      "pos": "50% 25%",
+      "pull": "When NiralOS based products are deployed, it frees up the operator from any type of vendor lock-in."
     },
     {
       "slug": "nxtqube",

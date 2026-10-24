@@ -94,3 +94,45 @@ html.js .reveal.in .icon-card, html.js .reveal.in .work-card, html.js .reveal.in
 }
 .job-mark.is-artpark { justify-content: flex-start; padding-left: 7px; }
 .job-mark.is-artpark { justify-content: center; padding-left: 0; } .job-mark.is-artpark img { width: 30px; height: 30px; object-fit: cover; object-position: left center; }
+
+/* Careers: two employer groups, one card design for every role. */
+.job-group { margin-top: 40px; }
+.job-group[hidden] { display: none; }
+.job-group-head { display: flex; flex-direction: column; gap: 6px; padding-bottom: 16px; border-bottom: 2px solid var(--ink); }
+.job-group-head h2 { font-size: clamp(24px, 2.4vw, 30px); line-height: 1.15; }
+.job-group-head p { font-size: 15px; line-height: 1.6; color: var(--ink-soft); max-width: 640px; }
+.job-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; margin-top: 20px; }
+.job-card { display: flex; flex-direction: column; gap: 12px; padding: 26px 26px 24px; border: 1px solid var(--line); border-radius: 12px; background: var(--paper); transition: border-color 200ms ease, transform 300ms cubic-bezier(.2,.7,.2,1), box-shadow 300ms ease; }
+.job-card[hidden] { display: none; }
+.job-card:hover { border-color: var(--artblue); transform: translateY(-3px); box-shadow: 0 18px 40px -28px rgba(31,10,138,.45); }
+.job-top { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.job-pill { display: inline-flex; align-items: center; padding: 5px 11px; border-radius: 999px; font-family: var(--font-display); font-weight: 700; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
+.job-pill.is-artpark { background: var(--artblue); color: #fff; }
+.job-pill.is-startup { background: var(--artlight); color: var(--artblue-deep); }
+.job-ago { font-size: 13px; color: var(--ink-dim); }
+.job-co { display: flex; flex-direction: column; gap: 3px; }
+.job-co b { font-family: var(--font-display); font-size: 17px; color: var(--artblue); }
+.job-co span { font-size: 14px; line-height: 1.5; color: var(--ink-soft); }
+.job-card h3 { font-size: 22px; line-height: 1.22; padding-top: 12px; border-top: 1px solid var(--line); }
+.job-desc { font-size: 15px; line-height: 1.6; color: var(--ink-soft); }
+.job-meta { font-size: 14px; color: var(--ink); }
+.job-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.job-tags span { font-size: 12.5px; padding: 4px 10px; border-radius: 999px; background: var(--paper-soft); border: 1px solid var(--line); color: var(--artblue); }
+.job-go { margin-top: auto; padding-top: 6px; font-family: var(--font-display); font-weight: 700; font-size: 15px; text-decoration: none; }
+.job-go .arrow { display: inline-block; transition: transform 200ms ease; }
+.job-card:hover .job-go .arrow { transform: translateX(4px); }
+@media (max-width: 600px) { .job-grid { grid-template-columns: 1fr; } .job-card { padding: 22px 20px; } }
+/* Careers on phones: filters become compact swipeable chip rows so roles show on the first screen. */
+@media (max-width: 760px) {
+  [data-careers] { gap: 20px !important; padding-top: 32px !important; }
+  [data-careers] aside { flex: 1 1 100% !important; min-width: 0 !important; gap: 12px !important; }
+  [data-careers] aside [role="group"] { flex-direction: row !important; flex-wrap: nowrap; overflow-x: auto; gap: 8px !important; margin: 0 -24px; padding: 2px 24px; scrollbar-width: none; }
+  [data-careers] aside [role="group"]::-webkit-scrollbar { display: none; }
+  [data-careers] aside [role="group"] .eyebrow { display: none; }
+  [data-careers] aside [role="group"] button { flex: none; width: auto !important; gap: 8px; white-space: nowrap; padding: 9px 15px !important; border: 1px solid var(--line-strong) !important; border-radius: 999px !important; font-size: 14px !important; }
+  [data-careers] aside [role="group"] button[aria-pressed="true"] { border-color: var(--artblue) !important; }
+  [data-careers] aside button[disabled] { display: none !important; }
+  [data-careers] aside .field { padding: 12px 14px; }
+  [data-careers] aside > div:first-child .eyebrow { display: none; }
+  .job-group { margin-top: 28px; }
+}

@@ -3,6 +3,8 @@
 // - source/recovered-content.json + source/collections.json: records recovered from artpark.in,
 //   artparkcareers.in and LinkedIn by the earlier build, each with its source URL.
 // Anything Claude wrote itself is logged in notes/draft-copy-log.md.
+const fs = require('fs');
+const path = require('path');
 const rec = require('./source/recovered-content.json');
 const col = require('./source/collections.json');
 
@@ -151,13 +153,20 @@ const OUTLET_FIX = { 'India health fund': 'India Health Fund', 'Money Control': 
 news.forEach((n) => { n.outlet = OUTLET_FIX[n.outlet] || n.outlet; n.date = (n.date || '').replace(/^(\d+)(st|nd|rd|th)/, '$1').trim(); });
 
 // ---------------- Careers (artparkcareers.in, checked 2026-10-24) ----------------
+// Re-checked against the live roles feed on 2026-10-24 (research/careers-api.json): the AxD internship has closed,
+// and the r_demo_* roles on that site are placeholders, so neither is listed. "about" is the startup's own one-liner.
 const ORG_SHORT = { 'Foucault Private Limited': 'Foucault' };
-const jobs = col.jobs.map((j) => ({
-  title: j.title, url: j.url, company: ORG_SHORT[j.organization] || j.organization,
-  via: j.hiringContext === 'ARTPARK' ? 'Internal hiring' : 'Hiring via ARTPARK',
-  desc: j.description, location: j.location, type: j.type, mode: j.workMode, cat: j.category,
-  tags: [j.subFamily, j.team].filter(Boolean), postedAt: j.postedAt,
-}));
+const LIVE = (() => { try { return JSON.parse(JSON.parse(fs.readFileSync(path.join(__dirname, '..', '..', 'research', 'careers-api.json'), 'utf8'))[0].body).items.filter((r) => !/demo/.test(r.id)); } catch { return null; } })();
+const jobs = col.jobs.filter((j) => !LIVE || LIVE.some((r) => j.url.endsWith(r.id))).map((j) => {
+  const live = LIVE && LIVE.find((r) => j.url.endsWith(r.id));
+  const atArtpark = j.organization === 'ARTPARK';
+  return {
+    title: j.title, url: j.url, company: ORG_SHORT[j.organization] || j.organization, atArtpark,
+    about: !atArtpark && live && live.tirOverview ? live.tirOverview.replace(/^[^—]+—\s*/, '').replace(/^./, (c) => c.toUpperCase()) : '',
+    desc: j.description, location: j.location, type: j.type, mode: j.workMode, cat: j.category,
+    tags: [j.subFamily, j.team].filter(Boolean), postedAt: j.postedAt,
+  };
+});
 
 // ---------------- Certifications (artpark.in/certifications) ----------------
 const ISSUER = ['Department of Scientific & Industrial Research (DSIR)', 'Ministry of Corporate Affairs · CSR00017521', 'Income Tax Department · Section 80G', 'Income Tax Department'];

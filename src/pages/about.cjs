@@ -9,11 +9,11 @@ const intro = (current, h1, lede) => pageIntro({ eyebrow: 'About ARTPARK', h1, l
 
 // ---------- Our Team (About-Our-Team.dc.html) ----------
 // His leadership card (4:5 portrait, name, role), now used for every group since portraits exist.
-const personCard = (p) => `          <div style="display:flex;flex-direction:column;gap:12px">
+const personCard = (p) => `          <div class="person-card" style="display:flex;flex-direction:column;gap:12px">
             <div style="position:relative;width:100%;aspect-ratio:4/5;background:var(--paper-soft);overflow:hidden"><img src="${p.portrait}" alt="${esc(p.name)}" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%;display:block"></div>
             <div><div style="font-family:var(--font-display);font-weight:700;font-size:17px">${esc(p.name)}</div><div style="font-size:14px;line-height:1.45;color:var(--ink-dim);margin-top:2px">${esc(p.role)}</div>${p.linkedin ? `<a href="${p.linkedin}" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;font-size:13px;font-weight:600">LinkedIn ↗</a>` : ''}</div>
           </div>`;
-const boardList = (list) => `<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:28px 16px;margin-top:32px">
+const boardList = (list) => `<div class="person-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:28px 16px;margin-top:32px">
 ${list.map(personCard).join('\n')}
       </div>`;
 
@@ -24,7 +24,7 @@ const team = {
     description: 'The people who lead ARTPARK and the boards that govern and advise it.',
     body: intro('team', 'Our team.', 'The people who lead ARTPARK and the boards that govern and advise it.') + '\n' + wrap([
       section(`${sectionHead('Leadership team', 'The people running the work.')}
-      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:28px 16px;margin-top:32px">
+      <div class="person-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:28px 16px;margin-top:32px">
 ${C.people.leadership.map(personCard).join('\n')}
       </div>`, { label: 'Leadership' }),
       section(`${sectionHead('Governing board', 'Hub governing board.')}

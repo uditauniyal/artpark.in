@@ -29,7 +29,7 @@ ${['All', ...C.SECTORS].map((s, i) => `        <button type="button" data-sector
       </div>
       <span data-pcount style="font-size:13px;color:var(--ink-dim)">${C.portfolio.length} companies</span>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;margin-top:24px">
+    <div class="pf-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;margin-top:24px">
 ${C.portfolio.map((c) => {
   const href = hasStory.has(c.slug) ? `${R.stories}/${c.slug}` : c.website;
   const ext = !hasStory.has(c.slug);
