@@ -368,3 +368,10 @@ html.ap-motion .page-progress { display: none !important; }
 html.ap-motion.js .reveal { transform: none !important; transition: none !important; }
 
 /* Round 8 audit: .hl is his exact mint box everywhere (colors_and_type.css); no overrides. */
+/* Home headline (user 2026-10-28: "obvious error"): his mint box, trimmed so it never covers line one's descenders
+   (the g of "breakthrough"), and the full stop sits close to the box. */
+.opening h1 { line-height: 1.06 !important; }
+.opening h1 .hl { background: linear-gradient(var(--artlight), var(--artlight)) 0 100% / 100% 84% no-repeat; padding: 0 .06em 0 .14em; }
+/* Same fix for every mint highlight (carousel headlines, "words", "answered", "part of innovation itself"):
+   box trimmed off the line above, full stop close to the box. */
+.hl { background: linear-gradient(var(--artlight), var(--artlight)) 0 100% / 100% 84% no-repeat; padding: 0 .06em 0 .14em; }
