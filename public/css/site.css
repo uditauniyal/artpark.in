@@ -113,11 +113,6 @@ a:hover { color: var(--artblue-deep); }
   -webkit-mask-image: radial-gradient(ellipse 70% 80% at 50% 35%, #000 20%, transparent 75%);
   mask-image: radial-gradient(ellipse 70% 80% at 50% 35%, #000 20%, transparent 75%);
 }
-.opening h1 .hl {
-  background: linear-gradient(var(--artlight), var(--artlight)) no-repeat 0 0 / 0% 100%;
-  animation: hl-sweep 900ms 450ms cubic-bezier(.2,.7,.2,1) forwards;
-}
-@keyframes hl-sweep { to { background-size: 100% 100%; } }
 
 .collage-tile { animation: tile-in 900ms cubic-bezier(.2,.7,.2,1) backwards; animation-delay: calc(var(--i) * 70ms + 200ms); }
 @keyframes tile-in { from { opacity: 0; transform: translateY(28px) scale(.95); } }
@@ -175,8 +170,7 @@ html.js #building.in .stage-arrows + div > div, html.js #believe.in .belief-row 
 @media (max-width: 600px) { .rail-track { grid-auto-columns: 86%; } .stage-arrows { display: none !important; } }
 
 @media (prefers-reduced-motion: reduce) {
-  .collage-tile, .collage-tile .tile-img, .hero-slide .kenburns, .opening h1 .hl { animation: none !important; }
-  .opening h1 .hl { background-size: 100% 100%; }
+  .collage-tile, .collage-tile .tile-img, .hero-slide .kenburns { animation: none !important; }
   html.js .reveal, html.js #building .stage-arrows + div > div, html.js #believe .belief-row { opacity: 1 !important; transform: none !important; }
   .stage-line { transform: none; } .stage-end { opacity: 1; }
   .tab-progress { display: none; }
@@ -219,7 +213,6 @@ html.js .reveal .eyebrow-rule::before { transform: scaleX(0); transform-origin: 
 html.js .reveal.in .eyebrow-rule::before { transform: scaleX(1); }
 
 /* What we believe: highlight fills as you scroll (size set by motion.js). */
-#believe .hl { background: linear-gradient(var(--artlight), var(--artlight)) no-repeat 0 0 / 0% 100%; }
 /* Work with us: a violet light drifts across the panel with scroll. */
 #collaborate { background-image: radial-gradient(700px 460px at calc(78% + var(--shift, 0px)) 18%, rgba(107, 92, 255, .42), transparent 70%) !important; }
 html.js #collaborate .reveal-row, html.js #collaborate [style*="border-bottom:1px solid rgba(255,255,255,0.2)"] { opacity: 0; transform: translateX(-24px); transition: opacity 700ms ease, transform 700ms cubic-bezier(.2,.7,.2,1); }
@@ -232,7 +225,6 @@ html.js #collaborate.in [style*="border-bottom:1px solid rgba(255,255,255,0.2)"]
 @media (prefers-reduced-motion: reduce) {
   .page-progress { display: none; }
   html.js .stat-band .stat, html.js .reveal h2, html.js #collaborate [style*="border-bottom:1px solid rgba(255,255,255,0.2)"] { opacity: 1 !important; transform: none !important; clip-path: none !important; animation: none !important; }
-  #believe .hl { background-size: 100% 100% !important; }
   .stage-col, .rail-card.tilt { transform: none !important; }
 }
 
@@ -268,12 +260,6 @@ html.js #collaborate.in [style*="border-bottom:1px solid rgba(255,255,255,0.2)"]
   .fs-picker { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 
-/* Headline: keep the mint box clear of line one's descenders. */
-.opening h1 { line-height: 1.1 !important; }
-.opening h1 .hl { padding: 0 .14em; background-position: 0 100% !important; }
-@keyframes hl-sweep { to { background-size: 100% 84%; } }
-.opening h1 .hl { background-size: 0% 84%; }
-@media (prefers-reduced-motion: reduce) { .opening h1 .hl { background-size: 100% 84% !important; } }
 .fs-slide { grid-template-columns: minmax(0, 6fr) minmax(0, 6fr); min-height: 0; height: clamp(380px, 36vw, 440px); }
 .fs-body { gap: 16px; padding: clamp(24px, 3.2vw, 44px); }
 .fs-quote { font-size: clamp(20px, 1.9vw, 26px); }
@@ -380,3 +366,5 @@ h1 .tt { color: var(--artblue); }
 /* His motion layer drives reveals and the hairline now; our older equivalents step aside. */
 html.ap-motion .page-progress { display: none !important; }
 html.ap-motion.js .reveal { transform: none !important; transition: none !important; }
+
+/* Round 8 audit: .hl is his exact mint box everywhere (colors_and_type.css); no overrides. */

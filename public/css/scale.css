@@ -27,8 +27,6 @@
 .slide-metric b { font-family: var(--font-display); font-weight: 700; font-size: clamp(40px, 4.4vw, 60px); line-height: 1; color: var(--artblue); font-variant-numeric: tabular-nums; }
 .slide-metric span { font-size: 15px; line-height: 1.45; color: var(--ink-soft); max-width: 260px; }
 
-/* Carousel counter sits on the photo: give it a light pill so it stays readable. */
-[data-carousel] [data-count] { padding: 6px 12px; border-radius: 999px; background: rgba(255,255,255,.92); color: var(--ink) !important; font-variant-numeric: tabular-nums; }
 
 /* ============================================================
    Round 7 scroll policy (from studying firstround.com, southparkcommons.com, antler.co):

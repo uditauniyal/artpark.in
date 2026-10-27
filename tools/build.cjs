@@ -18,7 +18,8 @@ for (const file of fs.readdirSync(PAGES).filter((f) => f.endsWith('.cjs')).sort(
 }
 const routes = new Set(pages.map((p) => p.route));
 const mapArtpark = require(path.join(ROOT, 'src', 'data', 'urlmap.cjs'));
-const twoTone = require(path.join(ROOT, 'src', 'data', 'titles.cjs'));
+// Two-tone titles switched off 2026-10-28: user wants titles exactly as his Claude Design (all ink). src/data/titles.cjs kept for reference.
+const twoTone = (h) => h;
 
 const unmapped = new Set();
 for (const p of pages) {

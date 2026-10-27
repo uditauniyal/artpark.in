@@ -11,7 +11,7 @@ const intro = (current, h1, lede) => pageIntro({ eyebrow: 'About ARTPARK', h1, l
 // His leadership card (4:5 portrait, name, role), now used for every group since portraits exist.
 const personCard = (p) => `          <div class="person-card" style="display:flex;flex-direction:column;gap:12px">
             <div style="position:relative;width:100%;aspect-ratio:4/5;background:var(--paper-soft);overflow:hidden"><img src="${p.portrait}" alt="${esc(p.name)}" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%;display:block"></div>
-            <div><div style="font-family:var(--font-display);font-weight:700;font-size:17px">${esc(p.name)}</div><div style="font-size:14px;line-height:1.45;color:var(--ink-dim);margin-top:2px">${esc(p.role)}</div>${p.linkedin ? `<a href="${p.linkedin}" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;font-size:13px;font-weight:600">LinkedIn ↗</a>` : ''}</div>
+            <div><div style="font-family:var(--font-display);font-weight:700;font-size:17px">${esc(p.name)}</div><div style="font-size:14px;color:var(--ink-dim);margin-top:2px">${esc(p.role)}</div>${p.linkedin ? `<a href="${p.linkedin}" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;font-size:13px;font-weight:600">LinkedIn ↗</a>` : ''}</div>
           </div>`;
 const boardList = (list) => `<div class="person-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:28px 16px;margin-top:32px">
 ${list.map(personCard).join('\n')}
@@ -104,7 +104,7 @@ ${MODELS.map(([ic, k, h, p, img, ex, href]) => `        <a class="model-card" hr
     <section class="reveal" style="padding:64px 0 0">
       ${sectionHead('Focus areas', 'Where we work.')}
       <div style="margin-top:28px;border-top:1px solid var(--line-strong)">
-${FOCUS.map(([h, p, img, href]) => `        <a class="focus-row" href="${href}"><div class="focus-img"><img src="${img}" alt="" loading="lazy"></div><h3 style="font-size:22px">${esc(h)}</h3><p style="font-size:15px;line-height:1.65;color:var(--ink-soft)">${esc(p)}</p><span class="focus-go" aria-hidden="true">→</span></a>`).join('\n')}
+${FOCUS.map(([h, p, img, href]) => `        <a class="focus-row" href="${href}"><div class="focus-img"><img src="${img}" alt="" loading="lazy"></div><h3 style="font-size:20px">${esc(h)}</h3><p style="font-size:15px;line-height:1.6;color:var(--ink-soft)">${esc(p)}</p><span class="focus-go" aria-hidden="true">→</span></a>`).join('\n')}
       </div>
     </section>
   </div>`,
@@ -165,7 +165,7 @@ const programsList = {
     body: intro('programs', 'Other programs.', 'Initiatives beyond the residency and incubation tracks: research programs, centres of excellence and the academy.') + `
   <div style="max-width:1180px;margin:0 auto;padding:64px 24px 112px">
     <div style="border-top:1px solid var(--line-strong)">
-${P.programs.map((p, i) => `      <a id="${p.slug}" class="prog-row" href="${R.programs}/${p.slug}" style="--i:${i}"><div class="prog-img"><img src="${p.image}" alt="" loading="lazy" style="object-fit:${p.fit || 'cover'};object-position:${p.imagePos || '50% 50%'}"></div><div style="display:flex;flex-direction:column;gap:8px"><span style="display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:0.14em;color:var(--ink-dim)"><span class="dot ${DOT[p.status]}"></span>${p.status}</span><h3 style="font-size:24px;line-height:1.2">${esc(p.name)}</h3><p style="font-size:15px;line-height:1.65;color:var(--ink-soft)">${esc(p.short)}</p><span style="font-size:14px;font-weight:600;color:var(--artblue)">Learn more →</span></div></a>`).join('\n')}
+${P.programs.map((p, i) => `      <a id="${p.slug}" class="prog-row" href="${R.programs}/${p.slug}" style="--i:${i}"><div class="prog-img"><img src="${p.image}" alt="" loading="lazy" style="object-fit:${p.fit || 'cover'};object-position:${p.imagePos || '50% 50%'}"></div><div style="display:flex;flex-direction:column;gap:8px"><span style="display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:0.14em;color:var(--ink-dim)"><span class="dot ${DOT[p.status]}"></span>${p.status}</span><h3 style="font-size:22px">${esc(p.name)}</h3><p style="font-size:15px;line-height:1.65;color:var(--ink-soft)">${esc(p.short)}</p><span style="font-size:14px;font-weight:600;color:var(--artblue);text-decoration:underline">Learn more →</span></div></a>`).join('\n')}
     </div>
   </div>`,
   }),

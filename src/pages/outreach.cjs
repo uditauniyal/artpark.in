@@ -234,16 +234,21 @@ ${MODES.map((m, i) => `        <button type="button" data-mode="${esc(m)}" aria-
     <div style="flex:1 1 560px;min-width:0">
       <p style="font-size:18px;color:var(--ink-soft)"><b data-count style="font-family:var(--font-display);color:var(--ink)">${C.jobs.length} open roles</b>: ${C.jobs.filter((j) => j.atArtpark).length} on the ARTPARK team, ${C.jobs.filter((j) => !j.atArtpark).length} at startups building at ARTPARK.</p>
 ${[[true, 'artpark', 'On the ARTPARK team', 'Roles at ARTPARK itself, in Bengaluru.'], [false, 'startup', 'At startups building at ARTPARK', 'These companies are in ARTPARK’s Technology Innovators in Residence (TIR) program. You join the startup; ARTPARK lists the role and runs the application.']].map(([at, key, h, sub]) => `      <section class="job-group" data-group="${key}">
-        <div class="job-group-head"><h2>${h}</h2><p>${sub}</p></div>
-        <div class="job-grid">
-${C.jobs.filter((j) => j.atArtpark === at).map((j) => `          <article class="job-card" data-job data-org="${key}" data-cat="${esc(j.cat)}" data-mode="${esc(j.mode)}" data-text="${esc([j.title, j.company, j.about, j.desc, j.cat, ...j.tags].join(' ').toLowerCase())}">
-            <div class="job-top"><span class="job-pill is-${key}">${at ? 'ARTPARK team' : 'TIR startup'}</span><span class="job-ago">${ago(j.postedAt)}</span></div>
-            <div class="job-co"><b>${esc(j.company)}</b>${j.about ? `<span>${esc(j.about)}</span>` : `<span>${esc(j.tags[1] || j.tags[0] || '')}</span>`}</div>
-            <h3>${esc(j.title)}</h3>
-            <p class="job-desc">${esc(j.desc)}</p>
-            <div class="job-meta">${esc([j.location, j.type, j.mode].join(' · '))}</div>
-            <div class="job-tags">${j.tags.map((t) => `<span>${esc(t)}</span>`).join('')}</div>
-            <a class="job-go" href="${R.careers}/${j.slug}">View role <span class="arrow">→</span></a>
+        <div style="margin-top:40px;display:flex;flex-direction:column;gap:6px"><span class="eyebrow">${at ? 'ARTPARK team' : 'TIR startups'}</span><h2 style="font-size:26px">${h}</h2><p style="font-size:15px;line-height:1.65;color:var(--ink-soft);max-width:640px">${sub}</p></div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin-top:24px">
+${C.jobs.filter((j) => j.atArtpark === at).map((j) => `          <article data-job data-org="${key}" data-cat="${esc(j.cat)}" data-mode="${esc(j.mode)}" data-text="${esc([j.title, j.company, j.about, j.desc, j.cat, ...j.tags].join(' ').toLowerCase())}" style="border:1px solid var(--line);padding:28px;display:flex;flex-direction:column;gap:14px;border-radius:2px">
+            <div style="display:flex;align-items:center;gap:14px">
+              <span style="width:44px;height:44px;flex:none;display:flex;align-items:center;justify-content:center;background:var(--paper-soft);color:var(--artblue);font-family:var(--font-display);font-weight:700;font-size:15px;border-radius:2px">${at ? '<img src="/assets/brand/artpark-logo.png" alt="" style="width:30px;height:30px;object-fit:cover;object-position:left center">' : 'TIR'}</span>
+              <div><div style="font-family:var(--font-display);font-weight:700;font-size:16px;color:var(--artblue)">${esc(j.company)}</div><div style="font-size:13px;color:var(--ink-dim)">${at ? 'Internal hiring' : 'TIR startup · hiring via ARTPARK'}</div></div>
+            </div>
+            <h2 style="font-size:22px;line-height:1.2">${esc(j.title)}</h2>
+            <p style="font-size:15px;line-height:1.6;color:var(--ink-soft)">${esc(j.desc)}</p>
+            <div style="font-size:14px;color:var(--ink-soft)">${esc([j.location, j.type, j.mode].join(' · '))}</div>
+            <div style="margin-top:auto;padding-top:14px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px">
+              <div style="display:flex;flex-wrap:wrap;gap:6px">${j.tags.map((t) => `<span style="font-size:12.5px;padding:4px 10px;border:1px solid var(--line-strong);background:var(--paper-soft);color:var(--artblue);border-radius:2px">${esc(t)}</span>`).join('')}</div>
+              <span style="font-size:13px;color:var(--ink-dim)">${ago(j.postedAt)}</span>
+            </div>
+            <a href="${R.careers}/${j.slug}" style="font-family:var(--font-display);font-weight:700;font-size:14px;text-decoration:none">View role →</a>
           </article>`).join('\n')}
         </div>
       </section>`).join('\n')}
