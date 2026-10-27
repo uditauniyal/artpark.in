@@ -1,0 +1,100 @@
+/* ============================================================
+   Round 8 "wow" layer (manager: "subtle changes which make the experience wow, like floating stuff and
+   moving windows"). Layout stays his; this only adds floating compositions, moving image windows,
+   a cursor-following preview, magnetic logos and row sweeps. Driven by /js/ap-wow.js.
+   ============================================================ */
+
+/* 1 · Floating composition in the empty right side of a page intro */
+.float-stage { position: absolute; right: 24px; top: -18px; width: min(460px, 40%); height: calc(100% + 10px); min-height: 330px; pointer-events: none; z-index: 1; }
+.intro-wrap.has-float > p, .intro-wrap.has-float > h1 { position: relative; z-index: 2; }
+.fl { position: absolute; left: var(--x); top: var(--y); width: var(--w);
+  transform: translate3d(calc(var(--mx, 0) * var(--d) * 1px), calc((var(--my, 0) + var(--sy, 0)) * var(--d) * 1px), 0) rotate(var(--r));
+  transition: transform 700ms cubic-bezier(.22,.8,.24,1); will-change: transform; }
+.fl > span { display: block; animation: fl-bob var(--t) ease-in-out var(--del) infinite; }
+@keyframes fl-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+.fl-win > span { position: relative; aspect-ratio: var(--ar, 4 / 3); border-radius: 14px; overflow: hidden; border: 4px solid #fff; background: var(--paper-soft); box-shadow: 0 34px 60px -30px rgba(31,10,138,.55), 0 2px 6px rgba(36,36,36,.08); }
+.fl-win img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.fl-win i { position: absolute; left: 8px; bottom: 8px; padding: 4px 9px; border-radius: 999px; background: rgba(255,255,255,.94); color: var(--artblue); font: 700 10.5px/1.2 var(--font-display); letter-spacing: .08em; text-transform: uppercase; font-style: normal; }
+.fl-chip > span { display: flex; align-items: center; justify-content: center; height: 66px; padding: 0 16px; border-radius: 14px; background: #fff; border: 1px solid var(--line); box-shadow: 0 22px 44px -28px rgba(31,10,138,.45); }
+.fl-chip img { max-height: 34px; max-width: 100%; object-fit: contain; display: block; }
+.fl-chip b { font-family: var(--font-display); font-size: 15px; color: var(--ink); white-space: nowrap; }
+.fl-stat > span { display: flex; flex-direction: column; gap: 4px; padding: 16px 18px; border-radius: 14px; background: var(--artblue); color: #fff; box-shadow: 0 30px 50px -28px rgba(31,10,138,.8); }
+.fl-stat b { font-family: var(--font-display); font-size: 34px; line-height: 1; color: var(--artlight); }
+.fl-stat small { font-size: 12.5px; line-height: 1.35; color: rgba(255,255,255,.85); }
+.fl-doc > span { display: flex; flex-direction: column; gap: 6px; padding: 14px 16px 16px; border-radius: 12px; background: #fff; border: 1px solid var(--line); box-shadow: 0 26px 50px -30px rgba(31,10,138,.5); }
+.fl-doc em { align-self: flex-start; padding: 3px 8px; border-radius: 4px; background: var(--coral, #FF5A5F); color: #fff; font: 700 10px/1.2 var(--font-display); letter-spacing: .1em; font-style: normal; }
+.fl-doc b { font-family: var(--font-display); font-size: 14.5px; line-height: 1.3; color: var(--ink); }
+.fl-doc small { font-size: 12px; color: var(--ink-dim); }
+@media (max-width: 1099px) { .float-stage { display: none; } }
+
+/* 2 · Moving windows: the picture drifts inside its frame as the page scrolls */
+[data-win] { overflow: hidden; }
+[data-win] > img { transform: translate3d(0, var(--wy, 0px), 0) scale(1.14); will-change: transform; transition: transform 120ms linear; }
+
+/* 3 · Cursor-following preview window (past events) */
+.peek { position: fixed; left: 0; top: 0; z-index: 60; width: 300px; aspect-ratio: 16 / 10; border-radius: 14px; overflow: hidden; border: 4px solid #fff; background: var(--paper-soft); box-shadow: 0 40px 70px -30px rgba(31,10,138,.6); pointer-events: none; opacity: 0; transform: translate3d(-9999px, 0, 0) scale(.85) rotate(-3deg); transition: opacity 220ms ease, scale 300ms cubic-bezier(.22,.8,.24,1); }
+.peek.is-on { opacity: 1; }
+.peek img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* 4 · List rows: a mint sweep and a nudge on hover (events, news, tenders) */
+.sweep-row, .link-row { position: relative; z-index: 0; transition: padding-left 300ms cubic-bezier(.22,.8,.24,1); }
+.sweep-row::before, .link-row::before { content: ""; position: absolute; inset: 0 -16px; z-index: -1; background: linear-gradient(90deg, rgba(170,252,240,.55), rgba(170,252,240,0) 70%); transform: scaleX(0); transform-origin: 0 50%; transition: transform 450ms cubic-bezier(.22,.8,.24,1); border-radius: 8px; }
+.sweep-row:hover::before, .link-row:hover::before { transform: scaleX(1); }
+.sweep-row:hover, .link-row:hover { padding-left: 10px; }
+.sweep-host { position: relative; z-index: 0; }
+
+/* 5 · Magnetic logos: the logo leans toward the cursor */
+.mag img { transition: transform 300ms cubic-bezier(.22,.8,.24,1); transform: translate3d(var(--gx, 0px), var(--gy, 0px), 0) scale(var(--gs, 1)); }
+.mag-cell { transition: background-color 250ms ease; }
+.mag-cell:hover { background-color: #f3fffd !important; }
+
+/* 6 · Cards lift */
+.lift { transition: transform 350ms cubic-bezier(.22,.8,.24,1), box-shadow 350ms ease, border-color 200ms ease; }
+.lift:hover { transform: translateY(-5px); box-shadow: 0 28px 50px -34px rgba(31,10,138,.5); border-color: var(--artblue) !important; }
+
+@media (hover: none) { .sweep-row:hover { padding-left: 0; } .peek { display: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .fl > span { animation: none; } .fl { transform: rotate(var(--r)); transition: none; }
+  [data-win] > img { transform: scale(1.02); }
+  .peek { display: none; }
+}
+
+/* Tenders rework: stage tracker and document cards. */
+.t-track { list-style: none; margin: 14px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 0; }
+.t-track li { position: relative; display: flex; flex-direction: column; gap: 2px; padding: 16px 18px 0 0; min-width: 120px; font-size: 12.5px; color: var(--ink-dim); }
+.t-track li::before { content: ""; position: absolute; left: 6px; right: 0; top: 5px; height: 2px; background: var(--line-strong); }
+.t-track li:last-child::before { right: auto; width: 0; }
+.t-track li.is-done::before { background: var(--artblue); }
+.t-track li i { position: absolute; left: 0; top: 0; width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--line-strong); background: var(--paper); box-sizing: border-box; }
+.t-track li.is-done i { border-color: var(--artblue); background: var(--artblue); box-shadow: 0 0 0 4px rgba(50,19,183,.12); }
+.t-track li.is-done span { color: var(--ink); font-weight: 600; }
+.t-track small { font-size: 11.5px; color: var(--artblue); }
+.t-row { transition: background-color 250ms ease; }
+.t-row:hover { background: linear-gradient(90deg, rgba(170,252,240,.28), rgba(170,252,240,0) 60%); }
+.t-docs { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; max-width: 980px; }
+.t-doc { display: flex; flex-direction: column; gap: 10px; padding: 16px 18px; border: 1px solid var(--line); border-radius: 12px; background: var(--paper); text-decoration: none; color: var(--ink); transition: transform 300ms cubic-bezier(.22,.8,.24,1), border-color 200ms ease, box-shadow 300ms ease; }
+.t-doc:hover { transform: translateY(-3px); border-color: var(--artblue); box-shadow: 0 20px 40px -30px rgba(31,10,138,.5); color: var(--ink); }
+.t-doc b { font-family: var(--font-display); font-size: 15px; line-height: 1.35; }
+.t-doc > span { margin-top: auto; font-family: var(--font-display); font-weight: 700; font-size: 13px; color: var(--artblue); }
+.t-kind { align-self: flex-start; padding: 3px 8px; border-radius: 4px; font: 700 10.5px/1.2 var(--font-display); letter-spacing: .1em; font-style: normal; color: #fff; background: var(--artblack); }
+.t-kind.is-pdf { background: #FF5A5F; } .t-kind.is-drive { background: #2F6F62; } .t-kind.is-doc { background: var(--artblue); }
+
+/* Tenders rework: stage tracker and document cards. */
+.t-track { list-style: none; margin: 14px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 0; }
+.t-track li { position: relative; display: flex; flex-direction: column; gap: 2px; padding: 18px 18px 0 0; min-width: 118px; font-size: 12.5px; color: var(--ink-dim); }
+.t-track li::before { content: ""; position: absolute; left: 6px; right: 0; top: 5px; height: 2px; background: var(--line-strong); }
+.t-track li:last-child::before { display: none; }
+.t-track li.is-done::before { background: var(--artblue); }
+.t-track li i { position: absolute; left: 0; top: 0; width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--line-strong); background: var(--paper); box-sizing: border-box; }
+.t-track li.is-done i { border-color: var(--artblue); background: var(--artblue); box-shadow: 0 0 0 4px rgba(50,19,183,.12); }
+.t-track li.is-done span { color: var(--ink); font-weight: 600; }
+.t-track small { font-size: 11.5px; color: var(--artblue); }
+.t-row { transition: background-color 250ms ease; }
+.t-row:hover { background: linear-gradient(90deg, rgba(170,252,240,.28), rgba(170,252,240,0) 60%); }
+.t-docs { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; max-width: 980px; }
+.t-doc { display: flex; flex-direction: column; gap: 10px; padding: 16px 18px; border: 1px solid var(--line); border-radius: 12px; background: var(--paper); text-decoration: none; color: var(--ink); transition: transform 300ms cubic-bezier(.22,.8,.24,1), border-color 200ms ease, box-shadow 300ms ease; }
+.t-doc:hover { transform: translateY(-3px); border-color: var(--artblue); box-shadow: 0 20px 40px -30px rgba(31,10,138,.5); color: var(--ink); }
+.t-doc b { font-family: var(--font-display); font-size: 15px; line-height: 1.35; }
+.t-doc > span { margin-top: auto; font-family: var(--font-display); font-weight: 700; font-size: 13px; color: var(--artblue); }
+.t-kind { align-self: flex-start; padding: 3px 8px; border-radius: 4px; font: 700 10.5px/1.2 var(--font-display); letter-spacing: .1em; font-style: normal; color: #fff; background: var(--artblack); }
+.t-kind.is-pdf { background: #FF5A5F; } .t-kind.is-drive { background: #2F6F62; } .t-kind.is-doc { background: var(--artblue); }

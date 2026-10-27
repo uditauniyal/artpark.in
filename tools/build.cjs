@@ -18,10 +18,11 @@ for (const file of fs.readdirSync(PAGES).filter((f) => f.endsWith('.cjs')).sort(
 }
 const routes = new Set(pages.map((p) => p.route));
 const mapArtpark = require(path.join(ROOT, 'src', 'data', 'urlmap.cjs'));
+const twoTone = require(path.join(ROOT, 'src', 'data', 'titles.cjs'));
 
 const unmapped = new Set();
 for (const p of pages) {
-  let html = p.html();
+  let html = twoTone(p.html());
   html = html.replace(/(href|src)="https?:\/\/(?:www\.)?artpark\.in(\/[^"#?]*)?([^"]*)"/g, (m, attr, pth = '/', rest) => {
     const to = mapArtpark(pth || '/', routes);
     if (!to) { unmapped.add(`${p.route}: ${pth}${rest}`); return m; }

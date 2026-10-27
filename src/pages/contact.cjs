@@ -6,9 +6,19 @@ const ROLES = ['Researcher', 'Startup', 'Builder', 'Industry partner', 'Media'];
 
 const roleChip = (label, on) => `              <button type="button" data-role="${esc(label)}" aria-pressed="${on}" style="border:1px solid ${on ? 'var(--artblack)' : 'var(--line-strong)'};background:${on ? 'var(--artblack)' : 'transparent'};color:${on ? '#fff' : 'var(--ink)'};padding:7px 14px;font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:0.06em;border-radius:2px;cursor:pointer;transition:all 150ms ease">${esc(label.toUpperCase())}</button>`;
 
-const placeCard = ({ img, alt, focus, eyebrow, name, lines }) => `        <div style="border:1px solid var(--line);display:flex;flex-direction:column">
-          <div style="position:relative;width:100%;aspect-ratio:1/1;background:var(--paper-soft);overflow:hidden"><img src="${img}" alt="${esc(alt)}" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:${focus};display:block"></div>
-          <div style="padding:20px 22px;display:flex;flex-direction:column;gap:8px;border-top:1px solid var(--line)"><span class="eyebrow" style="color:var(--artblue)">${esc(eyebrow)}</span><b style="font-family:var(--font-display);font-size:18px">${esc(name)}</b><p style="font-size:15px;line-height:1.6;color:var(--ink-soft)">${lines.map(esc).join('<br>')}</p></div>
+// Manager (2026-10-25): show the map as on the original site, opening Google Maps on click; both addresses get one.
+// His slot (1:1, "Map or photograph") now holds a live Google map; the real photo floats in the corner as a small window.
+// Queries resolve to Google's own listings: "ARTPARK: IISc office" and "ArtGarage Entrance".
+const gmaps = (q) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`;
+const gdir = (q) => `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(q)}`;
+const placeCard = ({ q, img, alt, focus, eyebrow, name, lines }) => `        <div class="place-card" style="border:1px solid var(--line);display:flex;flex-direction:column">
+          <div class="place-map" style="position:relative;width:100%;aspect-ratio:1/1;background:var(--paper-soft);overflow:hidden">
+            <iframe class="place-iframe" title="Map: ${esc(name)}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" tabindex="-1" src="https://www.google.com/maps?q=${encodeURIComponent(q)}&amp;z=16&amp;output=embed"></iframe>
+            <span class="place-pulse" aria-hidden="true"></span>
+            <span class="place-window" aria-hidden="true"><img src="${img}" alt="" loading="lazy" style="object-position:${focus}"></span>
+            <a class="place-hit" href="${gmaps(q)}" target="_blank" rel="noopener" aria-label="Open ${esc(name)} in Google Maps"><span class="place-chip">Open in Google Maps <span class="arrow">↗</span></span></a>
+          </div>
+          <div style="padding:20px 22px;display:flex;flex-direction:column;gap:8px;border-top:1px solid var(--line)"><span class="eyebrow" style="color:var(--artblue)">${esc(eyebrow)}</span><b style="font-family:var(--font-display);font-size:18px">${esc(name)}</b><p style="font-size:15px;line-height:1.6;color:var(--ink-soft)">${lines.map(esc).join('<br>')}</p><a class="place-dir" href="${gdir(q)}" target="_blank" rel="noopener">Directions <span class="arrow">→</span></a></div>
         </div>`;
 
 const body = `
@@ -37,11 +47,13 @@ ${ROLES.map((r, i) => roleChip(r, i === 0)).join('\n')}
     </div>
     <div style="flex:1 1 480px;min-width:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;align-content:start">
 ${placeCard({
+  q: 'ARTPARK, Entrepreneurship Building, Indian Institute of Science, Bengaluru 560012',
   img: '/assets/photos/artpark-office.webp', alt: 'The ARTPARK office, with team members at work beneath the ARTPARK sign', focus: '72% 50%',
   eyebrow: 'Registered address', name: 'Indian Institute of Science',
   lines: ['Ground Floor, Entrepreneurship Building', 'Indian Institute of Science', 'Bengaluru 560012'],
 })}
 ${placeCard({
+  q: 'ArtGarage Entrance',
   img: '/assets/photos/artgarage-exterior.webp', alt: 'The entrance of the ARTgarage building at HMT Estate, Jalahalli', focus: '68% 50%',
   eyebrow: 'The garage', name: 'HMT Colony, Jalahalli',
   lines: ['177, HMT Colony, HMT Staff Quarters', 'HMT Estate, Jalahalli', 'Bengaluru, Karnataka 560013'],

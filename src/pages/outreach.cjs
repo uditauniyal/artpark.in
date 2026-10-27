@@ -1,9 +1,28 @@
 // Outreach (Events, News, Tenders), Careers and Partnerships.
 // Ported from .reference/claude-design/Outreach-*.dc.html, Careers.dc.html, Partnerships.dc.html.
-const { esc, page, pageIntro, OUTREACH_TABS, R, linkRows, icon } = require('../lib.cjs');
+const { esc, page, pageIntro, floatStage, OUTREACH_TABS, R, linkRows, icon } = require('../lib.cjs');
 const C = require('../data/content.cjs');
 
-const outreachIntro = (current, h1, lede) => pageIntro({ eyebrow: 'Outreach', h1, lede, tabs: { current, items: OUTREACH_TABS } });
+const outreachIntro = (current, h1, lede, float) => pageIntro({ eyebrow: 'Outreach', h1, lede, float, tabs: { current, items: OUTREACH_TABS } });
+
+// Round 8 floating compositions (real photos, outlets, documents and counts only).
+const FLOAT_EVENTS = [
+  { kind: 'win', src: '/assets/events/codebot.webp', x: 0, y: 4, w: 50, d: 1.4, r: -3, t: 8, cap: 'CodeBot Hackathon' },
+  { kind: 'win', src: '/assets/events/roscon-in-24.webp', x: 47, y: -4, w: 53, d: 0.8, r: 2.5, t: 9, cap: 'ROSCon India' },
+  { kind: 'win', src: '/assets/events/5g-open-house.webp', x: 20, y: 50, w: 50, d: 1.9, r: -1, t: 7, cap: '5G Test Lab' },
+  { kind: 'stat', n: String(C.upcomingEvents.length), l: 'Open Days coming up at ARTgarage', x: 70, y: 56, w: 30, d: 2.6, r: 3, t: 6 },
+];
+const OUTLETS = ['The Economic Times', 'Forbes India', 'Mint', 'Deccan Herald', 'Moneycontrol', 'Hindustan Times'];
+const FLOAT_NEWS = [
+  ...OUTLETS.map((o, i) => ({ kind: 'chip', text: o, x: [2, 46, 8, 56, 26, 62][i], y: [2, 10, 34, 40, 66, 74][i], w: [46, 36, 26, 40, 44, 36][i], d: [1.2, 0.8, 2, 1.5, 1, 2.2][i], r: [-2, 2, -1, 1.5, -1.5, 2][i], t: 6 + i })),
+  { kind: 'stat', n: String(C.news.length), l: 'stories about ARTPARK in the press', x: 0, y: 58, w: 30, d: 2.6, r: -3, t: 7 },
+];
+const FLOAT_TENDERS = [
+  { kind: 'doc', tag: 'PDF', text: 'Tender document', sub: 'Supply of GPU Edge Cloud System', x: 4, y: 4, w: 50, d: 1.2, r: -3, t: 8 },
+  { kind: 'doc', tag: 'PDF', text: 'Corrigendum', sub: '28 Feb 2025', x: 52, y: 14, w: 42, d: 0.8, r: 3, t: 9 },
+  { kind: 'doc', tag: 'PDF', text: 'Minutes of the commercial bid opening', sub: '17 Mar 2025', x: 16, y: 52, w: 54, d: 1.9, r: -1, t: 7 },
+  { kind: 'stat', n: String(C.tenders.length), l: 'procurement notices on this page', x: 70, y: 58, w: 30, d: 2.6, r: 3, t: 6 },
+];
 
 // ---------- Events (Outreach-Events.dc.html) ----------
 const events = {
@@ -11,13 +30,13 @@ const events = {
   html: () => page({
     title: 'Events — ARTPARK Outreach', active: 'outreach', sub: 'events',
     description: 'ARTPARK Open Days, summits, talks, challenges and hackathons.',
-    body: outreachIntro('events', 'Events.', 'Open Days, summits, talks, challenges and hackathons.') + `
+    body: outreachIntro('events', 'Events.', 'Open Days, summits, talks, challenges and hackathons.', FLOAT_EVENTS) + `
   <div style="max-width:1180px;margin:0 auto;padding:48px 24px 112px;display:flex;flex-direction:column;gap:56px">
     <section>
       <span class="eyebrow">Upcoming</span>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-top:16px">
-${C.upcomingEvents.map((e) => `        <div style="border:1px solid var(--line);display:flex;flex-direction:column">
-          <div style="position:relative;width:100%;aspect-ratio:16/9;background:var(--paper-soft);overflow:hidden"><img src="${e.image}" alt="${esc(e.imageAlt)}" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div>
+${C.upcomingEvents.map((e) => `        <div class="lift" style="border:1px solid var(--line);display:flex;flex-direction:column">
+          <div data-win style="position:relative;width:100%;aspect-ratio:16/9;background:var(--paper-soft);overflow:hidden"><img src="${e.image}" alt="${esc(e.imageAlt)}" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div>
           <div style="padding:22px 24px;display:flex;flex-direction:column;gap:8px">
             <span style="display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:0.14em;color:var(--ink-dim)"><span class="dot green"></span>${esc((e.date + ' · ' + e.venue).toUpperCase())}</span>
             <h3 style="font-size:22px">${esc(e.title)}</h3>
@@ -30,7 +49,7 @@ ${C.upcomingEvents.map((e) => `        <div style="border:1px solid var(--line);
     <section>
       <span class="eyebrow">Past events</span>
       <div style="border-top:1px solid var(--line-strong);margin-top:16px">
-${C.pastEvents.map((p) => `        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:6px 24px;padding:20px 0;border-bottom:1px solid var(--line);align-items:baseline">
+${C.pastEvents.map((p) => `        <div class="sweep-row"${p.image ? ` data-peek="${p.image}"` : ''} style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:6px 24px;padding:20px 0;border-bottom:1px solid var(--line);align-items:baseline">
           <span style="font-size:13px;color:var(--ink-dim)">${esc(p.date)}${p.venue ? ' · ' + esc(p.venue) : ''}</span>
           <span style="grid-column:span 2;font-family:var(--font-display);font-weight:700;font-size:18px;line-height:1.3">${esc(p.title)}</span>
           <a href="${p.local || p.url}"${p.local ? '' : ' target="_blank" rel="noopener"'} style="font-size:14px;font-weight:600;justify-self:end">Recap →</a>
@@ -61,7 +80,7 @@ const eventPages = C.pastEvents.filter((e) => /artpark\.in\/events\//.test(e.url
       title: `${e.title} — ARTPARK Events`, active: 'outreach', sub: 'events', description: body[0] || e.title,
       body: pageIntro({ eyebrow: 'Events', h1: esc(e.title) + '.', lede: esc(e.date + (e.venue ? ' · ' + e.venue : '')) }) + `
   <div style="max-width:1180px;margin:0 auto;padding:48px 24px 112px">
-    ${e.image ? `<figure style="margin:0 0 40px;max-width:860px"><div style="position:relative;width:100%;aspect-ratio:16/9;background:var(--paper-soft);overflow:hidden"><img src="${e.image}" alt="${esc(e.title)}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>` : ''}
+    ${e.image ? `<figure style="margin:0 0 40px;max-width:860px"><div data-win style="position:relative;width:100%;aspect-ratio:16/9;background:var(--paper-soft);overflow:hidden"><img src="${e.image}" alt="${esc(e.title)}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>` : ''}
     <article style="max-width:760px;display:flex;flex-direction:column;gap:16px;font-size:17px;line-height:1.75;color:var(--ink-soft)">
 ${(body.length ? body : [e.note || '']).map((l) => `      <p>${esc(l)}</p>`).join('\n')}
     </article>
@@ -77,7 +96,7 @@ const news = {
   html: () => page({
     title: 'News — ARTPARK Outreach', active: 'outreach', sub: 'news',
     description: 'ARTPARK and its projects in the press.',
-    body: outreachIntro('news', 'In the news.', 'ARTPARK and its projects in the press.') + `
+    body: outreachIntro('news', 'In the news.', 'ARTPARK and its projects in the press.', FLOAT_NEWS) + `
   <div style="max-width:1180px;margin:0 auto;padding:48px 24px 112px">
     ${linkRows(C.news.map((n) => ({ meta: n.date ? `${n.date} · ${n.outlet}` : n.outlet, title: n.title, href: n.url })))}
     <section id="publications" style="margin-top:72px;scroll-margin-top:132px">
@@ -100,12 +119,29 @@ const news = {
 
 // ---------- Tenders (Outreach-Tenders.dc.html: list + detail; the sample vendor-registration flow is not used) ----------
 const STATUS = { active: ['Active', 'green'], closed: ['Closed', 'coral'], rfp: ['Request for proposals', ''] };
+// Round 8 tenders rework: each tender shows the stages it has reached, read from its own published documents and notes.
+const dateIn = (str) => (String(str || '').match(/\b(\d{1,2} (?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]* \d{4})\b/) || [])[1] || '';
+const tenderStages = (t) => {
+  const names = t.docs.map(([n, h]) => (n + ' ' + h).toLowerCase());
+  const has = (re) => names.some((n) => re.test(n));
+  const corr = t.docs.filter(([n]) => /corrigend/i.test(n));
+  const pre = t.note && /pre-bid/i.test(t.note) ? dateIn(t.note) : '';
+  const priceDoc = t.docs.find(([n]) => /price|commercial/i.test(n));
+  return [
+    ['Notice published', t.docs.some(([n]) => /tender document/i.test(n)), t.published || ''],
+    ['Pre-bid meeting', !!pre, pre],
+    ['Corrigenda', corr.length > 0, corr.length ? corr.length + ' issued' : ''],
+    ['Technical bids opened', has(/technical bid/), ''],
+    ['Price bids opened', has(/price.?bid|commercial bid/), priceDoc ? dateIn(priceDoc[0]) : ''],
+  ].filter(([label, done]) => done || label !== 'Pre-bid meeting');
+};
+const stageTrack = (t) => `<ol class="t-track">${tenderStages(t).map(([l, done, d]) => `<li class="${done ? 'is-done' : ''}"><i></i><span>${esc(l)}</span>${d ? `<small>${esc(d)}</small>` : ''}</li>`).join('')}</ol>`;
 const tenders = {
   route: R.tenders,
   html: () => page({
     title: 'Tenders — ARTPARK Outreach', active: 'outreach', sub: 'tenders',
     description: 'Procurement notices, tender documents and requests for proposals from ARTPARK.',
-    body: outreachIntro('tenders', 'Tenders.', 'Procurement notices from ARTPARK. Download the documents for each tender, including corrigenda and bid-opening outputs.') + `
+    body: outreachIntro('tenders', 'Tenders.', 'Procurement notices from ARTPARK. Download the documents for each tender, including corrigenda and bid-opening outputs.', FLOAT_TENDERS) + `
   <div style="max-width:1180px;margin:0 auto;padding:48px 24px 112px" data-tenders>
     <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;padding-bottom:20px;border-bottom:1px solid var(--line)">
       <div style="display:flex;flex-wrap:wrap;gap:8px" role="group" aria-label="Filter tenders">
@@ -114,12 +150,13 @@ ${['All', 'Active', 'Closed', 'Requests for proposals'].map((l, i) => `        <
       <span style="font-size:13px;color:var(--ink-dim)">Questions about a tender: <a href="mailto:connect@artpark.in">connect@artpark.in</a></span>
     </div>
     <div>
-${C.tenders.map((t) => `      <div data-item data-status="${t.status}" style="border-bottom:1px solid var(--line)">
+${C.tenders.map((t) => `      <div data-item data-status="${t.status}" class="t-row" style="border-bottom:1px solid var(--line)">
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px 24px;padding:22px 0;align-items:center">
           <div style="grid-column:span 2;min-width:0">
             <div style="font-size:12px;font-weight:600;letter-spacing:0.1em;color:var(--ink-dim)">${esc(t.cat.toUpperCase())}${t.published ? ' · ' + esc(t.published.toUpperCase()) : ''}</div>
             <div style="font-family:var(--font-display);font-weight:700;font-size:18px;line-height:1.3;margin-top:4px">${esc(t.title)}</div>
             <div style="font-size:13.5px;color:var(--ink-soft);margin-top:4px">${t.docs.length ? t.docs.length + (t.docs.length === 1 ? ' document' : ' documents') : 'Document on request'}</div>
+            ${t.status === 'rfp' ? '' : stageTrack(t)}
           </div>
           <div style="font-size:14px"><span style="display:block;font-size:11px;font-weight:600;letter-spacing:0.14em;color:var(--ink-dim)">TYPE</span>${t.status === 'rfp' ? 'RFP' : 'Tender'}</div>
           <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
@@ -129,8 +166,8 @@ ${C.tenders.map((t) => `      <div data-item data-status="${t.status}" style="bo
         </div>
         <div id="tender-${t.id}" hidden style="padding:0 0 26px">
           ${t.note ? `<p style="max-width:760px;font-size:15px;line-height:1.7;color:var(--ink-soft);margin-bottom:14px">${esc(t.note)}</p>` : ''}
-          ${t.docs.length ? `<div style="border:1px solid var(--line);max-width:820px">
-${t.docs.map(([n, href, kind]) => `            <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;padding:14px 18px;border-bottom:1px solid var(--line);align-items:center;font-size:15px"><span><b style="font-family:var(--font-display)">${esc(n)}</b> <span style="color:var(--ink-dim)">· ${kind}</span></span><a href="${href}" target="_blank" rel="noopener" style="font-size:14px;font-weight:600">Download →</a></div>`).join('\n')}
+          ${t.docs.length ? `<div class="t-docs">
+${t.docs.map(([n, href, kind]) => `            <a class="t-doc" href="${href}" target="_blank" rel="noopener"><em class="t-kind is-${kind.toLowerCase()}">${kind}</em><b>${esc(n)}</b><span>Download <span class="arrow">→</span></span></a>`).join('\n')}
           </div>` : ''}
         </div>
       </div>`).join('\n')}
@@ -268,6 +305,11 @@ const field = (f) => {
   return `                <div style="display:flex;flex-direction:column;gap:8px;${span}"><span class="eyebrow">${esc(f.label)}</span>${ctl}</div>`;
 };
 
+const PICK = ['Google', 'NVIDIA', 'Bosch', 'MIT', 'Indian Council of Medical Research', 'Bill & Melinda Gates Foundation', 'Amazon Web Services', 'KTECH'];
+const ALLP = C.partners.flatMap((g) => g.items);
+const FLOAT_PARTNERS = [
+  ...PICK.map((n, i) => ({ kind: 'chip', logo: ALLP.find((p) => p.name === n).logo, x: [0, 52, 24, 66, 2, 40, 70, 20][i], y: [0, 4, 24, 30, 48, 54, 74, 76][i], w: [40, 40, 36, 32, 34, 44, 30, 34][i], d: [1.2, 0.8, 2, 1.5, 1, 2.2, 1.6, 2.4][i], r: [-2, 2, -1, 1.5, -1.5, 1, 2, -2][i], t: 6 + (i % 4) })),
+];
 const partnerships = {
   route: R.partnerships,
   html: () => page({
@@ -275,8 +317,8 @@ const partnerships = {
     description: 'Government, industry, academic and philanthropic partners of ARTPARK, and how to partner with us.',
     body: `
   <section style="padding:clamp(56px,8vw,96px) 0 0">
-    <div style="max-width:1180px;margin:0 auto;padding:0 24px">
-      <div class="eyebrow-rule">Partnerships</div>
+    <div class="intro-wrap has-float" style="max-width:1180px;margin:0 auto;padding:0 24px;position:relative">
+      ${floatStage(FLOAT_PARTNERS)}<div class="eyebrow-rule">Partnerships</div>
       <h1 style="font-size:clamp(44px,6.4vw,80px);line-height:1.03;margin-top:20px">Partners.</h1>
       <p style="margin-top:24px;max-width:680px;font-size:18px;line-height:1.7;color:var(--ink-soft)">ARTPARK works as a bridge between research, academia, industry and government. These organisations, institutions and ministries share their expertise and resources to help steer India-first innovation in deep tech.</p>
       <a class="btn btn-primary" href="#partner" style="margin-top:28px">Become a partner <span class="arrow">→</span></a>
@@ -287,7 +329,7 @@ const partnerships = {
 ${C.partners.map((g) => `    <section>
       <span class="eyebrow">${esc(g.label)}</span>
       <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line);margin-top:16px">
-${g.items.map((p) => `        <div title="${esc(p.name)}" style="background:var(--paper);border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 20px;height:84px;position:relative;display:flex;align-items:center;justify-content:center"><img src="${p.logo}" alt="${esc(p.name)}" loading="lazy" style="max-width:100%;max-height:50px;object-fit:contain;display:block"></div>`).join('\n')}
+${g.items.map((p) => `        <div class="mag mag-cell" title="${esc(p.name)}" style="background:var(--paper);border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 20px;height:84px;position:relative;display:flex;align-items:center;justify-content:center"><img src="${p.logo}" alt="${esc(p.name)}" loading="lazy" style="max-width:100%;max-height:50px;object-fit:contain;display:block"></div>`).join('\n')}
       </div>
     </section>`).join('\n')}
   </div>

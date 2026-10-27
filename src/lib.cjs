@@ -139,14 +139,18 @@ function page({ title, description = '', active = '', sub = '', body, scripts = 
 <link rel="stylesheet" href="/css/site.css">
 <link rel="stylesheet" href="/css/pages.css">
 <link rel="stylesheet" href="/css/scale.css">
+<link rel="stylesheet" href="/css/wow.css">
 </head>
 <body>
+<div class="ap-curtain" aria-hidden="true"><span class="ap-curtain-label">ARTPARK</span></div>
 <div style="font-family:var(--font-body);color:var(--ink);background:var(--paper)">
 ${header(active, sub)}
 ${body}
 ${footer()}
 </div>
 <script src="/js/site.js" defer></script>
+<script src="/js/ap-motion.js" defer></script>
+<script src="/js/ap-wow.js" defer></script>
 ${scripts.map((s) => `<script src="${s}" defer></script>`).join('\n')}
 </body>
 </html>
@@ -154,14 +158,29 @@ ${scripts.map((s) => `<script src="${s}" defer></script>`).join('\n')}
 }
 
 // Standard inner-page intro: eyebrow rule, H1, lede, optional sub-tab row.
-function pageIntro({ eyebrow, h1, lede, tabs }) {
+// Floating composition for the empty right side of a page intro (round 8: "floating stuff and moving windows").
+// items: { kind: 'win'|'chip'|'stat'|'doc', x, y, w (percent of the stage), d (parallax depth), r (deg), t (bob seconds), ... }
+function floatStage(items) {
+  const one = (it, i) => {
+    const st = `--x:${it.x}%;--y:${it.y}%;--w:${it.w}%;--d:${it.d || 1};--r:${it.r || 0}deg;--t:${it.t || 7}s;--del:${-(i * 1.3).toFixed(1)}s${it.ar ? ';--ar:' + it.ar : ''}`;
+    let inner = '';
+    if (it.kind === 'win') inner = `<img src="${it.src}" alt="" loading="eager" style="object-position:${it.pos || '50% 50%'}">${it.cap ? `<i>${esc(it.cap)}</i>` : ''}`;
+    if (it.kind === 'chip') inner = it.logo ? `<img src="${it.logo}" alt="">` : `<b>${esc(it.text)}</b>`;
+    if (it.kind === 'stat') inner = `<b>${esc(it.n)}</b><small>${esc(it.l)}</small>`;
+    if (it.kind === 'doc') inner = `<em>${esc(it.tag || 'PDF')}</em><b>${esc(it.text)}</b>${it.sub ? `<small>${esc(it.sub)}</small>` : ''}`;
+    return `<div class="fl fl-${it.kind}" style="${st}"><span>${inner}</span></div>`;
+  };
+  return `<div class="float-stage" aria-hidden="true">${items.map(one).join('')}</div>`;
+}
+
+function pageIntro({ eyebrow, h1, lede, tabs, float }) {
   const tabRow = tabs ? `
       <div class="sub-tabs" style="display:flex;flex-wrap:wrap;gap:4px 28px;margin-top:40px;border-bottom:1px solid var(--line);font-family:var(--font-display);font-weight:700;font-size:14px">
 ${tabs.items.map(([k, l, href]) => `        <a href="${href}" style="padding-bottom:12px;margin-bottom:-1px;text-decoration:none;color:${tabs.current === k ? 'var(--artblue)' : 'var(--ink)'};border-bottom:2px solid ${tabs.current === k ? 'var(--artblue)' : 'transparent'}"${tabs.current === k ? ' aria-current="page"' : ''}>${esc(l)}</a>`).join('\n')}
       </div>` : '';
   return `  <section style="padding:clamp(56px,8vw,96px) 0 0">
-    <div style="max-width:1180px;margin:0 auto;padding:0 24px">
-      <div class="eyebrow-rule">${esc(eyebrow)}</div>
+    <div class="intro-wrap${float ? ' has-float' : ''}" style="max-width:1180px;margin:0 auto;padding:0 24px;position:relative">
+      ${float ? floatStage(float) : ''}<div class="eyebrow-rule">${esc(eyebrow)}</div>
       <h1 style="font-size:clamp(44px,6.4vw,80px);line-height:1.03;margin-top:20px">${h1}</h1>
       <p style="margin-top:24px;max-width:680px;font-size:18px;line-height:1.7;color:var(--ink-soft)">${lede}</p>${tabRow}
     </div>
@@ -239,4 +258,4 @@ const ICONS = {
 };
 const icon = (name, size = 24) => `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[name]}</svg>`;
 
-module.exports = { icon, esc, R, page, pageIntro, ABOUT_TABS, OUTREACH_TABS, LOCKUP, LOCKUP_ALT, sectionHead, rows, statGrid, photoCard, photoGrid, figure, quote, linkRows, wrap, section };
+module.exports = { floatStage, icon, esc, R, page, pageIntro, ABOUT_TABS, OUTREACH_TABS, LOCKUP, LOCKUP_ALT, sectionHead, rows, statGrid, photoCard, photoGrid, figure, quote, linkRows, wrap, section };

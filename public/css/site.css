@@ -362,3 +362,21 @@ html.js #collaborate.in [style*="border-bottom:1px solid rgba(255,255,255,0.2)"]
   .footer-grid > div:nth-child(4) { grid-column: 2; grid-row: 2 / span 2; }
 }
 @media (max-width: 960px) { .nav-extra .btn { box-sizing: border-box; } }
+
+/* Round 8: two-tone titles (src/data/titles.cjs). ARTBlue on light, mint on dark heroes. */
+h1 .tt { color: var(--artblue); }
+.story-hero h1 .tt, [data-dark] h1 .tt, section[style*="background:var(--artblack)"] h1 .tt, section[style*="background:var(--artblue)"] h1 .tt { color: var(--artlight); }
+
+/* Round 8: page curtain from his motion.js. Brand-blue panel with a mint stripe lifts on every page load.
+   The lift is pure CSS, so the page always opens even without JavaScript; ap-motion.js drops it on internal navigation. */
+.ap-curtain { position: fixed; inset: 0; z-index: 9999; pointer-events: none; background: #3213b7; display: flex; align-items: flex-end; padding: 0 0 40px 40px; box-sizing: border-box; animation: ap-lift 720ms cubic-bezier(.76,0,.24,1) 120ms forwards; }
+.ap-curtain::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 6px; background: #aafcf0; }
+.ap-curtain-label { font: 700 13px/1 "Trebuchet MS", Tahoma, sans-serif; letter-spacing: .16em; color: #aafcf0; animation: ap-fade 260ms linear 80ms forwards; }
+.ap-curtain.is-leaving { animation: none; transform: translateY(100%); }
+.ap-curtain.is-leaving .ap-curtain-label { animation: none; opacity: 0; }
+@keyframes ap-lift { to { transform: translateY(-100%); } }
+@keyframes ap-fade { to { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .ap-curtain { display: none; } }
+/* His motion layer drives reveals and the hairline now; our older equivalents step aside. */
+html.ap-motion .page-progress { display: none !important; }
+html.ap-motion.js .reveal { transform: none !important; transition: none !important; }
