@@ -98,3 +98,9 @@
 .t-doc > span { margin-top: auto; font-family: var(--font-display); font-weight: 700; font-size: 13px; color: var(--artblue); }
 .t-kind { align-self: flex-start; padding: 3px 8px; border-radius: 4px; font: 700 10.5px/1.2 var(--font-display); letter-spacing: .1em; font-style: normal; color: #fff; background: var(--artblack); }
 .t-kind.is-pdf { background: #FF5A5F; } .t-kind.is-drive { background: #2F6F62; } .t-kind.is-doc { background: var(--artblue); }
+@media (max-width: 600px) {
+  .t-track { flex-direction: column; gap: 0; margin-top: 12px; }
+  .t-track li { flex-direction: row; align-items: baseline; gap: 8px; min-width: 0; padding: 0 0 12px 22px; }
+  .t-track li::before { left: 5px; right: auto; top: 12px; bottom: 0; width: 2px; height: auto; }
+  .t-track li i { top: 2px; }
+}
