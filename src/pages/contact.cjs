@@ -3,6 +3,16 @@
 const { page, esc } = require('../lib.cjs');
 
 const ROLES = ['Researcher', 'Startup', 'Builder', 'Industry partner', 'Media'];
+// The intro line, the message label and its placeholder follow the "I am a" choice (public/js/site.js).
+const ROLE_COPY = {
+  Researcher: ['Working on research that could leave the lab? Tell us about it, and where you want to take it.', 'What research would you like to take further?', 'The problem, where the work stands today, and what would move it forward.'],
+  Startup: ['Building a deep-tech startup? Tell us what you\'re building and where you need help.', 'What does your startup need from us?', 'Your product, its stage, and where you\'re stuck: funding, labs, pilots or mentors.'],
+  Builder: ['Want to build at ARTPARK? Tell us what you make and what you\'re looking for.', 'What would you like to build with us?', 'Your skills or project, and the kind of team or problem you\'re after.'],
+  'Industry partner': ['Looking to work with ARTPARK? Tell us about your organisation and the problem you want solved.', 'How would you like to partner with us?', 'Your organisation, the challenge, and how you\'d like to work together.'],
+  Media: ['Writing about ARTPARK? Tell us about your story and your deadline.', 'What is your story about?', 'Your publication, the angle, and your deadline.'],
+};
+const SENT_TO = ' Messages go to the ARTPARK team at connect@artpark.in.';
+const [introR, labelR, phR] = ROLE_COPY[ROLES[0]];
 
 const roleChip = (label, on) => `              <button type="button" data-role="${esc(label)}" aria-pressed="${on}" style="border:1px solid ${on ? 'var(--artblack)' : 'var(--line-strong)'};background:${on ? 'var(--artblack)' : 'transparent'};color:${on ? '#fff' : 'var(--ink)'};padding:7px 14px;font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:0.06em;border-radius:2px;cursor:pointer;transition:all 150ms ease">${esc(label.toUpperCase())}</button>`;
 
@@ -18,7 +28,7 @@ const placeCard = ({ q, img, alt, focus, eyebrow, name, lines }) => `        <di
             <span class="place-window" aria-hidden="true"><img src="${img}" alt="" loading="lazy" style="object-position:${focus}"></span>
             <a class="place-hit" href="${gmaps(q)}" target="_blank" rel="noopener" aria-label="Open ${esc(name)} in Google Maps"><span class="place-chip">Open in Google Maps <span class="arrow">↗</span></span></a>
           </div>
-          <div style="padding:20px 22px;display:flex;flex-direction:column;gap:8px;border-top:1px solid var(--line)"><span class="eyebrow" style="color:var(--artblue)">${esc(eyebrow)}</span><b style="font-family:var(--font-display);font-size:18px">${esc(name)}</b><p style="font-size:15px;line-height:1.6;color:var(--ink-soft)">${lines.map(esc).join('<br>')}</p><a class="place-dir" href="${gdir(q)}" target="_blank" rel="noopener">Directions <span class="arrow">→</span></a></div>
+          <div style="padding:20px 22px;display:flex;flex-direction:column;gap:8px;border-top:1px solid var(--line)"><span class="eyebrow" style="color:var(--artblue)">${esc(eyebrow)}</span><b style="font-family:var(--font-display);font-size:16px">${esc(name)}</b><p style="font-size:14px;line-height:1.6;color:var(--ink-soft)">${lines.map(esc).join('<br>')}</p><a class="place-dir" href="${gdir(q)}" target="_blank" rel="noopener">Directions <span class="arrow">→</span></a></div>
         </div>`;
 
 const body = `
@@ -26,7 +36,7 @@ const body = `
     <div style="max-width:1180px;margin:0 auto;padding:0 24px">
       <div class="eyebrow-rule">Contact</div>
       <h1 style="font-size:clamp(44px,6.4vw,80px);line-height:1.03;margin-top:20px">Contact us.</h1>
-      <p style="margin-top:24px;max-width:680px;font-size:18px;line-height:1.7;color:var(--ink-soft)">Tell us what you're working on and where you're stuck. Messages go to the ARTPARK team at connect@artpark.in.</p>
+      <p data-role-intro aria-live="polite" style="margin-top:24px;max-width:680px;font-size:18px;line-height:1.7;color:var(--ink-soft)">${esc(introR + SENT_TO)}</p>
     </div>
   </section>
 
@@ -40,7 +50,7 @@ ${ROLES.map((r, i) => roleChip(r, i === 0)).join('\n')}
         </div>
         <label style="display:flex;flex-direction:column;gap:8px"><span class="eyebrow">Name</span><input class="field" name="name" autocomplete="name" required></label>
         <label style="display:flex;flex-direction:column;gap:8px"><span class="eyebrow">Work email</span><input class="field" name="email" type="email" autocomplete="email" required></label>
-        <label style="display:flex;flex-direction:column;gap:8px"><span class="eyebrow">WHAT CAN WE ASSIST YOU WITH</span><textarea class="field" name="message" rows="5" placeholder="The problem you're stuck on — the more specific, the better."></textarea></label>
+        <label style="display:flex;flex-direction:column;gap:8px"><span class="eyebrow" data-role-label>${esc(labelR)}</span><textarea class="field" name="message" rows="5" placeholder="${esc(phR)}"></textarea></label>
         <div><button type="submit" class="btn btn-primary">Send message <span class="arrow">→</span></button></div>
       </form>
       <div id="contact-sent" hidden style="border:1px solid var(--line-strong);padding:28px"><h2 style="font-size:26px">Thank you.</h2><p style="margin-top:8px;font-size:15px;line-height:1.65;color:var(--ink-soft)">Your email app should have opened with the message addressed to connect@artpark.in — send it from there and someone from the ARTPARK team will write back.</p></div>
@@ -68,6 +78,6 @@ module.exports = {
     title: 'Contact — ARTPARK',
     description: "Tell us what you're working on and where you're stuck. Messages go to the ARTPARK team at connect@artpark.in.",
     active: 'contact',
-    body,
+    body: body + `<script>window.AP_ROLE_COPY=${JSON.stringify(Object.fromEntries(Object.entries(ROLE_COPY).map(([k, [i, l, p]]) => [k, { intro: i + SENT_TO, label: l, placeholder: p }]))).replace(/</g, '\\u003c')};</script>\n`,
   }),
 };

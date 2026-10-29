@@ -291,7 +291,8 @@ const field = (f) => {
   return `                <div style="display:flex;flex-direction:column;gap:8px;${span}"><span class="eyebrow">${esc(f.label)}</span>${ctl}</div>`;
 };
 
-const PICK = ['Google', 'NVIDIA', 'Bosch', 'MIT', 'Indian Council of Medical Research', 'Bill & Melinda Gates Foundation', 'Amazon Web Services', 'KTECH'];
+// User (2026-10-29): DST, Government of Karnataka, IISc, Bosch and NVIDIA first (AI Foundry once a logo is supplied).
+const PICK = ['Department of Science & Technology', 'Government of Karnataka', 'Indian Institute of Science', 'Bosch', 'NVIDIA', 'Google', 'Amazon Web Services', 'MIT'];
 const ALLP = C.partners.flatMap((g) => g.items);
 const FLOAT_PARTNERS = [
   ...PICK.map((n, i) => ({ kind: 'chip', logo: ALLP.find((p) => p.name === n).logo, x: [0, 52, 24, 66, 2, 40, 70, 20][i], y: [0, 4, 24, 30, 48, 54, 74, 76][i], w: [40, 40, 36, 32, 34, 44, 30, 34][i], d: [1.2, 0.8, 2, 1.5, 1, 2.2, 1.6, 2.4][i], r: [-2, 2, -1, 1.5, -1.5, 1, 2, -2][i], t: 6 + (i % 4) })),

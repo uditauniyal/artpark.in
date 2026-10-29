@@ -83,6 +83,16 @@
           c.style.background = s.bg; c.style.color = s.ink; c.style.borderColor = s.border;
         });
         group.setAttribute('data-value', chip.getAttribute('data-role'));
+        // Contact page: the intro, message label and placeholder follow the role (copy in src/pages/contact.cjs).
+        var copy = window.AP_ROLE_COPY && window.AP_ROLE_COPY[chip.getAttribute('data-role')];
+        if (copy) {
+          var intro = document.querySelector('[data-role-intro]');
+          var label = document.querySelector('[data-role-label]');
+          var box = document.querySelector('textarea[name=message]');
+          if (intro) intro.textContent = copy.intro;
+          if (label) label.textContent = copy.label;
+          if (box) box.setAttribute('placeholder', copy.placeholder);
+        }
       });
     });
   });
