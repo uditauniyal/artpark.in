@@ -63,7 +63,7 @@ function getStore() {
   if (process.env.GITHUB_TOKEN) {
     return new GitHubStore({ token: process.env.GITHUB_TOKEN, repo: process.env.GITHUB_REPO || 'uditauniyal/artpark.in', branch: process.env.GITHUB_BRANCH || 'main' });
   }
-  return new LocalStore(process.env.ARTPARK_ROOT || path.join(__dirname, '..', '..'));
+  return new LocalStore(process.env.ARTPARK_ROOT || path.join(__dirname, '..', '..'), { build: !process.env.ARTPARK_SKIP_BUILD });
 }
 
 module.exports = { KINDS, dataPath, LocalStore, GitHubStore, getStore };
