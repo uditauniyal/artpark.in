@@ -112,7 +112,7 @@ const carousel = `
         </div>
       </div>
     </div>
-    <div class="hero-slides" style="display:grid">
+    <div class="hero-slides" style="display:grid" data-ap-noimg>
 ${stories.map(slide).join('\n')}
     </div>
     <div class="hero-controls-wrap" style="position:absolute;left:0;right:0;bottom:0;z-index:2;pointer-events:none">

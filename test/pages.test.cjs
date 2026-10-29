@@ -85,3 +85,11 @@ test('news: floating chips show the outlets\' logos', () => {
     ['economic-times', 'forbes-india', 'mint', 'deccan-herald', 'moneycontrol', 'hindustan-times']);
   for (const f of ['economic-times', 'forbes-india', 'mint', 'deccan-herald', 'moneycontrol', 'hindustan-times']) assert.ok(fs.existsSync(path.join(ROOT, 'public/assets/outlets', f + '.webp')), f);
 });
+
+// Chrome 156 renderer crash ("Aw, Snap! Error code 5") when a hidden hero slide is shown: the scroll-reveal
+// clip-path animation on its image, under the masked and filtered media box, takes the tab down.
+test('home hero slider images opt out of the scroll-reveal image animation', () => {
+  execFileSync(process.execPath, ['tools/build.cjs'], { cwd: ROOT, stdio: 'pipe' });
+  const html = fs.readFileSync(path.join(ROOT, 'dist', 'index.html'), 'utf8');
+  assert.match(html, /<div class="hero-slides"[^>]*data-ap-noimg/);
+});
