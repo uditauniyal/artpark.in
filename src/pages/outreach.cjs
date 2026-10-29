@@ -36,7 +36,7 @@ const events = {
     <section>
       <span class="eyebrow">Upcoming</span>
       ${!C.upcomingEvents.length ? '<p style="font-size:15px;color:var(--ink-soft);margin-top:16px">No upcoming events right now. Follow ARTPARK on <a href="https://www.linkedin.com/company/artpark-in/">LinkedIn</a> for the next one.</p>' : `<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-top:16px">
-${C.upcomingEvents.map((e) => `        <div class="lift" style="border:1px solid var(--line);display:flex;flex-direction:column">
+${C.upcomingEvents.slice(0, 2).map((e) => `        <div class="lift" style="border:1px solid var(--line);display:flex;flex-direction:column">
           <div data-win style="position:relative;width:100%;aspect-ratio:16/9;background:var(--paper-soft);overflow:hidden"><img src="${esc(e.image)}" alt="${esc(e.imageAlt)}" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div>
           <div style="padding:22px 24px;display:flex;flex-direction:column;gap:8px">
             <span style="display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:0.14em;color:var(--ink-dim)"><span class="dot green"></span>${esc((M.formatRange(e.start, e.end) + (e.venue ? ' · ' + e.venue : '')).toUpperCase())}</span>
@@ -45,7 +45,13 @@ ${C.upcomingEvents.map((e) => `        <div class="lift" style="border:1px solid
             ${e.register ? `<a href="${esc(e.register)}" target="_blank" rel="noopener" style="font-family:var(--font-display);font-weight:700;font-size:14px;text-decoration:none;margin-top:6px">Register →</a>` : ''}
           </div>
         </div>`).join('\n')}
-      </div>`}
+      </div>${C.upcomingEvents.length > 2 ? `<div style="border-top:1px solid var(--line-strong);margin-top:24px">
+${C.upcomingEvents.slice(2).map((e) => `        <div class="sweep-row" data-upcoming-row style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:6px 24px;padding:20px 0;border-bottom:1px solid var(--line);align-items:baseline">
+          <span style="display:flex;align-items:center;gap:8px;font-size:13px;color:var(--ink-dim)"><span class="dot green"></span>${esc(M.formatRange(e.start, e.end))}${e.venue ? ' · ' + esc(e.venue) : ''}</span>
+          <span style="grid-column:span 2;font-family:var(--font-display);font-weight:700;font-size:18px;line-height:1.3">${esc(e.title)}</span>
+          ${e.register ? `<a href="${esc(e.register)}" target="_blank" rel="noopener" style="font-size:14px;font-weight:600;justify-self:end">Register →</a>` : M.eventHasPage(e) ? `<a href="${R.events}/${e.id}" style="font-size:14px;font-weight:600;justify-self:end">Details →</a>` : ''}
+        </div>`).join('\n')}
+      </div>` : ''}`}
     </section>
     <section>
       <span class="eyebrow">Past events</span>

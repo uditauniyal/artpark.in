@@ -17,7 +17,7 @@ const str = (v) => (v == null ? '' : String(v).trim());
 function normalise(kind, x) {
   if (kind === 'events') {
     const body = Array.isArray(x.body) ? x.body.map(str).filter(Boolean) : [];
-    return { id: '', title: str(x.title), start: str(x.start), end: str(x.end), time: str(x.time), venue: str(x.venue), blurb: str(x.blurb), body, image: str(x.image), imageAlt: str(x.imageAlt), register: str(x.register), recap: str(x.recap), source: str(x.source) };
+    return { id: '', title: str(x.title), start: str(x.start), end: str(x.end), time: str(x.time), venue: str(x.venue), blurb: str(x.blurb), body, image: str(x.image), imageAlt: str(x.imageAlt), register: str(x.register), recap: str(x.recap), source: str(x.source), placement: str(x.placement) || 'auto' };
   }
   if (kind === 'news') return { id: '', title: str(x.title), outlet: str(x.outlet), date: str(x.date), dateLabel: str(x.dateLabel), url: str(x.url) };
   const docs = Array.isArray(x.docs) ? x.docs.map((d) => ({ label: str(d && d.label), href: str(d && d.href), kind: str(d && d.kind), role: str(d && d.role) })) : x.docs;

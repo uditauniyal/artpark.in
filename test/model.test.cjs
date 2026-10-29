@@ -91,3 +91,21 @@ test('todayIST honours BUILD_DATE', () => {
 test('validate: doc kind must be a known type', () => {
   assert.ok(hasField(M.validate('tenders', tender({ docs: [{ label: 'Tender document', href: 'https://x.org/a.pdf', kind: '<b>', role: 'tender' }] })), 'docs'));
 });
+
+// ---- batch 2: placement ----
+test('isUpcoming honours forced placement, otherwise the date', () => {
+  assert.equal(M.isUpcoming({ placement: 'upcoming', start: '2020-01-01' }, '2026-10-29'), true);
+  assert.equal(M.isUpcoming({ placement: 'past', start: '2999-01-01' }, '2026-10-29'), false);
+  assert.equal(M.isUpcoming({ placement: 'auto', start: '2999-01-01' }, '2026-10-29'), true);
+  assert.equal(M.isUpcoming({ start: '2020-01-01' }, '2026-10-29'), false);
+});
+test('splitEvents respects forced placement', () => {
+  const { upcoming, past } = M.splitEvents([{ id: 'a', start: '2020-01-01', placement: 'upcoming' }, { id: 'b', start: '2999-01-01', placement: 'past' }], '2026-10-29');
+  assert.deepEqual(upcoming.map((e) => e.id), ['a']);
+  assert.deepEqual(past.map((e) => e.id), ['b']);
+});
+test('validate: photo rule follows the effective placement; placement must be known', () => {
+  assert.ok(!hasField(M.validate('events', { ...future, placement: 'past' }), 'image'));
+  assert.ok(hasField(M.validate('events', { ...future, start: '2020-01-01', placement: 'upcoming' }), 'image'));
+  assert.ok(hasField(M.validate('events', { ...future, placement: 'soon', image: '/x.png' }), 'placement'));
+});

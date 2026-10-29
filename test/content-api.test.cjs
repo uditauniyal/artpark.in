@@ -158,3 +158,9 @@ test('I-3a: an upload never overwrites a file another document uses', async () =
   assert.ok(hrefs.includes('/docs/tenders/robot-arm/corrigendum.pdf'));
   assert.ok(hrefs.includes('/docs/tenders/robot-arm/corrigendum-2.pdf'));
 });
+
+test('an event saved as past keeps placement past and needs no photo', async () => {
+  const r = await call({ kind: 'events', action: 'save', item: { title: 'Later Talk', start: '2999-02-01', venue: 'IISc', blurb: 'x', placement: 'past' } });
+  assert.equal(r.status, 200, JSON.stringify(r.json));
+  assert.equal(read('events').find((e) => e.id === 'later-talk').placement, 'past');
+});

@@ -12,7 +12,8 @@
     "imageAlt": "A session in the ARTgarage commons",
     "register": "https://forms.gle/uBb9P9cvFrSXC3pq5",
     "recap": "",
-    "source": "https://www.artpark.in/artgarage"
+    "source": "https://www.artpark.in/artgarage",
+    "placement": "auto"
   },
   {
     "id": "artpark-open-day-vc-and-corporate-edition",
@@ -27,7 +28,8 @@
     "imageAlt": "The main hall inside ARTgarage",
     "register": "https://forms.gle/RAc4oFUHDtN36zy36",
     "recap": "",
-    "source": "https://www.artpark.in/artgarage"
+    "source": "https://www.artpark.in/artgarage",
+    "placement": "auto"
   },
   {
     "id": "calibrate-testing-and-improving-ai-agents",
@@ -42,7 +44,8 @@
     "imageAlt": "",
     "register": "",
     "recap": "https://www.linkedin.com/feed/update/urn:li:activity:7519287141550489600/",
-    "source": ""
+    "source": "",
+    "placement": "auto"
   },
   {
     "id": "rethinking-efficient-ai-system",
@@ -88,7 +91,8 @@
     "imageAlt": "",
     "register": "",
     "recap": "",
-    "source": "https://www.artpark.in/events/rethinking-efficient-ai-system"
+    "source": "https://www.artpark.in/events/rethinking-efficient-ai-system",
+    "placement": "auto"
   },
   {
     "id": "ai-by-her-pre-event-india-ai-impact-summit-2025",
@@ -112,7 +116,8 @@
     "imageAlt": "",
     "register": "",
     "recap": "",
-    "source": "https://www.artpark.in/events/ai-by-her-pre-event-india-ai-impact-summit-2025"
+    "source": "https://www.artpark.in/events/ai-by-her-pre-event-india-ai-impact-summit-2025",
+    "placement": "auto"
   },
   {
     "id": "codebot-hackathon-2025",
@@ -193,7 +198,8 @@
     "imageAlt": "",
     "register": "",
     "recap": "",
-    "source": "https://www.artpark.in/events/codebot-hackathon-2025"
+    "source": "https://www.artpark.in/events/codebot-hackathon-2025",
+    "placement": "auto"
   },
   {
     "id": "tutorial-on-5g-essentials",
@@ -222,7 +228,8 @@
     "imageAlt": "",
     "register": "",
     "recap": "",
-    "source": "https://www.artpark.in/events/tutorial-on-5g-essentials"
+    "source": "https://www.artpark.in/events/tutorial-on-5g-essentials",
+    "placement": "auto"
   },
   {
     "id": "5g-test-lab-open-house",
@@ -248,7 +255,8 @@
     "imageAlt": "",
     "register": "",
     "recap": "",
-    "source": "https://www.artpark.in/events/5g-test-lab-open-house"
+    "source": "https://www.artpark.in/events/5g-test-lab-open-house",
+    "placement": "auto"
   },
   {
     "id": "roscon-in-24",
@@ -270,7 +278,8 @@
     "imageAlt": "",
     "register": "",
     "recap": "",
-    "source": "https://www.artpark.in/events/roscon-in-24"
+    "source": "https://www.artpark.in/events/roscon-in-24",
+    "placement": "auto"
   },
   {
     "id": "india-mobile-congress-2024",
@@ -291,7 +300,8 @@
     "imageAlt": "",
     "register": "",
     "recap": "",
-    "source": "https://www.artpark.in/events/india-mobile-congress-2024"
+    "source": "https://www.artpark.in/events/india-mobile-congress-2024",
+    "placement": "auto"
   },
   {
     "id": "elcia-tech-summit",
@@ -309,7 +319,8 @@
     "imageAlt": "",
     "register": "",
     "recap": "",
-    "source": "https://www.artpark.in/events/https/elciatechsummitin/elcia-tech-summit"
+    "source": "https://www.artpark.in/events/https/elciatechsummitin/elcia-tech-summit",
+    "placement": "auto"
   },
   {
     "id": "roscon",
@@ -327,7 +338,8 @@
     "imageAlt": "",
     "register": "",
     "recap": "",
-    "source": "https://www.artpark.in/events/roscon"
+    "source": "https://www.artpark.in/events/roscon",
+    "placement": "auto"
   },
   {
     "id": "global-partnership-on-ai",
@@ -348,7 +360,8 @@
     "imageAlt": "",
     "register": "",
     "recap": "",
-    "source": "https://www.artpark.in/events/global-partnership-on-ai"
+    "source": "https://www.artpark.in/events/global-partnership-on-ai",
+    "placement": "auto"
   },
   {
     "id": "mint-ai-summit",
@@ -368,7 +381,8 @@
     "imageAlt": "",
     "register": "",
     "recap": "",
-    "source": "https://www.artpark.in/events/mint-ai-summit"
+    "source": "https://www.artpark.in/events/mint-ai-summit",
+    "placement": "auto"
   },
   {
     "id": "nacdec-vi-design-challenge",
@@ -385,7 +399,8 @@
     "imageAlt": "",
     "register": "",
     "recap": "",
-    "source": "https://www.artpark.in/events/nacdec-vi-design-challenge"
+    "source": "https://www.artpark.in/events/nacdec-vi-design-challenge",
+    "placement": "auto"
   },
   {
     "id": "robotics-challenge-finale",
@@ -402,7 +417,8 @@
     "imageAlt": "",
     "register": "",
     "recap": "",
-    "source": "https://www.artpark.in/events/robotics-challenge-finale"
+    "source": "https://www.artpark.in/events/robotics-challenge-finale",
+    "placement": "auto"
   },
   {
     "id": "artpark-innovation-summit",
@@ -419,7 +435,8 @@
     "imageAlt": "",
     "register": "",
     "recap": "",
-    "source": "https://www.artpark.in/events/artpark-innovation-summit"
+    "source": "https://www.artpark.in/events/artpark-innovation-summit",
+    "placement": "auto"
   },
   {
     "id": "advanced-air-mobility",
@@ -436,6 +453,7 @@
     "imageAlt": "",
     "register": "",
     "recap": "",
-    "source": "https://www.artpark.in/events/advanced-air-mobility"
+    "source": "https://www.artpark.in/events/advanced-air-mobility",
+    "placement": "auto"
   }
 ]

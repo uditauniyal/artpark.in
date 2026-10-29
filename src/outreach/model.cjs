@@ -19,9 +19,11 @@ function formatRange(start, end) {
 
 const todayIST = () => process.env.BUILD_DATE || new Date(Date.now() + 5.5 * 3600e3).toISOString().slice(0, 10);
 
+// placement: 'upcoming' / 'past' force the section; 'auto' (or empty) goes by date.
+const isUpcoming = (e, today) => (e.placement === 'upcoming' ? true : e.placement === 'past' ? false : (e.end || e.start) >= today);
 function splitEvents(events, today) {
-  const upcoming = events.filter((e) => (e.end || e.start) >= today).sort((a, b) => a.start.localeCompare(b.start));
-  const past = events.filter((e) => (e.end || e.start) < today).sort((a, b) => b.start.localeCompare(a.start));
+  const upcoming = events.filter((e) => isUpcoming(e, today)).sort((a, b) => a.start.localeCompare(b.start));
+  const past = events.filter((e) => !isUpcoming(e, today)).sort((a, b) => b.start.localeCompare(a.start));
   return { upcoming, past };
 }
 const eventHasPage = (e) => !e.recap && !!((e.body && e.body.length) || e.blurb);
@@ -69,7 +71,8 @@ function validate(kind, item) {
     if (item.end && item.start && item.end < item.start) errs.push('end: must be on or after the start date');
     if (!Array.isArray(item.body) || item.body.some((p) => typeof p !== 'string')) errs.push('body: must be a list of paragraphs');
     else if (item.body.join('').length > 20000) errs.push('body: at most 20000 characters');
-    if (parts(item.start) && (item.end || item.start) >= todayIST() && !item.image) errs.push('image: a photo is required for upcoming events');
+    if (item.placement && !['auto', 'upcoming', 'past'].includes(item.placement)) errs.push('placement: must be auto, upcoming or past');
+    if (parts(item.start) && isUpcoming(item, todayIST()) && !item.image) errs.push('image: a photo is required for upcoming events');
   } else if (kind === 'news') {
     text('title', 200, true); text('outlet', 120, true); date('date', true); text('dateLabel', 40); link('url', true);
   } else if (kind === 'tenders') {
@@ -92,4 +95,4 @@ function validate(kind, item) {
   return errs;
 }
 
-module.exports = { STAGES, formatShort, formatLong, formatRange, todayIST, splitEvents, eventHasPage, tenderStages, slugify, uniqueId, validate };
+module.exports = { STAGES, formatShort, formatLong, formatRange, todayIST, isUpcoming, splitEvents, eventHasPage, tenderStages, slugify, uniqueId, validate };
