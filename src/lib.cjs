@@ -168,7 +168,7 @@ function floatStage(items) {
     if (it.kind === 'chip') inner = it.logo ? `<img src="${it.logo}" alt=""${it.imgH ? ` style="max-height:${it.imgH}px"` : ''}>` : `<b>${esc(it.text)}</b>`;
     if (it.kind === 'stat') inner = `<b>${esc(it.n)}</b><small>${esc(it.l)}</small>`;
     if (it.kind === 'doc') inner = `<em>${esc(it.tag || 'PDF')}</em><b>${esc(it.text)}</b>${it.sub ? `<small>${esc(it.sub)}</small>` : ''}`;
-    return `<div class="fl fl-${it.kind}" style="${st}"><span>${inner}</span></div>`;
+    return `<div class="fl fl-${it.kind}${it.hl ? ' is-hl' : ''}" style="${st}"><span>${inner}</span></div>`;
   };
   return `<div class="float-stage" aria-hidden="true">${items.map(one).join('')}</div>`;
 }

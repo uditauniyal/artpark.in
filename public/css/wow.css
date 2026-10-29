@@ -104,3 +104,5 @@
   .t-track li::before { left: 5px; right: auto; top: 12px; bottom: 0; width: 2px; height: auto; }
   .t-track li i { top: 2px; }
 }
+/* Highlighted chips (Partnerships: DST, Government of Karnataka). */
+.fl-chip.is-hl > span { border: 1.5px solid #c9c2ef; box-shadow: 0 26px 48px -22px rgba(50, 19, 183, .55); }

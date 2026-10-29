@@ -293,11 +293,14 @@ const field = (f) => {
   return `                <div style="display:flex;flex-direction:column;gap:8px;${span}"><span class="eyebrow">${esc(f.label)}</span>${ctl}</div>`;
 };
 
-// User (2026-10-29): DST, Government of Karnataka, IISc, Bosch and NVIDIA first (AI Foundry once a logo is supplied).
-const PICK = ['Department of Science & Technology', 'Government of Karnataka', 'Indian Institute of Science', 'Bosch', 'NVIDIA', 'Google', 'Amazon Web Services', 'MIT'];
+// User (2026-10-29): DST, Government of Karnataka, IISc, Bosch and NVIDIA lead (AI Foundry once a logo is supplied).
+// DST and Karnataka sit in the two most prominent slots (5: centre, 3: right); their emblems, and IISc's, are tall
+// marks, so they get a taller image slot to read at the same weight as the wordmarks.
+const PICK = ['Google', 'Bosch', 'Indian Institute of Science', 'Government of Karnataka', 'NVIDIA', 'Department of Science & Technology', 'Amazon Web Services', 'MIT'];
+const EMBLEM_H = { 'Department of Science & Technology': 56, 'Government of Karnataka': 56, 'Indian Institute of Science': 54 };
 const ALLP = C.partners.flatMap((g) => g.items);
 const FLOAT_PARTNERS = [
-  ...PICK.map((n, i) => ({ kind: 'chip', logo: ALLP.find((p) => p.name === n).logo, x: [0, 52, 24, 66, 2, 40, 70, 20][i], y: [0, 4, 24, 30, 48, 54, 74, 76][i], w: [40, 40, 36, 32, 34, 44, 30, 34][i], d: [1.2, 0.8, 2, 1.5, 1, 2.2, 1.6, 2.4][i], r: [-2, 2, -1, 1.5, -1.5, 1, 2, -2][i], t: 6 + (i % 4) })),
+  ...PICK.map((n, i) => ({ kind: 'chip', logo: ALLP.find((p) => p.name === n).logo, imgH: EMBLEM_H[n], hl: /Science & Technology|Karnataka/.test(n), x: [0, 52, 24, 66, 2, 40, 70, 20][i], y: [0, 4, 24, 30, 48, 54, 74, 76][i], w: [40, 40, 36, 32, 34, 44, 30, 34][i], d: [1.2, 0.8, 2, 1.5, 1, 2.2, 1.6, 2.4][i], r: [-2, 2, -1, 1.5, -1.5, 1, 2, -2][i], t: 6 + (i % 4) })),
 ];
 const partnerships = {
   route: R.partnerships,

@@ -55,10 +55,14 @@ test('contact page: address text a little smaller', () => {
   assert.match(html, /<p style="font-size:14px;line-height:1\.6;color:var\(--ink-soft\)">Ground Floor/);
 });
 
-test('partnerships: floating logos lead with DST, Karnataka, IISc, Bosch, NVIDIA', () => {
+// User (2026-10-29): DST and Government of Karnataka take Google's and Bosch's prominent spots, emblems shown larger.
+test('partnerships: DST and Karnataka in the prominent spots, emblems larger', () => {
   const stage = page('partnerships').match(/<div class="float-stage"[\s\S]*?<\/div><\/div>/)[0];
-  const srcs = [...stage.matchAll(/<img src="([^"]+)"/g)].map((m) => m[1].split('/').pop().replace('.webp', ''));
-  assert.deepEqual(srcs.slice(0, 5), ['department-of-science-technology', 'government-of-karnataka', 'indian-institute-of-science', 'bosch', 'nvidia']);
+  const chips = [...stage.matchAll(/<img src="([^"]+)" alt=""( style="max-height:(\d+)px")?/g)].map((m) => [m[1].split('/').pop().replace('.webp', ''), +m[3] || 0]);
+  assert.deepEqual(chips.map((c) => c[0]), ['google', 'bosch', 'indian-institute-of-science', 'government-of-karnataka', 'nvidia', 'department-of-science-technology', 'amazon-web-services', 'mit']);
+  for (const [name, h] of chips) if (/science-technology|karnataka|indian-institute/.test(name)) assert.ok(h >= 52, name);
+  const hl = [...stage.matchAll(/<div class="fl fl-chip is-hl"[^>]*><span><img src="([^"]+)"/g)].map((m) => m[1].split('/').pop().replace('.webp', ''));
+  assert.deepEqual(hl.sort(), ['department-of-science-technology', 'government-of-karnataka']);
 });
 
 test('contact page: choosing a role changes the copy (browser)', { skip: !process.env.ARTPARK_PLAYWRIGHT && 'ARTPARK_PLAYWRIGHT not set' }, async () => {
