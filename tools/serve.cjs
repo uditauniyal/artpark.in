@@ -1,4 +1,5 @@
-// Local static server with clean URLs (/contact -> /contact/index.html).
+// Local static server with clean URLs (/contact -> /contact/index.html), plus the admin API:
+// /api/<name> runs api/<name>.js, the same handler Vercel runs. Settings come from .env.local (gitignored).
 // Usage: node tools/serve.cjs [root=dist] [port=3010]
 const http = require('http');
 const fs = require('fs');
@@ -12,8 +13,26 @@ const TYPES = {
   '.gif': 'image/gif', '.svg': 'image/svg+xml', '.ico': 'image/x-icon', '.pdf': 'application/pdf', '.woff2': 'font/woff2',
 };
 
+// KEY=VALUE lines; a value may be wrapped in single or double quotes.
+const envFile = path.join(__dirname, '..', '.env.local');
+if (fs.existsSync(envFile)) {
+  for (const line of fs.readFileSync(envFile, 'utf8').split('\n')) {
+    const m = line.match(/^\s*([A-Z0-9_]+)\s*=\s*(.*?)\s*$/);
+    if (m && !(m[1] in process.env)) process.env[m[1]] = m[2].replace(/^'(.*)'$|^"(.*)"$/, '$1$2');
+  }
+}
+const API = path.join(__dirname, '..', 'api');
+
 http.createServer((req, res) => {
   let rel = decodeURIComponent(req.url.split('?')[0].split('#')[0]);
+  const api = rel.match(/^\/api\/([a-z-]+)$/);
+  if (api && fs.existsSync(path.join(API, api[1] + '.js'))) {
+    return Promise.resolve(require(path.join(API, api[1] + '.js'))(req, res)).catch((e) => {
+      console.error(e);
+      if (!res.headersSent) { res.writeHead(500); res.end(); }
+    });
+  }
+  if (/^\/(admin|api)(\/|$)/.test(rel)) res.setHeader('X-Robots-Tag', 'noindex, nofollow');
   let file = path.join(root, rel);
   if (!file.startsWith(root)) { res.writeHead(403); return res.end(); }
   if (fs.existsSync(file) && fs.statSync(file).isDirectory()) file = path.join(file, 'index.html');

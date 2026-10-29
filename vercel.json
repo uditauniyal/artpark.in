@@ -4,54 +4,271 @@
   "outputDirectory": "dist",
   "cleanUrls": true,
   "trailingSlash": false,
+  "functions": {
+    "api/content.js": {
+      "includeFiles": "{src,research}/**"
+    }
+  },
+  "crons": [
+    {
+      "path": "/api/rebuild",
+      "schedule": "30 18 * * *"
+    }
+  ],
   "headers": [
-    { "source": "/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }] }
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
+      "source": "/admin/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    }
   ],
   "redirects": [
-    { "source": "/home", "destination": "/", "permanent": true },
-    { "source": "/about-us", "destination": "/about/approach", "permanent": true },
-    { "source": "/team", "destination": "/about/team", "permanent": true },
-    { "source": "/boards-advisors", "destination": "/about/team", "permanent": true },
-    { "source": "/certifications", "destination": "/about/certifications", "permanent": true },
-    { "source": "/startups-overview", "destination": "/portfolio", "permanent": true },
-    { "source": "/startups-new", "destination": "/portfolio", "permanent": true },
-    { "source": "/dashboard", "destination": "/portfolio", "permanent": true },
-    { "source": "/startups-applyfortir2026", "destination": "https://apply.artpark.info/tir", "permanent": false },
-    { "source": "/startups-applyforvip", "destination": "https://apply.artpark.info/sip", "permanent": false },
-    { "source": "/advanced-robotics/:path*", "destination": "/about/programs/advanced-robotics", "permanent": true },
-    { "source": "/advanced-robotics", "destination": "/about/programs/advanced-robotics", "permanent": true },
-    { "source": "/industry5", "destination": "/about/programs/industry-5", "permanent": true },
-    { "source": "/industry-50", "destination": "/about/programs/industry-5", "permanent": true },
-    { "source": "/health", "destination": "/about/programs/health", "permanent": true },
-    { "source": "/ai-and-health", "destination": "/about/programs/health", "permanent": true },
-    { "source": "/health-initiatives/:path*", "destination": "/about/programs/health", "permanent": true },
-    { "source": "/health-initiatives", "destination": "/about/programs/health", "permanent": true },
-    { "source": "/prism-h", "destination": "/about/programs/health", "permanent": true },
-    { "source": "/heat-stress-forecasting", "destination": "/about/programs/health", "permanent": true },
-    { "source": "/oral-cancer-screening", "destination": "/about/programs/health", "permanent": true },
-    { "source": "/tb-screening", "destination": "/about/programs/health", "permanent": true },
-    { "source": "/reimagine-health/:path*", "destination": "/about/programs/health", "permanent": true },
-    { "source": "/language", "destination": "/about/programs/language", "permanent": true },
-    { "source": "/language/:path*", "destination": "/about/programs/language", "permanent": true },
-    { "source": "/language-data-ai/:path*", "destination": "/about/programs/language", "permanent": true },
-    { "source": "/language-data-ai", "destination": "/about/programs/language", "permanent": true },
-    { "source": "/syspin", "destination": "/about/programs/language", "permanent": true },
-    { "source": "/programs/coe-wwt1", "destination": "/about/programs/wired-wireless", "permanent": true },
-    { "source": "/5g-test-lab-wwt-1", "destination": "/about/programs/wired-wireless", "permanent": true },
-    { "source": "/skilling", "destination": "/about/programs/academy", "permanent": true },
-    { "source": "/artlabs", "destination": "/about/programs/artlabs", "permanent": true },
-    { "source": "/zetesis", "destination": "/about/programs/artlabs", "permanent": true },
-    { "source": "/artgarage", "destination": "/about/facilities/artgarage", "permanent": true },
-    { "source": "/artgarage-1", "destination": "/about/facilities/artgarage", "permanent": true },
-    { "source": "/brainz", "destination": "/about/facilities/brainz", "permanent": true },
-    { "source": "/media", "destination": "/news", "permanent": true },
-    { "source": "/announcements", "destination": "/news", "permanent": true },
-    { "source": "/publications/:path*", "destination": "/news", "permanent": true },
-    { "source": "/events/https/elciatechsummitin/elcia-tech-summit", "destination": "/events/elcia-tech-summit", "permanent": true },
-    { "source": "/careers-1/:path*", "destination": "/careers", "permanent": true },
-    { "source": "/stories", "destination": "/portfolio", "permanent": true },
-    { "source": "/stories/blog-post-title-four-kpyhe", "destination": "/stories/algofet", "permanent": true },
-    { "source": "/stories/environmnetday2026", "destination": "/stories/nature-signals", "permanent": true },
-    { "source": "/aaprivacypolicy", "destination": "/privacy-policy", "permanent": true }
+    {
+      "source": "/home",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/about-us",
+      "destination": "/about/approach",
+      "permanent": true
+    },
+    {
+      "source": "/team",
+      "destination": "/about/team",
+      "permanent": true
+    },
+    {
+      "source": "/boards-advisors",
+      "destination": "/about/team",
+      "permanent": true
+    },
+    {
+      "source": "/certifications",
+      "destination": "/about/certifications",
+      "permanent": true
+    },
+    {
+      "source": "/startups-overview",
+      "destination": "/portfolio",
+      "permanent": true
+    },
+    {
+      "source": "/startups-new",
+      "destination": "/portfolio",
+      "permanent": true
+    },
+    {
+      "source": "/dashboard",
+      "destination": "/portfolio",
+      "permanent": true
+    },
+    {
+      "source": "/startups-applyfortir2026",
+      "destination": "https://apply.artpark.info/tir",
+      "permanent": false
+    },
+    {
+      "source": "/startups-applyforvip",
+      "destination": "https://apply.artpark.info/sip",
+      "permanent": false
+    },
+    {
+      "source": "/advanced-robotics/:path*",
+      "destination": "/about/programs/advanced-robotics",
+      "permanent": true
+    },
+    {
+      "source": "/advanced-robotics",
+      "destination": "/about/programs/advanced-robotics",
+      "permanent": true
+    },
+    {
+      "source": "/industry5",
+      "destination": "/about/programs/industry-5",
+      "permanent": true
+    },
+    {
+      "source": "/industry-50",
+      "destination": "/about/programs/industry-5",
+      "permanent": true
+    },
+    {
+      "source": "/health",
+      "destination": "/about/programs/health",
+      "permanent": true
+    },
+    {
+      "source": "/ai-and-health",
+      "destination": "/about/programs/health",
+      "permanent": true
+    },
+    {
+      "source": "/health-initiatives/:path*",
+      "destination": "/about/programs/health",
+      "permanent": true
+    },
+    {
+      "source": "/health-initiatives",
+      "destination": "/about/programs/health",
+      "permanent": true
+    },
+    {
+      "source": "/prism-h",
+      "destination": "/about/programs/health",
+      "permanent": true
+    },
+    {
+      "source": "/heat-stress-forecasting",
+      "destination": "/about/programs/health",
+      "permanent": true
+    },
+    {
+      "source": "/oral-cancer-screening",
+      "destination": "/about/programs/health",
+      "permanent": true
+    },
+    {
+      "source": "/tb-screening",
+      "destination": "/about/programs/health",
+      "permanent": true
+    },
+    {
+      "source": "/reimagine-health/:path*",
+      "destination": "/about/programs/health",
+      "permanent": true
+    },
+    {
+      "source": "/language",
+      "destination": "/about/programs/language",
+      "permanent": true
+    },
+    {
+      "source": "/language/:path*",
+      "destination": "/about/programs/language",
+      "permanent": true
+    },
+    {
+      "source": "/language-data-ai/:path*",
+      "destination": "/about/programs/language",
+      "permanent": true
+    },
+    {
+      "source": "/language-data-ai",
+      "destination": "/about/programs/language",
+      "permanent": true
+    },
+    {
+      "source": "/syspin",
+      "destination": "/about/programs/language",
+      "permanent": true
+    },
+    {
+      "source": "/programs/coe-wwt1",
+      "destination": "/about/programs/wired-wireless",
+      "permanent": true
+    },
+    {
+      "source": "/5g-test-lab-wwt-1",
+      "destination": "/about/programs/wired-wireless",
+      "permanent": true
+    },
+    {
+      "source": "/skilling",
+      "destination": "/about/programs/academy",
+      "permanent": true
+    },
+    {
+      "source": "/artlabs",
+      "destination": "/about/programs/artlabs",
+      "permanent": true
+    },
+    {
+      "source": "/zetesis",
+      "destination": "/about/programs/artlabs",
+      "permanent": true
+    },
+    {
+      "source": "/artgarage",
+      "destination": "/about/facilities/artgarage",
+      "permanent": true
+    },
+    {
+      "source": "/artgarage-1",
+      "destination": "/about/facilities/artgarage",
+      "permanent": true
+    },
+    {
+      "source": "/brainz",
+      "destination": "/about/facilities/brainz",
+      "permanent": true
+    },
+    {
+      "source": "/media",
+      "destination": "/news",
+      "permanent": true
+    },
+    {
+      "source": "/announcements",
+      "destination": "/news",
+      "permanent": true
+    },
+    {
+      "source": "/publications/:path*",
+      "destination": "/news",
+      "permanent": true
+    },
+    {
+      "source": "/events/https/elciatechsummitin/elcia-tech-summit",
+      "destination": "/events/elcia-tech-summit",
+      "permanent": true
+    },
+    {
+      "source": "/careers-1/:path*",
+      "destination": "/careers",
+      "permanent": true
+    },
+    {
+      "source": "/stories",
+      "destination": "/portfolio",
+      "permanent": true
+    },
+    {
+      "source": "/stories/blog-post-title-four-kpyhe",
+      "destination": "/stories/algofet",
+      "permanent": true
+    },
+    {
+      "source": "/stories/environmnetday2026",
+      "destination": "/stories/nature-signals",
+      "permanent": true
+    },
+    {
+      "source": "/aaprivacypolicy",
+      "destination": "/privacy-policy",
+      "permanent": true
+    }
   ]
 }

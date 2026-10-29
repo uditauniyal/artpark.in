@@ -7,3 +7,5 @@ research/*
 .vercel/
 !research/artpark-media.json
 !research/careers-api.json
+.env.local
+.superpowers/
