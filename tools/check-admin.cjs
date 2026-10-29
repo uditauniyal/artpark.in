@@ -45,6 +45,12 @@ const check = (name, ok) => { results[name] = !!ok; };
     await p.click('#login-submit');
     await p.waitForSelector('[data-tab="events"]');
     check('loggedIn', true);
+    await p.click('[data-tab="events"]');
+    check('eventsSummary', /\d+ upcoming · \d+ past/.test(await p.textContent('#section-summary')));
+    await p.fill('#search', 'open day');
+    const titles = await p.locator('[data-row]:visible .a-row-title').allTextContents();
+    check('searchFilters', titles.length > 0 && titles.every((t) => /open day/i.test(t)));
+    await p.fill('#search', '');
 
     // News
     await p.click('[data-tab="news"]');
@@ -59,6 +65,18 @@ const check = (name, ok) => { results[name] = !!ok; };
 
     // Upcoming event: refused without a photo, saved with one
     await p.click('[data-tab="events"]');
+    await p.click('#add-new');
+    check('placementDefaultsAuto', await p.isChecked('[name=placement][value=auto]'));
+    // A future event marked Past needs no photo and shows under Past events
+    await p.fill('[name=title]', 'Admin test past talk');
+    await p.fill('[name=start]', nextMonth);
+    await p.fill('[name=venue]', 'IISc');
+    await p.fill('[name=blurb]', 'A talk filed under past.');
+    await p.check('[name=placement][value=past]');
+    await p.click('#save');
+    await saved();
+    const evPast = await pub('/events');
+    check('forcedPastShowsUnderPast', evPast.indexOf('Admin test past talk') > evPast.indexOf('Past events'));
     await p.click('#add-new');
     await p.fill('[name=title]', 'Admin test event');
     await p.fill('[name=start]', nextMonth);
@@ -117,13 +135,13 @@ const check = (name, ok) => { results[name] = !!ok; };
     check('tenderAllStagesDone', (t4.match(/<li /g) || []).length === 4 && (t4.match(/is-done/g) || []).length === 4);
 
     // Delete all three
-    for (const [tab, id] of [['news', 'admin-test-news'], ['events', 'admin-test-event'], ['tenders', tenderId]]) {
+    for (const [tab, id] of [['news', 'admin-test-news'], ['events', 'admin-test-event'], ['events', 'admin-test-past-talk'], ['tenders', tenderId]]) {
       await p.click(`[data-tab="${tab}"]`);
       await row(id).locator('[data-delete]').click();
       await row(id).locator('[data-confirm-delete]').click();
       await saved();
     }
-    check('deletedEverywhere', !(await pub('/news')).includes('Admin test news') && !(await pub('/events')).includes('Admin test event') && !(await pub('/tenders')).includes('Admin test tender'));
+    check('deletedEverywhere', !(await pub('/news')).includes('Admin test news') && !(await pub('/events')).includes('Admin test event') && !(await pub('/events')).includes('Admin test past talk') && !(await pub('/tenders')).includes('Admin test tender'));
     const root = path.join(__dirname, '..');
     for (const f of [path.join(root, 'public/docs/tenders', tenderId), ...fs.readdirSync(path.join(root, 'public/assets/events')).filter((f) => f.startsWith('admin-test-event-')).map((f) => path.join(root, 'public/assets/events', f))]) fs.rmSync(f, { recursive: true, force: true });
 
@@ -134,6 +152,9 @@ const check = (name, ok) => { results[name] = !!ok; };
     await p.click('[data-tab="tenders"]');
     await p.locator('[data-row] [data-edit]').first().click();
     check('phoneNoOverflow', (await p.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)) <= 1);
+    check('phonePanelFull', (await p.evaluate(() => document.querySelector('#panel').getBoundingClientRect().width)) >= 380);
+    check('phoneSaveReachable', await p.evaluate(() => { const r = document.querySelector('#save').getBoundingClientRect(); return r.bottom <= window.innerHeight && r.top >= 0; }));
+    await p.click('#cancel');
 
     await p.click('#logout');
     await p.waitForSelector('#login-email');

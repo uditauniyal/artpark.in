@@ -6,48 +6,60 @@
 <meta name="robots" content="noindex, nofollow">
 <title>ARTPARK Admin — Outreach</title>
 <link rel="icon" href="/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&amp;display=swap">
 <link rel="stylesheet" href="/_ds/colors_and_type.css">
 <link rel="stylesheet" href="/admin/admin.css">
 </head>
 <body>
-<header class="a-top">
-  <a href="/" class="a-brand"><img src="/assets/brand/artpark-iisc-lockup.webp" alt="ARTPARK" height="34"></a>
-  <span class="a-title">Outreach admin</span>
-  <span class="a-user" id="who" hidden></span>
-  <button type="button" class="a-btn a-ghost" id="logout" hidden>Log out</button>
-</header>
-
-<main class="a-main">
-  <section id="login" class="a-login" hidden>
-    <h1>Sign in</h1>
-    <p class="a-muted">For the ARTPARK team: add and update events, news and tenders.</p>
+<section id="login" class="a-login" hidden>
+  <div class="a-login-card">
+    <img src="/assets/brand/artpark-iisc-lockup.webp" alt="ARTPARK at IISc" class="a-login-logo">
+    <h1>Outreach admin</h1>
+    <p class="a-muted">Sign in to update events, news and tenders on artpark.in.</p>
     <form id="login-form">
       <label>Email<input type="email" id="login-email" autocomplete="username" required></label>
       <label>Password<input type="password" id="login-password" autocomplete="current-password" required></label>
       <p class="a-err" id="login-error" role="alert"></p>
-      <button type="submit" class="a-btn" id="login-submit">Sign in</button>
+      <button type="submit" class="a-btn a-btn-wide" id="login-submit">Sign in</button>
     </form>
-  </section>
+  </div>
+</section>
 
-  <section id="app" hidden>
-    <nav class="a-tabs" role="tablist">
-      <button type="button" role="tab" data-tab="events">Events</button>
-      <button type="button" role="tab" data-tab="news">News</button>
-      <button type="button" role="tab" data-tab="tenders">Tenders</button>
+<div id="app" class="a-app" hidden>
+  <aside class="a-side">
+    <a href="/" class="a-side-brand" title="Open artpark.in"><span class="a-side-logo"><img src="/assets/brand/artpark-iisc-lockup.webp" alt="ARTPARK"></span><span>Outreach admin</span></a>
+    <nav class="a-nav" aria-label="Sections">
+      <button type="button" data-tab="events"><span>Events</span><span data-count></span></button>
+      <button type="button" data-tab="news"><span>News</span><span data-count></span></button>
+      <button type="button" data-tab="tenders"><span>Tenders</span><span data-count></span></button>
     </nav>
-    <div class="a-grid">
-      <div class="a-listcol">
-        <div class="a-listhead"><span id="count" class="a-muted"></span><button type="button" class="a-btn" id="add-new">Add new</button></div>
-        <ul class="a-list" id="list"></ul>
-      </div>
-      <div class="a-formcol">
-        <p id="status" role="status" aria-live="polite"></p>
-        <form id="item-form" novalidate hidden></form>
-        <p class="a-muted" id="form-empty">Choose an entry to edit, or add a new one.</p>
-      </div>
+    <div class="a-side-foot">
+      <span id="who"></span>
+      <button type="button" id="logout">Log out</button>
     </div>
-  </section>
-</main>
+  </aside>
+
+  <main class="a-main">
+    <header class="a-head">
+      <div>
+        <h1 id="section-title">Events</h1>
+        <p id="section-summary" class="a-muted"></p>
+      </div>
+      <button type="button" class="a-btn" id="add-new">New event</button>
+    </header>
+    <div class="a-search"><input type="search" id="search" placeholder="Search by title" aria-label="Search by title"></div>
+    <ul class="a-list" id="list"></ul>
+    <p class="a-empty a-muted" id="list-empty" hidden>Nothing matches that search.</p>
+  </main>
+
+  <div class="a-scrim" id="scrim" hidden></div>
+  <aside class="a-panel" id="panel" aria-label="Edit" hidden>
+    <form id="item-form" novalidate></form>
+  </aside>
+  <p id="status" role="status" aria-live="polite"></p>
+</div>
 <script src="/admin/admin.js"></script>
 </body>
 </html>
