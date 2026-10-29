@@ -76,7 +76,6 @@
         "https://vaani.iisc.ac.in/case-studies/mwirelabs"
       ],
       "also": [
-        "niral-networks",
         "open-science-stack",
         "algobotix",
         "acceleration-robotics"
@@ -207,11 +206,11 @@
       "pos": "50% 50%"
     },
     {
-      "slug": "niral-networks",
-      "match": "frees up the operator",
-      "img": "/assets/founders/niral-networks-abhijit-chaudhary.webp",
-      "pos": "50% 25%",
-      "pull": "When NiralOS based products are deployed, it frees up the operator from any type of vendor lock-in."
+      "slug": "strider-robotics",
+      "match": "autonomous quadruped robots",
+      "img": "/assets/founders/strider-robotics-team.webp",
+      "pos": "50% 40%",
+      "pull": "We will be deploying our autonomous quadruped robots for industrial inspection."
     },
     {
       "slug": "nxtqube",

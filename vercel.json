@@ -269,6 +269,21 @@
       "source": "/aaprivacypolicy",
       "destination": "/privacy-policy",
       "permanent": true
+    },
+    {
+      "source": "/stories/niral-networks",
+      "destination": "/portfolio",
+      "permanent": true
+    },
+    {
+      "source": "/stories/velastra",
+      "destination": "/portfolio",
+      "permanent": true
+    },
+    {
+      "source": "/stories/versor-robotics",
+      "destination": "/portfolio",
+      "permanent": true
     }
   ]
 }

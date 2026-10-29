@@ -61,7 +61,7 @@ const MODELS = [
 const FOCUS = [
   ['Healthcare', 'Dengue and heat-risk forecasting live in Karnataka, a WhatsApp copilot for 3,000+ frontline health workers, AI screening for oral cancer and TB, and One Health surveillance.', '/assets/site/oral-screening.webp', R.programs + '/health'],
   ['Mobility', 'Drones that land and recharge on their own, 5G drone corridors, the InterSafe road-safety pilot, and autonomy and navigation stacks for vehicles.', '/assets/site/drone-room.webp', R.programs + '/wired-wireless'],
-  ['Agriculture', 'Robots that work inside crop rows, the Agri Robotics Centre of Excellence, livestock disease strategy, and speech data for farmers in their own languages.', '/assets/founders/versor-robotics-trellis-row.webp', '/stories/versor-robotics'],
+  ['Agriculture', 'AI that grades crop quality, the Agri Robotics Centre of Excellence, livestock disease strategy, and speech data for farmers in their own languages.', '/assets/founders/rootsgoods-pusa-krishi.webp', '/stories/rootsgoods'],
   ['Industrial automation', 'CAMRAS, the Industry 5.0 platform for MSMEs, robotic actuators, quadrupeds and humanoids built and tested at ARTgarage.', '/assets/site/quadruped-team.webp', R.programs + '/advanced-robotics'],
   ['Education', 'Spark sessions for founders, UG-PG fellowships, internships, robotics challenges and 5G courses through the ARTPARK Academy.', '/assets/site/skilling-session.webp', R.programs + '/academy'],
 ];

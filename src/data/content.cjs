@@ -56,24 +56,29 @@ const PR = (n, i) => '/assets/recovered/portrait-' + n + '-' + i + '.webp';
 [['dr-vijay-chandru', 18, 'https://www.linkedin.com/in/vijaychandru/'], ['dr-p-anandan', 19, 'https://www.linkedin.com/in/panandan/'], ['utkarsh-ut', 20, 'https://www.linkedin.com/in/ut-utkarsh/'], ['vijay-vujjini', 21, 'https://www.linkedin.com/in/vvujjini/'], ['dr-anurag-srivastava', 22, 'https://www.linkedin.com/in/anurag-srivastava-b65567/']].forEach(([n, i, l], k) => { people.advisors[k].portrait = PR(n, i); people.advisors[k].linkedin = l; });
 ['https://www.linkedin.com/in/amrutur/', 'https://www.linkedin.com/in/raghuramd/', 'https://www.linkedin.com/in/sheela-prabhakar-18562116b/'].forEach((l, k) => { people.leadership[k].linkedin = l; });
 
-// ---------------- Portfolio (artpark.in/startups-overview + startups-new sectors) ----------------
-// Sectors as listed on artpark.in/startups-new. Companies missing there, or clearly mis-filed by the
-// page layout, are assigned by Claude (logged in notes/corrections-log.md).
-const SECTORS = ['Defence and Aerospace', 'Space Technology', 'Industrial Automation and Robotics', 'Healthcare', 'Agriculture', 'Mobility and Construction', 'Research and Deep Science'];
-const SECTOR = {
-  'acceleration-robotics': 'Industrial Automation and Robotics', algobotix: 'Defence and Aerospace', algofet: 'Defence and Aerospace',
-  astrome: 'Space Technology', 'a-thon': 'Mobility and Construction', 'automind-dynamics': 'Defence and Aerospace',
-  'charukesi-health': 'Healthcare', 'comrado-aerospace': 'Defence and Aerospace', 'contrivation-labs': 'Agriculture',
-  'dexsent-robotics': 'Industrial Automation and Robotics', edgeverse: 'Mobility and Construction', floaid: 'Healthcare',
-  'flo-mobility': 'Mobility and Construction', 'guerin-technologies': 'Space Technology', 'hyflex-mobility': 'Defence and Aerospace',
-  kinesthetiq: 'Industrial Automation and Robotics', 'niral-networks': 'Research and Deep Science', nextoar: 'Industrial Automation and Robotics',
-  nxtqube: 'Defence and Aerospace', 'open-science-stack': 'Research and Deep Science', qosmic: 'Space Technology',
-  'q-axis-motors': 'Defence and Aerospace', rootsgoods: 'Agriculture', 'sakar-robotics': 'Mobility and Construction',
-  'scivision-ai': 'Industrial Automation and Robotics', spacyphy: 'Mobility and Construction', strideaide: 'Healthcare',
-  'strider-robotics': 'Industrial Automation and Robotics', 'twara-robotics': 'Industrial Automation and Robotics', udot: 'Healthcare',
-  'uncharted-ai': 'Industrial Automation and Robotics', velastra: 'Space Technology', 'versor-robotics': 'Agriculture',
-  'vishvasys-aerospace': 'Space Technology', yaanendriya: 'Defence and Aerospace', zenteiq: 'Research and Deep Science',
+// ---------------- Portfolio (the ARTPARK Start Up portfolio 2026, 36 startups) ----------------
+// Company names, one-liners and logos come from artpark.in for the 33 listed there; the 3 newer ones are
+// written from their pages in the 2026 portfolio PDF. Startups are added and removed here, in code.
+// Domains: the user-approved mapping (2026-10-29), one or two per company. Programme (TIR / VIP) is empty
+// until the user supplies it.
+const DOMAINS = {
+  'Industry 5.0': ['twara-robotics', 'kinesthetiq', 'nextoar', 'flo-mobility', 'contrivation-labs', 'spacyphy', 'sakar-robotics', 'open-science-stack', 'edgeverse', 'scivision-ai'],
+  'Defence & Aerospace': ['comrado-aerospace', 'yaanendriya', 'algobotix', 'automind-dynamics', 'astrome', 'algofet', 'guerin-technologies', 'hyflex-mobility', 'vishvasys-aerospace', 'q-axis-motors', 'qosmic', 'nxtqube', 'idle-robotics', 'a-thon'],
+  'Foundational Models': ['zenteiq', 'kinesthetiq', 'nextoar', 'venomics-ai', 'arborum-labs'],
+  Robotics: ['twara-robotics', 'yaanendriya', 'uncharted-ai', 'automind-dynamics', 'strider-robotics', 'flo-mobility', 'charukesi-health', 'sakar-robotics', 'acceleration-robotics', 'dexsent-robotics', 'idle-robotics'],
+  MedTech: ['strideaide', 'charukesi-health', 'floaid', 'venomics-ai', 'open-science-stack', 'udot'],
+  'Climate Tech': ['rootsgoods', 'hyflex-mobility', 'contrivation-labs'],
+  'Wired & Wireless': ['astrome', 'guerin-technologies', 'qosmic', 'arborum-labs'],
 };
+const DOMAIN_LIST = Object.keys(DOMAINS);
+const domainsOf = (slug) => DOMAIN_LIST.filter((d) => DOMAINS[d].includes(slug));
+// Not in the 2026 portfolio.
+const REMOVED = ['niral-networks', 'velastra', 'versor-robotics'];
+const ADDED = [
+  { slug: 'idle-robotics', name: 'Idle Robotics', oneLiner: 'GPS-independent navigation for robots and drones, using sensor fusion and on-device AI.', website: 'https://idlerobotics.com' },
+  { slug: 'venomics-ai', name: 'Venomics AI', oneLiner: 'AI drug discovery that mines venom biodiversity for therapeutic peptides.', website: 'https://venomics.ai' },
+  { slug: 'arborum-labs', name: 'Arborum Labs', oneLiner: 'Physics-grounded world models that let AI agents plan and run telecom and power networks.', website: 'https://arborum.ai' },
+];
 // One-liners exactly as on artpark.in, with scrape artefacts cleaned.
 const ONE_LINER_FIX = {
   'a-thon': 'All-terrain assisted autonomous vehicles.',
@@ -82,15 +87,17 @@ const ONE_LINER_FIX = {
   'q-axis-motors': 'Integrated electro-optical payloads for defence and aerospace.',
 };
 const NAME_FIX = { qosmic: 'QOSMIC' };
-const portfolio = rec.portfolio.map((c) => ({
-  slug: c.id,
-  name: NAME_FIX[c.id] || c.name,
-  oneLiner: ONE_LINER_FIX[c.id] || c.description.replace(/\s+/g, ' ').trim().replace(/([^.])$/, '$1.'),
-  website: c.url || '',
-  logo: '/assets/logos/' + c.id + '.webp',
-  sector: SECTOR[c.id],
-  source: c.sourceUrl,
-}));
+const portfolio = [
+  ...rec.portfolio.filter((c) => !REMOVED.includes(c.id)).map((c) => ({
+    slug: c.id,
+    name: NAME_FIX[c.id] || c.name,
+    oneLiner: ONE_LINER_FIX[c.id] || c.description.replace(/\s+/g, ' ').trim().replace(/([^.])$/, '$1.'),
+    website: c.url || '',
+    source: c.sourceUrl,
+  })),
+  ...ADDED.map((c) => ({ ...c, source: 'Start Up portfolio 2026 (PDF)' })),
+].map((c) => ({ ...c, logo: '/assets/logos/' + c.slug + '.webp', domains: domainsOf(c.slug), programme: '' }))
+  .sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' }));
 
 // ---------------- Partners (artpark.in/partnerships; grouping by Claude, see corrections-log) ----------------
 const PARTNER_GROUP = {
@@ -149,4 +156,4 @@ const jobs = col.jobs.filter((j) => !LIVE || LIVE.some((r) => j.url.endsWith(r.i
 const ISSUER = ['Department of Scientific & Industrial Research (DSIR)', 'Ministry of Corporate Affairs · CSR00017521', 'Income Tax Department · Section 80G', 'Income Tax Department'];
 const certifications = col.certifications.map((c, i) => ({ title: c.title, issuer: ISSUER[i], desc: c.description, url: c.url }));
 
-module.exports = { slugify, SECTORS, people, portfolio, partners, upcomingEvents, pastEvents, news, jobs, certifications, tenders, outreach };
+module.exports = { slugify, DOMAIN_LIST, people, portfolio, partners, upcomingEvents, pastEvents, news, jobs, certifications, tenders, outreach };
