@@ -29,6 +29,46 @@ Compare with the manager's original: `node tools/serve.cjs ../.reference/claude-
 
 - `node tools/check-links.cjs`: internal links, images, forbidden emails, placeholder text.
 - `node tools/check-home.cjs`: homepage interactions and mobile menu (server must be running).
+- `node --test test/`: content model, admin login, saving and uploads.
+
+## Admin: events, news and tenders
+
+The marketing team edits the Outreach pages at `/admin`, with no code involved. The content lives in
+`src/data/outreach/{events,news,tenders}.json`, and the admin writes to those files.
+
+**How saving works:**
+- **On Vercel:** each save is one commit to `main`, with a message like `admin: update tenders gpu-edge-cloud (marketing@artpark.in)`. Vercel redeploys it in about 1 to 2 minutes.
+- **Locally:** each save writes the files and rebuilds `dist/` straight away.
+- **Bad edits can't break the site:** an edit that would stop the pages rendering is refused before anything is written.
+
+**Run it locally:**
+1. `node tools/admin-hash.cjs '<a password of 12+ characters>' marketing@artpark.in` prints an `ADMIN_USERS=...` line.
+2. Create `.env.local` (it is gitignored) containing that line and `SESSION_SECRET=<random, e.g. openssl rand -hex 32>`.
+3. `node tools/build.cjs && node tools/serve.cjs dist 3010`, then open http://127.0.0.1:3010/admin/.
+4. Check the whole flow: `ARTPARK_PLAYWRIGHT=<path to playwright-core> ADMIN_EMAIL=... ADMIN_PASSWORD=... node tools/check-admin.cjs`.
+   - It adds and deletes test items, and leaves the content as it was.
+
+**Vercel environment variables** (Project → Settings → Environment Variables, Production):
+
+| Variable | Value |
+|---|---|
+| `ADMIN_USERS` | the JSON list from `tools/admin-hash.cjs` |
+| `SESSION_SECRET` | a long random string (different from the local one) |
+| `GITHUB_TOKEN` | a fine-grained personal access token. Repository access: **only** `uditauniyal/artpark.in`. Permissions: **Contents: Read and write**, nothing else. |
+| `GITHUB_REPO` / `GITHUB_BRANCH` | optional; default `uditauniyal/artpark.in` / `main` |
+| `DEPLOY_HOOK_URL` | Project → Settings → Git → Deploy Hooks, for branch `main` |
+| `CRON_SECRET` | a random string; Vercel sends it to the nightly `/api/rebuild` cron, which redeploys so passed events move to "Past events" |
+
+**Managing users and edits:**
+- **Add a user:** add another `{"email","hash"}` entry to `ADMIN_USERS` and redeploy.
+- **Change a password:** replace that user's hash and redeploy.
+- **Undo an admin edit:** `git revert <commit>` and push. Every admin save is its own commit.
+
+**Limits:**
+- Uploads are up to 3 MB each: PDF or DOCX for tender documents; JPG, PNG or WebP for event photos.
+- A bigger file can be hosted elsewhere and its link pasted in instead.
+- Upcoming events need a photo.
+- On tenders, the tender document is needed from the start, and the result document once the progress slider reaches "Price bids opened".
 
 ## Deploying (the user deploys; nothing here deploys)
 
