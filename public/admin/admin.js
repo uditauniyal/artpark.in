@@ -7,7 +7,7 @@
   var PAGE = { events: '/events', news: '/news', tenders: '/tenders' };
   var TITLE = { events: 'Events', news: 'News', tenders: 'Tenders' };
   var NOUN = { events: 'event', news: 'news item', tenders: 'tender' };
-  var state = { data: null, tab: 'events', current: null, opener: null };
+  var state = { data: null, tab: 'events', current: null, opener: null, dirty: false, pending: null };
   var today = new Date(Date.now() + 5.5 * 3600e3).toISOString().slice(0, 10);
   var MB3 = 3 * 1024 * 1024;
 
@@ -133,8 +133,9 @@
       }).catch(function (e) { status('error', esc(e.message)); renderList(); });
       return;
     }
-    if (ev.target.closest('.a-actions')) { if (ev.target.closest('[data-edit]')) openForm(item, li); return; }
-    openForm(item, li);
+    if (ev.target.closest('.a-actions') && !ev.target.closest('[data-edit]')) return;
+    if (state.current && state.current.id === id && !$('#panel').hidden) return;
+    guard(function () { openForm(item, li); });
   });
 
   function selectTab(tab) {
@@ -143,8 +144,8 @@
     $('#search').value = '';
     closePanel(); renderList();
   }
-  $$('[data-tab]').forEach(function (b) { b.addEventListener('click', function () { selectTab(b.getAttribute('data-tab')); }); });
-  $('#add-new').addEventListener('click', function (ev) { openForm(null, ev.currentTarget); });
+  $$('[data-tab]').forEach(function (b) { b.addEventListener('click', function () { guard(function () { selectTab(b.getAttribute('data-tab')); }); }); });
+  $('#add-new').addEventListener('click', function (ev) { var btn = ev.currentTarget; guard(function () { openForm(null, btn); }); });
   function saved(r) { status('ok', 'Saved. Live on the site in about 1–2 minutes. <a href="' + PAGE[state.tab] + '" target="_blank" rel="noopener">View the page</a>'); }
 
   // ---------- panel ----------
@@ -156,8 +157,25 @@
     if (state.opener && document.contains(state.opener)) state.opener.focus();
     state.opener = null;
   }
-  $('#scrim').addEventListener('click', function () { closePanel(); renderList(); });
-  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !$('#panel').hidden) { closePanel(); renderList(); } });
+  // Unsaved edits are never dropped silently: leaving the form asks first (inline, no browser dialog).
+  function guard(fn) {
+    if ($('#panel').hidden || !state.dirty) return fn();
+    state.pending = fn;
+    $('#unsaved').hidden = false;
+    $('[data-keep]').focus();
+  }
+  var closeAndList = function () { closePanel(); renderList(); };
+  $('#scrim').addEventListener('click', function () { guard(closeAndList); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Escape' || $('#panel').hidden || $('#item-form').contains(e.target)) return;
+    guard(closeAndList);
+  });
+  $('#item-form').addEventListener('input', function () { state.dirty = true; });
+  $('#item-form').addEventListener('change', function () { state.dirty = true; });
+  $('#item-form').addEventListener('click', function (e) {
+    if (e.target.closest('[data-keep]')) { $('#unsaved').hidden = true; state.pending = null; }
+    if (e.target.closest('[data-discard]')) { var fn = state.pending; state.dirty = false; state.pending = null; if (fn) fn(); }
+  });
 
   function field(name, label, value, opts) {
     opts = opts || {};
@@ -172,6 +190,7 @@
 
   function openForm(item, opener) {
     state.current = item;
+    state.dirty = false; state.pending = null;
     state.opener = opener || null;
     var f = $('#item-form'), x = item || {}, body = '';
     if (state.tab === 'events') {
@@ -209,6 +228,7 @@
     }
     f.innerHTML = '<div class="a-panel-head"><h2>' + (item ? 'Edit ' : 'New ') + NOUN[state.tab] + '</h2><button type="button" class="a-close" id="close" aria-label="Close">×</button></div>' +
       '<div class="a-panel-body">' + body + '</div>' +
+      '<div class="a-unsaved" id="unsaved" role="alert" hidden><span>You have unsaved changes.</span><button type="button" class="a-btn a-danger a-small" data-discard>Discard changes</button><button type="button" class="a-btn a-small" data-keep>Keep editing</button></div>' +
       '<div class="a-panel-foot"><button type="submit" class="a-btn" id="save">' + (item ? 'Save changes' : 'Add ' + NOUN[state.tab]) + '</button><button type="button" class="a-btn a-ghost" id="cancel">Cancel</button></div>';
     if (item) f.setAttribute('data-id', item.id); else f.removeAttribute('data-id');
     $('#panel').hidden = false; $('#scrim').hidden = false;

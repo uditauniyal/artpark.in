@@ -51,6 +51,18 @@ const check = (name, ok) => { results[name] = !!ok; };
     const titles = await p.locator('[data-row]:visible .a-row-title').allTextContents();
     check('searchFilters', titles.length > 0 && titles.every((t) => /open day/i.test(t)));
     await p.fill('#search', '');
+    // Unsaved edits are never thrown away silently
+    await p.click('[data-row="artpark-open-day-community-edition"] .a-row-title');
+    await p.fill('[name=venue]', 'Unsaved venue');
+    await p.press('[name=venue]', 'Escape');
+    const stillOpen = await p.isVisible('#panel');
+    await p.click('[data-row="artpark-open-day-vc-and-corporate-edition"] .a-row-title');
+    const askBar = await p.isVisible('[data-discard]');
+    await p.click('[data-keep]');
+    check('unsavedGuard', stillOpen && askBar && (await p.inputValue('[name=venue]')) === 'Unsaved venue');
+    await p.click('[data-tab="news"]');
+    await p.click('[data-discard]');
+    check('discardSwitches', (await p.textContent('#section-title')) === 'News' && !(await p.isVisible('#panel')));
 
     // News
     await p.click('[data-tab="news"]');
@@ -116,6 +128,7 @@ const check = (name, ok) => { results[name] = !!ok; };
     await p.waitForFunction(() => /separate saves/.test(document.querySelector('#status').textContent));
     check('totalSizeMessage', true);
     await p.click('[data-tab="tenders"]');
+    await p.click('[data-discard]');
     await p.click(`[data-row="${tenderId}"] [data-edit]`);
     const track = (html) => (html.match(/Admin test tender[\s\S]*?<ol class="t-track">([\s\S]*?)<\/ol>/) || [, ''])[1];
     check('tenderOneStageDone', (track(await pub('/tenders')).match(/is-done/g) || []).length === 1);
