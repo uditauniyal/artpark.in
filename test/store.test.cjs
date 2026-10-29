@@ -99,12 +99,12 @@ test('GitHubStore.write turns a rejected ref update into 409', async () => {
   await assert.rejects(store.write({ files: [{ path: 'a.json', content: '[]' }], message: 'm' }), (e) => e.status === 409);
 });
 
-test('GitHubStore.read fetches the three JSON files raw from the branch', async () => {
-  const calls = stubFetch([{ status: 200, json: [] }, { status: 200, json: [{ id: 'n' }] }, { status: 200, json: [] }]);
+test('GitHubStore.read fetches the three JSON files raw from the branch head', async () => {
+  const calls = stubFetch([{ status: 200, json: { object: { sha: 'c9' } } }, { status: 200, json: [] }, { status: 200, json: [{ id: 'n' }] }, { status: 200, json: [] }]);
   const data = await new GitHubStore({ token: 'tok', repo: 'o/r', branch: 'main' }).read();
   assert.deepEqual(data.news, [{ id: 'n' }]);
-  assert.match(calls[0].url, /contents\/src\/data\/outreach\/events\.json\?ref=main$/);
-  assert.equal(calls[0].headers.Accept, 'application/vnd.github.raw+json');
+  assert.match(calls[1].url, /contents\/src\/data\/outreach\/events\.json\?ref=c9$/);
+  assert.equal(calls[1].headers.Accept, 'application/vnd.github.raw+json');
 });
 
 test('renderCheck passes real content and fails broken content', () => {
@@ -112,4 +112,23 @@ test('renderCheck passes real content and fails broken content', () => {
   renderCheck(data);
   data.tenders[0].docs = null;
   assert.throws(() => renderCheck(data), (e) => e.status === 422);
+});
+
+test('I-2: GitHubStore reads every file at one commit and writes on top of that commit', async () => {
+  const calls = stubFetch([
+    { status: 200, json: { object: { sha: 'c0' } } },
+    { status: 200, json: [] }, { status: 200, json: [] }, { status: 200, json: [] },
+    { status: 200, json: { tree: { sha: 't0' } } },
+    { status: 201, json: { sha: 'b1' } }, { status: 201, json: { sha: 't1' } }, { status: 201, json: { sha: 'c1' } }, { status: 200, json: {} },
+  ]);
+  const store = new GitHubStore({ token: 'tok', repo: 'o/r', branch: 'main' });
+  await store.read();
+  await store.write({ files: [{ path: 'a.json', content: '[]' }], message: 'm' });
+  const short = calls.map((c) => c.method + ' ' + c.url.replace('https://api.github.com/repos/o/r/', ''));
+  assert.deepEqual(short, [
+    'GET git/ref/heads/main',
+    'GET contents/src/data/outreach/events.json?ref=c0', 'GET contents/src/data/outreach/news.json?ref=c0', 'GET contents/src/data/outreach/tenders.json?ref=c0',
+    'GET git/commits/c0', 'POST git/blobs', 'POST git/trees', 'POST git/commits', 'PATCH git/refs/heads/main',
+  ]);
+  assert.deepEqual(calls[7].body.parents, ['c0']);
 });

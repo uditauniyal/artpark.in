@@ -16,7 +16,10 @@
       body: method === 'GET' ? undefined : JSON.stringify(body.payload),
     }).then(function (r) {
       if (r.status === 401 && !(body && body.path === 'login')) { showLogin(); throw new Error('Please sign in again.'); }
-      return r.status === 204 ? {} : r.json().then(function (j) { if (!r.ok) { var e = new Error(j.error || 'Something went wrong.'); e.fields = j.fields; throw e; } return j; });
+      if (r.status === 204) return {};
+      return r.json().catch(function () {
+        return { error: r.status === 413 ? 'The files are too large to send. Each file can be at most 3 MB; upload them in separate saves.' : 'The server did not answer properly (' + r.status + '). Try again in a minute.' };
+      }).then(function (j) { if (!r.ok) { var e = new Error(j.error || 'Something went wrong.'); e.fields = j.fields; throw e; } return j; });
     });
   }
 
@@ -193,7 +196,8 @@
     ev.preventDefault();
     var f = ev.target, x = state.current || {}, uploads = [], jobs = [];
     var val = function (n) { return f[n] ? f[n].value.trim() : ''; };
-    var upload = function (file) { var n = uploads.length; uploads.push(null); jobs.push(readFile(file).then(function (u) { uploads[n] = u; })); return 'upload:' + n; };
+    var MB3 = 3 * 1024 * 1024, total = 0, tooBig = null;
+    var upload = function (file) { total += file.size; if (file.size > MB3) tooBig = file.name; var n = uploads.length; uploads.push(null); jobs.push(readFile(file).then(function (u) { uploads[n] = u; })); return 'upload:' + n; };
     var item = { id: x.id || '' };
     if (state.tab === 'events') {
       ['title', 'start', 'end', 'time', 'venue', 'blurb', 'imageAlt', 'register', 'recap'].forEach(function (n) { item[n] = val(n); });
@@ -217,6 +221,9 @@
       });
     }
     document.querySelectorAll('[data-error-for]').forEach(function (e) { e.textContent = ''; });
+    // Vercel accepts about 4.5 MB per request, and files grow by a third when sent.
+    if (tooBig) return status('error', esc('"' + tooBig + '" is larger than 3 MB. Compress it, or upload it elsewhere and paste a link.'));
+    if (total > MB3) return status('error', 'Together these files are larger than 3 MB. Upload them in separate saves: add one, save, then add the next.');
     status('busy', 'Saving…');
     $('#save').disabled = true;
     Promise.all(jobs).then(function () {

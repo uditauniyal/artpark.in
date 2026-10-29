@@ -142,7 +142,7 @@ ${C.tenders.map((t) => `      <div data-item data-status="${t.status}" class="t-
         <div id="tender-${t.id}" hidden style="padding:0 0 26px">
           ${t.note ? `<p style="max-width:760px;font-size:15px;line-height:1.7;color:var(--ink-soft);margin-bottom:14px">${esc(t.note)}</p>` : ''}
           ${t.docs.length ? `<div class="t-docs">
-${t.docs.map(({ label: n, href, kind }) => `            <a class="t-doc" href="${href}" target="_blank" rel="noopener"><em class="t-kind is-${kind.toLowerCase()}">${kind}</em><b>${esc(n)}</b><span>Download <span class="arrow">→</span></span></a>`).join('\n')}
+${t.docs.map(({ label: n, href, kind }) => `            <a class="t-doc" href="${esc(href)}" target="_blank" rel="noopener"><em class="t-kind is-${esc(kind.toLowerCase())}">${esc(kind)}</em><b>${esc(n)}</b><span>Download <span class="arrow">→</span></span></a>`).join('\n')}
           </div>` : ''}
         </div>
       </div>`).join('\n')}

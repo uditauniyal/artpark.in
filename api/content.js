@@ -25,14 +25,17 @@ function normalise(kind, x) {
 }
 
 // Replaces 'upload:N' references with stored files; returns the files to write.
-function placeUploads(kind, item, uploads) {
+function placeUploads(kind, item, uploads, taken) {
   const files = [];
   const take = (ref, purpose) => {
     const n = +ref.slice('upload:'.length);
     if (!Number.isInteger(n) || !uploads[n]) throw fail(400, 'A file was not received. Choose it again and save.');
     const { buffer, ext, kind: type } = decodeUpload(uploads[n], purpose);
-    const name = safeName(uploads[n].name).replace(/\.[a-z0-9]+$/, '') + ext;
-    const rel = kind === 'tenders' ? `docs/tenders/${item.id}/${name}` : `assets/events/${item.id}-${name}`;
+    const stem = safeName(uploads[n].name).replace(/\.[a-z0-9]+$/, '');
+    const at = (s) => (kind === 'tenders' ? `docs/tenders/${item.id}/${s}${ext}` : `assets/events/${item.id}-${s}${ext}`);
+    let rel = at(stem);
+    for (let i = 2; taken.has('/' + rel); i++) rel = at(`${stem}-${i}`);
+    taken.add('/' + rel);
     files.push({ path: `public/${rel}`, content: buffer });
     return { href: '/' + rel, type };
   };
@@ -61,7 +64,9 @@ async function change(store, body, email) {
     const i = given ? list.findIndex((x) => x.id === given) : -1;
     if (given && i === -1) throw fail(404, 'That entry no longer exists.');
     item.id = given || uniqueId(slugify(item.title).slice(0, 80).replace(/-+$/, '') || kind, list.map((x) => x.id));
-    files = placeUploads(kind, item, Array.isArray(body.uploads) ? body.uploads : []);
+    // Files already in use (by this collection or this edit) are never overwritten.
+    const taken = new Set(list.concat(item).flatMap((x) => [x.image, ...(Array.isArray(x.docs) ? x.docs.map((d) => d.href) : [])]).filter(Boolean));
+    files = placeUploads(kind, item, Array.isArray(body.uploads) ? body.uploads : [], taken);
     const errs = validate(kind, item);
     if (errs.length) {
       const fields = {};

@@ -43,6 +43,7 @@ function uniqueId(base, existing) {
 }
 
 // Validation: returns a list of messages, each starting with the field name.
+const DOC_KINDS = ['PDF', 'DOCX', 'Drive', 'Doc'];
 const LINK = /^(https?:\/\/[^\s"<>]+|\/(?!\/)[^\s"<>]*)$/;
 function validate(kind, item) {
   const errs = [];
@@ -82,6 +83,7 @@ function validate(kind, item) {
         if (!d || typeof d.label !== 'string' || !d.label.trim() || d.label.length > 200) errs.push(`docs: document ${i + 1} needs a label`);
         if (!d || typeof d.href !== 'string' || d.href.length > 500 || !LINK.test(d.href)) errs.push(`docs: document ${i + 1} needs a file or a web link`);
         if (!d || !['tender', 'result', 'other'].includes(d.role)) errs.push(`docs: document ${i + 1} has an unknown role`);
+        if (!d || !DOC_KINDS.includes(d.kind)) errs.push(`docs: document ${i + 1} has an unknown file type`);
       });
       if (item.status !== 'rfp' && !item.docs.some((d) => d && d.role === 'tender')) errs.push('docs: the tender document is required');
       if (item.phase === 4 && !item.docs.some((d) => d && d.role === 'result')) errs.push('docs: the result document is required once bidding is done');

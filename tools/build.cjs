@@ -17,19 +17,14 @@ for (const file of fs.readdirSync(PAGES).filter((f) => f.endsWith('.cjs')).sort(
   for (const p of (Array.isArray(mod) ? mod : [mod])) pages.push(p);
 }
 const routes = new Set(pages.map((p) => p.route));
-const mapArtpark = require(path.join(ROOT, 'src', 'data', 'urlmap.cjs'));
+const { rewriteArtparkLinks } = require(path.join(ROOT, 'src', 'rewrite-links.cjs'));
 // Two-tone titles switched off 2026-10-28: user wants titles exactly as his Claude Design (all ink). src/data/titles.cjs kept for reference.
 const twoTone = (h) => h;
 
 const unmapped = new Set();
 for (const p of pages) {
   let html = twoTone(p.html());
-  html = html.replace(/(href|src)="https?:\/\/(?:www\.)?artpark\.in(\/[^"#?]*)?([^"]*)"/g, (m, attr, pth = '/', rest) => {
-    const to = mapArtpark(pth || '/', routes);
-    if (!to) { unmapped.add(`${p.route}: ${pth}${rest}`); return m; }
-    const hash = rest && rest.startsWith('#') ? rest : '';
-    return `${attr}="${to}${to.includes('#') ? '' : hash}"`;
-  });
+  html = rewriteArtparkLinks(html, routes, unmapped, `${p.route}: `);
   const out = p.out ? path.join(DIST, p.out) : p.route === '/' ? path.join(DIST, 'index.html') : path.join(DIST, p.route, 'index.html');
   fs.mkdirSync(path.dirname(out), { recursive: true });
   fs.writeFileSync(out, html);

@@ -13,7 +13,7 @@ const files = (d) => fs.readdirSync(d, { recursive: true }).filter((f) => f.ends
 
 test('outreach pages unchanged by the migration, except the approved differences', { skip: !fs.existsSync(BEFORE) && 'no qa/before snapshot' }, () => {
   execFileSync(process.execPath, ['tools/build.cjs'], { cwd: ROOT, env: { ...process.env, BUILD_DATE: '2026-10-29' }, stdio: 'pipe' });
-  const allow = (html) => html
+  const allow = (html) => html.replace(/&amp;/g, '&')
     .replace(/Open Days coming up at ARTgarage|upcoming events/, 'STAT')
     .replace(/(The supply of GPU Edge Cloud System[\s\S]*?<ol class="t-track">)[\s\S]*?(<\/ol>)/, '$1TRACK$2');
   for (const f of files(BEFORE)) {

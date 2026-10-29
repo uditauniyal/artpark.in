@@ -14,6 +14,10 @@ const result = path.join(tmp, 'Admin Test Result.pdf');
 const png = path.join(tmp, 'admin-test.png');
 fs.writeFileSync(pdf, '%PDF-1.4\n% admin test\n');
 fs.writeFileSync(result, '%PDF-1.4\n% admin test result\n');
+const big = path.join(tmp, 'big.pdf');
+const half1 = path.join(tmp, 'half-1.pdf');
+const half2 = path.join(tmp, 'half-2.pdf');
+for (const [f, mb] of [[big, 3.5], [half1, 2.5], [half2, 2.5]]) { const buf = Buffer.alloc(Math.round(mb * 1024 * 1024), 0x20); buf.write('%PDF-1.4'); fs.writeFileSync(f, buf); }
 fs.writeFileSync(png, Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==', 'base64'));
 const iso = (d) => d.toISOString().slice(0, 10);
 const nextMonth = iso(new Date(Date.now() + 30 * 86400e3));
@@ -80,6 +84,21 @@ const check = (name, ok) => { results[name] = !!ok; };
     await p.click('#save');
     await saved();
     const tenderId = await p.getAttribute('#item-form', 'data-id');
+
+    // Oversized uploads: a clear message, nothing sent
+    await p.click('#add-doc');
+    await p.locator('.doc-row').last().locator('[name=file]').setInputFiles(big);
+    await p.click('#save');
+    await p.waitForSelector('#status[data-state="error"]');
+    check('bigFileMessage', /3 MB/.test(await p.textContent('#status')));
+    await p.locator('.doc-row').last().locator('[name=file]').setInputFiles(half1);
+    await p.click('#add-doc');
+    await p.locator('.doc-row').last().locator('[name=file]').setInputFiles(half2);
+    await p.click('#save');
+    await p.waitForFunction(() => /separate saves/.test(document.querySelector('#status').textContent));
+    check('totalSizeMessage', true);
+    await p.click('[data-tab="tenders"]');
+    await p.click(`[data-row="${tenderId}"] [data-edit]`);
     const track = (html) => (html.match(/Admin test tender[\s\S]*?<ol class="t-track">([\s\S]*?)<\/ol>/) || [, ''])[1];
     check('tenderOneStageDone', (track(await pub('/tenders')).match(/is-done/g) || []).length === 1);
 

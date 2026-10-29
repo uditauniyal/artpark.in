@@ -40,13 +40,16 @@ class GitHubStore {
     }
     return r.json();
   }
+  // Reads all three files at one commit and remembers it, so write() builds on exactly what was read;
+  // if the branch moved in between, the ref update is not a fast-forward and the caller retries.
   async read() {
+    this.head = (await this.api('GET', `git/ref/heads/${this.branch}`)).object.sha;
     const out = {};
-    for (const k of KINDS) out[k] = await this.api('GET', `contents/${dataPath(k)}?ref=${this.branch}`, null, 'application/vnd.github.raw+json');
+    for (const k of KINDS) out[k] = await this.api('GET', `contents/${dataPath(k)}?ref=${this.head}`, null, 'application/vnd.github.raw+json');
     return out;
   }
   async write({ files, message }) {
-    const head = (await this.api('GET', `git/ref/heads/${this.branch}`)).object.sha;
+    const head = this.head || (await this.api('GET', `git/ref/heads/${this.branch}`)).object.sha;
     const baseTree = (await this.api('GET', `git/commits/${head}`)).tree.sha;
     const tree = [];
     for (const f of files) {

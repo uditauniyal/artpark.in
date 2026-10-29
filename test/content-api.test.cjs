@@ -9,6 +9,7 @@ const auth = require('../api/_lib/auth.js');
 const ROOT = path.join(__dirname, '..');
 const SECRET = 'test-secret-content';
 process.env.SESSION_SECRET = SECRET;
+process.env.ADMIN_USERS = JSON.stringify([{ email: 'marketing@artpark.in', hash: 'scrypt$x$y' }]);
 process.env.ARTPARK_SKIP_BUILD = '1';
 delete process.env.GITHUB_TOKEN;
 const content = require('../api/content.js');
@@ -124,4 +125,36 @@ test('a stale tab does not undo someone else\'s edit', async () => {
 
 test('a write without X-Admin is 403', async () => {
   assert.equal((await call({ kind: 'news', action: 'save', item: news }, { headers: { cookie } })).status, 403);
+});
+
+// ---- final review fixes ----
+test('C-1: an artpark.in link the site cannot map is refused, nothing written', async () => {
+  const t = read('tenders').find((x) => x.id === 'robot-arm');
+  const before = fs.readFileSync(path.join(root, 'src/data/outreach/tenders.json'), 'utf8');
+  const item = { ...t, docs: [...t.docs, { label: 'Corrigendum 2', href: 'https://www.artpark.in/s/brand-new-corrigendum.pdf', kind: 'PDF', role: 'other' }] };
+  const r = await call({ kind: 'tenders', action: 'save', item });
+  assert.equal(r.status, 422);
+  assert.match(r.json.error, /artpark\.in/);
+  assert.equal(fs.readFileSync(path.join(root, 'src/data/outreach/tenders.json'), 'utf8'), before);
+});
+
+test('I-1: a doc kind that is not a known type is refused', async () => {
+  const t = read('tenders').find((x) => x.id === 'robot-arm');
+  const item = { ...t, docs: [{ ...t.docs[0], kind: '<img src=x onerror=alert(1)>' }] };
+  const r = await call({ kind: 'tenders', action: 'save', item });
+  assert.equal(r.status, 400);
+  assert.ok(r.json.fields.docs);
+});
+
+test('I-3a: an upload never overwrites a file another document uses', async () => {
+  const t = read('tenders').find((x) => x.id === 'robot-arm');
+  const pdf = Buffer.from('%PDF-1.4 x').toString('base64');
+  let item = { ...t, docs: [...t.docs, { label: 'Corrigendum 1', href: 'upload:0', kind: '', role: 'other' }] };
+  assert.equal((await call({ kind: 'tenders', action: 'save', item, uploads: [{ name: 'Corrigendum.pdf', data: pdf }] })).status, 200);
+  const t2 = read('tenders').find((x) => x.id === 'robot-arm');
+  item = { ...t2, docs: [...t2.docs, { label: 'Corrigendum 2', href: 'upload:0', kind: '', role: 'other' }] };
+  assert.equal((await call({ kind: 'tenders', action: 'save', item, uploads: [{ name: 'Corrigendum.pdf', data: pdf }] })).status, 200);
+  const hrefs = read('tenders').find((x) => x.id === 'robot-arm').docs.map((d) => d.href);
+  assert.ok(hrefs.includes('/docs/tenders/robot-arm/corrigendum.pdf'));
+  assert.ok(hrefs.includes('/docs/tenders/robot-arm/corrigendum-2.pdf'));
 });

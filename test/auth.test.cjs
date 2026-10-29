@@ -76,12 +76,12 @@ test('requireAdmin: 401 without session, 403 on a write without X-Admin', () => 
   let res = mockRes();
   assert.equal(auth.requireAdmin(mockReq({}), res, { write: false }), null);
   assert.equal(res.statusCode, 401);
-  const tok = auth.signSession({ email: 'm@a.in', exp: Date.now() + 60e3 }, SECRET);
+  const tok = auth.signSession({ email: 'marketing@artpark.in', exp: Date.now() + 60e3 }, SECRET);
   res = mockRes();
   assert.equal(auth.requireAdmin(mockReq({ method: 'POST', headers: { cookie: `ap_admin=${tok}` } }), res, { write: true }), null);
   assert.equal(res.statusCode, 403);
   res = mockRes();
-  assert.deepEqual(auth.requireAdmin(mockReq({ method: 'POST', headers: { cookie: `ap_admin=${tok}`, 'x-admin': '1' } }), res, { write: true }), { email: 'm@a.in' });
+  assert.deepEqual(auth.requireAdmin(mockReq({ method: 'POST', headers: { cookie: `ap_admin=${tok}`, 'x-admin': '1' } }), res, { write: true }), { email: 'marketing@artpark.in' });
 });
 
 test('logout clears the cookie', async () => {
@@ -89,4 +89,11 @@ test('logout clears the cookie', async () => {
   await require('../api/logout.js')(mockReq({ method: 'POST', headers: { 'x-admin': '1' } }), res);
   assert.equal(res.statusCode, 204);
   assert.match(res.headers['set-cookie'], /ap_admin=;.*Max-Age=0/);
+});
+
+test('a session for a user removed from ADMIN_USERS is refused', () => {
+  const tok = auth.signSession({ email: 'gone@artpark.in', exp: Date.now() + 60e3 }, SECRET);
+  const res = mockRes();
+  assert.equal(auth.requireAdmin(mockReq({ headers: { cookie: `ap_admin=${tok}` } }), res, { write: false }), null);
+  assert.equal(res.statusCode, 401);
 });

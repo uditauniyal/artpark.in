@@ -87,3 +87,7 @@ test('todayIST honours BUILD_DATE', () => {
   delete process.env.BUILD_DATE;
   assert.match(M.todayIST(), /^\d{4}-\d{2}-\d{2}$/);
 });
+
+test('validate: doc kind must be a known type', () => {
+  assert.ok(hasField(M.validate('tenders', tender({ docs: [{ label: 'Tender document', href: 'https://x.org/a.pdf', kind: '<b>', role: 'tender' }] })), 'docs'));
+});

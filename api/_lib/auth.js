@@ -45,7 +45,7 @@ function cookie(req, value, maxAgeS) {
 // Returns {email} or answers the request itself (401 no session, 403 write without X-Admin) and returns null.
 function requireAdmin(req, res, { write }) {
   const s = readSession(req.headers.cookie, process.env.SESSION_SECRET);
-  if (!s) { send(res, 401, { error: 'Please sign in again.' }); return null; }
+  if (!s || !users().some((u) => String(u.email).toLowerCase() === s.email.toLowerCase())) { send(res, 401, { error: 'Please sign in again.' }); return null; }
   if (write && req.headers['x-admin'] !== '1') { send(res, 403, { error: 'Forbidden.' }); return null; }
   return s;
 }
