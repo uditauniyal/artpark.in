@@ -6,6 +6,7 @@
   "scripts": {
     "build": "node tools/build.cjs",
     "start": "node tools/serve.cjs dist 3010",
-    "reference": "node tools/serve.cjs ../.reference/claude-design 4400"
+    "reference": "node tools/serve.cjs ../.reference/claude-design 4400",
+    "test": "node --test test/"
   }
 }
