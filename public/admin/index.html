@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>ARTPARK Admin — Outreach</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/_ds/colors_and_type.css">
+<link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+<header class="a-top">
+  <a href="/" class="a-brand"><img src="/assets/brand/artpark-iisc-lockup.webp" alt="ARTPARK" height="34"></a>
+  <span class="a-title">Outreach admin</span>
+  <span class="a-user" id="who" hidden></span>
+  <button type="button" class="a-btn a-ghost" id="logout" hidden>Log out</button>
+</header>
+
+<main class="a-main">
+  <section id="login" class="a-login" hidden>
+    <h1>Sign in</h1>
+    <p class="a-muted">For the ARTPARK team: add and update events, news and tenders.</p>
+    <form id="login-form">
+      <label>Email<input type="email" id="login-email" autocomplete="username" required></label>
+      <label>Password<input type="password" id="login-password" autocomplete="current-password" required></label>
+      <p class="a-err" id="login-error" role="alert"></p>
+      <button type="submit" class="a-btn" id="login-submit">Sign in</button>
+    </form>
+  </section>
+
+  <section id="app" hidden>
+    <nav class="a-tabs" role="tablist">
+      <button type="button" role="tab" data-tab="events">Events</button>
+      <button type="button" role="tab" data-tab="news">News</button>
+      <button type="button" role="tab" data-tab="tenders">Tenders</button>
+    </nav>
+    <div class="a-grid">
+      <div class="a-listcol">
+        <div class="a-listhead"><span id="count" class="a-muted"></span><button type="button" class="a-btn" id="add-new">Add new</button></div>
+        <ul class="a-list" id="list"></ul>
+      </div>
+      <div class="a-formcol">
+        <p id="status" role="status" aria-live="polite"></p>
+        <form id="item-form" novalidate hidden></form>
+        <p class="a-muted" id="form-empty">Choose an entry to edit, or add a new one.</p>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="/admin/admin.js"></script>
+</body>
+</html>
