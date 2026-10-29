@@ -110,47 +110,16 @@ const grouped = new Set(partners.flatMap((g) => g.items.map((i) => i.name)));
 const ungrouped = col.partners.filter((p) => !grouped.has(p.name)).map((p) => p.name);
 if (ungrouped.length) throw new Error('Partners not grouped: ' + ungrouped.join(', '));
 
-// ---------------- Events (artpark.in/events + event pages; Open Days from artpark.in/artgarage) ----------------
-const upcomingEvents = [
-  {
-    title: 'ARTPARK Open Day — Community Edition', date: '12 Nov 2026', time: '10:30 AM to 1 PM', venue: 'ARTgarage, Jalahalli',
-    blurb: "For students, researchers, innovators and educators: live interactions with founders, a walkthrough of ARTgarage and an up-close look at the technologies being built at ARTPARK.",
-    register: 'https://forms.gle/uBb9P9cvFrSXC3pq5', image: '/assets/site/skilling-session.webp', imageAlt: 'A session in the ARTgarage commons', source: 'https://www.artpark.in/artgarage',
-  },
-  {
-    title: 'ARTPARK Open Day — VC & Corporate Edition', date: '26 Nov 2026', time: '10:30 AM to 1 PM', venue: 'ARTgarage, Jalahalli',
-    blurb: "For investors and corporate partners: curated introductions to ARTPARK startups, insight into the investment and incubation model, and time with the team.",
-    register: 'https://forms.gle/RAc4oFUHDtN36zy36', image: '/assets/site/artgarage-hall.webp', imageAlt: 'The main hall inside ARTgarage', source: 'https://www.artpark.in/artgarage',
-  },
-];
-const pastEvents = [
-  { title: 'Calibrate: testing and improving AI agents', date: '23 Oct 2026', venue: 'Online masterclass with the^delta', url: 'https://www.linkedin.com/feed/update/urn:li:activity:7519287141550489600/', image: '/assets/linkedin/calibrate-masterclass.jpg', note: "A Pragati AI for Impact masterclass with ARTPARK's Jigar Doshi and Aman Dalmia." },
-  { title: 'From Scale to Resilience: Rethinking Efficient AI System', date: '20 Jan 2026', venue: 'IISc Bengaluru', url: 'https://www.artpark.in/events/rethinking-efficient-ai-system', note: 'A pre-summit event of the India–AI Impact Summit 2026.' },
-  { title: 'AI by HER — Pre-event, India AI Impact Summit', date: '17 Nov 2025', venue: 'ARTPARK, IISc Bengaluru', url: 'https://www.artpark.in/events/ai-by-her-pre-event-india-ai-impact-summit-2025', image: '/assets/events/ai-by-her.webp' },
-  { title: 'CodeBot Hackathon 2025', date: '17 Jul 2025', venue: 'ARTgarage, Bengaluru', url: 'https://www.artpark.in/events/codebot-hackathon-2025', image: '/assets/events/codebot.webp' },
-  { title: 'Tutorial on 5G essentials', date: '24 Feb 2025', venue: 'Online + ARTgarage, Bengaluru', url: 'https://www.artpark.in/events/tutorial-on-5g-essentials', image: '/assets/events/5g-tutorial.webp' },
-  { title: '5G Test Lab Open House', date: '11 Dec 2024', venue: 'ARTgarage, Jalahalli', url: 'https://www.artpark.in/events/5g-test-lab-open-house', image: '/assets/events/5g-open-house.webp' },
-  { title: 'ROSCon India 2024', date: '4–6 Dec 2024', venue: 'IISc Bengaluru', url: 'https://www.artpark.in/events/roscon-in-24', image: '/assets/events/roscon-in-24.webp' },
-  { title: 'India Mobile Congress 2024', date: '15–18 Oct 2024', venue: 'New Delhi', url: 'https://www.artpark.in/events/india-mobile-congress-2024' },
-  { title: 'ELCIA Tech Summit', date: '26 Jul 2024', venue: 'Bengaluru', url: 'https://www.artpark.in/events/https/elciatechsummitin/elcia-tech-summit', image: '/assets/events/elcia.webp' },
-  { title: 'ROSCon India 2023', date: '14–15 Dec 2023', venue: 'Bengaluru', url: 'https://www.artpark.in/events/roscon', image: '/assets/events/roscon-2023.webp' },
-  { title: 'Global Partnership on AI Summit', date: '12–14 Dec 2023', venue: 'New Delhi', url: 'https://www.artpark.in/events/global-partnership-on-ai', image: '/assets/events/gpai.webp' },
-  { title: 'AI & Societal Good — Mint AI Summit', date: '8 Dec 2023', venue: 'New Delhi', url: 'https://www.artpark.in/events/mint-ai-summit', image: '/assets/events/mint-ai.webp' },
-  { title: 'NaCDEC VI — Design Challenge', date: '12 Aug 2023', venue: '', url: 'https://www.artpark.in/events/nacdec-vi-design-challenge', image: '/assets/events/nacdec.webp' },
-  { title: 'Robotics Challenge — Grand Finale', date: '14 May 2022', venue: '', url: 'https://www.artpark.in/events/robotics-challenge-finale', image: '/assets/events/robotics-challenge.webp' },
-  { title: 'ARTPARK Innovation Summit', date: '14 Mar 2022', venue: '', url: 'https://www.artpark.in/events/artpark-innovation-summit', image: '/assets/events/innovation-summit.webp' },
-  { title: 'Seminar on Advanced Air Mobility', date: '26 Feb 2022', venue: '', url: 'https://www.artpark.in/events/advanced-air-mobility' },
-];
-
-// ---------------- News (artpark.in/media, in its order; ET InterSafe item added on artpark.in Oct 2026) ----------------
-const news = [
-  { title: "IISc's ARTPARK InterSafe gets nod for AI and 5G pilot on Bengaluru-Hassan Highway", outlet: 'The Economic Times', date: '13 October 2026', url: 'https://www.artpark.in/media' },
-  // The TIME partner page (partners.time.com) returns 404, so it is left out.
-  ...col.news.filter((n) => !/partners\.time\.com/.test(n.url)).map((n) => ({ title: n.title, outlet: n.publication, date: n.date, url: n.url })),
-];
-// Fix outlet/date casing to match the publications.
-const OUTLET_FIX = { 'India health fund': 'India Health Fund', 'Money Control': 'Moneycontrol', 'The HINDU Business Line': 'The Hindu BusinessLine', MINT: 'Mint' };
-news.forEach((n) => { n.outlet = OUTLET_FIX[n.outlet] || n.outlet; n.date = (n.date || '').replace(/^(\d+)(st|nd|rd|th)/, '$1').trim(); });
+// ---------------- Events, news, tenders: src/data/outreach/*.json, edited through /admin ----------------
+// (moved out of this file on 2026-10-29, see tools/migrate-outreach.cjs). OUTREACH_DIR lets the admin
+// check a candidate edit against the renderers before saving it.
+const { splitEvents, todayIST } = require('../outreach/model.cjs');
+const OUTREACH_DIR = process.env.OUTREACH_DIR || path.join(__dirname, 'outreach');
+const readOutreach = (name) => JSON.parse(fs.readFileSync(path.join(OUTREACH_DIR, name + '.json'), 'utf8'));
+const outreach = { events: readOutreach('events'), news: readOutreach('news'), tenders: readOutreach('tenders') };
+const { upcoming: upcomingEvents, past: pastEvents } = splitEvents(outreach.events, todayIST());
+const news = outreach.news.slice().sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+const tenders = outreach.tenders;
 
 // ---------------- Careers (artparkcareers.in, checked 2026-10-24) ----------------
 // Re-checked against the live roles feed on 2026-10-24 (research/careers-api.json): the AxD internship has closed,
@@ -180,36 +149,4 @@ const jobs = col.jobs.filter((j) => !LIVE || LIVE.some((r) => j.url.endsWith(r.i
 const ISSUER = ['Department of Scientific & Industrial Research (DSIR)', 'Ministry of Corporate Affairs · CSR00017521', 'Income Tax Department · Section 80G', 'Income Tax Department'];
 const certifications = col.certifications.map((c, i) => ({ title: c.title, issuer: ISSUER[i], desc: c.description, url: c.url }));
 
-// ---------------- Tenders (artpark.in/tenders) ----------------
-const tenders = [
-  {
-    id: 'gpu-edge-cloud', title: 'The supply of GPU Edge Cloud System', status: 'active', cat: 'Equipment',
-    note: 'Pre-bid clarification meeting: Thu 27 Feb 2025, 11:30 AM to 12:30 PM IST at ARTgarage. Please ignore the typo in the Important Dates on page 12 of the tender document (27 February 2025, 5 PM IST).',
-    docs: [
-      ['Tender document', 'https://www.artpark.in/s/Tender-document-GPU-Edge-Clouddocx.pdf', 'PDF'],
-      ['Corrigendum of the tender · 28 Feb 2025', 'https://www.artpark.in/s/Corrigendum-Tender-document-GPU-Edge-Cloud-dtd-28-2-24.pdf', 'PDF'],
-      ['Minutes of the commercial bid opening meeting · 17 Mar 2025', 'https://www.artpark.in/s/Price-Bid-Meeting-Minutes-of-Tender-Supply-of-GPU-Server-1.pdf', 'PDF'],
-    ],
-  },
-  {
-    id: 'gpu-rack-server', title: 'The supply of GPU Based Rack Server', status: 'closed', cat: 'Equipment',
-    docs: [
-      ['Tender document', 'https://drive.google.com/file/d/1K-T7Yozc6WMLqQ27smPBRKRdACfX_DFE/view?usp=sharing', 'Drive'],
-      ['Output of the opening of the price bids', 'https://www.artpark.in/s/Website-Publication-Output-of-the-opening-of-the-Proce-Bid-Tender-GPU-Rack-Server.pdf', 'PDF'],
-      ['Output of the opening of the technical bid', 'https://www.artpark.in/s/Website-Publication-Output-of-the-opening-of-the-Technical-Bid-Tender-GPU-Rack-Server.pdf', 'PDF'],
-      ['Corrigendum to the tender', 'https://www.artpark.in/s/Tender-Supply-of-GPU-Based-Rack-Server-ARTPARK.pdf', 'PDF'],
-      ['Corrigendum 2', 'https://docs.google.com/document/d/1XVV62ZlZEEILqOduKbJag6r_e03xE9wQ/edit?usp=sharing&ouid=110081720780474297908&rtpof=true&sd=true', 'Doc'],
-      ['Corrigendum 3', 'https://docs.google.com/document/d/1Lu7pmIMPFC2h0lZXsGbzL--mWw6Tzle7/edit?usp=sharing&ouid=110081720780474297908&rtpof=true&sd=true', 'Doc'],
-    ],
-  },
-  {
-    id: 'robot-arm', title: 'The supply of robot arm, cobot pump and accessories', status: 'closed', cat: 'Equipment', published: '26 Aug 2024',
-    docs: [['Tender document', 'https://drive.google.com/file/d/1YTMBx4T3ae-WC-9Kf3PBqExmAPJtDFoT/view?usp=sharing', 'Drive']],
-  },
-  {
-    id: 'genomic-surveillance', title: 'Platform for clinical & environmental genomic surveillance', status: 'rfp', cat: 'Request for proposals',
-    docs: [], note: 'The RFP page on the current site (artpark.in/rfp/genomic-surveillance-platform) no longer loads. Write to connect@artpark.in for the document.',
-  },
-];
-
-module.exports = { slugify, SECTORS, people, portfolio, partners, upcomingEvents, pastEvents, news, jobs, certifications, tenders };
+module.exports = { slugify, SECTORS, people, portfolio, partners, upcomingEvents, pastEvents, news, jobs, certifications, tenders, outreach };

@@ -1,0 +1,117 @@
+[
+  {
+    "id": "gpu-edge-cloud",
+    "title": "The supply of GPU Edge Cloud System",
+    "cat": "Equipment",
+    "status": "active",
+    "published": "",
+    "note": "Pre-bid clarification meeting: Thu 27 Feb 2025, 11:30 AM to 12:30 PM IST at ARTgarage. Please ignore the typo in the Important Dates on page 12 of the tender document (27 February 2025, 5 PM IST).",
+    "phase": 4,
+    "noPreBid": false,
+    "preBid": "27 Feb 2025",
+    "priceBidsDate": "2025-03-17",
+    "docs": [
+      {
+        "label": "Tender document",
+        "href": "https://www.artpark.in/s/Tender-document-GPU-Edge-Clouddocx.pdf",
+        "kind": "PDF",
+        "role": "tender"
+      },
+      {
+        "label": "Corrigendum of the tender · 28 Feb 2025",
+        "href": "https://www.artpark.in/s/Corrigendum-Tender-document-GPU-Edge-Cloud-dtd-28-2-24.pdf",
+        "kind": "PDF",
+        "role": "other"
+      },
+      {
+        "label": "Minutes of the commercial bid opening meeting · 17 Mar 2025",
+        "href": "https://www.artpark.in/s/Price-Bid-Meeting-Minutes-of-Tender-Supply-of-GPU-Server-1.pdf",
+        "kind": "PDF",
+        "role": "result"
+      }
+    ]
+  },
+  {
+    "id": "gpu-rack-server",
+    "title": "The supply of GPU Based Rack Server",
+    "cat": "Equipment",
+    "status": "closed",
+    "published": "",
+    "note": "",
+    "phase": 4,
+    "noPreBid": true,
+    "preBid": "",
+    "priceBidsDate": "",
+    "docs": [
+      {
+        "label": "Tender document",
+        "href": "https://drive.google.com/file/d/1K-T7Yozc6WMLqQ27smPBRKRdACfX_DFE/view?usp=sharing",
+        "kind": "Drive",
+        "role": "tender"
+      },
+      {
+        "label": "Output of the opening of the price bids",
+        "href": "https://www.artpark.in/s/Website-Publication-Output-of-the-opening-of-the-Proce-Bid-Tender-GPU-Rack-Server.pdf",
+        "kind": "PDF",
+        "role": "result"
+      },
+      {
+        "label": "Output of the opening of the technical bid",
+        "href": "https://www.artpark.in/s/Website-Publication-Output-of-the-opening-of-the-Technical-Bid-Tender-GPU-Rack-Server.pdf",
+        "kind": "PDF",
+        "role": "other"
+      },
+      {
+        "label": "Corrigendum to the tender",
+        "href": "https://www.artpark.in/s/Tender-Supply-of-GPU-Based-Rack-Server-ARTPARK.pdf",
+        "kind": "PDF",
+        "role": "other"
+      },
+      {
+        "label": "Corrigendum 2",
+        "href": "https://docs.google.com/document/d/1XVV62ZlZEEILqOduKbJag6r_e03xE9wQ/edit?usp=sharing&ouid=110081720780474297908&rtpof=true&sd=true",
+        "kind": "Doc",
+        "role": "other"
+      },
+      {
+        "label": "Corrigendum 3",
+        "href": "https://docs.google.com/document/d/1Lu7pmIMPFC2h0lZXsGbzL--mWw6Tzle7/edit?usp=sharing&ouid=110081720780474297908&rtpof=true&sd=true",
+        "kind": "Doc",
+        "role": "other"
+      }
+    ]
+  },
+  {
+    "id": "robot-arm",
+    "title": "The supply of robot arm, cobot pump and accessories",
+    "cat": "Equipment",
+    "status": "closed",
+    "published": "2024-08-26",
+    "note": "",
+    "phase": 0,
+    "noPreBid": true,
+    "preBid": "",
+    "priceBidsDate": "",
+    "docs": [
+      {
+        "label": "Tender document",
+        "href": "https://drive.google.com/file/d/1YTMBx4T3ae-WC-9Kf3PBqExmAPJtDFoT/view?usp=sharing",
+        "kind": "Drive",
+        "role": "tender"
+      }
+    ]
+  },
+  {
+    "id": "genomic-surveillance",
+    "title": "Platform for clinical & environmental genomic surveillance",
+    "cat": "Request for proposals",
+    "status": "rfp",
+    "published": "",
+    "note": "The RFP page on the current site (artpark.in/rfp/genomic-surveillance-platform) no longer loads. Write to connect@artpark.in for the document.",
+    "phase": 0,
+    "noPreBid": true,
+    "preBid": "",
+    "priceBidsDate": "",
+    "docs": []
+  }
+]

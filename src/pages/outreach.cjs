@@ -2,6 +2,7 @@
 // Ported from .reference/claude-design/Outreach-*.dc.html, Careers.dc.html, Partnerships.dc.html.
 const { esc, page, pageIntro, floatStage, OUTREACH_TABS, R, linkRows, icon } = require('../lib.cjs');
 const C = require('../data/content.cjs');
+const M = require('../outreach/model.cjs');
 
 const outreachIntro = (current, h1, lede, float) => pageIntro({ eyebrow: 'Outreach', h1, lede, float, tabs: { current, items: OUTREACH_TABS } });
 
@@ -10,7 +11,7 @@ const FLOAT_EVENTS = [
   { kind: 'win', src: '/assets/events/codebot.webp', x: 0, y: 4, w: 50, d: 1.4, r: -3, t: 8, cap: 'CodeBot Hackathon' },
   { kind: 'win', src: '/assets/events/roscon-in-24.webp', x: 47, y: -4, w: 53, d: 0.8, r: 2.5, t: 9, cap: 'ROSCon India' },
   { kind: 'win', src: '/assets/events/5g-open-house.webp', x: 20, y: 50, w: 50, d: 1.9, r: -1, t: 7, cap: '5G Test Lab' },
-  { kind: 'stat', n: String(C.upcomingEvents.length), l: 'Open Days coming up at ARTgarage', x: 70, y: 56, w: 30, d: 2.6, r: 3, t: 6 },
+  { kind: 'stat', n: String(C.upcomingEvents.length), l: C.upcomingEvents.length === 1 ? 'upcoming event' : 'upcoming events', x: 70, y: 56, w: 30, d: 2.6, r: 3, t: 6 },
 ];
 const OUTLETS = ['The Economic Times', 'Forbes India', 'Mint', 'Deccan Herald', 'Moneycontrol', 'Hindustan Times'];
 const FLOAT_NEWS = [
@@ -34,25 +35,25 @@ const events = {
   <div style="max-width:1180px;margin:0 auto;padding:48px 24px 112px;display:flex;flex-direction:column;gap:56px">
     <section>
       <span class="eyebrow">Upcoming</span>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-top:16px">
+      ${!C.upcomingEvents.length ? '<p style="font-size:15px;color:var(--ink-soft);margin-top:16px">No upcoming events right now. Follow ARTPARK on <a href="https://www.linkedin.com/company/artpark-in/">LinkedIn</a> for the next one.</p>' : `<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-top:16px">
 ${C.upcomingEvents.map((e) => `        <div class="lift" style="border:1px solid var(--line);display:flex;flex-direction:column">
-          <div data-win style="position:relative;width:100%;aspect-ratio:16/9;background:var(--paper-soft);overflow:hidden"><img src="${e.image}" alt="${esc(e.imageAlt)}" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div>
+          <div data-win style="position:relative;width:100%;aspect-ratio:16/9;background:var(--paper-soft);overflow:hidden"><img src="${esc(e.image)}" alt="${esc(e.imageAlt)}" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div>
           <div style="padding:22px 24px;display:flex;flex-direction:column;gap:8px">
-            <span style="display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:0.14em;color:var(--ink-dim)"><span class="dot green"></span>${esc((e.date + ' · ' + e.venue).toUpperCase())}</span>
+            <span style="display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:0.14em;color:var(--ink-dim)"><span class="dot green"></span>${esc((M.formatRange(e.start, e.end) + (e.venue ? ' · ' + e.venue : '')).toUpperCase())}</span>
             <h3 style="font-size:22px">${esc(e.title)}</h3>
-            <p style="font-size:14.5px;line-height:1.6;color:var(--ink-soft)">${esc(e.blurb)} ${esc(e.time)}.</p>
-            <a href="${e.register}" target="_blank" rel="noopener" style="font-family:var(--font-display);font-weight:700;font-size:14px;text-decoration:none;margin-top:6px">Register →</a>
+            <p style="font-size:14.5px;line-height:1.6;color:var(--ink-soft)">${esc(e.blurb)}${e.time ? ' ' + esc(e.time) + '.' : ''}</p>
+            ${e.register ? `<a href="${esc(e.register)}" target="_blank" rel="noopener" style="font-family:var(--font-display);font-weight:700;font-size:14px;text-decoration:none;margin-top:6px">Register →</a>` : ''}
           </div>
         </div>`).join('\n')}
-      </div>
+      </div>`}
     </section>
     <section>
       <span class="eyebrow">Past events</span>
       <div style="border-top:1px solid var(--line-strong);margin-top:16px">
-${C.pastEvents.map((p) => `        <div class="sweep-row"${p.image ? ` data-peek="${p.image}"` : ''} style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:6px 24px;padding:20px 0;border-bottom:1px solid var(--line);align-items:baseline">
-          <span style="font-size:13px;color:var(--ink-dim)">${esc(p.date)}${p.venue ? ' · ' + esc(p.venue) : ''}</span>
+${C.pastEvents.map((p) => `        <div class="sweep-row"${p.image ? ` data-peek="${esc(p.image)}"` : ''} style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:6px 24px;padding:20px 0;border-bottom:1px solid var(--line);align-items:baseline">
+          <span style="font-size:13px;color:var(--ink-dim)">${esc(M.formatRange(p.start, p.end))}${p.venue ? ' · ' + esc(p.venue) : ''}</span>
           <span style="grid-column:span 2;font-family:var(--font-display);font-weight:700;font-size:18px;line-height:1.3">${esc(p.title)}</span>
-          <a href="${p.local || p.url}"${p.local ? '' : ' target="_blank" rel="noopener"'} style="font-size:14px;font-weight:600;justify-self:end">Recap →</a>
+          ${M.eventHasPage(p) ? `<a href="${R.events}/${p.id}" style="font-size:14px;font-weight:600;justify-self:end">Recap →</a>` : p.recap ? `<a href="${esc(p.recap)}" target="_blank" rel="noopener" style="font-size:14px;font-weight:600;justify-self:end">Recap →</a>` : ''}
         </div>`).join('\n')}
       </div>
     </section>
@@ -60,29 +61,18 @@ ${C.pastEvents.map((p) => `        <div class="sweep-row"${p.image ? ` data-peek
   }),
 };
 
-// ---------- Event detail pages: original artpark.in text, same paths as artpark.in ----------
-const fs = require('fs');
-const path = require('path');
-const eventSlug = (url) => url.replace(/\/$/, '').split('/').pop();
-const eventPages = C.pastEvents.filter((e) => /artpark\.in\/events\//.test(e.url)).map((e) => {
-  const slug = eventSlug(e.url);
-  const file = path.join(__dirname, '..', '..', 'research', 'artpark-in', 'events__' + e.url.split('/events/')[1].replace(/\//g, '__') + '.json');
-  const raw = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')).text : '';
-  // His design system: no emoji. The original event text uses a few; strip them.
-  const lines = raw.split(/\n+/).map((l) => l.replace(/[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}]️?\s*/gu, '').trim()).filter(Boolean);
-  const stop = lines.findIndex((l) => /^(Posted In:|Previous$)/.test(l));
-  const body = lines.slice(0, stop === -1 ? undefined : stop)
-    .filter((l, i) => i > 1 && !/^(Back to All Events|View fullsize|Jump to:|Google Calendar|ICS|Register now|Register Now)$/i.test(l) && !/\(map\)$/.test(l) && !/^\w+day, \w+ \d+, \d{4}/.test(l) && !/^\d{1,2}:\d{2}\s?[AP]M/.test(l));
-  e.local = `${R.events}/${slug}`;
+// ---------- Event detail pages: every event without a recap link, from its text in events.json ----------
+const eventPages = C.outreach.events.filter(M.eventHasPage).map((e) => {
+  const body = e.body.length ? e.body : [e.blurb];
   return {
-    route: e.local,
+    route: `${R.events}/${e.id}`,
     html: () => page({
       title: `${e.title} — ARTPARK Events`, active: 'outreach', sub: 'events', description: body[0] || e.title,
-      body: pageIntro({ eyebrow: 'Events', h1: esc(e.title) + '.', lede: esc(e.date + (e.venue ? ' · ' + e.venue : '')) }) + `
+      body: pageIntro({ eyebrow: 'Events', h1: esc(e.title) + '.', lede: esc(M.formatRange(e.start, e.end) + (e.venue ? ' · ' + e.venue : '')) }) + `
   <div style="max-width:1180px;margin:0 auto;padding:48px 24px 112px">
-    ${e.image ? `<figure style="margin:0 0 40px;max-width:860px"><div data-win style="position:relative;width:100%;aspect-ratio:16/9;background:var(--paper-soft);overflow:hidden"><img src="${e.image}" alt="${esc(e.title)}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>` : ''}
+    ${e.image ? `<figure style="margin:0 0 40px;max-width:860px"><div data-win style="position:relative;width:100%;aspect-ratio:16/9;background:var(--paper-soft);overflow:hidden"><img src="${esc(e.image)}" alt="${esc(e.title)}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>` : ''}
     <article style="max-width:760px;display:flex;flex-direction:column;gap:16px;font-size:17px;line-height:1.75;color:var(--ink-soft)">
-${(body.length ? body : [e.note || '']).map((l) => `      <p>${esc(l)}</p>`).join('\n')}
+${body.map((l) => `      <p>${esc(l)}</p>`).join('\n')}
     </article>
     <a href="${R.events}" style="display:inline-block;margin-top:40px;font-family:var(--font-display);font-weight:700;font-size:14px;text-decoration:none">← All events</a>
   </div>`,
@@ -98,7 +88,7 @@ const news = {
     description: 'ARTPARK and its projects in the press.',
     body: outreachIntro('news', 'In the news.', 'ARTPARK and its projects in the press.', FLOAT_NEWS) + `
   <div style="max-width:1180px;margin:0 auto;padding:48px 24px 112px">
-    ${linkRows(C.news.map((n) => ({ meta: n.date ? `${n.date} · ${n.outlet}` : n.outlet, title: n.title, href: n.url })))}
+    ${linkRows(C.news.map((n) => ({ meta: n.dateLabel || n.date ? `${n.dateLabel || M.formatLong(n.date)} · ${n.outlet}` : n.outlet, title: n.title, href: n.url })))}
     <section id="publications" style="margin-top:72px;scroll-margin-top:132px">
       <span class="eyebrow">Publications</span>
       <div style="margin-top:16px">${linkRows([
@@ -120,22 +110,7 @@ const news = {
 // ---------- Tenders (Outreach-Tenders.dc.html: list + detail; the sample vendor-registration flow is not used) ----------
 const STATUS = { active: ['Active', 'green'], closed: ['Closed', 'coral'], rfp: ['Request for proposals', ''] };
 // Round 8 tenders rework: each tender shows the stages it has reached, read from its own published documents and notes.
-const dateIn = (str) => (String(str || '').match(/\b(\d{1,2} (?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]* \d{4})\b/) || [])[1] || '';
-const tenderStages = (t) => {
-  const names = t.docs.map(([n, h]) => (n + ' ' + h).toLowerCase());
-  const has = (re) => names.some((n) => re.test(n));
-  const corr = t.docs.filter(([n]) => /corrigend/i.test(n));
-  const pre = t.note && /pre-bid/i.test(t.note) ? dateIn(t.note) : '';
-  const priceDoc = t.docs.find(([n]) => /price|commercial/i.test(n));
-  return [
-    ['Notice published', t.docs.some(([n]) => /tender document/i.test(n)), t.published || ''],
-    ['Pre-bid meeting', !!pre, pre],
-    ['Corrigenda', corr.length > 0, corr.length ? corr.length + ' issued' : ''],
-    ['Technical bids opened', has(/technical bid/), ''],
-    ['Price bids opened', has(/price.?bid|commercial bid/), priceDoc ? dateIn(priceDoc[0]) : ''],
-  ].filter(([label, done]) => done || label !== 'Pre-bid meeting');
-};
-const stageTrack = (t) => `<ol class="t-track">${tenderStages(t).map(([l, done, d]) => `<li class="${done ? 'is-done' : ''}"><i></i><span>${esc(l)}</span>${d ? `<small>${esc(d)}</small>` : ''}</li>`).join('')}</ol>`;
+const stageTrack = (t) => `<ol class="t-track">${M.tenderStages(t).map(([l, done, d]) => `<li class="${done ? 'is-done' : ''}"><i></i><span>${esc(l)}</span>${d ? `<small>${esc(d)}</small>` : ''}</li>`).join('')}</ol>`;
 const tenders = {
   route: R.tenders,
   html: () => page({
@@ -153,7 +128,7 @@ ${['All', 'Active', 'Closed', 'Requests for proposals'].map((l, i) => `        <
 ${C.tenders.map((t) => `      <div data-item data-status="${t.status}" class="t-row" style="border-bottom:1px solid var(--line)">
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px 24px;padding:22px 0;align-items:center">
           <div style="grid-column:span 2;min-width:0">
-            <div style="font-size:12px;font-weight:600;letter-spacing:0.1em;color:var(--ink-dim)">${esc(t.cat.toUpperCase())}${t.published ? ' · ' + esc(t.published.toUpperCase()) : ''}</div>
+            <div style="font-size:12px;font-weight:600;letter-spacing:0.1em;color:var(--ink-dim)">${esc(t.cat.toUpperCase())}${t.published ? ' · ' + esc(M.formatShort(t.published).toUpperCase()) : ''}</div>
             <div style="font-family:var(--font-display);font-weight:700;font-size:18px;line-height:1.3;margin-top:4px">${esc(t.title)}</div>
             <div style="font-size:13.5px;color:var(--ink-soft);margin-top:4px">${t.docs.length ? t.docs.length + (t.docs.length === 1 ? ' document' : ' documents') : 'Document on request'}</div>
             ${t.status === 'rfp' ? '' : stageTrack(t)}
@@ -167,7 +142,7 @@ ${C.tenders.map((t) => `      <div data-item data-status="${t.status}" class="t-
         <div id="tender-${t.id}" hidden style="padding:0 0 26px">
           ${t.note ? `<p style="max-width:760px;font-size:15px;line-height:1.7;color:var(--ink-soft);margin-bottom:14px">${esc(t.note)}</p>` : ''}
           ${t.docs.length ? `<div class="t-docs">
-${t.docs.map(([n, href, kind]) => `            <a class="t-doc" href="${href}" target="_blank" rel="noopener"><em class="t-kind is-${kind.toLowerCase()}">${kind}</em><b>${esc(n)}</b><span>Download <span class="arrow">→</span></span></a>`).join('\n')}
+${t.docs.map(({ label: n, href, kind }) => `            <a class="t-doc" href="${href}" target="_blank" rel="noopener"><em class="t-kind is-${kind.toLowerCase()}">${kind}</em><b>${esc(n)}</b><span>Download <span class="arrow">→</span></span></a>`).join('\n')}
           </div>` : ''}
         </div>
       </div>`).join('\n')}
