@@ -37,9 +37,10 @@ test('GET returns all three collections', async () => {
 });
 
 test('without a session: 401 and nothing written', async () => {
+  const before = read('news').length;
   const r = await call({ kind: 'news', action: 'save', item: news }, { headers: { 'x-admin': '1' } });
   assert.equal(r.status, 401);
-  assert.equal(read('news').length, 14);
+  assert.equal(read('news').length, before);
 });
 
 test('adding news writes it with a generated id', async () => {

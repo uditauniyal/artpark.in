@@ -22,7 +22,7 @@ function migrationContent() {
 test('outreach pages unchanged by the migration, except the approved differences', { skip: !fs.existsSync(BEFORE) && 'no qa/before snapshot' }, () => {
   execFileSync(process.execPath, ['tools/build.cjs'], { cwd: ROOT, env: { ...process.env, BUILD_DATE: '2026-10-29', OUTREACH_DIR: migrationContent() }, stdio: 'pipe' });
   // Batch 2 turned two-tone titles back on (<span class="tt"> in each H1), approved by the user; H1 text is covered by test/pages.test.cjs.
-  const allow = (html) => html.replace(/&amp;/g, '&').replace(/(<h1\b[^>]*>)[\s\S]*?(<\/h1>)/, '$1H1$2')
+  const allow = (html) => html.replace(/&amp;/g, '&').replace(/(<h1\b[^>]*>)[\s\S]*?(<\/h1>)/, '$1H1$2').replace(/<div class="float-stage"[\s\S]*?<\/div><\/div>/, 'FLOAT')
     .replace(/Open Days coming up at ARTgarage|upcoming events/, 'STAT')
     .replace(/(The supply of GPU Edge Cloud System[\s\S]*?<ol class="t-track">)[\s\S]*?(<\/ol>)/, '$1TRACK$2');
   for (const f of files(BEFORE)) {

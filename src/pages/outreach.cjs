@@ -13,9 +13,11 @@ const FLOAT_EVENTS = [
   { kind: 'win', src: '/assets/events/5g-open-house.webp', x: 20, y: 50, w: 50, d: 1.9, r: -1, t: 7, cap: '5G Test Lab' },
   { kind: 'stat', n: String(C.upcomingEvents.length), l: C.upcomingEvents.length === 1 ? 'upcoming event' : 'upcoming events', x: 70, y: 56, w: 30, d: 2.6, r: 3, t: 6 },
 ];
-const OUTLETS = ['The Economic Times', 'Forbes India', 'Mint', 'Deccan Herald', 'Moneycontrol', 'Hindustan Times'];
+// Outlet logos: Wikimedia Commons renders (public domain wordmarks); Deccan Herald from deccanherald.com.
+// The square DH mark gets a taller slot so it reads at the same weight as the wordmarks.
+const OUTLETS = [['economic-times'], ['forbes-india'], ['mint'], ['deccan-herald', 52], ['moneycontrol'], ['hindustan-times']];
 const FLOAT_NEWS = [
-  ...OUTLETS.map((o, i) => ({ kind: 'chip', text: o, x: [2, 46, 8, 56, 26, 62][i], y: [2, 10, 34, 40, 66, 74][i], w: [46, 36, 26, 40, 44, 36][i], d: [1.2, 0.8, 2, 1.5, 1, 2.2][i], r: [-2, 2, -1, 1.5, -1.5, 2][i], t: 6 + i })),
+  ...OUTLETS.map(([o, imgH], i) => ({ kind: 'chip', logo: `/assets/outlets/${o}.webp`, imgH, x: [2, 46, 8, 56, 32, 66][i], y: [2, 10, 34, 40, 64, 80][i], w: [46, 36, 26, 40, 34, 34][i], d: [1.2, 0.8, 2, 1.5, 1, 2.2][i], r: [-2, 2, -1, 1.5, -1.5, 2][i], t: 6 + i })),
   { kind: 'stat', n: String(C.news.length), l: 'stories about ARTPARK in the press', x: 0, y: 58, w: 30, d: 2.6, r: -3, t: 7 },
 ];
 const FLOAT_TENDERS = [

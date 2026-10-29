@@ -73,3 +73,11 @@ test('contact page: choosing a role changes the copy (browser)', { skip: !proces
     assert.match(await p.textContent('[data-role-intro]'), /^Building a deep-tech startup\?/);
   } finally { await b.close(); }
 });
+
+test('news: floating chips show the outlets\' logos', () => {
+  build();
+  const stage = page('news').match(/<div class="float-stage"[\s\S]*?<\/div><\/div>/)[0];
+  assert.deepEqual([...stage.matchAll(/<img src="\/assets\/outlets\/([^".]+)\.webp"/g)].map((m) => m[1]),
+    ['economic-times', 'forbes-india', 'mint', 'deccan-herald', 'moneycontrol', 'hindustan-times']);
+  for (const f of ['economic-times', 'forbes-india', 'mint', 'deccan-herald', 'moneycontrol', 'hindustan-times']) assert.ok(fs.existsSync(path.join(ROOT, 'public/assets/outlets', f + '.webp')), f);
+});

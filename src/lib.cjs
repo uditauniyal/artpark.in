@@ -165,7 +165,7 @@ function floatStage(items) {
     const st = `--x:${it.x}%;--y:${it.y}%;--w:${it.w}%;--d:${it.d || 1};--r:${it.r || 0}deg;--t:${it.t || 7}s;--del:${-(i * 1.3).toFixed(1)}s${it.ar ? ';--ar:' + it.ar : ''}`;
     let inner = '';
     if (it.kind === 'win') inner = `<img src="${it.src}" alt="" loading="eager" style="object-position:${it.pos || '50% 50%'}">${it.cap ? `<i>${esc(it.cap)}</i>` : ''}`;
-    if (it.kind === 'chip') inner = it.logo ? `<img src="${it.logo}" alt="">` : `<b>${esc(it.text)}</b>`;
+    if (it.kind === 'chip') inner = it.logo ? `<img src="${it.logo}" alt=""${it.imgH ? ` style="max-height:${it.imgH}px"` : ''}>` : `<b>${esc(it.text)}</b>`;
     if (it.kind === 'stat') inner = `<b>${esc(it.n)}</b><small>${esc(it.l)}</small>`;
     if (it.kind === 'doc') inner = `<em>${esc(it.tag || 'PDF')}</em><b>${esc(it.text)}</b>${it.sub ? `<small>${esc(it.sub)}</small>` : ''}`;
     return `<div class="fl fl-${it.kind}" style="${st}"><span>${inner}</span></div>`;
