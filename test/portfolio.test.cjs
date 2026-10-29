@@ -72,3 +72,16 @@ test('portfolio floating logos are the six chosen startups', () => {
   const stage = html.match(/<div class="float-stage"[\s\S]*?<\/div><\/div>/)[0];
   assert.deepEqual([...stage.matchAll(/<img src="\/assets\/logos\/([^".]+)/g)].map((m) => m[1]), ['twara-robotics', 'comrado-aerospace', 'yaanendriya', 'kinesthetiq', 'uncharted-ai', 'strider-robotics']);
 });
+
+// ---- task 4: layout ----
+test('portfolio page: programme switch, domain sidebar with counts, 36 cards, no old sector filter', () => {
+  execFileSync(process.execPath, ['tools/build.cjs'], { cwd: ROOT, stdio: 'pipe' });
+  const html = fs.readFileSync(path.join(ROOT, 'dist', 'portfolio', 'index.html'), 'utf8');
+  assert.equal((html.match(/data-domain="/g) || []).length, 8);
+  assert.equal((html.match(/data-programme="/g) || []).length, 3);
+  assert.ok(!html.includes('data-sector-filter'));
+  assert.equal((html.match(/data-company /g) || []).length, 36);
+  assert.match(html, /data-domain="Robotics"[^>]*>[\s\S]*?Robotics[\s\S]*?>11</);
+  assert.match(html, /data-programme-note[^>]*hidden[^>]*>Programme lists coming soon\. Showing all startups meanwhile\./);
+  assert.match(html, /Company list from the ARTPARK Start Up portfolio 2026\./);
+});

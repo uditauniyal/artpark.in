@@ -403,18 +403,28 @@
   }
 
   // ---------- Portfolio: sector filter (Portfolio.dc.html) ----------
+  // Portfolio: domain sidebar filters the cards; the programme switch (All / TIR / VIP) has no data yet,
+  // so TIR and VIP only show a note and keep every card.
   var pf = document.querySelector('[data-portfolio]');
   if (pf) {
-    var pbtns = pf.querySelectorAll('[data-sector-filter]');
-    pbtns.forEach(function (b) {
+    var press = function (btns, on) { btns.forEach(function (x) { x.setAttribute('aria-pressed', x === on ? 'true' : 'false'); }); };
+    var dbtns = pf.querySelectorAll('[data-domain]');
+    dbtns.forEach(function (b) {
       b.addEventListener('click', function () {
-        pressBlack(pbtns, b);
-        var s = b.getAttribute('data-sector-filter'), n = 0;
+        press(dbtns, b);
+        var d = b.getAttribute('data-domain'), n = 0;
         pf.querySelectorAll('[data-company]').forEach(function (c) {
-          var ok = s === 'All' || c.getAttribute('data-sector') === s;
+          var ok = !d || c.getAttribute('data-domains').split('|').indexOf(d) > -1;
           c.hidden = !ok; if (ok) n++;
         });
         pf.querySelector('[data-pcount]').textContent = n + (n === 1 ? ' company' : ' companies');
+      });
+    });
+    var gbtns = pf.querySelectorAll('[data-programme]');
+    gbtns.forEach(function (b) {
+      b.addEventListener('click', function () {
+        press(gbtns, b);
+        pf.querySelector('[data-programme-note]').hidden = b.getAttribute('data-programme') === 'All';
       });
     });
   }

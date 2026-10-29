@@ -1,12 +1,12 @@
 // Portfolio: ported from .reference/claude-design/Portfolio.dc.html.
-// His filter row used TIR / SIP / Investment; programme data does not exist yet (user: decide later),
-// so the same buttons filter by the sectors used on artpark.in. Each card opens the founder story.
+// Batch 2 (2026-10-29): the 36 startups of the 2026 portfolio. A programme switch (All / TIR / VIP; no programme
+// data yet, so TIR and VIP show a note) and a domain sidebar filter the grid (public/js/site.js).
+// Each card opens the founder story, or the company's site when there is no story yet.
 const { esc, page, R, floatStage } = require('../lib.cjs');
 const C = require('../data/content.cjs');
 const stories = require('./stories.cjs').all;
 
 const hasStory = new Set(stories.map((s) => s.slug));
-const SHORT = { 'Defence and Aerospace': 'Defence & aerospace', 'Space Technology': 'Space', 'Industrial Automation and Robotics': 'Robotics & automation', Healthcare: 'Healthcare', Agriculture: 'Agriculture', 'Mobility and Construction': 'Mobility & construction', 'Research and Deep Science': 'Deep science' };
 
 // Round 8 floating composition: real company logos and the real company count.
 const FLOAT_PF = [
@@ -27,25 +27,34 @@ module.exports = {
     </div>
   </section>
 
-  <div data-portfolio style="max-width:1180px;margin:0 auto;padding:48px 24px 112px">
-    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;padding-bottom:20px;border-bottom:1px solid var(--line)">
-      <div style="display:flex;flex-wrap:wrap;gap:8px" role="group" aria-label="Filter by sector">
-${['All', ...C.DOMAIN_LIST].map((s, i) => `        <button type="button" data-sector-filter="${esc(s)}" aria-pressed="${i === 0}" style="border:1px solid ${i === 0 ? 'var(--artblack)' : 'var(--line-strong)'};background:${i === 0 ? 'var(--artblack)' : 'transparent'};color:${i === 0 ? '#fff' : 'var(--ink)'};padding:7px 16px;font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:0.08em;border-radius:2px;cursor:pointer;transition:all 150ms ease">${esc((SHORT[s] || s).toUpperCase())}</button>`).join('\n')}
+  <div data-portfolio class="pf-layout" style="max-width:1180px;margin:0 auto;padding:48px 24px 112px">
+    <aside class="pf-domains" aria-label="Filter by domain">
+      <h2 class="pf-domains-title">Domain</h2>
+      <div class="pf-domains-list" role="group" aria-label="Domain">
+${[['', 'All domains', C.portfolio.length], ...C.DOMAIN_LIST.map((d) => [d, d, C.portfolio.filter((c) => c.domains.includes(d)).length])].map(([v, label, n], i) => `        <button type="button" class="pf-domain" data-domain="${esc(v)}" aria-pressed="${i === 0}"><span class="pf-domain-name">${esc(label)}</span><span class="pf-domain-n">${n}</span></button>`).join('\n')}
       </div>
-      <span data-pcount style="font-size:13px;color:var(--ink-dim)">${C.portfolio.length} companies</span>
-    </div>
-    <div class="pf-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;margin-top:24px">
+    </aside>
+    <div class="pf-main">
+      <div class="pf-bar">
+        <span data-pcount class="pf-count">${C.portfolio.length} companies</span>
+        <div class="pf-programme" role="group" aria-label="Programme">
+${['All', 'TIR', 'VIP'].map((g, i) => `          <button type="button" data-programme="${g}" aria-pressed="${i === 0}">${g}</button>`).join('\n')}
+        </div>
+      </div>
+      <p data-programme-note hidden class="pf-note">Programme lists coming soon. Showing all startups meanwhile.</p>
+      <div class="pf-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;margin-top:20px">
 ${C.portfolio.map((c) => {
   const href = hasStory.has(c.slug) ? `${R.stories}/${c.slug}` : c.website;
   const ext = !hasStory.has(c.slug);
-  return `      <a data-company data-sector="${esc(c.domains.join('|'))}" class="pf-card lift" href="${href || '#'}"${ext && href ? ' target="_blank" rel="noopener"' : ''} style="border:1px solid var(--line);padding:22px;display:flex;flex-direction:column;gap:14px;text-decoration:none;color:inherit;transition:border-color 150ms ease">
+  return `      <a data-company data-domains="${esc(c.domains.join('|'))}" class="pf-card lift" href="${href || '#'}"${ext && href ? ' target="_blank" rel="noopener"' : ''} style="border:1px solid var(--line);padding:22px;display:flex;flex-direction:column;gap:14px;text-decoration:none;color:inherit;transition:border-color 150ms ease">
         <div class="mag" style="position:relative;width:100%;height:72px;background:var(--paper);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:center;padding:10px"><img src="${c.logo}" alt="${esc(c.name)} logo" loading="lazy" style="max-width:100%;max-height:56px;max-width:82%;object-fit:contain;display:block"></div>
         <div><div style="font-family:var(--font-display);font-weight:700;font-size:17px;color:var(--ink)">${esc(c.name)}</div><div style="font-size:13.5px;line-height:1.5;color:var(--ink-soft);margin-top:4px">${esc(c.oneLiner)}</div></div>
         <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;min-height:46px;font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-dim);border-top:1px solid var(--line);padding-top:12px;margin-top:auto"><span>${esc(c.domains.join(' · '))}</span><span style="color:var(--artblue);white-space:nowrap">${hasStory.has(c.slug) ? 'Read story →' : 'Website ↗'}</span></div>
       </a>`;
 }).join('\n')}
     </div>
-    <p style="margin-top:20px;font-size:13px;color:var(--ink-dim)">Company list and descriptions from artpark.in. Stories are drawn from company announcements, press coverage and ARTPARK interviews; sources are listed on each story.</p>
+      <p style="margin-top:20px;font-size:13px;color:var(--ink-dim)">Company list from the ARTPARK Start Up portfolio 2026. Stories are drawn from company announcements, press coverage and ARTPARK interviews; sources are listed on each story.</p>
+    </div>
   </div>`,
   }),
 };

@@ -206,3 +206,33 @@ html.js .reveal.in .icon-card, html.js .reveal.in .work-card, html.js .reveal.in
 .place-card:hover { border-color: var(--artblue) !important; box-shadow: 0 24px 48px -32px rgba(31,10,138,.45); transform: translateY(-3px); }
 @media (hover: none) { .place-chip { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: reduce) { .place-pulse::before, .place-pulse::after, .place-window { animation: none; } }
+
+/* Portfolio (batch 2): domain sidebar + programme switch. The active domain gets the brand's mint marker,
+   the same highlight as the home headline. */
+.pf-layout { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 40px; align-items: start; }
+.pf-domains { position: sticky; top: 120px; }
+.pf-domains-title { font-family: var(--font-display); font-weight: 700; font-size: 15px; color: var(--ink); margin: 0 0 12px; }
+.pf-domains-list { display: flex; flex-direction: column; border-top: 1px solid var(--line); }
+.pf-domain { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; width: 100%; padding: 11px 2px; border: 0; border-bottom: 1px solid var(--line); background: none; cursor: pointer; text-align: left; font-family: var(--font-display); font-size: 15px; font-weight: 500; color: var(--ink-soft); transition: color 150ms ease; }
+.pf-domain:hover { color: var(--artblue); }
+.pf-domain-n { font-family: var(--font-body); font-size: 13px; color: var(--ink-dim); font-variant-numeric: tabular-nums; }
+.pf-domain[aria-pressed="true"] { color: var(--ink); font-weight: 700; }
+.pf-domain[aria-pressed="true"] .pf-domain-name { background: linear-gradient(var(--artlight), var(--artlight)) 0 100% / 100% 60% no-repeat; padding: 0 .1em; }
+.pf-domain[aria-pressed="true"] .pf-domain-n { color: var(--artblue); font-weight: 700; }
+.pf-domain:focus-visible, .pf-programme button:focus-visible { outline: 2px solid var(--artblue); outline-offset: 2px; }
+.pf-bar { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+.pf-count { font-size: 14px; color: var(--ink-dim); }
+.pf-programme { display: inline-flex; padding: 3px; border: 1px solid var(--line-strong); border-radius: 999px; }
+.pf-programme button { border: 0; background: none; border-radius: 999px; padding: 6px 18px; font-family: var(--font-display); font-weight: 700; font-size: 13px; color: var(--ink-soft); cursor: pointer; transition: background 150ms ease, color 150ms ease; }
+.pf-programme button[aria-pressed="true"] { background: var(--artblue); color: #fff; }
+.pf-note { margin: 16px 0 0; padding: 12px 16px; border-left: 3px solid var(--artlight); background: #f4fffd; font-size: 14px; color: var(--ink-soft); }
+@media (max-width: 760px) {
+  .pf-layout { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .pf-domains { position: static; }
+  .pf-domains-title { display: none; }
+  .pf-domains-list { flex-direction: row; gap: 8px; overflow-x: auto; border-top: 0; padding-bottom: 4px; scrollbar-width: none; }
+  .pf-domain { flex: 0 0 auto; width: auto; border: 1px solid var(--line-strong); border-radius: 999px; padding: 8px 14px; font-size: 14px; }
+  .pf-domain[aria-pressed="true"] { background: var(--artlight); border-color: var(--artlight); }
+  .pf-domain[aria-pressed="true"] .pf-domain-name { background: none; }
+}
+.pf-card[hidden] { display: none !important; }
