@@ -1,13 +1,9 @@
 // Home: ported from .reference/claude-design/ARTPARK-Home.dc.html, section by section.
-// Layout, spacing, copy and interactions are his. Story content is real ARTPARK material
-// (src/data/stories.json). Changes are listed in notes/corrections-log.md.
+// Layout, spacing, copy and interactions are his. User (2026-10-31): content is the design file "ARTPARK Home.html"
+// exactly — its painted historical stories (src/data/home-design.json), no stat band, no founder quotes. The story
+// articles are not on this site, so "Read the story" is left out and the tiles and belief links open the slider.
 const { page, esc, R } = require('../lib.cjs');
-const { stories, tiles, rail } = require('../data/stories.json');
-const fs = require('fs');
-const path = require('path');
-const C = require('../data/content.cjs');
-const company = Object.fromEntries(C.portfolio.map((c) => [c.slug, c]));
-const storyFile = (slug) => JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'stories', slug + '.json'), 'utf8'));
+const { stories, tiles } = require('../data/home-design.json');
 
 // His tile geometry, in the same order as his TILES array.
 const GEO = [
@@ -15,13 +11,12 @@ const GEO = [
   ['25%', '46%', '14%', '40%'], ['40%', '10%', '20%', '74%'], ['61%', '2%', '15%', '42%'],
   ['61.5%', '48%', '14.5%', '44%'], ['77%', '6%', '14%', '42%'], ['77.5%', '52%', '21%', '42%'],
 ];
-const storyHref = (slug) => `/stories/${slug}`;
 
 // ---------- A. Opening: collage ----------
 const tileHtml = tiles.map((t, i) => {
   const [l, top, w, h] = GEO[i];
   const core = !!t.core;
-  return `        <a href="${storyHref(t.story)}" class="collage-tile" data-tile="${i}"${core ? ' data-core' : ''} aria-label="${esc(t.tag + ' — ' + t.cap)}" style="--i:${i};position:absolute;left:${l};top:${top};width:${w};height:${h};z-index:${core ? 10 : i + 1};display:block;border-radius:12px;overflow:hidden;background:#fff;border:${core ? '3px solid var(--artlight)' : '3px solid #fff'};opacity:1;transition:opacity 150ms ease,border-color 150ms ease;text-decoration:none;outline-offset:3px">
+  return `        <a href="#stories" class="collage-tile" data-tile="${i}"${core ? ' data-core' : ''} aria-label="${esc(t.tag + ' — ' + t.cap)}" style="--i:${i};position:absolute;left:${l};top:${top};width:${w};height:${h};z-index:${core ? 10 : i + 1};display:block;border-radius:12px;overflow:hidden;background:#fff;border:${core ? '3px solid var(--artlight)' : '3px solid #fff'};opacity:1;transition:opacity 150ms ease,border-color 150ms ease;text-decoration:none;outline-offset:3px">
           <div class="tile-img" role="img" aria-hidden="true" style="width:100%;height:100%;background-image:url(${t.img});background-size:cover;background-position:${t.pos}"></div>
           <span style="position:absolute;left:10px;top:10px;background:${core ? 'var(--artlight)' : 'rgba(255,255,255,0.94)'};color:var(--artblue);padding:4px 9px;border-radius:999px;font-size:clamp(8.5px,0.85vw,10px);font-weight:700;letter-spacing:0.08em;max-width:calc(100% - 20px);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;box-sizing:border-box">${esc(t.tag)}</span>
           <div data-cap style="position:absolute;left:0;right:0;bottom:0;background:var(--artblue);color:#fff;padding:12px 14px;opacity:0;transition:opacity 150ms ease">
@@ -64,11 +59,6 @@ ${chipHtml}
       <a class="btn btn-ghost" href="#building">What ARTPARK is building</a>
     </div>
 
-    <div class="stat-band" style="position:relative;max-width:1180px;margin:clamp(32px,4vw,48px) auto 0;padding:0 24px">
-      <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line-strong);border-bottom:1px solid var(--line-strong)">
-${[[String(C.portfolio.length), 'startups built and backed at ARTPARK', R.portfolio], ['₹230 Cr', 'seed support from DST and the Government of Karnataka', R.approach], ['75,000 sq ft', 'of labs and test arenas at ARTgarage', R.facilities + '/artgarage'], ['31,000+', 'hours of Indian speech, open in Project Vaani', '/stories/vaani']].map(([n, l, h], i) => `        <a href="${h}" class="stat" style="--d:${i}"><span class="stat-n" data-count-to="${n}">${n}</span><span class="stat-l">${l}</span></a>`).join('\n')}
-      </div>
-    </div>
   </section>`;
 
 // ---------- B. Featured stories carousel ----------
@@ -83,15 +73,9 @@ const slide = (s, i) => `      <div class="hero-slide" data-slide="${i}" aria-hi
             <h2 style="font-size:clamp(40px,6vw,80px);line-height:1.03;letter-spacing:-0.015em;margin-top:24px">${s.h2}</h2>
             <p style="margin-top:24px;font-size:18px;line-height:1.7;color:var(--ink);max-width:560px;text-wrap:pretty">${s.lead}</p>
             <p style="margin-top:14px;font-size:16px;line-height:1.7;color:var(--ink-soft);max-width:540px;text-wrap:pretty">${s.sub}</p>
-            ${s.metric ? `<div class="slide-metric"><b>${esc(s.metric[0])}</b><span>${esc(s.metric[1])}</span></div>` : ''}
             <div style="margin-top:32px;display:flex;flex-wrap:wrap;align-items:center;gap:20px">
-              <a class="btn btn-primary" href="${storyHref(s.slug)}" tabindex="${i === 0 ? 0 : -1}">Read the story <span class="arrow">→</span></a>
               <span style="font-size:13px;color:var(--ink-soft)">${esc(s.meta)}</span>
             </div>
-            ${s.also ? `<div class="also-row" style="margin-top:26px;padding-top:18px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:10px">
-              <span class="eyebrow">Also on this path</span>
-              <div style="display:flex;flex-wrap:wrap;gap:8px">${s.also.map((slug) => `<a href="${storyHref(slug)}" class="also-chip" tabindex="${i === 0 ? 0 : -1}"><img src="/assets/logos/${slug}.webp" alt="" loading="lazy"><span>${esc(company[slug].name)}</span></a>`).join('')}</div>
-            </div>` : ''}
           </div>
         </div>
         <span class="hero-slide-caption" style="position:absolute;right:24px;top:16px;font-size:12px;color:var(--ink-soft);background:rgba(255,255,255,0.85);padding:4px 8px;pointer-events:none">${esc(s.caption)}</span>
@@ -108,7 +92,7 @@ const carousel = `
         </div>
         <div style="flex:1 1 520px;min-width:0;display:flex;flex-direction:column;gap:10px">
           <p style="font-size:16px;line-height:1.7;color:var(--ink-soft);text-wrap:pretty;max-width:720px">Research translation is not one pipeline. Sometimes it means <b style="color:var(--ink)">completing a system</b> around an invention. Sometimes it means <b style="color:var(--ink)">building an enterprise</b> around a scientific capability. Sometimes it means <b style="color:var(--ink)">creating a platform</b> that other people build on. Each story follows one of those paths — what happened, who did the work, and what it took.</p>
-          <p style="display:flex;align-items:baseline;gap:8px;font-size:13px;line-height:1.6;color:var(--ink-dim);max-width:720px"><span class="dot" style="flex:none;transform:translateY(-1px)"></span><span>These are ARTPARK stories, told from published interviews, company announcements and project records. Sources are listed in each article.</span></p>
+          <p style="display:flex;align-items:baseline;gap:8px;font-size:13px;line-height:1.6;color:var(--ink-dim);max-width:720px"><span class="dot" style="flex:none;transform:translateY(-1px)"></span><span>These are historical case studies. ARTPARK was not involved in any of them. We study them because they show, in detail, what the work beyond a breakthrough looks like.</span></p>
         </div>
       </div>
     </div>
@@ -129,63 +113,12 @@ ${stories.map((s, i) => `          <button type="button" role="tab" data-go="${i
     </div>
   </section>`;
 
-// ---------- C. Founders, in their own words (his slide-track logic: track, bars, prev/next, count) ----------
-const quoteFor = (r) => {
-  if (r.text) return r;
-  const st = storyFile(r.slug); let hit = null;
-  const walk = (b) => { if (b && b.quote && !hit && b.quote.text.includes(r.match)) hit = b.quote; };
-  (st.lead || []).forEach(walk); st.sections.forEach((x) => x.blocks.forEach(walk));
-  if (!hit) throw new Error('Rail quote not found: ' + r.slug + ' / ' + r.match);
-  const [who, ...roleParts] = hit.who.split(', ');
-  let text = hit.text.trim();
-  const first = text.match(/^.+?[.?!](?=\s|$)/);
-  if (text.length > 210 && first && first[0].length > 60) text = first[0];
-  return { ...r, text, who, role: roleParts.join(', '), source: hit.source };
-};
-const RAIL = rail.map(quoteFor);
-// Scroll-led founder stories (round 7). Desktop: the photo stays pinned on the left and changes as each
-// founder's quote reaches the middle of the screen; the quote being read is full strength, the rest dimmed.
-// Phones: swipeable photo cards with the next one peeking in. Short pull-quotes are exact excerpts (stories.json "pull").
-const FX = RAIL.map((r) => ({ ...r, title: storyFile(r.slug).title, short: r.pull || r.text, name: company[r.slug].name }));
-const founders = `
-  <!-- C. Founders, in their own words -->
-  <section id="founders" data-screen-label="Founder stories" data-founders style="background:var(--paper-soft);padding:clamp(56px,7vw,104px) 0 clamp(48px,6vw,88px);scroll-margin-top:110px">
-    <div style="max-width:1180px;margin:0 auto;padding:0 24px">
-      <div class="fx-head">
-        <div class="eyebrow-rule">Founder stories</div>
-        <h2 style="font-size:clamp(36px,5vw,60px);line-height:1.06;margin-top:16px">In their own <span class="hl">words</span>.</h2>
-        <p style="margin-top:14px;max-width:640px;font-size:18px;line-height:1.7;color:var(--ink-soft);text-wrap:pretty">${C.portfolio.length} companies have been built and backed at ARTPARK. These are some of the people behind them, on what they saw, what was hard and what it took.</p>
-      </div>
-      <div class="fx-grid">
-        <div class="fx-visual" aria-hidden="true">
-          <div class="fx-frame">
-${FX.map((r, i) => `            <figure class="fx-fig${i === 0 ? ' is-on' : ''}" data-fx-fig="${i}"><img src="${r.img}" alt="" loading="${i < 2 ? 'eager' : 'lazy'}" style="object-position:${r.pos || '50% 50%'}"><span class="fx-chip"><img src="/assets/logos/${r.slug}.webp" alt=""></span></figure>`).join('\n')}
-          </div>
-          <div class="fx-progress"><span data-fx-count>01 / ${String(FX.length).padStart(2, '0')}</span><i><b data-fx-bar style="width:${(100 / FX.length).toFixed(2)}%"></b></i></div>
-        </div>
-        <ol class="fx-list" data-fx-list>
-${FX.map((r, i) => `          <li class="fx-item${i === 0 ? ' is-on' : ''}" data-fx-item="${i}">
-            <a class="fx-card-media" href="${storyHref(r.slug)}" tabindex="-1" aria-hidden="true"><img src="${r.img}" alt="" loading="lazy" style="object-position:${r.pos || '50% 50%'}"><span class="fx-chip"><img src="/assets/logos/${r.slug}.webp" alt=""></span></a>
-            <div class="fx-body">
-              <div class="fx-meta"><span class="fx-n">${String(i + 1).padStart(2, '0')}</span><img class="fx-logo" src="/assets/logos/${r.slug}.webp" alt="${esc(r.name)}"></div>
-              <p class="fx-kicker">${esc(r.title)}</p>
-              <blockquote class="fx-quote">“${esc(r.short)}”</blockquote>
-              <p class="fx-who"><b>${esc(r.who)}</b><span>${esc(r.role)}</span></p>
-              <a class="fx-link" href="${storyHref(r.slug)}">Read the ${esc(r.name)} story <span class="arrow">→</span></a>
-            </div>
-          </li>`).join('\n')}
-        </ol>
-      </div>
-      <div class="fx-foot"><span class="fx-swipe">Swipe for more founders →</span><a href="${R.portfolio}">All ${C.portfolio.length} companies and their stories →</a></div>
-    </div>
-  </section>`;
-
 // ---------- D. What we believe ----------
 const BELIEFS = [
-  ['01', 'A working result is where the questions start.', 'AlgoFET’s drones could already fly. Whether one could land, recharge and fly again on its own, at night, with no one on the ground, was a separate question — and the answer was a dock, a charger and a backup for every critical step.', 'algofet', 'From Story 01 →'],
-  ['02', 'Test it where it will live.', 'Real environments add requirements no lab result can satisfy on its own. QOSMIC’s steering mirror had to survive thermal vacuum and launch-level vibration before it could matter to anyone. It passed both on the first attempt, nine months after the team started from scratch.', 'qosmic', 'From Story 02 →'],
-  ['03', 'Not every result should become a startup.', 'Some research becomes a product, some becomes a firm, and some becomes infrastructure that others build on. Vaani creates its widest value as open data — MWire Labs in Shillong used it to build the first publicly available Garo speech-to-text model.', 'vaani', 'From Story 03 →'],
-  ['04', 'The unglamorous work is invention too.', '“We build multiple options for critical steps to make sure that if one fails, the other solution exists,” says AlgoFET’s Ankit Mishra. Integration, reliability and economics deserve the same respect as the original insight.', null, null],
+  ['01', 'A working result is where the questions start.', 'A practical lamp glowed at Menlo Park in late 1879. Whether a city could afford to run on it was a separate question — one that took until 1882 to answer, and then only in part.', 'From Story 01 →'],
+  ['02', 'Test it where it will live.', 'Real environments add requirements no lab result can satisfy on its own. When Strand moved from research software into diagnostics, it needed a wet lab, sample handling, clinical relationships and external accreditation — a different company built around the same science.', 'From Story 02 →'],
+  ['03', 'Not every result should become a startup.', "Some research becomes a product, some becomes a firm, and some becomes infrastructure that thousands of others build on. GPS created its widest value as a free public signal — not as anyone's single product.", 'From Story 03 →'],
+  ['04', 'The unglamorous work is invention too.', "Edison's three-wire distribution scheme sharply reduced the copper needed to deliver power — a cost problem solved by engineering, not by the lamp. Integration, reliability and economics deserve the same respect as the original insight.", null],
 ];
 const believe = `
   <!-- D. What we believe -->
@@ -196,9 +129,9 @@ const believe = `
       <p style="margin-top:14px;max-width:680px;font-size:17px;line-height:1.7;color:var(--ink-soft);text-wrap:pretty">Technologies have to be built, tested, challenged, integrated and refined in the environments where they will finally be used. What we learned from the three stories, in four sentences:</p>
 
       <div style="margin-top:28px;border-top:1px solid var(--line-strong)">
-${BELIEFS.map(([n, h, p, slug, link]) => `        <div class="belief-row" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px 40px;padding:20px 0;border-bottom:1px solid var(--line-strong)">
+${BELIEFS.map(([n, h, p, link]) => `        <div class="belief-row" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px 40px;padding:20px 0;border-bottom:1px solid var(--line-strong)">
           <div style="display:flex;gap:20px;align-items:baseline"><span style="font-family:var(--font-display);font-weight:700;font-size:14px;color:var(--artblue)">${n}</span><h3 style="font-size:24px;line-height:1.2">${esc(h)}</h3></div>
-          <div style="display:flex;flex-direction:column;gap:12px"><p style="font-size:16px;line-height:1.7;color:var(--ink-soft)">${esc(p)}</p>${slug ? `<a href="${storyHref(slug)}" style="font-size:14px;font-weight:600">${link}</a>` : ''}</div>
+          <div style="display:flex;flex-direction:column;gap:12px"><p style="font-size:16px;line-height:1.7;color:var(--ink-soft)">${esc(p)}</p>${link ? `<a href="#stories" style="font-size:14px;font-weight:600">${link}</a>` : ''}</div>
         </div>`).join('\n')}
       </div>
     </div>
@@ -360,6 +293,6 @@ module.exports = {
     description: 'ARTPARK, the AI & Robotics Technology Park at IISc Bengaluru, works on what comes after the breakthrough: engineering, testing, integration and scale.',
     active: 'home',
     scripts: ['/js/motion.js'],
-    body: opening + carousel + founders + believe + building + collaborate + faq,
+    body: opening + carousel + believe + building + collaborate + faq,
   }),
 };

@@ -93,3 +93,24 @@ test('home hero slider images opt out of the scroll-reveal image animation', () 
   const html = fs.readFileSync(path.join(ROOT, 'dist', 'index.html'), 'utf8');
   assert.match(html, /<div class="hero-slides"[^>]*data-ap-noimg/);
 });
+
+// User (2026-10-31): the home page is the Claude Design file ("ARTPARK Home.html") exactly: painted
+// historical stories, no stat band, no founder quotes. The story articles are not on the site, so the
+// "Read the story" buttons are left out and the tiles and belief links go to the slider.
+test('home matches the design: historical stories, painted art, no stats or founder quotes', () => {
+  build();
+  const html = page('');
+  const h2 = [...html.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/g)].map((m) => m[1].replace(/<[^>]+>/g, ''));
+  assert.deepEqual(h2.slice(0, 3), ['The light bulb was only the beginning.', 'From computational biology to a business built on science.', 'GPS became much more than a way to find your location.']);
+  assert.ok(!h2.includes('In their own words.'));
+  assert.ok(!html.includes('id="founders"') && !html.includes('stat-band'));
+  assert.ok(!/Read the story/.test(html));
+  assert.match(html, /These are historical case studies\. ARTPARK was not involved in any of them\./);
+  assert.match(html, /Hover over a picture or a label to see where it comes from in the stories\./);
+  assert.match(html, /Edison's three-wire distribution scheme sharply reduced the copper needed/);
+  assert.deepEqual([...html.matchAll(/data-go="\d"[^>]*>([^<]+)<span class="tab-progress"/g)].map((m) => m[1]), ['01 · Light bulb', '02 · Strand', '03 · GPS']);
+  const art = [...new Set([...html.matchAll(/\/assets\/art\/([\w-]+\.jpg)/g)].map((m) => m[1]))];
+  assert.equal(art.length, 9);
+  for (const f of art) assert.ok(fs.existsSync(path.join(ROOT, 'public', 'assets', 'art', f)), f);
+  assert.ok(!/href="\/stories\//.test(html));
+});

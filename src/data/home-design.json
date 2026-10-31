@@ -1,0 +1,43 @@
+{
+  "_note": "Home page stories and collage, copied from the Claude Design file 'ARTPARK Home.html' (user, 2026-10-31). Images are the design's own painted art.",
+  "stories": [
+    {
+      "n": "01", "path": "Complete the system", "tab": "01 · Light bulb",
+      "h2": "The light bulb was only <span class=\"hl\">the beginning</span>.",
+      "lead": "On the afternoon of 4 September 1882, about 400 electric lamps came on in lower Manhattan. A practical lamp had existed for almost three years. What took so long was everything around it: <b>dynamos, miles of underground copper, fuses, meters, switches, factories</b>, a franchise from the city — and a price that could compete with gas.",
+      "sub": "The story usually told is about a filament. The more useful one is about a system — and how many people, in how many countries, it took to build.",
+      "meta": "About 14 min · Electric light, 1878–1895",
+      "image": "/assets/art/story1-hero-realistic.jpg", "imagePos": "50% 50%", "imageAlt": "Pearl Street dynamo room, 1882",
+      "caption": "The Pearl Street dynamo room, 1882 · painted illustration"
+    },
+    {
+      "n": "02", "path": "Build the enterprise", "tab": "02 · Strand",
+      "h2": "From computational biology to a <span class=\"hl\">business built on science</span>.",
+      "lead": "In 2000, a group of Bangalore computer scientists bet that the mathematics of algorithms could help make sense of biology. Turning that bet into a company meant <b>software, a global partnership, a wet lab and external accreditation</b> — each a different business around the same science.",
+      "sub": "Strand Life Sciences, and what it takes for research capability to become a sustainable enterprise.",
+      "meta": "About 15 min · Strand Life Sciences, 2000–2021",
+      "image": "/assets/art/story2-hero-realistic.jpg", "imagePos": "50% 50%", "imageAlt": "computational biology lab, Bangalore",
+      "caption": "Computational biology in Bangalore · painted illustration"
+    },
+    {
+      "n": "03", "path": "Enable the ecosystem", "tab": "03 · GPS",
+      "h2": "GPS became much more than <span class=\"hl\">a way to find your location</span>.",
+      "lead": "The most important thing a GPS satellite broadcasts is not a location. It is the time. Built for the military, GPS became a <b>free public clock and coordinate system</b> — and an economy grew on top of it that its designers never planned.",
+      "sub": "How public research becomes a platform that thousands of others build on.",
+      "meta": "About 16 min · Satellite navigation, 1957–2000",
+      "image": "/assets/art/story3-hero-realistic.jpg", "imagePos": "50% 50%", "imageAlt": "navigation satellite above India",
+      "caption": "A navigation satellite above India · painted illustration"
+    }
+  ],
+  "tiles": [
+    { "img": "/assets/art/story1-hero-realistic.jpg", "pos": "50% 50%", "tag": "ENGINEERING", "label": "STORY 01 · PEARL STREET, 1882", "cap": "Six 27-ton dynamos, adapted from a Siemens design." },
+    { "img": "/assets/art/story1-street.jpg", "pos": "50% 50%", "tag": "INFRASTRUCTURE", "label": "STORY 01 · NEW YORK, 1881", "cap": "About 80,000 feet of copper laid under lower Manhattan." },
+    { "img": "/assets/art/story2-hero-realistic.jpg", "pos": "50% 50%", "tag": "PARTNERSHIP", "label": "STORY 02 · STRAND, 2007", "cap": "Bangalore engineering inside a global partner’s product." },
+    { "img": "/assets/art/story2-helix.jpg", "pos": "50% 50%", "tag": "ECONOMICS", "label": "STORY 02 · STRAND", "cap": "A profitable product can still hit the ceiling of its market." },
+    { "img": "/assets/art/story1-bulb.jpg", "pos": "50% 50%", "tag": "THE BREAKTHROUGH", "label": "STORY 01 · MENLO PARK, 1879", "cap": "A lamp that glowed. Everything around it came after.", "core": true },
+    { "img": "/assets/art/story2-lab.jpg", "pos": "50% 50%", "tag": "VALIDATION", "label": "STORY 02 · STRAND, 2016", "cap": "A clinical lab accredited by CAP and NABL." },
+    { "img": "/assets/art/story3-hero-realistic.jpg", "pos": "50% 50%", "tag": "INTEGRATION", "label": "STORY 03 · GPS, 1973", "cap": "Clocks, codes and orbits from three rival programmes." },
+    { "img": "/assets/art/story3-receiver.jpg", "pos": "50% 50%", "tag": "MANUFACTURING", "label": "STORY 03 · GPS, 1989", "cap": "From $3,000 handhelds to a chip in nearly every phone." },
+    { "img": "/assets/art/story3-ecosystem.jpg", "pos": "50% 50%", "tag": "ADOPTION", "label": "STORY 03 · GPS, 2000", "cap": "Farms, fleets and phones built on a free public signal." }
+  ]
+}
