@@ -9,13 +9,11 @@ const ROOT = path.join(__dirname, '..');
 const C = require('../src/data/content.cjs');
 
 const DOMAINS = {
-  'Industry 5.0': ['twara-robotics', 'kinesthetiq', 'nextoar', 'flo-mobility', 'contrivation-labs', 'spacyphy', 'sakar-robotics', 'open-science-stack', 'edgeverse', 'scivision-ai'],
-  'Defence & Aerospace': ['comrado-aerospace', 'yaanendriya', 'algobotix', 'automind-dynamics', 'astrome', 'algofet', 'guerin-technologies', 'hyflex-mobility', 'vishvasys-aerospace', 'q-axis-motors', 'qosmic', 'nxtqube', 'idle-robotics', 'a-thon'],
-  'Foundational Models': ['zenteiq', 'kinesthetiq', 'nextoar', 'venomics-ai', 'arborum-labs'],
-  Robotics: ['twara-robotics', 'yaanendriya', 'uncharted-ai', 'automind-dynamics', 'strider-robotics', 'flo-mobility', 'charukesi-health', 'sakar-robotics', 'acceleration-robotics', 'dexsent-robotics', 'idle-robotics'],
+  'Advanced Manufacturing': ['twara-robotics', 'kinesthetiq', 'nextoar', 'flo-mobility', 'contrivation-labs', 'spacyphy', 'sakar-robotics', 'open-science-stack', 'scivision-ai', 'yaanendriya', 'acceleration-robotics', 'dexsent-robotics', 'uncharted-ai', 'strider-robotics'],
+  'Defence & Aerospace': ['comrado-aerospace', 'yaanendriya', 'algobotix', 'automind-dynamics', 'algofet', 'guerin-technologies', 'hyflex-mobility', 'vishvasys-aerospace', 'q-axis-motors', 'nxtqube', 'idle-robotics', 'a-thon'],
+  'Space Tech': ['astrome', 'qosmic'],
   MedTech: ['strideaide', 'charukesi-health', 'floaid', 'venomics-ai', 'open-science-stack', 'udot'],
-  'Climate Tech': ['rootsgoods', 'hyflex-mobility', 'contrivation-labs'],
-  'Wired & Wireless': ['astrome', 'guerin-technologies', 'qosmic', 'arborum-labs'],
+  Others: ['zenteiq', 'rootsgoods', 'edgeverse', 'arborum-labs'],
 };
 const ALL = [...new Set(Object.values(DOMAINS).flat())].sort();
 
@@ -77,11 +75,11 @@ test('portfolio floating logos are the six chosen startups', () => {
 test('portfolio page: programme switch, domain sidebar with counts, 36 cards, no old sector filter', () => {
   execFileSync(process.execPath, ['tools/build.cjs'], { cwd: ROOT, stdio: 'pipe' });
   const html = fs.readFileSync(path.join(ROOT, 'dist', 'portfolio', 'index.html'), 'utf8');
-  assert.equal((html.match(/data-domain="/g) || []).length, 8);
+  assert.equal((html.match(/data-domain="/g) || []).length, 6);
   assert.equal((html.match(/data-programme="/g) || []).length, 3);
   assert.ok(!html.includes('data-sector-filter'));
   assert.equal((html.match(/data-company /g) || []).length, 36);
-  assert.match(html, /data-domain="Robotics"[^>]*>[\s\S]*?Robotics[\s\S]*?>11</);
+  assert.match(html, /data-domain="Space Tech"[^>]*>[\s\S]*?Space Tech[\s\S]*?>2</);
   assert.match(html, /data-programme-note[^>]*hidden[^>]*>Programme lists coming soon\. Showing all startups meanwhile\./);
   assert.match(html, /Company list from the ARTPARK Start Up portfolio 2026\./);
 });

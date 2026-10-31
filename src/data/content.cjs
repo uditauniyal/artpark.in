@@ -59,16 +59,14 @@ const PR = (n, i) => '/assets/recovered/portrait-' + n + '-' + i + '.webp';
 // ---------------- Portfolio (the ARTPARK Start Up portfolio 2026, 36 startups) ----------------
 // Company names, one-liners and logos come from artpark.in for the 33 listed there; the 3 newer ones are
 // written from their pages in the 2026 portfolio PDF. Startups are added and removed here, in code.
-// Domains: the user-approved mapping (2026-10-29), one or two per company. Programme (TIR / VIP) is empty
-// until the user supplies it.
+// Domains: the user's list (2026-10-31), one or two per company; Space Tech is the two space-communications
+// companies and Others is whatever fits none of the rest. Programme (TIR / VIP) is empty until the user supplies it.
 const DOMAINS = {
-  'Industry 5.0': ['twara-robotics', 'kinesthetiq', 'nextoar', 'flo-mobility', 'contrivation-labs', 'spacyphy', 'sakar-robotics', 'open-science-stack', 'edgeverse', 'scivision-ai'],
-  'Defence & Aerospace': ['comrado-aerospace', 'yaanendriya', 'algobotix', 'automind-dynamics', 'astrome', 'algofet', 'guerin-technologies', 'hyflex-mobility', 'vishvasys-aerospace', 'q-axis-motors', 'qosmic', 'nxtqube', 'idle-robotics', 'a-thon'],
-  'Foundational Models': ['zenteiq', 'kinesthetiq', 'nextoar', 'venomics-ai', 'arborum-labs'],
-  Robotics: ['twara-robotics', 'yaanendriya', 'uncharted-ai', 'automind-dynamics', 'strider-robotics', 'flo-mobility', 'charukesi-health', 'sakar-robotics', 'acceleration-robotics', 'dexsent-robotics', 'idle-robotics'],
+  'Advanced Manufacturing': ['twara-robotics', 'kinesthetiq', 'nextoar', 'flo-mobility', 'contrivation-labs', 'spacyphy', 'sakar-robotics', 'open-science-stack', 'scivision-ai', 'yaanendriya', 'acceleration-robotics', 'dexsent-robotics', 'uncharted-ai', 'strider-robotics'],
+  'Defence & Aerospace': ['comrado-aerospace', 'yaanendriya', 'algobotix', 'automind-dynamics', 'algofet', 'guerin-technologies', 'hyflex-mobility', 'vishvasys-aerospace', 'q-axis-motors', 'nxtqube', 'idle-robotics', 'a-thon'],
+  'Space Tech': ['astrome', 'qosmic'],
   MedTech: ['strideaide', 'charukesi-health', 'floaid', 'venomics-ai', 'open-science-stack', 'udot'],
-  'Climate Tech': ['rootsgoods', 'hyflex-mobility', 'contrivation-labs'],
-  'Wired & Wireless': ['astrome', 'guerin-technologies', 'qosmic', 'arborum-labs'],
+  Others: ['zenteiq', 'rootsgoods', 'edgeverse', 'arborum-labs'],
 };
 const DOMAIN_LIST = Object.keys(DOMAINS);
 const domainsOf = (slug) => DOMAIN_LIST.filter((d) => DOMAINS[d].includes(slug));

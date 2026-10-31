@@ -27,11 +27,11 @@ const base = process.argv[2] || 'http://127.0.0.1:3010';
     await m.goto(base + '/portfolio');
     r.phoneOverflow = await m.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
     r.phoneRowScrolls = await m.evaluate(() => { const a = document.querySelector('.pf-domains-list'); return a.scrollWidth > a.clientWidth; });
-    await m.click('[data-domain="Climate Tech"]');
+    await m.click('[data-domain="Space Tech"]');
     r.phoneClimateCards = await m.locator('[data-company]:visible').count();
   } catch (e) { r.exception = String(e).split('\n')[0]; }
   r.errors = errors;
-  const ok = r.medtechCards === 6 && r.medtechCount === '6 companies' && r.medtechPressed === 'true' && r.tirNote && r.tirCards === 6 && r.allNoteHidden && r.allCards === 36 && r.phoneOverflow <= 1 && r.phoneRowScrolls && r.phoneClimateCards === 3 && !errors.length && !r.exception;
+  const ok = r.medtechCards === 6 && r.medtechCount === '6 companies' && r.medtechPressed === 'true' && r.tirNote && r.tirCards === 6 && r.allNoteHidden && r.allCards === 36 && r.phoneOverflow <= 1 && r.phoneRowScrolls && r.phoneClimateCards === 2 && !errors.length && !r.exception;
   console.log(JSON.stringify({ ok, ...r }, null, 2));
   process.exitCode = ok ? 0 : 1;
   await b.close();

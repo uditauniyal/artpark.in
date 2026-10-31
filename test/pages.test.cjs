@@ -59,8 +59,8 @@ test('contact page: address text a little smaller', () => {
 test('partnerships: DST and Karnataka in the prominent spots, emblems larger', () => {
   const stage = page('partnerships').match(/<div class="float-stage"[\s\S]*?<\/div><\/div>/)[0];
   const chips = [...stage.matchAll(/<img src="([^"]+)" alt=""( style="max-height:(\d+)px")?/g)].map((m) => [m[1].split('/').pop().replace('.webp', ''), +m[3] || 0]);
-  assert.deepEqual(chips.map((c) => c[0]), ['google', 'bosch', 'indian-institute-of-science', 'government-of-karnataka', 'nvidia', 'department-of-science-technology', 'amazon-web-services', 'mit']);
-  for (const [name, h] of chips) if (/science-technology|karnataka|indian-institute/.test(name)) assert.ok(h >= 52, name);
+  assert.deepEqual(chips.map((c) => c[0]), ['google', 'bosch', 'indian-institute-of-science', 'government-of-karnataka', 'nvidia', 'department-of-science-technology', 'ministry-of-heavy-industries', 'startup-karnataka']);
+  for (const [name, h] of chips) if (/science-technology|government-of-karnataka|indian-institute/.test(name)) assert.ok(h >= 52, name);
   const hl = [...stage.matchAll(/<div class="fl fl-chip is-hl"[^>]*><span><img src="([^"]+)"/g)].map((m) => m[1].split('/').pop().replace('.webp', ''));
   assert.deepEqual(hl.sort(), ['department-of-science-technology', 'government-of-karnataka']);
 });
