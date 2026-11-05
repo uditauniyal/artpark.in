@@ -1,8 +1,11 @@
 // Home: ported from .reference/claude-design/ARTPARK-Home.dc.html, section by section.
 // Layout, spacing, copy and interactions are his. User (2026-10-31): content is the design file "ARTPARK Home.html"
-// exactly — its painted historical stories (src/data/home-design.json), no stat band, no founder quotes. The story
-// articles are not on this site, so "Read the story" is left out and the tiles and belief links open the slider.
+// exactly — its painted historical stories (src/data/home-design.json), no stat band, no founder quotes.
+// Manager (2026-11-05): as in the design, "Read the story", the collage tiles and the belief links open the three
+// long stories (src/pages/series.cjs): Story 01 /stories/light-bulb, Story 02 /stories/strand, Story 03 /stories/gps.
 const { page, esc, R } = require('../lib.cjs');
+const STORY = ['/stories/light-bulb', '/stories/strand', '/stories/gps'];
+const storyOf = (label) => STORY[+(String(label).match(/STORY 0(\d)/) || [0, 1])[1] - 1];
 const { stories, tiles } = require('../data/home-design.json');
 
 // His tile geometry, in the same order as his TILES array.
@@ -16,7 +19,7 @@ const GEO = [
 const tileHtml = tiles.map((t, i) => {
   const [l, top, w, h] = GEO[i];
   const core = !!t.core;
-  return `        <a href="#stories" class="collage-tile" data-tile="${i}"${core ? ' data-core' : ''} aria-label="${esc(t.tag + ' — ' + t.cap)}" style="--i:${i};position:absolute;left:${l};top:${top};width:${w};height:${h};z-index:${core ? 10 : i + 1};display:block;border-radius:12px;overflow:hidden;background:#fff;border:${core ? '3px solid var(--artlight)' : '3px solid #fff'};opacity:1;transition:opacity 150ms ease,border-color 150ms ease;text-decoration:none;outline-offset:3px">
+  return `        <a href="${storyOf(t.label)}" class="collage-tile" data-tile="${i}"${core ? ' data-core' : ''} aria-label="${esc(t.tag + ' — ' + t.cap)}" style="--i:${i};position:absolute;left:${l};top:${top};width:${w};height:${h};z-index:${core ? 10 : i + 1};display:block;border-radius:12px;overflow:hidden;background:#fff;border:${core ? '3px solid var(--artlight)' : '3px solid #fff'};opacity:1;transition:opacity 150ms ease,border-color 150ms ease;text-decoration:none;outline-offset:3px">
           <div class="tile-img" role="img" aria-hidden="true" style="width:100%;height:100%;background-image:url(${t.img});background-size:cover;background-position:${t.pos}"></div>
           <span style="position:absolute;left:10px;top:10px;background:${core ? 'var(--artlight)' : 'rgba(255,255,255,0.94)'};color:var(--artblue);padding:4px 9px;border-radius:999px;font-size:clamp(8.5px,0.85vw,10px);font-weight:700;letter-spacing:0.08em;max-width:calc(100% - 20px);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;box-sizing:border-box">${esc(t.tag)}</span>
           <div data-cap style="position:absolute;left:0;right:0;bottom:0;background:var(--artblue);color:#fff;padding:12px 14px;opacity:0;transition:opacity 150ms ease">
@@ -74,6 +77,7 @@ const slide = (s, i) => `      <div class="hero-slide" data-slide="${i}" aria-hi
             <p style="margin-top:24px;font-size:18px;line-height:1.7;color:var(--ink);max-width:560px;text-wrap:pretty">${s.lead}</p>
             <p style="margin-top:14px;font-size:16px;line-height:1.7;color:var(--ink-soft);max-width:540px;text-wrap:pretty">${s.sub}</p>
             <div style="margin-top:32px;display:flex;flex-wrap:wrap;align-items:center;gap:20px">
+              <a class="btn btn-primary" href="${STORY[i]}" tabindex="${i === 0 ? 0 : -1}">Read the story <span class="arrow">→</span></a>
               <span style="font-size:13px;color:var(--ink-soft)">${esc(s.meta)}</span>
             </div>
           </div>
@@ -131,7 +135,7 @@ const believe = `
       <div style="margin-top:28px;border-top:1px solid var(--line-strong)">
 ${BELIEFS.map(([n, h, p, link]) => `        <div class="belief-row" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px 40px;padding:20px 0;border-bottom:1px solid var(--line-strong)">
           <div style="display:flex;gap:20px;align-items:baseline"><span style="font-family:var(--font-display);font-weight:700;font-size:14px;color:var(--artblue)">${n}</span><h3 style="font-size:24px;line-height:1.2">${esc(h)}</h3></div>
-          <div style="display:flex;flex-direction:column;gap:12px"><p style="font-size:16px;line-height:1.7;color:var(--ink-soft)">${esc(p)}</p>${link ? `<a href="#stories" style="font-size:14px;font-weight:600">${link}</a>` : ''}</div>
+          <div style="display:flex;flex-direction:column;gap:12px"><p style="font-size:16px;line-height:1.7;color:var(--ink-soft)">${esc(p)}</p>${link ? `<a href="${STORY[+n - 1]}" style="font-size:14px;font-weight:600">${link}</a>` : ''}</div>
         </div>`).join('\n')}
       </div>
     </div>

@@ -104,7 +104,6 @@ test('home matches the design: historical stories, painted art, no stats or foun
   assert.deepEqual(h2.slice(0, 3), ['The light bulb was only the beginning.', 'From computational biology to a business built on science.', 'GPS became much more than a way to find your location.']);
   assert.ok(!h2.includes('In their own words.'));
   assert.ok(!html.includes('id="founders"') && !html.includes('stat-band'));
-  assert.ok(!/Read the story/.test(html));
   assert.match(html, /These are historical case studies\. ARTPARK was not involved in any of them\./);
   assert.match(html, /Hover over a picture or a label to see where it comes from in the stories\./);
   assert.match(html, /Edison's three-wire distribution scheme sharply reduced the copper needed/);
@@ -112,5 +111,8 @@ test('home matches the design: historical stories, painted art, no stats or foun
   const art = [...new Set([...html.matchAll(/\/assets\/art\/([\w-]+\.jpg)/g)].map((m) => m[1]))];
   assert.equal(art.length, 9);
   for (const f of art) assert.ok(fs.existsSync(path.join(ROOT, 'public', 'assets', 'art', f)), f);
-  assert.ok(!/href="\/stories\//.test(html));
+  // Manager (2026-11-05): as in the design, the series links open the three long stories.
+  assert.deepEqual([...html.matchAll(/<a class="btn btn-primary" href="([^"]+)"[^>]*>Read the story/g)].map((m) => m[1]), ['/stories/light-bulb', '/stories/strand', '/stories/gps']);
+  assert.deepEqual([...html.matchAll(/<a href="([^"]+)"[^>]*>From Story 0\d →/g)].map((m) => m[1]), ['/stories/light-bulb', '/stories/strand', '/stories/gps']);
+  for (const slug of ['light-bulb', 'strand', 'gps']) assert.ok(fs.existsSync(path.join(ROOT, 'dist', 'stories', slug, 'index.html')), slug);
 });
