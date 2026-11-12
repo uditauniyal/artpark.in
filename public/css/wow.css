@@ -69,7 +69,7 @@
 .t-track li.is-done i { border-color: var(--artblue); background: var(--artblue); box-shadow: 0 0 0 4px rgba(50,19,183,.12); }
 .t-track li.is-done span { color: var(--ink); font-weight: 600; }
 .t-track small { font-size: 11.5px; color: var(--artblue); }
-.t-row { transition: background-color 250ms ease; }
+.t-row { transition: background-color 250ms ease; padding-left: 20px; padding-right: 20px; }
 .t-row:hover { background: linear-gradient(90deg, rgba(170,252,240,.28), rgba(170,252,240,0) 60%); }
 .t-docs { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; max-width: 980px; }
 .t-doc { display: flex; flex-direction: column; gap: 10px; padding: 16px 18px; border: 1px solid var(--line); border-radius: 12px; background: var(--paper); text-decoration: none; color: var(--ink); transition: transform 300ms cubic-bezier(.22,.8,.24,1), border-color 200ms ease, box-shadow 300ms ease; }
@@ -89,7 +89,7 @@
 .t-track li.is-done i { border-color: var(--artblue); background: var(--artblue); box-shadow: 0 0 0 4px rgba(50,19,183,.12); }
 .t-track li.is-done span { color: var(--ink); font-weight: 600; }
 .t-track small { font-size: 11.5px; color: var(--artblue); }
-.t-row { transition: background-color 250ms ease; }
+.t-row { transition: background-color 250ms ease; padding-left: 20px; padding-right: 20px; }
 .t-row:hover { background: linear-gradient(90deg, rgba(170,252,240,.28), rgba(170,252,240,0) 60%); }
 .t-docs { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; max-width: 980px; }
 .t-doc { display: flex; flex-direction: column; gap: 10px; padding: 16px 18px; border: 1px solid var(--line); border-radius: 12px; background: var(--paper); text-decoration: none; color: var(--ink); transition: transform 300ms cubic-bezier(.22,.8,.24,1), border-color 200ms ease, box-shadow 300ms ease; }
@@ -106,3 +106,11 @@
 }
 /* Highlighted chips (Partnerships: DST, Government of Karnataka). */
 .fl-chip.is-hl > span { border: 1.5px solid #c9c2ef; box-shadow: 0 26px 48px -22px rgba(50, 19, 183, .55); }
+
+/* Manager (2026-11-12, Claude Design): tender rows without the Type column; title left, status and View right. */
+.t-row > div:first-child { grid-template-columns: minmax(0,1fr) auto !important; column-gap: 28px !important; }
+.t-row > div:first-child > div:first-child { grid-column: auto !important; }
+@media (max-width: 760px) { .t-row > div:first-child { grid-template-columns: minmax(0,1fr) !important; } }
+
+.t-row > div:first-child > div:last-child { justify-content: flex-end !important; gap: 16px !important; align-self: end; padding-bottom: 2px; }
+@media (max-width: 760px) { .t-row > div:first-child > div:last-child { justify-content: space-between !important; } }

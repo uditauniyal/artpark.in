@@ -38,28 +38,27 @@ const opening = `
   <!-- A. Opening — collage -->
   <section data-screen-label="Opening" class="opening" style="position:relative;background:var(--paper);padding:clamp(20px,2.5vw,32px) 0 clamp(24px,3vw,36px);overflow:hidden">
     <div style="position:relative;max-width:1180px;margin:0 auto;padding:0 24px;text-align:center;display:flex;flex-direction:column;align-items:center">
-      <span style="font-size:11px;font-weight:600;letter-spacing:0.16em;color:var(--ink-dim)">STORIES FROM ARTPARK · IISC BENGALURU</span>
+      <span style="font-size:11px;font-weight:600;letter-spacing:0.16em;color:var(--ink-dim)">INSPIRING STORIES FORMING OUR BELIEF</span>
       <h1 style="font-size:clamp(42px,6.4vw,84px);line-height:1.02;letter-spacing:-0.015em;margin-top:14px;max-width:1000px">The breakthrough is only the <span class="hl">beginning</span>.</h1>
       <p style="margin-top:16px;max-width:640px;font-size:clamp(16px,1.6vw,19px);line-height:1.6;color:var(--ink-soft);text-wrap:balance">A result in the lab tells you what might be possible. Making it real takes another body of work — and much of that work is invention too.</p>
     </div>
 
+    <!-- Manager (2026-11-12, Claude Design): the labels and the two buttons sit above the pictures, "to make it intuitive". -->
     <div class="collage" data-collage style="max-width:1240px;margin:clamp(28px,3.5vw,44px) auto 0;padding:0 24px">
-      <div class="collage-stage" style="position:relative;width:100%;aspect-ratio:1180/520;min-height:340px">
-${tileHtml}
-      </div>
-
-      <div style="margin-top:28px;display:flex;flex-direction:column;align-items:center;gap:14px">
+      <div style="margin-bottom:28px;display:flex;flex-direction:column;align-items:center;gap:14px">
         <p style="font-family:var(--font-display);font-weight:700;font-size:clamp(17px,1.7vw,20px);text-align:center">One breakthrough. Eight more things it took.</p>
         <div class="collage-chips" style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px">
 ${chipHtml}
         </div>
         <p data-collage-hint style="font-size:13px;color:var(--ink-dim);text-align:center">Hover over a picture or a label to see where it comes from in the stories.</p>
       </div>
-    </div>
-
-    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:20px;padding:0 24px">
-      <a class="btn btn-primary" href="#stories">Read the stories <span class="arrow">→</span></a>
-      <a class="btn btn-ghost" href="#building">What ARTPARK is building</a>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin:0 0 28px;padding:0 24px">
+        <a class="btn btn-primary" href="#stories">Read the stories <span class="arrow">→</span></a>
+        <a class="btn btn-ghost" href="#building">What ARTPARK is building</a>
+      </div>
+      <div class="collage-stage" style="position:relative;width:100%;aspect-ratio:1180/520;min-height:340px">
+${tileHtml}
+      </div>
     </div>
 
   </section>`;

@@ -1,11 +1,12 @@
 // About section: ported from .reference/claude-design/About-*.dc.html, filled with artpark.in content.
 const L = require('../lib.cjs');
-const { esc, page, pageIntro, ABOUT_TABS, R, sectionHead, rows, statGrid, photoGrid, figure, quote, linkRows, wrap, section } = L;
+const { esc, page, pageIntro, R, sectionHead, rows, statGrid, photoGrid, figure, quote, linkRows, wrap, section } = L;
 const C = require('../data/content.cjs');
 const P = require('../data/programs.cjs');
 const PJ = require('./projects.cjs');
 
-const intro = (current, h1, lede) => pageIntro({ eyebrow: 'About ARTPARK', h1, lede, tabs: { current, items: ABOUT_TABS } });
+// Manager (2026-11-12, Claude Design): no sub-tab row under the About intros; the About menu covers it.
+const intro = (current, h1, lede) => pageIntro({ eyebrow: 'About ARTPARK', h1, lede });
 
 // ---------- Our Team (About-Our-Team.dc.html) ----------
 // His leadership card (4:5 portrait, name, role), now used for every group since portraits exist.
@@ -58,12 +59,19 @@ const MODELS = [
   ['heart', 'Model B', 'Social non-profit', 'When the beneficiary is a population underserved by market forces, and the intervention is too important to leave to commercial incentives, we build a non-profit initiative.', '/assets/site/hrp-training.webp', 'the high-risk pregnancy copilot', '/projects/hrp-copilot'],
   ['globe', 'Model C', 'Digital public good', 'When an open tool or platform can unlock value across an entire sector, we build it as a digital public good, designed for adoption and national integration.', '/assets/paint/slide-vaani.webp', 'Project Vaani', '/stories/vaani'],
 ];
+// Manager (2026-11-12, Claude Design): "Where we work." split into the domains and the horizontal capabilities.
 const FOCUS = [
-  ['Healthcare', 'Dengue and heat-risk forecasting live in Karnataka, a WhatsApp copilot for 3,000+ frontline health workers, AI screening for oral cancer and TB, and One Health surveillance.', '/assets/site/oral-screening.webp', R.programs + '/health'],
-  ['Mobility', 'Drones that land and recharge on their own, 5G drone corridors, the InterSafe road-safety pilot, and autonomy and navigation stacks for vehicles.', '/assets/site/drone-room.webp', R.programs + '/wired-wireless'],
-  ['Agriculture', 'AI that grades crop quality, the Agri Robotics Centre of Excellence, livestock disease strategy, and speech data for farmers in their own languages.', '/assets/founders/rootsgoods-pusa-krishi.webp', '/stories/rootsgoods'],
-  ['Industrial automation', 'CAMRAS, the Industry 5.0 platform for MSMEs, robotic actuators, quadrupeds and humanoids built and tested at ARTgarage.', '/assets/site/quadruped-team.webp', R.programs + '/advanced-robotics'],
-  ['Education', 'Spark sessions for founders, UG-PG fellowships, internships, robotics challenges and 5G courses through the ARTPARK Academy.', '/assets/site/skilling-session.webp', R.programs + '/academy'],
+  ['DOMAINS WE WORK IN', [
+    ['Aerospace & Defence', 'Sovereign capability for India’s skies and borders — unmanned aerial systems, rugged all-terrain platforms, and guidance and navigation that hold up where GPS is jammed or denied.', '/assets/founders/comrado-aerospace-vtol-render.webp', '/stories/comrado-aerospace'],
+    ['Space Technology', 'Hardware for a growing private space economy — satellite communications, novel antennas and space-qualified subsystems, built on decades of IISc research.', '/assets/founders/astrome-team.webp', '/stories/astrome'],
+    ['Medtech', 'Affordable medical devices designed for Indian clinics — from rehabilitation robotics and cardiac-assist devices to AI-led screening that reaches patients earlier.', '/assets/founders/charukesi-health-device.webp', '/stories/charukesi-health'],
+    ['Advanced Manufacturing', 'Making Indian factories smarter and more competitive — digital twins, robotic automation and precision components that bring Industry 5.0 within reach of MSMEs.', '/assets/site/robot-training.webp', R.programs + '/industry-5'],
+  ]],
+  ['HORIZONTAL CAPABILITIES WE BACK', [
+    ['Robotics', 'Machines that sense, move and manipulate in the real world — humanoids, legged robots, dexterous grippers and fleets that work together reliably.', '/assets/site/quadruped-team.webp', R.programs + '/advanced-robotics'],
+    ['AI', 'Models and data built for India — speech and language AI for every dialect, physical-interaction data that teaches robots, and AI that turns signals into decisions.', '/assets/site/vaani-terminal.webp', R.programs + '/language'],
+    ['Autonomous Systems', 'Systems that operate without a human at the controls — off-road vehicles, self-charging drones and navigation for mines, tunnels and other places with no GPS or map.', '/assets/founders/uncharted-ai-autosurveyor.webp', '/stories/uncharted-ai'],
+  ]],
 ];
 const trlArc = `<div class="trl reveal" style="margin-top:32px">
         <div class="trl-scale">${Array.from({ length: 10 }, (_, n) => `<span class="trl-tick${n <= 6 ? ' is-in' : ''}" style="--n:${n}"><b>${n}</b></span>`).join('')}</div>
@@ -103,9 +111,10 @@ ${MODELS.map(([ic, k, h, p, img, ex, href]) => `        <a class="model-card" hr
     </section>
     <section class="reveal" style="padding:64px 0 0">
       ${sectionHead('Focus areas', 'Where we work.')}
-      <div style="margin-top:28px;border-top:1px solid var(--line-strong)">
-${FOCUS.map(([h, p, img, href]) => `        <a class="focus-row" href="${href}"><div class="focus-img"><img src="${img}" alt="" loading="lazy"></div><h3 style="font-size:20px">${esc(h)}</h3><p style="font-size:15px;line-height:1.6;color:var(--ink-soft)">${esc(p)}</p><span class="focus-go" aria-hidden="true">→</span></a>`).join('\n')}
-      </div>
+${FOCUS.map(([label, items]) => `      <div style="margin-top:40px;font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:0.14em;color:var(--ink-dim)">${esc(label)}</div>
+      <div style="margin-top:14px;border-top:1px solid var(--line-strong)">
+${items.map(([h, p, img, href]) => `        <a class="focus-row" href="${href}"><div class="focus-img"><img src="${img}" alt="" loading="lazy"></div><h3 style="font-size:20px">${esc(h)}</h3><p style="font-size:15px;line-height:1.6;color:var(--ink-soft)">${esc(p)}</p><span class="focus-go" aria-hidden="true">→</span></a>`).join('\n')}
+      </div>`).join('\n')}
     </section>
   </div>`,
     scripts: ['/js/motion.js'],
@@ -121,7 +130,7 @@ const facilitiesPage = {
     description: 'The labs and infrastructure teams can use at ARTPARK, and the programs through which they come in.',
     body: intro('facilities', 'Facilities &amp; offerings.', 'The labs and infrastructure teams can use, and the programs through which they come in.') + '\n' + wrap([
       section(`${sectionHead('Facilities', 'Where the building and testing happens.')}
-      ${photoGrid(P.facilities.map((f) => ({ image: f.image, alt: f.alt, title: f.name, text: f.text, href: f.href, label: f.render ? 'VISION RENDER' : '' })))}`, { label: 'Facilities' }),
+      ${photoGrid(P.facilities.filter((f) => f.href !== R.facilities + '/brainz').map((f) =>({ image: f.image, alt: f.alt, title: f.name, text: f.text, href: f.href, label: f.render ? 'VISION RENDER' : '' })))}`, { label: 'Facilities' }),
       `    <section data-screen-label="Offerings" style="padding:64px 0 0">
       ${sectionHead('Offerings', 'Ways to work with ARTPARK.')}
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:32px">
@@ -155,17 +164,23 @@ ${C.certifications.map((c, i) => `      <div style="border-bottom:${i === C.cert
   }),
 };
 
-// ---------- Other Programs (About-Other-Programs.dc.html) ----------
+// ---------- Programs (About-Other-Programs.dc.html; renamed "Our programs" by the manager, 2026-11-12) ----------
 const DOT = { ONGOING: '', NEW: 'green', OPEN: 'green', CLOSED: 'coral' };
+const progText = (status, dot, name, short) => `<div style="display:flex;flex-direction:column;gap:8px"><span style="display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:0.14em;color:var(--ink-dim)"><span class="dot ${dot}"></span>${status}</span><h3 style="font-size:22px">${esc(name)}</h3><p style="font-size:15px;line-height:1.65;color:var(--ink-soft)">${esc(short)}</p><span style="font-size:14px;font-weight:600;color:var(--artblue);text-decoration:underline">Learn more →</span></div>`;
+// TIR and VIP: a coloured tile with the track's initials in place of a photograph.
+const ventureRows = P.venture.map((v) => `<a id="${v.slug}" class="prog-row" href="${R.programs}/${v.slug}" style="--i:0"><div class="prog-img" style="background:${v.bg};display:flex;align-items:center;justify-content:center"><span style="font-family:var(--font-display);font-weight:700;font-size:clamp(28px,4vw,44px);color:#fff;letter-spacing:0.02em">${v.label}</span></div>${progText(v.status, '', v.name, v.short)}</a>`).join('');
+const progImg = (p) => p.logo
+  ? `<div class="prog-img" style="background:#fff;border:1px solid var(--line)"><img src="${p.image}" alt="${esc(p.imageAlt)}" loading="lazy" style="object-fit:contain;object-position:50% 50%;padding:12%;box-sizing:border-box;background:#fff"></div>`
+  : `<div class="prog-img"><img src="${p.image}" alt="" loading="lazy" style="object-fit:${p.fit || 'cover'};object-position:${p.imagePos || '50% 50%'}"></div>`;
 const programsList = {
   route: R.programs,
   html: () => page({
-    title: 'Other Programs — ARTPARK', active: 'about', sub: 'programs',
+    title: 'Our Programs — ARTPARK', active: 'about', sub: 'programs',
     description: 'ARTPARK’s research and innovation programs beyond the residency and incubation tracks.',
-    body: intro('programs', 'Other programs.', 'Initiatives beyond the residency and incubation tracks: research programs, centres of excellence and the academy.') + `
+    body: pageIntro({ eyebrow: 'About ARTPARK', h1: 'Our programs.', lede: 'ARTPARK’s programs span three tracks: <strong style="color:var(--ink)">Venture Building</strong> backs researchers and startups taking deep-tech from lab to market; <strong style="color:var(--ink)">Centres of Excellence</strong> drive mission-led research in robotics, health, language and connectivity; and the <strong style="color:var(--ink)">Academy</strong> builds the talent to deploy it.' }) + `
   <div style="max-width:1180px;margin:0 auto;padding:64px 24px 112px">
     <div style="border-top:1px solid var(--line-strong)">
-${P.programs.map((p, i) => `      <a id="${p.slug}" class="prog-row" href="${R.programs}/${p.slug}" style="--i:${i}"><div class="prog-img"><img src="${p.image}" alt="" loading="lazy" style="object-fit:${p.fit || 'cover'};object-position:${p.imagePos || '50% 50%'}"></div><div style="display:flex;flex-direction:column;gap:8px"><span style="display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:0.14em;color:var(--ink-dim)"><span class="dot ${DOT[p.status]}"></span>${p.status}</span><h3 style="font-size:22px">${esc(p.name)}</h3><p style="font-size:15px;line-height:1.65;color:var(--ink-soft)">${esc(p.short)}</p><span style="font-size:14px;font-weight:600;color:var(--artblue);text-decoration:underline">Learn more →</span></div></a>`).join('\n')}
+${P.programs.map((p, i) => `      ${i === 0 ? ventureRows : ''}<a id="${p.slug}" class="prog-row" href="${R.programs}/${p.slug}" style="--i:${i}">${progImg(p)}${progText(p.status, DOT[p.status], p.name, p.short)}</a>`).join('\n')}
     </div>
   </div>`,
   }),
@@ -176,7 +191,7 @@ const programPage = (p) => ({
   route: `${R.programs}/${p.slug}`,
   html: () => page({
     title: `${p.name} — ARTPARK`, active: 'about', sub: 'programs', description: p.short,
-    body: pageIntro({ eyebrow: 'Other programs', h1: esc(p.name) + '.', lede: esc(p.lede) }) + `
+    body: pageIntro({ eyebrow: 'Programs', h1: esc(p.name) + '.', lede: esc(p.lede) }) + `
   <div style="max-width:1180px;margin:0 auto;padding:48px 24px 0">
     ${figure({ image: p.image, alt: p.imageAlt, caption: p.caption, pos: p.imagePos || '50% 50%', fit: p.fit || 'cover', ratio: p.fit === 'contain' ? '16/9' : '21/9' })}
   </div>
@@ -247,4 +262,4 @@ const brainzPage = {
   }),
 };
 
-module.exports = [team, approach, facilitiesPage, certifications, programsList, ...P.programs.map(programPage), artgaragePage, brainzPage];
+module.exports = [team, approach, facilitiesPage, certifications, programsList, ...P.programs.filter((p) => !p.imported).map(programPage), artgaragePage, brainzPage];

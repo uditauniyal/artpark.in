@@ -1,12 +1,12 @@
 // Team page: three design versions for the user to choose from (round 8; manager: "About (Team details) needs update").
 // Preview-only routes /about/team/v1, /v2, /v3 and an index at /about/team/versions. Not linked from the site.
 // People, roles, portraits, LinkedIn and expertise areas come from src/data/team.cjs (artpark.in); nothing is invented.
-const { esc, page, pageIntro, ABOUT_TABS, R } = require('../lib.cjs');
+const { esc, page, pageIntro, R } = require('../lib.cjs');
 const T = require('../data/team.cjs');
 
 const LABEL = Object.fromEntries(T.GROUPS.map(([g, l]) => [g, l]));
 const SHORT = { leadership: 'Leadership', governing: 'Governing board', directors: 'Board of directors', research: 'Research advisory', advisors: 'Executive advisors' };
-const intro = pageIntro({ eyebrow: 'About ARTPARK', h1: 'Our team.', lede: 'The people who lead ARTPARK and the boards that govern and advise it.', tabs: { current: 'team', items: ABOUT_TABS } });
+const intro = pageIntro({ eyebrow: 'About ARTPARK', h1: 'Our team.', lede: 'The people who lead ARTPARK and the boards that govern and advise it.' });
 const li = (p, cls = '') => p.linkedin ? `<a class="${cls}" href="${p.linkedin}" target="_blank" rel="noopener" aria-label="${esc(p.name)} on LinkedIn">LinkedIn <span class="arrow">↗</span></a>` : '';
 const groupPills = (p) => p.groups.map((g) => `<span class="tv-pill is-${g}">${esc(SHORT[g])}</span>`).join('');
 const areaTags = (p) => p.areas.length ? `<div class="tv-areas">${p.areas.map((a) => `<span>${esc(a)}</span>`).join('')}</div>` : '';

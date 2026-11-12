@@ -141,7 +141,6 @@ ${C.tenders.map((t) => `      <div data-item data-status="${t.status}" class="t-
             <div style="font-size:13.5px;color:var(--ink-soft);margin-top:4px">${t.docs.length ? t.docs.length + (t.docs.length === 1 ? ' document' : ' documents') : 'Document on request'}</div>
             ${t.status === 'rfp' ? '' : stageTrack(t)}
           </div>
-          <div style="font-size:14px"><span style="display:block;font-size:11px;font-weight:600;letter-spacing:0.14em;color:var(--ink-dim)">TYPE</span>${t.status === 'rfp' ? 'RFP' : 'Tender'}</div>
           <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
             <span style="display:flex;align-items:center;gap:8px;font-size:13.5px"><span class="dot ${STATUS[t.status][1]}"></span>${STATUS[t.status][0]}</span>
             <button type="button" class="btn btn-ghost" data-open aria-expanded="false" aria-controls="tender-${t.id}" style="padding:8px 14px">View <span class="arrow">→</span></button>

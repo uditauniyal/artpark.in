@@ -132,16 +132,20 @@ const programs = [
     sources: ['https://www.artpark.in/artlabs'],
   },
   {
-    slug: 'rdi', status: 'NEW', name: 'RDI Fund · Focused Research Organisation',
-    short: 'ARTPARK was selected as one of five Focused Research Organisations among the 19 shortlisted members of the inaugural RDI Fund cohort.',
-    lede: 'ARTPARK has announced its selection as one of five Focused Research Organisations among the 19 shortlisted members of the inaugural cohort of the national Research, Development and Innovation (RDI) Fund.',
-    image: '/assets/linkedin/rdi-milestone.jpg', imageAlt: 'ARTPARK’s announcement of the first RDI cohort', fit: 'contain', caption: 'From ARTPARK’s announcement.',
-    rows: [
-      ['What it means', 'A step towards connecting research with commercial deployment: R&D and innovation projects moving toward deployment, at national scale.'],
-    ],
-    links: [['Read ARTPARK’s announcement', 'https://www.linkedin.com/feed/update/urn:li:activity:7516090774808072192/'], ['About the national RDI Fund', 'https://www.anrfonline.in/']],
-    sources: ['ARTPARK LinkedIn post (October 2026)'],
+    // Manager (2026-11-12, Claude Design): renamed to the RDI Scheme, shown with the RDI logo. The page itself is his,
+    // imported verbatim (src/pages/program-pages.cjs), so it is not built from these fields.
+    slug: 'rdi', status: 'NEW', name: 'RDI Scheme · Focused Research Organisation', imported: true,
+    short: 'ARTPARK deploys the Government of India RDI Scheme as a Focused Research Organisation. Express interest for your startup.',
+    image: '/assets/brand/rdi-logo.png', imageAlt: 'RDI — Research Development & Innovation', logo: true, fit: 'contain',
+    sources: ['ARTPARK LinkedIn post (October 2026)', 'Manager, Claude Design (2026-11-12)'],
   },
+];
+
+// Manager (2026-11-12, Claude Design): the two venture-building tracks lead the Programs list, with their own pages
+// (src/pages/program-pages.cjs).
+const venture = [
+  { slug: 'tir', label: 'TIR', bg: 'var(--artblue)', status: 'OPEN · VENTURE BUILDING', name: 'Technology Innovator in Residence', short: 'Six months, ₹25L at 0% equity and IISc infrastructure for researchers with lab-proven, TRL 3 technology — and no company yet.' },
+  { slug: 'vip', label: 'VIP', bg: 'var(--accent-violet)', status: 'OPEN · VENTURE BUILDING', name: 'Venture Incubation Programme', short: 'Direct investment and venture building support for incorporated Indian startups with TRL 4+ technology and a pitch-ready proposition.' },
 ];
 
 const facilities = [
@@ -179,7 +183,7 @@ const brainz = {
   source: 'https://www.artpark.in/brainz',
 };
 
-module.exports = { programs, facilities, artgarage, brainz };
+module.exports = { programs, venture, facilities, artgarage, brainz };
 
 // Real destinations that artpark.in links to from each programme (captured in research/artpark-media.json).
 module.exports.resources = {

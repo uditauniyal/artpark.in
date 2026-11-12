@@ -116,3 +116,42 @@ test('home matches the design: historical stories, painted art, no stats or foun
   assert.deepEqual([...html.matchAll(/<a href="([^"]+)"[^>]*>From Story 0\d →/g)].map((m) => m[1]), ['/stories/light-bulb', '/stories/strand', '/stories/gps']);
   for (const slug of ['light-bulb', 'strand', 'gps']) assert.ok(fs.existsSync(path.join(ROOT, 'dist', 'stories', slug, 'index.html')), slug);
 });
+
+// Manager (2026-11-12, Claude Design export "ARTPARK website v2.html"): home labels above the pictures, site-wide
+// header/footer changes, About without sub-tabs, "Our programs" with TIR and VIP, the RDI Scheme page, tenders without Type.
+test('manager changes of 2026-11-12', () => {
+  build();
+  const home = page('');
+  assert.match(home, /INSPIRING STORIES FORMING OUR BELIEF/);
+  const chips = home.indexOf('class="collage-chips"'), buttons = home.indexOf('>Read the stories <'), stage = home.indexOf('class="collage-stage"');
+  assert.ok(chips > 0 && chips < buttons && buttons < stage, 'labels, then buttons, then the pictures');
+  for (const route of ['', 'tenders', 'about/programs/tir']) {
+    const html = page(route);
+    assert.ok(!html.includes('Technology Park · IISc Bengaluru</span>'), route + ': no tagline in the top bar');
+    assert.ok(!html.includes('Founder stories are drawn from ARTPARK interviews'), route);
+    assert.match(html, /aria-label="ARTPARK on LinkedIn"/);
+    assert.ok(!html.includes('Other Programs') && !html.includes('Other programs'), route);
+  }
+  for (const route of ['about/team', 'about/approach', 'about/facilities', 'about/certifications', 'about/programs', 'about/team/v1']) assert.ok(!page(route).includes('class="sub-tabs"'), route);
+  assert.match(page('about/approach'), /DOMAINS WE WORK IN[\s\S]*HORIZONTAL CAPABILITIES WE BACK/);
+  assert.ok(!page('about/facilities').includes('BRAINz campus</div>'));
+  const programs = page('about/programs');
+  assert.match(programs, /<h1[^>]*>Our <span class="tt">programs\.<\/span><\/h1>/);
+  assert.deepEqual([...programs.matchAll(/<a id="([\w-]+)" class="prog-row"/g)].map((m) => m[1]).slice(0, 3), ['tir', 'vip', 'advanced-robotics']);
+  assert.match(programs, /RDI Scheme · Focused Research Organisation/);
+  assert.match(page('about/programs/tir'), /href="https:\/\/apply\.artpark\.info\/apply\/signup\?track=tir"/);
+  assert.match(page('about/programs/vip'), /href="https:\/\/apply\.artpark\.info\/apply-sip\/signup\?track=sip"/);
+  assert.ok(!page('tenders').includes('>TYPE</span>'));
+});
+
+// User (2026-11-13): his RDI form sent nothing. It opens the email app to connect@artpark.in like the other forms,
+// with a link to the pitch deck in place of an upload (an email app cannot attach files).
+test('RDI express-interest form hands off to the email app', () => {
+  const html = page('about/programs/rdi');
+  assert.match(html, /ARTPARK now deploys the <span class="hl">RDI Scheme<\/span>/);
+  assert.ok(!html.includes('type="file"'));
+  assert.match(html, /<input id="rdi-deck" name="deck" type="url"[^>]*required/);
+  assert.match(html, /mailto:connect@artpark\.in\?subject='\+encodeURIComponent\('RDI interest: '/);
+  assert.match(html, /Your email app should have opened with your details addressed to connect@artpark\.in\./);
+  assert.ok(!html.includes('We\'ve received your details'));
+});
