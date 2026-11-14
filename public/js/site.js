@@ -441,6 +441,22 @@
     onScroll();
   }
 
+  // ---------- Year filters (News, Past events): show one year's rows ----------
+  document.querySelectorAll('[data-years]').forEach(function (bar) {
+    var key = bar.getAttribute('data-years');
+    var rows = document.querySelectorAll('[data-row-year^="' + key + ':"]');
+    var count = document.querySelector('[data-years-count="' + key + '"]');
+    var noun = count.getAttribute('data-noun');
+    bar.querySelectorAll('button').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var y = b.getAttribute('data-year'), n = 0;
+        bar.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+        rows.forEach(function (r) { var on = y === 'All' || r.getAttribute('data-row-year') === key + ':' + y; r.hidden = !on; if (on) n++; });
+        count.textContent = n + ' ' + noun + (n === 1 ? '' : 's');
+      });
+    });
+  });
+
   // ---------- Certifications: show the description under a row ----------
   document.querySelectorAll('[data-cert-toggle]').forEach(function (b) {
     b.addEventListener('click', function () {

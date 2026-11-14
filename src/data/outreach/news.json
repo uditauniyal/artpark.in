@@ -1,11 +1,211 @@
 [
   {
+    "id": "forecasthub-predicting-disease-outbreaks",
+    "title": "ForecastHub: Predicting Disease Outbreaks",
+    "outlet": "Open Source For You",
+    "date": "2026-10-27",
+    "dateLabel": "27 October 2026",
+    "url": "https://www.opensourceforu.com/2026/10/forecasthub-predicting-disease-outbreaks/"
+  },
+  {
+    "id": "karnataka-plans-artpark-expansion-for-ai-robotics-priyank-kharge",
+    "title": "Karnataka plans ARTPARK expansion for AI, robotics: Priyank Kharge",
+    "outlet": "Deccan Herald",
+    "date": "2026-10-23",
+    "dateLabel": "23 October 2026",
+    "url": "https://www.deccanherald.com/business/karnataka-plans-artpark-expansion-for-ai-robotics-priyank-kharge-4191961"
+  },
+  {
+    "id": "artpark-among-5-orgs-to-get-central-grants",
+    "title": "ARTPARK among 5 orgs to get Central grants",
+    "outlet": "The New Indian Express",
+    "date": "2026-10-23",
+    "dateLabel": "23 October 2026",
+    "url": "https://www.newindianexpress.com/states/karnataka/2026/Oct/23/artpark-among-5-orgs-to-get-central-grants"
+  },
+  {
+    "id": "minister-priyank-kharge-meets-artpark-team-to-strengthen-plans-on-prototyping-ma",
+    "title": "Minister Priyank Kharge meets ARTPARK team to strengthen plans on prototyping, manufacturing and shared R&D capabilities",
+    "outlet": "ET Enterprise AI (The Economic Times)",
+    "date": "2026-10-23",
+    "dateLabel": "23 October 2026",
+    "url": "https://enterpriseai.economictimes.indiatimes.com/news/industry/minister-priyank-kharge-meets-artpark-team-to-strengthen-plans-on-prototyping-manufacturing-and-shared-rd-capabilities/135140115"
+  },
+  {
+    "id": "karnataka-plans-ai-robotics-innovation-zone-through-artpark",
+    "title": "Karnataka plans AI, robotics innovation zone through ARTPARK",
+    "outlet": "The Economic Times",
+    "date": "2026-10-22",
+    "dateLabel": "22 October 2026",
+    "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/karnataka-plans-ai-robotics-innovation-zone-through-artpark/articleshow/135121828.cms"
+  },
+  {
+    "id": "karnataka-it-minister-priyank-kharge-discusses-artpark-expansion-to-boost-ai-rob",
+    "title": "Karnataka IT minister Priyank Kharge discusses ARTPARK expansion to boost AI, robotics",
+    "outlet": "ET Government (The Economic Times)",
+    "date": "2026-10-22",
+    "dateLabel": "22 October 2026",
+    "url": "https://government.economictimes.indiatimes.com/news/digital-india/karnataka-it-minister-priyank-kharge-discusses-artpark-expansion-to-boost-ai-robotics/135119754"
+  },
+  {
+    "id": "minister-priyank-kharge-meets-artpark-team-to-strengthen-plans-on-prototypin-2",
+    "title": "Minister Priyank Kharge meets ARTPARK team to strengthen plans on prototyping, manufacturing and shared R&D capabilities",
+    "outlet": "ANI",
+    "date": "2026-10-22",
+    "dateLabel": "22 October 2026",
+    "url": "https://www.aninews.in/news/national/general-news/minister-priyank-kharge-meets-artpark-team-to-strengthen-plans-on-prototyping-manufacturing-and-shared-rampd-capabilities20261022231103/"
+  },
+  {
+    "id": "karnataka-to-boost-deep-tech-via-new-artpark-innovation-campus-brainz",
+    "title": "Karnataka to Boost Deep-Tech via New ARTPARK Innovation Campus BRAINZ",
+    "outlet": "Asianet Newsable",
+    "date": "2026-10-22",
+    "dateLabel": "22 October 2026",
+    "url": "https://newsable.asianetnews.com/india/karnataka-to-boost-deep-tech-via-new-artpark-innovation-campus-brainz-articleshow-vatf5nd"
+  },
+  {
+    "id": "can-ai-and-5g-make-highways-safer-artpark-s-sheela-prabhakar-explains",
+    "title": "Can AI and 5G make highways safer? ARTPARK’s Sheela Prabhakar explains",
+    "outlet": "The Economic Times (ET AI, video)",
+    "date": "2026-10-14",
+    "dateLabel": "14 October 2026",
+    "url": "https://economictimes.indiatimes.com/ai/ai-insights/can-ai-and-5g-make-highways-safer-artparks-sheela-prabhakar-explains/videoshow/134944453.cms"
+  },
+  {
+    "id": "how-artpark-is-taking-deep-tech-research-from-the-lab-to-the-market",
+    "title": "How Artpark is taking deep-tech research from the lab to the market",
+    "outlet": "CNBC-TV18 (video)",
+    "date": "2026-10-13",
+    "dateLabel": "13 October 2026",
+    "url": "https://www.cnbctv18.com/videos/business/startup/how-artpark-is-taking-deep-tech-research-from-lab-to-market-20011225.htm"
+  },
+  {
+    "id": "chiratae-kalaari-blume-among-19-fund-managers-named-in-rdi-fund-s-first-cohort",
+    "title": "Chiratae, Kalaari, Blume among 19 fund managers named in RDI Fund’s first cohort",
+    "outlet": "Moneycontrol",
+    "date": "2026-10-13",
+    "dateLabel": "13 October 2026",
+    "url": "https://www.moneycontrol.com/news/business/startup/chiratae-kalaari-blume-among-19-fund-managers-named-in-rdi-fund-s-first-cohort-14050740.html"
+  },
+  {
     "id": "iisc-s-artpark-intersafe-gets-nod-for-ai-and-5g-pilot-on-bengaluru-hassan-highwa",
     "title": "IISc's ARTPARK InterSafe gets nod for AI and 5G pilot on Bengaluru-Hassan Highway",
     "outlet": "The Economic Times",
-    "date": "2026-10-13",
-    "dateLabel": "13 October 2026",
-    "url": "https://www.artpark.in/media"
+    "date": "2026-10-12",
+    "dateLabel": "12 October 2026",
+    "url": "https://economictimes.indiatimes.com/ai/ai-insights/iiscs-artpark-intersafe-gets-nod-for-ai-and-5g-pilot-on-bengaluru-hassan-highway/articleshow/134886011.cms"
+  },
+  {
+    "id": "rdi-fund-picks-first-19-second-level-fund-managers-commits-7-131-crore",
+    "title": "RDI Fund picks first 19 second-level fund managers, commits ₹7,131 crore",
+    "outlet": "Business Standard",
+    "date": "2026-10-12",
+    "dateLabel": "12 October 2026",
+    "url": "https://www.business-standard.com/industry/news/rdi-fund-picks-first-19-second-level-fund-managers-commits-7-131-crore-126101201309_1.html"
+  },
+  {
+    "id": "from-drones-to-defence-deeptech-startup-yaanendriya-bets-on-homegrown-autonomy-t",
+    "title": "From drones to defence: Deeptech startup Yaanendriya bets on homegrown autonomy technology",
+    "outlet": "Deccan Herald",
+    "date": "2026-10-12",
+    "dateLabel": "12 October 2026",
+    "url": "https://www.deccanherald.com/business/startups/from-drones-to-defence-deeptech-startup-yaanendriya-bets-on-homegrown-autonomy-technology-4179111"
+  },
+  {
+    "id": "65-languages-156-000-speakers-how-iisc-is-teaching-ai-to-listen-to-india",
+    "title": "65 Languages, 156,000 Speakers: How IISc Is Teaching AI to Listen to India",
+    "outlet": "Analytics India Magazine",
+    "date": "2026-08-24",
+    "dateLabel": "24 August 2026",
+    "url": "https://analyticsindiamag.com/ai-features/65-languages-156000-speakers-how-iisc-is-teaching-ai-to-listen-to-india"
+  },
+  {
+    "id": "inside-iisc-s-sravaani-the-push-to-take-voice-ai-beyond-india-s-22-mainstream-la",
+    "title": "Inside IISc’s SraVaani, the push to take voice AI beyond India’s 22 mainstream languages",
+    "outlet": "Moneycontrol",
+    "date": "2026-08-22",
+    "dateLabel": "22 August 2026",
+    "url": "https://www.moneycontrol.com/artificial-intelligence/inside-iisc-s-sravaani-the-push-to-take-voice-ai-beyond-india-s-22-mainstream-languages-article-14012715.html"
+  },
+  {
+    "id": "iisc-s-spire-lab-open-sources-sravaani-speech-model-for-low-resource-indian-lang",
+    "title": "IISc's SPIRE Lab Open-Sources SraVaani Speech Model for Low-Resource Indian Languages",
+    "outlet": "Analytics India Magazine",
+    "date": "2026-08-17",
+    "dateLabel": "17 August 2026",
+    "url": "https://analyticsindiamag.com/ai-news/iiscs-spire-lab-open-sources-sravaani-speech-model-for-low-resource-indian-languages"
+  },
+  {
+    "id": "iisc-spire-lab-releases-sravaani-speech-ai-model-covering-65-indian-languages",
+    "title": "IISc SPIRE Lab releases SraVaani speech AI model covering 65 Indian languages",
+    "outlet": "The Hindu BusinessLine",
+    "date": "2026-08-13",
+    "dateLabel": "13 August 2026",
+    "url": "https://www.thehindubusinessline.com/news/iisc-spire-lab-releases-sravaani-speech-ai-model-covering-65-indian-languages/article71341654.ece"
+  },
+  {
+    "id": "iisc-releases-voice-ai-model-for-65-indian-languages",
+    "title": "IISc releases voice AI model for 65 Indian languages",
+    "outlet": "Times of India",
+    "date": "2026-08-13",
+    "dateLabel": "13 August 2026",
+    "url": "https://timesofindia.indiatimes.com/city/bengaluru/iisc-releases-voice-ai-model-for-65-indian-languages/articleshow/133213649.cms"
+  },
+  {
+    "id": "strider-robotics-takes-iisc-quadruped-into-commercial-pilots-at-oil-and-gas-site",
+    "title": "Strider Robotics Takes IISc Quadruped Into Commercial Pilots at Oil and Gas Sites",
+    "outlet": "Tech Times",
+    "date": "2026-07-19",
+    "dateLabel": "19 July 2026",
+    "url": "https://www.techtimes.com/articles/320984/20260719/strider-robotics-takes-iisc-quadruped-commercial-pilots-oil-gas-sites.htm"
+  },
+  {
+    "id": "project-vaani-steps-up-inclusivity-with-dataset-for-atypical-speech-in-three-lan",
+    "title": "Project Vaani steps up inclusivity with dataset for atypical speech in three languages",
+    "outlet": "The Hindu",
+    "date": "2026-07-18",
+    "dateLabel": "18 July 2026",
+    "url": "https://www.thehindu.com/news/cities/bangalore/project-vaani-steps-up-inclusivity-with-dataset-for-atypical-speech-in-three-languages/article71237648.ece"
+  },
+  {
+    "id": "qosmic-bags-3-3-mn-to-build-laser-based-satellite-communication-systems",
+    "title": "QOSMIC Bags $3.3 Mn To Build Laser-Based Satellite Communication Systems",
+    "outlet": "Inc42",
+    "date": "2026-06-24",
+    "dateLabel": "24 June 2026",
+    "url": "https://inc42.com/buzz/qosmic-bags-3-3-mn-to-build-laser-based-satellite-communication-systems/"
+  },
+  {
+    "id": "robotics-and-ai-campus-to-come-up-at-iisc-10-crore-for-quantum-road-map",
+    "title": "Robotics and AI campus to come up at IISc; ₹10 crore for quantum road map",
+    "outlet": "The Hindu",
+    "date": "2026-03-06",
+    "dateLabel": "06 March 2026",
+    "url": "https://www.thehindu.com/news/cities/bangalore/robotics-and-ai-campus-to-come-up-at-iisc-10-crore-for-quantum-road-map/article70711890.ece"
+  },
+  {
+    "id": "in-ai-push-karnataka-budget-proposes-bengaluru-robotics-innovation-zone-at-iisc",
+    "title": "In AI push, Karnataka budget proposes Bengaluru robotics, innovation zone at IISc",
+    "outlet": "Moneycontrol",
+    "date": "2026-03-06",
+    "dateLabel": "06 March 2026",
+    "url": "https://www.moneycontrol.com/artificial-intelligence/in-ai-push-karnataka-budget-proposes-bengaluru-robotics-innovation-zone-at-iisc-article-13853094.html"
+  },
+  {
+    "id": "not-all-robots-at-the-india-ai-impact-summit-were-chinese",
+    "title": "Not All Robots at the India AI Impact Summit were Chinese",
+    "outlet": "Analytics India Magazine",
+    "date": "2026-02-19",
+    "dateLabel": "19 February 2026",
+    "url": "https://analyticsindiamag.com/deep-tech/not-all-robots-at-the-india-ai-impact-summit-were-chinese"
+  },
+  {
+    "id": "physical-ai-is-the-next-frontier-and-we-are-taking-up-the-challenge-raghu-dharma",
+    "title": "Physical AI is the next frontier, and we are taking up the challenge: Raghu Dharmaraju, CEO, ARTPARK",
+    "outlet": "The Indian Express",
+    "date": "2026-01-24",
+    "dateLabel": "24 January 2026",
+    "url": "https://indianexpress.com/article/technology/tech-news-technology/physical-ai-frontier-challenge-raghu-dharmaraju-ceo-artpark-10491096/"
   },
   {
     "id": "transforming-urban-dengue-response-using-data-driven-and-predictive-intelligence",
@@ -16,12 +216,52 @@
     "url": "https://www.indiahealthfund.org/transforming-urban-dengue-response-using-data-driven-and-predictive-intelligence-surveillance-systems/"
   },
   {
+    "id": "why-artpark-iisc-believes-the-future-of-ai-lies-in-societal-impact-not-hype",
+    "title": "Why ARTPARK-IISc Believes the Future of AI Lies in Societal Impact, Not Hype",
+    "outlet": "Analytics India Magazine",
+    "date": "2025-09-17",
+    "dateLabel": "17 September 2025",
+    "url": "https://analyticsindiamag.com/ai-features/why-artpark-believes-the-future-of-ai-lies-in-societal-impact-not-hype"
+  },
+  {
+    "id": "beyond-the-thermometer-bengaluru-s-race-to-modernise-ignored-climate-now-its-res",
+    "title": "Beyond the thermometer: Bengaluru’s race to modernise ignored climate — now its residents are paying the price",
+    "outlet": "Down To Earth",
+    "date": "2025-06-05",
+    "dateLabel": "05 June 2025",
+    "url": "https://www.downtoearth.org.in/climate-change/beyond-the-thermometer-bengalurus-race-to-modernise-ignored-climate-now-its-residents-are-paying-the-price"
+  },
+  {
+    "id": "india-s-deep-tech-sector-faces-product-market-fit-challenge",
+    "title": "India’s deep-tech sector faces product-market fit challenge",
+    "outlet": "Communications Today",
+    "date": "2025-04-07",
+    "dateLabel": "07 April 2025",
+    "url": "https://www.communicationstoday.co.in/indias-deep-tech-sector-faces-product-market-fit-challenge/"
+  },
+  {
+    "id": "ai-for-weather-forecast-iisc-develops-ai-powered-model-for-heat-stress-predictio",
+    "title": "AI For Weather Forecast: IISc Develops AI-Powered Model For Heat Stress Predictions",
+    "outlet": "ETV Bharat",
+    "date": "2025-03-28",
+    "dateLabel": "28 March 2025",
+    "url": "https://www.etvbharat.com/en/!technology/heat-stress-forecasting-iisc-develops-ai-powered-model-that-could-revolutionise-india-weather-prediction-enn25032706229"
+  },
+  {
     "id": "iisc-s-ai-model-to-offer-heat-stress-predictions",
     "title": "IISc’s AI model to offer heat-stress predictions",
     "outlet": "Deccan Herald",
     "date": "2025-03-24",
     "dateLabel": "24 March 2025",
     "url": "https://www.deccanherald.com/india/karnataka/bengaluru/iiscs-ai-model-to-offer-heat-stress-predictions-3459329"
+  },
+  {
+    "id": "twara-robotics-revolutionizing-indian-manufacturing",
+    "title": "Twara Robotics Revolutionizing Indian Manufacturing",
+    "outlet": "The Machine Maker",
+    "date": "2025-03-21",
+    "dateLabel": "21 March 2025",
+    "url": "https://themachinemaker.com/madeinindia/twara-robotics-revolutionizing-indian-manufacturing/"
   },
   {
     "id": "midas-creating-ai-for-healthcare-with-an-indian-bias",
@@ -32,12 +272,36 @@
     "url": "https://www.forbesindia.com/article/technology/midas-creating-ai-for-healthcare-with-an-indian-bias/94293/1"
   },
   {
+    "id": "iisc-state-govt-backed-venture-launches-first-all-terrain-vehicle",
+    "title": "IISc, state govt-backed venture launches first All-Terrain Vehicle",
+    "outlet": "Deccan Herald",
+    "date": "2024-09-16",
+    "dateLabel": "16 September 2024",
+    "url": "https://www.deccanherald.com/india/karnataka/bengaluru/iisc-state-govt-backed-venture-launches-first-all-terrain-vehicle-3192082"
+  },
+  {
     "id": "under-bhashini-artpark-iisc-to-open-source-16-000-hours-of-speech-data",
     "title": "Under Bhashini, ARTPARK-IISc to open source 16,000 hours of speech data",
     "outlet": "The Economic Times",
     "date": "2024-07-11",
     "dateLabel": "11 July 2024",
     "url": "https://economictimes.indiatimes.com/tech/technology/under-bhashini-iisc-to-open-source-16000-hours-of-speech-data/articleshow/111639325.cms?from=mdr"
+  },
+  {
+    "id": "iisc-based-consortium-launches-ward-level-pilot-project-for-dengue-outbreak-pred",
+    "title": "IISc-based consortium launches ward-level pilot project for dengue outbreak prediction, prevention",
+    "outlet": "Deccan Herald",
+    "date": "2024-06-15",
+    "dateLabel": "15 June 2024",
+    "url": "https://www.deccanherald.com/india/karnataka/bengaluru/iisc-based-consortium-launches-ward-level-pilot-project-for-dengue-outbreak-prediction-prevention-3067761"
+  },
+  {
+    "id": "artpark-transforming-india-s-tech-landscape-with-ai-and-robotics",
+    "title": "ARTPARK: Transforming India's tech landscape with AI and robotics",
+    "outlet": "IPF Online",
+    "date": "2024-05-07",
+    "dateLabel": "07 May 2024",
+    "url": "https://ipfonline.com/news/detail/industrynews/artpark-transforming-indias-tech-landscape-with-ai-and-robotics/15798"
   },
   {
     "id": "artpark-from-legged-robots-to-advanced-cargo-drones-a-look-at-india-s-first-robo",
@@ -48,12 +312,60 @@
     "url": "https://economictimes.indiatimes.com/tech/technology/artpar-from-legged-robots-to-advanced-cargo-drones-a-look-at-indias-first-robotics-park/articleshow/109844978.cms?from=mdr"
   },
   {
+    "id": "et-has-the-lowdown-on-five-of-the-most-exciting-startups-at-artpark",
+    "title": "ET has the lowdown on five of the most exciting startups at ARTPARK",
+    "outlet": "The Economic Times",
+    "date": "2024-05-05",
+    "dateLabel": "05 May 2024",
+    "url": "https://economictimes.indiatimes.com/tech/startups/et-has-the-lowdown-on-five-of-the-most-exciting-startups-at-artpark/articleshow/109844967.cms"
+  },
+  {
+    "id": "artpark-announces-innovation-challenge-for-deep-tech-innovation-teams-and-ai-sta",
+    "title": "ARTPARK announces innovation challenge for deep-tech innovation teams and AI startups",
+    "outlet": "IndiaAI",
+    "date": "2024-04-25",
+    "dateLabel": "25 April 2024",
+    "url": "https://indiaai.gov.in/news/artpark-announces-innovation-challenge-for-deep-tech-innovation-teams-and-ai-startups"
+  },
+  {
     "id": "project-vaani-identified-as-a-key-initiative-in-shaping-india-s-llm-space",
     "title": "Project Vaani identified as a key initiative in shaping India's LLM space",
     "outlet": "Moneycontrol",
     "date": "2023-12-21",
     "dateLabel": "21 December 2023",
     "url": "https://www.moneycontrol.com/news/technology/indias-ai-uprising-can-a-challenger-emerge-in-the-llm-marathon-11931681.html"
+  },
+  {
+    "id": "india-s-first-edition-of-roscon-2023-energises-robotics-community-in-country",
+    "title": "India’s first edition of ROSCon 2023 energises robotics community in country",
+    "outlet": "The New Indian Express",
+    "date": "2023-12-19",
+    "dateLabel": "19 December 2023",
+    "url": "https://www.newindianexpress.com/cities/bengaluru/2023/Dec/19/indias-first-edition-of-roscon-2023energises-robotics-community-in-country-2642777.html"
+  },
+  {
+    "id": "karnataka-tech-helps-detect-10k-mosquito-breeding-spots",
+    "title": "Karnataka: Tech helps detect 10k mosquito-breeding spots",
+    "outlet": "The New Indian Express",
+    "date": "2023-10-19",
+    "dateLabel": "19 October 2023",
+    "url": "https://www.newindianexpress.com/cities/bengaluru/2023/Oct/19/karnataka-tech-helps-detect-10k-mosquito-breeding-spots-2625215.html"
+  },
+  {
+    "id": "karnataka-s-disease-surveillance-platform-can-be-a-model-for-others-rockefeller",
+    "title": "Karnataka's disease surveillance platform can be a model for others: Rockefeller Foundation",
+    "outlet": "Deccan Herald",
+    "date": "2023-10-15",
+    "dateLabel": "15 October 2023",
+    "url": "https://www.deccanherald.com/india/karnataka/karnatakas-disease-surveillance-platform-can-be-a-model-for-others-rockefeller-foundation-2711289"
+  },
+  {
+    "id": "iisc-project-to-bridge-language-gap-to-tech-access",
+    "title": "IISc project to bridge language gap to tech access",
+    "outlet": "Deccan Herald",
+    "date": "2023-09-27",
+    "dateLabel": "27 September 2023",
+    "url": "https://www.deccanherald.com/india/karnataka/bengaluru/iisc-project-to-bridge-language-gap-to-tech-access-2702157"
   },
   {
     "id": "health-minister-launches-dashboard-app-to-track-surge-in-dengue",
@@ -72,6 +384,62 @@
     "url": "https://www.newindianexpress.com/cities/bengaluru/2023/Sep/09/new-system-will-use-ai-to-predict-dengue-cases-acrosskarnataka-2613087.html"
   },
   {
+    "id": "app-predicting-dengue-cases-launched-in-karnataka",
+    "title": "App predicting dengue cases launched in Karnataka",
+    "outlet": "Deccan Herald",
+    "date": "2023-09-09",
+    "dateLabel": "09 September 2023",
+    "url": "https://www.deccanherald.com/india/karnataka/app-predicting-dengue-cases-launched-2678966"
+  },
+  {
+    "id": "state-deploys-tech-solution-to-fight-dengue",
+    "title": "State deploys tech solution to fight dengue",
+    "outlet": "Bangalore Mirror",
+    "date": "2023-09-09",
+    "dateLabel": "09 September 2023",
+    "url": "https://bangaloremirror.indiatimes.com/bangalore/others/state-deploys-tech-solution-to-fight-dengue/articleshow/103519340.cms"
+  },
+  {
+    "id": "bengaluru-develops-revolutionary-tech-that-can-predict-disease-outbreak-one-mont",
+    "title": "Bengaluru develops revolutionary tech that can predict disease outbreak one month in advance",
+    "outlet": "The Economic Times",
+    "date": "2023-09-08",
+    "dateLabel": "08 September 2023",
+    "url": "https://economictimes.indiatimes.com/industry/healthcare/biotech/healthcare/bengaluru-develops-revolutionary-tech-that-can-predict-disease-outbreak-one-month-in-advance/articleshow/103504768.cms"
+  },
+  {
+    "id": "track-and-trace-dengue",
+    "title": "Track & trace... dengue",
+    "outlet": "Bangalore Mirror",
+    "date": "2023-08-26",
+    "dateLabel": "26 August 2023",
+    "url": "https://bangaloremirror.indiatimes.com/bangalore/others/track-trace-dengue/articleshow/103073188.cms"
+  },
+  {
+    "id": "new-app-developed-at-iisc-to-enhance-disease-data-collection-for-bbmp",
+    "title": "New app developed at IISc to enhance disease data collection for BBMP",
+    "outlet": "Deccan Herald",
+    "date": "2023-07-26",
+    "dateLabel": "26 July 2023",
+    "url": "https://www.deccanherald.com/india/karnataka/bengaluru/new-app-developed-at-iisc-to-enhance-disease-data-collection-for-bbmp-1241000.html"
+  },
+  {
+    "id": "bbmp-to-use-ai-to-predict-dengue-cases",
+    "title": "BBMP to use AI to predict dengue cases",
+    "outlet": "The New Indian Express",
+    "date": "2023-05-18",
+    "dateLabel": "18 May 2023",
+    "url": "https://www.newindianexpress.com/cities/bengaluru/2023/May/18/bbmp-to-use-ai-topredict-dengue-cases-2576492.html"
+  },
+  {
+    "id": "ai-to-the-aid-iisc-dashboard-to-predict-dengue-cases-in-bengaluru",
+    "title": "AI to the aid: IISc dashboard to predict dengue cases in Bengaluru",
+    "outlet": "Deccan Herald",
+    "date": "2023-05-16",
+    "dateLabel": "16 May 2023",
+    "url": "https://www.deccanherald.com/india/karnataka/bengaluru/ai-to-the-aid-iisc-dashboard-to-predict-dengue-cases-in-bengaluru-1219107.html"
+  },
+  {
     "id": "project-vaani-scales-decibels-as-it-maps-language-landscape-of-india",
     "title": "Project Vaani scales decibels as it maps language landscape of India",
     "outlet": "The Hindu BusinessLine",
@@ -88,12 +456,60 @@
     "url": "https://www.livemint.com/technology/tech-news/artparkiisc-google-to-bring-innovation-to-india-s-diverse-languages-11671445526332.html"
   },
   {
+    "id": "artpark-iisc-launches-ai-powered-project-vaani-to-make-internet-language-inclusi",
+    "title": "ARTPARK-IISc Launches AI-Powered Project Vaani to Make Internet Language-Inclusive",
+    "outlet": "Analytics India Magazine",
+    "date": "2022-12-19",
+    "dateLabel": "19 December 2022",
+    "url": "https://analyticsindiamag.com/ai-news-updates/artpark-iisc-launch-ai-powered-project-vaani-to-make-internet-language-inclusive"
+  },
+  {
+    "id": "g20-delegation-visits-iisc-artpark",
+    "title": "G20 delegation visits IISc Artpark",
+    "outlet": "Times of India",
+    "date": "2022-12-16",
+    "dateLabel": "16 December 2022",
+    "url": "https://timesofindia.indiatimes.com/city/bengaluru/g20-delegation-visits-iisc-artpark/articleshow/96266566.cms"
+  },
+  {
+    "id": "g20-delegation-visits-artpark-in-iisc",
+    "title": "G20 delegation visits ARTPARK in IISc",
+    "outlet": "The Hindu",
+    "date": "2022-12-15",
+    "dateLabel": "15 December 2022",
+    "url": "https://www.thehindu.com/news/national/karnataka/g20-delegation-visits-artpark-in-iisc/article66266737.ece"
+  },
+  {
     "id": "artpark-iisc-gets-approval-for-robotics-accelerator",
     "title": "Artpark-IISc gets approval for robotics accelerator",
     "outlet": "Times of India",
     "date": "2022-12-13",
     "dateLabel": "13 December 2022",
     "url": "http://timesofindia.indiatimes.com/articleshow/96186255.cms?utm_campaign=cppst&utm_medium=text&utm_source=contentofinterest"
+  },
+  {
+    "id": "karnataka-funded-artpark-iisc-sets-up-accelerator-for-advanced-manufacturing",
+    "title": "Karnataka-funded Artpark-IISc sets up accelerator for advanced manufacturing",
+    "outlet": "The Economic Times",
+    "date": "2022-12-12",
+    "dateLabel": "12 December 2022",
+    "url": "https://economictimes.indiatimes.com/tech/technology/karnataka-funded-artpark-iisc-sets-up-accelerator-for-advanced-manufacturing/articleshow/96174739.cms"
+  },
+  {
+    "id": "artpark-iisc-sets-up-accelerator-for-advanced-manufacturing-of-robotic-systems",
+    "title": "ARTPARK-IISc sets up accelerator for advanced manufacturing of robotic systems",
+    "outlet": "The Hindu BusinessLine",
+    "date": "2022-12-12",
+    "dateLabel": "12 December 2022",
+    "url": "https://www.thehindubusinessline.com/info-tech/artpark-iisc-sets-up-accelerator-for-advanced-manufacturing-of-robotic-systems/article66254884.ece"
+  },
+  {
+    "id": "artpark-iisc-sets-up-an-accelerator-for-advanced-manufacturing-with-support-from",
+    "title": "ARTPARK-IISc Sets up an Accelerator for Advanced Manufacturing With Support From the Ministry of Heavy Industries",
+    "outlet": "Analytics India Magazine",
+    "date": "2022-12-12",
+    "dateLabel": "12 December 2022",
+    "url": "https://analyticsindiamag.com/ai-news-updates/artpark-iisc-sets-up-an-accelerator-for-advanced-manufacturing-with-support-from-the-ministry-of-heavy-industries"
   },
   {
     "id": "icmr-and-iisc-to-work-together-for-the-creation-of-a-gold-standard-medical-data",
@@ -104,11 +520,179 @@
     "url": "https://iisc.ac.in/events/icmr-and-iisc-to-work-together-for-the-creation-of-a-gold-standard-medical-data-platform/"
   },
   {
+    "id": "behind-indian-government-supported-ai-and-robotics-innovation-firm",
+    "title": "Behind Indian Government Supported AI & Robotics Innovation Firm",
+    "outlet": "Analytics India Magazine",
+    "date": "2022-08-29",
+    "dateLabel": "29 August 2022",
+    "url": "https://analyticsindiamag.com/ai-trends/behind-indian-government-supported-ai-robotics-innovation-firm"
+  },
+  {
+    "id": "we-invest-in-people-who-build-cool-stuff-umakant-soni-ceo-of-robotics-incubator",
+    "title": "We invest in people who build cool stuff: Umakant Soni,CEO of robotics incubator",
+    "outlet": "Hindustan Times",
+    "date": "2022-08-06",
+    "dateLabel": "06 August 2022",
+    "url": "https://www.hindustantimes.com/lifestyle/art-culture/we-invest-in-people-who-build-cool-stuff-umakant-soni-ceo-of-robotics-incubator-101659789683033.html"
+  },
+  {
+    "id": "artpark-foundation-sets-up-100-mn-venture-fund-to-back-10-15-ai-robotics-startup",
+    "title": "ARTPARK Foundation Sets Up $100 Mn Venture Fund To Back 10-15 AI, Robotics Startups",
+    "outlet": "Inc42",
+    "date": "2022-07-28",
+    "dateLabel": "28 July 2022",
+    "url": "https://inc42.com/buzz/artpark-foundation-sets-up-100-mn-venture-fund-to-back-10-15-ai-robotics-startups/"
+  },
+  {
+    "id": "janitor-robots-of-three-teams-win-two-spots-at-artpark-contest",
+    "title": "‘Janitor’ robots of three teams win two spots at ARTPARK contest",
+    "outlet": "Times of India",
+    "date": "2022-05-16",
+    "dateLabel": "16 May 2022",
+    "url": "https://timesofindia.indiatimes.com/city/bengaluru/janitor-robots-of-three-teams-win-two-spots-at-artpark-contest/articleshow/91583256.cms"
+  },
+  {
+    "id": "over-130-participate-in-challenge-to-build-robot-janitors",
+    "title": "Over 130 participate in challenge to build robot janitors",
+    "outlet": "The Hindu",
+    "date": "2022-05-16",
+    "dateLabel": "16 May 2022",
+    "url": "https://www.thehindu.com/news/cities/bangalore/over-130-participants-in-challenge-to-build-robots-to-perform-janitorial-tasks-in-washrooms/article65419038.ece"
+  },
+  {
+    "id": "we-want-to-create-a-technology-decacorn-in-india-umakant-soni-of-artpark",
+    "title": "We want to create a technology decacorn in India: Umakant Soni of ARTPARK",
+    "outlet": "The Hindu BusinessLine",
+    "date": "2022-03-15",
+    "dateLabel": "15 March 2022",
+    "url": "https://www.thehindubusinessline.com/info-tech/we-want-to-create-a-technology-decacorn-in-india-umakant-soni-of-artpark/article65226807.ece"
+  },
+  {
+    "id": "ai-park-at-iisc-to-spawn-innovation-trigger-growth",
+    "title": "AI park at IISc to spawn innovation, trigger growth",
+    "outlet": "Deccan Herald",
+    "date": "2022-03-15",
+    "dateLabel": "15 March 2022",
+    "url": "https://www.deccanherald.com/india/karnataka/bengaluru/ai-park-at-iisc-to-spawn-innovation-trigger-growth-1091383.html"
+  },
+  {
+    "id": "artificial-intelligence-and-robotics-technology-park-launched-in-k-taka",
+    "title": "Artificial Intelligence & Robotics Technology Park launched in K'taka",
+    "outlet": "ETTelecom (The Economic Times)",
+    "date": "2022-03-15",
+    "dateLabel": "15 March 2022",
+    "url": "https://telecom.economictimes.indiatimes.com/news/artificial-intelligence-robotics-technology-park-launched-in-ktaka/90213601"
+  },
+  {
+    "id": "iisc-backed-artpark-to-launch-100-mn-venture-fund-for-ai-robotics-startups",
+    "title": "IISc-Backed ARTPARK To Launch $100 Mn Venture Fund For AI, Robotics Startups",
+    "outlet": "Inc42",
+    "date": "2022-03-15",
+    "dateLabel": "15 March 2022",
+    "url": "https://inc42.com/buzz/iisc-backed-artpark-to-launch-100-mn-venture-fund-for-ai-robotics-startups/"
+  },
+  {
+    "id": "iisc-backed-artpark-to-launch-100-million-venture-fund-to-invest-in-ai-robotics",
+    "title": "IISc-backed ARTPARK to launch $100 million venture fund to invest in AI, robotics startups",
+    "outlet": "The Economic Times",
+    "date": "2022-03-14",
+    "dateLabel": "14 March 2022",
+    "url": "https://economictimes.indiatimes.com/tech/startups/iisc-backed-artpark-to-launch-100-million-venture-fund-to-invest-in-ai-robotics-startups/articleshow/90207091.cms"
+  },
+  {
+    "id": "artpark-launches-robotics-ai-lab-at-iisc",
+    "title": "ArtPark launches robotics, AI lab at IISc",
+    "outlet": "Mint",
+    "date": "2022-03-14",
+    "dateLabel": "14 March 2022",
+    "url": "https://www.livemint.com/technology/tech-news/artpark-launches-robotics-ai-lab-at-iisc-11647277592113.html"
+  },
+  {
+    "id": "artpark-innovation-lab-launched-at-iisc-campus-with-230-crore-seed-capital",
+    "title": "ARTPARK innovation lab launched at IISc Campus with ₹230 crore seed capital",
+    "outlet": "The Hindu BusinessLine",
+    "date": "2022-03-14",
+    "dateLabel": "14 March 2022",
+    "url": "https://www.thehindubusinessline.com/companies/artpark-with-230-crore-seed-capital-launched-at-iisc-campus/article65223927.ece"
+  },
+  {
+    "id": "artpark-innovation-program-to-support-tech-developed-at-indian-universities",
+    "title": "ARTPARK Innovation Program to support tech developed at Indian universities",
+    "outlet": "The Economic Times",
+    "date": "2021-07-21",
+    "dateLabel": "21 July 2021",
+    "url": "https://economictimes.indiatimes.com/tech/startups/artpark-innovation-program-to-support-tech-developed-at-indian-universities/articleshow/84605688.cms"
+  },
+  {
+    "id": "artpark-to-launch-100-million-venture-fund-exclusively-for-startups-in-ai-and-ro",
+    "title": "ARTPARK to launch $100 million venture fund exclusively for startups in AI and robotics space",
+    "outlet": "The Economic Times",
+    "date": "2021-07-08",
+    "dateLabel": "08 July 2021",
+    "url": "https://economictimes.indiatimes.com/tech/startups/artpark-to-launch-100-million-venture-fund-exclusively-for-startups-in-ai-and-robotics-space/articleshow/84222189.cms"
+  },
+  {
+    "id": "iisc-incubated-artpark-to-launch-100-mn-vc-fund-for-robotics-and-ai-startups",
+    "title": "IISc Incubated ARTPARK To Launch $100 Mn VC Fund For Robotics And AI Startups",
+    "outlet": "Inc42",
+    "date": "2021-07-08",
+    "dateLabel": "08 July 2021",
+    "url": "https://inc42.com/buzz/artpark-to-launch-100-mn-vc-fund-for-robotics-and-ai-startups/"
+  },
+  {
+    "id": "we-wanted-to-reduce-dependence-on-rt-pcr-test-to-detect-covid-umakant-soni",
+    "title": "We Wanted To Reduce Dependence On RT-PCR Test To Detect Covid: Umakant Soni",
+    "outlet": "NDTV (video)",
+    "date": "2021-06-13",
+    "dateLabel": "13 June 2021",
+    "url": "https://www.ndtv.com/video/we-wanted-to-reduce-dependence-on-rt-pcr-test-to-detect-covid-umakant-soni-589922"
+  },
+  {
+    "id": "ai-driven-platform-to-facilitate-early-covid-intervention-over-whatsapp",
+    "title": "AI-driven platform to facilitate early Covid intervention over WhatsApp",
+    "outlet": "Deccan Herald",
+    "date": "2021-06-02",
+    "dateLabel": "02 June 2021",
+    "url": "https://www.deccanherald.com/business/ai-driven-platform-to-facilitate-early-covid-intervention-over-whatsapp-992942.html"
+  },
+  {
+    "id": "covid-diagnosis-using-whatsapp-how-x-ray-images-can-help-detect-virus",
+    "title": "Covid diagnosis using WhatsApp: How X-ray images can help detect virus",
+    "outlet": "Mint",
+    "date": "2021-06-02",
+    "dateLabel": "02 June 2021",
+    "url": "https://www.livemint.com/technology/tech-news/whatsapp-new-xraysetu-govt-will-help-detect-covid-19-x-ray-how-it-works-11622642471690.html"
+  },
+  {
+    "id": "know-how-centre-s-x-ray-setu-on-whatsapp-can-detect-covid-19",
+    "title": "Know how Centre's X-Ray Setu on WhatsApp can detect Covid-19",
+    "outlet": "Hindustan Times",
+    "date": "2021-06-02",
+    "dateLabel": "02 June 2021",
+    "url": "https://www.hindustantimes.com/india-news/know-how-centre-s-x-ray-setu-on-whatsapp-can-detect-covid19-101622624422305.html"
+  },
+  {
     "id": "the-core-idea-of-xraysetu-is-to-give-doctors-another-screening-option-for-covid",
     "title": "The core idea of XraySetu is to give doctors another screening option for Covid 19",
     "outlet": "ET Healthworld",
-    "date": "2022-06-01",
-    "dateLabel": "01 June 2022",
+    "date": "2021-06-01",
+    "dateLabel": "01 June 2021",
     "url": "https://health.economictimes.indiatimes.com/news/diagnostics/the-core-idea-of-xraysetu-is-to-give-doctors-another-screening-option-for-covid-19-umakant-soniceo-artpark/83103278"
+  },
+  {
+    "id": "x-ray-setu-plans-to-on-board-10k-doctors-for-covid-detection-in-rural-areas",
+    "title": "X-Ray Setu plans to on-board 10K doctors for COVID detection in rural areas",
+    "outlet": "Business Standard",
+    "date": "2021-06-01",
+    "dateLabel": "01 June 2021",
+    "url": "https://www.business-standard.com/article/current-affairs/x-ray-setu-plans-to-on-board-10k-doctors-for-covid-detection-in-rural-areas-121060100523_1.html"
+  },
+  {
+    "id": "this-nurse-can-go-where-no-human-can",
+    "title": "This nurse can go where no human can",
+    "outlet": "Bangalore Mirror",
+    "date": "2021-05-17",
+    "dateLabel": "17 May 2021",
+    "url": "https://bangaloremirror.indiatimes.com/bangalore/others/this-nurse-can-go-where-no-human-can/articleshow/82688414.cms"
   }
 ]

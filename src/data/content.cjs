@@ -54,7 +54,13 @@ const PR = (n, i) => '/assets/recovered/portrait-' + n + '-' + i + '.webp';
 [['prof-yadati-narahari', 10], ['kumar-n-sivarajan', 11], ['venkat-padmanabhan', 12]].forEach(([n, i], k) => { people.research[k].portrait = PR(n, i); });
 [['prof-bharadwaj-amrutur', 13], ['prashanath-prakash', 14], ['dr-navakanta-bhat', 15], ['prof-govindan-rangarajan', 16], ['prof-anil-parameswaran-sarala-kumar', 17]].forEach(([n, i], k) => { people.directors[k].portrait = PR(n, i); });
 [['dr-vijay-chandru', 18, 'https://www.linkedin.com/in/vijaychandru/'], ['dr-p-anandan', 19, 'https://www.linkedin.com/in/panandan/'], ['utkarsh-ut', 20, 'https://www.linkedin.com/in/ut-utkarsh/'], ['vijay-vujjini', 21, 'https://www.linkedin.com/in/vvujjini/'], ['dr-anurag-srivastava', 22, 'https://www.linkedin.com/in/anurag-srivastava-b65567/']].forEach(([n, i, l], k) => { people.advisors[k].portrait = PR(n, i); people.advisors[k].linkedin = l; });
-['https://www.linkedin.com/in/amrutur/', 'https://www.linkedin.com/in/raghuramd/', 'https://www.linkedin.com/in/sheela-prabhakar-18562116b/'].forEach((l, k) => { people.leadership[k].linkedin = l; });
+['https://www.linkedin.com/in/amrutur/', 'https://www.linkedin.com/in/raghuramd/'].forEach((l, k) => { people.leadership[k].linkedin = l; });
+// User (2026-11-14): Sheela Prabhakar is no longer listed; Nirav Dedhia takes the third leadership place (photo and
+// designation from the user; photo and LinkedIn as on artpark.in/team, 506 px).
+// LinkedIn profiles found and checked on 2026-11-14 (profile name and current company match the board role).
+const BOARD_LI = { 'Mr. Prashanth Prakash': 'https://www.linkedin.com/in/prakashprashanth/', 'Mr. Guruprasad Mudlapur': 'https://www.linkedin.com/in/gmudlapur/' };
+for (const g of ['governing', 'directors', 'research', 'advisors']) for (const p of people[g]) if (!p.linkedin && BOARD_LI[p.name]) p.linkedin = BOARD_LI[p.name];
+people.leadership = people.leadership.map((p) => (/Sheela Prabhakar/.test(p.name) ? { name: 'Nirav Dedhia', role: 'Investments & Innovation Partnerships Lead', portrait: '/assets/team/nirav-dedhia.webp', fit: 'contain', linkedin: 'https://www.linkedin.com/in/niravdedhia/', source: 'https://www.artpark.in/team' } : p));
 
 // ---------------- Portfolio (the ARTPARK Start Up portfolio 2026, 36 startups) ----------------
 // Company names, one-liners and logos come from artpark.in for the 33 listed there; the 3 newer ones are

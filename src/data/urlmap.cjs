@@ -8,7 +8,7 @@ const EXACT = {
   '/about-us': '/about/approach', '/team': '/about/team', '/boards-advisors': '/about/team',
   '/certifications': '/about/certifications', '/contact': '/contact', '/partnerships': '/partnerships',
   '/startups-overview': '/portfolio', '/startups-new': '/portfolio', '/dashboard': '/portfolio', '/stories': '/portfolio',
-  '/startups-applyfortir2026': 'https://apply.artpark.info/tir', '/startups-applyforvip': 'https://apply.artpark.info/sip',
+  '/startups-applyfortir2026': '/about/programs/tir', '/startups-applyforvip': '/about/programs/vip',
   '/advanced-robotics': '/about/programs/advanced-robotics', '/advanced-robotics/category/ADVANCED+ROBOTIC+SYSTEMS': '/about/programs/advanced-robotics',
   '/industry5': '/about/programs/industry-5', '/industry-50': '/about/programs/industry-5',
   '/health': '/about/programs/health', '/health-initiatives': '/about/programs/health', '/ai-and-health': '/about/programs/health',

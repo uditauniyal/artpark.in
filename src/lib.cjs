@@ -22,8 +22,10 @@ const R = {
   careers: '/careers',
   stories: '/stories',
   contact: '/contact',
-  apply: 'https://apply.artpark.info/',
-  applySignIn: 'https://apply.artpark.info/apply',
+  // User (2026-11-14): no links to apply.artpark.info until it merges into artpark.in; applying and signing in open
+  // an "in progress" page (src/pages/apply.cjs).
+  apply: '/apply',
+  applySignIn: '/apply',
 };
 
 const ABOUT_ITEMS = [
@@ -68,8 +70,8 @@ ${items.map(([k, l, d, href]) => `              <a role="menuitem" href="${href}
         <a href="${R.careers}" style="color:${util(active === 'careers')};text-decoration:none">Careers</a>
         <a href="${R.tenders}" style="color:${util(sub === 'tenders')};text-decoration:none">Tenders</a>
         <span style="width:1px;height:14px;background:rgba(255,255,255,0.3)"></span>
-        <a href="${R.applySignIn}" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;font-weight:600">Sign in</a>
-        <a href="${R.applySignIn}" target="_blank" rel="noopener" style="background:var(--artlight);color:var(--artblue);padding:4px 14px;border-radius:999px;text-decoration:none;font-family:var(--font-display);font-weight:700">Sign up</a>
+        <a href="${R.applySignIn}" style="color:#fff;text-decoration:none;font-weight:600">Sign in</a>
+        <a href="${R.applySignIn}" style="background:var(--artlight);color:var(--artblue);padding:4px 14px;border-radius:999px;text-decoration:none;font-family:var(--font-display);font-weight:700">Sign up</a>
       </div>
     </div>
   </div>
@@ -86,7 +88,7 @@ ${menu('about', 'About', ABOUT_ITEMS, active === 'about', 280)}
         <a class="nav-link" href="${R.partnerships}" style="line-height:1.2;color:${ink(active === 'partnerships')}">Partnerships</a>
 ${menu('outreach', 'Outreach', OUTREACH_ITEMS, active === 'outreach', 260)}
         <a class="nav-link" href="${R.contact}" style="line-height:1.2;color:${ink(active === 'contact')}">Contact</a>
-        <div class="nav-extra"><a class="btn btn-primary" href="${R.home}#collaborate" style="border-radius:999px;justify-content:center">Work with us <span class="arrow">→</span></a><div class="nav-extra-links"><a href="${R.careers}">Careers</a><a href="${R.tenders}">Tenders</a><a href="${R.applySignIn}" target="_blank" rel="noopener">Sign in</a><a class="is-pill" href="${R.applySignIn}" target="_blank" rel="noopener">Sign up</a></div></div>
+        <div class="nav-extra"><a class="btn btn-primary" href="${R.home}#collaborate" style="border-radius:999px;justify-content:center">Work with us <span class="arrow">→</span></a><div class="nav-extra-links"><a href="${R.careers}">Careers</a><a href="${R.tenders}">Tenders</a><a href="${R.applySignIn}">Sign in</a><a class="is-pill" href="${R.applySignIn}">Sign up</a></div></div>
       </nav>
       <a class="btn btn-primary site-cta" href="${R.home}#collaborate" style="border-radius:999px;padding:11px 20px;flex:none;white-space:nowrap">Work with us <span class="arrow">→</span></a>
     </div>
@@ -113,7 +115,7 @@ ${links.map(([l, href]) => `        <a href="${href}" style="color:#fff;text-dec
     <div class="footer-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:32px">
       <div style="display:flex;flex-direction:column;gap:16px">
         <a href="${R.home}" style="align-self:flex-start;display:block"><img src="${LOCKUP}" alt="${LOCKUP_ALT}" width="218" height="44" class="footer-lockup" style="height:44px;width:auto;display:block"></a>
-        <p style="font-size:14px;line-height:1.6;color:rgba(255,255,255,0.7);max-width:320px">AI &amp; Robotics Technology Park. A not-for-profit at the Indian Institute of Science, Bengaluru.</p>
+        <p style="font-size:14px;line-height:1.6;color:rgba(255,255,255,0.7);max-width:320px">ARTPARK (AI &amp; Robotics Technology Park) is a not-for-profit Section-8 company at the Indian Institute of Science, Bangalore, committed to building and deploying AI &amp; Robotics technologies for Society, Economy, and Sovereignty.</p>
         <div style="display:flex;flex-wrap:wrap;gap:18px;align-items:center">${SOCIAL.map(([l, h, d]) => `<a href="${h}" target="_blank" rel="noopener" aria-label="ARTPARK on ${l}" title="${l}" style="display:flex;align-items:center;justify-content:center;color:#fff;opacity:0.95;transition:opacity 150ms ease"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="${d}"/></svg></a>`).join('')}</div>
       </div>
 ${col('HOME', [['Stories', R.home + '#stories'], ['What we believe', R.home + '#believe'], ["What we're building", R.home + '#building'], ['Work with us', R.home + '#collaborate']])}

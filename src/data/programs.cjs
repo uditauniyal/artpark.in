@@ -7,7 +7,7 @@ const programs = [
     slug: 'advanced-robotics', projects: ['camras'], status: 'ONGOING', dot: '', name: 'Advanced Robotic Systems',
     short: 'Next-generation robotics for India through four focused initiatives: humanoids, resilient multi-robot systems, a secure navigation stack and physical AI.',
     lede: 'Driving next-gen robotics in India through four focused innovation initiatives. Each targets a critical gap in robotics capability, with the aim of indigenous, intelligent and resilient systems.',
-    image: '/assets/site/quadruped-team.webp', imageAlt: 'Engineers with a quadruped robot at ARTgarage', caption: 'A quadruped robot at ARTgarage.',
+    image: '/assets/site/quadruped-team.webp', imageAlt: 'Engineers with a quadruped robot at ARTGarage', caption: 'A quadruped robot at ARTGarage.',
     rows: [
       ['Humanoids', 'Agile, dexterous humanoid robots for factory automation and healthcare assistance, integrating perception, manipulation, locomotion and foundation AI models for human-safe interaction. Built with industry partners to move quickly from prototype to deployment.'],
       ['Resilient multi-robot systems', 'Collaborative networks of aerial, ground and underwater robots for defence and civilian use, with distributed AI, multimodal sensing and autonomous coordination for surveillance and disaster management.'],
@@ -17,7 +17,7 @@ const programs = [
     stats: [['₹78.4 Cr', 'CAMRAS investment by the Ministry of Heavy Industries'], ['8', 'CAMRAS projects at launch'], ['6', 'pre-venture teams that became startups'], ['2,800', 'professionals targeted by the CAMRAS skilling programme']],
     cards: [
       { title: 'CAMRAS', text: 'The Center for Advanced Manufacturing of Robotics and Autonomous Systems is an industry accelerator set up at ARTPARK @ IISc by the Ministry of Heavy Industries, to reduce India’s import footprint in robotic and autonomous systems. Its six pre-venture teams became Twara Robotics, Comrado Aerospace, Strider Robotics, AlgoFET, VayDyn and Yaanendriya.', image: '/assets/site/test-rigs.webp', imageAlt: 'Engineers at hardware test rigs in the robotics lab' },
-      { title: 'Built at ARTgarage', text: 'Robots are built and tested at ARTgarage: indoor and outdoor arenas, fabrication, and a test track for autonomous vehicles.', image: '/assets/site/quadruped-assembly.webp', imageAlt: 'Two engineers assembling a quadruped robot', href: '/about/facilities/artgarage' },
+      { title: 'Built at ARTGarage', text: 'Robots are built and tested at ARTGarage: indoor and outdoor arenas, fabrication, and a test track for autonomous vehicles.', image: '/assets/site/quadruped-assembly.webp', imageAlt: 'Two engineers assembling a quadruped robot', href: '/about/facilities/artgarage' },
     ],
     sources: ['https://www.artpark.in/advanced-robotics', 'https://www.artpark.in/advanced-robotics/camras'],
   },
@@ -84,18 +84,18 @@ const programs = [
   },
   {
     slug: 'wired-wireless', projects: ['5g-test-lab'], videos: [['Tutorial on 5G Essentials: complete playlist', 'https://www.youtube.com/embed/videoseries?list=PLl5RpkrF6Z5a6FbZ74v2T0ms4qU6nqDrJ'], ['India’s first 5G-enabled drone corridor', 'https://www.youtube.com/embed/1GLSXiuG3R8'], ['Inside India’s 5G test lab at ARTPARK', 'https://www.youtube.com/embed/lTUHbFAFwvE'], ['Building India’s 5G future with drones, robots and industrial AI', 'https://www.youtube.com/embed/2hX8PXd3Tvc']], status: 'ONGOING', name: 'Wired & Wireless Technologies (CoE-WWT)',
-    short: 'A Centre of Excellence, seed-funded by the Government of Karnataka, with a live 5G test lab at ARTgarage open to startups, academia and industry.',
+    short: 'A Centre of Excellence, seed-funded by the Government of Karnataka, with a live 5G test lab at ARTGarage open to startups, academia and industry.',
     lede: 'The Center of Excellence – Wired & Wireless Technologies is established through seed funding by the Government of Karnataka to foster market-ready solutions in next-gen communications and AI, with the potential for societal-scale impact.',
-    image: '/assets/site/5g-lab.webp', imageAlt: 'The 5G lab at ARTgarage', caption: 'The 5G test lab at ARTgarage.',
+    image: '/assets/site/5g-lab.webp', imageAlt: 'The 5G lab at ARTGarage', caption: 'The 5G test lab at ARTGarage.',
     stats: [['51', 'teams demonstrated 5G prototypes at ARTPARK'], ['75,000', 'sq ft indoor test area'], ['5 acres', 'outdoor test area'], ['1 of 100', 'Bharat 5G Labs (DoT)']],
     rows: [
-      ['5G test lab', 'A Bharat 5G Use Case Lab and a parallel Karnataka 5G Test Lab, with private 5G coverage across ARTgarage indoors and outdoors. Open to startups, academia and industry at nominal cost.'],
+      ['5G test lab', 'A Bharat 5G Use Case Lab and a parallel Karnataka 5G Test Lab, with private 5G coverage across ARTGarage indoors and outdoors. Open to startups, academia and industry at nominal cost.'],
       ['5G-enabled drones and UGVs', 'Multi-UAV and UGV operations over 5G, including beyond-visual-line-of-sight flights and a reference architecture for drone corridor management.'],
       ['InterSafe', 'A 5G road-safety system: roadside cameras, radar and sensors with edge AI that send hazard warnings to vehicles and phones in real time.'],
       ['LifeCircuit', 'A 5G emergency-care network that activates nearby first responders, finds the nearest defibrillator and alerts ambulances and hospitals.'],
     ],
     cards: [
-      { title: 'Drones over 5G', text: 'India’s first 5G-enabled drone corridor work happens here.', image: '/assets/site/drone-room.webp', imageAlt: 'A drone hovering in the ARTgarage lab' },
+      { title: 'Drones over 5G', text: 'India’s first 5G-enabled drone corridor work happens here.', image: '/assets/site/drone-room.webp', imageAlt: 'A drone hovering in the ARTGarage lab' },
       { title: '51 teams, one testbed', text: '51 teams demonstrated their 5G prototypes at ARTPARK, IISc; the top scorers head to India Mobile Congress 2026.', image: '/assets/site/5g-teams.webp', imageAlt: 'ARTPARK graphic of the 5G prototype demonstrations', fit: 'contain' },
     ],
     links: [['Write to the CoE team · wwtcoe@artpark.in', 'mailto:wwtcoe@artpark.in']],
@@ -105,7 +105,7 @@ const programs = [
     slug: 'academy', status: 'ONGOING', name: 'Academy',
     short: 'Skills in robotics, AI and autonomous systems: Spark sessions for founders, UG-PG fellowships, internships, courses and challenges.',
     lede: 'Fostering timely skills development, cultivating talent at regional and national levels, and helping people bridge the gap between research and commercialisation.',
-    image: '/assets/site/skilling-session.webp', imageAlt: 'A skilling session in the ARTgarage commons', caption: 'A session at ARTgarage.',
+    image: '/assets/site/skilling-session.webp', imageAlt: 'A skilling session in the ARTGarage commons', caption: 'A session at ARTGarage.',
     stats: [['15', 'UG-PG fellowship projects'], ['29', 'students supported (18 UG, 11 PG)'], ['5', 'products and prototypes designed'], ['~20', 'founders per Spark cohort']],
     rows: [
       ['Spark sessions', 'For aspiring deep-tech entrepreneurs: a cohort of about 20 founders, with expert sessions on MVPs, business models, product-market fit and fundraising.'],
@@ -142,18 +142,18 @@ const programs = [
 ];
 
 // Manager (2026-11-12, Claude Design): the two venture-building tracks lead the Programs list, with their own pages
-// (src/pages/program-pages.cjs).
+// (src/pages/program-pages.cjs). Photos chosen by the user (2026-11-14).
 const venture = [
-  { slug: 'tir', label: 'TIR', bg: 'var(--artblue)', status: 'OPEN · VENTURE BUILDING', name: 'Technology Innovator in Residence', short: 'Six months, ₹25L at 0% equity and IISc infrastructure for researchers with lab-proven, TRL 3 technology — and no company yet.' },
-  { slug: 'vip', label: 'VIP', bg: 'var(--accent-violet)', status: 'OPEN · VENTURE BUILDING', name: 'Venture Incubation Programme', short: 'Direct investment and venture building support for incorporated Indian startups with TRL 4+ technology and a pitch-ready proposition.' },
+  { slug: 'tir', label: 'TIR', image: '/assets/programs/tir.webp', imageAlt: 'A session with innovators in the ARTGarage amphitheatre', status: 'OPEN · VENTURE BUILDING', name: 'Technology Innovator in Residence', short: 'Six months, ₹25L at 0% equity and IISc infrastructure for researchers with lab-proven, TRL 3 technology — and no company yet.' },
+  { slug: 'vip', label: 'VIP', image: '/assets/programs/vip.webp', imageAlt: 'A startup team testing a telescope mount outdoors at ARTPARK', status: 'OPEN · VENTURE BUILDING', name: 'Venture Incubation Programme', short: 'Direct investment and venture building support for incorporated Indian startups with TRL 4+ technology and a pitch-ready proposition.' },
 ];
 
 const facilities = [
-  { slug: 'artgarage', name: 'ARTgarage', text: '75,000 sq ft of advanced manufacturing equipment, clean rooms, communications infrastructure, GPU compute and indoor-outdoor test arenas at Jalahalli, 20 minutes from IISc.', image: '/assets/site/artgarage-hall.webp', alt: 'The main hall inside ARTgarage', href: '/about/facilities/artgarage' },
+  { slug: 'artgarage', name: 'ARTGarage', text: '75,000 sq ft of advanced manufacturing equipment, clean rooms, communications infrastructure, GPU compute and indoor-outdoor test arenas at Jalahalli, 20 minutes from IISc.', image: '/assets/site/artgarage-hall.webp', alt: 'The main hall inside ARTGarage', href: '/about/facilities/artgarage' },
   { slug: 'robotic-test', name: 'Networked Robotic Test Facility', text: 'Indoor and outdoor arenas for ground robots, drones and underwater systems: multi-robot coordination, obstacle courses and sensor calibration.', image: '/assets/site/drone-lab.webp', alt: 'A drone flying inside the robotics lab' },
   { slug: 'fabrication', name: 'Advanced Manufacturing & Fabrication', text: 'CNC machining, FDM, SLA and SLS 3D printing, metal fabrication, PCB assembly and clean rooms, from CAD to working prototype in days.', image: '/assets/site/fabrication.webp', alt: 'Engineers working on a fabricated panel' },
-  { slug: '5g-lab', name: 'Bharat 5G Lab & CoE-WWT', text: 'A live 5G testbed with hybrid 5G-Wi-Fi, Li-Fi and millimetre-wave systems, used to validate 5G-enabled autonomous systems and IoT.', image: '/assets/site/5g-lab.webp', alt: 'The 5G lab at ARTgarage', href: '/about/programs/wired-wireless' },
-  { slug: 'gpu', name: 'GPU Compute Cluster', text: 'On-site high-performance compute for AI training, simulation and digital twins, for ARTPARK startups, fellows and research teams.', image: '/assets/site/workstations.webp', alt: 'Engineering workstations at ARTgarage' },
+  { slug: '5g-lab', name: 'Bharat 5G Lab & CoE-WWT', text: 'A live 5G testbed with hybrid 5G-Wi-Fi, Li-Fi and millimetre-wave systems, used to validate 5G-enabled autonomous systems and IoT.', image: '/assets/site/5g-lab.webp', alt: 'The 5G lab at ARTGarage', href: '/about/programs/wired-wireless' },
+  { slug: 'gpu', name: 'GPU Compute Cluster', text: 'On-site high-performance compute for AI training, simulation and digital twins, for ARTPARK startups, fellows and research teams.', image: '/assets/site/workstations.webp', alt: 'Engineering workstations at ARTGarage' },
   { slug: 'brainz', name: 'BRAINz campus', text: 'A 9-acre Bengaluru Robotics and AI Innovation Zone being built with the Government of Karnataka, for AI, robotics, space, aerospace and defence, manufacturing and medtech.', image: '/assets/site/brainz-render.webp', alt: 'BRAINz campus vision render', href: '/about/facilities/brainz', render: true },
 ];
 

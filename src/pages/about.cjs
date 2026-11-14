@@ -1,58 +1,40 @@
 // About section: ported from .reference/claude-design/About-*.dc.html, filled with artpark.in content.
 const L = require('../lib.cjs');
-const { esc, page, pageIntro, R, sectionHead, rows, statGrid, photoGrid, figure, quote, linkRows, wrap, section } = L;
+const { esc, page, pageIntro, ABOUT_TABS, R, sectionHead, rows, statGrid, photoGrid, figure, quote, linkRows, wrap, section } = L;
 const C = require('../data/content.cjs');
 const P = require('../data/programs.cjs');
 const PJ = require('./projects.cjs');
 
-// Manager (2026-11-12, Claude Design): no sub-tab row under the About intros; the About menu covers it.
-const intro = (current, h1, lede) => pageIntro({ eyebrow: 'About ARTPARK', h1, lede });
+// The About tab row (Nirav removed it on 2026-11-12; the user asked for it back on 2026-11-14, like Outreach's).
+const intro = (current, h1, lede) => pageIntro({ eyebrow: 'About ARTPARK', h1, lede, tabs: { current, items: ABOUT_TABS }, float: FLOATS[current] });
 
-// ---------- Our Team (About-Our-Team.dc.html) ----------
-// His leadership card (4:5 portrait, name, role), now used for every group since portraits exist.
-const personCard = (p) => `          <div class="person-card" style="display:flex;flex-direction:column;gap:12px">
-            <div style="position:relative;width:100%;aspect-ratio:4/5;background:var(--paper-soft);overflow:hidden"><img src="${p.portrait}" alt="${esc(p.name)}" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%;display:block"></div>
-            <div><div style="font-family:var(--font-display);font-weight:700;font-size:17px">${esc(p.name)}</div><div style="font-size:14px;color:var(--ink-dim);margin-top:2px">${esc(p.role)}</div>${p.linkedin ? `<a href="${p.linkedin}" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;font-size:13px;font-weight:600">LinkedIn ↗</a>` : ''}</div>
-          </div>`;
-const boardList = (list) => `<div class="person-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:28px 16px;margin-top:32px">
-${list.map(personCard).join('\n')}
-      </div>`;
-
-const team = {
-  route: R.team,
-  html: () => page({
-    title: 'Our Team — ARTPARK', active: 'about', sub: 'team',
-    description: 'The people who lead ARTPARK and the boards that govern and advise it.',
-    body: intro('team', 'Our team.', 'The people who lead ARTPARK and the boards that govern and advise it.') + '\n' + wrap([
-      section(`${sectionHead('Leadership team', 'The people running the work.')}
-      <div class="person-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:28px 16px;margin-top:32px">
-${C.people.leadership.map(personCard).join('\n')}
-      </div>`, { label: 'Leadership' }),
-      section(`${sectionHead('Governing board', 'Hub governing board.')}
-      ${boardList(C.people.governing)}`, { label: 'Governing board' }),
-      section(`${sectionHead('Board', 'Board of directors.')}
-      ${boardList(C.people.directors)}`, { label: 'Board of directors' }),
-      section(`${sectionHead('Research', 'Research advisory board.')}
-      ${boardList(C.people.research)}`, { label: 'Research advisory board' }),
-      section(`${sectionHead('Advisors', 'Executive advisors.')}
-      ${boardList(C.people.advisors)}`, { last: true, label: 'Executive advisors' }),
-    ].join('\n')),
-  }),
+// User (2026-11-14): the About pages get the same floating windows on the right of the intro as Outreach,
+// Partnerships and Portfolio (lib.cjs floatStage; same geometry as the Events composition).
+const win = (src, cap, i) => ({ kind: 'win', src, cap, ...[{ x: 0, y: 4, w: 50, d: 1.4, r: -3, t: 8 }, { x: 47, y: -4, w: 53, d: 0.8, r: 2.5, t: 9 }, { x: 20, y: 50, w: 50, d: 1.9, r: -1, t: 7 }][i] });
+const stat = (n, l) => ({ kind: 'stat', n, l, x: 70, y: 56, w: 30, d: 2.6, r: 3, t: 6 });
+const doc = (text, sub, i) => ({ kind: 'doc', tag: 'CERT', text, sub, ...[{ x: 4, y: 4, w: 50, d: 1.2, r: -3, t: 8 }, { x: 52, y: 14, w: 42, d: 0.8, r: 3, t: 9 }, { x: 16, y: 52, w: 54, d: 1.9, r: -1, t: 7 }][i] });
+const FLOATS = {
+  approach: [win('/assets/site/team-meeting.webp', 'How we work', 0), win('/assets/site/quadruped-team.webp', 'Robotics', 1), win('/assets/site/robot-training.webp', 'Industry 5.0', 2), stat('0–9', 'technology readiness levels, the whole arc')],
+  facilities: [win('/assets/site/artgarage-hall.webp', 'ARTGarage', 0), win('/assets/site/5g-lab.webp', 'Bharat 5G Lab', 1), win('/assets/site/fabrication.webp', 'Fabrication', 2), stat(P.artgarage.facts[0][0], 'of labs and test space at ARTGarage')],
+  certifications: [doc('SIRO recognition', 'DSIR', 0), doc('Eligible for CSR', 'Ministry of Corporate Affairs', 1), doc('Section 80G', 'Income Tax Department', 2), stat(String(C.certifications.length), 'registrations and recognitions')],
+  programs: [win('/assets/programs/tir.webp', 'TIR', 0), win('/assets/programs/vip.webp', 'VIP', 1), win('/assets/site/quadruped-team.webp', 'Advanced Robotics', 2), stat(String(P.programs.length + P.venture.length), 'programs and centres')],
 };
+
+// Our Team moved to src/pages/team.cjs (the Editorial design, 2026-11-14).
 
 // ---------- Approach (About-Approach.dc.html) ----------
 // His page: three cards (Model / Selection / Ecosystem) + "Where we work." rows.
 // Filled from artpark.in/about-us, with a readiness-arc infographic, icons and photographs.
 const TRL_STEPS = [
   { from: 0, to: 3, label: 'Idea to lab proof', note: 'ARTLabs innovation projects. Technology Innovators in Residence enter at TRL 3.', href: R.programs + '/artlabs' },
-  { from: 4, to: 5, label: 'Prototype and pilots', note: 'The Venture Incubation Programme takes startups from TRL 4 towards field trials, at ARTgarage.', href: 'https://apply.artpark.info/sip' },
+  { from: 4, to: 5, label: 'Prototype and pilots', note: 'The Venture Incubation Programme takes startups from TRL 4 towards field trials, at ARTGarage.', href: R.programs + '/vip' },
   { from: 6, to: 9, label: 'Deployed, at scale', note: 'Field deployment, manufacturing readiness and follow-on capital, through programmes such as CAMRAS.', href: '/projects/camras' },
 ];
 const SUPPORT = [
   ['users', 'Mentorship & expertise', 'Domain experts, serial founders, policy advisors, government agencies and industry practitioners who engage at depth.'],
   ['network', 'Networks & collaborations', 'Industry, government ministries and international institutions, for customers, procurement channels and deployment environments.'],
   ['banknote', 'Capital & investment', 'Direct investment and grant funding at pre-commercial stages, when the risk is highest and most capital will not move.'],
-  ['cpu', 'Technical infrastructure', 'IISc’s research facilities: robotics labs, fabrication shops, AI compute and specialised 5G testing at ARTgarage.'],
+  ['cpu', 'Technical infrastructure', 'IISc’s research facilities: robotics labs, fabrication shops, AI compute and specialised 5G testing at ARTGarage.'],
 ];
 const MODELS = [
   ['rocket', 'Model A', 'For-profit startup', 'When the technology has a clear commercial pathway, defensible IP and a customer willing to pay for performance, we build a company.', '/assets/paint/tile-algofet.webp', 'AlgoFET', '/stories/algofet'],
@@ -134,11 +116,11 @@ const facilitiesPage = {
       `    <section data-screen-label="Offerings" style="padding:64px 0 0">
       ${sectionHead('Offerings', 'Ways to work with ARTPARK.')}
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:32px">
-        <div style="background:var(--artblue);color:#fff;padding:32px 28px;min-height:240px;display:flex;flex-direction:column;gap:12px"><span style="font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:0.12em;color:var(--artlight)">TIR</span><h3 style="color:#fff;font-size:26px">Technology Innovators in Residence</h3><p style="font-size:14px;line-height:1.6;color:rgba(255,255,255,0.85)">For researchers with lab-proven technology. ₹25L non-dilutive first cheque and IISc lab access.</p><a href="https://apply.artpark.info/tir" target="_blank" rel="noopener" style="margin-top:auto;color:#fff;font-family:var(--font-display);font-weight:700;font-size:14px;text-decoration:none">Apply for TIR →</a></div>
-        <div style="background:var(--accent-violet);color:#fff;padding:32px 28px;min-height:240px;display:flex;flex-direction:column;gap:12px"><span style="font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:0.12em;color:var(--artlight)">VIP</span><h3 style="color:#fff;font-size:26px">Venture Incubation Programme</h3><p style="font-size:14px;line-height:1.6;color:#fff">For incorporated startups at TRL 4+. Up to ₹2 Cr direct equity investment with follow-on pathways.</p><a href="https://apply.artpark.info/sip" target="_blank" rel="noopener" style="margin-top:auto;color:#fff;font-family:var(--font-display);font-weight:700;font-size:14px;text-decoration:none">Apply to VIP →</a></div>
-        <div style="background:var(--artblack);color:#fff;padding:32px 28px;min-height:240px;display:flex;flex-direction:column;gap:12px"><span style="font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:0.12em;color:var(--artlight)">FACILITY ACCESS</span><h3 style="color:#fff;font-size:26px">Labs, 5G testbed and Open Days</h3><p style="font-size:14px;line-height:1.6;color:rgba(255,255,255,0.8)">The 5G test lab is open to startups, academia and industry at nominal cost. ARTgarage opens its doors twice a month for the community and for investors.</p><a href="${R.events}" style="margin-top:auto;color:#fff;font-family:var(--font-display);font-weight:700;font-size:14px;text-decoration:none">See Open Day dates →</a></div>
+        <div style="background:var(--artblue);color:#fff;padding:32px 28px;min-height:240px;display:flex;flex-direction:column;gap:12px"><span style="font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:0.12em;color:var(--artlight)">TIR</span><h3 style="color:#fff;font-size:26px">Technology Innovators in Residence</h3><p style="font-size:14px;line-height:1.6;color:rgba(255,255,255,0.85)">For researchers with lab-proven technology. ₹25L non-dilutive first cheque and IISc lab access.</p><a href="${R.programs}/tir" style="margin-top:auto;color:#fff;font-family:var(--font-display);font-weight:700;font-size:14px;text-decoration:none">About TIR →</a></div>
+        <div style="background:var(--accent-violet);color:#fff;padding:32px 28px;min-height:240px;display:flex;flex-direction:column;gap:12px"><span style="font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:0.12em;color:var(--artlight)">VIP</span><h3 style="color:#fff;font-size:26px">Venture Incubation Programme</h3><p style="font-size:14px;line-height:1.6;color:#fff">For incorporated startups at TRL 4+. Up to ₹2 Cr direct equity investment with follow-on pathways.</p><a href="${R.programs}/vip" style="margin-top:auto;color:#fff;font-family:var(--font-display);font-weight:700;font-size:14px;text-decoration:none">About VIP →</a></div>
+        <div style="background:var(--artblack);color:#fff;padding:32px 28px;min-height:240px;display:flex;flex-direction:column;gap:12px"><span style="font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:0.12em;color:var(--artlight)">FACILITY ACCESS</span><h3 style="color:#fff;font-size:26px">Labs, 5G testbed and Open Days</h3><p style="font-size:14px;line-height:1.6;color:rgba(255,255,255,0.8)">The 5G test lab is open to startups, academia and industry at nominal cost. ARTGarage opens its doors twice a month for the community and for investors.</p><a href="${R.events}" style="margin-top:auto;color:#fff;font-family:var(--font-display);font-weight:700;font-size:14px;text-decoration:none">See Open Day dates →</a></div>
       </div>
-      <p style="margin-top:20px;font-size:13px;line-height:1.6;color:var(--ink-dim)">Program terms change between cohorts. Current details are at <a href="https://apply.artpark.info/" target="_blank" rel="noopener">apply.artpark.info</a>.</p>
+      <p style="margin-top:20px;font-size:13px;line-height:1.6;color:var(--ink-dim)">Program terms change between cohorts. Current details are on the <a href="${R.programs}/tir">TIR</a> and <a href="${R.programs}/vip">VIP</a> pages.</p>
     </section>`,
     ].join('\n')),
   }),
@@ -167,8 +149,8 @@ ${C.certifications.map((c, i) => `      <div style="border-bottom:${i === C.cert
 // ---------- Programs (About-Other-Programs.dc.html; renamed "Our programs" by the manager, 2026-11-12) ----------
 const DOT = { ONGOING: '', NEW: 'green', OPEN: 'green', CLOSED: 'coral' };
 const progText = (status, dot, name, short) => `<div style="display:flex;flex-direction:column;gap:8px"><span style="display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:0.14em;color:var(--ink-dim)"><span class="dot ${dot}"></span>${status}</span><h3 style="font-size:22px">${esc(name)}</h3><p style="font-size:15px;line-height:1.65;color:var(--ink-soft)">${esc(short)}</p><span style="font-size:14px;font-weight:600;color:var(--artblue);text-decoration:underline">Learn more →</span></div>`;
-// TIR and VIP: a coloured tile with the track's initials in place of a photograph.
-const ventureRows = P.venture.map((v) => `<a id="${v.slug}" class="prog-row" href="${R.programs}/${v.slug}" style="--i:0"><div class="prog-img" style="background:${v.bg};display:flex;align-items:center;justify-content:center"><span style="font-family:var(--font-display);font-weight:700;font-size:clamp(28px,4vw,44px);color:#fff;letter-spacing:0.02em">${v.label}</span></div>${progText(v.status, '', v.name, v.short)}</a>`).join('');
+// TIR and VIP lead the list, with the photographs the user chose (2026-11-14).
+const ventureRows = P.venture.map((v) => `<a id="${v.slug}" class="prog-row" href="${R.programs}/${v.slug}" style="--i:0"><div class="prog-img"><img src="${v.image}" alt="${esc(v.imageAlt)}" loading="lazy" style="object-fit:cover;object-position:50% 50%"></div>${progText(v.status, '', v.name, v.short)}</a>`).join('');
 const progImg = (p) => p.logo
   ? `<div class="prog-img" style="background:#fff;border:1px solid var(--line)"><img src="${p.image}" alt="${esc(p.imageAlt)}" loading="lazy" style="object-fit:contain;object-position:50% 50%;padding:12%;box-sizing:border-box;background:#fff"></div>`
   : `<div class="prog-img"><img src="${p.image}" alt="" loading="lazy" style="object-fit:${p.fit || 'cover'};object-position:${p.imagePos || '50% 50%'}"></div>`;
@@ -177,7 +159,7 @@ const programsList = {
   html: () => page({
     title: 'Our Programs — ARTPARK', active: 'about', sub: 'programs',
     description: 'ARTPARK’s research and innovation programs beyond the residency and incubation tracks.',
-    body: pageIntro({ eyebrow: 'About ARTPARK', h1: 'Our programs.', lede: 'ARTPARK’s programs span three tracks: <strong style="color:var(--ink)">Venture Building</strong> backs researchers and startups taking deep-tech from lab to market; <strong style="color:var(--ink)">Centres of Excellence</strong> drive mission-led research in robotics, health, language and connectivity; and the <strong style="color:var(--ink)">Academy</strong> builds the talent to deploy it.' }) + `
+    body: intro('programs', 'Our programs.', 'ARTPARK’s programs span three tracks: <strong style="color:var(--ink)">Venture Building</strong> backs researchers and startups taking deep-tech from lab to market; <strong style="color:var(--ink)">Centres of Excellence</strong> drive mission-led research in robotics, health, language and connectivity; and the <strong style="color:var(--ink)">Academy</strong> builds the talent to deploy it.') + `
   <div style="max-width:1180px;margin:0 auto;padding:64px 24px 112px">
     <div style="border-top:1px solid var(--line-strong)">
 ${P.programs.map((p, i) => `      ${i === 0 ? ventureRows : ''}<a id="${p.slug}" class="prog-row" href="${R.programs}/${p.slug}" style="--i:${i}">${progImg(p)}${progText(p.status, DOT[p.status], p.name, p.short)}</a>`).join('\n')}
@@ -217,15 +199,15 @@ ${p.videos.map(([t, v]) => `        <figure style="margin:0"><div style="positio
   }),
 });
 
-// ---------- Facility detail: ARTgarage and BRAINz ----------
+// ---------- Facility detail: ARTGarage and BRAINz ----------
 const artgaragePage = {
   route: `${R.facilities}/artgarage`,
   html: () => page({
-    title: 'ARTgarage — ARTPARK', active: 'about', sub: 'facilities',
-    description: 'ARTgarage: 75,000 sq ft of manufacturing, testing, 5G and GPU infrastructure for AI, robotics and autonomous systems in Bengaluru.',
-    body: pageIntro({ eyebrow: 'Facilities & Offerings', h1: 'ARTgarage.', lede: 'Where ideas become hardware. A 75,000 sq ft deep-tech facility at Jalahalli, Bengaluru: advanced manufacturing equipment, clean rooms, communications infrastructure, GPU compute and indoor-outdoor test arenas, all in one place. Here, innovators move from concept to prototype to customer trial, saving months if not years.' }) + `
+    title: 'ARTGarage — ARTPARK', active: 'about', sub: 'facilities',
+    description: 'ARTGarage: 75,000 sq ft of manufacturing, testing, 5G and GPU infrastructure for AI, robotics and autonomous systems in Bengaluru.',
+    body: pageIntro({ eyebrow: 'Facilities & Offerings', h1: 'ARTGarage.', lede: 'Where ideas become hardware. A 75,000 sq ft deep-tech facility at Jalahalli, Bengaluru: advanced manufacturing equipment, clean rooms, communications infrastructure, GPU compute and indoor-outdoor test arenas, all in one place. Here, innovators move from concept to prototype to customer trial, saving months if not years.' }) + `
   <div style="max-width:1180px;margin:0 auto;padding:48px 24px 0">
-    ${figure({ image: '/assets/site/artgarage-hall.webp', alt: 'The main hall inside ARTgarage', caption: 'Inside ARTgarage, in a former HMT factory at Jalahalli.' })}
+    ${figure({ image: '/assets/site/artgarage-hall.webp', alt: 'The main hall inside ARTGarage', caption: 'Inside ARTGarage, in a former HMT factory at Jalahalli.' })}
   </div>
 ` + wrap([
       section(`${sectionHead('At a glance', 'The facility.')}
@@ -238,7 +220,7 @@ const artgaragePage = {
       ${photoGrid([
         { image: '/assets/site/quadruped-assembly.webp', alt: 'Engineers assembling a quadruped robot', title: 'Robots, assembled by hand', text: 'Quadrupeds and actuators are built and tested on site.' },
         { image: '/assets/site/test-equipment.webp', alt: 'An engineer at mechanical test equipment', title: 'Test before you ship', text: 'Mechanical and electrical test benches for validation.' },
-        { image: '/assets/site/artgarage-entrance.webp', alt: 'The ARTgarage building entrance', title: 'Visit us', text: '177, HMT Colony, HMT Estate, Jalahalli, Bengaluru 560013. Open Days twice a month.', href: R.events },
+        { image: '/assets/site/artgarage-entrance.webp', alt: 'The ARTGarage building entrance', title: 'Visit us', text: '177, HMT Colony, HMT Estate, Jalahalli, Bengaluru 560013. Open Days twice a month.', href: R.events },
       ])}`, { last: true }),
     ].join('\n')),
   }),
@@ -257,9 +239,9 @@ const brainzPage = {
       ${rows(P.brainz.spaces)}`),
       section(`${sectionHead('Partner to build BRAINz', 'Three ways to join.')}
       ${rows(P.brainz.partners)}
-      <div style="margin-top:28px;display:flex;flex-wrap:wrap;gap:12px"><a class="btn btn-primary" href="${R.contact}">Write to us <span class="arrow">→</span></a><a class="btn btn-ghost" href="${R.facilities}/artgarage">Explore ARTgarage</a></div>`, { last: true }),
+      <div style="margin-top:28px;display:flex;flex-wrap:wrap;gap:12px"><a class="btn btn-primary" href="${R.contact}">Write to us <span class="arrow">→</span></a><a class="btn btn-ghost" href="${R.facilities}/artgarage">Explore ARTGarage</a></div>`, { last: true }),
     ].join('\n')),
   }),
 };
 
-module.exports = [team, approach, facilitiesPage, certifications, programsList, ...P.programs.filter((p) => !p.imported).map(programPage), artgaragePage, brainzPage];
+module.exports = [approach, facilitiesPage, certifications, programsList, ...P.programs.filter((p) => !p.imported).map(programPage), artgaragePage, brainzPage];

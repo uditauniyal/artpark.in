@@ -155,12 +155,12 @@ const building = `
           <div style="margin-top:14px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));grid-auto-rows:auto;gap:0 14px;row-gap:16px">
             <div class="tilt stage-col" style="grid-row:span 3;display:grid;grid-template-rows:subgrid;row-gap:0;background:var(--artblue);color:#fff;border-radius:14px;overflow:hidden">
               <div style="padding:30px 28px 22px"><span style="font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:0.12em;color:var(--artlight)">01 · BUILD</span><h3 style="color:#fff;font-size:32px;margin-top:8px">Make it real.</h3></div>
-              <div style="margin:0 12px;padding:20px;background:rgba(255,255,255,0.1);border-radius:10px;display:flex;flex-direction:column;gap:8px"><b style="font-family:var(--font-display);font-size:17px">Technology Innovators in Residence</b><p style="font-size:14px;line-height:1.55;color:rgba(255,255,255,0.85)">IISc labs, full-time residency and a ₹25L non-dilutive first cheque.</p>${pillBtn('https://apply.artpark.info/tir', 'About TIR →', 'var(--artblue)', true)}</div>
+              <div style="margin:0 12px;padding:20px;background:rgba(255,255,255,0.1);border-radius:10px;display:flex;flex-direction:column;gap:8px"><b style="font-family:var(--font-display);font-size:17px">Technology Innovators in Residence</b><p style="font-size:14px;line-height:1.55;color:rgba(255,255,255,0.85)">IISc labs, full-time residency and a ₹25L non-dilutive first cheque.</p>${pillBtn('/about/programs/tir', 'About TIR →', 'var(--artblue)', false)}</div>
               <div style="margin:10px 12px 12px;padding:20px;background:rgba(255,255,255,0.1);border-radius:10px;display:flex;flex-direction:column;gap:8px"><b style="font-family:var(--font-display);font-size:17px">Lab-to-market · ArtLabs</b><p style="font-size:14px;line-height:1.55;color:rgba(255,255,255,0.85)">Research teams meet engineering and industry.</p>${pillBtn(R.programs + '/artlabs', 'About ArtLabs →', 'var(--artblue)', false)}</div>
             </div>
             <div class="tilt stage-col" style="grid-row:span 3;display:grid;grid-template-rows:subgrid;row-gap:0;background:var(--accent-violet);color:#fff;border-radius:14px;overflow:hidden">
               <div style="padding:30px 28px 22px"><span style="font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:0.12em;color:var(--artlight)">02 · PROTOTYPE</span><h3 style="color:#fff;font-size:32px;margin-top:8px">Make it work.</h3></div>
-              <div style="margin:0 12px;padding:20px;background:rgba(255,255,255,0.14);border-radius:10px;display:flex;flex-direction:column;gap:8px"><b style="font-family:var(--font-display);font-size:17px">Venture Incubation Programme</b><p style="font-size:14px;line-height:1.55;color:#fff">Investment, venture-building, customers and pilots.</p>${pillBtn('https://apply.artpark.info/sip', 'About VIP →', 'var(--accent-violet)', true)}</div>
+              <div style="margin:0 12px;padding:20px;background:rgba(255,255,255,0.14);border-radius:10px;display:flex;flex-direction:column;gap:8px"><b style="font-family:var(--font-display);font-size:17px">Venture Incubation Programme</b><p style="font-size:14px;line-height:1.55;color:#fff">Investment, venture-building, customers and pilots.</p>${pillBtn('/about/programs/vip', 'About VIP →', 'var(--accent-violet)', false)}</div>
               <div style="margin:10px 12px 12px;padding:20px;background:rgba(255,255,255,0.14);border-radius:10px;display:flex;flex-direction:column;gap:8px"><b style="font-family:var(--font-display);font-size:17px">RDI Scheme</b><p style="font-size:14px;line-height:1.55;color:#fff">R&amp;D and innovation projects moving toward deployment.</p>${pillBtn(R.programs + '/rdi', 'About RDI →', 'var(--accent-violet)', false)}</div>
             </div>
             <div class="tilt stage-col" style="grid-row:span 3;display:grid;grid-template-rows:subgrid;row-gap:0;background:var(--artblack);color:#fff;border-radius:14px;overflow:hidden">
@@ -169,14 +169,14 @@ const building = `
               <div style="margin:10px 12px 12px;padding:20px;background:rgba(255,255,255,0.08);border-radius:10px;display:flex;flex-direction:column;gap:8px"><b style="font-family:var(--font-display);font-size:17px">Manufacturing Centre of Excellence</b><p style="font-size:14px;line-height:1.55;color:rgba(255,255,255,0.8)">Toward repeatable, manufacturable products.</p>${forIncubated}</div>
             </div>
           </div>
-      <p style="margin-top:20px;font-size:13px;line-height:1.6;color:var(--ink-dim)">Program terms change between cohorts. Current details are at <a href="https://apply.artpark.info/" target="_blank" rel="noopener">apply.artpark.info</a>.</p>
+      <p style="margin-top:20px;font-size:13px;line-height:1.6;color:var(--ink-dim)">Program terms change between cohorts. Current details are on the <a href="/about/programs/tir">TIR</a> and <a href="/about/programs/vip">VIP</a> pages.</p>
     </div>
   </section>`;
 
 // ---------- F. Collaborate ----------
 const AUDIENCES = [
-  ['Researchers', 'You have a lab-proven result and want to find out whether it survives outside the lab.', 'https://apply.artpark.info/tir', 'Apply as an Innovator in Residence →', true],
-  ['Startups', "You're incorporated, at TRL 4 or beyond, and the next problem is engineering, validation or scale.", 'https://apply.artpark.info/sip', 'Apply to the incubation program →', true],
+  ['Researchers', 'You have a lab-proven result and want to find out whether it survives outside the lab.', '/about/programs/tir', 'Apply as an Innovator in Residence →', false],
+  ['Startups', "You're incorporated, at TRL 4 or beyond, and the next problem is engineering, validation or scale.", '/about/programs/vip', 'Apply to the incubation program →', false],
   ['Technology builders', 'Engineers and designers who like the middle of the journey — integration, reliability, test rigs, the second and third prototype.', '#contact', 'Introduce yourself →', false],
   ['Industry &amp; public partners', 'You have a real environment and a real problem, and you are willing to test unfinished technology inside it.', '#contact', 'Propose a collaboration →', false],
 ];
@@ -220,7 +220,7 @@ ${HOME_ROLES.map((r, i) => `            <button type="button" data-role="${r}" a
 const FAQ = [
   ['The basics', [
     ['What makes ARTPARK different?', 'We focus on the work after the breakthrough — engineering, testing, integration and scale — and we do it from inside the Indian Institute of Science, with labs, researchers and industry partners in one place.'],
-    ['Is it ever too early to approach ARTPARK?', 'Rarely. If you have a lab-proven result and want to know whether it can survive the real world, that is exactly when to talk to us. Technology Innovators in Residence is built for teams that have not yet formed a company.', 'About TIR →', 'https://apply.artpark.info/tir'],
+    ['Is it ever too early to approach ARTPARK?', 'Rarely. If you have a lab-proven result and want to know whether it can survive the real world, that is exactly when to talk to us. Technology Innovators in Residence is built for teams that have not yet formed a company.', 'About TIR →', '/about/programs/tir'],
     ['What does ARTPARK look for in an idea?', 'A differentiated technology, a real problem it could solve, and a team willing to do the unglamorous work of making it dependable, affordable and usable.'],
     ['What size investments does ARTPARK make?', 'TIR begins with a ₹25L non-dilutive first cheque. The Venture Incubation Programme makes direct investments in incorporated startups; amounts depend on stage and need.'],
   ]],
@@ -243,14 +243,14 @@ const FAQ = [
     ['Do you invest outside India?', 'Our programs are designed for Indian researchers and Indian-incorporated startups. If you are building abroad and want to work in India, write to us.'],
   ]],
   ['Reaching out', [
-    ['What’s the best way to get on your radar?', 'Apply through apply.artpark.info, or write to us with a short note on what you are building and where you are stuck.', 'Go to applications →', 'https://apply.artpark.info/'],
+    ['What’s the best way to get on your radar?', 'Apply to TIR or VIP from their program pages, or write to us with a short note on what you are building and where you are stuck.', 'See our programs →', '/about/programs'],
     ['Is it ever too early to approach ARTPARK?', 'Not if you have a lab result worth testing. Early conversations help us both understand what the next stage needs.'],
     ['What if I’m still employed elsewhere?', 'That’s common for researchers. TIR is a full-time residency, so we’ll talk through timing and any institutional permissions before you join.'],
     ['What if I’ve already raised from angels or a pre-seed fund?', 'That’s fine. Startups with prior funding can apply to the Venture Incubation Programme.'],
     ['Do I need customers and revenue?', 'No. For TIR you need lab-proven technology; for VIP a prototype and a pitch-ready proposition. Early pilots help, but are not required.'],
   ]],
   ['The process', [
-    ['What does your selection process look like?', 'An online application, a conversation with our team, a technical review with domain experts, and a final presentation. We aim to keep each step short and to tell you clearly where you stand.', 'Start an application →', 'https://apply.artpark.info/'],
+    ['What does your selection process look like?', 'An online application, a conversation with our team, a technical review with domain experts, and a final presentation. We aim to keep each step short and to tell you clearly where you stand.', 'Start an application →', '/apply'],
     ['How should I prep for the final presentation?', 'Bring evidence: what works today, how you know, and what you need to prove next. Be candid about the risks — we would rather hear them from you.'],
     ['How much do you usually invest?', 'TIR starts with ₹25L, non-dilutive. VIP investments vary by stage and need.'],
     ['Do you have strict ownership requirements?', 'No fixed target. TIR is non-dilutive; VIP terms are discussed with each company.'],

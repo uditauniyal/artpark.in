@@ -225,6 +225,7 @@ html.js .reveal.in .icon-card, html.js .reveal.in .work-card, html.js .reveal.in
 .pf-programme { display: inline-flex; padding: 3px; border: 1px solid var(--line-strong); border-radius: 999px; }
 .pf-programme button { border: 0; background: none; border-radius: 999px; padding: 6px 18px; font-family: var(--font-display); font-weight: 700; font-size: 13px; color: var(--ink-soft); cursor: pointer; transition: background 150ms ease, color 150ms ease; }
 .pf-programme button[aria-pressed="true"] { background: var(--artblue); color: #fff; }
+/* Year filters (News, Past events): on narrow screens the pills scroll sideways inside their own row. */ [data-years] { max-width: 100%; overflow-x: auto; scrollbar-width: none; } [data-years] button { flex: none; }
 .pf-note { margin: 16px 0 0; padding: 12px 16px; border-left: 3px solid var(--artlight); background: #f4fffd; font-size: 14px; color: var(--ink-soft); }
 @media (max-width: 760px) {
   .pf-layout { grid-template-columns: minmax(0, 1fr); gap: 20px; }

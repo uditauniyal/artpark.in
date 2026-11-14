@@ -10,7 +10,7 @@
   "hero": { "image": "/assets/site/drone-lab.webp", "alt": "A drone flying inside the electronics and robotics lab at ARTPARK", "pos": "50% 50%", "ratio": "16/9", "caption": "A drone flying in the lab at ARTPARK. ARTPARK photograph, not of VishvaSys Aerospace." },
   "lead": [
     "“I have always enjoyed working with controls because they are basically the brains that operate and decide everything for a system,” says Prof. Radhakant Padhi.",
-    "He has spent his career on those brains. VishvaSys Aerospace, incorporated in Bengaluru in 2025 and working from ARTgarage, ARTPARK’s facility in Jalahalli, aims to make sure guidance, navigation and control is never the bottleneck for Indian aerospace."
+    "He has spent his career on those brains. VishvaSys Aerospace, incorporated in Bengaluru in 2025 and working from ARTGarage, ARTPARK’s facility in Jalahalli, aims to make sure guidance, navigation and control is never the bottleneck for Indian aerospace."
   ],
   "sections": [
     {
@@ -37,14 +37,14 @@
       ]
     },
     {
-      "h2": "A first year at ARTgarage.",
+      "h2": "A first year at ARTGarage.",
       "toc": "At ARTPARK",
       "blocks": [
         "The company reports three milestones from its first year. The first was a precise autonomous landing of a UAV on a platform that was both moving and oscillating, using a dual-node predictive guidance architecture.",
         { "dates": [
           ["Jul 2025", "Autonomous UAV landing on a moving, oscillating platform (company news)."],
           ["Sep 2025", "GNC research proposal selected for R&D support at the TSAT-2025 conference; the company says it placed in the top 2 percent of proposals."],
-          ["Dec 2025", "Workspace inaugurated at ARTgarage, ARTPARK."]
+          ["Dec 2025", "Workspace inaugurated at ARTGarage, ARTPARK."]
         ] },
         "VishvaSys Aerospace is part of ARTPARK’s startup portfolio, where it is listed for guidance, navigation and control systems for aerospace vehicles.",
         { "people": [

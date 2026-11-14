@@ -87,13 +87,13 @@
     },
     {
       "source": "/startups-applyfortir2026",
-      "destination": "https://apply.artpark.info/tir",
-      "permanent": false
+      "destination": "/about/programs/tir",
+      "permanent": true
     },
     {
       "source": "/startups-applyforvip",
-      "destination": "https://apply.artpark.info/sip",
-      "permanent": false
+      "destination": "/about/programs/vip",
+      "permanent": true
     },
     {
       "source": "/advanced-robotics/:path*",
@@ -284,6 +284,26 @@
       "source": "/stories/versor-robotics",
       "destination": "/portfolio",
       "permanent": true
+    },
+    {
+      "source": "/about/team/v1",
+      "destination": "/about/team",
+      "permanent": false
+    },
+    {
+      "source": "/about/team/v2",
+      "destination": "/about/team",
+      "permanent": false
+    },
+    {
+      "source": "/about/team/v3",
+      "destination": "/about/team",
+      "permanent": false
+    },
+    {
+      "source": "/about/team/versions",
+      "destination": "/about/team",
+      "permanent": false
     }
   ]
 }

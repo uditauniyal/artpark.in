@@ -5,9 +5,9 @@ const C = require('./content.cjs');
 
 const GROUPS = [
   ['leadership', 'Leadership team', 'The people running the work.'],
-  ['governing', 'Hub governing board', 'Sets ARTPARK’s direction as the technology hub.'],
+  // User (2026-11-14): board of directors first, then the governing board; the research advisory board is not listed.
   ['directors', 'Board of directors', 'Oversees the company.'],
-  ['research', 'Research advisory board', 'Advises on research direction.'],
+  ['governing', 'Hub governing board', 'Sets ARTPARK’s direction as the technology hub.'],
   ['advisors', 'Executive advisors', 'Senior practitioners who work with the team.'],
 ];
 
@@ -24,7 +24,7 @@ const byKey = new Map();
 for (const [g] of GROUPS) {
   for (const p of C.people[g]) {
     const k = key(p.name);
-    if (!byKey.has(k)) byKey.set(k, { id: k.replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''), name: p.name, role: p.role, portrait: p.portrait, linkedin: p.linkedin || '', groups: [], roles: {}, areas: AREAS[k] || [] });
+    if (!byKey.has(k)) byKey.set(k, { id: k.replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''), name: p.name, role: p.role, portrait: p.portrait, linkedin: p.linkedin || '', fit: p.fit || '', groups: [], roles: {}, areas: AREAS[k] || [] });
     const rec = byKey.get(k);
     rec.groups.push(g);
     rec.roles[g] = p.role;

@@ -132,15 +132,16 @@ test('manager changes of 2026-11-12', () => {
     assert.match(html, /aria-label="ARTPARK on LinkedIn"/);
     assert.ok(!html.includes('Other Programs') && !html.includes('Other programs'), route);
   }
-  for (const route of ['about/team', 'about/approach', 'about/facilities', 'about/certifications', 'about/programs', 'about/team/v1']) assert.ok(!page(route).includes('class="sub-tabs"'), route);
+  // The About tab row came back on 2026-11-14 (user), with "Programs".
+  for (const route of ['about/team', 'about/approach', 'about/facilities', 'about/certifications', 'about/programs']) assert.match(page(route), /class="sub-tabs"[\s\S]*?>Programs<\/a>/, route);
   assert.match(page('about/approach'), /DOMAINS WE WORK IN[\s\S]*HORIZONTAL CAPABILITIES WE BACK/);
   assert.ok(!page('about/facilities').includes('BRAINz campus</div>'));
   const programs = page('about/programs');
   assert.match(programs, /<h1[^>]*>Our <span class="tt">programs\.<\/span><\/h1>/);
   assert.deepEqual([...programs.matchAll(/<a id="([\w-]+)" class="prog-row"/g)].map((m) => m[1]).slice(0, 3), ['tir', 'vip', 'advanced-robotics']);
   assert.match(programs, /RDI Scheme · Focused Research Organisation/);
-  assert.match(page('about/programs/tir'), /href="https:\/\/apply\.artpark\.info\/apply\/signup\?track=tir"/);
-  assert.match(page('about/programs/vip'), /href="https:\/\/apply\.artpark\.info\/apply-sip\/signup\?track=sip"/);
+  assert.match(page('about/programs/tir'), /<a class="btn btn-primary" href="\/apply">Apply for TIR/);
+  assert.match(page('about/programs/vip'), /<a class="btn btn-primary" href="\/apply">Apply for VIP/);
   assert.ok(!page('tenders').includes('>TYPE</span>'));
 });
 
@@ -154,4 +155,44 @@ test('RDI express-interest form hands off to the email app', () => {
   assert.match(html, /mailto:connect@artpark\.in\?subject='\+encodeURIComponent\('RDI interest: '/);
   assert.match(html, /Your email app should have opened with your details addressed to connect@artpark\.in\./);
   assert.ok(!html.includes('We\'ve received your details'));
+});
+
+// User (2026-11-14): no links to apply.artpark.info (applying and signing in open /apply, "in progress");
+// TIR/VIP links go to the program pages; footer description; Team page is the Editorial design with the fixes.
+test('changes of 2026-11-14', () => {
+  const walk = (d) => fs.readdirSync(d, { withFileTypes: true }).flatMap((e) => e.isDirectory() ? walk(path.join(d, e.name)) : e.name.endsWith('.html') ? [path.join(d, e.name)] : []);
+  for (const f of walk(path.join(ROOT, 'dist'))) if (!f.includes(path.sep + 'admin' + path.sep)) assert.ok(!fs.readFileSync(f, 'utf8').includes('apply.artpark.info'), f);
+  assert.match(page('apply'), /We are working <span class="tt">on it\.<\/span>/);
+  assert.match(page(''), /href="\/apply" style="color:#fff;text-decoration:none;font-weight:600">Sign in</);
+  assert.match(page(''), /ARTPARK \(AI &amp; Robotics Technology Park\) is a not-for-profit Section-8 company at the Indian Institute of Science, Bangalore, committed to building and deploying AI &amp; Robotics technologies for Society, Economy, and Sovereignty\./);
+  const programs = page('about/programs');
+  assert.match(programs, /<a id="tir" class="prog-row" href="\/about\/programs\/tir"[^>]*><div class="prog-img"><img src="\/assets\/programs\/tir\.webp"/);
+  assert.match(programs, /<a id="vip" class="prog-row" href="\/about\/programs\/vip"[^>]*><div class="prog-img"><img src="\/assets\/programs\/vip\.webp"/);
+  const team = page('about/team');
+  assert.deepEqual([...team.matchAll(/<article class="tv2-lead">[\s\S]*?<h3>([^<]+)<\/h3><p>([^<]+)<\/p>/g)].map((m) => m[1] + ' | ' + m[2]), ['Prof. Bharadwaj Amrutur | Executive Director and Chief Technologist', 'Raghu Dharmaraju | Chief Executive Officer', 'Nirav Dedhia | Investments &amp; Innovation Partnerships Lead']);
+  assert.ok(!/Sheela/i.test(team) && !team.includes('Research advisory board') && !team.includes('tv-switch'));
+  assert.deepEqual([...team.matchAll(/<div class="tv2-group"><span class="eyebrow">([^<]+)</g)].map((m) => m[1]), ['Board of directors', 'Hub governing board', 'Executive advisors']);
+  for (const v of ['v1', 'v2', 'v3', 'versions']) assert.ok(!fs.existsSync(path.join(ROOT, 'dist', 'about', 'team', v)), v);
+  const css = fs.readFileSync(path.join(ROOT, 'public', 'css', 'team-versions.css'), 'utf8');
+  // Leaders in colour, the scrolling boards section in black and white (user, 2026-11-14), no duotone, no stagger.
+  assert.ok(!/\.tv2-portrait[^{]*\{[^}]*(grayscale|mix-blend)/.test(css) && !/\.tv2[^{]*\{[^}]*mix-blend/.test(css) && !/\.tv2-lead:nth-child\([23]\) \{ margin-top/.test(css));
+  assert.match(css, /\.tv2-fig img \{[^}]*filter: grayscale\(1\)/);
+  assert.match(team, /href="https:\/\/www\.linkedin\.com\/in\/niravdedhia\/"/);
+  for (const route of ['about/approach', 'about/facilities', 'about/certifications', 'about/programs']) assert.match(page(route), /class="float-stage"/, route);
+  assert.ok(!team.includes('class="float-stage"'), 'team intro has no floating windows');
+});
+
+// User (2026-11-14): richer News with a year filter; ARTGarage spelling; Calibrate venue without "the^delta".
+test('news archive, ARTGarage spelling, events venue', () => {
+  const news = page('news');
+  const rows = (news.match(/<div class="link-row" data-row-year="news:\d{4}"/g) || []).length;
+  assert.ok(rows >= 80, 'news rows: ' + rows);
+  assert.match(news, /data-years="news">[\s\S]*?data-year="All" aria-pressed="true"/);
+  assert.match(news, /12 October 2026 · The Economic Times[\s\S]{0,400}?InterSafe/);
+  assert.match(news, /01 June 2021 · ET Healthworld/);
+  for (const r of ['events', 'about/facilities', 'about/facilities/artgarage', 'contact']) assert.ok(!page(r).includes('ARTgarage'), r);
+  assert.ok(!page('events').includes('the^delta'));
+  const ev = page('events');
+  assert.match(ev, /data-years="events">/);
+  for (const y of ['2022', '2023', '2024', '2025', '2026']) assert.match(ev, new RegExp('data-row-year="events:' + y + '"'), y);
 });

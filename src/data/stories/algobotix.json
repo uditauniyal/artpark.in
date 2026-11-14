@@ -16,7 +16,7 @@
   },
   "lead": [
     "“All these drones will exist in the shared airspace. There needs to be something that can coordinate their flight to avoid any conflict and catastrophe among them,” says Onkar Chopra.",
-    "Bengaluru knows what traffic looks like on the ground. Onkar, whom ThePrint describes as AlgoBotix’s co-founder and CEO, is preparing for it in the sky. His company builds the software and hardware that plan, watch and command many drones in the same airspace, from a testing ground at ARTgarage in Jalahalli."
+    "Bengaluru knows what traffic looks like on the ground. Onkar, whom ThePrint describes as AlgoBotix’s co-founder and CEO, is preparing for it in the sky. His company builds the software and hardware that plan, watch and command many drones in the same airspace, from a testing ground at ARTGarage in Jalahalli."
   ],
   "sections": [
     {
@@ -38,7 +38,7 @@
       "h2": "Five drones over a green patch.",
       "toc": "The test",
       "blocks": [
-        "In July 2025, ThePrint reported on the six-member team at work at ARTgarage. They drew virtual corridors over a green patch and flew around five drones for about 50 minutes under their traffic management system. One of the drones was built by their neighbour at ARTgarage, Comrado Aerospace.",
+        "In July 2025, ThePrint reported on the six-member team at work at ARTGarage. They drew virtual corridors over a green patch and flew around five drones for about 50 minutes under their traffic management system. One of the drones was built by their neighbour at ARTGarage, Comrado Aerospace.",
         { "quote": { "text": "People have so many drones purchased already, they would definitely make it fly. If there’s a space which is not regulated and no official software which can handle multiple drones altogether, it could be even more scary,", "who": "Dhavala Sai, Business Team Lead, AlgoBotix", "source": "https://theprint.in/feature/bengaluru-startups-sky-full-drones-indigenous-chips-os-traffic-management/2704407/", "sourceLabel": "ThePrint" } },
         { "panel": { "title": "What AlgoBotix builds", "items": [
           ["Ubix Automatica", "A drone corridor and traffic management stack. Its first version, GRAM-GATI, was built for rural aerial mobility, with planning and monitoring software, an onboard command-and-control module and communications infrastructure."],
@@ -50,18 +50,18 @@
       ]
     },
     {
-      "h2": "From ARTgarage to Drone City.",
+      "h2": "From ARTGarage to Drone City.",
       "toc": "Into the field",
       "blocks": [
         "Recognition came quickly. In September 2025, AlgoBotix won First Place in the Promising Exhibitor category at the Tri-Services Academia Technology Symposium 2025 in New Delhi, for its UBIX Console. In its post about the award, the company thanked IISc Bengaluru and ARTPARK for their continued support.",
         { "figure": { "image": "/assets/founders/algobotix-award.webp", "alt": "Dhavala Sai receiving a plaque on stage, with a screen behind her reading her name, AlgoBotix and ARTPARK IISc, Bangalore", "ratio": "1042/643", "caption": "Dhavala Sai receives the award for AlgoBotix at the Tri-Services Academia Technology Symposium 2025. Photograph from AlgoBotix." } },
         "The company then signed a memorandum of understanding with the Government of Andhra Pradesh for its Drone City project, to implement a traffic management framework in the Kurnool Drone City testbed and set up its central command and control system for many drones. In 2026 it took part in the foundation laying ceremony for Drone City in Puttaparthi as a contributor to its traffic management ecosystem.",
         { "quote": { "text": "Now we have to expand these boundaries. We have to bring more players into the ecosystem involving at least some 30 drone manufacturers and then several kilometers of airspace is to be planned,", "who": "Onkar Chopra, Co-founder and CEO, AlgoBotix", "source": "https://theprint.in/feature/bengaluru-startups-sky-full-drones-indigenous-chips-os-traffic-management/2704407/", "sourceLabel": "ThePrint" } },
-        "AlgoBotix works out of ARTgarage, and ThePrint reports that the startup is backed by the Government of Karnataka and the Department of Science and Technology. It was among the ARTPARK startups at India Mobile Congress 2024, and in September 2025 it took part in Drone Day, organised by NSRCEL and ARTPARK.",
+        "AlgoBotix works out of ARTGarage, and ThePrint reports that the startup is backed by the Government of Karnataka and the Department of Science and Technology. It was among the ARTPARK startups at India Mobile Congress 2024, and in September 2025 it took part in Drone Day, organised by NSRCEL and ARTPARK.",
         { "dates": [
           ["2023", "AlgoBotix founded in Bengaluru."],
           ["October 2024", "Showcased with ARTPARK at India Mobile Congress 2024."],
-          ["July 2025", "Tested its traffic management system with around five drones at ARTgarage."],
+          ["July 2025", "Tested its traffic management system with around five drones at ARTGarage."],
           ["September 2025", "Took part in Drone Day by NSRCEL and ARTPARK."],
           ["September 2025", "First Place, Promising Exhibitor, at the Tri-Services Academia Technology Symposium 2025."],
           ["2025", "Signed an MoU with the Government of Andhra Pradesh for the Drone City project."],

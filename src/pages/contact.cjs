@@ -64,7 +64,7 @@ ${placeCard({
 })}
 ${placeCard({
   q: 'ArtGarage Entrance',
-  img: '/assets/photos/artgarage-exterior.webp', alt: 'The entrance of the ARTgarage building at HMT Estate, Jalahalli', focus: '68% 50%',
+  img: '/assets/photos/artgarage-exterior.webp', alt: 'The entrance of the ARTGarage building at HMT Estate, Jalahalli', focus: '68% 50%',
   eyebrow: 'The garage', name: 'HMT Colony, Jalahalli',
   lines: ['177, HMT Colony, HMT Staff Quarters', 'HMT Estate, Jalahalli', 'Bengaluru, Karnataka 560013'],
 })}

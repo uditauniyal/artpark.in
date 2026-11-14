@@ -28,10 +28,21 @@ const RDI_FORM = [
     String.raw`f.addEventListener('submit',function(e){e.preventDefault();var el=f.elements,inv=[].map.call(ls.querySelectorAll('input'),function(q){return q.value.trim()}).filter(Boolean);var body=['Startup: '+el.startup.value,'Founder: '+el.founder_name.value,'Email: '+el.founder_email.value,'Phone: '+el.founder_phone.value,'LinkedIn: '+(el.founder_linkedin.value||'-'),'Interested in RDI: '+el.interested.value,'Private capital investors identified: '+el.investors.value+(el.investors.value==='Yes'&&inv.length?' ('+inv.join(', ')+')':''),'Pitch deck: '+el.deck.value].join('\n');window.location.href='mailto:connect@artpark.in?subject='+encodeURIComponent('RDI interest: '+el.startup.value)+'&body='+encodeURIComponent(body);f.hidden=true;document.getElementById('rdi-done').hidden=false;})`],
 ];
 
+// User (2026-11-14): nothing links to apply.artpark.info. "Apply" opens the in-progress page (src/pages/apply.cjs);
+// "Full brief" pointed at apply.artpark.info's copy of this same page, so it is left out.
+const APPLY = {
+  tir: [['<a class="btn btn-primary" href="https://apply.artpark.info/apply/signup?track=tir" target="_blank" rel="noopener">', '<a class="btn btn-primary" href="/apply">'],
+    ['<a class="btn btn-ghost" href="https://apply.artpark.info/tir#program" target="_blank" rel="noopener">Full brief</a>', '']],
+  vip: [['<a class="btn btn-primary" href="https://apply.artpark.info/apply-sip/signup?track=sip" target="_blank" rel="noopener">', '<a class="btn btn-primary" href="/apply">'],
+    ['<a class="btn btn-ghost" href="https://apply.artpark.info/sip#program" target="_blank" rel="noopener">Full brief</a>', '']],
+  rdi: [],
+};
+
 module.exports = ['tir', 'vip', 'rdi'].map((slug) => {
   const meta = JSON.parse(fs.readFileSync(path.join(DIR, slug + '.json'), 'utf8'));
   let body = fs.readFileSync(path.join(DIR, slug + '.html'), 'utf8');
   if (slug === 'rdi') for (const [from, to] of RDI_FORM) body = swap(body, from, to);
+  for (const [from, to] of APPLY[slug]) body = swap(body, from, to);
   return {
     route: meta.route,
     html: () => page({ title: meta.title, description: meta.description, active: 'about', sub: 'programs', body }),

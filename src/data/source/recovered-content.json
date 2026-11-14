@@ -656,9 +656,9 @@
     },
     {
       "id": "artgarage-workshop",
-      "title": "ARTgarage workshop",
+      "title": "ARTGarage workshop",
       "sourceUrl": "https://www.artpark.in/artgarage",
-      "alt": "ARTgarage workshop",
+      "alt": "ARTGarage workshop",
       "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/1b8ca1c0-3296-4fa1-a5b2-415da719f3fc/VJM-108.jpg",
       "src": "/assets/recovered/artgarage-workshop.webp",
       "bytes": 138850
@@ -692,9 +692,9 @@
     },
     {
       "id": "artgarage-campus",
-      "title": "ARTgarage campus",
+      "title": "ARTGarage campus",
       "sourceUrl": "https://www.artpark.in/partnerships",
-      "alt": "ARTgarage campus",
+      "alt": "ARTGarage campus",
       "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/c69987ea-f156-46fd-a26c-05c20bdb7536/artgarage-droneshot.jpg",
       "src": "/assets/recovered/artgarage-campus.webp",
       "bytes": 156718
@@ -710,9 +710,9 @@
     },
     {
       "id": "artgarage-equipment",
-      "title": "Equipment at ARTgarage",
+      "title": "Equipment at ARTGarage",
       "sourceUrl": "https://www.artpark.in/artgarage",
-      "alt": "Equipment at ARTgarage",
+      "alt": "Equipment at ARTGarage",
       "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/656da8a33674465c6ee4de76/f529b07b-0766-4189-8f82-1193cedae2f9/ARTGARAGE+3.jpg",
       "src": "/assets/recovered/artgarage-equipment.webp",
       "bytes": 739310

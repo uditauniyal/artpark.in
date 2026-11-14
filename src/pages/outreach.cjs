@@ -57,8 +57,9 @@ ${C.upcomingEvents.slice(2).map((e) => `        <div class="sweep-row" data-upco
     </section>
     <section>
       <span class="eyebrow">Past events</span>
-      <div style="border-top:1px solid var(--line-strong);margin-top:16px">
-${C.pastEvents.map((p) => `        <div class="sweep-row"${p.image ? ` data-peek="${esc(p.image)}"` : ''} style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:6px 24px;padding:20px 0;border-bottom:1px solid var(--line);align-items:baseline">
+      ${yearBar('events', C.pastEvents, 'event')}
+      <div style="border-top:1px solid var(--line-strong)">
+${C.pastEvents.map((p) => `        <div class="sweep-row" data-row-year="events:${(p.start || '').slice(0, 4)}"${p.image ? ` data-peek="${esc(p.image)}"` : ''} style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:6px 24px;padding:20px 0;border-bottom:1px solid var(--line);align-items:baseline">
           <span style="font-size:13px;color:var(--ink-dim)">${esc(M.formatRange(p.start, p.end))}${p.venue ? ' · ' + esc(p.venue) : ''}</span>
           <span style="grid-column:span 2;font-family:var(--font-display);font-weight:700;font-size:18px;line-height:1.3">${esc(p.title)}</span>
           ${M.eventHasPage(p) ? `<a href="${R.events}/${p.id}" style="font-size:14px;font-weight:600;justify-self:end">Recap →</a>` : p.recap ? `<a href="${esc(p.recap)}" target="_blank" rel="noopener" style="font-size:14px;font-weight:600;justify-self:end">Recap →</a>` : ''}
@@ -88,7 +89,23 @@ ${body.map((l) => `      <p>${esc(l)}</p>`).join('\n')}
   };
 });
 
+// Year filter bar (Portfolio pill style) for long lists: News and Past events (user, 2026-11-14). public/js/site.js.
+const yearBar = (key, items, noun) => {
+  const years = [...new Set(items.map((x) => (x.date || x.start || '').slice(0, 4)).filter(Boolean))].sort().reverse();
+  return `<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;margin:16px 0 20px">
+      <span data-years-count="${key}" data-noun="${noun}" style="font-size:14px;color:var(--ink-dim)">${items.length} ${noun}s</span>
+      <div class="pf-programme" role="group" aria-label="Year" data-years="${key}">${['All', ...years].map((y, i) => `<button type="button" data-year="${y}" aria-pressed="${i === 0}">${y}</button>`).join('')}</div>
+    </div>`;
+};
+
 // ---------- News (Outreach-News.dc.html) ----------
+// The press list grew to dozens of articles (user, 2026-11-14: "news should have a lot of richness"), so a year filter
+// above it (yearBar).
+const newsList = () => {
+  let k = 0;
+  return yearBar('news', C.news, 'article') + linkRows(C.news.map((n) => ({ meta: n.dateLabel || n.date ? `${n.dateLabel || M.formatLong(n.date)} · ${n.outlet}` : n.outlet, title: n.title, href: n.url })))
+    .replace(/<div class="link-row"/g, () => `<div class="link-row" data-row-year="news:${(C.news[k++].date || '').slice(0, 4)}"`);
+};
 const news = {
   route: R.news,
   html: () => page({
@@ -96,7 +113,7 @@ const news = {
     description: 'ARTPARK and its projects in the press.',
     body: outreachIntro('news', 'In the news.', 'ARTPARK and its projects in the press.', FLOAT_NEWS) + `
   <div style="max-width:1180px;margin:0 auto;padding:48px 24px 112px">
-    ${linkRows(C.news.map((n) => ({ meta: n.dateLabel || n.date ? `${n.dateLabel || M.formatLong(n.date)} · ${n.outlet}` : n.outlet, title: n.title, href: n.url })))}
+    ${newsList()}
     <section id="publications" style="margin-top:72px;scroll-margin-top:132px">
       <span class="eyebrow">Publications</span>
       <div style="margin-top:16px">${linkRows([
