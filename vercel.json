@@ -349,6 +349,30 @@
       "source": "/careers/rf-systems-engineering-intern-graduate-engineer-foucault",
       "destination": "/careers",
       "permanent": false
+    },
+    {
+      "source": "/stories/acceleration-robotics",
+      "has": [
+        {
+          "type": "header",
+          "key": "x-artpark-launch-test",
+          "value": "1"
+        }
+      ],
+      "destination": "/work-in-progress",
+      "permanent": false
+    },
+    {
+      "source": "/:path((?!$|contact|partnerships|portfolio|stories|privacy-policy|terms-of-use|work-in-progress|assets|css|js|_ds|docs|favicon.ico|api|admin).*)",
+      "has": [
+        {
+          "type": "header",
+          "key": "x-artpark-launch-test",
+          "value": "1"
+        }
+      ],
+      "destination": "/work-in-progress",
+      "permanent": false
     }
   ]
 }
