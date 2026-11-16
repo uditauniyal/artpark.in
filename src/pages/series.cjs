@@ -17,7 +17,9 @@ const pages = SLUGS.map((slug) => {
   // The first picture is the hero, visible on arrival: load it straight away.
   // His design assumed a 96px header; the site header is taller, so the contents column and the headings it jumps to
   // sit at 132px, the same as the founder story pages (src/pages/stories.cjs).
-  const body = sharpArt(fs.readFileSync(path.join(DIR, slug + '.html'), 'utf8')).replace(' loading="lazy"', '')
+  const body = sharpArt(fs.readFileSync(path.join(DIR, slug + '.html'), 'utf8'))
+    // User (2026-11-16): no "Illustration." labels in the captions.
+    .replace(/\s*(Painted|Watercolor|Watercolour) illustration\s*[—-]\s*interpretive[^<]*?\./gi, '').replace(/\s*Illustration\.(?=\s*<)/g, '').replace(' loading="lazy"', '')
     .replace(/position:sticky;top:96px/g, 'position:sticky;top:132px').replace(/scroll-margin-top:96px/g, 'scroll-margin-top:132px');
   const lede = (body.match(/<h1[\s\S]*?<\/h1>\s*<p[^>]*>([\s\S]*?)<\/p>/) || [])[1] || '';
   return {

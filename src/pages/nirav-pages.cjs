@@ -18,7 +18,10 @@ const PAGES = {
 
 module.exports = Object.entries(PAGES).map(([slug, o]) => {
   const meta = JSON.parse(fs.readFileSync(path.join(DIR, slug + '.json'), 'utf8'));
-  const body = sharpArt(fs.readFileSync(path.join(DIR, slug + '.html'), 'utf8'));
+  // User (2026-11-16): no "… · painted illustration" label pills over the pictures.
+  const body = sharpArt(fs.readFileSync(path.join(DIR, slug + '.html'), 'utf8'))
+    .replace(/<span class="hero-slide-caption"[^>]*>[^<]*<\/span>/g, '')
+    .replace(/<figcaption[^>]*>[^<]*painted illustration<\/figcaption>/gi, '');
   return {
     route: meta.route,
     html: () => page({ title: meta.title, description: o.description, active: o.active || '', sub: o.sub || '', home: !!o.home, body, scripts: o.scripts, head: meta.style + (o.css ? '\n' + o.css : ''), bodyAttrs: meta.bodyAttrs, tail: meta.tail }),
