@@ -127,7 +127,7 @@ a:hover { color: var(--artblue-deep); }
 .hero-slide { transition: opacity 500ms ease !important; }
 .hero-slide .hero-slide-body > div { transition: opacity 600ms ease, transform 600ms cubic-bezier(.2,.7,.2,1); }
 .hero-slide[aria-hidden="true"] .hero-slide-body > div { opacity: 0; transform: translateY(16px); }
-.tab-progress { position: absolute; left: 0; top: -3px; height: 3px; width: 0; background: var(--artblue); }
+.tab-progress { position: absolute; left: 0; top: -3px; height: 3px; width: 100%; transform-origin: 0 50%; transform: scaleX(0); background: var(--artblue); }
 [role="tab"][aria-selected="true"] .tab-progress.run { animation: tab-progress 9s linear forwards; }
 .is-paused .tab-progress.run { animation-play-state: paused !important; }
 @keyframes tab-progress { to { width: 100%; } }
@@ -224,6 +224,18 @@ html.js #collaborate.in [style*="border-bottom:1px solid rgba(255,255,255,0.2)"]
 #collaborate [style*="border-bottom:1px solid rgba(255,255,255,0.2)"]:nth-child(4) { transition-delay: 360ms; }
 
 @media (max-width: 760px) { .collage-tile { transform: none; } }
+/* Phones and touch tablets (user 2026-11-16: the page broke up while scrolling on a phone): no endless picture drift,
+   no permanent compositing layers, and headlines and rows are simply there instead of wiping in mid-scroll. */
+@media (max-width: 760px), (hover: none) and (pointer: coarse) {
+  .collage-tile .tile-img { animation: none; }
+  .collage-tile, .opening h1, .opening-watermark, .stage-col { will-change: auto; }
+  .stage-col { transform: none; transition: none; }
+  html.js .reveal, html.js .reveal .icon-card, html.js .reveal .work-card, html.js .reveal .model-card,
+  html.js #building .stage-arrows + div > div, html.js #believe .belief-row { opacity: 1 !important; transform: none !important; transition: none !important; }
+  html.js .reveal h2 { clip-path: none; transform: none; transition: none; }
+  html.js .reveal .eyebrow-rule::before { transform: none; transition: none; }
+  html.js #collaborate [style*="border-bottom:1px solid rgba(255,255,255,0.2)"] { opacity: 1; transform: none; transition: none; }
+}
 @media (prefers-reduced-motion: reduce) {
   .page-progress { display: none; }
   html.js .stat-band .stat, html.js .reveal h2, html.js #collaborate [style*="border-bottom:1px solid rgba(255,255,255,0.2)"] { opacity: 1 !important; transform: none !important; clip-path: none !important; animation: none !important; }

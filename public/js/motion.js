@@ -8,6 +8,9 @@
     return;
   }
   var desktop = window.matchMedia('(min-width: 761px)');
+  // Phones and touch tablets (user 2026-11-16: the page broke up while scrolling on a phone): keep the light effects,
+  // drop the desktop flourishes, and never run a frame unless the page scrolled, resized or the pointer moved.
+  var phone = window.matchMedia('(max-width: 760px), (hover: none) and (pointer: coarse)').matches;
 
   // ---------- Page progress bar ----------
   var bar = document.createElement('div');
@@ -22,11 +25,14 @@
   var headline = document.querySelector('.opening h1');
   var watermark = document.querySelector('.opening-watermark');
   var mx = 0, my = 0;
-  if (opening) opening.addEventListener('pointermove', function (e) {
+  var queued = false;
+  var ask = function () { if (!queued) { queued = true; requestAnimationFrame(frame); } };
+  if (opening && !phone) opening.addEventListener('pointermove', function (e) {
     var r = opening.getBoundingClientRect();
     mx = (e.clientX - r.left) / r.width - 0.5; my = (e.clientY - r.top) / r.height - 0.5;
+    ask();
   });
-  if (opening) opening.addEventListener('pointerleave', function () { mx = 0; my = 0; });
+  if (opening && !phone) opening.addEventListener('pointerleave', function () { mx = 0; my = 0; ask(); });
 
   var stageSteps = document.querySelectorAll('.stage-step');
   var columns = document.querySelectorAll('#building .stage-arrows + div > div');
@@ -35,12 +41,13 @@
 
   var cmx = 0, cmy = 0;
   var frame = function () {
+    queued = false;
     var y = window.scrollY, vh = window.innerHeight;
     var doc = document.documentElement;
     bar.style.transform = 'scaleX(' + Math.min(1, y / Math.max(1, doc.scrollHeight - vh)) + ')';
     cmx += (mx - cmx) * 0.08; cmy += (my - cmy) * 0.08;
 
-    if (opening && desktop.matches) {
+    if (opening && desktop.matches && !phone) {
       var oy = Math.min(y, 700);
       tiles.forEach(function (t, i) {
         var d = DEPTH[i] || 0;
@@ -53,7 +60,7 @@
     }
 
     // Build. Prototype. Scale.: columns lift into place as they travel up the screen.
-    columns.forEach(function (c, i) {
+    if (!phone) columns.forEach(function (c, i) {
       var r = c.getBoundingClientRect();
       var t = Math.max(0, Math.min(1, (vh - r.top) / (vh * 0.55)));
       c.style.setProperty('--lift', ((1 - t) * (40 + i * 30)) + 'px');
@@ -65,17 +72,20 @@
       believeHl.style.backgroundSize = (bt * 100) + '% 100%';
     }
     // Work with us: the deep purple panel slides its background as you pass.
-    if (collab) {
+    if (collab && !phone) {
       var cr = collab.getBoundingClientRect();
       collab.style.setProperty('--shift', ((cr.top / vh) * 60) + 'px');
     }
-    requestAnimationFrame(frame);
+    // Keep easing toward the pointer only until it settles.
+    if (Math.abs(mx - cmx) > 0.002 || Math.abs(my - cmy) > 0.002) ask();
   };
-  requestAnimationFrame(frame);
+  window.addEventListener('scroll', ask, { passive: true });
+  window.addEventListener('resize', ask);
+  ask();
 
   // ---------- Collage: a self-running tour of the nine stories ----------
   var collage = document.querySelector('[data-collage]');
-  if (collage) {
+  if (collage && !phone) {
     var order = [9, 0, 5, 2, 7, 1, 6, 3, 8, 4], k = 0, touched = false, visible = true; // manager 2026-11-16: TEAM tile (9) leads
     var chips = collage.querySelectorAll('[data-chip]');
     collage.addEventListener('mouseenter', function () { touched = true; collage.classList.remove('touring'); });

@@ -167,14 +167,20 @@
     carousel.querySelector('[data-prev]').addEventListener('click', function () { go(cur - 1); });
     carousel.querySelector('[data-next]').addEventListener('click', function () { go(cur + 1); });
     show(0);
+    // The clock runs only while the slider is on screen (user 2026-11-16: phones stuttered while scrolling), and the
+    // bar moves by transform, so a frame repaints the bar alone. Off screen it holds where it was.
+    var onScreen = true, ticking = false, elapsed = 0;
     var tick = function (now) {
+      if (!onScreen) { ticking = false; elapsed = now - t0; return; }
       if (document.hidden || now < holdUntil) { t0 = now - 0; }
       var p = Math.min(1, (now - t0) / DUR);
-      tabs.forEach(function (t, k) { var b = t.querySelector('.tab-progress'); if (b) b.style.width = k === cur ? (p * 100) + '%' : '0%'; });
+      tabs.forEach(function (t, k) { var b = t.querySelector('.tab-progress'); if (b) b.style.transform = 'scaleX(' + (k === cur ? p : 0) + ')'; });
       if (p >= 1) { show(cur + 1); t0 = now; }
       requestAnimationFrame(tick);
     };
-    requestAnimationFrame(tick);
+    var resume = function () { if (ticking) return; ticking = true; requestAnimationFrame(function (now) { t0 = now - elapsed; tick(now); }); };
+    if ('IntersectionObserver' in window) new IntersectionObserver(function (e) { onScreen = e[0].isIntersecting; if (onScreen) resume(); }).observe(carousel);
+    ticking = true; requestAnimationFrame(tick);
   }
 
   // ---------- Home founder stories: featured founder, logo picker, autoplay with progress ----------

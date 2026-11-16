@@ -2,7 +2,10 @@
    moving image windows, a cursor-following preview for rows with data-peek, and magnetic logos (.mag). */
 (function () {
   var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (reduce) return;
+  // Phones and touch tablets: the floating compositions are hidden there and the rest needs a mouse; skip the
+  // scroll-linked image drift too, so scrolling does no extra work (user 2026-11-16).
+  var phone = window.matchMedia && matchMedia('(max-width: 760px), (hover: none) and (pointer: coarse)').matches;
+  if (reduce || phone) return;
   var fine = window.matchMedia && matchMedia('(hover: hover) and (pointer: fine)').matches;
   var stages = [].slice.call(document.querySelectorAll('.float-stage'));
   var wins = [].slice.call(document.querySelectorAll('[data-win]'));

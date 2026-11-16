@@ -6,6 +6,9 @@
 (function () {
   if (window.__apMotion) return; window.__apMotion = true;
   var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // Phones and touch tablets: no scroll reveals or image wipes (user 2026-11-16: content looked broken mid-scroll on
+  // a phone because it was still hidden or half-wiped when it reached the screen). The curtain and the rest stay.
+  var phone = window.matchMedia && matchMedia('(max-width: 760px), (hover: none) and (pointer: coarse)').matches;
   var EASE = 'cubic-bezier(.22,.8,.24,1)';
   var BLUE = '#3213b7';
   var ready = false, seen = new WeakSet();
@@ -140,7 +143,7 @@
   function boot() {
     document.body.appendChild(bar);
     addEventListener('scroll', onScroll, { passive: true }); onScroll();
-    if (!reduce && io) {
+    if (!reduce && !phone && io) {
       targets().forEach(function (p) {
         var n = p[0]; if (n.__apIdx !== undefined) return; n.__apIdx = p[1];
         var r = n.getBoundingClientRect();
