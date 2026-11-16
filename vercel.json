@@ -354,9 +354,8 @@
       "source": "/stories/acceleration-robotics",
       "has": [
         {
-          "type": "header",
-          "key": "x-artpark-launch-test",
-          "value": "1"
+          "type": "host",
+          "value": "artpark.in"
         }
       ],
       "destination": "/work-in-progress",
@@ -366,9 +365,30 @@
       "source": "/:path((?!$|contact|partnerships|portfolio|stories|privacy-policy|terms-of-use|work-in-progress|assets|css|js|_ds|docs|favicon.ico|api|admin).*)",
       "has": [
         {
-          "type": "header",
-          "key": "x-artpark-launch-test",
-          "value": "1"
+          "type": "host",
+          "value": "artpark.in"
+        }
+      ],
+      "destination": "/work-in-progress",
+      "permanent": false
+    },
+    {
+      "source": "/stories/acceleration-robotics",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.artpark.in"
+        }
+      ],
+      "destination": "/work-in-progress",
+      "permanent": false
+    },
+    {
+      "source": "/:path((?!$|contact|partnerships|portfolio|stories|privacy-policy|terms-of-use|work-in-progress|assets|css|js|_ds|docs|favicon.ico|api|admin).*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.artpark.in"
         }
       ],
       "destination": "/work-in-progress",
