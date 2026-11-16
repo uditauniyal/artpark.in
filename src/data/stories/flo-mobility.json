@@ -4,7 +4,7 @@
   "tag": "FOUNDER STORY",
   "kicker": "Construction robotics",
   "title": "The wheelbarrow that drives itself.",
-  "standfirst": "Manesh Jain and Pratik Patel spent years building autonomy for lawnmowers, warehouse robots and crop sprayers before they found the job that needed it most: moving materials around construction sites. Flo Mobility’s haulers now work on building sites across India, offered on subscription.",
+  "standfirst": "Manesh Jain and Pratik Patel spent years building autonomy for lawnmowers, warehouse robots and crop sprayers before they found the job that needed it most: moving materials around construction sites. Flo Mobility’s robots now work on building sites in more than 20 Indian cities and in the UAE, offered as a service or for outright purchase.",
   "meta": [
     "ARTPARK Stories",
     "About 6 min read",
@@ -12,11 +12,11 @@
   ],
   "website": "https://flomobility.com/",
   "hero": {
-    "image": "/assets/founders/flo-mobility-haulers.webp",
-    "alt": "Two men in black Flo polo shirts standing among a row of yellow Flo Mobility haulers in a workshop",
-    "pos": "50% 22%",
+    "image": "/assets/founders/flo-mobility-dsc00067.webp",
+    "alt": "A yellow Flo Mobility autonomous hauler with four rugged tyres, work lights and a box-shaped load bed, on the bare concrete floor of a building under construction, with tall windows behind it",
+    "pos": "50% 70%",
     "ratio": "16/9",
-    "caption": "Two members of the Flo Mobility team with a row of Flo haulers in the workshop. Photograph from Flo Mobility."
+    "caption": "The latest version of the Flo Mobility hauler on an upper floor of a building under construction. Photograph from Flo Mobility."
   },
   "lead": [
     "“When we first walked onto a construction site with our robot, the reaction from site teams was immediate - They saw materials moving autonomously to the right floor, to the right zone, without anyone pushing a wheelbarrow. That moment still drives us.” Pratik Patel, Flo Mobility’s co-founder and COO, said this in May 2026, as the company announced a new round of funding.",
@@ -58,10 +58,10 @@
       ]
     },
     {
-      "h2": "On site, by subscription.",
+      "h2": "On site, as a service or to own.",
       "toc": "The hauler",
       "blocks": [
-        "The Flo Hauler is a battery-powered autonomous robot that carries materials across a site and between floors. A smaller version works as an electric wheelbarrow: it carries half a tonne, tips its own load, fits into construction hoists, climbs 12-degree slopes and runs six to eight hours on swappable batteries.",
+        "The Flo Hauler is a battery-powered autonomous robot that carries materials across a site and between floors. A smaller version works as an electric wheelbarrow: it carries up to 500 kg, tips its own load, fits into construction hoists, climbs 12-degree slopes and runs up to 12 hours on swappable batteries. Flo’s robots come in fully autonomous and semi-autonomous versions.",
         {
           "quote": {
             "text": "The Flo-Hauler was developed to solve problems faced every day at construction sites. We wanted a Made in India solution that reduces dependency on manual labour while improving efficiency and safety.",
@@ -80,17 +80,29 @@
               ],
               [
                 "Electric wheelbarrow",
-                "A half-tonne autonomous hauler with automatic dumping, sized for hoists, with swappable batteries."
+                "A 500 kg autonomous hauler with automatic dumping, sized for hoists, with swappable batteries that run up to 12 hours."
               ],
               [
-                "Robots as a service",
-                "Customers subscribe instead of buying: rental, deployment, operation and maintenance in one fee."
+                "Versions",
+                "Fully autonomous and semi-autonomous."
+              ],
+              [
+                "Robot-as-a-Service or purchase",
+                "Customers can subscribe, with rental, deployment, operation and maintenance in one fee, or buy the robots outright."
               ],
               [
                 "Fleet control",
                 "A platform to run several robots across a site."
               ]
             ]
+          }
+        },
+        {
+          "figure": {
+            "image": "/assets/founders/flo-mobility-dsc00071.webp",
+            "alt": "A yellow Flo Mobility hauler with a box-shaped load bed and four rugged tyres, parked beside a concrete column on an unfinished floor with a wall of windows",
+            "ratio": "3/2",
+            "caption": "The latest version of the Flo Mobility hauler on site. Photograph from Flo Mobility."
           }
         },
         "The first customer, according to Inc42, was the Bengaluru builder Total Environment, in early 2024. By the end of that year a hauler was moving materials on the Bhogapuram Airport project.",
@@ -105,10 +117,50 @@
       ]
     },
     {
-      "h2": "Sixty robots, ten states.",
+      "h2": "More than 120 deployments.",
       "toc": "Growth",
       "blocks": [
-        "By May 2026, the company said it had more than 60 robots deployed across 10 states, working with L&T, Godrej Properties, Embassy Group and Sobha. That month it raised USD 2.5 million in a pre-Series A round co-led by Mela Ventures and Arali Ventures. ARTPARK took part in the round, and is also listed among Flo’s earlier investors.",
+        "Flo Mobility now counts more than 120 deployments, including more than 20 fully autonomous robots, and 45 active customers. In May 2026 it raised USD 2.5 million in a pre-Series A round co-led by Mela Ventures and Arali Ventures. ARTPARK took part in the round, and is also listed among Flo’s earlier investors.",
+        {
+          "panel": {
+            "title": "Where Flo Mobility works",
+            "items": [
+              [
+                "India",
+                "Deployments across more than 20 cities."
+              ],
+              [
+                "UAE",
+                "Dubai and Abu Dhabi."
+              ],
+              [
+                "Netherlands",
+                "First sales, the company’s first step into Europe."
+              ],
+              [
+                "Customers",
+                "L&T, Tata Projects, Godrej, Shapoorji Pallonji, Embassy, NCC, Kalpataru, Sobha and ALEC (UAE)."
+              ],
+              [
+                "Projects",
+                "Residential high-rises, villas, commercial projects, data centres, airports, government buildings, universities and hospitals."
+              ],
+              [
+                "In the news",
+                "DD News, ANI, News18 Bangla, News18 Odia and Polimer News (Tamil Nadu)."
+              ]
+            ]
+          }
+        },
+        {
+          "figure": {
+            "image": "/assets/founders/flo-mobility-haulers.webp",
+            "alt": "Two men in black Flo polo shirts standing among a row of yellow Flo Mobility haulers in a workshop",
+            "ratio": "16/9",
+            "pos": "50% 22%",
+            "caption": "Two members of the Flo Mobility team with a row of Flo haulers in the workshop. Photograph from Flo Mobility."
+          }
+        },
         {
           "dates": [
             [
@@ -163,7 +215,7 @@
             }
           ]
         },
-        "Inc42 has reported deployments in Dubai and Abu Dhabi as well. The company has named tiling, wall finishing and screeding as the next jobs for its robots."
+        "The company has named tiling, wall finishing and screeding as the next jobs for its robots."
       ]
     }
   ],
@@ -203,6 +255,10 @@
     [
       "ARTPARK, startup portfolio",
       "https://www.artpark.in/startups-overview"
+    ],
+    [
+      "Founder review and corrections, November 2026",
+      ""
     ]
   ]
 }

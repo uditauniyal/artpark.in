@@ -76,7 +76,7 @@
   // ---------- Collage: a self-running tour of the nine stories ----------
   var collage = document.querySelector('[data-collage]');
   if (collage) {
-    var order = [4, 0, 5, 2, 7, 1, 6, 3, 8], k = 0, touched = false, visible = true;
+    var order = [9, 0, 5, 2, 7, 1, 6, 3, 8, 4], k = 0, touched = false, visible = true; // manager 2026-11-16: TEAM tile (9) leads
     var chips = collage.querySelectorAll('[data-chip]');
     collage.addEventListener('mouseenter', function () { touched = true; collage.classList.remove('touring'); });
     collage.addEventListener('mouseleave', function () { touched = false; });
@@ -87,7 +87,7 @@
       var i = order[k++ % order.length];
       var t = collage.querySelector('[data-tile="' + i + '"]');
       if (t) t.dispatchEvent(new Event('mouseenter'));
-      chips.forEach(function (c, j) { c.classList.toggle('tour-on', j === i); });
+      chips.forEach(function (c) { c.classList.toggle('tour-on', c.getAttribute('data-chip') === String(i)); });
     }, 2600);
   }
 

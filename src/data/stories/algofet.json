@@ -4,7 +4,7 @@
   "tag": "STORY 01",
   "kicker": "Complete the system",
   "title": "The drone was only the beginning.",
-  "standfirst": "Ankit Mishra came to ARTPARK as an engineer working on battery management. He left as the founder of AlgoFET, a company built around everything a drone needs to fly again on its own: docks, precision landing, self-charging batteries and a backup for every critical step.",
+  "standfirst": "Ankit Mishra came to ARTPARK as an engineer working on battery management. He left as founder and CEO of AlgoFET, a company built around everything a drone needs to fly again on its own: docks, precision landing, self-charging batteries and a backup for every critical step.",
   "meta": ["ARTPARK Stories", "About 7 min read", "AlgoFET, Bengaluru"],
   "website": "https://algofet.com/",
   "hero": { "image": "/assets/stories/algofet-dock.webp", "alt": "AlgoFET's AlgoPAD charging dock with a drone resting on it at dusk", "pos": "50% 58%", "caption": "An AlgoPAD charging dock with a drone, at dusk. Photograph from ARTPARK." },
@@ -48,7 +48,9 @@
         { "quote": { "text": "Ankit started as an engineer at ARTPARK, developing innovations in battery management technologies, and now he’s a founder. That’s the journey we want to make possible for everyone.", "who": "Prof. Bharadwaj Amrutur, Executive Director, ARTPARK", "source": "https://www.artpark.in/stories/blog-post-title-four-kpyhe", "sourceLabel": "ARTPARK interview" } },
         "ARTPARK’s CEO, Raghu Dharmaraju, describes the path every team takes: “Often, teams’ starting point is a promising research proof-of-concept. Their destination is the proverbial product-market fit – evidence-backed clarity on what product to make and which customers to serve at scale – on the other side of the valley-of-death. ARTPARK strives to adequately equip them and keep shining a light as they make that dangerous journey.”",
         "AlgoFET has since raised ₹15 crore in a Pre-Series A round from Piper Serica, to scale its drone ground infrastructure: docking, charging, battery management and 24/7 mission readiness.",
-        { "figure": { "image": "/assets/stories/algofet-team.webp", "alt": "The AlgoFET team in their workspace", "ratio": "16/9", "caption": "The AlgoFET team. Photograph from ARTPARK." } },
+        "Dinesh Kumar is AlgoFET’s CTO and Co-Founder.",
+        { "people": [{ "name": "Ankit Mishra", "role": "Founder & CEO" }, { "name": "Dinesh Kumar", "role": "CTO and Co-Founder" }] },
+        { "figure": { "image": "/assets/founders/algofet-team-2026.webp", "alt": "The AlgoFET team, more than twenty people, standing in two rows outside their workspace, with the AlgoFET logo on the wall behind them", "ratio": "4/3", "caption": "The AlgoFET team outside its workspace. Photograph from AlgoFET." } },
         "The ambition is bigger than charging. “We want to democratize access to drone technology,” Ankit says. “Today, operating drones requires trained pilots, manual charging, and field deployment – these are all the barriers. If we can automate the entire chain, anyone can use drones to gather data. That’s how we unlock real impact.”"
       ]
     }
@@ -57,6 +59,7 @@
     ["ARTPARK, “Where innovation takes flight” (AlgoFET interview)", "https://www.artpark.in/stories/blog-post-title-four-kpyhe"],
     ["ARTPARK homepage: “AlgoFET raises ₹15 Crore” (Pre-Series A, Piper Serica)", "https://www.artpark.in/"],
     ["ARTPARK, CAMRAS programme page", "https://www.artpark.in/advanced-robotics/camras"],
-    ["AlgoFET", "https://algofet.com/"]
+    ["AlgoFET", "https://algofet.com/"],
+    ["Founder review and corrections, November 2026", ""]
   ]
 }

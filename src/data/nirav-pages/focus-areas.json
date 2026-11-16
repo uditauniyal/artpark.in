@@ -1,0 +1,9 @@
+{
+  "route": "/about/focus-areas",
+  "title": "Focus Areas — ARTPARK",
+  "description": "",
+  "style": ".wwu-link{transition:background 150ms ease,transform 150ms ease}\n.wwu-link:hover{background:#fff !important;transform:translateX(3px)}\n.fa-card{transition:transform 180ms ease,box-shadow 180ms ease}\n.fa-card:hover{transform:translateY(-3px);box-shadow:0 18px 34px -18px rgba(31,10,138,0.35)}",
+  "bodyAttrs": "",
+  "tail": "",
+  "source": "Manager, design canvas static export (artpark-website-export.zip, 2026-11-16)"
+}

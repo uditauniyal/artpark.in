@@ -17,8 +17,9 @@ const fig = (f) => `      <figure style="margin:16px 0;display:flex;flex-directi
 
 const quoteBlock = (q) => `      <blockquote style="margin:16px 0;padding:28px 0;border-top:1px solid var(--line-strong);border-bottom:1px solid var(--line-strong);font-family:var(--font-display);font-weight:700;font-size:clamp(24px,3vw,32px);line-height:1.25;color:var(--artblue-deep);text-wrap:balance">“${md(q.text)}”<footer style="margin-top:14px;font-family:var(--font-body);font-weight:600;font-size:15px;line-height:1.5;color:var(--ink-soft)">${esc(q.who)}${q.source ? ` · <a href="${q.source}" target="_blank" rel="noopener" style="font-weight:600">${esc(q.sourceLabel || 'source')}</a>` : ''}</footer></blockquote>`;
 
-const keyDates = (rows) => `      <div style="border:1px solid var(--line);margin:16px 0">
-        <div style="padding:16px 22px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:baseline;gap:12px"><span class="eyebrow">Key dates</span><span style="font-size:12px;color:var(--ink-dim)">From published sources</span></div>
+// `label` names where the dates come from (default: published sources; founder-supplied dates say so).
+const keyDates = (rows, label = 'From published sources') => `      <div style="border:1px solid var(--line);margin:16px 0">
+        <div style="padding:16px 22px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:baseline;gap:12px"><span class="eyebrow">Key dates</span><span style="font-size:12px;color:var(--ink-dim)">${esc(label)}</span></div>
 ${rows.map(([d, t], i) => `        <div style="display:grid;grid-template-columns:96px 1fr;gap:14px;padding:12px 22px;font-size:15px;line-height:1.55;${i < rows.length - 1 ? 'border-bottom:1px solid var(--line);' : ''}${i % 2 ? 'background:var(--paper-soft)' : ''}"><b style="font-family:var(--font-display)">${esc(d)}</b><span>${md(t)}</span></div>`).join('\n')}
       </div>`;
 
@@ -31,15 +32,19 @@ ${p.items.map(([h, t]) => `          <div style="padding:14px 0;border-top:1px s
         </div>
       </div>`;
 
-const people = (list) => `      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:20px 16px;margin:8px 0 16px">
-${list.map((p) => `        <div style="display:flex;flex-direction:column;gap:10px">${p.photo ? `<div style="position:relative;width:100%;aspect-ratio:4/5;background:var(--paper-soft);overflow:hidden"><img src="${p.photo}" alt="${esc(p.name)}" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:${p.pos || '50% 25%'};display:block"></div>` : ''}<div><div style="font-family:var(--font-display);font-weight:700;font-size:16px;line-height:1.3">${esc(p.name)}</div><div style="font-size:13.5px;line-height:1.45;color:var(--ink-dim);margin-top:2px">${esc(p.role)}</div></div></div>`).join('\n')}
-      </div>`;
+// Every card in a grid looks the same: when some people have a photo and others do not, the ones without get an
+// initials tile of the same size (user, 2026-11-16: mixed grids looked broken). Grids with no photos stay text-only.
+const initials = (n) => n.replace(/^(Prof|Dr|Mr|Ms|Mrs)\.?\s+/i, '').split(/\s+/).filter((w) => /^[A-Za-z]/.test(w)).map((w) => w[0]).filter((c, i, a) => i === 0 || i === a.length - 1).join('').toUpperCase();
+const monogram = (p) => `<div aria-hidden="true" style="position:relative;width:100%;aspect-ratio:4/5;background:var(--artlight);display:flex;align-items:center;justify-content:center"><span style="font-family:var(--font-display);font-weight:700;font-size:clamp(28px,3vw,40px);color:var(--artblue);letter-spacing:0.04em">${esc(initials(p.name))}</span></div>`;
+const people = (list) => { const anyPhoto = list.some((p) => p.photo); return `      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:20px 16px;margin:8px 0 16px">
+${list.map((p) => `        <div style="display:flex;flex-direction:column;gap:10px">${p.photo ? `<div style="position:relative;width:100%;aspect-ratio:4/5;background:var(--paper-soft);overflow:hidden"><img src="${p.photo}" alt="${esc(p.name)}" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:${p.pos || '50% 25%'};display:block"></div>` : anyPhoto ? monogram(p) : ''}<div><div style="font-family:var(--font-display);font-weight:700;font-size:16px;line-height:1.3">${esc(p.name)}</div><div style="font-size:13.5px;line-height:1.45;color:var(--ink-dim);margin-top:2px">${esc(p.role)}</div></div></div>`).join('\n')}
+      </div>`; };
 
 const block = (b) => {
   if (typeof b === 'string') return `      <p>${md(b)}</p>`;
   if (b.figure) return fig(b.figure);
   if (b.quote) return b.quote.draft && process.env.ARTPARK_FINAL ? '' : quoteBlock(b.quote);
-  if (b.dates) return keyDates(b.dates);
+  if (b.dates) return keyDates(b.dates, b.label);
   if (b.panel) return panel(b.panel);
   if (b.people) return people(b.people);
   return '';

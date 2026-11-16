@@ -37,9 +37,10 @@ test('domains: the approved mapping, 1–2 each, in the domain list', () => {
 test('new startups use the PDF copy; existing cards keep theirs; every logo exists', () => {
   const by = Object.fromEntries(C.portfolio.map((c) => [c.slug, c]));
   assert.equal(by['idle-robotics'].oneLiner, 'GPS-independent navigation for robots and drones, using sensor fusion and on-device AI.');
-  assert.equal(by['venomics-ai'].oneLiner, 'AI drug discovery that mines venom biodiversity for therapeutic peptides.');
-  assert.equal(by['arborum-labs'].oneLiner, 'Physics-grounded world models that let AI agents plan and run telecom and power networks.');
-  assert.equal(by['arborum-labs'].website, 'https://arborum.ai');
+  // Founder review, November 2026: Venomics AI and Arborum Labs sent their own wording.
+  assert.equal(by['venomics-ai'].oneLiner, 'Venoms to Drugs. From Nature’s Deadliest Secrets to Humanity’s Next Medicine.');
+  assert.equal(by['arborum-labs'].oneLiner, 'Arborum builds world models that understand and anticipate the behaviour of complex infrastructure networks for critical decisions.');
+  assert.equal(by['arborum-labs'].website, 'https://arborum.ai/');
   assert.equal(by['acceleration-robotics'].oneLiner, 'Hardware brains that speed up a robot’s operation.');
   for (const c of C.portfolio) assert.ok(fs.existsSync(path.join(ROOT, 'public', c.logo)), c.logo);
 });

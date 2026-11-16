@@ -33,7 +33,8 @@ const MAP = {
 const auto = (inner) => {
   const dash = inner.indexOf(' — ');
   if (dash > 0) return `${inner.slice(0, dash)} — <span class="tt">${inner.slice(dash + 3)}</span>`;
-  const m = inner.match(/^(.*\S)\s+(\S+)$/s);
+  // Never colour a lone one- or two-letter last word ("Engineer I" read as a stray cursor): colour the last two words.
+  const m = inner.match(/^(.*\S)\s+(\S{3,}|\S+\s+\S{1,2})$/s);
   return m ? `${m[1]} <span class="tt">${m[2]}</span>` : `<span class="tt">${inner}</span>`;
 };
 

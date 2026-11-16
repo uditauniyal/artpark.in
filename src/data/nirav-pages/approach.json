@@ -1,0 +1,9 @@
+{
+  "route": "/about/approach",
+  "title": "Approach — ARTPARK",
+  "description": "",
+  "style": ".wwu-link{transition:background 150ms ease,transform 150ms ease}\n.wwu-link:hover{background:#fff !important;transform:translateX(3px)}\n@media (max-width:760px){.vtf-grid{grid-template-columns:1fr !important}.vtf-grid>div{grid-column:auto !important;grid-row:auto !important}}\n.fw-spin g{transform-origin:24px 24px;transform-box:view-box;animation:fwspin 6s linear infinite}\n@keyframes fwspin{to{transform:rotate(360deg)}}\n@media (prefers-reduced-motion:reduce){.fw-spin g{animation:none}}\n.pc-bar{transition:filter 150ms ease}.pc-bar:hover{filter:brightness(1.08)}\n.fw-spiral{transform-origin:230px 165px;transform-box:view-box;animation:fwspin 14s linear infinite}\n@media (prefers-reduced-motion:reduce){.fw-spiral{animation:none}}",
+  "bodyAttrs": "",
+  "tail": "",
+  "source": "Manager, design canvas static export (artpark-website-export.zip, 2026-11-16)"
+}

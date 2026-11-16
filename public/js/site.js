@@ -107,7 +107,7 @@
     var tiles = collage.querySelectorAll('[data-tile]');
     var chips = collage.querySelectorAll('[data-chip]');
     var hint = collage.querySelector('[data-collage-hint]');
-    var HINT_IDLE = 'Hover over a picture or a label to see where it comes from in the stories.';
+    var HINT_IDLE = 'Hover over a picture or a label to see what each kind of work means.';
     var HINT_ON = 'Click the picture to read the story.';
     var setHover = function (hv) {
       tiles.forEach(function (t, i) {

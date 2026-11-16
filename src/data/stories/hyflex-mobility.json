@@ -12,14 +12,14 @@
   ],
   "website": "https://hyflexmobility.com/",
   "hero": {
-    "image": "/assets/site/drone-lab.webp",
-    "alt": "A drone flying inside an electronics and robotics lab",
+    "image": "/assets/founders/hyflex-mobility-engine.webp",
+    "alt": "A Hyflex Mobility prototype engine with two finned, opposed cylinders and a propeller hub, bolted to a black mounting plate on a white table",
     "pos": "50% 50%",
     "ratio": "16/9",
-    "caption": "A drone in flight inside a lab at ARTPARK. ARTPARK photograph, not of Hyflex Mobility."
+    "caption": "A Hyflex Mobility prototype engine. Photograph from Hyflex Mobility."
   },
   "lead": [
-    "Prof. R V Ravikrishna has spent his career studying how fuel burns. At IISc’s Department of Mechanical Engineering, where he joined the faculty in 1999 after a PhD at Purdue University, his research uses laser diagnostics to study combustion and spray processes in internal combustion engines, gas turbines and burners. He holds the Pratt & Whitney Chair and heads the National Centre for Combustion Research and Development at IISc.",
+    "Prof. R V Ravikrishna has spent his career studying how fuel burns. At IISc’s Department of Mechanical Engineering, where he joined the faculty in 1999 after a PhD at Purdue University, his research uses laser diagnostics to study combustion and spray processes in internal combustion engines, gas turbines and burners.",
     "In 2024 he and his former PhD student, Prasad Boggavarapu, started a company to build engines for drones. Hyflex Mobility is part of ARTPARK’s startup portfolio."
   ],
   "sections": [
@@ -57,6 +57,22 @@
       "blocks": [
         "Hyflex describes its products simply: hybrid power units for drones and UAVs. ARTPARK’s portfolio lists a wider scope, with conventional and hybrid engines for drones, UAVs, automotive and genset applications. The company has not yet published specifications.",
         {
+          "figure": {
+            "image": "/assets/founders/hyflex-mobility-engine-propeller.webp",
+            "alt": "A Hyflex prototype engine fitted with a two-blade propeller, mounted on a test rig with a fuel bottle and wiring",
+            "caption": "A Hyflex prototype engine with a propeller fitted, on a test rig. Photograph from Hyflex Mobility.",
+            "ratio": "574/505"
+          }
+        },
+        {
+          "figure": {
+            "image": "/assets/founders/hyflex-mobility-hybrid-unit.webp",
+            "alt": "Close view of the Hyflex hybrid power unit on a test frame: a finned engine with its carburettor, wiring and a large disc-shaped unit at the front",
+            "caption": "The Hyflex hybrid power unit on a test frame. Photograph from Hyflex Mobility.",
+            "ratio": "4/5"
+          }
+        },
+        {
           "dates": [
             [
               "2 September 2024",
@@ -91,6 +107,10 @@
     [
       "ARTPARK, startup portfolio",
       "https://www.artpark.in/startups-overview"
+    ],
+    [
+      "Founder review and corrections, November 2026",
+      ""
     ]
   ]
 }

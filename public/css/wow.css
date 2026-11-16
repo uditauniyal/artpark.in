@@ -25,8 +25,11 @@
 .fl-doc em { align-self: flex-start; padding: 3px 8px; border-radius: 4px; background: var(--coral, #FF5A5F); color: #fff; font: 700 10px/1.2 var(--font-display); letter-spacing: .1em; font-style: normal; }
 .fl-doc b { font-family: var(--font-display); font-size: 14.5px; line-height: 1.3; color: var(--ink); }
 .fl-doc small { font-size: 12px; color: var(--ink-dim); }
-@media (max-width: 1099px) { .float-stage { display: none; } }
-@media (min-width: 1100px) { .intro-wrap.has-float > h1 { max-width: calc(100% - min(460px, 40%) - 8px); } }
+@media (max-width: 1199px) { .float-stage { display: none; } }
+@media (min-width: 1200px) { .intro-wrap.has-float > h1 { max-width: calc(100% - min(460px, 40%) - 8px); } }
+/* Without the tab rows (manager, 2026-11-16) intros are shorter than the floating composition; reserve its height so the
+   windows never cover the filters or text that follow. */
+@media (min-width: 1200px) { .intro-wrap.has-float { min-height: 400px; } .intro-wrap.has-float > p, .intro-wrap.has-float > h1 { max-width: calc(100% - min(460px, 40%) - 16px) !important; } }
 
 /* 2 · Moving windows: the picture drifts inside its frame as the page scrolls */
 [data-win] { overflow: hidden; }

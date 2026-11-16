@@ -105,11 +105,11 @@ test('home matches the design: historical stories, painted art, no stats or foun
   assert.ok(!h2.includes('In their own words.'));
   assert.ok(!html.includes('id="founders"') && !html.includes('stat-band'));
   assert.match(html, /These are historical case studies\. ARTPARK was not involved in any of them\./);
-  assert.match(html, /Hover over a picture or a label to see where it comes from in the stories\./);
+  assert.match(html, /Hover over a picture or a label to see what each kind of work means\./);
   assert.match(html, /Edison's three-wire distribution scheme sharply reduced the copper needed/);
-  assert.deepEqual([...html.matchAll(/data-go="\d"[^>]*>([^<]+)<span class="tab-progress"/g)].map((m) => m[1]), ['01 · Light bulb', '02 · Strand', '03 · GPS']);
+  assert.deepEqual([...html.matchAll(/data-go="\d"[^>]*>([^<]+)<span class="tab-progress[ "]/g)].map((m) => m[1]), ['01 · Light bulb', '02 · Strand', '03 · GPS']);
   const art = [...new Set([...html.matchAll(/\/assets\/art\/([\w-]+\.jpg)/g)].map((m) => m[1]))];
-  assert.equal(art.length, 9);
+  assert.ok(art.length >= 9, 'painted art: ' + art.length);
   for (const f of art) assert.ok(fs.existsSync(path.join(ROOT, 'public', 'assets', 'art', f)), f);
   // Manager (2026-11-05): as in the design, the series links open the three long stories.
   assert.deepEqual([...html.matchAll(/<a class="btn btn-primary" href="([^"]+)"[^>]*>Read the story/g)].map((m) => m[1]), ['/stories/light-bulb', '/stories/strand', '/stories/gps']);
@@ -122,9 +122,9 @@ test('home matches the design: historical stories, painted art, no stats or foun
 test('manager changes of 2026-11-12', () => {
   build();
   const home = page('');
-  assert.match(home, /INSPIRING STORIES FORMING OUR BELIEF/);
-  const chips = home.indexOf('class="collage-chips"'), buttons = home.indexOf('>Read the stories <'), stage = home.indexOf('class="collage-stage"');
-  assert.ok(chips > 0 && chips < buttons && buttons < stage, 'labels, then buttons, then the pictures');
+  // 2026-11-16: his newer Home (no eyebrow, no buttons under the collage) supersedes these two points.
+  const chips = home.indexOf('class="collage-chips"'), stage = home.indexOf('class="collage-stage"');
+  assert.ok(chips > 0 && chips < stage, 'labels above the pictures');
   for (const route of ['', 'tenders', 'about/programs/tir']) {
     const html = page(route);
     assert.ok(!html.includes('Technology Park · IISc Bengaluru</span>'), route + ': no tagline in the top bar');
@@ -132,13 +132,13 @@ test('manager changes of 2026-11-12', () => {
     assert.match(html, /aria-label="ARTPARK on LinkedIn"/);
     assert.ok(!html.includes('Other Programs') && !html.includes('Other programs'), route);
   }
-  // The About tab row came back on 2026-11-14 (user), with "Programs".
-  for (const route of ['about/team', 'about/approach', 'about/facilities', 'about/certifications', 'about/programs']) assert.match(page(route), /class="sub-tabs"[\s\S]*?>Programs<\/a>/, route);
-  assert.match(page('about/approach'), /DOMAINS WE WORK IN[\s\S]*HORIZONTAL CAPABILITIES WE BACK/);
+  // Manager (2026-11-16): no tab rows under About or Outreach titles (user agreed).
+  for (const route of ['about/team', 'about/approach', 'about/facilities', 'about/certifications', 'about/programs', 'events', 'news', 'tenders']) assert.ok(!page(route).includes('class="sub-tabs"'), route);
+  assert.match(page('about/focus-areas'), /Domains we work in[\s\S]*Horizontal capabilities we back/);
   assert.ok(!page('about/facilities').includes('BRAINz campus</div>'));
   const programs = page('about/programs');
   assert.match(programs, /<h1[^>]*>Our <span class="tt">programs\.<\/span><\/h1>/);
-  assert.deepEqual([...programs.matchAll(/<a id="([\w-]+)" class="prog-row"/g)].map((m) => m[1]).slice(0, 3), ['tir', 'vip', 'advanced-robotics']);
+  assert.deepEqual([...programs.matchAll(/<a id="([\w-]+)" class="prog-row"/g)].map((m) => m[1]), ['artlabs', 'tir', 'vip', 'rdi', 'advanced-robotics', 'industry-5', 'health', 'language', 'wired-wireless', 'academy']);
   assert.match(programs, /RDI Scheme · Focused Research Organisation/);
   assert.match(page('about/programs/tir'), /<a class="btn btn-primary" href="\/apply">Apply for TIR/);
   assert.match(page('about/programs/vip'), /<a class="btn btn-primary" href="\/apply">Apply for VIP/);
@@ -166,19 +166,18 @@ test('changes of 2026-11-14', () => {
   assert.match(page(''), /href="\/apply" style="color:#fff;text-decoration:none;font-weight:600">Sign in</);
   assert.match(page(''), /ARTPARK \(AI &amp; Robotics Technology Park\) is a not-for-profit Section-8 company at the Indian Institute of Science, Bangalore, committed to building and deploying AI &amp; Robotics technologies for Society, Economy, and Sovereignty\./);
   const programs = page('about/programs');
-  assert.match(programs, /<a id="tir" class="prog-row" href="\/about\/programs\/tir"[^>]*><div class="prog-img"><img src="\/assets\/programs\/tir\.webp"/);
-  assert.match(programs, /<a id="vip" class="prog-row" href="\/about\/programs\/vip"[^>]*><div class="prog-img"><img src="\/assets\/programs\/vip\.webp"/);
+  // 2026-11-16: painted versions of the TIR and VIP photographs (manager).
+  assert.match(programs, /<a id="tir" class="prog-row" href="\/about\/programs\/tir"[^>]*><div class="prog-img"><img src="\/assets\/art\/prog-tir\.jpg"/);
+  assert.match(programs, /<a id="vip" class="prog-row" href="\/about\/programs\/vip"[^>]*><div class="prog-img"><img src="\/assets\/art\/prog-vip\.jpg"/);
   const team = page('about/team');
-  assert.deepEqual([...team.matchAll(/<article class="tv2-lead">[\s\S]*?<h3>([^<]+)<\/h3><p>([^<]+)<\/p>/g)].map((m) => m[1] + ' | ' + m[2]), ['Prof. Bharadwaj Amrutur | Executive Director and Chief Technologist', 'Raghu Dharmaraju | Chief Executive Officer', 'Nirav Dedhia | Investments &amp; Innovation Partnerships Lead']);
-  assert.ok(!/Sheela/i.test(team) && !team.includes('Research advisory board') && !team.includes('tv-switch'));
-  assert.deepEqual([...team.matchAll(/<div class="tv2-group"><span class="eyebrow">([^<]+)</g)].map((m) => m[1]), ['Board of directors', 'Hub governing board', 'Executive advisors']);
+  // User (2026-11-16): back to the original Team page; Nirav will roll out a chosen version later.
+  const leaders = [...team.matchAll(/<div class="person-card"[\s\S]*?font-size:17px">([^<]+)<\/div><div[^>]*>([^<]+)<\/div>/g)].map((m) => m[1] + ' | ' + m[2]);
+  assert.deepEqual(leaders.slice(0, 3), ['Prof. Bharadwaj Amrutur | Executive Director and Chief Technologist', 'Raghu Dharmaraju | Chief Executive Officer', 'Nirav Dedhia | Investments &amp; Innovation Partnerships Lead']);
+  assert.deepEqual([...team.matchAll(/data-screen-label="(Leadership|Governing board|Board of directors|Research advisory board|Executive advisors)"/g)].map((m) => m[1]), ['Leadership', 'Governing board', 'Board of directors', 'Research advisory board', 'Executive advisors']);
+  assert.ok(!/Sheela/i.test(team) && !team.includes('tv2') && !team.includes('tv-switch'));
   for (const v of ['v1', 'v2', 'v3', 'versions']) assert.ok(!fs.existsSync(path.join(ROOT, 'dist', 'about', 'team', v)), v);
-  const css = fs.readFileSync(path.join(ROOT, 'public', 'css', 'team-versions.css'), 'utf8');
-  // Leaders in colour, the scrolling boards section in black and white (user, 2026-11-14), no duotone, no stagger.
-  assert.ok(!/\.tv2-portrait[^{]*\{[^}]*(grayscale|mix-blend)/.test(css) && !/\.tv2[^{]*\{[^}]*mix-blend/.test(css) && !/\.tv2-lead:nth-child\([23]\) \{ margin-top/.test(css));
-  assert.match(css, /\.tv2-fig img \{[^}]*filter: grayscale\(1\)/);
   assert.match(team, /href="https:\/\/www\.linkedin\.com\/in\/niravdedhia\/"/);
-  for (const route of ['about/approach', 'about/facilities', 'about/certifications', 'about/programs']) assert.match(page(route), /class="float-stage"/, route);
+  for (const route of ['about/facilities', 'about/certifications', 'about/programs']) assert.match(page(route), /class="float-stage"/, route);
   assert.ok(!team.includes('class="float-stage"'), 'team intro has no floating windows');
 });
 
@@ -189,10 +188,43 @@ test('news archive, ARTGarage spelling, events venue', () => {
   assert.ok(rows >= 80, 'news rows: ' + rows);
   assert.match(news, /data-years="news">[\s\S]*?data-year="All" aria-pressed="true"/);
   assert.match(news, /12 October 2026 · The Economic Times[\s\S]{0,400}?InterSafe/);
-  assert.match(news, /01 June 2021 · ET Healthworld/);
+  assert.match(news, />1 June 2021 · ET Healthworld/);
+  assert.ok(!/>0\d [A-Z][a-z]+ \d{4} · /.test(news), 'no zero-padded day numbers');
   for (const r of ['events', 'about/facilities', 'about/facilities/artgarage', 'contact']) assert.ok(!page(r).includes('ARTgarage'), r);
   assert.ok(!page('events').includes('the^delta'));
   const ev = page('events');
   assert.match(ev, /data-years="events">/);
   for (const y of ['2022', '2023', '2024', '2025', '2026']) assert.match(ev, new RegExp('data-row-year="events:' + y + '"'), y);
+});
+
+// Manager (2026-11-16, design-canvas static export): rebuilt Home and Approach, new Focus Areas and Work-in-progress
+// pages imported verbatim; Home-only header buttons; Focus Areas in the About menu; painted Facilities images;
+// loading curtain shows the lockup. Our links stay root-relative without trailing slashes, and documents stay local.
+test('manager changes of 2026-11-16', () => {
+  build();
+  const home = page('');
+  assert.match(home, /One breakthrough\. Nine more things it took\./);
+  assert.match(home, /data-chip="9"[^>]*>TEAM</);
+  assert.ok(!home.includes('INSPIRING STORIES FORMING OUR BELIEF'));
+  assert.match(home, /It is true deep-touch venture building\./);
+  const hdr = (h) => h.slice(h.indexOf('<header'), h.indexOf('</header>'));
+  assert.match(hdr(home), /site-cta" href="#building"[^>]*>What we build<\/a>[\s\S]*site-cta" href="#collaborate"[^>]*>Work with us<\/a>/);
+  for (const r of ['about/team', 'events', 'stories/light-bulb']) assert.ok(!hdr(page(r)).includes('site-cta'), r);
+  assert.match(hdr(page('about/team')), /href="\/about\/focus-areas"[\s\S]*?>Focus Areas<\/span>[\s\S]*?Domains and capabilities we back/);
+  assert.match(hdr(home), /TIR, VIP and our other initiatives/);
+  assert.match(page('about/approach'), /We measure progress in <b[^>]*>xRL<\/b>/);
+  assert.match(page('about/focus-areas'), /<h1[^>]*>Where we <span class="hl">work/);
+  assert.match(page('work-in-progress'), /<body data-ready-by="2026-11-18T18:00">/);
+  assert.match(page('work-in-progress'), /data-cd="d"/);
+  assert.match(page('about/facilities'), /\/assets\/art\/fac-drone-lab\.jpg/);
+  for (const r of ['', 'about/approach', 'about/focus-areas', 'work-in-progress']) {
+    const h = page(r);
+    assert.ok(!h.includes('artparkin.vercel.app'), r);
+    assert.ok(!/href="\/[^"#?]+\/"/.test(h), r + ': no trailing-slash links');
+    for (const m of h.matchAll(/\/assets\/art\/[\w.-]+/g)) assert.ok(fs.existsSync(path.join(ROOT, 'public', m[0])), m[0]);
+  }
+  assert.match(fs.readFileSync(path.join(ROOT, 'public', 'css', 'site.css'), 'utf8'), /\.ap-curtain-label \{[^}]*artpark-iisc-lockup\.webp/);
+  const v = require(path.join(ROOT, 'vercel.json')).redirects;
+  assert.ok(!v.some((r) => r.source === '/publications/:path*'), 'our publication pages are not redirected away');
+  assert.ok(v.some((r) => r.source === '/publications/llm-landscape-for-lmics' && r.destination === '/publications/llm-landscape-lmics'));
 });

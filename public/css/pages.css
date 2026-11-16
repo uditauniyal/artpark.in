@@ -55,6 +55,7 @@ html.js .reveal.in .icon-card, html.js .reveal.in .work-card, html.js .reveal.in
 .prog-row:hover .prog-img img { transform: scale(1.05); }
 
 .work-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; margin-top: 28px; }
+@media (min-width: 761px) { .work-grid:has(> :nth-child(4):last-child) { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .work-card { position: relative; display: flex; flex-direction: column; gap: 10px; padding: 24px 24px 26px; border: 1px solid var(--line); border-top: 3px solid var(--artblue); border-radius: 4px 4px 12px 12px; background: var(--paper); }
 .work-card:hover { border-color: var(--artblue); }
 .work-n { font-family: var(--font-display); font-weight: 700; font-size: 28px; line-height: 1; color: var(--artlight); -webkit-text-stroke: 1px var(--artblue); }
@@ -154,7 +155,7 @@ html.js .reveal.in .icon-card, html.js .reveal.in .work-card, html.js .reveal.in
 .role-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
 .role-list li { position: relative; padding-left: 34px; font-size: 18px; line-height: 1.65; color: var(--ink); }
 .role-list li::before { content: ""; position: absolute; left: 0; top: .52em; width: 10px; height: 11px; background: var(--artblue); clip-path: polygon(0 0, 100% 50%, 0 100%); }
-.role-list li::after { content: ""; position: absolute; left: 15px; top: .72em; width: 5px; height: 5px; border-radius: 50%; background: var(--artblue); }
+
 .role-about-co { padding: 28px; border-radius: 14px; background: var(--artlight); }
 .role-about-co .eyebrow { color: var(--artblue-deep); }
 .role-about-co p { margin-top: 10px; font-size: 19px; font-weight: 600; color: var(--artblue-deep); }

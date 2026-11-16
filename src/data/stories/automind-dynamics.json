@@ -3,8 +3,8 @@
   "company": "Automind Dynamics",
   "tag": "FOUNDER STORY",
   "kicker": "Off-road autonomy",
-  "title": "Autonomy where the map runs out.",
-  "standfirst": "Automind Dynamics builds autonomy for vehicles that work off the road, in places where GPS is jammed or missing and the ground is never the same twice. Most automation assumes clean sensors and a steady signal, and the field rarely offers either.",
+  "title": "What happens when the GPS disappears?",
+  "standfirst": "In defence, mining, industrial and remote operations, dust and uneven terrain degrade sensors, and communications drop out. Standard automation fails where GPS is denied or jammed and the environment has no structure.",
   "meta": [
     "ARTPARK Stories",
     "About 2 min read",
@@ -19,47 +19,61 @@
     "caption": "A Husky wheeled robot branded AutoMind Dynamics, fitted with LiDAR, cameras and antennas, on a forest floor. Photograph from Automind Dynamics."
   },
   "lead": [
-    "Standard automation fails where GPS is denied or jammed and the environment has no structure. In defence, mining, industrial and remote operations, dust and uneven terrain degrade sensors, and communications drop out.",
-    "Automind Dynamics designs for those conditions. It is incubated at ARTPARK and runs its R&D Innovation Centre on ARTPARK’s campus in Jalahalli, Bengaluru."
+    "Automind Dynamics builds autonomy for vehicles that work off the road, where GPS is jammed or missing and the ground is never the same twice. Its systems combine vehicle control, sensors, autonomy software and simulation to help vehicles operate across terrain that is unfamiliar, changing and difficult to model in advance.",
+    "It is incubated at ARTPARK and runs its R&D Innovation Centre on ARTPARK’s campus in Jalahalli, Bengaluru."
   ],
   "sections": [
     {
       "h2": "A kit, not a new vehicle.",
       "toc": "The product",
       "blocks": [
+        "The flagship product is TraX (short for Terrain Ready Autonomy eXtension), which allows remote teleoperation of vehicles from ground control stations. At its core, it is a retrofit kit that fits an existing vehicle, combustion or electric, allowing it to work autonomously. The software, sensors and simulation needed to make that work sit around it.",
         {
           "quote": {
-            "text": "A vehicle that has to keep going where there is no road, no map and no signal needs autonomy that was built for those conditions from the start.",
+            "text": "A vehicle that has to keep going where there is no road, no map and no signal needs autonomy built for those conditions from the start.",
             "who": "The Automind Dynamics team",
             "source": "",
-            "sourceLabel": "",
-            "draft": true
+            "sourceLabel": ""
+          }
+        }
+      ]
+    },
+    {
+      "h2": "One controller. Multiple platforms.",
+      "toc": "Products",
+      "blocks": [
+        {
+          "figure": {
+            "image": "/assets/founders/automind-dynamics-trax-controller.webp",
+            "alt": "A black TraX Controller unit with a finned heat-sink top, two antennas, connector ports and AutoMind Dynamics branding",
+            "caption": "The TraX Controller (design render). Image from Automind Dynamics.",
+            "ratio": "4/3",
+            "fit": "contain"
           }
         },
-        "The company’s main product is TraX, short for Terrain Ready Autonomy eXtension, which it describes as patented. At its centre is a retrofit kit that can be fitted to an existing vehicle, with a combustion engine or an electric drive, so that it can be teleoperated or driven autonomously. Around it sit the software, sensors and simulation needed to make that work. The company says its systems can navigate slopes of up to 45 degrees.",
         {
           "panel": {
-            "title": "What Automind Dynamics builds",
+            "title": "Our products",
             "items": [
               [
                 "TraX Controller",
-                "A vehicle-agnostic drive-by-wire and autonomy kit, working with RGB, LiDAR, radar and thermal sensors over RF, 5G or a local network."
+                "Hardware and software. A vehicle-agnostic drive-by-wire and autonomy kit, working with RGB, LiDAR, radar and thermal sensors over RF, 5G or a local network."
               ],
               [
                 "TraX Autonomy Core",
-                "Software for mapping, localisation, path planning and navigation across all terrain."
+                "Software. Mapping, localisation, path planning and navigation across all terrain."
               ],
               [
                 "HyperSim",
-                "Simulation software for the autonomy stack."
+                "Software. Simulation software for testing and refining the autonomy stack."
               ],
               [
-                "Ground robots",
-                "UGVs including Nomad Explorer and the Grizzly Heavy UGV."
+                "Gefier R1 Mini",
+                "Hardware. A fully autonomous indoor UGV for AI and robotics research, with integrated system architecture and a preconfigured autonomy stack."
               ],
               [
-                "Gefier R1",
-                "A modular ROS 2 research robot for universities, launched in 2026."
+                "R1 Vega UGV",
+                "Hardware. An off-road autonomous UGV built for defence missions where time on the ground matters: surveillance, reconnaissance and tactical logistics."
               ]
             ]
           }
@@ -67,26 +81,35 @@
       ]
     },
     {
-      "h2": "Built inside ARTPARK.",
-      "toc": "ARTPARK",
+      "h2": "Milestones.",
+      "toc": "Milestones",
       "blocks": [
-        "Automind Dynamics is incubated at ARTPARK, and its R&D Innovation Centre sits within the I-Hub for Robotics and Autonomous Systems Innovation Foundation, ARTPARK, in Jalahalli. ARTPARK describes it as one of its portfolio startups, has listed roles for the company on its careers page, and showcased it at the Big Tech Show 2026 in Mysuru and during the Principal Scientific Adviser’s visit to ARTGarage.",
         {
           "dates": [
             [
-              "2026",
+              "April 2025",
+              "Launched the TraX Autonomous Controller."
+            ],
+            [
+              "September 2025",
               "Published a demonstration of the TraX ecosystem for off-road, GPS-denied autonomy."
             ],
             [
-              "2026",
+              "January 2026",
+              "Launched Gefier R1, a modular autonomous ground robot for university research and teaching."
+            ],
+            [
+              "September 2026",
               "Exhibited with ARTPARK at the Big Tech Show 2026, Mysuru."
             ],
             [
-              "2026",
-              "Launched Gefier R1, a modular autonomous ground robot for university research and teaching."
+              "November 2026",
+              "Launched the R1 Vega Autonomous Vehicle."
             ]
-          ]
-        }
+          ],
+          "label": "From Automind Dynamics and ARTPARK"
+        },
+        "Automind Dynamics is one of ARTPARK’s portfolio startups. ARTPARK showcased it at the Big Tech Show 2026 in Mysuru and during the Principal Scientific Adviser’s visit to ARTGarage."
       ]
     }
   ],
@@ -106,6 +129,10 @@
     [
       "ARTPARK, startup portfolio",
       "https://www.artpark.in/startups-overview"
+    ],
+    [
+      "Founder review and revised story, November 2026",
+      ""
     ]
   ]
 }

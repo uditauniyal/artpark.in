@@ -1,0 +1,8 @@
+{
+  "_note": "Founder review, November 2026: stills taken from videos Open Science Stack shared for their story (WhatsApp, 848x478).",
+  "images": [
+    { "out": "founders/open-science-stack-v-automation.webp", "src": "research/img/founders/1116/open-science-stack-v-automation.jpg", "maxW": 1600, "subject": "A black robotic arm working beside white lab instruments and a liquid-handling enclosure on a bench.", "source": "Open Science Stack, video shared for the story (Nov 2026)" },
+    { "out": "founders/open-science-stack-v-humanoid.webp", "src": "research/img/founders/1116/open-science-stack-v-humanoid.jpg", "maxW": 1600, "subject": "A humanoid robot at a lab bench with sample tubes and a pink rack, a team member standing beside it.", "source": "Open Science Stack, video shared for the story (Nov 2026)" },
+    { "out": "founders/open-science-stack-v-arm.webp", "src": "research/img/founders/1116/open-science-stack-v-arm.jpg", "maxW": 1600, "subject": "A white robotic arm on a stand in a lab, with people working at desks behind it.", "source": "Open Science Stack, video shared for the story (Nov 2026)" }
+  ]
+}

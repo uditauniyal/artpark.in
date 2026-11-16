@@ -1,10 +1,11 @@
 // Outreach (Events, News, Tenders), Careers and Partnerships.
 // Ported from .reference/claude-design/Outreach-*.dc.html, Careers.dc.html, Partnerships.dc.html.
-const { esc, page, pageIntro, floatStage, OUTREACH_TABS, R, linkRows, icon } = require('../lib.cjs');
+const { esc, page, pageIntro, floatStage, R, linkRows, icon } = require('../lib.cjs');
 const C = require('../data/content.cjs');
 const M = require('../outreach/model.cjs');
 
-const outreachIntro = (current, h1, lede, float) => pageIntro({ eyebrow: 'Outreach', h1, lede, float, tabs: { current, items: OUTREACH_TABS } });
+// Manager (2026-11-16): no Events / News / Tenders tab row; the Outreach menu covers it.
+const outreachIntro = (current, h1, lede, float) => pageIntro({ eyebrow: 'Outreach', h1, lede, float });
 
 // Round 8 floating compositions (real photos, outlets, documents and counts only).
 const FLOAT_EVENTS = [
@@ -77,9 +78,10 @@ const eventPages = C.outreach.events.filter(M.eventHasPage).map((e) => {
     route: `${R.events}/${e.id}`,
     html: () => page({
       title: `${e.title} — ARTPARK Events`, active: 'outreach', sub: 'events', description: body[0] || e.title,
-      body: pageIntro({ eyebrow: 'Events', h1: esc(e.title) + '.', lede: esc(M.formatRange(e.start, e.end) + (e.venue ? ' · ' + e.venue : '')) }) + `
+      body: pageIntro({ eyebrow: 'Events', h1: esc(e.title) + '.', lede: esc(M.formatRange(e.start, e.end) + (e.time ? ' · ' + e.time : '') + (e.venue ? ' · ' + e.venue : '')) }) + `
+  ${e.register && C.upcomingEvents.some((u) => u.id === e.id) ? `<div style="max-width:1180px;margin:0 auto;padding:24px 24px 0"><a class="btn btn-primary" href="${esc(e.register)}" target="_blank" rel="noopener">Register <span class="arrow">→</span></a></div>` : ''}
   <div style="max-width:1180px;margin:0 auto;padding:48px 24px 112px">
-    ${e.image ? `<figure style="margin:0 0 40px;max-width:860px"><div data-win style="position:relative;width:100%;aspect-ratio:16/9;background:var(--paper-soft);overflow:hidden"><img src="${esc(e.image)}" alt="${esc(e.title)}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>` : ''}
+    ${e.image ? `<figure style="margin:0 0 40px;max-width:860px"><div style="position:relative;width:100%;aspect-ratio:16/9;background:var(--paper-soft);overflow:hidden"><img src="${esc(e.image)}" alt="${esc(e.imageAlt || e.title)}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block"></div></figure>` : ''}
     <article style="max-width:760px;display:flex;flex-direction:column;gap:16px;font-size:17px;line-height:1.75;color:var(--ink-soft)">
 ${body.map((l) => `      <p>${esc(l)}</p>`).join('\n')}
     </article>
@@ -186,10 +188,9 @@ ${t.docs.map(({ label: n, href, kind }) => `            <a class="t-doc" href="$
 };
 
 // ---------- Careers (Careers.dc.html) ----------
-const ago = (iso) => {
-  const d = Math.round((new Date('2026-10-24T12:00:00Z') - new Date(iso)) / 86400000);
-  return d <= 0 ? 'Today' : d === 1 ? '1 day ago' : `${d} days ago`;
-};
+// Posting dates as dates (a relative "3 days ago" goes stale between refreshes of the roles feed).
+const ago = (iso) => 'Posted ' + M.formatShort(String(iso).slice(0, 10));
+const ROLES_CHECKED = '16 November 2026';
 const CATS = ['All categories', 'Engineering', 'Research', 'Product & Design', 'Operations & Business', 'Leadership'];
 const MODES = ['All', 'Hybrid', 'On-site', 'Remote (India)'];
 const careers = {
@@ -252,9 +253,9 @@ ${C.jobs.filter((j) => j.atArtpark === at).map((j) => `          <article data-j
         </div>
       </section>`).join('\n')}
       <div data-empty hidden style="border:1px solid var(--line);padding:28px;margin-top:8px;font-size:15px;color:var(--ink-soft)">No roles listed for this filter yet.</div>
-      <p style="margin-top:20px;font-size:13px;color:var(--ink-dim)">Roles as listed on <a href="https://www.artparkcareers.in/" target="_blank" rel="noopener">artparkcareers.in</a> on 24 October 2026. Each role page has the latest details and how to apply.</p>
+      <p style="margin-top:20px;font-size:13px;color:var(--ink-dim)">Roles as listed on <a href="https://www.artparkcareers.in/" target="_blank" rel="noopener">artparkcareers.in</a> on ${ROLES_CHECKED}. Each role page has the latest details and how to apply.</p>
       <div style="margin-top:40px;background:var(--paper-soft);padding:32px clamp(24px,3vw,36px);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px">
-        <div style="flex:1 1 360px"><h2 style="font-size:26px">Don't see your role.</h2><p style="margin-top:8px;font-size:15px;line-height:1.65;color:var(--ink-soft)">Send a short note on the problem you'd like to work on and why.</p></div>
+        <div style="flex:1 1 360px"><h2 style="font-size:26px">Don't see your role?</h2><p style="margin-top:8px;font-size:15px;line-height:1.65;color:var(--ink-soft)">Send a short note on the problem you'd like to work on and why.</p></div>
         <a class="btn btn-primary" href="${R.contact}">Write to us <span class="arrow">→</span></a>
       </div>
     </div>
@@ -387,7 +388,7 @@ ${t.fields.map(field).join('\n')}
 const bullets = (items) => `<ul class="role-list">${items.map((t) => `<li>${esc(t)}</li>`).join('')}</ul>`;
 const roleFacts = (j) => [
   ['Company', j.company], ['Location', j.location], ['Work mode', j.mode], ['Type', j.type],
-  ['Experience', j.experience], ['Team', j.team], ['Posted', ago(j.postedAt)],
+  ['Experience', j.experience], ['Team', j.team], ['Posted', M.formatShort(String(j.postedAt).slice(0, 10))],
 ].filter(([, v]) => v);
 const rolePages = C.jobs.filter((j) => j.jd).map((j) => ({
   route: `${R.careers}/${j.slug}`,
@@ -418,7 +419,7 @@ const rolePages = C.jobs.filter((j) => j.jd).map((j) => ({
     <aside class="role-aside">
       <div class="role-apply">
         <span class="eyebrow">Apply</span>
-        <h2>Interested in this role.</h2>
+        <h2>Interested in this role?</h2>
         <p>Applications go through ARTPARK Careers. Sign in with your ARTPARK profile and it is shared with the hiring team.</p>
         <a class="btn btn-primary" href="${j.url}" target="_blank" rel="noopener">Apply on ARTPARK Careers <span class="arrow">↗</span></a>
         <dl>${roleFacts(j).map(([k, v]) => `<div><dt>${k}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>

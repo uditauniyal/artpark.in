@@ -26,9 +26,11 @@ for (const file of pages) {
     else if (/^https?:/.test(u)) external.add(u);
   }
   for (const m of html.matchAll(/url\((\/[^)]+)\)/g)) if (!exists(m[1])) problems.push(`${rel}: missing bg ${m[1]}`);
+  // Placeholder copy and retired emails, in the page outside scripts (a script may legitimately call isNaN()).
+  const copy = html.replace(/<script[\s\S]*?<\/script>/g, '');
   for (const bad of ['startup@artpark.in', 'office@artpark.in', 'social@artpark.in', 'Name Surname', 'Placeholder', 'Lorem', 'undefined', 'NaN']) {
     if (rel.includes('privacy') || rel.includes('terms')) continue; // legal text kept verbatim
-    if (html.includes(bad)) problems.push(`${rel}: contains "${bad}"`);
+    if (copy.includes(bad)) problems.push(`${rel}: contains "${bad}"`);
   }
 }
 console.log(`${pages.length} pages checked, ${external.size} distinct external links.`);

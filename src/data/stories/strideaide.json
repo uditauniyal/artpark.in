@@ -3,8 +3,8 @@
   "company": "StrideAide",
   "tag": "FOUNDER STORY",
   "kicker": "Diabetic foot care",
-  "title": "An insole with no batteries.",
-  "standfirst": "StrideAide grew out of a collaboration between IISc engineers and doctors at the Karnataka Institute of Endocrinology and Research, looking for ways to protect people with diabetes from foot wounds. Its founders, two surgeons and a product engineer, now build pressure-relieving insoles and a screening clinic meant to catch problems before they lead to amputation.",
+  "title": "Preventing diabetic foot complications for the masses.",
+  "standfirst": "StrideAide grew out of a collaboration between IISc engineers and doctors at the Karnataka Institute of Endocrinology and Research, looking for ways to protect people with diabetes from foot wounds. Its founders, two surgeons and a product engineer, now build pressure-relieving insoles and a network of Digital Podiatry Centres meant to catch problems before they lead to amputation.",
   "meta": [
     "ARTPARK Stories",
     "About 5 min read",
@@ -12,11 +12,11 @@
   ],
   "website": "https://www.strideaide.com/",
   "hero": {
-    "image": "/assets/site/whiteboard.webp",
-    "alt": "A team working at a whiteboard at ARTPARK",
-    "pos": "50% 50%",
+    "image": "/assets/founders/strideaide-chikkaballapur-launch.webp",
+    "alt": "A large group, many giving a thumbs-up, below a sign reading Diabetic Foot Care and Research Center, For Chikkaballapura District, with StrideAide named as technology partner",
+    "pos": "50% 45%",
     "ratio": "16/9",
-    "caption": "A team at a whiteboard at ARTPARK. ARTPARK photograph, not of StrideAide."
+    "caption": "The StrideAide team and partners at the launch of the Diabetic Foot Care and Research Center at Chikkaballapur District Hospital, with StrideAide as technology partner. Photograph from StrideAide."
   },
   "lead": [
     "Diabetes damages the feet slowly. Nerves lose feeling, circulation weakens and pressure builds in the wrong places. The result can be ulcers, infections and amputations.",
@@ -30,38 +30,71 @@
         {
           "quote": {
             "text": "Most diabetic foot amputations begin with a wound that could have been prevented. We wanted to catch the pressure, and the problem, before the wound.",
-            "who": "Dr. Pavan Belehalli, Founder, StrideAide",
+            "who": "Dr. Pavan Belehalli, Founder & Director, StrideAide",
             "source": "",
-            "sourceLabel": "",
-            "draft": true
+            "sourceLabel": ""
           }
         },
-        "StrideAide began as a collaboration between IISc scientists, led by mechanical engineering professor G.K. Ananthasuresh, and doctors at the Karnataka Institute of Endocrinology and Research (KIER), led by Dr. Pavan Belehalli of KIER’s Department of Podiatry. They were looking for ways to protect people with diabetic foot wounds and neuropathy. Prof. Ananthasuresh is now an advisor to the company.",
+        "StrideAide began as a collaboration between IISc scientists, led by mechanical engineering professor G.K. Ananthasuresh, and doctors at the Karnataka Institute of Endocrinology and Research (KIER), led by Dr. Pavan Belehalli of KIER’s Department of Podiatry. They were looking for ways to protect people with diabetic foot wounds and neuropathy. Prof. Ananthasuresh is now an advisor to the company, which is incubated at IISc, Bengaluru.",
         "Their first idea was an insole that relieves pressure through its mechanical design alone, using compliant mechanisms, with no sensors and no actuators. After strong field results, the team patented it and decided to add AI for everyday foot care. Dr. Sanjay Sharma, a podiatric surgeon and wound-care specialist, and Manoj Kumar R, a product development engineer, joined as co-founders.",
         {
           "people": [
             {
               "name": "Dr. Pavan Belehalli",
-              "role": "Founder · Orthopaedic & Diabetic Foot Surgeon"
+              "role": "Founder & Director · Orthopaedic & Diabetic Foot Surgeon",
+              "photo": "/assets/founders/strideaide-pavan-belehalli.webp"
             },
             {
               "name": "Dr. Sanjay Sharma",
-              "role": "Founder · Podiatric Surgeon & Wound Care Specialist"
+              "role": "Co-Founder · Podiatric Surgeon & Wound Care Specialist",
+              "photo": "/assets/founders/strideaide-sanjay-sharma.webp"
             },
             {
               "name": "Manoj Kumar R",
-              "role": "Founder · New Product Development Engineer"
+              "role": "Co-Founder · New Product Development Engineer",
+              "photo": "/assets/founders/strideaide-manoj-kumar.webp"
             }
           ]
         }
       ]
     },
     {
-      "h2": "A podiatry clinic in one unit.",
-      "toc": "The clinic",
+      "h2": "A podiatry centre in one unit.",
+      "toc": "The centre",
       "blocks": [
-        "To make screening cheap and widely available, the team built the Digital Podiatry Clinic, or D-PoC. It brings together devices that measure plantar pressure, nerve function and blood flow in the foot. StrideAide’s software then uses AI to sort patients by risk and produce automated reports.",
-        "In December 2025, StrideAide opened a D-PoC at the IISc Health Centre. Each unit can screen 30 to 40 patients a day, BioSpectrum reported, and could screen more than 10,000 people with diabetes a year at a district hospital.",
+        "To make screening cheap and widely available, the team built the Digital Podiatry Centre, or D-PoC. It brings together devices that measure plantar pressure, nerve function and blood flow in the foot. StrideAide’s software then uses AI to sort patients by risk and produce automated reports.",
+        "In December 2025, StrideAide opened its first D-PoC at the IISc Health Centre. Seven centres are now live across Karnataka and Punjab, including IISc, Chikkaballapur District Hospital, KIER Bengaluru and Nano Hospital, Bengaluru. Each unit can screen 30 to 40 patients a day, BioSpectrum reported, and could screen more than 10,000 people with diabetes a year at a district hospital.",
+        {
+          "figure": {
+            "image": "/assets/founders/strideaide-dpoc-iisc.webp",
+            "alt": "A group standing in front of the Digital Podiatry Clinic (D-PoC) signage with StrideAide and BeST Cluster logos",
+            "caption": "The D-PoC at the IISc Health Centre, Bengaluru, at its opening in December 2025. Photograph from StrideAide.",
+            "ratio": "977/458"
+          }
+        },
+        {
+          "figure": {
+            "image": "/assets/founders/strideaide-dpoc-screening.webp",
+            "alt": "People in a screening room with foot-care charts on the wall and an examination couch",
+            "caption": "Foot screening at a StrideAide D-PoC. Photograph from StrideAide.",
+            "ratio": "4/3"
+          }
+        }
+      ]
+    },
+    {
+      "h2": "Taking screening to the districts.",
+      "toc": "Outreach",
+      "blocks": [
+        "Many people with diabetes never reach a specialist clinic. StrideAide’s community programme, PRAIAS (Podiatry Reach Across India for Awareness and Screening), takes foot screening to them in a mobile van. Across its D-PoC centres and PRAIAS camps, StrideAide has now screened more than 3,500 patients.",
+        {
+          "figure": {
+            "image": "/assets/founders/strideaide-praias-van.webp",
+            "alt": "A blue and orange screening van with a roof awning, painted with a large foot and the words Pan-India Diabetic Foot Awareness Advocacy Screening Campaign and Get Your Foot Screened Here",
+            "caption": "The PRAIAS mobile screening van, which takes diabetic foot screening to districts across Karnataka. Photograph from StrideAide.",
+            "ratio": "4/3"
+          }
+        },
         {
           "panel": {
             "title": "What StrideAide builds",
@@ -72,7 +105,7 @@
               ],
               [
                 "D-PoC",
-                "A screening unit for neuropathy, vasculopathy and arthropathy, with AI risk stratification and automated reports."
+                "A screening unit for neuropathy, vasculopathy and arthropathy, with AI risk stratification and automated reports. Live at seven centres across Karnataka and Punjab."
               ],
               [
                 "Foot 2.0",
@@ -80,7 +113,11 @@
               ],
               [
                 "StrideGPT",
-                "In development: an AI assistant that answers questions from clinicians and patients."
+                "Implemented: an AI assistant that answers questions from clinicians and patients."
+              ],
+              [
+                "PRAIAS",
+                "Mobile community screening for diabetic foot disease, across Karnataka districts."
               ]
             ]
           }
@@ -94,24 +131,25 @@
         {
           "dates": [
             [
-              "2023",
-              "Named second-best startup in the early medical devices category at IKMC 2023, Hyderabad."
-            ],
-            [
-              "2023",
-              "Compliant-footwear research presented at ASME IDETC-CIE 2023."
-            ],
-            [
-              "January 2024",
-              "Indian patent for the self-offloading insoles; seed funding from the Office of the Principal Scientific Adviser through the BeST Cluster."
-            ],
-            [
               "December 2025",
-              "Digital Podiatry Clinic opened at the IISc Health Centre."
+              "Digital Podiatry Centre opened at the IISc Health Centre."
+            ],
+            [
+              "2026",
+              "D-PoC network grew to seven live centres across Karnataka and Punjab."
+            ],
+            [
+              "2026",
+              "More than 3,500 patients screened across D-PoC centres and PRAIAS camps."
+            ],
+            [
+              "October 2026",
+              "Exhibited at DFSICON 2026, India’s largest diabetic foot conference."
             ]
-          ]
+          ],
+          "label": "From StrideAide"
         },
-        "StrideAide has also received a BIRAC BIG grant, and BeST Cluster support to commission the D-PoC. It is part of ARTPARK’s startup portfolio. The team’s stated aim is an India free of diabetic foot amputations."
+        "StrideAide has also received grant support from BIRAC and a BIG grant. It is part of ARTPARK’s startup portfolio. The team’s stated aim is an India free of diabetic foot amputations."
       ]
     }
   ],
@@ -133,8 +171,16 @@
       "https://asmedigitalcollection.asme.org/IDETC-CIE/proceedings/IDETC-CIE2023/87363/V008T08A037/1170800"
     ],
     [
+      "StrideAide on LinkedIn",
+      "https://www.linkedin.com/company/strideaide/"
+    ],
+    [
       "ARTPARK, startup portfolio",
       "https://www.artpark.in/startups-overview"
+    ],
+    [
+      "Founder review and updated story, November 2026",
+      ""
     ]
   ]
 }

@@ -80,8 +80,10 @@ const domainsOf = (slug) => DOMAIN_LIST.filter((d) => DOMAINS[d].includes(slug))
 const REMOVED = ['niral-networks', 'velastra', 'versor-robotics'];
 const ADDED = [
   { slug: 'idle-robotics', name: 'Idle Robotics', oneLiner: 'GPS-independent navigation for robots and drones, using sensor fusion and on-device AI.', website: 'https://idlerobotics.com' },
-  { slug: 'venomics-ai', name: 'Venomics AI', oneLiner: 'AI drug discovery that mines venom biodiversity for therapeutic peptides.', website: 'https://venomics.ai' },
-  { slug: 'arborum-labs', name: 'Arborum Labs', oneLiner: 'Physics-grounded world models that let AI agents plan and run telecom and power networks.', website: 'https://arborum.ai' },
+  // Founder review (Prof. Kartik Sunagar, 5 Nov 2026): this text and their new logo.
+  { slug: 'venomics-ai', name: 'Venomics AI', oneLiner: 'Venoms to Drugs. From Nature’s Deadliest Secrets to Humanity’s Next Medicine.', website: 'https://venomics.ai' },
+  // Founder review (JK Shrenivass, Arborum, 11 Nov 2026): description, logo and website as they sent them.
+  { slug: 'arborum-labs', name: 'Arborum Labs', oneLiner: 'Arborum builds world models that understand and anticipate the behaviour of complex infrastructure networks for critical decisions.', website: 'https://arborum.ai/' },
 ];
 // One-liners exactly as on artpark.in, with scrape artefacts cleaned.
 const ONE_LINER_FIX = {
@@ -89,6 +91,25 @@ const ONE_LINER_FIX = {
   qosmic: 'Building space-based optical communications infrastructure.',
   nextoar: 'Agentic AI for continuous operational excellence.',
   'q-axis-motors': 'Integrated electro-optical payloads for defence and aerospace.',
+  // Sentence case and site spelling for the artpark.in one-liners (2026-11-16 review); wording unchanged.
+  algofet: 'Powering autonomous mobility.',
+  'charukesi-health': 'Modular, configurable rehabilitation robots.',
+  'comrado-aerospace': 'Autonomous flying.',
+  'contrivation-labs': 'Post-harvest automation solutions for agritech.',
+  'dexsent-robotics': 'Building robots that sense, decide and act with purpose.',
+  'flo-mobility': 'Autonomous mobile robots (AMRs) for construction.',
+  floaid: 'Artificial heart pumps that integrate AI and ML.',
+  'guerin-technologies': 'Compact, lightweight composite antennas for defence and aerospace.',
+  kinesthetiq: 'Integrates AI with physics-based modelling to transform manufacturing and scientific discovery.',
+  nxtqube: 'Indigenous drone infrastructure.',
+  rootsgoods: 'Bioinformatics and AI-based SaaS platform.',
+  'sakar-robotics': 'Robots for end-to-end wall finishing in construction.',
+  'strider-robotics': 'Agile quadruped robots.',
+  'twara-robotics': 'Indigenous robotics components.',
+  udot: 'Making STEM accessible for the visually impaired.',
+  yaanendriya: 'Indian sensor manufacturer.',
+  zenteiq: 'AI-powered learning and evaluation solutions.',
+  astrome: 'Millimetre-wave wireless communication technology.',
 };
 const NAME_FIX = { qosmic: 'QOSMIC' };
 const portfolio = [
@@ -139,7 +160,20 @@ const ORG_SHORT = { 'Foucault Private Limited': 'Foucault' };
 const JOB_TYPE = { full_time: 'Full-time', contract: 'Contract', part_time: 'Part-time', internship: 'Internship' };
 const EXPERIENCE = { student_0_1: 'Students and 0–1 years', '0_2': '0–2 years', '2_4': '2–4 years', '3_6': '3–6 years', '5_8': '5–8 years', '8_plus': '8+ years' };
 const LIVE = (() => { try { return JSON.parse(JSON.parse(fs.readFileSync(path.join(__dirname, '..', '..', 'research', 'careers-api.json'), 'utf8'))[0].body).items.filter((r) => !/demo/.test(r.id)); } catch { return null; } })();
-const jobs = col.jobs.filter((j) => !LIVE || LIVE.some((r) => j.url.endsWith(r.id))).map((j) => {
+// Roles posted after the October capture come straight from the feed (refreshed 2026-11-16), mapped to the same fields.
+// Company: ARTPARK when the role has no TIR entity; the startup named in the role otherwise (the feed's tirEntity is a
+// company name for most startups; for ViscoTrack it is a technology description, so the team field names the company).
+const FAMILY_CAT = { 'Software, AI & Computational Engineering': 'Engineering', 'Systems, Hardware & Advanced Engineering': 'Engineering', 'Program, Portfolio & R&D Operations': 'Operations & Business', 'People, Finance & Innovation Enablement': 'Operations & Business', 'Customer Discovery, Partnerships & Technical Advisory': 'Operations & Business', 'Design, Human Factors & User Experience': 'Product & Design' };
+const MODE = { on_site: 'On-site', hybrid: 'Hybrid', remote: 'Remote (India)' };
+const KNOWN_ORGS = new Set(col.jobs.map((j) => j.organization));
+const fromFeed = (LIVE || []).filter((r) => !col.jobs.some((j) => j.url.endsWith(r.id))).map((r) => ({
+  title: r.title, url: 'https://www.artparkcareers.in/roles/' + r.id,
+  organization: !r.tirEntity ? 'ARTPARK' : KNOWN_ORGS.has(r.tirEntity) ? r.tirEntity : r.team,
+  description: (r.jd && r.jd.summary) || '', location: r.location, workMode: MODE[r.workMode] || r.workMode,
+  category: FAMILY_CAT[r.jobFamily] || 'Operations & Business', type: JOB_TYPE[r.jobType] || '',
+  team: r.team, jobFamily: r.jobFamily, subFamily: r.subFamily, postedAt: r.postedAt,
+}));
+const jobs = [...col.jobs, ...fromFeed].filter((j) => !LIVE || LIVE.some((r) => j.url.endsWith(r.id))).sort((a, b) => (a.postedAt < b.postedAt ? 1 : -1)).map((j) => {
   const live = LIVE && LIVE.find((r) => j.url.endsWith(r.id));
   const atArtpark = j.organization === 'ARTPARK';
   const company = ORG_SHORT[j.organization] || j.organization;

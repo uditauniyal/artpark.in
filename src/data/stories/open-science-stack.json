@@ -12,11 +12,11 @@
   ],
   "website": "https://opensciencestack.org/",
   "hero": {
-    "image": "/assets/founders/open-science-stack-lab.webp",
-    "alt": "A lab room with a plate reader on a bench, a liquid-handling enclosure and a robotic arm on a table",
-    "pos": "50% 55%",
+    "image": "/assets/founders/open-science-stack-v-automation.webp",
+    "alt": "A black robotic arm working beside white lab instruments and a liquid-handling enclosure on a bench",
+    "pos": "50% 50%",
     "ratio": "16/9",
-    "caption": "A plate reader, a liquid-handling enclosure and a robotic arm, from Open Science Stack’s page on its drug-discovery reference lab. Photograph from Open Science Stack."
+    "caption": "A robotic arm at work among lab instruments. Still from a video shared by Open Science Stack."
   },
   "lead": [
     "Good research is often limited by access: to labs with the right instruments, and to trained people who can operate them. At the same time, shared labs full of expensive instruments sit under-used, slowed by back-and-forth between operators and researchers over missing parameters.",
@@ -60,6 +60,14 @@
             ]
           }
         },
+        {
+          "figure": {
+            "image": "/assets/founders/open-science-stack-v-humanoid.webp",
+            "alt": "A humanoid robot at a lab bench with sample tubes and a pink rack, a team member standing beside it",
+            "caption": "A humanoid robot at a lab bench, beside a member of the team. Still from a video shared by Open Science Stack.",
+            "ratio": "848/478"
+          }
+        },
         "The team built a ROS-based prototype of its robotics capabilities in 2023. In December 2024 it open-sourced the Robotic Application Stack; the organisation says it was released at ROSCon 2024."
       ]
     },
@@ -68,6 +76,14 @@
       "toc": "The lab",
       "blocks": [
         "In 2026, Open Science Stack built a reference lab for drug discovery at ARTGarage, ARTPARK’s facility in Bengaluru. It covers target-to-hit and hit-to-lead assays, with liquid handlers, multimode spectrometers, incubators and centrifuges. Protocols written in plain English are converted into Open Science Stack experiment specifications that the lab can carry out.",
+        {
+          "figure": {
+            "image": "/assets/founders/open-science-stack-v-arm.webp",
+            "alt": "A white robotic arm on a stand in a lab, with people working at desks behind it",
+            "caption": "A robotic arm in the lab. Still from a video shared by Open Science Stack.",
+            "ratio": "848/478"
+          }
+        },
         {
           "dates": [
             [
@@ -153,6 +169,10 @@
     [
       "ARTPARK, startup portfolio",
       "https://www.artpark.in/startups-overview"
+    ],
+    [
+      "Founder review, November 2026: images from videos shared by Open Science Stack",
+      ""
     ]
   ]
 }

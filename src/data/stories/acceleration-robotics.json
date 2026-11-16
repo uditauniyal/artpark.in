@@ -2,10 +2,14 @@
   "slug": "acceleration-robotics",
   "company": "Acceleration Robotics",
   "tag": "FOUNDER STORY",
-  "kicker": "Robot computing",
-  "title": "A faster nervous system for robots.",
-  "standfirst": "Víctor Mayoral-Vilches founded Acceleration Robotics to design the computing hardware that robots think with, and Prateek Nagras now runs it as group CEO from Pune. Their argument is simple: robots are getting faster and more dexterous, and the chips underneath them were never designed with roboticists in mind.",
-  "meta": ["ARTPARK Stories", "About 5 min read", "Acceleration Robotics, Vitoria-Gasteiz and Pune"],
+  "kicker": "Robotics computing",
+  "title": "Faster robot computing, built in Pune.",
+  "standfirst": "Prateek Nagras started TechnoYantra in Pune, then partnered with Acceleration Robotics in Spain and became its CEO. His Indian team, Technoyantra Robotics Private Limited, works under the Acceleration Robotics brand to make ROS 2 workloads run faster and more efficiently, and has helped bring India’s ROS community together with ARTPARK.",
+  "meta": [
+    "ARTPARK Stories",
+    "About 5 min read",
+    "Acceleration Robotics India, Pune"
+  ],
   "website": "https://accelerationrobotics.com/",
   "hero": {
     "image": "/assets/site/robot-arm-team.webp",
@@ -15,69 +19,180 @@
     "caption": "Engineers with a robotic arm in an ARTPARK lab. ARTPARK photograph, not of Acceleration Robotics."
   },
   "lead": [
-    "“Robots are networks of networks, with sensors passing data to compute technologies and actuators,” says Víctor Mayoral-Vilches, the founder of Acceleration Robotics. “These networks can be understood as the nervous system of the robot.”",
-    "His company works on that nervous system. It calls itself a robotics semiconductor company, designing what ARTPARK’s portfolio describes as hardware brains that speed up a robot’s operation. Its headquarters are in Vitoria-Gasteiz, Spain, and its India office is in Aundh, Pune."
+    "“When I started TechnoYantra in 2019, the ROS robotics industry in Asia was just getting started, but since the pandemic as people have become more and more accepting of working together with robots, the robot deployments have grown exponentially,” says Prateek Nagras, CEO of Acceleration Robotics.",
+    "Prateek started TechnoYantra in Pune. It later partnered with Acceleration Robotics in Spain, and following that partnership he became CEO of Acceleration Robotics. In India the company is Technoyantra Robotics Private Limited, operating under the Acceleration Robotics brand from Aundh, Pune. Its work is robotics computing: making ROS 2 workloads faster and more efficient."
   ],
   "sections": [
     {
       "h2": "Two industries that rarely talk.",
-      "toc": "The gap",
+      "toc": "The work",
       "blocks": [
         "Most robots today run on the Robot Operating System, or ROS. As robots take on harder perception and motion-planning work, they need more computing power and lower latency. The chips that could provide it, FPGAs, GPUs and CPUs, come from an industry that thinks about its own roadmaps, not about robots.",
-        "Prateek Nagras, the group’s CEO, described the problem to Electronics For You in 2023: “there is a big gap between the semiconductor industry, which is basically manufacturing the FPGAs and GPUs and CPUs, and the robotics industry, where they consume these chips to unveil their own software stacks on top of it.”",
-        { "quote": { "text": "Most robotic companies using ROS in real applications these days demand additional compute capabilities in their perception and motion planning tasks. Our hardware acceleration solutions respond to this demand while delivering ROS 2 API-compatibility, so that developers don’t have to re-invent the wheel or change a single line of code.", "who": "Víctor Mayoral-Vilches, Founder, Acceleration Robotics", "source": "https://docs.google.com/document/d/15fheWRfEOLGhy7C4QZLLLdhTWnv4l6Qc/export?format=pdf", "sourceLabel": "Acceleration Robotics press release, November 2022" } },
-        { "panel": { "title": "What Acceleration Robotics builds", "items": [
-          ["ROBOTCORE Framework", "A hardware acceleration framework for ROS and ROS 2 that works across GPU and FPGA vendors."],
-          ["ROBOTCORE RPU", "A robot processing unit for ROS, which the company lists with 16 CPUs, a GPU and an FPGA."],
-          ["ROBOTCORE networking", "Accelerated ROS 2, RTPS and UDP/IP. The company says it sends and receives small packets in 700 nanoseconds."],
-          ["ROBOTPERF", "Benchmarks for measuring robot computing performance."],
-          ["Consulting", "Robot IP core design and engineering services, with case studies listed for CELSA and Teknia."]
-        ] } }
+        "Prateek described the problem to Electronics For You in 2023: “there is a big gap between the semiconductor industry, which is basically manufacturing the FPGAs and GPUs and CPUs, and the robotics industry, where they consume these chips to unveil their own software stacks on top of it.”",
+        "The team’s answer is the ROBOTCORE product family, hardware acceleration on GPUs and FPGAs, benchmarking of robotic workloads, and the engineering and integration support needed to bring all of this into real robot systems.",
+        {
+          "panel": {
+            "title": "What the team works on",
+            "items": [
+              [
+                "ROBOTCORE Framework",
+                "A hardware acceleration framework for ROS and ROS 2 that works across GPU and FPGA vendors."
+              ],
+              [
+                "ROBOTCORE RPU",
+                "A robot processing unit for ROS, which the company lists with 16 CPUs, a GPU and an FPGA."
+              ],
+              [
+                "ROBOTCORE networking",
+                "Accelerated ROS 2, RTPS and UDP/IP. The company says it sends and receives small packets in 700 nanoseconds."
+              ],
+              [
+                "Benchmarking",
+                "Measuring the performance of robotic workloads, including with ROBOTPERF."
+              ],
+              [
+                "Engineering and integration",
+                "Robot IP core design and engineering services to bring acceleration into robot systems, with case studies listed for CELSA and Teknia."
+              ]
+            ]
+          }
+        },
+        "In 2023, Prateek described what might come next: “Right now we are just concentrating on software and use off-the shelf hardware, but maybe in a few years, we could even start building our own custom hardware dedicated for robots, so we can basically have our own hardware plus software combination.”"
       ]
     },
     {
-      "h2": "A founder who took the helm.",
-      "toc": "The founders",
+      "h2": "From TechnoYantra to a partnership.",
+      "toc": "The partnership",
       "blocks": [
-        "Víctor studied telecommunications engineering and computer science, with scholarships that took him to Norway, Seoul and Italy, where he began a PhD in microbiorobotics. He later worked in Mountain View, California, on the Open Robotics project. In 2013 he co-founded Erle Robotics with his brother David; it was later acquired by Acutronic Robotics, where he became technical director. He also founded Alias Robotics, which works on robot cybersecurity. MIT Technology Review recognised him among Spain’s top young innovators in 2017.",
-        "He told the Spanish magazine Emprendedores in 2024 that he had never had a special interest in entrepreneurship. He came back to Spain with ideas the industry did not want to hear, and concluded that if he wanted to build technology that enabled new capabilities, he would have to take the helm himself.",
-        "In November 2022, Acceleration Robotics expanded to India by taking over TechnoYantra, a Pune consultancy specialising in ROS. TechnoYantra’s founder, Prateek Nagras, became CEO of the combined group, his colleague Gaurav Vikhe became Chief Product Officer, and Víctor moved to the role of CTO. The group said it had served more than 20 clients between them, including Xilinx and AMD.",
-        { "quote": { "text": "When I started TechnoYantra in 2019, the ROS robotics industry in Asia was just getting started, but since the pandemic as people have become more and more accepting of working together with robots, the robot deployments have grown exponentially. Given the struggles of the semiconductor industry to efficiently cater to this demand, this seemed to me to be the perfect time to start a new journey with Acceleration Robotics and bridge the gap between semiconductor manufacturers and ROS.", "who": "Prateek Nagras, CEO, Acceleration Robotics", "source": "https://docs.google.com/document/d/15fheWRfEOLGhy7C4QZLLLdhTWnv4l6Qc/export?format=pdf", "sourceLabel": "Acceleration Robotics press release, November 2022" } },
-        { "people": [
-          { "name": "Víctor Mayoral-Vilches", "role": "Founder · CTO from November 2022" },
-          { "name": "Prateek Nagras", "role": "CEO · founder of TechnoYantra" },
-          { "name": "Gaurav Vikhe", "role": "Chief Product Officer" }
-        ] }
+        "TechnoYantra was a Pune consultancy specialising in ROS. In November 2022 it partnered with Acceleration Robotics, a robotics semiconductor company headquartered in Vitoria-Gasteiz, Spain. Following the partnership, Prateek became CEO, his colleague Gaurav Vikhe became Chief Product Officer, and Acceleration Robotics’ founder, Víctor Mayoral-Vilches, became CTO. The group said it had served more than 20 clients between them, including Xilinx and AMD.",
+        "Víctor, a roboticist who had earlier co-founded Erle Robotics and founded Alias Robotics, had launched ROBOTCORE in June 2022 and announced a collaboration with AMD that September to design robotic compute architectures with ROS.",
+        {
+          "quote": {
+            "text": "Given the struggles of the semiconductor industry to efficiently cater to this demand, this seemed to me to be the perfect time to start a new journey with Acceleration Robotics and bridge the gap between semiconductor manufacturers and ROS.",
+            "who": "Prateek Nagras, CEO, Acceleration Robotics",
+            "source": "https://docs.google.com/document/d/15fheWRfEOLGhy7C4QZLLLdhTWnv4l6Qc/export?format=pdf",
+            "sourceLabel": "Acceleration Robotics press release, November 2022"
+          }
+        },
+        {
+          "people": [
+            {
+              "name": "Prateek Nagras",
+              "role": "CEO · founder of TechnoYantra"
+            },
+            {
+              "name": "Gaurav Vikhe",
+              "role": "Chief Product Officer"
+            },
+            {
+              "name": "Víctor Mayoral-Vilches",
+              "role": "Founder of Acceleration Robotics, Spain · CTO from November 2022"
+            }
+          ]
+        }
       ]
     },
     {
       "h2": "Building a ROS community in India.",
-      "toc": "ROS in India",
+      "toc": "ARTPARK",
       "blocks": [
         "By April 2024, Emprendedores reported, the company had more than 15 people working remotely, half of them in India, including the CEO. It had taken no external funding.",
-        "In India the company has also helped gather the people who use ROS. In December 2023, ROSCon India was co-hosted by Acceleration Robotics and RigBetel Labs and powered by ARTPARK at IISc. The second edition followed in December 2024 at IISc, Bengaluru, hosted by the same two companies, powered by ARTPARK-IISc and held in association with Open Robotics. Acceleration Robotics is part of ARTPARK’s startup portfolio.",
-        { "dates": [
-          ["June 2022", "Launched ROBOTCORE, a hardware acceleration framework for ROS 2 robots."],
-          ["September 2022", "Announced a collaboration with AMD to design robotic compute architectures with ROS."],
-          ["November 2022", "Took over TechnoYantra in Pune. Prateek Nagras became group CEO."],
-          ["January 2023", "Joined AESEMI, the Spanish Association of the Semiconductor Industry, to lead its Processor Architectures working group."],
-          ["December 2023", "Co-hosted the first ROSCon India in Bengaluru, powered by ARTPARK."],
-          ["December 2024", "Co-hosted the second ROSCon India at IISc, Bengaluru."]
-        ] },
-        "In 2023, Prateek described what might come next: “Right now we are just concentrating on software and use off-the shelf hardware, but maybe in a few years, we could even start building our own custom hardware dedicated for robots, so we can basically have our own hardware plus software combination.”"
+        "In India the team has also helped gather the people who use ROS, working with ARTPARK. In March 2023, Acceleration Robotics held a ROS developers meet-up at IISc, Bengaluru, in collaboration with ARTPARK, opened by Prof. Bharadwaj Amrutur. In December 2023, ROSCon India was co-hosted by Acceleration Robotics and RigBetel Labs and powered by ARTPARK at IISc. The second edition followed in December 2024 at IISc, Bengaluru, hosted by the same two companies, powered by ARTPARK-IISc and held in association with Open Robotics. In December 2025 the third ROSCon India moved to COEP Technological University in Pune, again hosted by RigBetel Labs and Acceleration Robotics and powered by ARTPARK and IISc, with Open Robotics. Acceleration Robotics is part of ARTPARK’s startup portfolio.",
+        {
+          "figure": {
+            "image": "/assets/events/ros-meetup-2023.webp",
+            "alt": "A large group of participants standing together outside the Microelectronics and Photonics building of the Department of ECE at IISc",
+            "ratio": "3/2",
+            "caption": "Participants at the ROS Developers Meet-up that Acceleration Robotics held at IISc, Bengaluru, in March 2023, in collaboration with ARTPARK. Photograph from the ROS Discourse announcement."
+          }
+        },
+        {
+          "dates": [
+            [
+              "2019",
+              "Prateek Nagras started TechnoYantra in Pune."
+            ],
+            [
+              "June 2022",
+              "Acceleration Robotics launched ROBOTCORE, a hardware acceleration framework for ROS 2 robots."
+            ],
+            [
+              "November 2022",
+              "TechnoYantra partnered with Acceleration Robotics. Prateek Nagras became CEO."
+            ],
+            [
+              "March 2023",
+              "Held a ROS developers meet-up at IISc, Bengaluru, in collaboration with ARTPARK."
+            ],
+            [
+              "December 2023",
+              "Co-hosted the first ROSCon India in Bengaluru, powered by ARTPARK."
+            ],
+            [
+              "April 2024",
+              "More than 15 people, half of them in India, with no external funding."
+            ],
+            [
+              "December 2024",
+              "Co-hosted the second ROSCon India at IISc, Bengaluru, powered by ARTPARK-IISc."
+            ],
+            [
+              "December 2025",
+              "Co-hosted the third ROSCon India at COEP Technological University, Pune, powered by ARTPARK and IISc."
+            ]
+          ]
+        }
       ]
     }
   ],
   "sources": [
-    ["Acceleration Robotics press release on the TechnoYantra takeover (3 November 2022)", "https://docs.google.com/document/d/15fheWRfEOLGhy7C4QZLLLdhTWnv4l6Qc/export?format=pdf"],
-    ["Acceleration Robotics press release on joining AESEMI (17 January 2023)", "https://docs.google.com/document/d/16o4469FcUHlUrinkcbRoJfvG7xdbLi5j/export?format=pdf"],
-    ["Robotics 24/7, on the launch of ROBOTCORE (17 June 2022)", "https://www.robotics247.com/article/acceleration_robotics_launch_robotcore_to_speed_up_ros_2_robots"],
-    ["Business Wire, Acceleration Robotics collaborating with AMD (19 September 2022)", "https://www.businesswire.com/news/home/20220919005368/en/Acceleration-Robotics-Collaborating-with-AMD-to-Design-Next-Generation-Robotic-Compute-Architectures-with-ROS"],
-    ["Electronics For You, interview with Prateek Nagras (14 July 2023)", "https://www.electronicsforu.com/india-corner/revolutionising-robotics-startup-unleashes-power-of-ros-using-hardware-acceleration"],
-    ["Emprendedores, profile of Víctor Mayoral-Vilches (12 April 2024, in Spanish)", "https://emprendedores.es/casos-de-exito/emprender-robotica/"],
-    ["ARTPARK events, ROSCon India (2023)", "https://www.artpark.in/events/roscon"],
-    ["ARTPARK events, ROSCon IN 24", "https://www.artpark.in/events/roscon-in-24"],
-    ["ARTPARK, startup portfolio", "https://www.artpark.in/startups-overview"],
-    ["Acceleration Robotics", "https://accelerationrobotics.com/"]
+    [
+      "Acceleration Robotics press release on the partnership with TechnoYantra (3 November 2022)",
+      "https://docs.google.com/document/d/15fheWRfEOLGhy7C4QZLLLdhTWnv4l6Qc/export?format=pdf"
+    ],
+    [
+      "Robotics 24/7, on the launch of ROBOTCORE (17 June 2022)",
+      "https://www.robotics247.com/article/acceleration_robotics_launch_robotcore_to_speed_up_ros_2_robots"
+    ],
+    [
+      "Business Wire, Acceleration Robotics collaborating with AMD (19 September 2022)",
+      "https://www.businesswire.com/news/home/20220919005368/en/Acceleration-Robotics-Collaborating-with-AMD-to-Design-Next-Generation-Robotic-Compute-Architectures-with-ROS"
+    ],
+    [
+      "Electronics For You, interview with Prateek Nagras (14 July 2023)",
+      "https://www.electronicsforu.com/india-corner/revolutionising-robotics-startup-unleashes-power-of-ros-using-hardware-acceleration"
+    ],
+    [
+      "Emprendedores, profile of Víctor Mayoral-Vilches (12 April 2024, in Spanish)",
+      "https://emprendedores.es/casos-de-exito/emprender-robotica/"
+    ],
+    [
+      "ARTPARK events, ROSCon India (2023)",
+      "https://www.artpark.in/events/roscon"
+    ],
+    [
+      "Open Robotics Discourse, Acceleration Robotics hosts ROS developers meet-up in Bangalore (2023)",
+      "https://discourse.openrobotics.org/t/acceleration-robotics-hosts-ros-developers-meet-up-in-bangalore-india/30262"
+    ],
+    [
+      "ARTPARK events, ROSCon IN 24",
+      "https://www.artpark.in/events/roscon-in-24"
+    ],
+    [
+      "ROSCon India 2025",
+      "https://rosconindia.in/"
+    ],
+    [
+      "ARTPARK, startup portfolio",
+      "https://www.artpark.in/startups-overview"
+    ],
+    [
+      "Founder review and corrections, November 2026",
+      ""
+    ],
+    [
+      "Acceleration Robotics",
+      "https://accelerationrobotics.com/"
+    ]
   ]
 }

@@ -94,10 +94,10 @@
         "In February 2026, four ASHVA configurations took part in the Indian Army Western Command’s Exercise Kharga Shakti 2026, at the Mahajan Field Firing Ranges in Rajasthan. Janes also reported that the Army tested A-THON’s Ashva-D series there. Harshit writes that A-THON was the only IDDM vehicle platform in the exercise.",
         {
           "figure": {
-            "image": "/assets/founders/a-thon-ashva-display.webp",
-            "alt": "Three Army officers and a man in a blue suit standing in front of two green all-terrain vehicles at a display",
-            "ratio": "1000/666",
-            "caption": "Three Army officers and a man in a suit in front of two all-terrain vehicles at a display, from the photographs published with the Raksha Anirveda article."
+            "image": "/assets/founders/a-thon-gen-dwivedi.webp",
+            "alt": "A group of Indian Army officers in camouflage uniforms and berets, with men in suits, gathered in conversation at a crowded defence exhibition",
+            "ratio": "16/9",
+            "caption": "A-THON with General Upendra Dwivedi (Retd.) at an exhibition. Photograph from A-THON."
           }
         }
       ]
@@ -167,6 +167,10 @@
     [
       "A-THON",
       "https://a-thonallterrain.com/"
+    ],
+    [
+      "Founder review and corrections, November 2026",
+      ""
     ]
   ]
 }

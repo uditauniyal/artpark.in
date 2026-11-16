@@ -6,6 +6,13 @@ const { esc, page, R } = require('../lib.cjs');
 
 const load = (f) => JSON.parse(fs.readFileSync(path.join(__dirname, '..', '..', 'research', 'artpark-in', f), 'utf8')).text;
 
+// The only edits to the legal text (user, 2026-11-16): office@artpark.in no longer works, so connect@artpark.in;
+// a missing space; and the privacy-policy reference that has no address in the source gets a link to the policy.
+const fix = (html) => html
+  .replace(/office@artpark\.in/g, 'connect@artpark.in')
+  .replace(/Yourbrowser/g, 'Your browser')
+  .replace(/accessible at \(“Policy”\)/, 'accessible at <a href="/privacy-policy">artpark.in/privacy-policy</a> (“Policy”)');
+
 // Numbered clause lines ("1. Legal Compliance") become headings and contents entries.
 const render = (text) => {
   const toc = [];
@@ -15,7 +22,12 @@ const render = (text) => {
       toc.push([id, l]);
       return `      <h2 id="${id}" style="font-size:24px;line-height:1.2;margin-top:28px;color:var(--ink);scroll-margin-top:132px">${esc(l)}</h2>`;
     }
-    return `      <p>${esc(l)}</p>`;
+    // Inline "●" items (run together in the source) become a list.
+    if (l.includes('●')) {
+      const [lead, ...items] = l.split('●').map((x) => x.trim());
+      return `${lead ? `      <p>${fix(esc(lead))}</p>\n` : ''}      <ul style="margin:0;padding-left:22px;display:flex;flex-direction:column;gap:8px">${items.filter(Boolean).map((i) => `<li>${fix(esc(i))}</li>`).join('')}</ul>`;
+    }
+    return `      <p>${fix(esc(l))}</p>`;
   }).join('\n');
   return { toc, body };
 };

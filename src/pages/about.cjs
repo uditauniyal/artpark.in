@@ -1,12 +1,12 @@
 // About section: ported from .reference/claude-design/About-*.dc.html, filled with artpark.in content.
 const L = require('../lib.cjs');
-const { esc, page, pageIntro, ABOUT_TABS, R, sectionHead, rows, statGrid, photoGrid, figure, quote, linkRows, wrap, section } = L;
+const { esc, page, pageIntro, R, sectionHead, rows, statGrid, photoGrid, figure, quote, linkRows, wrap, section } = L;
 const C = require('../data/content.cjs');
 const P = require('../data/programs.cjs');
 const PJ = require('./projects.cjs');
 
-// The About tab row (Nirav removed it on 2026-11-12; the user asked for it back on 2026-11-14, like Outreach's).
-const intro = (current, h1, lede) => pageIntro({ eyebrow: 'About ARTPARK', h1, lede, tabs: { current, items: ABOUT_TABS }, float: FLOATS[current] });
+// Manager (2026-11-16): no tab row under the About intros; the About menu covers it (user agreed the same day).
+const intro = (current, h1, lede) => pageIntro({ eyebrow: 'About ARTPARK', h1, lede, float: FLOATS[current] });
 
 // User (2026-11-14): the About pages get the same floating windows on the right of the intro as Outreach,
 // Partnerships and Portfolio (lib.cjs floatStage; same geometry as the Events composition).
@@ -14,94 +14,52 @@ const win = (src, cap, i) => ({ kind: 'win', src, cap, ...[{ x: 0, y: 4, w: 50, 
 const stat = (n, l) => ({ kind: 'stat', n, l, x: 70, y: 56, w: 30, d: 2.6, r: 3, t: 6 });
 const doc = (text, sub, i) => ({ kind: 'doc', tag: 'CERT', text, sub, ...[{ x: 4, y: 4, w: 50, d: 1.2, r: -3, t: 8 }, { x: 52, y: 14, w: 42, d: 0.8, r: 3, t: 9 }, { x: 16, y: 52, w: 54, d: 1.9, r: -1, t: 7 }][i] });
 const FLOATS = {
-  approach: [win('/assets/site/team-meeting.webp', 'How we work', 0), win('/assets/site/quadruped-team.webp', 'Robotics', 1), win('/assets/site/robot-training.webp', 'Industry 5.0', 2), stat('0–9', 'technology readiness levels, the whole arc')],
-  facilities: [win('/assets/site/artgarage-hall.webp', 'ARTGarage', 0), win('/assets/site/5g-lab.webp', 'Bharat 5G Lab', 1), win('/assets/site/fabrication.webp', 'Fabrication', 2), stat(P.artgarage.facts[0][0], 'of labs and test space at ARTGarage')],
+  // Manager (2026-11-16): painted versions of the photographs.
+  facilities: [win('/assets/art/fac-artgarage-hall.jpg', 'ARTGarage', 0), win('/assets/art/fac-5g-lab.jpg', 'Bharat 5G Lab', 1), win('/assets/art/fac-fabrication.jpg', 'Fabrication', 2), stat(P.artgarage.facts[0][0], 'of labs and test space at ARTGarage')],
   certifications: [doc('SIRO recognition', 'DSIR', 0), doc('Eligible for CSR', 'Ministry of Corporate Affairs', 1), doc('Section 80G', 'Income Tax Department', 2), stat(String(C.certifications.length), 'registrations and recognitions')],
-  programs: [win('/assets/programs/tir.webp', 'TIR', 0), win('/assets/programs/vip.webp', 'VIP', 1), win('/assets/site/quadruped-team.webp', 'Advanced Robotics', 2), stat(String(P.programs.length + P.venture.length), 'programs and centres')],
+  programs: [win('/assets/art/prog-tir.jpg', 'TIR', 0), win('/assets/art/prog-vip.jpg', 'VIP', 1), win('/assets/art/focus-robotics.jpg', 'Advanced Robotics', 2), stat(String(P.programs.length + P.venture.length), 'programs and centres')],
 };
 
-// Our Team moved to src/pages/team.cjs (the Editorial design, 2026-11-14).
+// Manager (2026-11-16): the Facilities cards show painted versions of these photographs.
+const FAC_ART = ['artgarage-hall', 'drone-lab', 'fabrication', '5g-lab', 'workstations'];
+const facImg = (src) => { const m = /^\/assets\/site\/([\w-]+)\.webp$/.exec(src); return m && FAC_ART.includes(m[1]) ? `/assets/art/fac-${m[1]}.jpg` : src; };
 
-// ---------- Approach (About-Approach.dc.html) ----------
-// His page: three cards (Model / Selection / Ecosystem) + "Where we work." rows.
-// Filled from artpark.in/about-us, with a readiness-arc infographic, icons and photographs.
-const TRL_STEPS = [
-  { from: 0, to: 3, label: 'Idea to lab proof', note: 'ARTLabs innovation projects. Technology Innovators in Residence enter at TRL 3.', href: R.programs + '/artlabs' },
-  { from: 4, to: 5, label: 'Prototype and pilots', note: 'The Venture Incubation Programme takes startups from TRL 4 towards field trials, at ARTGarage.', href: R.programs + '/vip' },
-  { from: 6, to: 9, label: 'Deployed, at scale', note: 'Field deployment, manufacturing readiness and follow-on capital, through programmes such as CAMRAS.', href: '/projects/camras' },
-];
-const SUPPORT = [
-  ['users', 'Mentorship & expertise', 'Domain experts, serial founders, policy advisors, government agencies and industry practitioners who engage at depth.'],
-  ['network', 'Networks & collaborations', 'Industry, government ministries and international institutions, for customers, procurement channels and deployment environments.'],
-  ['banknote', 'Capital & investment', 'Direct investment and grant funding at pre-commercial stages, when the risk is highest and most capital will not move.'],
-  ['cpu', 'Technical infrastructure', 'IISc’s research facilities: robotics labs, fabrication shops, AI compute and specialised 5G testing at ARTGarage.'],
-];
-const MODELS = [
-  ['rocket', 'Model A', 'For-profit startup', 'When the technology has a clear commercial pathway, defensible IP and a customer willing to pay for performance, we build a company.', '/assets/paint/tile-algofet.webp', 'AlgoFET', '/stories/algofet'],
-  ['heart', 'Model B', 'Social non-profit', 'When the beneficiary is a population underserved by market forces, and the intervention is too important to leave to commercial incentives, we build a non-profit initiative.', '/assets/site/hrp-training.webp', 'the high-risk pregnancy copilot', '/projects/hrp-copilot'],
-  ['globe', 'Model C', 'Digital public good', 'When an open tool or platform can unlock value across an entire sector, we build it as a digital public good, designed for adoption and national integration.', '/assets/paint/slide-vaani.webp', 'Project Vaani', '/stories/vaani'],
-];
-// Manager (2026-11-12, Claude Design): "Where we work." split into the domains and the horizontal capabilities.
-const FOCUS = [
-  ['DOMAINS WE WORK IN', [
-    ['Aerospace & Defence', 'Sovereign capability for India’s skies and borders — unmanned aerial systems, rugged all-terrain platforms, and guidance and navigation that hold up where GPS is jammed or denied.', '/assets/founders/comrado-aerospace-vtol-render.webp', '/stories/comrado-aerospace'],
-    ['Space Technology', 'Hardware for a growing private space economy — satellite communications, novel antennas and space-qualified subsystems, built on decades of IISc research.', '/assets/founders/astrome-team.webp', '/stories/astrome'],
-    ['Medtech', 'Affordable medical devices designed for Indian clinics — from rehabilitation robotics and cardiac-assist devices to AI-led screening that reaches patients earlier.', '/assets/founders/charukesi-health-device.webp', '/stories/charukesi-health'],
-    ['Advanced Manufacturing', 'Making Indian factories smarter and more competitive — digital twins, robotic automation and precision components that bring Industry 5.0 within reach of MSMEs.', '/assets/site/robot-training.webp', R.programs + '/industry-5'],
-  ]],
-  ['HORIZONTAL CAPABILITIES WE BACK', [
-    ['Robotics', 'Machines that sense, move and manipulate in the real world — humanoids, legged robots, dexterous grippers and fleets that work together reliably.', '/assets/site/quadruped-team.webp', R.programs + '/advanced-robotics'],
-    ['AI', 'Models and data built for India — speech and language AI for every dialect, physical-interaction data that teaches robots, and AI that turns signals into decisions.', '/assets/site/vaani-terminal.webp', R.programs + '/language'],
-    ['Autonomous Systems', 'Systems that operate without a human at the controls — off-road vehicles, self-charging drones and navigation for mines, tunnels and other places with no GPS or map.', '/assets/founders/uncharted-ai-autosurveyor.webp', '/stories/uncharted-ai'],
-  ]],
-];
-const trlArc = `<div class="trl reveal" style="margin-top:32px">
-        <div class="trl-scale">${Array.from({ length: 10 }, (_, n) => `<span class="trl-tick${n <= 6 ? ' is-in' : ''}" style="--n:${n}"><b>${n}</b></span>`).join('')}</div>
-        <div class="trl-band"><span class="trl-fill"></span><span class="trl-enter">We enter at TRL 0–3</span><span class="trl-stay">We stay until TRL 6 and beyond</span></div>
-        <div class="trl-steps">
-${TRL_STEPS.map((t, i) => `          <a class="trl-step" href="${t.href}" style="--i:${i}"${/^https?:/.test(t.href) ? ' target="_blank" rel="noopener"' : ''}><span class="trl-range">TRL ${t.from}–${t.to === 9 ? '9' : t.to}</span><b>${esc(t.label)}</b><span>${esc(t.note)}</span></a>`).join('\n')}
-        </div>
+// User (2026-11-16): back to the original Team page (as before the Editorial version was chosen on 2026-11-14);
+// Nirav will roll out a chosen version later. People data stays current (src/data/content.cjs).
+// ---------- Our Team (About-Our-Team.dc.html) ----------
+// His leadership card (4:5 portrait, name, role), now used for every group since portraits exist.
+// User (2026-11-16): LinkedIn links only for the three leaders.
+const personCard = (p, withLi = false) => `          <div class="person-card" style="display:flex;flex-direction:column;gap:12px">
+            <div style="position:relative;width:100%;aspect-ratio:4/5;background:var(--paper-soft);overflow:hidden"><img src="${p.portrait}" alt="${esc(p.name)}" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%;display:block"></div>
+            <div><div style="font-family:var(--font-display);font-weight:700;font-size:17px">${esc(p.name)}</div><div style="font-size:14px;color:var(--ink-dim);margin-top:2px">${esc(p.role)}</div>${withLi && p.linkedin ? `<a href="${p.linkedin}" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;font-size:13px;font-weight:600">LinkedIn ↗</a>` : ''}</div>
+          </div>`;
+const boardList = (list) => `<div class="person-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:28px 16px;margin-top:32px">
+${list.map((p) => personCard(p)).join('\n')}
       </div>`;
-const approach = {
-  route: R.approach,
+
+const team = {
+  route: R.team,
   html: () => page({
-    title: 'Approach — ARTPARK', active: 'about', sub: 'approach',
-    description: 'What does it actually take to turn a breakthrough technology from an idea into a meaningful solution, at scale?',
-    body: intro('approach', 'Approach.', 'Built for society, economy and sovereignty. By principle, by design. ARTPARK’s approach is defined by a single question: what does it actually take to turn a breakthrough technology from an idea into a meaningful solution, at scale?') + `
-  <div style="max-width:1180px;margin:0 auto;padding:48px 24px 0">
-    ${figure({ image: '/assets/site/team-meeting.webp', alt: 'The ARTPARK team in a working session', caption: 'The ARTPARK team at work, IISc Bengaluru.', pos: '50% 40%' })}
-  </div>
-  <div style="max-width:1180px;margin:0 auto;padding:0 24px 112px">
-    <section class="reveal" style="padding:64px 0;border-bottom:1px solid var(--line)">
-      ${sectionHead('Model', 'The technology readiness arc.', 'Technology Readiness Level (TRL) measures maturity, from raw concept to full deployment. ARTPARK was built to work across the whole arc, with different support at each phase.')}
-      ${trlArc}
-    </section>
-    <section class="reveal" style="padding:64px 0;border-bottom:1px solid var(--line)">
-      ${sectionHead('How we build', 'Four forms of support. Deployed together.')}
-      <div class="icon-grid">
-${SUPPORT.map(([ic, h, p], i) => `        <div class="icon-card" style="--i:${i}"><span class="icon-badge">${L.icon(ic, 26)}</span><span class="icon-n">0${i + 1}</span><h3 style="font-size:20px;line-height:1.25">${esc(h)}</h3><p style="font-size:15px;line-height:1.65;color:var(--ink-soft)">${esc(p)}</p></div>`).join('\n')}
-      </div>
-    </section>
-    <section class="reveal" style="padding:64px 0;border-bottom:1px solid var(--line)">
-      ${sectionHead('Selection', 'We choose the model that fits the mission.', 'ARTPARK does not assume every innovation should be a for-profit company. We assess the intended scale, the nature of the beneficiary and the economics of the market, and build accordingly.')}
-      <div class="model-grid">
-${MODELS.map(([ic, k, h, p, img, ex, href]) => `        <a class="model-card" href="${href}">
-          <div class="model-img"><img src="${img}" alt="" loading="lazy"><span class="model-k">${L.icon(ic, 18)} ${esc(k)}</span></div>
-          <div style="padding:22px 24px 24px;display:flex;flex-direction:column;gap:8px;flex:1"><h3 style="font-size:22px">${esc(h)}</h3><p style="font-size:15px;line-height:1.65;color:var(--ink-soft)">${esc(p)}</p><span class="model-ex">For example: ${esc(ex)} →</span></div>
-        </a>`).join('\n')}
-      </div>
-    </section>
-    <section class="reveal" style="padding:64px 0 0">
-      ${sectionHead('Focus areas', 'Where we work.')}
-${FOCUS.map(([label, items]) => `      <div style="margin-top:40px;font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:0.14em;color:var(--ink-dim)">${esc(label)}</div>
-      <div style="margin-top:14px;border-top:1px solid var(--line-strong)">
-${items.map(([h, p, img, href]) => `        <a class="focus-row" href="${href}"><div class="focus-img"><img src="${img}" alt="" loading="lazy"></div><h3 style="font-size:20px">${esc(h)}</h3><p style="font-size:15px;line-height:1.6;color:var(--ink-soft)">${esc(p)}</p><span class="focus-go" aria-hidden="true">→</span></a>`).join('\n')}
-      </div>`).join('\n')}
-    </section>
-  </div>`,
-    scripts: ['/js/motion.js'],
+    title: 'Our Team — ARTPARK', active: 'about', sub: 'team',
+    description: 'The people who lead ARTPARK and the boards that govern and advise it.',
+    body: intro('team', 'Our team.', 'The people who lead ARTPARK and the boards that govern and advise it.') + '\n' + wrap([
+      section(`${sectionHead('Leadership team', 'The people running the work.')}
+      <div class="person-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:28px 16px;margin-top:32px">
+${C.people.leadership.map((p) => personCard(p, true)).join('\n')}
+      </div>`, { label: 'Leadership' }),
+      section(`${sectionHead('Governing board', 'Hub governing board.')}
+      ${boardList(C.people.governing)}`, { label: 'Governing board' }),
+      section(`${sectionHead('Board', 'Board of directors.')}
+      ${boardList(C.people.directors)}`, { label: 'Board of directors' }),
+      section(`${sectionHead('Research', 'Research advisory board.')}
+      ${boardList(C.people.research)}`, { label: 'Research advisory board' }),
+      section(`${sectionHead('Advisors', 'Executive advisors.')}
+      ${boardList(C.people.advisors)}`, { last: true, label: 'Executive advisors' }),
+    ].join('\n')),
   }),
 };
+
+// ---------- Approach: the manager rebuilt it on 2026-11-16; served from src/pages/nirav-pages.cjs ----------
 
 
 // ---------- Facilities & Offerings (About-Facilities-Offerings.dc.html) ----------
@@ -112,7 +70,7 @@ const facilitiesPage = {
     description: 'The labs and infrastructure teams can use at ARTPARK, and the programs through which they come in.',
     body: intro('facilities', 'Facilities &amp; offerings.', 'The labs and infrastructure teams can use, and the programs through which they come in.') + '\n' + wrap([
       section(`${sectionHead('Facilities', 'Where the building and testing happens.')}
-      ${photoGrid(P.facilities.filter((f) => f.href !== R.facilities + '/brainz').map((f) =>({ image: f.image, alt: f.alt, title: f.name, text: f.text, href: f.href, label: f.render ? 'VISION RENDER' : '' })))}`, { label: 'Facilities' }),
+      ${photoGrid(P.facilities.filter((f) => f.href !== R.facilities + '/brainz').map((f) =>({ image: facImg(f.image), alt: f.alt, title: f.name, text: f.text, href: f.href, label: f.render ? 'VISION RENDER' : '' })))}`, { label: 'Facilities' }),
       `    <section data-screen-label="Offerings" style="padding:64px 0 0">
       ${sectionHead('Offerings', 'Ways to work with ARTPARK.')}
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:32px">
@@ -149,11 +107,22 @@ ${C.certifications.map((c, i) => `      <div style="border-bottom:${i === C.cert
 // ---------- Programs (About-Other-Programs.dc.html; renamed "Our programs" by the manager, 2026-11-12) ----------
 const DOT = { ONGOING: '', NEW: 'green', OPEN: 'green', CLOSED: 'coral' };
 const progText = (status, dot, name, short) => `<div style="display:flex;flex-direction:column;gap:8px"><span style="display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:0.14em;color:var(--ink-dim)"><span class="dot ${dot}"></span>${status}</span><h3 style="font-size:22px">${esc(name)}</h3><p style="font-size:15px;line-height:1.65;color:var(--ink-soft)">${esc(short)}</p><span style="font-size:14px;font-weight:600;color:var(--artblue);text-decoration:underline">Learn more →</span></div>`;
-// TIR and VIP lead the list, with the photographs the user chose (2026-11-14).
-const ventureRows = P.venture.map((v) => `<a id="${v.slug}" class="prog-row" href="${R.programs}/${v.slug}" style="--i:0"><div class="prog-img"><img src="${v.image}" alt="${esc(v.imageAlt)}" loading="lazy" style="object-fit:cover;object-position:50% 50%"></div>${progText(v.status, '', v.name, v.short)}</a>`).join('');
+// Manager (2026-11-16): the list runs ARTLabs, TIR, VIP, RDI, then the centres and the academy, and shows painted
+// images (only here; each program's own page keeps its photograph).
+const LIST_ORDER = ['artlabs', 'tir', 'vip', 'rdi', 'advanced-robotics', 'industry-5', 'health', 'language', 'wired-wireless', 'academy'];
+const LIST_IMG = { artlabs: 'prog-soldering', tir: 'prog-tir', vip: 'prog-vip', 'advanced-robotics': 'focus-robotics', 'industry-5': 'focus-manufacturing', health: 'prog-hrp-training', language: 'focus-ai', 'wired-wireless': 'fac-5g-lab', academy: 'prog-skilling-session' };
+const listImg = (slug, fallback) => (LIST_IMG[slug] ? `/assets/art/${LIST_IMG[slug]}.jpg` : fallback);
+const ventureRow = (v, i) => `<a id="${v.slug}" class="prog-row" href="${R.programs}/${v.slug}" style="--i:${i}"><div class="prog-img"><img src="${listImg(v.slug, v.image)}" alt="${esc(v.imageAlt)}" loading="lazy" style="object-fit:cover;object-position:50% 50%"></div>${progText(v.status, '', v.name, v.short)}</a>`;
 const progImg = (p) => p.logo
   ? `<div class="prog-img" style="background:#fff;border:1px solid var(--line)"><img src="${p.image}" alt="${esc(p.imageAlt)}" loading="lazy" style="object-fit:contain;object-position:50% 50%;padding:12%;box-sizing:border-box;background:#fff"></div>`
-  : `<div class="prog-img"><img src="${p.image}" alt="" loading="lazy" style="object-fit:${p.fit || 'cover'};object-position:${p.imagePos || '50% 50%'}"></div>`;
+  : `<div class="prog-img"><img src="${listImg(p.slug, p.image)}" alt="" loading="lazy" style="object-fit:${p.fit || 'cover'};object-position:${p.imagePos || '50% 50%'}"></div>`;
+const programRow = (slug, i) => {
+  const v = P.venture.find((x) => x.slug === slug);
+  if (v) return ventureRow(v, i);
+  const p = P.programs.find((x) => x.slug === slug);
+  return `<a id="${p.slug}" class="prog-row" href="${R.programs}/${p.slug}" style="--i:${i}">${progImg(p)}${progText(p.status, DOT[p.status], p.name, p.short)}</a>`;
+};
+if (LIST_ORDER.length !== P.programs.length + P.venture.length) throw new Error('Programs list order is missing a program');
 const programsList = {
   route: R.programs,
   html: () => page({
@@ -162,7 +131,7 @@ const programsList = {
     body: intro('programs', 'Our programs.', 'ARTPARK’s programs span three tracks: <strong style="color:var(--ink)">Venture Building</strong> backs researchers and startups taking deep-tech from lab to market; <strong style="color:var(--ink)">Centres of Excellence</strong> drive mission-led research in robotics, health, language and connectivity; and the <strong style="color:var(--ink)">Academy</strong> builds the talent to deploy it.') + `
   <div style="max-width:1180px;margin:0 auto;padding:64px 24px 112px">
     <div style="border-top:1px solid var(--line-strong)">
-${P.programs.map((p, i) => `      ${i === 0 ? ventureRows : ''}<a id="${p.slug}" class="prog-row" href="${R.programs}/${p.slug}" style="--i:${i}">${progImg(p)}${progText(p.status, DOT[p.status], p.name, p.short)}</a>`).join('\n')}
+${LIST_ORDER.map((slug, i) => `      ${programRow(slug, i)}`).join('\n')}
     </div>
   </div>`,
   }),
@@ -244,4 +213,4 @@ const brainzPage = {
   }),
 };
 
-module.exports = [approach, facilitiesPage, certifications, programsList, ...P.programs.filter((p) => !p.imported).map(programPage), artgaragePage, brainzPage];
+module.exports = [team, facilitiesPage, certifications, programsList, ...P.programs.filter((p) => !p.imported).map(programPage), artgaragePage, brainzPage];

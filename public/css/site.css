@@ -57,6 +57,8 @@ a:hover { color: var(--artblue-deep); }
   .collage-stage { aspect-ratio: auto !important; min-height: 0 !important; display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
   .collage-tile { position: relative !important; left: auto !important; top: auto !important; width: auto !important; height: auto !important; aspect-ratio: 4 / 3; }
   .collage-tile[data-core] { grid-column: 1 / -1; order: -1; aspect-ratio: 16 / 10; }
+  /* An odd last tile (the 2026-11-16 collage has nine) spans the row instead of sitting alone. */
+  .collage-stage > .collage-tile:last-child:nth-child(odd) { grid-column: 1 / -1; aspect-ratio: 16 / 9; }
   .collage-tile[data-core] [data-cap] { opacity: 1 !important; padding: 8px 10px !important; }
   .collage-tile[data-core] [data-cap] span:last-child { font-size: 13px !important; }
   .collage-tile:not([data-core]) [data-cap] { display: none; }
@@ -270,7 +272,7 @@ html.js #collaborate.in [style*="border-bottom:1px solid rgba(255,255,255,0.2)"]
 
 /* Footer: white monochrome lockup (brand guidelines, logo variants), plain legal links. */
 .footer-lockup { filter: brightness(0) invert(1); opacity: .95; }
-.footer-legal { color: rgba(255,255,255,.6) !important; text-decoration: none; margin-left: 18px; }
+.footer-legal { color: rgba(255,255,255,.6) !important; text-decoration: none; margin-left: 18px; white-space: nowrap; }
 .footer-legal:hover { color: var(--artlight) !important; }
 
 /* ============================================================
@@ -357,7 +359,8 @@ h1 .tt { color: var(--artblue); }
    The lift is pure CSS, so the page always opens even without JavaScript; ap-motion.js drops it on internal navigation. */
 .ap-curtain { position: fixed; inset: 0; z-index: 9999; pointer-events: none; background: #3213b7; display: flex; align-items: flex-end; padding: 0 0 40px 40px; box-sizing: border-box; animation: ap-lift 720ms cubic-bezier(.76,0,.24,1) 120ms forwards; }
 .ap-curtain::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 6px; background: #aafcf0; }
-.ap-curtain-label { font: 700 13px/1 "Trebuchet MS", Tahoma, sans-serif; letter-spacing: .16em; color: #aafcf0; animation: ap-fade 260ms linear 80ms forwards; }
+/* Manager (2026-11-16): the loading curtain shows the ARTPARK-IISc lockup in white instead of the word. */
+.ap-curtain-label { display: block; width: 260px; height: 52px; font-size: 0; color: transparent; overflow: hidden; background: url(/assets/brand/artpark-iisc-lockup.webp) left bottom / contain no-repeat; filter: brightness(0) invert(1); animation: ap-fade 260ms linear 80ms forwards; }
 .ap-curtain.is-leaving { animation: none; transform: translateY(100%); }
 .ap-curtain.is-leaving .ap-curtain-label { animation: none; opacity: 0; }
 @keyframes ap-lift { to { transform: translateY(-100%); } }

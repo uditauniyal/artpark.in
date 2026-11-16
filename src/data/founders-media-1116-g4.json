@@ -1,0 +1,10 @@
+{
+  "_note": "Founder-supplied images from the November 2026 story review (group g4: Q-Axis Motors). Every file was opened and checked.",
+  "images": [
+    { "out": "founders/q-axis-motors-qx100-qtrip.webp", "src": "research/img/founders/1116/q-axis-motors-qx100-qtrip.jpg", "maxW": 1600, "subject": "The qx-100 vision gimbal (left) and the Q-trip edge-AI computer (right), side by side.", "source": "Founder, story review (Nov 2026)" },
+    { "out": "founders/q-axis-motors-qx100-render.webp", "src": "research/img/founders/1116/q-axis-motors-qx100-render.png", "maxW": 1200, "subject": "Design render of the qx-100 gimbal with the Q-Axis mark on its side.", "source": "Founder, story review (Nov 2026)" },
+    { "out": "founders/q-axis-motors-sangam-2025.webp", "src": "research/img/founders/1116/q-axis-motors-sangam-2025.jpg", "maxW": 1600, "subject": "The three Q-Axis founders on stage with the second-prize cheque at Sangam 2025 Startup PitchFest.", "source": "Founder, story review (Nov 2026)" },
+    { "out": "founders/q-axis-motors-elevate-2025.webp", "src": "research/img/founders/1116/q-axis-motors-elevate-2025.jpg", "maxW": 1600, "subject": "Q-Axis Motors receiving the Elevate 2025 winner award on stage, with the winners list on the screen behind.", "source": "Founder, story review (Nov 2026)" },
+    { "out": "founders/q-axis-motors-logo.webp", "src": "research/img/founders/1116/q-axis-motors-logo.png", "maxW": 1200, "subject": "Q-Axis logo: triangular mark and Q-AXIS wordmark, transparent background.", "source": "Founder, story review (Nov 2026)" }
+  ]
+}

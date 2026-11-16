@@ -10,7 +10,8 @@ const esc = (s) => String(s ?? '')
 const R = {
   home: '/',                               // ARTPARK-Home.dc.html
   team: '/about/team',                     // About-Our-Team.dc.html
-  approach: '/about/approach',             // About-Approach.dc.html
+  approach: '/about/approach',             // About-Approach.dc.html (rebuilt by the manager 2026-11-16)
+  focusAreas: '/about/focus-areas',        // new, manager 2026-11-16
   facilities: '/about/facilities',         // About-Facilities-Offerings.dc.html
   certifications: '/about/certifications', // About-Certifications.dc.html
   programs: '/about/programs',             // About-Other-Programs.dc.html
@@ -31,9 +32,10 @@ const R = {
 const ABOUT_ITEMS = [
   ['team', 'Our Team', 'Leadership and board', R.team],
   ['approach', 'Approach', 'How we choose and run the work', R.approach],
+  ['focus', 'Focus Areas', 'Domains and capabilities we back', R.focusAreas],
   ['facilities', 'Facilities & Offerings', 'Labs, infrastructure and programs', R.facilities],
   ['certifications', 'Certifications', 'Registrations and accreditations', R.certifications],
-  ['programs', 'Programs', 'Initiatives beyond TIR and SIP', R.programs],
+  ['programs', 'Programs', 'TIR, VIP and our other initiatives', R.programs],
 ];
 const OUTREACH_ITEMS = [
   ['events', 'Events', 'Summits, talks and challenges', R.events],
@@ -46,7 +48,9 @@ const OUTREACH_ITEMS = [
 const LOCKUP = '/assets/brand/artpark-iisc-lockup.webp';
 const LOCKUP_ALT = 'Indian Institute of Science and ARTPARK, AI & Robotics Technology Park @ IISc';
 
-function header(active = '', sub = '') {
+// Manager (2026-11-16): the header buttons only on Home, as "What we build" and "Work with us"; Home's row is a little
+// tighter to fit them. Other pages have no header button.
+function header(active = '', sub = '', home = false) {
   const ink = (on) => (on ? 'var(--artblue)' : 'var(--ink)');
   const util = (on) => (on ? 'var(--artlight)' : '#fff');
   const menu = (key, label, items, isActive, minW) => `
@@ -76,22 +80,23 @@ ${items.map(([k, l, d, href]) => `              <a role="menuitem" href="${href}
     </div>
   </div>
   <div style="border-bottom:1px solid var(--line)">
-    <div class="site-header-row" style="max-width:1180px;margin:0 auto;padding:14px 24px;display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px">
+    <div class="site-header-row" style="max-width:1180px;margin:0 auto;padding:14px 24px;display:flex;flex-wrap:wrap;align-items:center;gap:${home ? '14px 10px' : '14px 20px'}">
       <a href="${R.home}" class="site-logo" style="display:flex;align-items:center;text-decoration:none">
         <img src="${LOCKUP}" alt="${LOCKUP_ALT}" width="205" height="41" style="width:205px;height:auto;display:block">
       </a>
       <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span><span></span><span></span></button>
-      <nav id="site-nav" class="site-nav" style="flex:1 1 auto;display:flex;flex-wrap:nowrap;gap:clamp(12px,1.6vw,30px);justify-content:center;align-items:center;white-space:nowrap">
+      <nav id="site-nav" class="site-nav" style="flex:1 1 auto;display:flex;flex-wrap:nowrap;gap:${home ? 'clamp(10px,1.3vw,24px)' : 'clamp(12px,1.6vw,30px)'};justify-content:center;align-items:center;white-space:nowrap">
         <a class="nav-link" href="${R.home}" style="line-height:1.2;color:${ink(active === 'home')}">Home</a>
 ${menu('about', 'About', ABOUT_ITEMS, active === 'about', 280)}
         <a class="nav-link" href="${R.portfolio}" style="line-height:1.2;color:${ink(active === 'portfolio')}">Portfolio</a>
         <a class="nav-link" href="${R.partnerships}" style="line-height:1.2;color:${ink(active === 'partnerships')}">Partnerships</a>
 ${menu('outreach', 'Outreach', OUTREACH_ITEMS, active === 'outreach', 260)}
         <a class="nav-link" href="${R.contact}" style="line-height:1.2;color:${ink(active === 'contact')}">Contact</a>
-        <div class="nav-extra"><a class="btn btn-primary" href="${R.home}#collaborate" style="border-radius:999px;justify-content:center">Work with us <span class="arrow">→</span></a><div class="nav-extra-links"><a href="${R.careers}">Careers</a><a href="${R.tenders}">Tenders</a><a href="${R.applySignIn}">Sign in</a><a class="is-pill" href="${R.applySignIn}">Sign up</a></div></div>
+        <div class="nav-extra">${home ? '<a class="btn btn-primary" href="#building" style="border-radius:999px;justify-content:center">What we build</a><a class="btn btn-primary" href="#collaborate" style="border-radius:999px;justify-content:center">Work with us</a>' : ''}<div class="nav-extra-links"><a href="${R.careers}">Careers</a><a href="${R.tenders}">Tenders</a><a href="${R.applySignIn}">Sign in</a><a class="is-pill" href="${R.applySignIn}">Sign up</a></div></div>
       </nav>
-      <a class="btn btn-primary site-cta" href="${R.home}#collaborate" style="border-radius:999px;padding:11px 20px;flex:none;white-space:nowrap">Work with us <span class="arrow">→</span></a>
-    </div>
+${home ? `      <a class="btn btn-primary site-cta" href="#building" style="border-radius:999px;padding:11px 16px;flex:none;white-space:nowrap;margin-right:6px">What we build</a>
+      <a class="btn btn-primary site-cta" href="#collaborate" style="border-radius:999px;padding:11px 16px;flex:none;white-space:nowrap">Work with us</a>
+` : ''}    </div>
   </div>
 </header>
 </div>`;
@@ -105,7 +110,8 @@ const SOCIAL = [
   ['Instagram', 'https://www.instagram.com/artpark_india/', 'M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z'],
 ];
 
-function footer() {
+// Manager (2026-11-16): on Home the copyright line sits closer to the columns (20px instead of 40px).
+function footer(home = false) {
   const col = (title, links) => `      <div style="display:flex;flex-direction:column;gap:8px">
         <span style="font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:0.14em;color:rgba(255,255,255,0.6)">${title}</span>
 ${links.map(([l, href]) => `        <a href="${href}" style="color:#fff;text-decoration:none;font-size:14px">${esc(l)}</a>`).join('\n')}
@@ -119,18 +125,19 @@ ${links.map(([l, href]) => `        <a href="${href}" style="color:#fff;text-dec
         <div style="display:flex;flex-wrap:wrap;gap:18px;align-items:center">${SOCIAL.map(([l, h, d]) => `<a href="${h}" target="_blank" rel="noopener" aria-label="ARTPARK on ${l}" title="${l}" style="display:flex;align-items:center;justify-content:center;color:#fff;opacity:0.95;transition:opacity 150ms ease"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="${d}"/></svg></a>`).join('')}</div>
       </div>
 ${col('HOME', [['Stories', R.home + '#stories'], ['What we believe', R.home + '#believe'], ["What we're building", R.home + '#building'], ['Work with us', R.home + '#collaborate']])}
-${col('ABOUT', ABOUT_ITEMS.map(([, l, , h]) => [l, h]))}
+${col('ABOUT', ABOUT_ITEMS.filter(([k]) => k !== 'focus').map(([, l, , h]) => [l, h]))}
 ${col('EXPLORE', [['Portfolio', R.portfolio], ['Partnerships', R.partnerships], ['Events', R.events], ['News', R.news], ['Tenders', R.tenders], ['Careers', R.careers], ['Contact', R.contact]])}
     </div>
-    <div style="margin-top:40px;border-top:1px solid rgba(255,255,255,0.15);padding-top:20px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:12px;color:rgba(255,255,255,0.5)">
+    <div style="margin-top:${home ? 20 : 40}px;border-top:1px solid rgba(255,255,255,0.15);padding-top:20px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:12px;color:rgba(255,255,255,0.5)">
       <span>© 2026 ARTPARK, IISc Bengaluru · <a href="/privacy-policy" class="footer-legal">Privacy policy</a><a href="/terms-of-use" class="footer-legal">Terms of use</a></span>
     </div>
   </div>
 </footer>`;
 }
 
-// Full HTML document. `body` is the page content between header and footer.
-function page({ title, description = '', active = '', sub = '', body, scripts = [] }) {
+// Full HTML document. `body` is the page content between header and footer. `home` switches on the Home header buttons;
+// `head` (CSS), `bodyAttrs` and `tail` (inline script after the site scripts) carry pages imported from the manager's canvas.
+function page({ title, description = '', active = '', sub = '', body, scripts = [], home = false, head = '', bodyAttrs = '', tail = '' }) {
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -147,19 +154,22 @@ function page({ title, description = '', active = '', sub = '', body, scripts = 
 <link rel="stylesheet" href="/css/site.css">
 <link rel="stylesheet" href="/css/pages.css">
 <link rel="stylesheet" href="/css/scale.css">
-<link rel="stylesheet" href="/css/wow.css">
+<link rel="stylesheet" href="/css/wow.css">${head ? `
+<style>
+${head}
+</style>` : ''}
 </head>
-<body>
+<body${bodyAttrs ? ' ' + bodyAttrs : ''}>
 <div class="ap-curtain" aria-hidden="true"><span class="ap-curtain-label">ARTPARK</span></div>
 <div style="font-family:var(--font-body);color:var(--ink);background:var(--paper)">
-${header(active, sub)}
+${header(active, sub, home)}
 ${body}
-${footer()}
+${footer(home)}
 </div>
 <script src="/js/site.js" defer></script>
 <script src="/js/ap-motion.js" defer></script>
 <script src="/js/ap-wow.js" defer></script>
-${scripts.map((s) => `<script src="${s}" defer></script>`).join('\n')}
+${scripts.map((s) => `<script src="${s}" defer></script>`).join('\n')}${tail ? '\n' + tail : ''}
 </body>
 </html>
 `;
