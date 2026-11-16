@@ -29,8 +29,11 @@ a:hover { color: var(--artblue-deep); }
     display: inline-flex; flex-direction: column; justify-content: center; gap: 5px;
     width: 44px; height: 44px; padding: 0 11px; margin-left: auto;
     background: none; border: 1px solid var(--line-strong); border-radius: 2px; cursor: pointer;
+    -webkit-appearance: none; appearance: none; align-items: center; color: var(--ink);
   }
-  .nav-toggle span { display: block; height: 2px; background: var(--ink); transition: transform 150ms ease, opacity 150ms ease; }
+  /* Explicit size: iPhone Safari does not stretch empty spans inside a button, so the three lines drew at zero width
+     and the menu button looked empty (user 2026-11-16). */
+  .nav-toggle span { display: block; flex: none; width: 20px; height: 2px; border-radius: 1px; background: var(--ink); transition: transform 150ms ease, opacity 150ms ease; }
   .nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   .nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
   .nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
@@ -84,6 +87,11 @@ a:hover { color: var(--artblue-deep); }
   [data-tenders] [data-item] > div:first-child > div:first-child { grid-column: 1 / -1 !important; }
 
   /* Story pages: the contents list sits above the article, not pinned. */
+  .story-toc { position: static !important; }
+}
+/* Below about 900 px the story contents column stacks above the text, so it must not stay pinned there
+   (user 2026-11-16, iPhone: the story text scrolled over the pinned contents). */
+@media (max-width: 900px) {
   .story-toc { position: static !important; }
 }
 
