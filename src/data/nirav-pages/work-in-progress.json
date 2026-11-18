@@ -3,7 +3,7 @@
   "title": "Work in progress — ARTPARK",
   "description": "",
   "style": ".wwu-link{transition:background 150ms ease,transform 150ms ease}\n.wwu-link:hover{background:#fff !important;transform:translateX(3px)}\n.wip-row{transition:border-color 150ms ease,transform 150ms ease}\n.wip-row:hover{border-color:var(--artblue) !important;transform:translateX(3px)}\n.wip-spin g{transform-origin:24px 24px;transform-box:view-box;animation:wipspin 4s linear infinite}\n@keyframes wipspin{to{transform:rotate(360deg)}}\n@media (prefers-reduced-motion:reduce){.wip-spin g{animation:none}}",
-  "bodyAttrs": "data-ready-by=\"2026-11-18T18:00\"",
+  "bodyAttrs": "data-ready-by=\"2026-11-20T18:00\"",
   "tail": "<script>\n/* Countdown: set the date in data-ready-by on <body> (India time if no zone given). */\n(function(){var raw=document.body.getAttribute('data-ready-by')||'2026-11-18T18:00';\nvar t=Date.parse(/[zZ]|[+-]\\d\\d:?\\d\\d$/.test(raw)?raw:raw+'+05:30');\nfunction pad(n){return String(n).padStart(2,'0');}\nfunction tick(){var left=Math.max(0,(isNaN(t)?0:t)-Date.now());\nvar q=function(k){return document.querySelector('[data-cd=\"'+k+'\"]');};\nq('d').textContent=pad(Math.floor(left/864e5));q('h').textContent=pad(Math.floor(left/36e5)%24);\nq('m').textContent=pad(Math.floor(left/6e4)%60);q('s').textContent=pad(Math.floor(left/1e3)%60);\ndocument.querySelector('[data-cd-running]').hidden=left<=0;document.querySelector('[data-cd-done]').hidden=left>0;}\ntick();setInterval(tick,1000);})();\n</script>",
   "source": "Manager, design canvas static export (artpark-website-export.zip, 2026-11-16)"
 }

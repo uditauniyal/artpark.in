@@ -214,7 +214,7 @@ test('manager changes of 2026-11-16', () => {
   assert.match(hdr(home), /TIR, VIP and our other initiatives/);
   assert.match(page('about/approach'), /We measure progress in <b[^>]*>xRL<\/b>/);
   assert.match(page('about/focus-areas'), /<h1[^>]*>Where we <span class="hl">work/);
-  assert.match(page('work-in-progress'), /<body data-ready-by="2026-11-18T18:00">/);
+  assert.match(page('work-in-progress'), /<body data-ready-by="2026-11-20T18:00">/);
   assert.match(page('work-in-progress'), /data-cd="d"/);
   assert.match(page('about/facilities'), /\/assets\/art\/fac-drone-lab\.jpg/);
   for (const r of ['', 'about/approach', 'about/focus-areas', 'work-in-progress']) {
