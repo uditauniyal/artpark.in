@@ -213,4 +213,9 @@ const brainzPage = {
   }),
 };
 
-module.exports = [team, facilitiesPage, certifications, programsList, ...P.programs.filter((p) => !p.imported).map(programPage), artgaragePage, brainzPage];
+// Manager (2026-11-19 design): Our Team, Facilities, the Programs list and ArtLabs are now his pages
+// (src/pages/nirav-pages.cjs); Certifications moved into About > Introduction; Advanced Robotics, Industry 5.0,
+// Wired & Wireless and Academy merged into ArtLabs, and Health and Language into Social Impact (old URLs redirect,
+// vercel.json). The builders above stay for reference and for a quick way back.
+void [team, facilitiesPage, certifications, programsList, programPage];
+module.exports = [artgaragePage, brainzPage];

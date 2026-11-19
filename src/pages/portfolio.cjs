@@ -1,17 +1,21 @@
 // Portfolio: ported from .reference/claude-design/Portfolio.dc.html.
-// Batch 2 (2026-10-29): the 36 startups of the 2026 portfolio. A programme switch (All / TIR / VIP; no programme
-// data yet, so TIR and VIP show a note) and a domain sidebar filter the grid (public/js/site.js).
+// Batch 2 (2026-10-29): the 2026 portfolio. A programme switch (All / Innovations / Startups / Social since the
+// manager's 2026-11-19 design; no programme data yet, so the three show a note) and a domain sidebar filter the grid
+// (public/js/site.js).
 // Each card opens the founder story, or the company's site when there is no story yet.
 const { esc, page, R, floatStage } = require('../lib.cjs');
 const C = require('../data/content.cjs');
 const stories = require('./stories.cjs').all;
 
 const hasStory = new Set(stories.map((s) => s.slug));
+// Manager (2026-11-19 design): A-Thon is no longer listed (35 companies). Its story page stays reachable by link until
+// he confirms (notes/pending-decisions.md).
+const LISTED = C.portfolio.filter((c) => c.slug !== 'a-thon');
 
 // Round 8 floating composition: real company logos and the real company count.
 const FLOAT_PF = [
   ...['twara-robotics', 'comrado-aerospace', 'yaanendriya', 'kinesthetiq', 'uncharted-ai', 'strider-robotics'].map((slug, i) => ({ kind: 'chip', logo: '/assets/logos/' + slug + '.webp', x: [0, 54, 24, 62, 0, 34][i], y: [0, -2, 21, 25, 44, 48][i], w: [40, 38, 36, 36, 36, 34][i], d: [1.2, 0.8, 2, 1.5, 1, 2.2][i], r: [-2, 2, -1, 1.5, -1.5, 1][i], t: 6 + i })),
-  { kind: 'stat', n: String(C.portfolio.length), l: 'deep-tech startups built and backed at ARTPARK', x: 70, y: 47, w: 30, d: 2.6, r: 3, t: 7 },
+  { kind: 'stat', n: String(LISTED.length), l: 'deep-tech startups built and backed at ARTPARK', x: 70, y: 47, w: 30, d: 2.6, r: 3, t: 7 },
 ];
 module.exports = {
   route: R.portfolio,
@@ -31,19 +35,19 @@ module.exports = {
     <aside class="pf-domains" aria-label="Filter by domain">
       <h2 class="pf-domains-title">Domain</h2>
       <div class="pf-domains-list" role="group" aria-label="Domain">
-${[['', 'All domains', C.portfolio.length], ...C.DOMAIN_LIST.map((d) => [d, d, C.portfolio.filter((c) => c.domains.includes(d)).length])].map(([v, label, n], i) => `        <button type="button" class="pf-domain" data-domain="${esc(v)}" aria-pressed="${i === 0}"><span class="pf-domain-name">${esc(label)}</span><span class="pf-domain-n">${n}</span></button>`).join('\n')}
+${[['', 'All domains', LISTED.length], ...C.DOMAIN_LIST.map((d) => [d, d, LISTED.filter((c) => c.domains.includes(d)).length])].map(([v, label, n], i) => `        <button type="button" class="pf-domain" data-domain="${esc(v)}" aria-pressed="${i === 0}"><span class="pf-domain-name">${esc(label)}</span><span class="pf-domain-n">${n}</span></button>`).join('\n')}
       </div>
     </aside>
     <div class="pf-main">
       <div class="pf-bar">
-        <span data-pcount class="pf-count">${C.portfolio.length} companies</span>
+        <span data-pcount class="pf-count">${LISTED.length} companies</span>
         <div class="pf-programme" role="group" aria-label="Programme">
-${['All', 'TIR', 'VIP'].map((g, i) => `          <button type="button" data-programme="${g}" aria-pressed="${i === 0}">${g}</button>`).join('\n')}
+${['All', 'Innovations', 'Startups', 'Social'].map((g, i) => `          <button type="button" data-programme="${g}" aria-pressed="${i === 0}">${g}</button>`).join('\n')}
         </div>
       </div>
       <p data-programme-note hidden class="pf-note">Programme lists coming soon. Showing all startups meanwhile.</p>
       <div class="pf-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;margin-top:20px">
-${C.portfolio.map((c) => {
+${LISTED.map((c) => {
   const href = hasStory.has(c.slug) ? `${R.stories}/${c.slug}` : c.website;
   const ext = !hasStory.has(c.slug);
   return `      <a data-company data-domains="${esc(c.domains.join('|'))}" class="pf-card lift" href="${href || '#'}"${ext && href ? ' target="_blank" rel="noopener"' : ''} style="border:1px solid var(--line);padding:22px;display:flex;flex-direction:column;gap:14px;text-decoration:none;color:inherit;transition:border-color 150ms ease">

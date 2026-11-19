@@ -11,7 +11,10 @@ const CAP = path.join(ROOT, 'research', 'artpark-in');
 const MEDIA = JSON.parse(fs.readFileSync(path.join(ROOT, 'research', 'artpark-media.json'), 'utf8'));
 const IMAGES = JSON.parse(fs.readFileSync(path.join(ROOT, 'src', 'data', 'projects-media.json'), 'utf8')).images;
 
-const PARENT = Object.fromEntries(programs.map((p) => [p.slug, { name: p.name, href: `${R.programs}/${p.slug}` }]));
+// Manager (2026-11-19 design): Health and Language are sections of Social Impact; Advanced Robotics, Industry 5.0,
+// Wired & Wireless and Academy are sections of ArtLabs.
+const MERGED_INTO = { health: 'social-impact', language: 'social-impact', 'advanced-robotics': 'artlabs', 'industry-5': 'artlabs', 'wired-wireless': 'artlabs', academy: 'artlabs' };
+const PARENT = Object.fromEntries(programs.map((p) => [p.slug, { name: p.name, href: MERGED_INTO[p.slug] ? `${R.programs}/${MERGED_INTO[p.slug]}#${p.slug}` : `${R.programs}/${p.slug}` }]));
 PARENT.publications = { name: 'Publications', href: R.news + '#publications' };
 const routeOf = (p) => (p.parent === 'publications' ? `/publications/${p.slug}` : `/projects/${p.slug}`);
 
@@ -104,7 +107,7 @@ function render(p) {
       .map(([t, h]) => ({ meta: new URL(h).hostname.replace('www.', ''), title: t && t.length > 3 ? t : new URL(h).hostname.replace('www.', ''), href: h, action: /youtu/.test(h) ? 'Watch →' : 'Open →' }))];
 
   return page({
-    title: `${title} — ARTPARK`, active: 'about', sub: 'programs', description: lede || title,
+    title: `${title} — ARTPARK`, active: 'programs', sub: 'programs', description: lede || title,
     body: pageIntro({ eyebrow: parent.name, h1: esc(title.replace(/\.$/, '')) + '.', lede: esc(lede || '') }) + `
   <div style="max-width:1180px;margin:0 auto;padding:48px 24px 112px">
     ${imgs[0] && !gallery ? `<figure style="margin:0 0 48px"><div style="background:var(--paper-soft);display:flex;justify-content:center"><img src="${imgs[0]}" alt="${esc(title)}" style="max-width:100%;max-height:560px;width:auto;height:auto;display:block"></div></figure>` : ''}

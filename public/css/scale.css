@@ -10,7 +10,7 @@
 .site-logo img { width: 232px !important; }
 @media (max-width: 960px) { .site-header-row .site-logo img { width: 196px !important; } }
 @media (max-width: 600px) { .site-header-row .site-logo img { width: 176px !important; } }
-.footer-lockup { height: 52px !important; }
+.footer-lockup { height: 44px !important; } /* manager, 2026-11-19 compact footer (was 52px) */
 .also-chip { padding: 6px 14px 6px 8px; font-size: 14px; }
 .also-chip img { height: 30px; width: 46px; }
 .fs-logo { height: 46px !important; max-width: 200px; }

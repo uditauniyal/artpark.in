@@ -45,6 +45,6 @@ module.exports = ['tir', 'vip', 'rdi'].map((slug) => {
   for (const [from, to] of APPLY[slug]) body = swap(body, from, to);
   return {
     route: meta.route,
-    html: () => page({ title: meta.title, description: meta.description, active: 'about', sub: 'programs', body }),
+    html: () => page({ title: meta.title, description: meta.description, active: 'programs', sub: slug, body }), // Programs menu since 2026-11-19
   };
 });

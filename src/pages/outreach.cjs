@@ -320,6 +320,8 @@ const ALLP = C.partners.flatMap((g) => g.items);
 const FLOAT_PARTNERS = [
   ...PICK.map((n, i) => ({ kind: 'chip', logo: ALLP.find((p) => p.name === n).logo, imgH: EMBLEM_H[n], hl: n === 'Department of Science & Technology' || n === 'Government of Karnataka', x: [0, 52, 24, 66, 2, 40, 70, 20][i], y: [0, 4, 24, 30, 48, 54, 74, 76][i], w: [40, 40, 36, 32, 34, 44, 30, 34][i], d: [1.2, 0.8, 2, 1.5, 1, 2.2, 1.6, 2.4][i], r: [-2, 2, -1, 1.5, -1.5, 1, 2, -2][i], t: 6 + (i % 4) })),
 ];
+// Manager (2026-11-19 design): "Partner with us." leads, the partner-type forms follow the intro directly, and the
+// partner logos close the page under "Our partners".
 const partnerships = {
   route: R.partnerships,
   html: () => page({
@@ -329,28 +331,14 @@ const partnerships = {
   <section style="padding:clamp(56px,8vw,96px) 0 0">
     <div class="intro-wrap has-float" style="max-width:1180px;margin:0 auto;padding:0 24px;position:relative">
       ${floatStage(FLOAT_PARTNERS)}<div class="eyebrow-rule">Partnerships</div>
-      <h1 style="font-size:clamp(44px,6.4vw,80px);line-height:1.03;margin-top:20px">Partners.</h1>
+      <h1 style="font-size:clamp(44px,6.4vw,80px);line-height:1.03;margin-top:20px">Partner with us.</h1>
       <p style="margin-top:24px;max-width:680px;font-size:18px;line-height:1.7;color:var(--ink-soft)">ARTPARK works as a bridge between research, academia, industry and government. These organisations, institutions and ministries share their expertise and resources to help steer India-first innovation in deep tech.</p>
-      <a class="btn btn-primary" href="#partner" style="margin-top:28px">Become a partner <span class="arrow">→</span></a>
     </div>
   </section>
 
-  <div style="max-width:1180px;margin:0 auto;padding:56px 24px 112px;display:flex;flex-direction:column;gap:56px">
-${C.partners.map((g) => `    <section>
-      <span class="eyebrow">${esc(g.label)}</span>
-      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line);margin-top:16px">
-${g.items.map((p) => `        <div class="mag mag-cell" title="${esc(p.name)}" style="background:var(--paper);border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 20px;height:84px;position:relative;display:flex;align-items:center;justify-content:center"><img src="${p.logo}" alt="${esc(p.name)}" loading="lazy" style="max-width:100%;max-height:50px;object-fit:contain;display:block"></div>`).join('\n')}
-      </div>
-    </section>`).join('\n')}
-  </div>
-
   <section id="partner" data-screen-label="Partner with us" data-partner style="background:var(--paper-soft);padding:clamp(64px,9vw,112px) 0;scroll-margin-top:80px">
     <div style="max-width:1180px;margin:0 auto;padding:0 24px">
-      <div class="eyebrow-rule">Partner with us</div>
-      <h2 style="font-size:clamp(34px,4.6vw,52px);line-height:1.06;margin-top:16px;max-width:860px">Help a breakthrough reach the real world.</h2>
-      <p style="margin-top:18px;max-width:680px;font-size:17px;line-height:1.7;color:var(--ink-soft)">Each kind of partner brings something different — a real environment, a hard problem, a lab result, patient capital. Pick the one that describes you; the form asks only what we need to start a useful conversation.</p>
-
-      <div class="partner-layout" style="display:flex;flex-wrap:wrap;gap:32px 48px;margin-top:48px;align-items:flex-start">
+      <div class="partner-layout" style="display:flex;flex-wrap:wrap;gap:32px 48px;margin-top:0;align-items:flex-start">
         <div role="tablist" aria-label="Partner type" style="flex:0 1 300px;min-width:240px;display:flex;flex-direction:column;gap:6px">
 ${TYPES.map((t, i) => `          <button type="button" role="tab" data-ptype="${t.key}" aria-selected="${i === 0}" aria-controls="ptype-${t.key}" style="text-align:left;border:1px solid ${i === 0 ? 'var(--artblue)' : 'var(--line)'};background:${i === 0 ? 'var(--artblue)' : 'var(--paper)'};color:${i === 0 ? '#fff' : 'var(--ink)'};padding:16px 18px;border-radius:2px;cursor:pointer;font:inherit;transition:background 150ms ease,color 150ms ease,border-color 150ms ease">
             <span style="display:block;font-family:var(--font-display);font-weight:700;font-size:16px">${esc(t.label)}</span>
@@ -378,7 +366,21 @@ ${t.fields.map(field).join('\n')}
         </div>`).join('\n')}
       </div>
     </div>
-  </section>`,
+  </section>
+
+  <div style="max-width:1180px;margin:0 auto;padding:56px 24px 112px;display:flex;flex-direction:column;gap:56px">
+    <div>
+      <div class="eyebrow-rule">Our partners</div>
+      <h2 style="font-size:clamp(44px,6.4vw,80px);line-height:1.03;margin-top:20px">The organisations <span class="tt" style="color:var(--artblue)">we work with.</span></h2>
+    </div>
+${C.partners.map((g) => `    <section>
+      <span class="eyebrow">${esc(g.label)}</span>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line);margin-top:16px">
+${g.items.map((p) => `        <div class="mag mag-cell" title="${esc(p.name)}" style="background:var(--paper);border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 20px;height:84px;position:relative;display:flex;align-items:center;justify-content:center"><img src="${p.logo}" alt="${esc(p.name)}" loading="lazy" style="max-width:100%;max-height:50px;object-fit:contain;display:block"></div>`).join('\n')}
+      </div>
+    </section>`).join('\n')}
+  </div>
+`,
   }),
 };
 

@@ -250,8 +250,8 @@
         });
         panels.forEach(function (p, j) {
           p.hidden = j !== k;
-          // His behaviour: switching topic opens that topic's first question.
-          p.querySelectorAll('.faq-item').forEach(function (it, m) { setItem(it, j === k && m === 0); });
+          // Manager (2026-11-19 design): switching topic shows that topic's questions, all closed.
+          p.querySelectorAll('.faq-item').forEach(function (it) { setItem(it, false); });
         });
       });
     });
@@ -381,7 +381,9 @@
       form.addEventListener('input', function () { setMsg('Goes to connect@artpark.in · * required', false); });
       form.addEventListener('submit', function (e) {
         e.preventDefault();
-        var label = function (el) { return el.closest('div').querySelector('.eyebrow').textContent.replace(' *', ''); };
+        // A chip group is itself a div, so its label sits in the wrapper around it. (Found 2026-11-19: looking inside
+        // the group threw, and no Partnerships form ever opened the email app.)
+        var label = function (el) { var box = el.hasAttribute('data-chips') ? el.parentElement : el.closest('div'); var t = box && box.querySelector('.eyebrow'); return t ? t.textContent.replace(' *', '') : (el.name || 'Field'); };
         var miss = Array.prototype.filter.call(form.querySelectorAll('[data-req]'), function (el) { return !el.value.trim(); });
         if (miss.length) return setMsg('Please fill in: ' + miss.map(label).join(', ') + '.', true);
         var em = form.querySelector('input[type="email"]');
@@ -465,6 +467,7 @@
 
   // ---------- Certifications: show the description under a row ----------
   document.querySelectorAll('[data-cert-toggle]').forEach(function (b) {
+    if (b.closest('[data-dc-managed]')) return; // a page imported from the manager's canvas runs its table itself
     b.addEventListener('click', function () {
       var open = b.getAttribute('aria-expanded') !== 'true';
       b.setAttribute('aria-expanded', open ? 'true' : 'false');

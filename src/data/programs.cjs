@@ -33,7 +33,7 @@ const programs = [
       ['Envisaged impact', 'Automation of compliance and shop-floor operations, end-to-end traceability of assets, a lower carbon footprint with better sustainability reporting, and real-time decision making.'],
     ],
     cards: [
-      { title: 'CAMRAS Accelerator Program', text: 'A ₹78.4 Cr MHI-funded accelerator that has taken six teams from prototype-stage research to funded, market-facing startups.', image: '/assets/site/fabrication.webp', imageAlt: 'Engineers working on a fabricated panel in the workshop', href: '/about/programs/advanced-robotics' },
+      { title: 'CAMRAS Accelerator Program', text: 'A ₹78.4 Cr MHI-funded accelerator that has taken six teams from prototype-stage research to funded, market-facing startups.', image: '/assets/site/fabrication.webp', imageAlt: 'Engineers working on a fabricated panel in the workshop', href: '/about/programs/artlabs#advanced-robotics' },
     ],
     partnersNote: 'Partners in discussion: Bosch, Aequs, 7th Gen Ventures and KLE Tech.',
     sources: ['https://www.artpark.in/industry5', 'https://www.artpark.in/industry-50'],
@@ -152,7 +152,7 @@ const facilities = [
   { slug: 'artgarage', name: 'ARTGarage', text: '75,000 sq ft of advanced manufacturing equipment, clean rooms, communications infrastructure, GPU compute and indoor-outdoor test arenas at Jalahalli, 20 minutes from IISc.', image: '/assets/site/artgarage-hall.webp', alt: 'The main hall inside ARTGarage', href: '/about/facilities/artgarage' },
   { slug: 'robotic-test', name: 'Networked Robotic Test Facility', text: 'Indoor and outdoor arenas for ground robots, drones and underwater systems: multi-robot coordination, obstacle courses and sensor calibration.', image: '/assets/site/drone-lab.webp', alt: 'A drone flying inside the robotics lab' },
   { slug: 'fabrication', name: 'Advanced Manufacturing & Fabrication', text: 'CNC machining, FDM, SLA and SLS 3D printing, metal fabrication, PCB assembly and clean rooms, from CAD to working prototype in days.', image: '/assets/site/fabrication.webp', alt: 'Engineers working on a fabricated panel' },
-  { slug: '5g-lab', name: 'Bharat 5G Lab & CoE-WWT', text: 'A live 5G testbed with hybrid 5G-Wi-Fi, Li-Fi and millimetre-wave systems, used to validate 5G-enabled autonomous systems and IoT.', image: '/assets/site/5g-lab.webp', alt: 'The 5G lab at ARTGarage', href: '/about/programs/wired-wireless' },
+  { slug: '5g-lab', name: 'Bharat 5G Lab & CoE-WWT', text: 'A live 5G testbed with hybrid 5G-Wi-Fi, Li-Fi and millimetre-wave systems, used to validate 5G-enabled autonomous systems and IoT.', image: '/assets/site/5g-lab.webp', alt: 'The 5G lab at ARTGarage', href: '/about/programs/artlabs#wired-wireless' },
   { slug: 'gpu', name: 'GPU Compute Cluster', text: 'On-site high-performance compute for AI training, simulation and digital twins, for ARTPARK startups, fellows and research teams.', image: '/assets/site/workstations.webp', alt: 'Engineering workstations at ARTGarage' },
   { slug: 'brainz', name: 'BRAINz campus', text: 'A 9-acre Bengaluru Robotics and AI Innovation Zone being built with the Government of Karnataka, for AI, robotics, space, aerospace and defence, manufacturing and medtech.', image: '/assets/site/brainz-render.webp', alt: 'BRAINz campus vision render', href: '/about/facilities/brainz', render: true },
 ];

@@ -67,7 +67,7 @@
     },
     {
       "source": "/certifications",
-      "destination": "/about/certifications",
+      "destination": "/about/introduction#certifications",
       "permanent": true
     },
     {
@@ -97,107 +97,107 @@
     },
     {
       "source": "/advanced-robotics/:path*",
-      "destination": "/about/programs/advanced-robotics",
+      "destination": "/about/programs/artlabs#advanced-robotics",
       "permanent": true
     },
     {
       "source": "/advanced-robotics",
-      "destination": "/about/programs/advanced-robotics",
+      "destination": "/about/programs/artlabs#advanced-robotics",
       "permanent": true
     },
     {
       "source": "/industry5",
-      "destination": "/about/programs/industry-5",
+      "destination": "/about/programs/artlabs#industry-5",
       "permanent": true
     },
     {
       "source": "/industry-50",
-      "destination": "/about/programs/industry-5",
+      "destination": "/about/programs/artlabs#industry-5",
       "permanent": true
     },
     {
       "source": "/health",
-      "destination": "/about/programs/health",
+      "destination": "/about/programs/social-impact#health",
       "permanent": true
     },
     {
       "source": "/ai-and-health",
-      "destination": "/about/programs/health",
+      "destination": "/about/programs/social-impact#health",
       "permanent": true
     },
     {
       "source": "/health-initiatives/:path*",
-      "destination": "/about/programs/health",
+      "destination": "/about/programs/social-impact#health",
       "permanent": true
     },
     {
       "source": "/health-initiatives",
-      "destination": "/about/programs/health",
+      "destination": "/about/programs/social-impact#health",
       "permanent": true
     },
     {
       "source": "/prism-h",
-      "destination": "/about/programs/health",
+      "destination": "/about/programs/social-impact#health",
       "permanent": true
     },
     {
       "source": "/heat-stress-forecasting",
-      "destination": "/about/programs/health",
+      "destination": "/about/programs/social-impact#health",
       "permanent": true
     },
     {
       "source": "/oral-cancer-screening",
-      "destination": "/about/programs/health",
+      "destination": "/about/programs/social-impact#health",
       "permanent": true
     },
     {
       "source": "/tb-screening",
-      "destination": "/about/programs/health",
+      "destination": "/about/programs/social-impact#health",
       "permanent": true
     },
     {
       "source": "/reimagine-health/:path*",
-      "destination": "/about/programs/health",
+      "destination": "/about/programs/social-impact#health",
       "permanent": true
     },
     {
       "source": "/language",
-      "destination": "/about/programs/language",
+      "destination": "/about/programs/social-impact#language",
       "permanent": true
     },
     {
       "source": "/language/:path*",
-      "destination": "/about/programs/language",
+      "destination": "/about/programs/social-impact#language",
       "permanent": true
     },
     {
       "source": "/language-data-ai/:path*",
-      "destination": "/about/programs/language",
+      "destination": "/about/programs/social-impact#language",
       "permanent": true
     },
     {
       "source": "/language-data-ai",
-      "destination": "/about/programs/language",
+      "destination": "/about/programs/social-impact#language",
       "permanent": true
     },
     {
       "source": "/syspin",
-      "destination": "/about/programs/language",
+      "destination": "/about/programs/social-impact#language",
       "permanent": true
     },
     {
       "source": "/programs/coe-wwt1",
-      "destination": "/about/programs/wired-wireless",
+      "destination": "/about/programs/artlabs#wired-wireless",
       "permanent": true
     },
     {
       "source": "/5g-test-lab-wwt-1",
-      "destination": "/about/programs/wired-wireless",
+      "destination": "/about/programs/artlabs#wired-wireless",
       "permanent": true
     },
     {
       "source": "/skilling",
-      "destination": "/about/programs/academy",
+      "destination": "/about/programs/artlabs#academy",
       "permanent": true
     },
     {
@@ -351,7 +351,47 @@
       "permanent": false
     },
     {
-      "source": "/stories/acceleration-robotics",
+      "source": "/about/certifications",
+      "destination": "/about/introduction#certifications",
+      "permanent": true
+    },
+    {
+      "source": "/about/programs/advanced-robotics",
+      "destination": "/about/programs/artlabs#advanced-robotics",
+      "permanent": true
+    },
+    {
+      "source": "/about/programs/industry-5",
+      "destination": "/about/programs/artlabs#industry-5",
+      "permanent": true
+    },
+    {
+      "source": "/about/programs/wired-wireless",
+      "destination": "/about/programs/artlabs#wired-wireless",
+      "permanent": true
+    },
+    {
+      "source": "/about/programs/academy",
+      "destination": "/about/programs/artlabs#academy",
+      "permanent": true
+    },
+    {
+      "source": "/about/programs/health",
+      "destination": "/about/programs/social-impact#health",
+      "permanent": true
+    },
+    {
+      "source": "/about/programs/language",
+      "destination": "/about/programs/social-impact#language",
+      "permanent": true
+    },
+    {
+      "source": "/about",
+      "destination": "/about/introduction",
+      "permanent": false
+    },
+    {
+      "source": "/:path(about/approach|about/programs.*|tenders.*|careers.*|apply.*|projects.*|publications.*|stories/acceleration-robotics)",
       "has": [
         {
           "type": "host",
@@ -362,18 +402,7 @@
       "permanent": false
     },
     {
-      "source": "/:path((?!$|contact|partnerships|portfolio|stories|privacy-policy|terms-of-use|work-in-progress|assets|css|js|_ds|docs|favicon.ico|api|admin).*)",
-      "has": [
-        {
-          "type": "host",
-          "value": "artpark.in"
-        }
-      ],
-      "destination": "/work-in-progress",
-      "permanent": false
-    },
-    {
-      "source": "/stories/acceleration-robotics",
+      "source": "/:path(about/approach|about/programs.*|tenders.*|careers.*|apply.*|projects.*|publications.*|stories/acceleration-robotics)",
       "has": [
         {
           "type": "host",
@@ -384,11 +413,11 @@
       "permanent": false
     },
     {
-      "source": "/:path((?!$|contact|partnerships|portfolio|stories|privacy-policy|terms-of-use|work-in-progress|assets|css|js|_ds|docs|favicon.ico|api|admin).*)",
+      "source": "/:path(about/approach|about/programs.*|tenders.*|careers.*|apply.*|projects.*|publications.*|stories/acceleration-robotics)",
       "has": [
         {
           "type": "host",
-          "value": "www.artpark.in"
+          "value": "artparkin.vercel.app"
         }
       ],
       "destination": "/work-in-progress",

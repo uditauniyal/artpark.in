@@ -59,10 +59,10 @@ test('contact page: address text a little smaller', () => {
 test('partnerships: DST and Karnataka in the prominent spots, emblems larger', () => {
   const stage = page('partnerships').match(/<div class="float-stage"[\s\S]*?<\/div><\/div>/)[0];
   const chips = [...stage.matchAll(/<img src="([^"]+)" alt=""( style="max-height:(\d+)px")?/g)].map((m) => [m[1].split('/').pop().replace('.webp', ''), +m[3] || 0]);
-  assert.deepEqual(chips.map((c) => c[0]), ['google', 'bosch', 'indian-institute-of-science', 'government-of-karnataka', 'nvidia', 'department-of-science-technology', 'ministry-of-heavy-industries', 'startup-karnataka']);
-  for (const [name, h] of chips) if (/science-technology|government-of-karnataka|indian-institute/.test(name)) assert.ok(h >= 52, name);
+  assert.deepEqual(chips.map((c) => c[0]), ['google', 'bosch', 'indian-institute-of-science', 'government-of-karnataka', 'nvidia', 'sponsor-dst-dark.png', 'ministry-of-heavy-industries', 'startup-karnataka']); // dark DST logo, manager 2026-11-19
+  for (const [name, h] of chips) if (/sponsor-dst|government-of-karnataka|indian-institute/.test(name)) assert.ok(h >= 52, name);
   const hl = [...stage.matchAll(/<div class="fl fl-chip is-hl"[^>]*><span><img src="([^"]+)"/g)].map((m) => m[1].split('/').pop().replace('.webp', ''));
-  assert.deepEqual(hl.sort(), ['department-of-science-technology', 'government-of-karnataka']);
+  assert.deepEqual(hl.sort(), ['government-of-karnataka', 'sponsor-dst-dark.png']);
 });
 
 test('contact page: choosing a role changes the copy (browser)', { skip: !process.env.ARTPARK_PLAYWRIGHT && 'ARTPARK_PLAYWRIGHT not set' }, async () => {
@@ -107,13 +107,13 @@ test('home matches the design: historical stories, painted art, no stats or foun
   assert.match(html, /These are historical case studies\. ARTPARK was not involved in any of them\./);
   assert.match(html, /Hover over a picture or a label to see what each kind of work means\./);
   assert.match(html, /Edison's three-wire distribution scheme sharply reduced the copper needed/);
-  assert.deepEqual([...html.matchAll(/data-go="\d"[^>]*>([^<]+)<span class="tab-progress[ "]/g)].map((m) => m[1]), ['01 · Light bulb', '02 · Strand', '03 · GPS']);
+  assert.deepEqual([...html.matchAll(/data-go="\d"[^>]*>([^<]+)<span class="tab-progress[ "]/g)].map((m) => m[1]), ['Light bulb', 'Strand', 'GPS']); // numbering removed, manager 2026-11-19
   const art = [...new Set([...html.matchAll(/\/assets\/art\/([\w-]+\.jpg)/g)].map((m) => m[1]))];
   assert.ok(art.length >= 9, 'painted art: ' + art.length);
   for (const f of art) assert.ok(fs.existsSync(path.join(ROOT, 'public', 'assets', 'art', f)), f);
   // Manager (2026-11-05): as in the design, the series links open the three long stories.
   assert.deepEqual([...html.matchAll(/<a class="btn btn-primary" href="([^"]+)"[^>]*>Read the story/g)].map((m) => m[1]), ['/stories/light-bulb', '/stories/strand', '/stories/gps']);
-  assert.deepEqual([...html.matchAll(/<a href="([^"]+)"[^>]*>From Story 0\d →/g)].map((m) => m[1]), ['/stories/light-bulb', '/stories/strand', '/stories/gps']);
+  assert.deepEqual([...html.matchAll(/<a href="([^"]+)"[^>]*>From the [^<]+ story →/g)].map((m) => m[1]), ['/stories/light-bulb', '/stories/strand', '/stories/gps']);
   for (const slug of ['light-bulb', 'strand', 'gps']) assert.ok(fs.existsSync(path.join(ROOT, 'dist', 'stories', slug, 'index.html')), slug);
 });
 
@@ -133,12 +133,12 @@ test('manager changes of 2026-11-12', () => {
     assert.ok(!html.includes('Other Programs') && !html.includes('Other programs'), route);
   }
   // Manager (2026-11-16): no tab rows under About or Outreach titles (user agreed).
-  for (const route of ['about/team', 'about/approach', 'about/facilities', 'about/certifications', 'about/programs', 'events', 'news', 'tenders']) assert.ok(!page(route).includes('class="sub-tabs"'), route);
+  for (const route of ['about/team', 'about/approach', 'about/facilities', 'about/introduction', 'about/programs', 'events', 'news', 'tenders']) assert.ok(!page(route).includes('class="sub-tabs"'), route);
   assert.match(page('about/focus-areas'), /Domains we work in[\s\S]*Horizontal capabilities we back/);
   assert.ok(!page('about/facilities').includes('BRAINz campus</div>'));
   const programs = page('about/programs');
   assert.match(programs, /<h1[^>]*>Our <span class="tt">programs\.<\/span><\/h1>/);
-  assert.deepEqual([...programs.matchAll(/<a id="([\w-]+)" class="prog-row"/g)].map((m) => m[1]), ['artlabs', 'tir', 'vip', 'rdi', 'advanced-robotics', 'industry-5', 'health', 'language', 'wired-wireless', 'academy']);
+  assert.deepEqual([...programs.matchAll(/<a id="([\w-]+)" class="prog-row"/g)].map((m) => m[1]), ['artlabs', 'advanced-robotics', 'industry-5', 'wired-wireless', 'academy', 'tir', 'vip', 'rdi', 'social-impact', 'health', 'language']); // manager 2026-11-19
   assert.match(programs, /RDI Scheme · Focused Research Organisation/);
   assert.match(page('about/programs/tir'), /<a class="btn btn-primary" href="\/apply">Apply for TIR/);
   assert.match(page('about/programs/vip'), /<a class="btn btn-primary" href="\/apply">Apply for VIP/);
@@ -170,14 +170,17 @@ test('changes of 2026-11-14', () => {
   assert.match(programs, /<a id="tir" class="prog-row" href="\/about\/programs\/tir"[^>]*><div class="prog-img"><img src="\/assets\/art\/prog-tir\.jpg"/);
   assert.match(programs, /<a id="vip" class="prog-row" href="\/about\/programs\/vip"[^>]*><div class="prog-img"><img src="\/assets\/art\/prog-vip\.jpg"/);
   const team = page('about/team');
-  // User (2026-11-16): back to the original Team page; Nirav will roll out a chosen version later.
-  const leaders = [...team.matchAll(/<div class="person-card"[\s\S]*?font-size:17px">([^<]+)<\/div><div[^>]*>([^<]+)<\/div>/g)].map((m) => m[1] + ' | ' + m[2]);
-  assert.deepEqual(leaders.slice(0, 3), ['Prof. Bharadwaj Amrutur | Executive Director and Chief Technologist', 'Raghu Dharmaraju | Chief Executive Officer', 'Nirav Dedhia | Investments &amp; Innovation Partnerships Lead']);
-  assert.deepEqual([...team.matchAll(/data-screen-label="(Leadership|Governing board|Board of directors|Research advisory board|Executive advisors)"/g)].map((m) => m[1]), ['Leadership', 'Governing board', 'Board of directors', 'Research advisory board', 'Executive advisors']);
+  // Manager (2026-11-19 design): his Team page, board first, then the leadership team, then the hub governing board.
+  const text = team.replace(/<[^>]+>/g, '\n').split('\n').map((t) => t.trim()).filter(Boolean);
+  const at = (t) => text.indexOf(t);
+  assert.ok(at('Board of directors.') > 0 && at('Board of directors.') < at('Innovation and programs team.') && at('Innovation and programs team.') < at('Hub governing board.'));
+  for (const who of ['Manjunath Krishnaswamy', 'Sailaja Gudla', 'Raghu Dharmaraju', 'Nirav Dedhia']) assert.ok(at(who) > 0, who);
+  assert.ok(!/Research advisory board|Executive advisors/.test(team));
+  assert.ok(fs.existsSync(path.join(ROOT, 'public', 'assets', 'team-page', 'portraits-wc.webp')));
   assert.ok(!/Sheela/i.test(team) && !team.includes('tv2') && !team.includes('tv-switch'));
   for (const v of ['v1', 'v2', 'v3', 'versions']) assert.ok(!fs.existsSync(path.join(ROOT, 'dist', 'about', 'team', v)), v);
   assert.match(team, /href="https:\/\/www\.linkedin\.com\/in\/niravdedhia\/"/);
-  for (const route of ['about/facilities', 'about/certifications', 'about/programs']) assert.match(page(route), /class="float-stage"/, route);
+  for (const route of ['about/facilities', 'about/programs']) assert.match(page(route), /class="float-stage"/, route);
   assert.ok(!team.includes('class="float-stage"'), 'team intro has no floating windows');
 });
 
@@ -211,7 +214,7 @@ test('manager changes of 2026-11-16', () => {
   assert.match(hdr(home), /site-cta" href="#building"[^>]*>What we build<\/a>[\s\S]*site-cta" href="#collaborate"[^>]*>Work with us<\/a>/);
   for (const r of ['about/team', 'events', 'stories/light-bulb']) assert.ok(!hdr(page(r)).includes('site-cta'), r);
   assert.match(hdr(page('about/team')), /href="\/about\/focus-areas"[\s\S]*?>Focus Areas<\/span>[\s\S]*?Domains and capabilities we back/);
-  assert.match(hdr(home), /TIR, VIP and our other initiatives/);
+  assert.match(hdr(home), /data-menu="programs"[\s\S]*?>ArtLabs<[\s\S]*?>Technology Innovator in Residence<[\s\S]*?>Venture Incubation Programme<[\s\S]*?>RDI Scheme<[\s\S]*?>Social Impact<[\s\S]*?All programs/);
   assert.match(page('about/approach'), /We measure progress in <b[^>]*>xRL<\/b>/);
   assert.match(page('about/focus-areas'), /<h1[^>]*>Where we <span class="hl">work/);
   assert.match(page('work-in-progress'), /<body data-ready-by="2026-11-20T18:00">/);
@@ -227,4 +230,32 @@ test('manager changes of 2026-11-16', () => {
   const v = require(path.join(ROOT, 'vercel.json')).redirects;
   assert.ok(!v.some((r) => r.source === '/publications/:path*'), 'our publication pages are not redirected away');
   assert.ok(v.some((r) => r.source === '/publications/llm-landscape-for-lmics' && r.destination === '/publications/llm-landscape-lmics'));
+});
+
+// Manager (2026-11-19): pages not finished show the countdown on artpark.in and artparkin.vercel.app alike; pages he
+// merged redirect to their new homes.
+test('manager changes of 2026-11-19: countdown on both public sites, merged pages redirect', () => {
+  const v = require(path.join(ROOT, 'vercel.json')).redirects;
+  const hosts = v.filter((r) => r.has).map((r) => r.has[0].value).sort();
+  assert.deepEqual(hosts, ['artpark.in', 'artparkin.vercel.app', 'www.artpark.in']);
+  const rule = v.find((r) => r.has);
+  assert.ok(v.filter((r) => r.has).every((r) => r.source === rule.source && r.destination === '/work-in-progress' && !r.permanent));
+  const re = new RegExp('^/' + rule.source.match(/^\/:path\((.*)\)$/)[1] + '$');
+  for (const p of ['/about/approach', '/about/programs', '/about/programs/tir', '/about/programs/social-impact', '/tenders', '/careers', '/careers/embedded-engineer-heed', '/apply', '/projects/prism-h', '/publications/llm-landscape-lmics', '/stories/acceleration-robotics']) assert.ok(re.test(p), 'countdown: ' + p);
+  for (const p of ['/', '/about/introduction', '/about/team', '/about/focus-areas', '/about/facilities', '/about/facilities/artgarage', '/portfolio', '/stories/flo-mobility', '/stories/a-thon', '/partnerships', '/contact', '/events', '/news', '/privacy-policy', '/work-in-progress']) assert.ok(!re.test(p), 'live: ' + p);
+  const to = (s) => (v.find((r) => r.source === s && !r.has) || {}).destination;
+  assert.equal(to('/about/certifications'), '/about/introduction#certifications');
+  assert.equal(to('/about/programs/health'), '/about/programs/social-impact#health');
+  assert.equal(to('/about/programs/academy'), '/about/programs/artlabs#academy');
+  // Old-URL and merged-page redirects come before the countdown rules.
+  assert.ok(v.findIndex((r) => r.has) > v.findIndex((r) => r.source === '/about/programs/language'));
+  for (const r of ['about/introduction', 'about/programs/social-impact']) assert.ok(fs.existsSync(path.join(ROOT, 'dist', r, 'index.html')), r);
+  for (const r of ['about/certifications', 'about/programs/health', 'about/programs/advanced-robotics']) assert.ok(!fs.existsSync(path.join(ROOT, 'dist', r, 'index.html')), r);
+  const contact = page('contact');
+  assert.match(contact, /SUPPORTED BY<\/span>\s*<img src="\/assets\/brand\/sponsor-dst\.png"/);
+  // Partnerships forms: a chip group's label is in its wrapper; looking inside the group threw and no form sent.
+  const js = fs.readFileSync(path.join(ROOT, 'public', 'js', 'site.js'), 'utf8');
+  assert.match(js, /el\.hasAttribute\('data-chips'\) \? el\.parentElement : el\.closest\('div'\)/);
+  assert.ok((page('partnerships').match(/data-chips="/g) || []).length >= 5, 'the forms still have chip groups');
+  assert.ok(!contact.includes('/about/certifications'));
 });

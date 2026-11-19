@@ -1,0 +1,9 @@
+{
+  "route": "/about/team",
+  "title": "Our Team — ARTPARK",
+  "description": "",
+  "style": ".tp{background-image:url(/assets/team-page/portraits-wc.webp);background-size:600% 500%;background-repeat:no-repeat}\n.tp-0{background-position:0.0000% 0.0000%}\n.tp-1{background-position:20.0000% 0.0000%}\n.tp-2{background-position:40.0000% 0.0000%}\n.tp-3{background-position:60.0000% 0.0000%}\n.tp-4{background-position:80.0000% 0.0000%}\n.tp-5{background-position:100.0000% 0.0000%}\n.tp-6{background-position:0.0000% 25.0000%}\n.tp-7{background-position:20.0000% 25.0000%}\n.tp-8{background-position:40.0000% 25.0000%}\n.tp-9{background-position:60.0000% 25.0000%}\n.tp-10{background-position:80.0000% 25.0000%}\n.tp-11{background-position:100.0000% 25.0000%}\n.tp-12{background-position:0.0000% 50.0000%}\n.tp-13{background-position:20.0000% 50.0000%}\n.tp-14{background-position:40.0000% 50.0000%}\n.tp-15{background-position:60.0000% 50.0000%}\n.tp-16{background-position:80.0000% 50.0000%}\n.tp-17{background-position:100.0000% 50.0000%}\n.tp-18{background-position:0.0000% 75.0000%}\n.tp-19{background-position:20.0000% 75.0000%}\n.tp-20{background-position:40.0000% 75.0000%}\n.tp-21{background-position:60.0000% 75.0000%}\n.tp-22{background-position:80.0000% 75.0000%}\n.tp-23{background-position:100.0000% 75.0000%}\n.tp-24{background-position:0.0000% 100.0000%}\n.tp-25{background-position:20.0000% 100.0000%}\n.tp-26{background-position:40.0000% 100.0000%}\n.tp-27{background-position:60.0000% 100.0000%}\n.tp{filter:grayscale(1)}\n.li-wc{transition:transform 150ms ease}\n.li-wc:hover,.li-wc:focus-visible{transform:scale(1.12) rotate(-4deg)}",
+  "bodyAttrs": "",
+  "tail": "",
+  "source": "Manager, design canvas static export (artpark-website-export (1).zip, 2026-11-19)"
+}

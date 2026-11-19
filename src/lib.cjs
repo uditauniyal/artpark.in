@@ -13,7 +13,8 @@ const R = {
   approach: '/about/approach',             // About-Approach.dc.html (rebuilt by the manager 2026-11-16)
   focusAreas: '/about/focus-areas',        // new, manager 2026-11-16
   facilities: '/about/facilities',         // About-Facilities-Offerings.dc.html
-  certifications: '/about/certifications', // About-Certifications.dc.html
+  introduction: '/about/introduction',     // new, manager 2026-11-19 (absorbs Certifications)
+  certifications: '/about/introduction#certifications', // was /about/certifications until 2026-11-19
   programs: '/about/programs',             // About-Other-Programs.dc.html
   portfolio: '/portfolio',
   partnerships: '/partnerships',
@@ -29,18 +30,25 @@ const R = {
   applySignIn: '/apply',
 };
 
+// Manager (2026-11-19 design): About is Introduction, Approach, Focus Areas, Our Team, Facilities; Programs is its own
+// menu; Outreach is Events and News (Tenders stays in the top bar and the footer).
 const ABOUT_ITEMS = [
-  ['team', 'Our Team', 'Leadership and board', R.team],
+  ['introduction', 'Introduction', 'Overview of ARTPARK', R.introduction],
   ['approach', 'Approach', 'How we choose and run the work', R.approach],
   ['focus', 'Focus Areas', 'Domains and capabilities we back', R.focusAreas],
+  ['team', 'Our Team', 'People behind the ARTPARK engine', R.team],
   ['facilities', 'Facilities & Offerings', 'Labs, infrastructure and programs', R.facilities],
-  ['certifications', 'Certifications', 'Registrations and accreditations', R.certifications],
-  ['programs', 'Programs', 'TIR, VIP and our other initiatives', R.programs],
+];
+const PROGRAM_ITEMS = [
+  ['artlabs', 'ArtLabs', 'Early-stage research addressing real-world needs', R.programs + '/artlabs'],
+  ['tir', 'Technology Innovator in Residence', 'Innovators working on unique technology or market needs', R.programs + '/tir'],
+  ['vip', 'Venture Incubation Programme', 'Investments for TRL 4+ startups', R.programs + '/vip'],
+  ['rdi', 'RDI Scheme', 'Long-term patient capital for building', R.programs + '/rdi'],
+  ['social-impact', 'Social Impact', 'AI used for societal impact and growth', R.programs + '/social-impact'],
 ];
 const OUTREACH_ITEMS = [
   ['events', 'Events', 'Summits, talks and challenges', R.events],
   ['news', 'News', 'ARTPARK in the press', R.news],
-  ['tenders', 'Tenders', 'Procurement notices and vendor registration', R.tenders],
 ];
 
 // Correction: official IISc + ARTPARK co-branding lockup (brand guidelines p.4),
@@ -62,6 +70,24 @@ ${items.map(([k, l, d, href]) => `              <a role="menuitem" href="${href}
                 <span style="display:block;font-family:var(--font-display);font-weight:700;font-size:14px;color:${ink(sub === k)}">${esc(l)}</span>
                 <span style="display:block;font-size:12.5px;line-height:1.4;color:var(--ink-dim);margin-top:2px">${esc(d)}</span>
               </a>`).join('\n')}
+            </div>
+          </div>
+        </div>`;
+  // Manager (2026-11-19): the Programs menu, a list with an "All programs" row under it.
+  const programsMenu = (isActive) => `
+        <div class="nav-menu" data-menu="programs" style="position:relative;display:flex;align-items:center">
+          <button type="button" aria-expanded="false" aria-haspopup="true" aria-controls="menu-programs" class="nav-link" data-ink="${ink(isActive)}" style="background:none;border:0;padding:0;margin:0;font:inherit;font-family:var(--font-display);font-weight:700;font-size:14px;letter-spacing:0.04em;line-height:1.2;cursor:pointer;color:${ink(isActive)};display:flex;align-items:center;gap:6px">Programs <span data-marker style="color:var(--artblue);font-size:16px;line-height:1">+</span></button>
+          <div id="menu-programs" class="nav-dropdown" hidden style="position:absolute;top:100%;left:-16px;padding-top:14px;z-index:70">
+            <div role="menu" class="prog-menu" style="background:var(--paper);border:1px solid var(--line-strong);border-radius:2px;width:min(340px,calc(100vw - 32px));padding:6px 6px 6px">
+              <div class="prog-menu-cols" style="display:grid;grid-template-columns:1fr;gap:4px 8px">
+              <div style="display:flex;flex-direction:column;gap:2px">
+${PROGRAM_ITEMS.map(([k, l, d, href]) => `                <a role="menuitem" href="${href}" style="display:block;padding:10px 14px;border-radius:2px;text-decoration:none;background:${isActive && sub === k ? 'var(--paper-soft)' : 'var(--paper)'};transition:background 150ms ease">
+                  <span style="display:block;font-family:var(--font-display);font-weight:700;font-size:14px;color:${ink(isActive && sub === k)}">${esc(l)}</span>
+                  <span style="display:block;font-size:12.5px;line-height:1.4;color:var(--ink-dim);margin-top:2px">${esc(d)}</span>
+                </a>`).join('\n')}
+              </div>
+              </div>
+              <a role="menuitem" href="${R.programs}" style="display:flex;align-items:center;justify-content:space-between;margin-top:6px;padding:10px 14px;border-top:1px solid var(--line);text-decoration:none;font-family:var(--font-display);font-weight:700;font-size:13.5px;color:${ink(isActive && sub === 'programs')};background:var(--paper)">All programs <span style="color:var(--artblue)">→</span></a>
             </div>
           </div>
         </div>`;
@@ -88,6 +114,7 @@ ${items.map(([k, l, d, href]) => `              <a role="menuitem" href="${href}
       <nav id="site-nav" class="site-nav" style="flex:1 1 auto;display:flex;flex-wrap:nowrap;gap:${home ? 'clamp(10px,1.3vw,24px)' : 'clamp(12px,1.6vw,30px)'};justify-content:center;align-items:center;white-space:nowrap">
         <a class="nav-link" href="${R.home}" style="line-height:1.2;color:${ink(active === 'home')}">Home</a>
 ${menu('about', 'About', ABOUT_ITEMS, active === 'about', 280)}
+${programsMenu(active === 'programs')}
         <a class="nav-link" href="${R.portfolio}" style="line-height:1.2;color:${ink(active === 'portfolio')}">Portfolio</a>
         <a class="nav-link" href="${R.partnerships}" style="line-height:1.2;color:${ink(active === 'partnerships')}">Partnerships</a>
 ${menu('outreach', 'Outreach', OUTREACH_ITEMS, active === 'outreach', 260)}
@@ -110,26 +137,37 @@ const SOCIAL = [
   ['Instagram', 'https://www.instagram.com/artpark_india/', 'M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z'],
 ];
 
-// Manager (2026-11-16): on Home the copyright line sits closer to the columns (20px instead of 40px).
-function footer(home = false) {
-  const col = (title, links) => `      <div style="display:flex;flex-direction:column;gap:8px">
-        <span style="font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:0.14em;color:rgba(255,255,255,0.6)">${title}</span>
-${links.map(([l, href]) => `        <a href="${href}" style="color:#fff;text-decoration:none;font-size:14px">${esc(l)}</a>`).join('\n')}
+// Manager (2026-11-19 design): a compact footer, brand and three link columns on one row; About lists the About menu;
+// Explore holds Programs and the rest in two columns; the bottom bar carries the "Supported by" logos. Same on Home.
+const SPONSORS = [
+  ['/assets/brand/sponsor-dst.png', 'Department of Science and Technology, Government of India', 40],
+  ['/assets/brand/sponsor-mhi.png', 'Ministry of Heavy Industries, Government of India', 40],
+  ['/assets/brand/sponsor-karnataka.png', 'Government of Karnataka', 44],
+];
+function footer() {
+  const a = ([l, href]) => `<a href="${href}" style="color:#fff;text-decoration:none;font-size:13.5px;line-height:1.4">${esc(l)}</a>`;
+  const col = (title, inner) => `      <div style="display:flex;flex-direction:column;gap:6px">
+        <span style="font-family:var(--font-display);font-weight:700;font-size:11.5px;letter-spacing:0.14em;color:rgba(255,255,255,0.6);margin-bottom:2px">${title}</span>
+        ${inner}
       </div>`;
-  return `<footer data-screen-label="Footer" style="background:var(--artblack);color:#fff;padding:64px 0 32px;font-family:var(--font-body)">
+  return `<footer data-screen-label="Footer" style="background:var(--artblack);color:#fff;padding:40px 0 22px;font-family:var(--font-body)">
   <div style="max-width:1180px;margin:0 auto;padding:0 24px">
-    <div class="footer-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:32px">
-      <div style="display:flex;flex-direction:column;gap:16px">
+    <div class="footer-grid" style="display:grid;grid-template-columns:minmax(240px,1.4fr) minmax(130px,1fr) minmax(150px,1fr) minmax(220px,1.4fr);gap:28px 32px">
+      <div style="display:flex;flex-direction:column;gap:12px">
         <a href="${R.home}" style="align-self:flex-start;display:block"><img src="${LOCKUP}" alt="${LOCKUP_ALT}" width="218" height="44" class="footer-lockup" style="height:44px;width:auto;display:block"></a>
-        <p style="font-size:14px;line-height:1.6;color:rgba(255,255,255,0.7);max-width:320px">ARTPARK (AI &amp; Robotics Technology Park) is a not-for-profit Section-8 company at the Indian Institute of Science, Bangalore, committed to building and deploying AI &amp; Robotics technologies for Society, Economy, and Sovereignty.</p>
+        <p style="font-size:13px;line-height:1.55;color:rgba(255,255,255,0.7);max-width:320px">ARTPARK (AI &amp; Robotics Technology Park) is a not-for-profit Section-8 company at the Indian Institute of Science, Bangalore, committed to building and deploying AI &amp; Robotics technologies for Society, Economy, and Sovereignty.</p>
         <div style="display:flex;flex-wrap:wrap;gap:18px;align-items:center">${SOCIAL.map(([l, h, d]) => `<a href="${h}" target="_blank" rel="noopener" aria-label="ARTPARK on ${l}" title="${l}" style="display:flex;align-items:center;justify-content:center;color:#fff;opacity:0.95;transition:opacity 150ms ease"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="${d}"/></svg></a>`).join('')}</div>
       </div>
-${col('HOME', [['Stories', R.home + '#stories'], ['What we believe', R.home + '#believe'], ["What we're building", R.home + '#building'], ['Work with us', R.home + '#collaborate']])}
-${col('ABOUT', ABOUT_ITEMS.filter(([k]) => k !== 'focus').map(([, l, , h]) => [l, h]))}
-${col('EXPLORE', [['Portfolio', R.portfolio], ['Partnerships', R.partnerships], ['Events', R.events], ['News', R.news], ['Tenders', R.tenders], ['Careers', R.careers], ['Contact', R.contact]])}
+${col('HOME', [['Stories', R.home + '#stories'], ['What we believe', R.home + '#believe'], ['What we’re building', R.home + '#building'], ['Work with us', R.home + '#collaborate']].map(a).join(''))}
+${col('ABOUT', ABOUT_ITEMS.map(([, l, , h]) => a([l, h])).join(''))}
+${col('EXPLORE', `<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 20px">${[['Programs', R.programs], ['Portfolio', R.portfolio], ['Partnerships', R.partnerships], ['Events', R.events], ['News', R.news], ['Tenders', R.tenders], ['Careers', R.careers], ['Contact', R.contact]].map(a).join('')}</div>`)}
     </div>
-    <div style="margin-top:${home ? 20 : 40}px;border-top:1px solid rgba(255,255,255,0.15);padding-top:20px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:12px;color:rgba(255,255,255,0.5)">
-      <span>© 2026 ARTPARK, IISc Bengaluru · <a href="/privacy-policy" class="footer-legal">Privacy policy</a><a href="/terms-of-use" class="footer-legal">Terms of use</a></span>
+    <div style="margin-top:28px;border-top:1px solid rgba(255,255,255,0.15);padding-top:18px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 32px">
+      <div class="footer-sponsors" style="display:flex;flex-wrap:wrap;align-items:center;gap:12px 28px">
+        <span style="font-family:var(--font-display);font-weight:700;font-size:11.5px;letter-spacing:0.14em;color:rgba(255,255,255,0.6)">SUPPORTED BY</span>
+${SPONSORS.map(([src, alt, h]) => `        <img src="${src}" alt="${esc(alt)}" style="height:${h}px;width:auto;display:block">`).join('\n')}
+      </div>
+      <span style="font-size:12px;color:rgba(255,255,255,0.5)">© 2026 ARTPARK, IISc Bengaluru · <a href="/privacy-policy" class="footer-legal">Privacy policy</a><a href="/terms-of-use" class="footer-legal">Terms of use</a></span>
     </div>
   </div>
 </footer>`;
