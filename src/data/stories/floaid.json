@@ -4,23 +4,23 @@
   "tag": "FOUNDER STORY",
   "kicker": "Medical devices",
   "title": "Building the heart pump India imports.",
-  "standfirst": "Floaid Medtech is developing a catheter heart pump and a heart-lung machine at IIT Madras Research Park, Chennai: cardiac life support that Indian hospitals can afford, designed, built and tested in India.",
+  "standfirst": "FloAID Medtech is developing a catheter heart pump and a heart-lung machine at IIT Madras Research Park, Chennai: cardiac life support that Indian hospitals can afford, designed, built and tested in India.",
   "meta": [
     "ARTPARK Stories",
     "About 5 min read",
-    "Floaid Medtech, Chennai"
+    "FloAID Medtech, Chennai"
   ],
   "website": "https://floaid.com/",
   "hero": {
     "image": "/assets/founders/floaid-cathpump-floex-display.webp",
-    "alt": "A Floaid display stand with the CathPump console and a monitor on a table, the FLOEX 3.0 heart-lung machine on a wheeled trolley, and two Floaid banners",
+    "alt": "A FloAID display stand with the CathPump console and a monitor on a table, the FLOEX 3.0 heart-lung machine on a wheeled trolley, and two FloAID banners",
     "pos": "50% 50%",
     "ratio": "21/9",
-    "caption": "CathPump and FLOEX 3.0 at a Floaid display. Photograph from Floaid."
+    "caption": "CathPump and FLOEX 3.0 at a FloAID display. Photograph from FloAID."
   },
   "lead": [
     "Heart support in India has long meant importing it. Mechanical circulatory support for high-risk angioplasty and cardiogenic shock is dominated by a single foreign system, which is expensive and used once.",
-    "Floaid was started to change that, by an engineer who builds and a transplant surgeon who knows exactly why the device is needed. The company was registered in 2024, works from IIT Madras Research Park in Chennai, and is part of ARTPARK’s startup portfolio."
+    "FloAID was started to change that, by an engineer who builds and a transplant surgeon who knows exactly why the device is needed. The company was registered in 2024, works from IIT Madras Research Park in Chennai, and is part of ARTPARK’s startup portfolio."
   ],
   "sections": [
     {
@@ -28,7 +28,7 @@
       "toc": "The founders",
       "blocks": [
         "Shiv Gupta is a biomedical scientist trained at IIT Madras and NTU Singapore. As CEO he leads product development, from design and fabrication to system integration.",
-        "Dr. K. R. Balakrishnan is Director of Heart and Lung Transplant at MGM Hospital, where, the company says, he performs the highest number of heart and lung transplants in Southeast Asia. Floaid’s website also credits him with the first LVAD and HVAD pump transplants in India. He leads the company’s animal and clinical trials.",
+        "Dr. K. R. Balakrishnan is Director of Heart and Lung Transplant at MGM Hospital, where, the company says, he performs the highest number of heart and lung transplants in Southeast Asia. FloAID’s website also credits him with the first LVAD and HVAD pump transplants in India. He leads the company’s animal and clinical trials.",
         {
           "people": [
             {
@@ -53,14 +53,14 @@
       "toc": "The products",
       "blocks": [
         "The CathPump is a percutaneous ventricular assist device: a miniature blood pump on a catheter, placed through an artery to support a struggling left ventricle for a few hours. Its motor stays outside the body and turns a flexible shaft that drives a microaxial pump inside the patient. The catheter is 21 French, about 7 mm across, and the pump spins at up to 33,000 revolutions per minute, moving about six litres of blood a minute on the bench.",
-        "A dual pump controller lets one console run left- and right-heart support together, which Floaid calls India’s first dual-pump PVAD. The pump is aimed at two hard situations, high-risk angioplasty and cardiogenic shock, at a target price under one-fifth of the imported alternative. It is pre-clinical, and not for clinical use.",
+        "A dual pump controller lets one console run left- and right-heart support together, which FloAID calls India’s first dual-pump PVAD. The pump is aimed at two hard situations, high-risk angioplasty and cardiogenic shock, at a target price under one-fifth of the imported alternative. It is pre-clinical, and not for clinical use.",
         {
           "figure": {
             "image": "/assets/founders/floaid-cathpump-heart-model.webp",
-            "alt": "A catheter pump inserted into a red and yellow anatomical heart model, inside a glass jar of clear liquid on a white Floaid stand",
+            "alt": "A catheter pump inserted into a red and yellow anatomical heart model, inside a glass jar of clear liquid on a white FloAID stand",
             "ratio": "4/5",
             "pos": "50% 50%",
-            "caption": "CathPump on an anatomical heart model. Photograph from Floaid."
+            "caption": "CathPump on an anatomical heart model. Photograph from FloAID."
           }
         },
         "FLOEX 3.0 is a heart-lung machine for cardiopulmonary bypass, used in open-heart surgery to take over the work of the heart and lungs. It delivers up to 11 litres a minute, with master and slave pump control. Electrical-safety and EMC testing are complete, and the manufacturing licence application is with CDSCO. Launch follows approval.",
@@ -70,12 +70,12 @@
             "alt": "The FLOEX 3.0 heart-lung machine: four pump heads with small displays on a steel trolley, a touchscreen monitor on a pole above them",
             "ratio": "9/10",
             "pos": "50% 50%",
-            "caption": "FLOEX 3.0, Floaid’s heart-lung machine. Photograph from Floaid."
+            "caption": "FLOEX 3.0, FloAID’s heart-lung machine. Photograph from FloAID."
           }
         },
         {
           "panel": {
-            "title": "What Floaid builds",
+            "title": "What FloAID builds",
             "items": [
               [
                 "CathPump",
@@ -102,7 +102,7 @@
       "h2": "From the bench to animal studies.",
       "toc": "Where it stands",
       "blocks": [
-        "A heart pump has to pass through test benches, animal studies and regulators before it reaches a patient. Floaid has built working prototypes of the pump and controller in-house, and tests them on its own mock circulation loop.",
+        "A heart pump has to pass through test benches, animal studies and regulators before it reaches a patient. FloAID has built working prototypes of the pump and controller in-house, and tests them on its own mock circulation loop.",
         {
           "panel": {
             "title": "Where it stands",
@@ -132,32 +132,32 @@
       "h2": "Recognition and backing.",
       "toc": "Recognition",
       "blocks": [
-        "In June 2025, Floaid was selected for the 71st ASAIO Annual Conference in New Orleans, as, the company says, the only start-up in Asia working on paediatric PVADs. Dr. K. R. Balakrishnan and Shiv Gupta presented “Development of a Microaxial Catheter Pump as a Short Term Pediatric Ventricular Assist Device (VAD) for Acute Heart Failure Management”.",
-        "Floaid won ELEVATE NXT 2026, Karnataka’s deeptech award, for the FLOEX 3.0 heart-lung machine. GAIL (India) Limited, the public-sector enterprise, has invested in the company.",
+        "In June 2025, FloAID was selected for the 71st ASAIO Annual Conference in New Orleans, as, the company says, the only start-up in Asia working on paediatric PVADs. Dr. K. R. Balakrishnan and Shiv Gupta presented “Development of a Microaxial Catheter Pump as a Short Term Pediatric Ventricular Assist Device (VAD) for Acute Heart Failure Management”.",
+        "FloAID won ELEVATE NXT 2026, Karnataka’s deeptech award, for the FLOEX 3.0 heart-lung machine. GAIL (India) Limited, the public-sector enterprise, has invested in the company.",
         {
           "figure": {
             "image": "/assets/founders/floaid-elevate-nxt-2026.webp",
             "alt": "Two men in suits holding an ELEVATE NXT 2026 trophy and certificate in front of a Bengaluru Tech Summit 2026 backdrop",
             "ratio": "960/456",
             "pos": "50% 50%",
-            "caption": "Members of the Floaid team with the ELEVATE NXT 2026 award. Photograph from Floaid."
+            "caption": "Members of the FloAID team with the ELEVATE NXT 2026 award. Photograph from FloAID."
           }
         },
-        "External Affairs Minister Dr. S. Jaishankar visited Floaid with the Director of IIT Madras and congratulated the team. DPIIT also selected Floaid for Biban 2025 in Riyadh, where the company took part in the signing of an MoU between DPIIT, Government of India, and Monsha’at, Government of Saudi Arabia.",
+        "External Affairs Minister Dr. S. Jaishankar visited FloAID with the Director of IIT Madras and congratulated the team. DPIIT also selected FloAID for Biban 2025 in Riyadh, where the company took part in the signing of an MoU between DPIIT, Government of India, and Monsha’at, Government of Saudi Arabia.",
         {
           "figure": {
             "image": "/assets/founders/floaid-jaishankar-visit.webp",
-            "alt": "Dr. S. Jaishankar, in a blue waistcoat, talking with a group of people beside a Floaid console and heart model, with a television camera in the foreground",
+            "alt": "Dr. S. Jaishankar, in a blue waistcoat, talking with a group of people beside a FloAID console and heart model, with a television camera in the foreground",
             "ratio": "1152/547",
             "pos": "50% 50%",
-            "caption": "Dr. S. Jaishankar, External Affairs Minister, on his visit to Floaid. Photograph from Floaid."
+            "caption": "Dr. S. Jaishankar, External Affairs Minister, on his visit to FloAID. Photograph from FloAID."
           }
         },
         {
           "dates": [
             [
               "2024",
-              "Floaid Medtech registered."
+              "FloAID Medtech registered."
             ],
             [
               "Jun 2025",
@@ -172,7 +172,7 @@
               "Wins ELEVATE NXT 2026, Karnataka’s deeptech award, for FLOEX 3.0."
             ]
           ],
-          "label": "From Floaid"
+          "label": "From FloAID"
         }
       ]
     }
