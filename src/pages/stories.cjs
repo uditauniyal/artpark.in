@@ -60,6 +60,8 @@ const THEME = {
 };
 const DEF = { panel: { bg: 'var(--artblack)', ink: 'rgba(255,255,255,0.78)', rule: 'rgba(255,255,255,0.18)' }, bg: 'var(--artblack)', kick: 'rgba(255,255,255,0.7)', h1: 'clamp(44px,7vw,88px);line-height:1.02', w: 980, lede: 'rgba(255,255,255,0.86)', meta: 'rgba(255,255,255,0.6)' };
 const SERIES = new Set(['algofet', 'qosmic', 'vaani']);
+// The founder asked to review the story first (2026-11-16, notes/pending-decisions.md).
+const AWAITING_APPROVAL = new Set(['acceleration-robotics']);
 // His story endings: "Next in the series" card (Story 01 → 02 ARTBlue, 02 → 03 violet, 03 → "After the series" black).
 // Founder stories use the same card, ARTBlue, pointing to the next founder story.
 const nextCard = (s) => {
@@ -67,7 +69,8 @@ const nextCard = (s) => {
   if (s.slug === 'algofet') return { eyebrow: 'Next in the series', href: R.stories + '/qosmic', bg: 'var(--artblue)', kicker: '02 · BUILD THE ENTERPRISE', title: by('qosmic').title, cta: 'Read Story 02' };
   if (s.slug === 'qosmic') return { eyebrow: 'Next in the series', href: R.stories + '/vaani', bg: 'var(--accent-violet)', kicker: '03 · ENABLE THE ECOSYSTEM', title: by('vaani').title, cta: 'Read Story 03' };
   if (s.slug === 'vaani') return { eyebrow: 'After the series', href: R.home + '#believe', bg: 'var(--artblack)', kicker: 'SYSTEM · ENTERPRISE · ECOSYSTEM', title: 'What the three stories add up to.', cta: 'Read what we believe' };
-  const founders = all.filter((x) => !SERIES.has(x.slug));
+  // Stories awaiting the founder's approval are hidden on the public sites (vercel.json), so no card leads to them.
+  const founders = all.filter((x) => !SERIES.has(x.slug) && (x === s || !AWAITING_APPROVAL.has(x.slug)));
   const n = founders[(founders.indexOf(s) + 1) % founders.length];
   return { eyebrow: 'Next founder story', href: R.stories + '/' + n.slug, bg: 'var(--artblue)', kicker: (n.company || n.slug).toUpperCase() + ' · ' + n.kicker.toUpperCase(), title: n.title, cta: 'Read the story' };
 };
@@ -137,3 +140,4 @@ const drafts = all.reduce((n, st) => n + JSON.stringify(st).split('"draft":true'
 if (drafts && !process.env.ARTPARK_FINAL) console.warn(`Note: ${drafts} draft founder quotes are shown (see notes/draft-quotes.md). Build with ARTPARK_FINAL=1 to drop them.`);
 module.exports = all.map((s) => storyPage(s));
 module.exports.all = all;
+module.exports.AWAITING_APPROVAL = AWAITING_APPROVAL;

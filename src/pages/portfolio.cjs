@@ -5,9 +5,10 @@
 // Each card opens the founder story, or the company's site when there is no story yet.
 const { esc, page, R, floatStage } = require('../lib.cjs');
 const C = require('../data/content.cjs');
-const stories = require('./stories.cjs').all;
+const { all: stories, AWAITING_APPROVAL } = require('./stories.cjs');
 
-const hasStory = new Set(stories.map((s) => s.slug));
+// A story awaiting the founder's approval is hidden on the public sites, so its card opens the company's website.
+const hasStory = new Set(stories.map((s) => s.slug).filter((slug) => !AWAITING_APPROVAL.has(slug)));
 // Manager (2026-11-19 design): A-Thon is no longer listed (35 companies). Nirav (2026-11-20): A-Thon is no longer with
 // ARTPARK, so its story is not published either (src/pages/stories.cjs).
 const LISTED = C.portfolio.filter((c) => c.slug !== 'a-thon');
