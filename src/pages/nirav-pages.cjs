@@ -41,8 +41,9 @@ const pages = Object.entries(PAGES).map(([slug, o]) => {
 });
 
 // Nirav (2026-11-20): Tenders and Careers count down 15 days, the Sign in page (/apply) 30 days, from the original
-// 20 Nov 18:00 IST deadline. Each gets its own copy of the countdown page; vercel.json sends those pages to it.
-const WIP_READY_BY = { tenders: '2026-12-05T18:00', careers: '2026-12-05T18:00', 'sign-in': '2026-12-20T18:00' };
+// 20 Nov 18:00 IST deadline; later the same day the Programs overview, ArtLabs and Social Impact until Monday 23 Nov.
+// Each gets its own copy of the countdown page; vercel.json sends those pages to it.
+const WIP_READY_BY = { tenders: '2026-12-05T18:00', careers: '2026-12-05T18:00', 'sign-in': '2026-12-20T18:00', programs: '2026-11-23T18:00' };
 const wip = pages.find((p) => p.route === '/work-in-progress');
 for (const [key, at] of Object.entries(WIP_READY_BY)) pages.push({ route: `/work-in-progress/${key}`, html: () => wip.render(`data-ready-by="${at}"`) });
 

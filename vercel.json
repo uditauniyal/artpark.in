@@ -429,7 +429,18 @@
       "permanent": false
     },
     {
-      "source": "/:path(about/programs|about/programs/artlabs|about/programs/social-impact|projects.*|publications.*|stories/acceleration-robotics)",
+      "source": "/:path(about/programs|about/programs/artlabs|about/programs/social-impact)",
+      "has": [
+        {
+          "type": "host",
+          "value": "artpark.in"
+        }
+      ],
+      "destination": "/work-in-progress/programs",
+      "permanent": false
+    },
+    {
+      "source": "/:path(projects.*|publications.*|stories/acceleration-robotics)",
       "has": [
         {
           "type": "host",
@@ -473,7 +484,18 @@
       "permanent": false
     },
     {
-      "source": "/:path(about/programs|about/programs/artlabs|about/programs/social-impact|projects.*|publications.*|stories/acceleration-robotics)",
+      "source": "/:path(about/programs|about/programs/artlabs|about/programs/social-impact)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.artpark.in"
+        }
+      ],
+      "destination": "/work-in-progress/programs",
+      "permanent": false
+    },
+    {
+      "source": "/:path(projects.*|publications.*|stories/acceleration-robotics)",
       "has": [
         {
           "type": "host",
@@ -517,7 +539,18 @@
       "permanent": false
     },
     {
-      "source": "/:path(about/programs|about/programs/artlabs|about/programs/social-impact|projects.*|publications.*|stories/acceleration-robotics)",
+      "source": "/:path(about/programs|about/programs/artlabs|about/programs/social-impact)",
+      "has": [
+        {
+          "type": "host",
+          "value": "artparkin.vercel.app"
+        }
+      ],
+      "destination": "/work-in-progress/programs",
+      "permanent": false
+    },
+    {
+      "source": "/:path(projects.*|publications.*|stories/acceleration-robotics)",
       "has": [
         {
           "type": "host",
