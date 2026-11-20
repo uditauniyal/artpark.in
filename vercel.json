@@ -391,6 +391,11 @@
       "permanent": false
     },
     {
+      "source": "/stories/a-thon",
+      "destination": "/portfolio",
+      "permanent": true
+    },
+    {
       "source": "/:path(tenders.*)",
       "has": [
         {

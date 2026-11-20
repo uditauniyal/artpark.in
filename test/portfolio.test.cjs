@@ -82,7 +82,13 @@ test('portfolio page: programme switch, domain sidebar with counts, 35 cards, no
   assert.ok(!html.includes('data-sector-filter'));
   assert.equal((html.match(/data-company /g) || []).length, 35);
   assert.ok(!html.includes('href="/stories/a-thon"'), 'A-Thon not listed');
-  assert.ok(fs.existsSync(path.join(ROOT, 'dist', 'stories', 'a-thon', 'index.html')), 'A-Thon story still reachable');
+  // Nirav (2026-11-20): A-Thon is no longer with ARTPARK; no story page, the old address goes to the portfolio, and no
+  // other story's "Next founder story" card points to it.
+  assert.ok(!fs.existsSync(path.join(ROOT, 'dist', 'stories', 'a-thon', 'index.html')), 'A-Thon story not published');
+  const v = require(path.join(ROOT, 'vercel.json')).redirects;
+  assert.ok(v.findIndex((r) => r.source === '/stories/a-thon' && r.destination === '/portfolio' && !r.has) < v.findIndex((r) => r.has));
+  const walk = (d) => fs.readdirSync(d, { withFileTypes: true }).flatMap((e) => e.isDirectory() ? walk(path.join(d, e.name)) : e.name.endsWith('.html') ? [path.join(d, e.name)] : []);
+  for (const f of walk(path.join(ROOT, 'dist'))) assert.ok(!fs.readFileSync(f, 'utf8').includes('href="/stories/a-thon"'), f);
   assert.match(html, /data-domain="Space Tech"[^>]*>[\s\S]*?Space Tech[\s\S]*?>2</);
   assert.match(html, /data-programme-note[^>]*hidden[^>]*>Programme lists coming soon\. Showing all startups meanwhile\./);
   assert.match(html, /Company list from the ARTPARK Start Up portfolio 2026\./);

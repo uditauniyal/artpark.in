@@ -8,8 +8,8 @@ const C = require('../data/content.cjs');
 const stories = require('./stories.cjs').all;
 
 const hasStory = new Set(stories.map((s) => s.slug));
-// Manager (2026-11-19 design): A-Thon is no longer listed (35 companies); user confirmed on 2026-11-20 after briefly
-// bringing it back. Its story page stays reachable by direct link (notes/pending-decisions.md).
+// Manager (2026-11-19 design): A-Thon is no longer listed (35 companies). Nirav (2026-11-20): A-Thon is no longer with
+// ARTPARK, so its story is not published either (src/pages/stories.cjs).
 const LISTED = C.portfolio.filter((c) => c.slug !== 'a-thon');
 
 // Round 8 floating composition: real company logos and the real company count.

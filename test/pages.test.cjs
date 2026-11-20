@@ -246,7 +246,7 @@ test('manager changes of 2026-11-19: countdown on both public sites, merged page
     for (const p of ['/tenders', '/careers', '/careers/embedded-engineer-heed']) assert.equal(countdown(host, p), '/work-in-progress/' + p.split('/')[1], host + p);
     assert.equal(countdown(host, '/apply'), '/work-in-progress/sign-in');
     // Nirav (2026-11-20): Approach, TIR, VIP and RDI are live.
-    for (const p of ['/', '/about/introduction', '/about/approach', '/about/programs/tir', '/about/programs/vip', '/about/programs/rdi', '/about/team', '/about/focus-areas', '/about/facilities', '/about/facilities/artgarage', '/portfolio', '/stories/flo-mobility', '/stories/a-thon', '/partnerships', '/contact', '/events', '/news', '/privacy-policy', '/work-in-progress', '/work-in-progress/tenders', '/work-in-progress/sign-in']) assert.equal(countdown(host, p), null, 'live: ' + host + p);
+    for (const p of ['/', '/about/introduction', '/about/approach', '/about/programs/tir', '/about/programs/vip', '/about/programs/rdi', '/about/team', '/about/focus-areas', '/about/facilities', '/about/facilities/artgarage', '/portfolio', '/stories/flo-mobility', '/partnerships', '/contact', '/events', '/news', '/privacy-policy', '/work-in-progress', '/work-in-progress/tenders', '/work-in-progress/sign-in']) assert.equal(countdown(host, p), null, 'live: ' + host + p);
   }
   for (const [r, at] of [['work-in-progress/tenders', '2026-12-05T18:00'], ['work-in-progress/careers', '2026-12-05T18:00'], ['work-in-progress/sign-in', '2026-12-20T18:00']]) assert.match(page(r), new RegExp('<body data-ready-by="' + at + '">'), r);
   const to = (s) => (v.find((r) => r.source === s && !r.has) || {}).destination;

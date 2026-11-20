@@ -5,7 +5,10 @@ const path = require('path');
 const { esc, page, R } = require('../lib.cjs');
 
 const DIR = path.join(__dirname, '..', 'data', 'stories');
-const all = fs.existsSync(DIR) ? fs.readdirSync(DIR).filter((f) => f.endsWith('.json')).map((f) => JSON.parse(fs.readFileSync(path.join(DIR, f), 'utf8'))) : [];
+// Companies no longer with ARTPARK: their story is not published, and vercel.json sends the old address to the
+// portfolio. Nirav (2026-11-20): A-Thon is no longer with ARTPARK. The story file stays in src/data/stories/ as a record.
+const RETIRED = new Set(['a-thon']);
+const all = (fs.existsSync(DIR) ? fs.readdirSync(DIR).filter((f) => f.endsWith('.json')).map((f) => JSON.parse(fs.readFileSync(path.join(DIR, f), 'utf8'))) : []).filter((s) => !RETIRED.has(s.slug));
 
 // Inline markup allowed in story text: **bold**, _italic_. Everything else is escaped.
 const md = (s) => esc(s).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/(^|\W)_(.+?)_(?=\W|$)/g, '$1<i>$2</i>');
