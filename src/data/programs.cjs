@@ -133,7 +133,7 @@ const programs = [
   },
   {
     // Manager (2026-11-12, Claude Design): renamed to the RDI Scheme, shown with the RDI logo. The page itself is his,
-    // imported verbatim (src/pages/program-pages.cjs), so it is not built from these fields.
+    // imported verbatim (src/pages/nirav-pages.cjs since 2026-11-20), so it is not built from these fields.
     slug: 'rdi', status: 'NEW', name: 'RDI Scheme · Focused Research Organisation', imported: true,
     short: 'ARTPARK deploys the Government of India RDI Scheme as a Focused Research Organisation. Express interest for your startup.',
     image: '/assets/brand/rdi-logo.png', imageAlt: 'RDI — Research Development & Innovation', logo: true, fit: 'contain',
@@ -142,7 +142,7 @@ const programs = [
 ];
 
 // Manager (2026-11-12, Claude Design): the two venture-building tracks lead the Programs list, with their own pages
-// (src/pages/program-pages.cjs). Photos chosen by the user (2026-11-14).
+// (src/pages/nirav-pages.cjs since 2026-11-20). Photos chosen by the user (2026-11-14).
 const venture = [
   { slug: 'tir', label: 'TIR', image: '/assets/programs/tir.webp', imageAlt: 'A session with innovators in the ARTGarage amphitheatre', status: 'OPEN · VENTURE BUILDING', name: 'Technology Innovator in Residence', short: 'Six months, ₹25L at 0% equity and IISc infrastructure for researchers with lab-proven, TRL 3 technology — and no company yet.' },
   { slug: 'vip', label: 'VIP', image: '/assets/programs/vip.webp', imageAlt: 'A startup team testing a telescope mount outdoors at ARTPARK', status: 'OPEN · VENTURE BUILDING', name: 'Venture Incubation Programme', short: 'Direct investment and venture building support for incorporated Indian startups with TRL 4+ technology and a pitch-ready proposition.' },

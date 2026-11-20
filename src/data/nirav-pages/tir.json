@@ -1,0 +1,9 @@
+{
+  "route": "/about/programs/tir",
+  "title": "Technology Innovator in Residence — ARTPARK",
+  "description": "",
+  "style": "@media (max-width:860px){.tir-hero{grid-template-columns:1fr !important}}",
+  "bodyAttrs": "",
+  "tail": "",
+  "source": "Manager, design canvas static export (artpark-website-export (2).zip, 2026-11-20)"
+}
