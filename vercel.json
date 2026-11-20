@@ -429,7 +429,7 @@
       "permanent": false
     },
     {
-      "source": "/:path(about/programs|about/programs/artlabs|about/programs/social-impact)",
+      "source": "/:path(about/programs|about/programs/artlabs|about/programs/social-impact|projects.*|publications.*)",
       "has": [
         {
           "type": "host",
@@ -440,7 +440,7 @@
       "permanent": false
     },
     {
-      "source": "/:path(projects.*|publications.*|stories/acceleration-robotics)",
+      "source": "/:path(stories/acceleration-robotics)",
       "has": [
         {
           "type": "host",
@@ -484,7 +484,7 @@
       "permanent": false
     },
     {
-      "source": "/:path(about/programs|about/programs/artlabs|about/programs/social-impact)",
+      "source": "/:path(about/programs|about/programs/artlabs|about/programs/social-impact|projects.*|publications.*)",
       "has": [
         {
           "type": "host",
@@ -495,7 +495,7 @@
       "permanent": false
     },
     {
-      "source": "/:path(projects.*|publications.*|stories/acceleration-robotics)",
+      "source": "/:path(stories/acceleration-robotics)",
       "has": [
         {
           "type": "host",
@@ -539,7 +539,7 @@
       "permanent": false
     },
     {
-      "source": "/:path(about/programs|about/programs/artlabs|about/programs/social-impact)",
+      "source": "/:path(about/programs|about/programs/artlabs|about/programs/social-impact|projects.*|publications.*)",
       "has": [
         {
           "type": "host",
@@ -550,7 +550,7 @@
       "permanent": false
     },
     {
-      "source": "/:path(projects.*|publications.*|stories/acceleration-robotics)",
+      "source": "/:path(stories/acceleration-robotics)",
       "has": [
         {
           "type": "host",

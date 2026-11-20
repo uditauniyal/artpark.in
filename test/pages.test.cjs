@@ -217,7 +217,7 @@ test('manager changes of 2026-11-16', () => {
   assert.match(hdr(home), /data-menu="programs"[\s\S]*?>ArtLabs<[\s\S]*?>Technology Innovator in Residence<[\s\S]*?>Venture Incubation Programme<[\s\S]*?>RDI Scheme<[\s\S]*?>Social Impact<[\s\S]*?All programs/);
   assert.match(page('about/approach'), /We measure progress in <b[^>]*>xRL<\/b>/);
   assert.match(page('about/focus-areas'), /<h1[^>]*>Where we <span class="hl">work/);
-  assert.match(page('work-in-progress'), /<body data-ready-by="2026-11-20T18:00">/);
+  assert.match(page('work-in-progress'), /<body data-ready-by="2026-11-23T18:00">/);
   assert.match(page('work-in-progress'), /data-cd="d"/);
   assert.match(page('about/facilities'), /\/assets\/art\/fac-drone-lab\.jpg/);
   for (const r of ['', 'about/approach', 'about/focus-areas', 'work-in-progress']) {
@@ -241,9 +241,10 @@ test('manager changes of 2026-11-19: countdown on both public sites, merged page
   // First matching rule for a host, as Vercel applies them.
   const countdown = (host, p) => { const r = v.filter((x) => x.has && x.has[0].value === host).find((x) => new RegExp('^/(?:' + x.source.match(/^\/:path\((.*)\)$/)[1] + ')$').test(p)); return r ? r.destination : null; }; // alternatives grouped, as path-to-regexp does
   for (const host of ['artpark.in', 'www.artpark.in', 'artparkin.vercel.app']) {
-    for (const p of ['/projects/prism-h', '/publications/llm-landscape-lmics', '/stories/acceleration-robotics']) assert.equal(countdown(host, p), '/work-in-progress', host + p);
-    // Nirav (2026-11-20): the Programs overview, ArtLabs and Social Impact until Monday 23 Nov.
-    for (const p of ['/about/programs', '/about/programs/artlabs', '/about/programs/social-impact']) assert.equal(countdown(host, p), '/work-in-progress/programs', host + p);
+    assert.equal(countdown(host, '/stories/acceleration-robotics'), '/work-in-progress', host);
+    // Nirav (2026-11-20): the Programs overview, ArtLabs and Social Impact until Monday 23 Nov; their project and
+    // publication pages follow them (user, same day).
+    for (const p of ['/about/programs', '/about/programs/artlabs', '/about/programs/social-impact', '/projects/prism-h', '/projects/camras', '/publications/llm-landscape-lmics']) assert.equal(countdown(host, p), '/work-in-progress/programs', host + p);
     // Nirav (2026-11-20): Tenders and Careers 15 days, Sign in 30 days.
     for (const p of ['/tenders', '/careers', '/careers/embedded-engineer-heed']) assert.equal(countdown(host, p), '/work-in-progress/' + p.split('/')[1], host + p);
     assert.equal(countdown(host, '/apply'), '/work-in-progress/sign-in');
