@@ -8,9 +8,9 @@ const C = require('../data/content.cjs');
 const stories = require('./stories.cjs').all;
 
 const hasStory = new Set(stories.map((s) => s.slug));
-// The manager's 2026-11-19 design dropped A-Thon from the list; the user brought it back the same day until he
-// confirms (notes/pending-decisions.md). All companies are listed.
-const LISTED = C.portfolio;
+// Manager (2026-11-19 design): A-Thon is no longer listed (35 companies); user confirmed on 2026-11-20 after briefly
+// bringing it back. Its story page stays reachable by direct link (notes/pending-decisions.md).
+const LISTED = C.portfolio.filter((c) => c.slug !== 'a-thon');
 
 // Round 8 floating composition: real company logos and the real company count.
 const FLOAT_PF = [

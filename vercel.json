@@ -391,7 +391,40 @@
       "permanent": false
     },
     {
-      "source": "/:path(about/approach|about/programs.*|tenders.*|careers.*|apply.*|projects.*|publications.*|stories/acceleration-robotics)",
+      "source": "/:path(tenders.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "artpark.in"
+        }
+      ],
+      "destination": "/work-in-progress/tenders",
+      "permanent": false
+    },
+    {
+      "source": "/:path(careers.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "artpark.in"
+        }
+      ],
+      "destination": "/work-in-progress/careers",
+      "permanent": false
+    },
+    {
+      "source": "/:path(apply.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "artpark.in"
+        }
+      ],
+      "destination": "/work-in-progress/sign-in",
+      "permanent": false
+    },
+    {
+      "source": "/:path(about/approach|about/programs.*|projects.*|publications.*|stories/acceleration-robotics)",
       "has": [
         {
           "type": "host",
@@ -402,7 +435,40 @@
       "permanent": false
     },
     {
-      "source": "/:path(about/approach|about/programs.*|tenders.*|careers.*|apply.*|projects.*|publications.*|stories/acceleration-robotics)",
+      "source": "/:path(tenders.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.artpark.in"
+        }
+      ],
+      "destination": "/work-in-progress/tenders",
+      "permanent": false
+    },
+    {
+      "source": "/:path(careers.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.artpark.in"
+        }
+      ],
+      "destination": "/work-in-progress/careers",
+      "permanent": false
+    },
+    {
+      "source": "/:path(apply.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.artpark.in"
+        }
+      ],
+      "destination": "/work-in-progress/sign-in",
+      "permanent": false
+    },
+    {
+      "source": "/:path(about/approach|about/programs.*|projects.*|publications.*|stories/acceleration-robotics)",
       "has": [
         {
           "type": "host",
@@ -413,7 +479,40 @@
       "permanent": false
     },
     {
-      "source": "/:path(about/approach|about/programs.*|tenders.*|careers.*|apply.*|projects.*|publications.*|stories/acceleration-robotics)",
+      "source": "/:path(tenders.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "artparkin.vercel.app"
+        }
+      ],
+      "destination": "/work-in-progress/tenders",
+      "permanent": false
+    },
+    {
+      "source": "/:path(careers.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "artparkin.vercel.app"
+        }
+      ],
+      "destination": "/work-in-progress/careers",
+      "permanent": false
+    },
+    {
+      "source": "/:path(apply.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "artparkin.vercel.app"
+        }
+      ],
+      "destination": "/work-in-progress/sign-in",
+      "permanent": false
+    },
+    {
+      "source": "/:path(about/approach|about/programs.*|projects.*|publications.*|stories/acceleration-robotics)",
       "has": [
         {
           "type": "host",

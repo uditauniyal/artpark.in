@@ -236,13 +236,18 @@ test('manager changes of 2026-11-16', () => {
 // merged redirect to their new homes.
 test('manager changes of 2026-11-19: countdown on both public sites, merged pages redirect', () => {
   const v = require(path.join(ROOT, 'vercel.json')).redirects;
-  const hosts = v.filter((r) => r.has).map((r) => r.has[0].value).sort();
-  assert.deepEqual(hosts, ['artpark.in', 'artparkin.vercel.app', 'www.artpark.in']);
-  const rule = v.find((r) => r.has);
-  assert.ok(v.filter((r) => r.has).every((r) => r.source === rule.source && r.destination === '/work-in-progress' && !r.permanent));
-  const re = new RegExp('^/' + rule.source.match(/^\/:path\((.*)\)$/)[1] + '$');
-  for (const p of ['/about/approach', '/about/programs', '/about/programs/tir', '/about/programs/social-impact', '/tenders', '/careers', '/careers/embedded-engineer-heed', '/apply', '/projects/prism-h', '/publications/llm-landscape-lmics', '/stories/acceleration-robotics']) assert.ok(re.test(p), 'countdown: ' + p);
-  for (const p of ['/', '/about/introduction', '/about/team', '/about/focus-areas', '/about/facilities', '/about/facilities/artgarage', '/portfolio', '/stories/flo-mobility', '/stories/a-thon', '/partnerships', '/contact', '/events', '/news', '/privacy-policy', '/work-in-progress']) assert.ok(!re.test(p), 'live: ' + p);
+  assert.deepEqual([...new Set(v.filter((r) => r.has).map((r) => r.has[0].value))].sort(), ['artpark.in', 'artparkin.vercel.app', 'www.artpark.in']);
+  assert.ok(v.filter((r) => r.has).every((r) => /^\/work-in-progress/.test(r.destination) && !r.permanent));
+  // First matching rule for a host, as Vercel applies them.
+  const countdown = (host, p) => { const r = v.filter((x) => x.has && x.has[0].value === host).find((x) => new RegExp('^/' + x.source.match(/^\/:path\((.*)\)$/)[1] + '$').test(p)); return r ? r.destination : null; };
+  for (const host of ['artpark.in', 'www.artpark.in', 'artparkin.vercel.app']) {
+    for (const p of ['/about/approach', '/about/programs', '/about/programs/tir', '/about/programs/social-impact', '/projects/prism-h', '/publications/llm-landscape-lmics', '/stories/acceleration-robotics']) assert.equal(countdown(host, p), '/work-in-progress', host + p);
+    // Nirav (2026-11-20): Tenders and Careers 15 days, Sign in 30 days.
+    for (const p of ['/tenders', '/careers', '/careers/embedded-engineer-heed']) assert.equal(countdown(host, p), '/work-in-progress/' + p.split('/')[1], host + p);
+    assert.equal(countdown(host, '/apply'), '/work-in-progress/sign-in');
+    for (const p of ['/', '/about/introduction', '/about/team', '/about/focus-areas', '/about/facilities', '/about/facilities/artgarage', '/portfolio', '/stories/flo-mobility', '/stories/a-thon', '/partnerships', '/contact', '/events', '/news', '/privacy-policy', '/work-in-progress', '/work-in-progress/tenders', '/work-in-progress/sign-in']) assert.equal(countdown(host, p), null, 'live: ' + host + p);
+  }
+  for (const [r, at] of [['work-in-progress/tenders', '2026-12-05T18:00'], ['work-in-progress/careers', '2026-12-05T18:00'], ['work-in-progress/sign-in', '2026-12-20T18:00']]) assert.match(page(r), new RegExp('<body data-ready-by="' + at + '">'), r);
   const to = (s) => (v.find((r) => r.source === s && !r.has) || {}).destination;
   assert.equal(to('/about/certifications'), '/about/introduction#certifications');
   assert.equal(to('/about/programs/health'), '/about/programs/social-impact#health');

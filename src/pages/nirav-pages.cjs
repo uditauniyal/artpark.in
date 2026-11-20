@@ -25,14 +25,20 @@ const PAGES = {
   'work-in-progress': { css: '@media (max-width:480px){[data-cd-running] div[style*="display:flex;gap:10px"]{display:grid!important;grid-template-columns:repeat(4,1fr);gap:8px!important}[data-cd-running] div[style*="min-width:76px"]{min-width:0!important;padding:10px 4px!important}}', scripts: ['/js/motion.js'], description: 'This page is being rebuilt as the ARTPARK website moves to its new home.' },
 };
 
-module.exports = Object.entries(PAGES).map(([slug, o]) => {
+const pages = Object.entries(PAGES).map(([slug, o]) => {
   const meta = JSON.parse(fs.readFileSync(path.join(DIR, slug + '.json'), 'utf8'));
   // User (2026-11-16): no "… · painted illustration" label pills over the pictures.
   const body = sharpArt(fs.readFileSync(path.join(DIR, slug + '.html'), 'utf8'))
     .replace(/<span class="hero-slide-caption"[^>]*>[^<]*<\/span>/g, '')
     .replace(/<figcaption[^>]*>[^<]*painted illustration<\/figcaption>/gi, '');
-  return {
-    route: meta.route,
-    html: () => page({ title: meta.title, description: o.description, active: o.active || '', sub: o.sub || '', home: !!o.home, body, scripts: o.scripts, head: meta.style + (o.css ? '\n' + o.css : ''), bodyAttrs: meta.bodyAttrs, tail: meta.tail }),
-  };
+  const render = (bodyAttrs) => page({ title: meta.title, description: o.description, active: o.active || '', sub: o.sub || '', home: !!o.home, body, scripts: o.scripts, head: meta.style + (o.css ? '\n' + o.css : ''), bodyAttrs, tail: meta.tail });
+  return { route: meta.route, html: () => render(meta.bodyAttrs), render };
 });
+
+// Nirav (2026-11-20): Tenders and Careers count down 15 days, the Sign in page (/apply) 30 days, from the original
+// 20 Nov 18:00 IST deadline. Each gets its own copy of the countdown page; vercel.json sends those pages to it.
+const WIP_READY_BY = { tenders: '2026-12-05T18:00', careers: '2026-12-05T18:00', 'sign-in': '2026-12-20T18:00' };
+const wip = pages.find((p) => p.route === '/work-in-progress');
+for (const [key, at] of Object.entries(WIP_READY_BY)) pages.push({ route: `/work-in-progress/${key}`, html: () => wip.render(`data-ready-by="${at}"`) });
+
+module.exports = pages;

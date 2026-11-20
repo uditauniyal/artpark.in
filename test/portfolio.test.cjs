@@ -73,15 +73,16 @@ test('portfolio floating logos are the six chosen startups', () => {
 });
 
 // ---- task 4: layout ----
-// Manager (2026-11-19 design): programmes All / Innovations / Startups / Social. A-Thon stays listed (user, same day).
-test('portfolio page: programme switch, domain sidebar with counts, 36 cards, no old sector filter', () => {
+// Manager (2026-11-19 design): programmes All / Innovations / Startups / Social; A-Thon not listed (35 cards).
+test('portfolio page: programme switch, domain sidebar with counts, 35 cards, no old sector filter', () => {
   execFileSync(process.execPath, ['tools/build.cjs'], { cwd: ROOT, stdio: 'pipe' });
   const html = fs.readFileSync(path.join(ROOT, 'dist', 'portfolio', 'index.html'), 'utf8');
   assert.equal((html.match(/data-domain="/g) || []).length, 6);
   assert.deepEqual([...html.matchAll(/data-programme="([^"]+)"/g)].map((m) => m[1]), ['All', 'Innovations', 'Startups', 'Social']);
   assert.ok(!html.includes('data-sector-filter'));
-  assert.equal((html.match(/data-company /g) || []).length, 36);
-  assert.ok(html.includes('href="/stories/a-thon"'), 'A-Thon listed');
+  assert.equal((html.match(/data-company /g) || []).length, 35);
+  assert.ok(!html.includes('href="/stories/a-thon"'), 'A-Thon not listed');
+  assert.ok(fs.existsSync(path.join(ROOT, 'dist', 'stories', 'a-thon', 'index.html')), 'A-Thon story still reachable');
   assert.match(html, /data-domain="Space Tech"[^>]*>[\s\S]*?Space Tech[\s\S]*?>2</);
   assert.match(html, /data-programme-note[^>]*hidden[^>]*>Programme lists coming soon\. Showing all startups meanwhile\./);
   assert.match(html, /Company list from the ARTPARK Start Up portfolio 2026\./);
