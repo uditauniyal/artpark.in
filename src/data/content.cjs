@@ -112,12 +112,15 @@ const ONE_LINER_FIX = {
   astrome: 'Millimetre-wave wireless communication technology.',
 };
 const NAME_FIX = { qosmic: 'QOSMIC' };
+// Websites the old site did not list, found 2026-11-21: Contrivation Labs' own page (linked from its LinkedIn company
+// page; contrivationlabs.com is parked).
+const WEBSITE_FIX = { 'contrivation-labs': 'https://contrivation-labs.github.io/contrivationlabs.github.io/' };
 const portfolio = [
   ...rec.portfolio.filter((c) => !REMOVED.includes(c.id)).map((c) => ({
     slug: c.id,
     name: NAME_FIX[c.id] || c.name,
     oneLiner: ONE_LINER_FIX[c.id] || c.description.replace(/\s+/g, ' ').trim().replace(/([^.])$/, '$1.'),
-    website: c.url || '',
+    website: c.url || WEBSITE_FIX[c.id] || '',
     source: c.sourceUrl,
   })),
   ...ADDED.map((c) => ({ ...c, source: 'Start Up portfolio 2026 (PDF)' })),

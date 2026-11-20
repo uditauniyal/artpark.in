@@ -89,7 +89,9 @@
           "people": [
             {
               "name": "Sachin Hegdekudgi",
-              "role": "Founder & CEO"
+              "role": "Founder & CEO",
+              "photo": "/assets/founders/rootsgoods-sachin-hegdekudgi.webp",
+              "pos": "50% 30%"
             },
             {
               "name": "Dr. Shakil Regmi",
