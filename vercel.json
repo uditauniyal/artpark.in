@@ -396,6 +396,11 @@
       "permanent": true
     },
     {
+      "source": "/stories/kinesthetiq",
+      "destination": "/portfolio",
+      "permanent": false
+    },
+    {
       "source": "/:path(tenders.*)",
       "has": [
         {

@@ -108,7 +108,7 @@ const ONE_LINER_FIX = {
   'twara-robotics': 'Indigenous robotics components.',
   udot: 'Making STEM accessible for the visually impaired.',
   yaanendriya: 'Indian sensor manufacturer.',
-  zenteiq: 'AI-powered learning and evaluation solutions.',
+  zenteiq: 'Dhīr foundation models and scientific machine learning for engineering R&D.', // founder's story, Nov 2026
   astrome: 'Millimetre-wave wireless communication technology.',
 };
 const NAME_FIX = { qosmic: 'QOSMIC' };

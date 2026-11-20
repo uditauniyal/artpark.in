@@ -1,0 +1,6 @@
+{
+  "images": [
+    { "out": "founders/sakar-robotics-dhruv-patil.webp", "src": "research/img/founders/1120/sakar-robotics-dhruv-patil.jpg", "crop": [0, 40, 800, 1000], "maxW": 700, "subject": "Portrait of Dhruv Patil, co-founder, sent by Sakar Robotics.", "source": "Founder, story review (Nov 2026)" },
+    { "out": "founders/sakar-robotics-manoj-pochat.webp", "src": "research/img/founders/1120/sakar-robotics-manoj-pochat.jpg", "crop": [0, 60, 800, 1000], "maxW": 700, "subject": "Portrait of Manoj Pochat, co-founder, sent by Sakar Robotics (file named 'Manoj Patil'; the story and the tracker say Pochat).", "source": "Founder, story review (Nov 2026)" }
+  ]
+}

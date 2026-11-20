@@ -1,0 +1,187 @@
+{
+ "_note": "TIR 2026 (Technology Innovators in Residence) logos. Sources: each venture's own website where it has a usable logo, otherwise the ARTPARK Startup Portfolio Deck Final.pptx (slides 14-19). Margins trimmed with measured bounds plus 3% padding; logos themselves are not altered. Built by node tools/images.cjs logos/tir.",
+ "images": [
+  {
+   "out": "logos/tir/xspecies-ai.webp",
+   "src": "research/img/tir/xspecies-ai.webp",
+   "crop": [
+    0,
+    29,
+    696,
+    240
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://www.xspecies.ai/ (site header logo: https://cdn.prod.website-files.com/698ed0ca454c3928f66c6597/69afe5c756e1385c727121ef_logo%20(9).webp)"
+  },
+  {
+   "out": "logos/tir/axd.webp",
+   "src": "research/img/tir/axd.png",
+   "crop": [
+    0,
+    0,
+    2048,
+    750
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "ARTPARK Startup Portfolio Deck Final.pptx, slide 14 (ppt/media/image105.png)"
+  },
+  {
+   "out": "logos/tir/ometaura-ai.webp",
+   "src": "research/img/tir/ometaura-ai.png",
+   "crop": [
+    146,
+    163,
+    761,
+    641
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://ometaura.ai/ (site header logo: https://res.cloudinary.com/dsr1agyxd/image/upload/v1786156996/ChatGPT_Image_Aug_8_2026_08_12_57_AM_ns6fio.png); same mark as PPTX slide 15"
+  },
+  {
+   "out": "logos/tir/noetics-technologies.webp",
+   "src": "research/img/tir/noetics-technologies.jpg",
+   "crop": [
+    140,
+    129,
+    1320,
+    363
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "ARTPARK Startup Portfolio Deck Final.pptx, slide 15 (ppt/media/image111.jpg)"
+  },
+  {
+   "out": "logos/tir/kodeus.webp",
+   "src": "research/img/tir/kodeus.png",
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo (logo unaltered).",
+   "source": "https://kodeus.ai/assets/kodeus/lockup-ink.svg (rasterised to research/img/tir/kodeus.png)"
+  },
+  {
+   "out": "logos/tir/natheon.webp",
+   "src": "research/img/tir/natheon.png",
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo (logo unaltered).",
+   "source": "ARTPARK Startup Portfolio Deck Final.pptx, slide 16 (ppt/media/image116.png)"
+  },
+  {
+   "out": "logos/tir/gahan-ai.webp",
+   "src": "research/img/tir/gahan-ai.png",
+   "crop": [
+    63,
+    0,
+    1410,
+    1024
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "ARTPARK Startup Portfolio Deck Final.pptx, slide 16 (ppt/media/image118.png); the site only has a white version"
+  },
+  {
+   "out": "logos/tir/foucault.webp",
+   "src": "research/img/tir/foucault.png",
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo (logo unaltered).",
+   "source": "ARTPARK Startup Portfolio Deck Final.pptx, slide 17 (ppt/media/image120.png); the site only has a pale version"
+  },
+  {
+   "out": "logos/tir/dunlevon.webp",
+   "src": "research/img/tir/dunlevon.jpg",
+   "crop": [
+    3,
+    0,
+    1587,
+    375
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "https://dunlevon.com/images/logo.jpg"
+  },
+  {
+   "out": "logos/tir/blueforge-robotics.webp",
+   "src": "research/img/tir/blueforge-robotics.png",
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo (logo unaltered).",
+   "source": "https://blueforgerobotics.com/assets/img/logo.png"
+  },
+  {
+   "out": "logos/tir/viscotrack.webp",
+   "src": "research/img/tir/viscotrack.png",
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo (logo unaltered).",
+   "source": "https://viscotrack.com/logo.svg (rasterised to research/img/tir/viscotrack.png)"
+  },
+  {
+   "out": "logos/tir/rosa-tech.webp",
+   "src": "research/img/tir/rosa-tech.png",
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo (logo unaltered).",
+   "source": "ARTPARK Startup Portfolio Deck Final.pptx, slide 18 (ppt/media/image130.png)"
+  },
+  {
+   "out": "logos/tir/versor-robotics.webp",
+   "src": "research/img/tir/versor-robotics.png",
+   "crop": [
+    37,
+    53,
+    1831,
+    783
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "ARTPARK Startup Portfolio Deck Final.pptx, slide 19 (ppt/media/image134.png)"
+  },
+  {
+   "out": "logos/tir/heed.webp",
+   "src": "research/img/tir/heed.png",
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo (logo unaltered).",
+   "source": "ARTPARK Startup Portfolio Deck Final.pptx, slide 19 (ppt/media/image137.png); the site has the mark only"
+  },
+  {
+   "out": "logos/tir/anthera-dynamics.webp",
+   "src": "research/img/tir/anthera-dynamics.png",
+   "crop": [
+    0,
+    0,
+    2048,
+    654
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "ARTPARK Startup Portfolio Deck Final.pptx, slide 18 (ppt/media/image126.png), shown in the BloomRehab row. NOT used on a card yet (see tir-2026.json notes for BloomRehab)."
+  },
+  {
+   "out": "logos/tir/yantrik-infotech.webp",
+   "src": "research/img/tir/yantrik-infotech.png",
+   "crop": [
+    12,
+    8,
+    2025,
+    670
+   ],
+   "maxW": 600,
+   "quality": 0.9,
+   "subject": "Company logo, empty margins trimmed (logo unaltered).",
+   "source": "ARTPARK Startup Portfolio Deck Final.pptx, slide 15 (ppt/media/image113.png), shown in the SUTRA row. NOT used on a card yet (see tir-2026.json notes for SUTRA)."
+  }
+ ]
+}

@@ -411,30 +411,31 @@
   }
 
   // ---------- Portfolio: sector filter (Portfolio.dc.html) ----------
-  // Portfolio: domain sidebar filters the cards; the programme switch (All / TIR / VIP) has no data yet,
-  // so TIR and VIP only show a note and keep every card.
+  // Portfolio: the programme switch (All / Innovations / Startups / Social) and the domain sidebar filter the cards
+  // together; the sidebar counts follow the chosen programme. Social has no listings yet: it shows a note and the
+  // whole portfolio.
   var pf = document.querySelector('[data-portfolio]');
   if (pf) {
     var press = function (btns, on) { btns.forEach(function (x) { x.setAttribute('aria-pressed', x === on ? 'true' : 'false'); }); };
-    var dbtns = pf.querySelectorAll('[data-domain]');
-    dbtns.forEach(function (b) {
-      b.addEventListener('click', function () {
-        press(dbtns, b);
-        var d = b.getAttribute('data-domain'), n = 0;
-        pf.querySelectorAll('[data-company]').forEach(function (c) {
-          var ok = !d || c.getAttribute('data-domains').split('|').indexOf(d) > -1;
-          c.hidden = !ok; if (ok) n++;
-        });
-        pf.querySelector('[data-pcount]').textContent = n + (n === 1 ? ' company' : ' companies');
+    var dbtns = pf.querySelectorAll('[data-domain]'), gbtns = pf.querySelectorAll('[data-programme]');
+    var cards = pf.querySelectorAll('[data-company]');
+    var dom = '', prog = 'All';
+    var NOUN = { All: ['in the portfolio', 'in the portfolio'], Startups: ['startup', 'startups'], Innovations: ['Technology Innovator in Residence', 'Technology Innovators in Residence'], Social: ['in the portfolio', 'in the portfolio'] };
+    var inProg = function (c) { return prog === 'All' || prog === 'Social' || c.getAttribute('data-programme-of') === prog; };
+    var inDom = function (c, d) { return !d || c.getAttribute('data-domains').split('|').indexOf(d) > -1; };
+    var apply = function () {
+      var n = 0;
+      cards.forEach(function (c) { var ok = inProg(c) && inDom(c, dom); c.hidden = !ok; if (ok) n++; });
+      dbtns.forEach(function (b) {
+        var d = b.getAttribute('data-domain'), k = 0;
+        cards.forEach(function (c) { if (inProg(c) && inDom(c, d)) k++; });
+        var el = b.querySelector('.pf-domain-n'); if (el) el.textContent = k;
       });
-    });
-    var gbtns = pf.querySelectorAll('[data-programme]');
-    gbtns.forEach(function (b) {
-      b.addEventListener('click', function () {
-        press(gbtns, b);
-        pf.querySelector('[data-programme-note]').hidden = b.getAttribute('data-programme') === 'All';
-      });
-    });
+      pf.querySelector('[data-pcount]').textContent = n + ' ' + NOUN[prog][n === 1 ? 0 : 1];
+      pf.querySelector('[data-programme-note]').hidden = prog !== 'Social';
+    };
+    dbtns.forEach(function (b) { b.addEventListener('click', function () { press(dbtns, b); dom = b.getAttribute('data-domain'); apply(); }); });
+    gbtns.forEach(function (b) { b.addEventListener('click', function () { press(gbtns, b); prog = b.getAttribute('data-programme'); apply(); }); });
   }
 
   // ---------- Story pages: reading progress bar (Story-0N.dc.html) ----------

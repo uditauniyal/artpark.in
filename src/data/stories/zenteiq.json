@@ -3,65 +3,88 @@
   "company": "ZenteiQ",
   "tag": "FOUNDER STORY",
   "kicker": "Scientific AI",
-  "title": "A model that has to solve the equation.",
-  "standfirst": "Prof. Sashikumaar Ganesan of IISc started ZenteiQ in 2022 as an experiment in AI for higher education. It became a company building scientific foundation models: AI meant to compute physics, not only to describe it.",
-  "meta": ["ARTPARK Stories", "About 4 min read", "ZenteiQ, Bengaluru"],
+  "title": "Built from scratch in India, for the physical world.",
+  "standfirst": "ZenteiQ grew out of scientific computing research at IISc. It trained its Dhīr foundation models from scratch on TPUs in India, and on 3 November 2026, MeitY and the IndiaAI Mission released the first two. The company is building AI for engineering, industry and private deployment.",
+  "meta": ["ARTPARK Stories", "About 5 min read", "ZenteiQ, Bengaluru"],
   "website": "https://zenteiq.ai/",
-  "hero": { "image": "/assets/site/workstations.webp", "alt": "Engineering workstations at ARTPARK seen from above", "pos": "50% 50%", "ratio": "16/9", "caption": "Engineering workstations at ARTPARK. ARTPARK photograph, not of ZenteiQ." },
+  "hero": { "image": "/assets/founders/zenteiq-dhir-5b-moe.webp", "alt": "Diagram of Dhīr 5B MoE: a token passes to a router, which sends it to two of twelve expert networks, E01 and E07; the other ten experts are inactive for that token", "pos": "50% 50%", "ratio": "2000/612", "caption": "Inside Dhīr 5B MoE. Each token is routed to two of twelve experts. Illustration adapted from ZenteiQ Research’s training blog (3 November 2026)." },
   "lead": [
-    "A language model trained on engineering text can discuss the Navier-Stokes equations. It cannot solve them. Engineers need answers that hold up against a solver, a measurement or a conservation law.",
-    "That gap is where ZenteiQ works. In September 2025, the IndiaAI Mission selected the Bengaluru company to build India’s Scientific Foundation Model."
+    "General-purpose AI can explain how an aircraft wing or a cooling system works. Engineering teams need something more: predictions checked against measurements, governing equations and proven simulation tools.",
+    "ZenteiQ is working towards that by building foundation models, scientific machine learning and applications as one connected technology stack. In November 2026 its first two models, Dhīr 2B and Dhīr 5B, were released under the IndiaAI Mission."
   ],
   "sections": [
     {
-      "h2": "From the classroom to the solver.",
-      "toc": "The pivot",
+      "h2": "Born in scientific computing.",
+      "toc": "The founder",
       "blocks": [
-        "ZenteiQ began in 2022 as an experiment in applying AI to higher education. It later pivoted to AI for science and engineering R&D.",
-        "Its founder is a professor in the Department of Computational and Data Sciences at IISc, where he leads the AI for Research and Engineering eXcellence (AiREX) Lab. His work spans scientific machine learning, numerical analysis, high-performance computing and hardware-aware numerical methods, and he is a co-author of _Finite Elements: Theory and Algorithms_.",
-        "The education years left a trace at ARTPARK. Its Academy lists ARTPARK x Zenteiq AI-Tech Innovations among its industry collaborations, for AI-MPOWER, a programme for educators.",
+        "ZenteiQ’s founder, Prof. Dr. Sashikumaar Ganesan, is a professor in the Department of Computational and Data Sciences at the Indian Institute of Science (IISc), Bengaluru, where he leads the AI for Research and Engineering eXcellence (AiREX) Lab. His work spans scientific machine learning, numerical analysis, high-performance computing and hardware-aware numerical methods, and he is a co-author of _Finite Elements: Theory and Algorithms_.",
+        "ZenteiQ began in 2022 as an experiment in applying AI to higher education. It later turned to AI for science and engineering R&D. Its long-term aim, in the company’s words, is Scientific Intelligence: AI that supports the analysis and design of physical systems, with rigorous validation kept in the loop.",
         { "people": [
-          { "name": "Prof. Sashikumaar Ganesan", "role": "Founder · IISc" }
+          { "name": "Prof. Dr. Sashikumaar Ganesan", "role": "Founder & Chief Scientist · Professor, IISc", "photo": "/assets/founders/zenteiq-sashikumaar-ganesan.webp", "pos": "58% 30%" }
         ] }
       ]
     },
     {
-      "h2": "Models that compute physics.",
-      "toc": "What it builds",
+      "h2": "Trained from scratch, on TPUs.",
+      "toc": "The models",
       "blocks": [
-        "High-fidelity engineering simulations demand heavy computation when engineers have to explore many design variations. ZenteiQ’s answer is Dhīr, a family of physics-native scientific foundation models trained from scratch, in small, medium and large sizes for edge devices, self-hosted systems and the cloud, which companies can fine-tune on their own data.",
-        { "panel": { "title": "What ZenteiQ builds", "items": [
-          ["Dhīr", "Physics-native scientific foundation models, pre-trained from scratch."],
-          ["BrahmX", "A validated data layer."],
-          ["NokkX", "Inference."],
-          ["ScireX", "A scientific machine learning framework."],
-          ["KogneX", "For industrial R&D."]
-        ] } },
-        "By 2026, the company says, it had trained two Dhīr base models, including a mixture-of-experts model, with a public release to come."
+        "ZenteiQ trained its released Dhīr models from random initialisation on Google Cloud TPU v6e in India. Every stage ran on TPUs: pretraining, mid-training, supervised fine-tuning and reinforcement learning. The company used its own tokenizer, data pipeline, training recipe and evaluation tools, and its published infrastructure includes 2,048 TPU v6e chips in production. ZenteiQ says it was the first company in India to pretrain billion-parameter generative foundation models from scratch on TPUs.",
+        "**Dhīr 2B** is a compact dense model with 2.03 billion parameters. **Dhīr 5B MoE** has 5.09 billion parameters, but activates about 1.79 billion for each token by routing it to two of twelve expert networks. Each model was pretrained on more than six trillion tokens, with English and ten Indian languages built in from the start.",
+        "Both are designed for private use that can run offline, on laptops and edge devices. ZenteiQ also publishes training provenance and open evaluation tools, so that its key claims can be tested."
       ]
     },
     {
-      "h2": "A model for the country.",
+      "h2": "A national release.",
       "toc": "IndiaAI",
       "blocks": [
-        "On 18 September 2025, at a pre-event of the IndiaAI Summit in Delhi, Union Minister Ashwini Vaishnaw announced ZenteiQ’s selection under the IndiaAI Mission of the Ministry of Electronics and Information Technology. The first year carried ₹75 crore, mostly for compute. The plan reported at the time was an 8-billion-parameter model, trained within 12 months.",
+        "On 18 September 2025, at a pre-event of the IndiaAI Summit in Delhi, Union Minister Ashwini Vaishnaw announced ZenteiQ’s selection under the IndiaAI Mission of the Ministry of Electronics and Information Technology (MeitY), to build India’s Scientific Foundation Model. The first year carried ₹75 crore, mostly for compute. The plan reported at the time was an 8-billion-parameter model, trained within 12 months.",
         "“We are proud to share that ZenteiQ.ai has been selected to build India’s Scientific Foundation Model (SFM), a vital step towards strengthening the country’s sovereign AI capabilities,” Ganesan wrote on LinkedIn.",
+        "On 3 November 2026, MeitY and the IndiaAI Mission formally released Dhīr 2B and Dhīr 5B at an event in New Delhi attended by MeitY Secretary S. Krishnan. The model files were published on AIKosh, IndiaAI’s national AI platform, and on Hugging Face on 13 November 2026, under the Apache 2.0 licence. ZenteiQ presents them as a case for indigenous AI that can run securely inside an organisation’s own environment, without depending on a constant cloud connection.",
         { "dates": [
           ["2022", "Founded as an experiment in AI for higher education."],
           ["Sep 2025", "Selected under the IndiaAI Mission to build India’s Scientific Foundation Model."],
           ["May 2026", "Named in MIT Sloan Management Review India’s AI Startups 20."],
-          ["Jun 2026", "Ganesan named in MIT Sloan Management Review India’s AI-50."]
-        ] },
-        "ZenteiQ was incubated at FSID, IISc. It is part of ARTPARK’s startup portfolio, and its website describes a collaboration with ARTPARK to scale data pipelines and engineering platforms."
+          ["Jun 2026", "Ganesan named in MIT Sloan Management Review India’s AI-50."],
+          ["3 Nov 2026", "MeitY and the IndiaAI Mission release Dhīr 2B and Dhīr 5B in New Delhi; the models are published on AIKosh."],
+          ["13 Nov 2026", "Both models released on Hugging Face under the Apache 2.0 licence."]
+        ], "label": "From published sources and ZenteiQ" }
+      ]
+    },
+    {
+      "h2": "The stack around Dhīr.",
+      "toc": "The stack",
+      "blocks": [
+        "The foundation models are one part of a broader engineering stack.",
+        { "panel": { "title": "What ZenteiQ builds", "items": [
+          ["Dhīr", "Foundation models pretrained from scratch. Dhīr 2B and Dhīr 5B MoE are released; Dhīr 9B is in development."],
+          ["BrahmX", "Prepares and validates data."],
+          ["SciREX", "Brings scientific machine-learning methods into simulation workflows."],
+          ["KogneX", "Being piloted for industrial research and development."],
+          ["AhamX and NōkkX", "Support knowledge and private inference use cases."]
+        ] } },
+        "The company is also extending its work towards scientific foundation models and Physical AI. It is careful about where the released models stand: ZenteiQ does not claim that Dhīr 2B and Dhīr 5B already perform validated engineering reasoning."
+      ]
+    },
+    {
+      "h2": "ARTPARK and the data behind the models.",
+      "toc": "ARTPARK",
+      "blocks": [
+        "ZenteiQ was incubated at FSID, IISc, and is part of ARTPARK’s startup portfolio. Beyond that, ZenteiQ describes joint work with ARTPARK on the pipelines that prepare scientific and engineering data for model training, and on related engineering platforms.",
+        "That work matters because a scientific model is only as dependable as the quality, provenance and reproducibility of the data and computation behind it. The collaboration connects research rooted at IISc with the practical infrastructure needed to scale scientific AI built in India.",
+        "The company’s education years also left a trace at ARTPARK. Its Academy lists ARTPARK x Zenteiq AI-Tech Innovations among its industry collaborations, for AI-MPOWER, a programme for educators."
       ]
     }
   ],
   "sources": [
+    ["ZenteiQ, Dhīr models", "https://zenteiq.ai/dhir/"],
+    ["ZenteiQ Research, blog", "https://zenteiq.ai/research/blog/"],
+    ["Press Information Bureau, MeitY launch of Dhīr 2B and Dhīr 5B (November 2026)", "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2332315&lang=1&reg=1"],
     ["StartupPedia, ZenteiQ.ai gets ₹75 Cr boost under IndiaAI Mission (23 September 2025)", "https://startuppedia.in/trending/trending/zeinteiqai-gets-75-cr-boost-under-indiaai-mission-to-develop-8-billion-parameter-scientific-model-10494368"],
     ["MIT Sloan Management Review India, ZenteiQ.ai (AI Startups 20)", "https://mitsloanindia.com/article/zenteiq-ai/"],
     ["MIT Sloan Management Review India, Sashikumaar Ganesan (AI-50)", "https://mitsloanindia.com/article/sashikumaar-ganesan/"],
     ["IISc CDS, Prof. Sashikumaar Ganesan", "http://cds.iisc.ac.in/faculty/sashi/"],
     ["ARTPARK, Academy (industry collaborations)", "https://www.artpark.in/skilling"],
-    ["ZenteiQ", "https://zenteiq.ai/"]
+    ["ZenteiQ", "https://zenteiq.ai/"],
+    ["Founder review and corrections, November 2026", ""]
   ]
 }

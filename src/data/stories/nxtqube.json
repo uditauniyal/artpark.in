@@ -45,14 +45,16 @@
       "h2": "Seventeen systems in the field.",
       "toc": "Into the field",
       "blocks": [
-        "In July 2026, NITI Frontier Tech counted 17 NxtQube drone systems deployed, mainly in Maharashtra and Gujarat. Rajkot Police use them for traffic monitoring and patrolling. Other users include the Indian Army and Air Force for reconnaissance, solar farms and open-pit mines.",
+        "In July 2026, NITI Frontier Tech counted 17 NxtQube drone systems deployed, mainly in Maharashtra and Gujarat, at sites such as solar farms and open-pit mines.",
+        "The company has since grown into what it calls Drone Agents: autonomous, pilotless drone tasks run from its Universal Docking Stations, from monitoring to drone-as-first-responder work and logistics. Its modular technology now covers complete systems end to end, and it still works with drones from different manufacturers. Nikhil Rajput says current deployments include the Tata group and the Mahindra Group, and that proofs of concept have been completed with the Adani Group and Bluepine Energy.",
         { "dates": [
           ["2022", "Founded in Nashik, self-funded by the founders."],
           ["2023", "₹20 lakh grant from Social Alpha and the National Aerospace Laboratories (NAL)."],
           ["2024", "Investment from the Aeronautical Society of India."],
           ["August 2024", "Seed round led by Venture Catalysts, with Pontaq VC (STPI), Ananta Bizcon LLP, Rushikesh Bhandari and other angel investors. The amount was not disclosed."],
           ["October 2025", "A Siemens customer story reports the dock’s weight cut by more than 60% and production doubled to 300 drone ports a year."],
-          ["July 2026", "17 systems deployed, mainly in Maharashtra and Gujarat."]
+          ["July 2026", "17 systems deployed, mainly in Maharashtra and Gujarat."],
+          ["November 2026", "Grown into Drone Agents: autonomous, pilotless drone tasks run from Universal Docking Stations."]
         ] },
         "NxtQube is part of ARTPARK’s startup portfolio."
       ]
@@ -63,6 +65,7 @@
     ["NITI Frontier Tech, “These pilotless drones are improving operations, safety and efficiency for partners in Maharashtra and Gujarat” (July 2026)", "https://frontiertech.niti.gov.in/story/these-pilotless-drones-are-improving-operations-safety-and-efficiency-for-partners-in-maharashtra-and-gujarat/"],
     ["Digital Terminal, “NxtQube secures seed funding to expand drone operations” (24 August 2024)", "https://digitalterminal.in/amp/story/startup/nxtqube-secures-seed-funding-to-expand-drone-operations"],
     ["YourStory, “How NxtQube is building India’s drone docking future” (May 2025)", "https://yourstory.com/2025/05/nxtqube-autonomous-drone-docking-startup"],
+    ["Founder review and corrections, November 2026", ""],
     ["ARTPARK, startup portfolio", "https://www.artpark.in/startups-overview"],
     ["NxtQube", "https://nxtqube.com/"]
   ]

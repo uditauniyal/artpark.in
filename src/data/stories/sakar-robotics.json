@@ -48,11 +48,15 @@
             },
             {
               "name": "Manoj Pochat",
-              "role": "Co-founder & Chairman"
+              "role": "Co-founder & Chairman",
+              "photo": "/assets/founders/sakar-robotics-manoj-pochat.webp",
+              "pos": "50% 30%"
             },
             {
               "name": "Dhruv Patil",
-              "role": "Co-founder"
+              "role": "Co-founder",
+              "photo": "/assets/founders/sakar-robotics-dhruv-patil.webp",
+              "pos": "50% 30%"
             }
           ]
         },

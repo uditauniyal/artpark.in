@@ -493,17 +493,11 @@
   },
   {
    "out": "logos/zenteiq.webp",
-   "src": "public/assets/recovered/logo-zenteiq.webp",
-   "crop": [
-    16,
-    62,
-    449,
-    147
-   ],
+   "src": "research/img/founders/1120/zenteiq-logo.png",
    "maxW": 600,
    "quality": 0.9,
-   "subject": "Company logo, empty margins trimmed (logo unaltered).",
-   "source": "https://www.artpark.in/startups-overview"
+   "subject": "Company logo sent by the founder (story review, Nov 2026).",
+   "source": "Founder, story review (Nov 2026)"
   }
  ]
 }

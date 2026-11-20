@@ -3,83 +3,95 @@
   "company": "FloAID",
   "tag": "FOUNDER STORY",
   "kicker": "Medical devices",
-  "title": "An Indian-made pump for a failing heart.",
-  "standfirst": "FloAID Medtech is building a catheter heart pump and a heart-lung machine at IIT Madras Research Park, led by CEO Shiv Gupta, a biomedical engineer, with heart and lung transplant surgeon Dr. K Balakrishnan. The aim is affordable life support for high-risk cardiac patients, and every step so far has been a prototype, a licence or a trial.",
+  "title": "Building the heart pump India imports.",
+  "standfirst": "Floaid Medtech is developing a catheter heart pump and a heart-lung machine at IIT Madras Research Park, Chennai: cardiac life support that Indian hospitals can afford, designed, built and tested in India.",
   "meta": [
     "ARTPARK Stories",
-    "About 4 min read",
-    "FloAID, Chennai"
+    "About 5 min read",
+    "Floaid Medtech, Chennai"
   ],
   "website": "https://floaid.com/",
   "hero": {
-    "image": "/assets/site/soldering.webp",
-    "alt": "An engineer soldering electronics at a bench",
+    "image": "/assets/founders/floaid-cathpump-floex-display.webp",
+    "alt": "A Floaid display stand with the CathPump console and a monitor on a table, the FLOEX 3.0 heart-lung machine on a wheeled trolley, and two Floaid banners",
     "pos": "50% 50%",
-    "ratio": "16/9",
-    "caption": "An electronics bench at ARTPARK. ARTPARK photograph, not of FloAID."
+    "ratio": "21/9",
+    "caption": "CathPump and FLOEX 3.0 at a Floaid display. Photograph from Floaid."
   },
   "lead": [
-    "The pump is 21 French across and spins at up to 33,000 revolutions per minute. Its motor stays outside the body and turns a flexible shaft that drives a microaxial pump inside the patient, moving up to six litres of blood a minute.",
-    "FloAID Medtech builds it at IIT Madras Research Park in Chennai. The company was registered in 2024 and is part of ARTPARK’s startup portfolio, which describes it in a line: artificial heart pumps that integrate AI and ML."
+    "Heart support in India has long meant importing it. Mechanical circulatory support for high-risk angioplasty and cardiogenic shock is dominated by a single foreign system, which is expensive and used once.",
+    "Floaid was started to change that, by an engineer who builds and a transplant surgeon who knows exactly why the device is needed. The company was registered in 2024, works from IIT Madras Research Park in Chennai, and is part of ARTPARK’s startup portfolio."
   ],
   "sections": [
     {
-      "h2": "A surgeon’s need, an engineer’s design.",
-      "toc": "The team",
+      "h2": "An engineer and a transplant surgeon.",
+      "toc": "The founders",
       "blocks": [
-        {
-          "quote": {
-            "text": "Patients whose hearts are failing need life support that Indian hospitals can afford. We are building it here, and proving every step before it reaches a patient.",
-            "who": "Shiv Gupta, Founder and CEO, FloAID",
-            "source": "",
-            "sourceLabel": "",
-            "draft": true
-          }
-        },
-        "Shiv Gupta is a biomedical scientist who trained at IIT Madras and NTU Singapore, with experience in biomedical design, fabrication, system integration and programme management. He leads product development as CEO.",
-        "The clinical need was validated with Dr. K Balakrishnan, Director of Heart and Lung Transplant at MGM Hospital. The company says he performed the first LVAD and HVAD pump transplants in India. His role in the team covers the expert user’s view and the animal and clinical trials. Purrshottam Bhaggeria, Joint Managing Director of Filatex India, supports business management and industrial collaborations. FloAID’s website presents the three as its founding trio.",
+        "Shiv Gupta is a biomedical scientist trained at IIT Madras and NTU Singapore. As CEO he leads product development, from design and fabrication to system integration.",
+        "Dr. K. R. Balakrishnan is Director of Heart and Lung Transplant at MGM Hospital, where, the company says, he performs the highest number of heart and lung transplants in Southeast Asia. Floaid’s website also credits him with the first LVAD and HVAD pump transplants in India. He leads the company’s animal and clinical trials.",
         {
           "people": [
             {
               "name": "Shiv Gupta",
-              "role": "Founder & CEO"
+              "role": "Founder & CEO",
+              "photo": "/assets/founders/floaid-shiv-gupta.webp",
+              "pos": "50% 50%"
             },
             {
-              "name": "Dr. K Balakrishnan",
-              "role": "Founding team · Director of Heart and Lung Transplant, MGM Hospital"
-            },
-            {
-              "name": "Purrshottam Bhaggeria",
-              "role": "Founding team · Business and industrial collaborations"
+              "name": "Dr. K. R. Balakrishnan",
+              "role": "Founder · Clinical lead",
+              "photo": "/assets/founders/floaid-kr-balakrishnan.webp",
+              "pos": "50% 50%"
             }
           ]
-        }
+        },
+        "On the business side, Purrshottam Bhaggeria, Joint Managing Director of Filatex India, supports business management and industrial collaborations."
       ]
     },
     {
-      "h2": "Two pumps on one console.",
-      "toc": "The product",
+      "h2": "Two machines for the hardest cases.",
+      "toc": "The products",
       "blocks": [
-        "FloAID is building for cardiologists and surgeons in three hard situations: high-risk angioplasty, cardiogenic shock and open-heart surgery. Its catheter pump has separate channels for the left and right sides of the heart on a single controller, which the company calls India’s first dual cath pump.",
+        "The CathPump is a percutaneous ventricular assist device: a miniature blood pump on a catheter, placed through an artery to support a struggling left ventricle for a few hours. Its motor stays outside the body and turns a flexible shaft that drives a microaxial pump inside the patient. The catheter is 21 French, about 7 mm across, and the pump spins at up to 33,000 revolutions per minute, moving about six litres of blood a minute on the bench.",
+        "A dual pump controller lets one console run left- and right-heart support together, which Floaid calls India’s first dual-pump PVAD. The pump is aimed at two hard situations, high-risk angioplasty and cardiogenic shock, at a target price under one-fifth of the imported alternative. It is pre-clinical, and not for clinical use.",
+        {
+          "figure": {
+            "image": "/assets/founders/floaid-cathpump-heart-model.webp",
+            "alt": "A catheter pump inserted into a red and yellow anatomical heart model, inside a glass jar of clear liquid on a white Floaid stand",
+            "ratio": "4/5",
+            "pos": "50% 50%",
+            "caption": "CathPump on an anatomical heart model. Photograph from Floaid."
+          }
+        },
+        "FLOEX 3.0 is a heart-lung machine for cardiopulmonary bypass, used in open-heart surgery to take over the work of the heart and lungs. It delivers up to 11 litres a minute, with master and slave pump control. Electrical-safety and EMC testing are complete, and the manufacturing licence application is with CDSCO. Launch follows approval.",
+        {
+          "figure": {
+            "image": "/assets/founders/floaid-floex-3.webp",
+            "alt": "The FLOEX 3.0 heart-lung machine: four pump heads with small displays on a steel trolley, a touchscreen monitor on a pole above them",
+            "ratio": "9/10",
+            "pos": "50% 50%",
+            "caption": "FLOEX 3.0, Floaid’s heart-lung machine. Photograph from Floaid."
+          }
+        },
         {
           "panel": {
-            "title": "What FloAID builds",
+            "title": "What Floaid builds",
             "items": [
               [
-                "Floaid Cath Pump",
-                "A percutaneous ventricular assist device: an intravascular microaxial pump with an external motor and flexible shaft drive, up to 6 litres a minute. Pre-clinical, and not for clinical use."
+                "CathPump",
+                "A percutaneous ventricular assist device: a microaxial pump on a 21 French catheter, driven by an external motor through a flexible shaft, about 6 litres a minute on the bench. Pre-clinical, and not for clinical use."
               ],
               [
-                "Dual-channel controller",
-                "One console that can run left- and right-heart support."
+                "Dual pump controller",
+                "One controller that can run left- and right-heart support together."
               ],
               [
                 "FLOEX 3.0",
-                "A heart-lung machine for cardiopulmonary bypass, up to 11 litres a minute, with master and slave pump control. The company plans to commercialise it in 2026."
+                "A heart-lung machine for cardiopulmonary bypass, up to 11 litres a minute, with master and slave pump control. Manufacturing licence application filed with CDSCO."
               ],
               [
                 "Intellectual property",
-                "The company reports more than 12 patents filed and one granted."
+                "Multiple patents filed, one granted."
               ]
             ]
           }
@@ -87,33 +99,80 @@
       ]
     },
     {
-      "h2": "From the bench to animal trials.",
-      "toc": "Milestones",
+      "h2": "From the bench to animal studies.",
+      "toc": "Where it stands",
       "blocks": [
-        "A heart pump has to pass through test benches, animal studies and regulators before it reaches a patient. FloAID’s roadmap shows where it stands on that path. These are the company’s own milestones; no independent coverage has been published yet.",
+        "A heart pump has to pass through test benches, animal studies and regulators before it reaches a patient. Floaid has built working prototypes of the pump and controller in-house, and tests them on its own mock circulation loop.",
+        {
+          "panel": {
+            "title": "Where it stands",
+            "items": [
+              [
+                "Bench",
+                "Working prototypes of the pump and controller, tested on an in-house mock circulation loop. Haemolysis tested to ASTM F1841, with the best result a modified index of 3.2."
+              ],
+              [
+                "Animal studies",
+                "Acute preclinical animal evaluation completed with clinical collaborators."
+              ],
+              [
+                "FLOEX 3.0",
+                "Electrical-safety and EMC testing complete. Manufacturing licence application filed with CDSCO."
+              ],
+              [
+                "Next",
+                "Electrical-safety testing for CathPump, biocompatibility and sterilisation, further GLP animal studies, then a first-in-human trial after ethics and regulatory approvals."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "Recognition and backing.",
+      "toc": "Recognition",
+      "blocks": [
+        "In June 2025, Floaid was selected for the 71st ASAIO Annual Conference in New Orleans, as, the company says, the only start-up in Asia working on paediatric PVADs. Dr. K. R. Balakrishnan and Shiv Gupta presented “Development of a Microaxial Catheter Pump as a Short Term Pediatric Ventricular Assist Device (VAD) for Acute Heart Failure Management”.",
+        "Floaid won ELEVATE NXT 2026, Karnataka’s deeptech award, for the FLOEX 3.0 heart-lung machine. GAIL (India) Limited, the public-sector enterprise, has invested in the company.",
+        {
+          "figure": {
+            "image": "/assets/founders/floaid-elevate-nxt-2026.webp",
+            "alt": "Two men in suits holding an ELEVATE NXT 2026 trophy and certificate in front of a Bengaluru Tech Summit 2026 backdrop",
+            "ratio": "960/456",
+            "pos": "50% 50%",
+            "caption": "Members of the Floaid team with the ELEVATE NXT 2026 award. Photograph from Floaid."
+          }
+        },
+        "External Affairs Minister Dr. S. Jaishankar visited Floaid with the Director of IIT Madras and congratulated the team. DPIIT also selected Floaid for Biban 2025 in Riyadh, where the company took part in the signing of an MoU between DPIIT, Government of India, and Monsha’at, Government of Saudi Arabia.",
+        {
+          "figure": {
+            "image": "/assets/founders/floaid-jaishankar-visit.webp",
+            "alt": "Dr. S. Jaishankar, in a blue waistcoat, talking with a group of people beside a Floaid console and heart model, with a television camera in the foreground",
+            "ratio": "1152/547",
+            "pos": "50% 50%",
+            "caption": "Dr. S. Jaishankar, External Affairs Minister, on his visit to Floaid. Photograph from Floaid."
+          }
+        },
         {
           "dates": [
             [
               "2024",
-              "Concept and system design. Clinical need validated with Dr. K Balakrishnan. Patents filed. Two prototypes built, with in-vitro haemolysis and flow testing confirming 6 litres a minute."
+              "Floaid Medtech registered."
             ],
             [
-              "2024-25",
-              "CDSCO test licence secured under the Medical Devices Rules, 2017."
+              "Jun 2025",
+              "Selected for the 71st ASAIO Annual Conference, New Orleans, and presents its paediatric microaxial catheter pump."
             ],
             [
               "2025",
-              "Acute animal trial completed at MGM Hospital."
+              "Selected by DPIIT for Biban 2025, Riyadh."
             ],
             [
-              "2025-26",
-              "Chronic animal study under GLP in progress."
-            ],
-            [
-              "Planned",
-              "First-in-human clinical trial targeted for 2026 at MGM Hospital, Chennai, and CDSCO market approval targeted for 2027."
+              "2026",
+              "Wins ELEVATE NXT 2026, Karnataka’s deeptech award, for FLOEX 3.0."
             ]
-          ]
+          ],
+          "label": "From Floaid"
         }
       ]
     }
@@ -134,6 +193,10 @@
     [
       "ARTPARK, startup portfolio",
       "https://www.artpark.in/startups-overview"
+    ],
+    [
+      "Founder review and corrections, November 2026",
+      ""
     ]
   ]
 }

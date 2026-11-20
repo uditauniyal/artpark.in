@@ -1,0 +1,308 @@
+[
+ {
+  "slug": "hardstone-electric",
+  "name": "Hardstone Electric",
+  "oneLiner": "High-reliability high-voltage power systems for deep-tech industrial and defence uses.",
+  "domains": [
+   "Advanced Manufacturing",
+   "Defence & Aerospace"
+  ],
+  "website": "",
+  "logo": "",
+  "founders": [
+   "Bharat Suji"
+  ],
+  "source": "Final presentation V3 (TIR cohort 2026), page 2",
+  "logoSource": "",
+  "notes": "No website in V3 or the deck and none found by web search. No logo: the deck shows only the text \"Hardstone Electronics\" (V3 says Hardstone Electric). Deck sector is Semiconductor/Hardware; V3 names industrial and defence applications. The selection sheet spells the founder Bharat Padmaraj Suji; V3 says Bharat Suji."
+ },
+ {
+  "slug": "xspecies-ai",
+  "name": "xSpecies AI",
+  "oneLiner": "The manipulation layer for robots, from glove-captured skills to tactile robot hands.",
+  "domains": [
+   "Advanced Manufacturing"
+  ],
+  "website": "https://www.xspecies.ai/",
+  "logo": "/assets/logos/tir/xspecies-ai.webp",
+  "founders": [
+   "Srikanth Vidapanakal",
+   "Dr. Midhun Sreekumar"
+  ],
+  "source": "Final presentation V3 (TIR cohort 2026), page 3",
+  "logoSource": "https://www.xspecies.ai/ (https://cdn.prod.website-files.com/698ed0ca454c3928f66c6597/69afe5c756e1385c727121ef_logo%20(9).webp)",
+  "notes": "Deck sector Robotics & Automation, mapped to Advanced Manufacturing as for other robotics companies. V3 header writes XSPECIES AI; body and logo write xSpecies AI."
+ },
+ {
+  "slug": "axd",
+  "name": "AxD",
+  "oneLiner": "AI predictive maintenance for factories, reading from the machines they already run.",
+  "domains": [
+   "Advanced Manufacturing"
+  ],
+  "website": "https://www.axd-us.com/",
+  "logo": "/assets/logos/tir/axd.webp",
+  "founders": [
+   "Mihir Deshmukh",
+   "Maithili Deshmukh"
+  ],
+  "source": "Final presentation V3 (TIR cohort 2026), page 4",
+  "logoSource": "PPTX slide 14",
+  "notes": "Product name FutureFix. V3 lists Maithili Deshmukh as Co-Founder & CSO; the selection sheet lists Abhay Deshmukh instead (V3 used). The logo includes the tagline \"Innovate. Automate. Elevate.\""
+ },
+ {
+  "slug": "sutra",
+  "name": "SUTRA",
+  "oneLiner": "An edge, closed-loop manufacturing execution system (MES) for small manufacturers.",
+  "domains": [
+   "Advanced Manufacturing"
+  ],
+  "website": "",
+  "logo": "",
+  "founders": [
+   "Harshit Kadam",
+   "Dr. Sachin Karadgi"
+  ],
+  "source": "Final presentation V3 (TIR cohort 2026), page 5",
+  "logoSource": "",
+  "notes": "Name conflict: V3 titles the page SUTRA (Semantic Unified Traceability & Real-time Analytics), which reads like a product name; the deck shows a \"Yantrik Infotech, AI-First MES\" logo in this row; the selection sheet has \"[Name TBC] AI-assisted Manufacturing Platform\". V3 used. The Yantrik Infotech logo is prepared at /assets/logos/tir/yantrik-infotech.webp but not set, because it does not match the card name; confirm the public name. No website found (no web results for Yantrik Infotech or SUTRA MES). V3 calls Harshit Kadam Lead and Dr. Sachin Karadgi Co-lead."
+ },
+ {
+  "slug": "ometaura-ai",
+  "name": "Ometaura AI",
+  "oneLiner": "Omi-1, a warehouse picking robot with a simple three-axis Cartesian design.",
+  "domains": [
+   "Advanced Manufacturing"
+  ],
+  "website": "https://ometaura.ai/",
+  "logo": "/assets/logos/tir/ometaura-ai.webp",
+  "founders": [
+   "Abhishek Gupta"
+  ],
+  "source": "Final presentation V3 (TIR cohort 2026), page 6",
+  "logoSource": "https://ometaura.ai/ (https://res.cloudinary.com/dsr1agyxd/image/upload/v1786156996/ChatGPT_Image_Aug_8_2026_08_12_57_AM_ns6fio.png); same mark as PPTX slide 15",
+  "notes": "V3 says 3PL logistics; the deck says 2PL warehouses; the one-liner avoids both. Logistics robot, mapped to Advanced Manufacturing (the selection sheet adds Others). The logo has thin gold text that is small at card size."
+ },
+ {
+  "slug": "noetics-technologies",
+  "name": "Noetics Technologies",
+  "oneLiner": "Builds a self-learning AI model of an organisation directly from its live data.",
+  "domains": [
+   "Others"
+  ],
+  "website": "",
+  "logo": "/assets/logos/tir/noetics-technologies.webp",
+  "founders": [
+   "Dr. Abhay Aradhya",
+   "Soumyadeep Bhadra"
+  ],
+  "source": "Final presentation V3 (TIR cohort 2026), page 7",
+  "logoSource": "PPTX slide 15",
+  "notes": "Spelling: V3 and the deck logo say Noetics; the notes also had \"Neotics\" and the sheet \"[Name TBC] Enterprise Copilot for Manufacturing\". The logo reads \"Noetics.\" (without Technologies). Enterprise AI, mapped to Others; the sheet had Advanced Manufacturing. No website found by web search."
+ },
+ {
+  "slug": "kodeus",
+  "name": "Kodeus",
+  "oneLiner": "The operating layer for AI-native applications, run inside the customer's own cloud.",
+  "domains": [
+   "Others"
+  ],
+  "website": "https://kodeus.ai/",
+  "logo": "/assets/logos/tir/kodeus.webp",
+  "founders": [
+   "Murali Reddy",
+   "Sooryah Pokkali",
+   "Vamsi Reddy"
+  ],
+  "source": "Final presentation V3 (TIR cohort 2026), page 8",
+  "logoSource": "https://kodeus.ai/assets/kodeus/lockup-ink.svg",
+  "notes": "V3 page 8 is an image (line \"The operating layer for AI-native applications\"); \"own cloud\" is from the deck (runs inside your own VPC). Roles in V3: CEO, CBO, Engineering Head (founder status not stated). Deck sector Artificial Intelligence / Foundation Models, mapped to Others. Not among the selected in the selection sheet (listed as pending there)."
+ },
+ {
+  "slug": "natheon",
+  "name": "Natheon",
+  "oneLiner": "Shiras, a nanosensor for rapid point-of-care detection of cerebrospinal fluid leaks.",
+  "domains": [
+   "MedTech"
+  ],
+  "website": "",
+  "logo": "/assets/logos/tir/natheon.webp",
+  "founders": [
+   "Dr. Katyayanee Sharma"
+  ],
+  "source": "Final presentation V3 (TIR cohort 2026), page 9",
+  "logoSource": "PPTX slide 16",
+  "notes": "Name: V3 venture name Natheon, product Shiras; the deck row shows Shiras; the sheet has \"[Name TBC] Rapid CSF Leak Diagnostics\". natheon.com is an unrelated \"software development and systems consulting\" placeholder, so no website. Logo is the \"n.\" mark from the deck row; not confirmed on any website. V3 calls Dr. Katyayanee Sharma Innovative Lead; the two faculty advisors are left out."
+ },
+ {
+  "slug": "gahan-ai",
+  "name": "Gahan AI",
+  "oneLiner": "A single-chip, low-power imaging radar with LiDAR-like detail in all weather.",
+  "domains": [
+   "Others"
+  ],
+  "website": "https://gahanai.com/",
+  "logo": "/assets/logos/tir/gahan-ai.webp",
+  "founders": [
+   "Dr. Pallab Maji",
+   "Sohini Hazra"
+  ],
+  "source": "Final presentation V3 (TIR cohort 2026), page 10",
+  "logoSource": "PPTX slide 16",
+  "notes": "V3 header: GAHAN AI PRIVATE LIMITED. Deck sector EV Mobility & Services, mapped to Others (the sheet had Others and Advanced Manufacturing). The website only has a white logo, so the deck colour logo is used."
+ },
+ {
+  "slug": "foucault",
+  "name": "Foucault",
+  "oneLiner": "A C-band satellite navigation constellation in low Earth orbit, built to resist jamming.",
+  "domains": [
+   "Space Tech",
+   "Defence & Aerospace"
+  ],
+  "website": "https://foucault.in/",
+  "logo": "/assets/logos/tir/foucault.webp",
+  "founders": [
+   "Dr. Anurag Raghuvanshi"
+  ],
+  "source": "Final presentation V3 (TIR cohort 2026), page 11",
+  "logoSource": "PPTX slide 17",
+  "notes": "V3 header: FOUCAULT PRIVATE LIMITED. Deck sector Defence & Aerospace; the sheet adds Space Tech. The website logo is a pale version, so the deck colour logo is used."
+ },
+ {
+  "slug": "dunlevon",
+  "name": "Dunlevon",
+  "oneLiner": "A full-stack driver assistance and autonomous driving platform that runs on one camera.",
+  "domains": [
+   "Others"
+  ],
+  "website": "https://dunlevon.com/",
+  "logo": "/assets/logos/tir/dunlevon.webp",
+  "founders": [
+   "RamPrakash Sekhar",
+   "RanjithKumar Saravanan"
+  ],
+  "source": "Final presentation V3 (TIR cohort 2026), page 12",
+  "logoSource": "https://dunlevon.com/images/logo.jpg",
+  "notes": "Website not in V3 or the deck; found at dunlevon.com (its text describes an L2 vision-only ADAS stack, matching V3); confirm with the founders. The deck shows a different Dunlevon logo (green D-loop mark); the website logo (on a light beige box) is used. Deck sector EV Mobility & Services, mapped to Others."
+ },
+ {
+  "slug": "blueforge-robotics",
+  "name": "BlueForge Robotics",
+  "oneLiner": "Autonomous magnetic-crawler rovers that prepare, paint and inspect ship hulls.",
+  "domains": [
+   "Advanced Manufacturing"
+  ],
+  "website": "https://blueforgerobotics.com/",
+  "logo": "/assets/logos/tir/blueforge-robotics.webp",
+  "founders": [
+   "Shivam Panwar",
+   "Avinash Mishra",
+   "Sangam Sahu",
+   "Rahul Giri"
+  ],
+  "source": "Final presentation V3 (TIR cohort 2026), page 13",
+  "logoSource": "https://blueforgerobotics.com/assets/img/logo.png",
+  "notes": "V3 lists these four under Founders & Leadership Team (CEO, COO, CTO, CIO) without saying who co-founded; the sheet lists only Shivam Panwar and Avinash Mishra. The deck link is http://; https works."
+ },
+ {
+  "slug": "bloomrehab",
+  "name": "BloomRehab",
+  "oneLiner": "Therabot, a portable robot for arm, leg and gait rehabilitation at the bedside or at home.",
+  "domains": [
+   "MedTech"
+  ],
+  "website": "https://bloomrehab.org/",
+  "logo": "",
+  "founders": [
+   "Prashanth Jonna"
+  ],
+  "source": "Final presentation V3 (TIR cohort 2026), page 14",
+  "logoSource": "",
+  "notes": "Possible rebrand: bloomrehab.org now redirects to antheradynamics.com (\"Anthera Dynamics\", same Therabot product), and the deck shows an Anthera Dynamics logo in the BloomRehab row. V3 says BLOOMREHAB TECHNOLOGIES PVT LTD, so the card keeps BloomRehab with no logo. The Anthera Dynamics logo is prepared at /assets/logos/tir/anthera-dynamics.webp; confirm the public name with the founder, then set name, logo and website (https://antheradynamics.com/) together."
+ },
+ {
+  "slug": "viscotrack",
+  "name": "ViscoTrack",
+  "oneLiner": "Real-time sensors that measure the viscosity, density and surface tension of liquids.",
+  "domains": [
+   "Advanced Manufacturing"
+  ],
+  "website": "https://viscotrack.com/",
+  "logo": "/assets/logos/tir/viscotrack.webp",
+  "founders": [
+   "Saravanakumar D"
+  ],
+  "source": "Final presentation V3 (TIR cohort 2026), page 15",
+  "logoSource": "https://viscotrack.com/logo.svg",
+  "notes": "V3 writes \"Saravanakumar D (PhD)\", Co-Founder & CEO; the two professors are advisors and left out. The sheet had \"[Name TBC] Resonant liquid property sensors\". The logo carries a TM mark."
+ },
+ {
+  "slug": "rosa-tech",
+  "name": "ROSA Tech",
+  "oneLiner": "Robots for rough terrain, extreme temperatures and chaotic environments.",
+  "domains": [
+   "Advanced Manufacturing"
+  ],
+  "website": "https://www.rosatech.in/",
+  "logo": "/assets/logos/tir/rosa-tech.webp",
+  "founders": [
+   "Rohit Anand",
+   "Saket Anand"
+  ],
+  "source": "Final presentation V3 (TIR cohort 2026), page 16",
+  "logoSource": "PPTX slide 18",
+  "notes": "V3 page footer says \"ROSA technologies\"; the sheet says Rosa Technology; the logo reads ROSA TECH. The deck text for ROSA repeats BlueForge's description (deck error), so only V3 used. Deck sector Robotics & Automation; the sheet adds Defence & Aerospace, which V3 does not mention."
+ },
+ {
+  "slug": "versor-robotics",
+  "name": "Versor Robotics",
+  "oneLiner": "Collaborative robots for vegetable farms that spray only where they see a leaf.",
+  "domains": [
+   "Advanced Manufacturing"
+  ],
+  "website": "https://www.versorbots.com/",
+  "logo": "/assets/logos/tir/versor-robotics.webp",
+  "founders": [
+   "Vidhya Sagar",
+   "Viboosithasri N S"
+  ],
+  "source": "Final presentation V3 (TIR cohort 2026), page 17",
+  "logoSource": "PPTX slide 19",
+  "notes": "Website not in V3 or the deck; versorbots.com is the live Versor Robotics site found in earlier project research (research/founders/group-4.json). V3 calls both Co-Lead; the advisor is left out. Agricultural robotics, mapped to Advanced Manufacturing like the other robotics and agritech-automation companies (Others is also defensible). The website only has a \"VR\" monogram, so the deck wordmark is used."
+ },
+ {
+  "slug": "adwiser",
+  "name": "Adwiser",
+  "oneLiner": "Software that gives existing Wi-Fi networks guaranteed latency and throughput.",
+  "domains": [
+   "Others"
+  ],
+  "website": "",
+  "logo": "",
+  "founders": [
+   "Shivam Vinayak Vatsa",
+   "Prof. Anurag Kumar",
+   "Prof. Joy Kuri"
+  ],
+  "source": "Final presentation V3 (TIR cohort 2026), page 18",
+  "logoSource": "",
+  "notes": "V3 header writes ADWISER (as the IISc research project does); the deck writes Adwiser. No logo (the deck shows the name as text). No website: adwiser.in is a parked domain; the IISc project page https://cni.iisc.ac.in/projects/adwiser is research, not the venture. V3 lists the two professors as Co-Founder & Advisor. Deck sector Communication (Wired & Wireless), mapped to Others."
+ },
+ {
+  "slug": "heed",
+  "name": "HEED",
+  "oneLiner": "Electric hydrojet propulsion for recreational, commercial, autonomous and defence craft.",
+  "domains": [
+   "Defence & Aerospace",
+   "Others"
+  ],
+  "website": "https://heedjets.com/",
+  "logo": "/assets/logos/tir/heed.webp",
+  "founders": [
+   "Ratheesh M. Yogananda"
+  ],
+  "source": "Final presentation V3 (TIR cohort 2026), page 19",
+  "logoSource": "PPTX slide 19",
+  "notes": "Also written HEED Propulsion (V3 body) and Heed Jetboards (website, selection sheet). heedjets.com (deck link) serves the Heed Jetboards site, whose canonical address is https://heedjetboards.com/. The website only has the jet mark without the HEED wordmark, so the deck logo is used. Deck sector EV Mobility & Services; V3 names defence among the applications."
+ }
+]

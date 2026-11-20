@@ -27,12 +27,12 @@
       "toc": "The hard part",
       "blocks": [
         "Leaving the lab meant giving up the idea that parts could simply be bought. “In 2023, there were very few options for off-the-shelf components. We could not just piece together available parts, so we began building components ourselves. We now build our own actuators by sourcing local motors and engineering the gears, drives, and casings,” Aditya says.",
-        "The company puts the indigenous content of its M3 robot at over 80 percent by component cost. The robot carries thermal cameras, LiDAR and gas detectors. Its software for navigation, mission planning, asset monitoring and analytics is designed to be hardware-agnostic, so it can also run on other makers’ quadrupeds.",
+        "The team was already building its own components at IISc, and at ARTPARK it moved step by step from imported parts to Indian-made ones with each version of the robot. The company puts the indigenous content of its M3 robot at over 80 percent by component cost. The robot sees with depth cameras and LiDAR. Its navigation software, which the company calls NavSense, has been integrated with pan-tilt-zoom and thermal camera payloads; gas sensors are not integrated yet. The software for navigation, mission planning, asset monitoring and analytics is designed to be hardware-agnostic, so it can also run on other makers’ quadrupeds.",
         { "panel": { "title": "What Strider builds", "items": [
           ["M-series quadrupeds", "Autonomous four-legged robots for inspection, material handling and asset monitoring. The M3 is the current model."],
           ["Actuators", "Made in-house from locally sourced motors, with the gears, drives and casings engineered by the team."],
-          ["Sensors", "Thermal cameras, LiDAR and gas detectors carried on the robot."],
-          ["Software", "Navigation, mission planning, asset monitoring and analytics, built to run on third-party quadrupeds too."]
+          ["Sensors", "Depth cameras and LiDAR for perception and navigation; pan-tilt-zoom and thermal camera payloads."],
+          ["Software", "NavSense navigation, plus mission planning, asset monitoring and analytics, built to run on third-party quadrupeds too."]
         ] } },
         { "figure": { "image": "/assets/founders/strider-robotics-team.webp", "alt": "About twenty people standing behind three quadruped robots in front of Strider Robotics banners", "ratio": "1280/591", "caption": "Team Strider Robotics, with three of its quadrupeds and a banner showing the evolution of the platform. Photograph from Strider Robotics." } }
       ]
@@ -43,7 +43,7 @@
       "blocks": [
         "The work Strider has in mind is routine inspection in power plants, oil and gas sites, mines and coal handling units, where people are exposed to heat, noise, dust and other hazards. In defence, the founders see a use in moving supplies over mountainous and off-road ground.",
         { "quote": { "text": "We will be deploying our autonomous quadruped robots for industrial inspection. The platform can be deployed across industries such as automotive manufacturing, construction, power, and oil and gas to improve efficiency by detecting faults early and minimizing hazards for operators", "who": "Prof. Shishir Kolathaya, Co-founder, Strider Robotics", "source": "https://startuppedia.in/tech-innovation/bengalurus-strider-robotics-develops-4-legged-robots-that-can-automates-industrial-inspections-detects-faults-12234764", "sourceLabel": "StartupPedia" } },
-        "In July 2026, trade coverage reported the M3 carrying a 40 kg payload, with field pilots under way at an oil and gas company and an automotive manufacturer, neither of them named. In September, at a demonstration in Bengaluru, an M3 pulled a Honda Amaze with its engine off and no one at the wheel. The company called it a Technology Readiness Level 6 milestone.",
+        "In July 2026, trade coverage reported the M3 carrying a 40 kg payload. The company clarifies that this was a short demonstration: the M3 is rated for a 20 kg continuous payload. Field pilots were under way at an oil and gas company and an automotive manufacturer, neither of them named. In September, at a demonstration in Bengaluru, an M3 pulled a Honda Amaze with its engine off and no one at the wheel. The company called it a Technology Readiness Level 6 milestone.",
         "In August 2026 the team numbered 15, and the company planned to deploy its first batch of quadrupeds to clients in December 2026."
       ]
     },
@@ -60,7 +60,7 @@
           ["2022", "Stoch 4. ARTPARK pre-venture approved."],
           ["2023", "V1 robot. The team starts building its own components."],
           ["2024", "V2 robot. Strider Robotics incorporated and incubated at ARTPARK."],
-          ["Jul 2026", "40 kg payload reported for the M3; pilots with an oil and gas company and an automotive manufacturer."],
+          ["Jul 2026", "40 kg payload shown in a short demonstration (rated 20 kg continuous); pilots with an oil and gas company and an automotive manufacturer."],
           ["Sep 2026", "An M3 pulls a Honda Amaze in a Bengaluru demonstration."]
         ] },
         { "people": [
@@ -71,6 +71,7 @@
     }
   ],
   "sources": [
+    ["Founder review and corrections, November 2026", ""],
     ["StartupPedia, Bengaluru’s Strider Robotics develops four-legged robots for industrial inspection (6 August 2026)", "https://startuppedia.in/tech-innovation/bengalurus-strider-robotics-develops-4-legged-robots-that-can-automates-industrial-inspections-detects-faults-12234764"],
     ["StartupPedia, Strider Robotics shows its M3 quadruped’s ability to pull a Honda Amaze (September 2026)", "https://startuppedia.in/trending/startup-news/strider-robotics-shows-its-m3-quadrupeds-ability-to-pull-a-honda-amaze-12577525"],
     ["Robotics and Automation News, Strider Robotics demonstrates 40 kg payload quadruped (18 July 2026)", "https://roboticsandautomationnews.com/2026/07/18/strider-robotics-demonstrates-40-kg-payload-quadruped-robot-as-commercial-pilots-begin/103453/"],
